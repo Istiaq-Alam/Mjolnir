@@ -1,0 +1,7 @@
+storm-duration: 180
+mode-switch-cooldown: 5
+
+effects:
+  enabled: true
+  particles: true
+  sounds: true

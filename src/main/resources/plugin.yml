@@ -1,0 +1,15 @@
+name: Mjolnir
+version: 1.0.0
+main: com.istiak.mjolnir.MjolnirPlugin
+api-version: '26.1'
+author: Istiak
+description: Custom two-mode Mjolnir trident for Paper 26.1.2.
+commands:
+  mjolnir:
+    description: Give and manage the Mjolnir.
+    usage: /mjolnir give <player>
+    permission: mjolnir.admin
+permissions:
+  mjolnir.admin:
+    description: Allows use of the /mjolnir admin command.
+    default: op
