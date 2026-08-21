@@ -1134,7 +1134,7 @@ Source code, development, issues, and contributions:
 Plugin downloads and releases:
 
 **Modrinth:**
-YOUR_MODRINTH_PLUGIN_URL
+Mjolnir-Plugin
 
 ---
 
@@ -1143,7 +1143,7 @@ YOUR_MODRINTH_PLUGIN_URL
 Official Mjolnir resource pack:
 
 **Mjolnir Resource Pack:**
-YOUR_MODRINTH_RESOURCE_PACK_URL
+https://modrinth.com/resourcepack/mjolnir-resource-pack
 
 ---
 
