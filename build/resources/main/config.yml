@@ -27,25 +27,29 @@ travel:
     damage: 1000.0
 
 fighting:
-  smash:
-    enabled: true
-    bonus-damage: 2.0
-    knockback: 0.4
 
   lightning-strike:
     enabled: true
     range: 9.0
-    damage: 12.0
     cooldown: 4
+    damage: 12.0
     player-damage: false
 
   god-blast:
     enabled: true
     range: 12.0
     radius: 5.0
+    cooldown: 8
     damage: 18.0
     knockback: 1.2
-    cooldown: 8
+    player-damage: false
+
+  mjolnir-smash:
+    enabled: true
+    radius: 4.0
+    damage: 8.0
+    cooldown: 2
+    knockback: 0.8
     player-damage: false
 
 resource-pack:
