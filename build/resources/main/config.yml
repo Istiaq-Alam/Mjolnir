@@ -7,6 +7,47 @@ effects:
   particles: true
   sounds: true
 
+travel:
+  # Completely removes fall damage after Mjolnir Riptide.
+  cancel-fall-damage: true
+
+  # Only used if cancel-fall-damage is false.
+  # 2.0 = 1 heart.
+  max-fall-damage: 2.0
+
+  landing-thunder:
+    # Thor-style thunder impact when landing from Travel Mode.
+    enabled: true
+
+    # Damage radius.
+    radius: 9.0
+
+    # Damage to hostile mobs.
+    # 1000 is enough to instantly kill most normal mobs.
+    damage: 1000.0
+
+fighting:
+  smash:
+    enabled: true
+    bonus-damage: 2.0
+    knockback: 0.4
+
+  lightning-strike:
+    enabled: true
+    range: 9.0
+    damage: 12.0
+    cooldown: 4
+    player-damage: false
+
+  god-blast:
+    enabled: true
+    range: 12.0
+    radius: 5.0
+    damage: 18.0
+    knockback: 1.2
+    cooldown: 8
+    player-damage: false
+
 resource-pack:
   enabled: true
 
