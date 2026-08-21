@@ -1,0 +1,31 @@
+{
+	"oversized_in_gui": true,
+	"model": {
+		"type": "condition",
+		"property": "has_component",
+		"component": "custom_name",
+		"on_true": {
+			"type": "select",
+			"model": "block/red_sandstone",
+			"property": "component",
+			"component": "custom_name",
+	  		"cases": [
+					{
+				"when": "Sconce",
+				"model": {
+					"type": "model",
+					"model": "item/sconce/red_sandstone_sconce"
+			 			}
+					}
+		  		],
+			"fallback": {
+				"type": "model",
+				"model": "block/red_sandstone"
+					}
+				},
+		"on_false": {
+			"type": "model",
+			"model": "block/red_sandstone"
+		}
+	}
+}

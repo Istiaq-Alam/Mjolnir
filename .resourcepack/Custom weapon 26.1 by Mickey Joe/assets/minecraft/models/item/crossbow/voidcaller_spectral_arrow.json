@@ -1,0 +1,7 @@
+{
+	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+	"parent": "item/crossbow/voidcaller_arrow",
+	"textures": {
+		"2": "item/spectral_arrow"
+	}
+}

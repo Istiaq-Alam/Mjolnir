@@ -1,0 +1,15 @@
+{
+	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+	"parent": "item/netherite_sword/nail_old",
+	"textures": {
+		"layer0": "item/netherite_sword/nail_pure"
+	},
+	"gui_light": "front",
+	"display": {
+		"gui": {
+			"rotation": [0, -25.5, -1],
+			"translation": [-0.15, -0.25, 0],
+			"scale": [1.44, 1.44, 0.72]
+		}
+	}
+}

@@ -1,0 +1,86 @@
+{
+	"oversized_in_gui": true,
+	"model": {
+		"type": "condition",
+		"property": "has_component",
+		"component": "custom_name",
+		"on_true": {
+			"type": "select",
+			"property": "component",
+			"component": "custom_name",
+	  		"cases": [
+					{
+				"when": "Hoe",
+				"model": {
+					"type": "model",
+					"model": "item/copper_hoe"
+			 			}
+					},
+					{
+					"when": "Scythe",
+					"model": {
+						"type": "model",
+						"model": "item/copper_hoe/scythe"
+					}
+				},
+					{
+				"when": "Kemetian Hoe",
+				"model": {
+					"type": "model",
+					"model": "item/copper_hoe/kemetian_hoe"
+			 			}
+					},
+					{
+				"when": "Super Cute Hoe",
+				"model": {
+					"type": "model",
+					"model": "item/copper_hoe/super_cute_hoe"
+			 			}
+					},
+					{
+				"when": "Hellenic Hoe",
+				"model": {
+					"type": "model",
+					"model": "item/copper_hoe/hellenic_hoe"
+			 			}
+					},
+					{
+				"when": "Sinitic Hoe",
+				"model": {
+					"type": "model",
+					"model": "item/copper_hoe/sinitic_hoe"
+			 			}
+					},
+					{
+				"when": "Fantasy Hoe",
+				"model": {
+					"type": "model",
+					"model": "item/copper_hoe/fantasy_hoe"
+			 			}
+					},
+					{
+				"when": "Norroen Hoe",
+				"model": {
+					"type": "model",
+					"model": "item/copper_hoe/norroen_hoe"
+			 			}
+					},
+					{
+				"when": "Halloween Hoe",
+				"model": {
+					"type": "model",
+					"model": "item/copper_hoe/halloween_hoe"
+			 			}
+					}
+		  		],
+			"fallback": {
+						"type": "model",
+						"model": "item/copper_hoe"
+					}
+		},
+		"on_false": {
+						"type": "model",
+						"model": "item/copper_hoe"
+					}
+	}
+}

@@ -1,0 +1,43 @@
+{
+	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+	"parent": "builtin/generated",
+	"textures": {
+		"layer0": "item/netherite_sword/caliburn"
+	},
+	"gui_light": "front",
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [0, -90, 50],
+			"translation": [0, 7.25, 1.5],
+			"scale": [1.7, 1.7, 0.85]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [0, 90, -50],
+			"translation": [0, 7.25, 1.5],
+			"scale": [1.7, 1.7, 0.85]
+		},
+		"firstperson_righthand": {
+			"rotation": [2, -105, 31],
+			"translation": [5.38, 3.2, -0.87],
+			"scale": [1.36, 1.36, 0.68]
+		},
+		"firstperson_lefthand": {
+			"rotation": [2, 75, -31],
+			"translation": [5.38, 3.2, -0.87],
+			"scale": [1.36, 1.36, 0.68]
+		},
+		"ground": {
+			"translation": [0.5, 5, 0],
+			"scale": [1, 1, 0.5]
+		},
+		"gui": {
+			"rotation": [0, -25.5, -3],
+			"scale": [1.3, 1.3, 0.65]
+		},
+		"fixed": {
+			"rotation": [0, 180, 0],
+			"translation": [0, 0, -0.5],
+			"scale": [1.99, 1.99, 1]
+		}
+	}
+}

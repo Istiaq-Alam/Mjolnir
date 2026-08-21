@@ -1,0 +1,7 @@
+{
+	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+	"parent": "item/netherite_sword/redstone_riot_sword",
+	"textures": {
+		"particle": "item/netherite_hoe/hoe_of_infinity"
+	}
+}

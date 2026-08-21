@@ -1,0 +1,7 @@
+{
+	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+	"parent": "item/flint_and_steel/flint",
+	"textures": {
+		"layer0": "item/flint_and_steel/flint_damaged"
+	}
+}

@@ -1,0 +1,30 @@
+{
+	"format_version": "1.21.6",
+	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+	"parent": "item/crossbow/shortstop_pulling",
+	"textures": {
+		"particle": "item/crossbow/festive_lights"
+	},
+	"elements": [
+		{
+			"from": [8, 9, 2],
+			"to": [8, 11, 11],
+			"light_emission": 15,
+			"rotation": {"angle": 0, "axis": "y", "origin": [6, 9, 2]},
+			"faces": {
+				"east": {"uv": [2, 8.5, 6.5, 9.5], "texture": "#particle"},
+				"west": {"uv": [2, 8.5, 6.5, 9.5], "texture": "#particle"}
+			}
+		},
+		{
+			"from": [4.5, 7.5, 3],
+			"to": [11.5, 7.5, 10],
+			"light_emission": 15,
+			"rotation": {"angle": 0, "axis": "z", "origin": [6.5, 5.5, 3]},
+			"faces": {
+				"up": {"uv": [8.5, 0.5, 12, 4], "rotation": 270, "texture": "#particle"},
+				"down": {"uv": [8.5, 0.5, 12, 4], "rotation": 270, "texture": "#particle"}
+			}
+		}
+	]
+}

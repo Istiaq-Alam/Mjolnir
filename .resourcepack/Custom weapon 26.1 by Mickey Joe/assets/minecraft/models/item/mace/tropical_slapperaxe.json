@@ -1,0 +1,7 @@
+{
+	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+	"parent": "item/mace/haemorrhaxe",
+	"textures": {
+		"particle": "item/mace/tropical_slapperaxe"
+	}
+}

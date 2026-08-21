@@ -1,0 +1,43 @@
+{
+	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+	"parent": "item/compass/compass/dial",
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [-90, 0, -117],
+			"translation": [0, 1.5, 0.5],
+			"scale": [0.55, 0.55, 0.55]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [-90, 0, 117],
+			"translation": [0, 1.5, 0.5],
+			"scale": [0.55, 0.55, 0.55]
+		},
+		"firstperson_righthand": {
+			"rotation": [-78, -10, -132],
+			"translation": [0.13, 3.05, 0.63],
+			"scale": [0.68, 0.68, 0.68]
+		},
+		"firstperson_lefthand": {
+			"rotation": [-78, -10, 102],
+			"translation": [0.13, 3.05, 0.63],
+			"scale": [0.68, 0.68, 0.68]
+		},
+		"ground": {
+			"rotation": [-90, 0, -105],
+			"translation": [0, 0.6, 0],
+			"scale": [0.5, 0.5, 0.5]
+		},
+		"gui": {
+			"rotation": [0, 0, -117],
+			"translation": [0, 0, 1],
+			"scale": [1.16, 1.16, 1.16]
+		},
+		"head": {
+			"translation": [0, 0, -1]
+		},
+		"fixed": {
+			"rotation": [0, 180, -117],
+			"translation": [0, 0, -2.1]
+		}
+	}
+}

@@ -1,0 +1,328 @@
+{
+	"format_version": "1.21.6",
+	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+	"texture_size": [32, 32],
+	"textures": {
+		"particle": "item/netherite_axe/axe_of_peace"
+	},
+	"elements": [
+		{
+			"name": "axe_of_peace_0",
+			"from": [8, 9, 7.5],
+			"to": [12, 15, 8.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [-8, -11, 7.5]},
+			"faces": {
+				"north": {"uv": [10, 3, 8, 6], "texture": "#particle"},
+				"east": {"uv": [9.5, 3, 10, 6], "texture": "#particle"},
+				"south": {"uv": [8, 3, 10, 6], "texture": "#particle"},
+				"west": {"uv": [8, 3, 8.5, 6], "texture": "#particle"},
+				"up": {"uv": [8, 3, 10, 3.5], "texture": "#particle"},
+				"down": {"uv": [8, 5.5, 10, 6], "texture": "#particle"}
+			}
+		},
+		{
+			"name": "axe_of_peace_1",
+			"from": [12, 13, 7.5],
+			"to": [13, 15, 8.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [-8, -11, 7.5]},
+			"faces": {
+				"north": {"uv": [10.5, 3, 10, 4], "texture": "#particle"},
+				"east": {"uv": [10, 3, 10.5, 4], "texture": "#particle"},
+				"south": {"uv": [10, 3, 10.5, 4], "texture": "#particle"},
+				"up": {"uv": [10, 3, 10.5, 3.5], "texture": "#particle"},
+				"down": {"uv": [10, 3.5, 10.5, 4], "texture": "#particle"}
+			}
+		},
+		{
+			"name": "axe_of_peace_2",
+			"from": [7, 8, 7.5],
+			"to": [8, 14, 8.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [-8, -11, 7.5]},
+			"faces": {
+				"north": {"uv": [8, 3.5, 7.5, 6.5], "texture": "#particle"},
+				"east": {"uv": [7.5, 3.5, 8, 6.5], "texture": "#particle"},
+				"south": {"uv": [7.5, 3.5, 8, 6.5], "texture": "#particle"},
+				"west": {"uv": [7.5, 3.5, 8, 6.5], "texture": "#particle"},
+				"up": {"uv": [7.5, 3.5, 8, 4], "texture": "#particle"},
+				"down": {"uv": [7.5, 6, 8, 6.5], "texture": "#particle"}
+			}
+		},
+		{
+			"name": "axe_of_peace_3",
+			"from": [6, 8, 7.5],
+			"to": [7, 13, 8.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [-8, -11, 7.5]},
+			"faces": {
+				"north": {"uv": [7.5, 4, 7, 6.5], "texture": "#particle"},
+				"south": {"uv": [7, 4, 7.5, 6.5], "texture": "#particle"},
+				"west": {"uv": [7, 4, 7.5, 6.5], "texture": "#particle"},
+				"up": {"uv": [7, 4, 7.5, 4.5], "texture": "#particle"},
+				"down": {"uv": [7, 6, 7.5, 6.5], "texture": "#particle"}
+			}
+		},
+		{
+			"name": "axe_of_peace_4",
+			"from": [13, 10, 7.5],
+			"to": [15, 12, 8.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [-8, -11, 7.5]},
+			"faces": {
+				"north": {"uv": [11.5, 4.5, 10.5, 5.5], "texture": "#particle"},
+				"east": {"uv": [11, 4.5, 11.5, 5.5], "texture": "#particle"},
+				"south": {"uv": [10.5, 4.5, 11.5, 5.5], "texture": "#particle"},
+				"west": {"uv": [10.5, 4.5, 11, 5.5], "texture": "#particle"},
+				"up": {"uv": [10.5, 4.5, 11.5, 5], "texture": "#particle"},
+				"down": {"uv": [10.5, 5, 11.5, 5.5], "texture": "#particle"}
+			}
+		},
+		{
+			"name": "axe_of_peace_5",
+			"from": [12, 7, 7.5],
+			"to": [13, 11, 8.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [-8, -11, 7.5]},
+			"faces": {
+				"north": {"uv": [10.5, 5, 10, 7], "texture": "#particle"},
+				"south": {"uv": [10, 5, 10.5, 7], "texture": "#particle"},
+				"up": {"uv": [10, 5, 10.5, 5.5], "texture": "#particle"},
+				"down": {"uv": [10, 6.5, 10.5, 7], "texture": "#particle"}
+			}
+		},
+		{
+			"name": "axe_of_peace_6",
+			"from": [13, 6, 7.5],
+			"to": [14, 10, 8.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [-8, -11, 7.5]},
+			"faces": {
+				"north": {"uv": [11, 5.5, 10.5, 7.5], "texture": "#particle"},
+				"east": {"uv": [10.5, 5.5, 11, 7.5], "texture": "#particle"},
+				"south": {"uv": [10.5, 5.5, 11, 7.5], "texture": "#particle"},
+				"west": {"uv": [10.5, 5.5, 11, 7.5], "texture": "#particle"},
+				"down": {"uv": [10.5, 7, 11, 7.5], "texture": "#particle"}
+			}
+		},
+		{
+			"name": "axe_of_peace_7",
+			"from": [10, 7, 7.5],
+			"to": [12, 9, 8.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [-8, -11, 7.5]},
+			"faces": {
+				"north": {"uv": [10, 6, 9, 7], "texture": "#particle"},
+				"south": {"uv": [9, 6, 10, 7], "texture": "#particle"},
+				"west": {"uv": [9, 6, 9.5, 7], "texture": "#particle"},
+				"down": {"uv": [9, 6.5, 10, 7], "texture": "#particle"}
+			}
+		},
+		{
+			"name": "axe_of_peace_8",
+			"from": [14, 6, 7.5],
+			"to": [15, 9, 8.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [-8, -11, 7.5]},
+			"faces": {
+				"north": {"uv": [11.5, 6, 11, 7.5], "texture": "#particle"},
+				"east": {"uv": [11, 6, 11.5, 7.5], "texture": "#particle"},
+				"south": {"uv": [11, 6, 11.5, 7.5], "texture": "#particle"},
+				"up": {"uv": [11, 6, 11.5, 6.5], "texture": "#particle"},
+				"down": {"uv": [11, 7, 11.5, 7.5], "texture": "#particle"}
+			}
+		},
+		{
+			"name": "axe_of_peace_9",
+			"from": [9, 5, 7.5],
+			"to": [10, 8, 8.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [-8, -11, 7.5]},
+			"faces": {
+				"north": {"uv": [9, 6.5, 8.5, 8], "texture": "#particle"},
+				"east": {"uv": [8.5, 6.5, 9, 8], "texture": "#particle"},
+				"south": {"uv": [8.5, 6.5, 9, 8], "texture": "#particle"},
+				"west": {"uv": [8.5, 6.5, 9, 8], "texture": "#particle"},
+				"up": {"uv": [8.5, 6.5, 9, 7], "texture": "#particle"},
+				"down": {"uv": [8.5, 7.5, 9, 8], "texture": "#particle"}
+			}
+		},
+		{
+			"name": "axe_of_peace_10",
+			"from": [8, 4, 7.5],
+			"to": [9, 7, 8.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [-8, -11, 7.5]},
+			"faces": {
+				"north": {"uv": [8.5, 7, 8, 8.5], "texture": "#particle"},
+				"east": {"uv": [8, 7, 8.5, 8.5], "texture": "#particle"},
+				"south": {"uv": [8, 7, 8.5, 8.5], "texture": "#particle"},
+				"west": {"uv": [8, 7, 8.5, 8.5], "texture": "#particle"},
+				"up": {"uv": [8, 7, 8.5, 7.5], "texture": "#particle"},
+				"down": {"uv": [8, 8, 8.5, 8.5], "texture": "#particle"}
+			}
+		},
+		{
+			"name": "axe_of_peace_11",
+			"from": [10, 6, 7.5],
+			"to": [11, 7, 8.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [-8, -11, 7.5]},
+			"faces": {
+				"north": {"uv": [9.5, 7, 9, 7.5], "texture": "#particle"},
+				"east": {"uv": [9, 7, 9.5, 7.5], "texture": "#particle"},
+				"south": {"uv": [9, 7, 9.5, 7.5], "texture": "#particle"},
+				"down": {"uv": [9, 7, 9.5, 7.5], "texture": "#particle"}
+			}
+		},
+		{
+			"name": "axe_of_peace_12",
+			"from": [7, 3, 7.5],
+			"to": [8, 6, 8.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [-8, -11, 7.5]},
+			"faces": {
+				"north": {"uv": [8, 7.5, 7.5, 9], "texture": "#particle"},
+				"east": {"uv": [7.5, 7.5, 8, 9], "texture": "#particle"},
+				"south": {"uv": [7.5, 7.5, 8, 9], "texture": "#particle"},
+				"west": {"uv": [7.5, 7.5, 8, 9], "texture": "#particle"},
+				"up": {"uv": [7.5, 7.5, 8, 8], "texture": "#particle"},
+				"down": {"uv": [7.5, 8.5, 8, 9], "texture": "#particle"}
+			}
+		},
+		{
+			"name": "axe_of_peace_13",
+			"from": [6, 2, 7.5],
+			"to": [7, 5, 8.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [-8, -11, 7.5]},
+			"faces": {
+				"north": {"uv": [7.5, 8, 7, 9.5], "texture": "#particle"},
+				"east": {"uv": [7, 8, 7.5, 9.5], "texture": "#particle"},
+				"south": {"uv": [7, 8, 7.5, 9.5], "texture": "#particle"},
+				"west": {"uv": [7, 8, 7.5, 9.5], "texture": "#particle"},
+				"up": {"uv": [7, 8, 7.5, 8.5], "texture": "#particle"},
+				"down": {"uv": [7, 9, 7.5, 9.5], "texture": "#particle"}
+			}
+		},
+		{
+			"name": "axe_of_peace_14",
+			"from": [5, 1, 7.5],
+			"to": [6, 4, 8.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [-8, -11, 7.5]},
+			"faces": {
+				"north": {"uv": [7, 8.5, 6.5, 10], "texture": "#particle"},
+				"east": {"uv": [6.5, 8.5, 7, 10], "texture": "#particle"},
+				"south": {"uv": [6.5, 8.5, 7, 10], "texture": "#particle"},
+				"west": {"uv": [6.5, 8.5, 7, 10], "texture": "#particle"},
+				"up": {"uv": [6.5, 8.5, 7, 9], "texture": "#particle"},
+				"down": {"uv": [6.5, 9.5, 7, 10], "texture": "#particle"}
+			}
+		},
+		{
+			"name": "axe_of_peace_15",
+			"from": [4, 0, 7.5],
+			"to": [5, 3, 8.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [-8, -11, 7.5]},
+			"faces": {
+				"north": {"uv": [6.5, 9, 6, 10.5], "texture": "#particle"},
+				"east": {"uv": [6, 9, 6.5, 10.5], "texture": "#particle"},
+				"south": {"uv": [6, 9, 6.5, 10.5], "texture": "#particle"},
+				"west": {"uv": [6, 9, 6.5, 10.5], "texture": "#particle"},
+				"up": {"uv": [6, 9, 6.5, 9.5], "texture": "#particle"},
+				"down": {"uv": [6, 10, 6.5, 10.5], "texture": "#particle"}
+			}
+		},
+		{
+			"name": "axe_of_peace_16",
+			"from": [3, -1, 7.5],
+			"to": [4, 2, 8.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [-8, -11, 7.5]},
+			"faces": {
+				"north": {"uv": [6, 9.5, 5.5, 11], "texture": "#particle"},
+				"east": {"uv": [5.5, 9.5, 6, 11], "texture": "#particle"},
+				"south": {"uv": [5.5, 9.5, 6, 11], "texture": "#particle"},
+				"west": {"uv": [5.5, 9.5, 6, 11], "texture": "#particle"},
+				"up": {"uv": [5.5, 9.5, 6, 10], "texture": "#particle"},
+				"down": {"uv": [5.5, 10.5, 6, 11], "texture": "#particle"}
+			}
+		},
+		{
+			"name": "axe_of_peace_17",
+			"from": [2, -3, 7.5],
+			"to": [3, 1, 8.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [-8, -11, 7.5]},
+			"faces": {
+				"north": {"uv": [5.5, 10, 5, 12], "texture": "#particle"},
+				"east": {"uv": [5, 10, 5.5, 12], "texture": "#particle"},
+				"south": {"uv": [5, 10, 5.5, 12], "texture": "#particle"},
+				"west": {"uv": [5, 10, 5.5, 12], "texture": "#particle"},
+				"up": {"uv": [5, 10, 5.5, 10.5], "texture": "#particle"},
+				"down": {"uv": [5, 11.5, 5.5, 12], "texture": "#particle"}
+			}
+		},
+		{
+			"name": "axe_of_peace_18",
+			"from": [0, -3, 7.5],
+			"to": [2, 0, 8.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [-8, -11, 7.5]},
+			"faces": {
+				"north": {"uv": [5, 10.5, 4, 12], "texture": "#particle"},
+				"south": {"uv": [4, 10.5, 5, 12], "texture": "#particle"},
+				"west": {"uv": [4, 10.5, 4.5, 12], "texture": "#particle"},
+				"up": {"uv": [4, 10.5, 5, 11], "texture": "#particle"},
+				"down": {"uv": [4, 11.5, 5, 12], "texture": "#particle"}
+			}
+		},
+		{
+			"from": [12, 6.25, 6.5],
+			"to": [15, 13.25, 9.5],
+			"rotation": {"angle": -22.5, "axis": "z", "origin": [11.5, 9.5, 8.5]},
+			"faces": {
+				"north": {"uv": [7.5, 14.5, 11, 16], "rotation": 270, "texture": "#particle"},
+				"south": {"uv": [12.5, 14.5, 16, 16], "rotation": 90, "texture": "#particle"},
+				"up": {"uv": [11, 14.5, 12.5, 16], "rotation": 90, "texture": "#particle"},
+				"down": {"uv": [6, 14.5, 7.5, 16], "rotation": 90, "texture": "#particle"}
+			}
+		},
+		{
+			"from": [15, 13.25, 9.5],
+			"to": [12, 6.25, 6.5],
+			"rotation": {"angle": -22.5, "axis": "z", "origin": [11.5, 9.5, 8.5]},
+			"faces": {
+				"north": {"uv": [12.5, 16, 16, 14.5], "rotation": 270, "texture": "#particle"},
+				"south": {"uv": [7.5, 16, 11, 14.5], "rotation": 90, "texture": "#particle"},
+				"up": {"uv": [6, 16, 7.5, 14.5], "rotation": 90, "texture": "#particle"},
+				"down": {"uv": [11, 16, 12.5, 14.5], "rotation": 90, "texture": "#particle"}
+			}
+		}
+	],
+	"gui_light": "front",
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [0, -90, 40],
+			"translation": [0, 2.5, 0],
+			"scale": [0.85, 0.85, 0.85]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [0, 90, -40],
+			"translation": [0, 2.5, 0],
+			"scale": [0.85, 0.85, 0.85]
+		},
+		"firstperson_righthand": {
+			"rotation": [0, -105, 60],
+			"translation": [1.88, 4.95, 1.13],
+			"scale": [0.68, 0.68, 0.68]
+		},
+		"firstperson_lefthand": {
+			"rotation": [0, 75, -60],
+			"translation": [1.88, 4.95, 1.13],
+			"scale": [0.68, 0.68, 0.68]
+		},
+		"ground": {
+			"translation": [0, 5.25, 0],
+			"scale": [0.5, 0.5, 0.5]
+		},
+		"gui": {
+			"rotation": [0, 25, -7],
+			"translation": [0.25, 1.5, 0],
+			"scale": [0.96, 0.96, 0.96]
+		},
+		"fixed": {
+			"rotation": [-7, -180, 0],
+			"translation": [0, 2, -0.75]
+		},
+		"on_shelf": {
+			"rotation": [-36, -90, 0],
+			"translation": [0, 9.25, 7.25],
+			"scale": [2, 2, 2]
+		}
+	}
+}

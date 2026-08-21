@@ -1,0 +1,29 @@
+{
+	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+	"parent": "item/trident/trident",
+	"textures": {
+		"layer0": "item/trident/trident_before_christmas"
+	},
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [0, -90, 53],
+			"translation": [-0.25, 2.5, 1],
+			"scale": [1.7, 1.7, 0.85]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [0, 90, -53],
+			"translation": [-0.25, 2.5, 1],
+			"scale": [1.7, 1.7, 0.85]
+		},
+		"firstperson_righthand": {
+			"rotation": [0, -100, 50],
+			"translation": [4.13, 5.35, 1.13],
+			"scale": [1.36, 1.36, 0.68]
+		},
+		"firstperson_lefthand": {
+			"rotation": [0, 80, -50],
+			"translation": [4.13, 5.35, 1.13],
+			"scale": [1.36, 1.36, 0.68]
+		}
+	}
+}

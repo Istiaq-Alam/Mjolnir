@@ -1,0 +1,26 @@
+{
+	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+	"parent": "item/trident/golden_apple_trident",
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [0, -90, -135],
+			"translation": [-0.25, -4.75, 1.5],
+			"scale": [1.7, 1.7, 0.85]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [0, 90, 135],
+			"translation": [-0.25, -4.75, 1.5],
+			"scale": [1.7, 1.7, 0.85]
+		},
+		"firstperson_righthand": {
+			"rotation": [-12, -94, 48],
+			"translation": [6, -1.25, -2.25],
+			"scale": [1.36, 1.36, 0.68]
+		},
+		"firstperson_lefthand": {
+			"rotation": [-12, 86, -48],
+			"translation": [6, -1.25, -2.25],
+			"scale": [1.36, 1.36, 0.68]
+		}
+	}
+}

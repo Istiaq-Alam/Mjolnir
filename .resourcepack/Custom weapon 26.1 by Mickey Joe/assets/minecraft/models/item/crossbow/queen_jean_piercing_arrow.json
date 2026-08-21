@@ -1,0 +1,790 @@
+{
+	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+	"texture_size": [32, 32],
+	"textures": {
+		"1": "item/crossbow/queen_jean_piercing",
+		"particle": "item/crossbow/queen_jean_piercing",
+		"arrow": "item/arrow"
+	},
+	"elements": [
+		{
+			"name": "Box1",
+			"from": [8.15, 7.45, 18.175],
+			"to": [9.15, 8.45, 22.175],
+			"rotation": {"angle": 45, "axis": "y", "origin": [0.375, 7.5, 9.25]},
+			"faces": {
+				"north": {"uv": [5, 12, 6, 13], "rotation": 90, "texture": "#arrow"},
+				"east": {"uv": [2, 12, 6, 13], "texture": "#arrow"},
+				"south": {"uv": [3, 13, 2, 12], "rotation": 90, "texture": "#arrow"},
+				"west": {"uv": [6, 12, 2, 13], "texture": "#arrow"},
+				"up": {"uv": [6, 13, 2, 12], "rotation": 90, "texture": "#arrow"},
+				"down": {"uv": [6, 12, 2, 13], "rotation": 270, "texture": "#arrow"}
+			}
+		},
+		{
+			"name": "Box2",
+			"from": [9.15, 7.45, 19.175],
+			"to": [10.15, 8.45, 22.175],
+			"rotation": {"angle": 45, "axis": "y", "origin": [0.375, 7.5, 9.25]},
+			"faces": {
+				"north": {"uv": [4, 13, 5, 14], "rotation": 90, "texture": "#arrow"},
+				"east": {"uv": [2, 13, 5, 14], "texture": "#arrow"},
+				"south": {"uv": [3, 14, 2, 13], "rotation": 90, "texture": "#arrow"},
+				"up": {"uv": [5, 14, 2, 13], "rotation": 90, "texture": "#arrow"},
+				"down": {"uv": [5, 13, 2, 14], "rotation": 270, "texture": "#arrow"}
+			}
+		},
+		{
+			"name": "Box3",
+			"from": [7.15, 7.45, 18.175],
+			"to": [8.15, 8.45, 21.175],
+			"rotation": {"angle": 45, "axis": "y", "origin": [0.375, 7.5, 9.25]},
+			"faces": {
+				"north": {"uv": [5, 11, 6, 12], "rotation": 90, "texture": "#arrow"},
+				"south": {"uv": [4, 12, 3, 11], "rotation": 90, "texture": "#arrow"},
+				"west": {"uv": [6, 11, 3, 12], "texture": "#arrow"},
+				"up": {"uv": [6, 12, 3, 11], "rotation": 90, "texture": "#arrow"},
+				"down": {"uv": [6, 11, 3, 12], "rotation": 270, "texture": "#arrow"}
+			}
+		},
+		{
+			"name": "Box4",
+			"from": [10.15, 7.45, 20.175],
+			"to": [11.15, 8.45, 21.175],
+			"rotation": {"angle": 45, "axis": "y", "origin": [0.375, 7.5, 9.25]},
+			"faces": {
+				"north": {"uv": [3, 14, 4, 15], "rotation": 90, "texture": "#arrow"},
+				"east": {"uv": [3, 14, 4, 15], "texture": "#arrow"},
+				"south": {"uv": [4, 15, 3, 14], "rotation": 90, "texture": "#arrow"},
+				"up": {"uv": [4, 15, 3, 14], "rotation": 90, "texture": "#arrow"},
+				"down": {"uv": [4, 14, 3, 15], "rotation": 270, "texture": "#arrow"}
+			}
+		},
+		{
+			"name": "Box5",
+			"from": [6.15, 7.45, 17.175],
+			"to": [7.15, 8.45, 19.175],
+			"rotation": {"angle": 45, "axis": "y", "origin": [0.375, 7.5, 9.25]},
+			"faces": {
+				"north": {"uv": [6, 10, 7, 11], "rotation": 90, "texture": "#arrow"},
+				"east": {"uv": [5, 10, 7, 11], "texture": "#arrow"},
+				"south": {"uv": [6, 11, 5, 10], "rotation": 90, "texture": "#arrow"},
+				"west": {"uv": [7, 10, 5, 11], "texture": "#arrow"},
+				"up": {"uv": [7, 11, 5, 10], "rotation": 90, "texture": "#arrow"},
+				"down": {"uv": [7, 10, 5, 11], "rotation": 270, "texture": "#arrow"}
+			}
+		},
+		{
+			"name": "Box6",
+			"from": [5.15, 7.45, 16.175],
+			"to": [6.15, 8.45, 18.175],
+			"rotation": {"angle": 45, "axis": "y", "origin": [0.375, 7.5, 9.25]},
+			"faces": {
+				"north": {"uv": [7, 9, 8, 10], "rotation": 90, "texture": "#arrow"},
+				"east": {"uv": [6, 9, 8, 10], "texture": "#arrow"},
+				"south": {"uv": [7, 10, 6, 9], "rotation": 90, "texture": "#arrow"},
+				"west": {"uv": [8, 9, 6, 10], "texture": "#arrow"},
+				"up": {"uv": [8, 10, 6, 9], "rotation": 90, "texture": "#arrow"},
+				"down": {"uv": [8, 9, 6, 10], "rotation": 270, "texture": "#arrow"}
+			}
+		},
+		{
+			"name": "Box7",
+			"from": [4.15, 7.45, 15.175],
+			"to": [5.15, 8.45, 17.175],
+			"rotation": {"angle": 45, "axis": "y", "origin": [0.375, 7.5, 9.25]},
+			"faces": {
+				"north": {"uv": [8, 8, 9, 9], "rotation": 90, "texture": "#arrow"},
+				"east": {"uv": [7, 8, 9, 9], "texture": "#arrow"},
+				"south": {"uv": [8, 9, 7, 8], "rotation": 90, "texture": "#arrow"},
+				"west": {"uv": [9, 8, 7, 9], "texture": "#arrow"},
+				"up": {"uv": [9, 9, 7, 8], "rotation": 90, "texture": "#arrow"},
+				"down": {"uv": [9, 8, 7, 9], "rotation": 270, "texture": "#arrow"}
+			}
+		},
+		{
+			"name": "Box8",
+			"from": [3.15, 7.45, 14.175],
+			"to": [4.15, 8.45, 16.175],
+			"rotation": {"angle": 45, "axis": "y", "origin": [0.375, 7.5, 9.25]},
+			"faces": {
+				"north": {"uv": [9, 7, 10, 8], "rotation": 90, "texture": "#arrow"},
+				"east": {"uv": [8, 7, 10, 8], "texture": "#arrow"},
+				"south": {"uv": [9, 8, 8, 7], "rotation": 90, "texture": "#arrow"},
+				"west": {"uv": [10, 7, 8, 8], "texture": "#arrow"},
+				"up": {"uv": [10, 8, 8, 7], "rotation": 90, "texture": "#arrow"},
+				"down": {"uv": [10, 7, 8, 8], "rotation": 270, "texture": "#arrow"}
+			}
+		},
+		{
+			"name": "Box9",
+			"from": [2.15, 7.45, 13.175],
+			"to": [3.15, 8.45, 15.175],
+			"rotation": {"angle": 45, "axis": "y", "origin": [0.375, 7.5, 9.25]},
+			"faces": {
+				"north": {"uv": [10, 6, 11, 7], "rotation": 90, "texture": "#arrow"},
+				"east": {"uv": [9, 6, 11, 7], "texture": "#arrow"},
+				"south": {"uv": [10, 7, 9, 6], "rotation": 90, "texture": "#arrow"},
+				"west": {"uv": [11, 6, 9, 7], "texture": "#arrow"},
+				"up": {"uv": [11, 7, 9, 6], "rotation": 90, "texture": "#arrow"},
+				"down": {"uv": [11, 6, 9, 7], "rotation": 270, "texture": "#arrow"}
+			}
+		},
+		{
+			"name": "Box10",
+			"from": [-0.85, 7.45, 9.175],
+			"to": [0.15, 8.45, 14.175],
+			"rotation": {"angle": 45, "axis": "y", "origin": [0.375, 7.5, 9.25]},
+			"faces": {
+				"north": {"uv": [14, 3, 15, 4], "rotation": 90, "texture": "#arrow"},
+				"east": {"uv": [10, 3, 15, 4], "texture": "#arrow"},
+				"south": {"uv": [11, 4, 10, 3], "rotation": 90, "texture": "#arrow"},
+				"west": {"uv": [15, 3, 10, 4], "texture": "#arrow"},
+				"up": {"uv": [15, 4, 10, 3], "rotation": 90, "texture": "#arrow"},
+				"down": {"uv": [15, 3, 10, 4], "rotation": 270, "texture": "#arrow"}
+			}
+		},
+		{
+			"name": "Box11",
+			"from": [0.15, 7.45, 10.175],
+			"to": [2.15, 8.45, 14.175],
+			"rotation": {"angle": 45, "axis": "y", "origin": [0.375, 7.5, 9.25]},
+			"faces": {
+				"north": {"uv": [13, 4, 14, 6], "rotation": 90, "texture": "#arrow"},
+				"east": {"uv": [10, 5, 14, 6], "texture": "#arrow"},
+				"south": {"uv": [11, 6, 10, 4], "rotation": 90, "texture": "#arrow"},
+				"up": {"uv": [14, 6, 10, 4], "rotation": 90, "texture": "#arrow"},
+				"down": {"uv": [14, 4, 10, 6], "rotation": 270, "texture": "#arrow"}
+			}
+		},
+		{
+			"name": "Box12",
+			"from": [-1.85, 7.45, 9.175],
+			"to": [-0.85, 8.45, 12.175],
+			"rotation": {"angle": 45, "axis": "y", "origin": [0.375, 7.5, 9.25]},
+			"faces": {
+				"north": {"uv": [14, 2, 15, 3], "rotation": 90, "texture": "#arrow"},
+				"south": {"uv": [13, 3, 12, 2], "rotation": 90, "texture": "#arrow"},
+				"west": {"uv": [15, 2, 12, 3], "texture": "#arrow"},
+				"up": {"uv": [15, 3, 12, 2], "rotation": 90, "texture": "#arrow"},
+				"down": {"uv": [15, 2, 12, 3], "rotation": 270, "texture": "#arrow"}
+			}
+		},
+		{
+			"name": "Box13",
+			"from": [2.15, 7.45, 11.175],
+			"to": [3.15, 8.45, 12.175],
+			"rotation": {"angle": 45, "axis": "y", "origin": [0.375, 7.5, 9.25]},
+			"faces": {
+				"north": {"uv": [12, 6, 13, 7], "rotation": 90, "texture": "#arrow"},
+				"east": {"uv": [12, 6, 13, 7], "texture": "#arrow"},
+				"south": {"uv": [13, 7, 12, 6], "rotation": 90, "texture": "#arrow"},
+				"up": {"uv": [13, 7, 12, 6], "rotation": 90, "texture": "#arrow"},
+				"down": {"uv": [13, 6, 12, 7], "rotation": 270, "texture": "#arrow"}
+			}
+		},
+		{
+			"name": "queen_jean_piercing_74",
+			"from": [2.925, 1, 8],
+			"to": [13.925, 2, 9],
+			"rotation": {"angle": 45, "axis": "z", "origin": [7.925, 8, 5.75]},
+			"faces": {
+				"north": {"uv": [15.5, 15.5, 10, 16], "texture": "#1"},
+				"south": {"uv": [10, 15.5, 15.5, 16], "texture": "#1"},
+				"up": {"uv": [10, 15.5, 15.5, 16], "texture": "#1"},
+				"down": {"uv": [10, 15.5, 15.5, 16], "texture": "#1"}
+			}
+		},
+		{
+			"name": "queen_jean_piercing_47",
+			"from": [13.925, 1, 8],
+			"to": [14.925, 13, 9],
+			"rotation": {"angle": 45, "axis": "z", "origin": [7.925, 8, 5.75]},
+			"faces": {
+				"north": {"uv": [16, 10, 15.5, 16], "texture": "#1"},
+				"east": {"uv": [15.5, 10, 16, 16], "texture": "#1"},
+				"south": {"uv": [15.5, 10, 16, 16], "texture": "#1"},
+				"west": {"uv": [15.5, 10, 16, 16], "texture": "#1"},
+				"down": {"uv": [15.5, 15.5, 16, 16], "texture": "#1"}
+			}
+		},
+		{
+			"name": "queen_jean_piercing_48",
+			"from": [1.925, 5, 8],
+			"to": [2.925, 9, 9],
+			"rotation": {"angle": 45, "axis": "z", "origin": [7.925, 8, 5.75]},
+			"faces": {
+				"east": {"uv": [3, 10.5, 3.5, 12.5], "texture": "#1"},
+				"south": {"uv": [3, 10.5, 3.5, 12.5], "texture": "#1"},
+				"up": {"uv": [3, 10.5, 3.5, 11], "texture": "#1"},
+				"down": {"uv": [3, 12, 3.5, 12.5], "texture": "#1"}
+			}
+		},
+		{
+			"name": "queen_jean_piercing_44",
+			"from": [0.925, 5, 8],
+			"to": [1.925, 10, 9],
+			"rotation": {"angle": 45, "axis": "z", "origin": [7.925, 8, 5.75]},
+			"faces": {
+				"north": {"uv": [3, 10, 2.5, 12.5], "texture": "#1"},
+				"east": {"uv": [2.5, 10, 3, 12.5], "texture": "#1"},
+				"south": {"uv": [2.5, 10, 3, 12.5], "texture": "#1"},
+				"up": {"uv": [2.5, 10, 3, 10.5], "texture": "#1"},
+				"down": {"uv": [2.5, 12, 3, 12.5], "texture": "#1"}
+			}
+		},
+		{
+			"name": "queen_jean_piercing_42",
+			"from": [-0.075, 5, 8],
+			"to": [0.925, 11, 9],
+			"rotation": {"angle": 45, "axis": "z", "origin": [7.925, 8, 5.75]},
+			"faces": {
+				"north": {"uv": [2.5, 9.5, 2, 12.5], "texture": "#1"},
+				"east": {"uv": [2, 9.5, 2.5, 12.5], "texture": "#1"},
+				"south": {"uv": [2, 9.5, 2.5, 12.5], "texture": "#1"},
+				"up": {"uv": [2, 9.5, 2.5, 10], "texture": "#1"},
+				"down": {"uv": [2, 12, 2.5, 12.5], "texture": "#1"}
+			}
+		},
+		{
+			"name": "queen_jean_piercing_41",
+			"from": [0.925, -1, 8],
+			"to": [1.925, 0, 9],
+			"rotation": {"angle": 45, "axis": "z", "origin": [7.925, 8, 5.75]},
+			"faces": {
+				"north": {"uv": [0.5, 9.5, 0, 10], "texture": "#1"},
+				"east": {"uv": [0, 9.5, 0.5, 10], "texture": "#1"},
+				"south": {"uv": [0, 9.5, 0.5, 10], "texture": "#1"},
+				"west": {"uv": [0, 9.5, 0.5, 10], "texture": "#1"},
+				"down": {"uv": [0, 9.5, 0.5, 10], "texture": "#1"}
+			}
+		},
+		{
+			"name": "queen_jean_piercing_32",
+			"from": [2.925, 2, 8],
+			"to": [3.925, 3, 9],
+			"rotation": {"angle": 45, "axis": "z", "origin": [7.925, 8, 5.75]},
+			"faces": {
+				"north": {"uv": [1.5, 8, 1, 8.5], "texture": "#1"},
+				"east": {"uv": [1, 8, 1.5, 8.5], "texture": "#1"},
+				"south": {"uv": [1, 8, 1.5, 8.5], "texture": "#1"}
+			}
+		},
+		{
+			"name": "queen_jean_piercing_30",
+			"from": [0.925, 0, 8],
+			"to": [2.925, 4, 9],
+			"rotation": {"angle": 45, "axis": "z", "origin": [7.925, 8, 5.75]},
+			"faces": {
+				"north": {"uv": [1, 7.5, 0, 9.5], "texture": "#1"},
+				"east": {"uv": [0.5, 7.5, 1, 9.5], "texture": "#1"},
+				"south": {"uv": [0, 7.5, 1, 9.5], "texture": "#1"},
+				"west": {"uv": [0, 7.5, 0.5, 9.5], "texture": "#1"},
+				"up": {"uv": [0, 7.5, 1, 8], "texture": "#1"},
+				"down": {"uv": [0, 9, 1, 9.5], "texture": "#1"}
+			}
+		},
+		{
+			"name": "queen_jean_piercing_27",
+			"from": [2.925, 3, 8],
+			"to": [4.925, 5, 9],
+			"rotation": {"angle": 45, "axis": "z", "origin": [7.925, 8, 5.75]},
+			"faces": {
+				"north": {"uv": [2, 7, 1, 8], "texture": "#1"},
+				"east": {"uv": [1.5, 7, 2, 8], "texture": "#1"},
+				"south": {"uv": [1, 7, 2, 8], "texture": "#1"},
+				"west": {"uv": [1, 7, 1.5, 8], "texture": "#1"},
+				"up": {"uv": [1, 7, 2, 7.5], "texture": "#1"},
+				"down": {"uv": [1, 7.5, 2, 8], "texture": "#1"}
+			}
+		},
+		{
+			"name": "queen_jean_piercing_37",
+			"from": [-1.075, 5, 8],
+			"to": [-0.075, 12, 9],
+			"rotation": {"angle": 45, "axis": "z", "origin": [7.925, 8, 5.75]},
+			"faces": {
+				"north": {"uv": [2, 9, 1.5, 12.5], "texture": "#1"},
+				"east": {"uv": [1.5, 9, 2, 12.5], "texture": "#1"},
+				"south": {"uv": [1.5, 9, 2, 12.5], "texture": "#1"},
+				"west": {"uv": [1.5, 9, 2, 12.5], "texture": "#1"},
+				"up": {"uv": [1.5, 9, 2, 9.5], "texture": "#1"},
+				"down": {"uv": [1.5, 12, 2, 12.5], "texture": "#1"}
+			}
+		},
+		{
+			"name": "queen_jean_piercing_35",
+			"from": [11.925, -1, 7],
+			"to": [12.925, 0, 8],
+			"rotation": {"angle": 45, "axis": "z", "origin": [7.925, 8, 5.75]},
+			"faces": {
+				"north": {"uv": [7, 8.5, 6.5, 9], "texture": "#1"},
+				"south": {"uv": [6.5, 8.5, 7, 9], "texture": "#1"},
+				"west": {"uv": [6.5, 8.5, 7, 9], "texture": "#1"},
+				"up": {"uv": [6.5, 8.5, 7, 9], "texture": "#1"},
+				"down": {"uv": [6.5, 8.5, 7, 9], "texture": "#1"}
+			}
+		},
+		{
+			"name": "queen_jean_piercing_28",
+			"from": [14.925, -1, 7],
+			"to": [15.925, 3, 8],
+			"rotation": {"angle": 45, "axis": "z", "origin": [7.925, 8, 5.75]},
+			"faces": {
+				"north": {"uv": [8.5, 7, 8, 9], "texture": "#1"},
+				"south": {"uv": [8, 7, 8.5, 9], "texture": "#1"},
+				"up": {"uv": [8, 7, 8.5, 7.5], "texture": "#1"},
+				"down": {"uv": [8, 8.5, 8.5, 9], "texture": "#1"}
+			}
+		},
+		{
+			"name": "queen_jean_piercing_24",
+			"from": [15.925, -1, 7],
+			"to": [16.925, 4, 8],
+			"rotation": {"angle": 45, "axis": "z", "origin": [7.925, 8, 5.75]},
+			"faces": {
+				"north": {"uv": [9, 6.5, 8.5, 9], "texture": "#1"},
+				"east": {"uv": [8.5, 6.5, 9, 9], "texture": "#1"},
+				"south": {"uv": [8.5, 6.5, 9, 9], "texture": "#1"},
+				"west": {"uv": [8.5, 6.5, 9, 9], "texture": "#1"},
+				"up": {"uv": [8.5, 6.5, 9, 7], "texture": "#1"},
+				"down": {"uv": [8.5, 8.5, 9, 9], "texture": "#1"}
+			}
+		},
+		{
+			"name": "queen_jean_piercing_23",
+			"from": [13.925, -1, 7],
+			"to": [14.925, 4, 8],
+			"rotation": {"angle": 45, "axis": "z", "origin": [7.925, 8, 5.75]},
+			"faces": {
+				"north": {"uv": [8, 6.5, 7.5, 9], "texture": "#1"},
+				"east": {"uv": [7.5, 6.5, 8, 9], "texture": "#1"},
+				"south": {"uv": [7.5, 6.5, 8, 9], "texture": "#1"},
+				"up": {"uv": [7.5, 6.5, 8, 7], "texture": "#1"},
+				"down": {"uv": [7.5, 8.5, 8, 9], "texture": "#1"}
+			}
+		},
+		{
+			"name": "queen_jean_piercing_22",
+			"from": [12.925, -1, 7],
+			"to": [13.925, 5, 8],
+			"rotation": {"angle": 45, "axis": "z", "origin": [7.925, 8, 5.75]},
+			"faces": {
+				"north": {"uv": [7.5, 6, 7, 9], "texture": "#1"},
+				"east": {"uv": [7, 6, 7.5, 9], "texture": "#1"},
+				"south": {"uv": [7, 6, 7.5, 9], "texture": "#1"},
+				"west": {"uv": [7, 6, 7.5, 9], "texture": "#1"},
+				"up": {"uv": [7, 6, 7.5, 6.5], "texture": "#1"},
+				"down": {"uv": [7, 8.5, 7.5, 9], "texture": "#1"}
+			}
+		},
+		{
+			"name": "queen_jean_piercing_21",
+			"from": [11.925, 1, 7],
+			"to": [12.925, 7, 8],
+			"rotation": {"angle": 45, "axis": "z", "origin": [7.925, 8, 5.75]},
+			"faces": {
+				"north": {"uv": [7, 5, 6.5, 8], "texture": "#1"},
+				"east": {"uv": [6.5, 5, 7, 8], "texture": "#1"},
+				"south": {"uv": [6.5, 5, 7, 8], "texture": "#1"},
+				"west": {"uv": [6.5, 5, 7, 8], "texture": "#1"},
+				"up": {"uv": [6.5, 5, 7, 5.5], "texture": "#1"},
+				"down": {"uv": [6.5, 7.5, 7, 8], "texture": "#1"}
+			}
+		},
+		{
+			"name": "queen_jean_piercing_20",
+			"from": [5.925, 6, 7],
+			"to": [6.925, 7, 8],
+			"rotation": {"angle": 45, "axis": "z", "origin": [7.925, 8, 5.75]},
+			"faces": {
+				"north": {"uv": [4, 5, 3.5, 5.5], "texture": "#1"},
+				"south": {"uv": [3.5, 5, 4, 5.5], "texture": "#1"},
+				"west": {"uv": [3.5, 5, 4, 5.5], "texture": "#1"},
+				"down": {"uv": [3.5, 5, 4, 5.5], "texture": "#1"}
+			}
+		},
+		{
+			"name": "queen_jean_piercing_19",
+			"from": [10.925, 2, 7],
+			"to": [11.925, 8, 8],
+			"rotation": {"angle": 45, "axis": "z", "origin": [7.925, 8, 5.75]},
+			"faces": {
+				"north": {"uv": [6.5, 4.5, 6, 7.5], "texture": "#1"},
+				"east": {"uv": [6, 4.5, 6.5, 7.5], "texture": "#1"},
+				"south": {"uv": [6, 4.5, 6.5, 7.5], "texture": "#1"},
+				"west": {"uv": [6, 4.5, 6.5, 7.5], "texture": "#1"},
+				"up": {"uv": [6, 4.5, 6.5, 5], "texture": "#1"},
+				"down": {"uv": [6, 7, 6.5, 7.5], "texture": "#1"}
+			}
+		},
+		{
+			"name": "queen_jean_piercing_18",
+			"from": [2.925, 4, 7],
+			"to": [3.925, 8, 8],
+			"rotation": {"angle": 45, "axis": "z", "origin": [7.925, 8, 5.75]},
+			"faces": {
+				"north": {"uv": [2.5, 4.5, 2, 6.5], "texture": "#1"},
+				"east": {"uv": [2, 4.5, 2.5, 6.5], "texture": "#1"},
+				"south": {"uv": [2, 4.5, 2.5, 6.5], "texture": "#1"},
+				"down": {"uv": [2, 6, 2.5, 6.5], "texture": "#1"}
+			}
+		},
+		{
+			"name": "queen_jean_piercing_17",
+			"from": [9.925, 3, 7],
+			"to": [10.925, 9, 8],
+			"rotation": {"angle": 45, "axis": "z", "origin": [7.925, 8, 5.75]},
+			"faces": {
+				"north": {"uv": [6, 4, 5.5, 7], "texture": "#1"},
+				"east": {"uv": [5.5, 4, 6, 7], "texture": "#1"},
+				"south": {"uv": [5.5, 4, 6, 7], "texture": "#1"},
+				"up": {"uv": [5.5, 4, 6, 4.5], "texture": "#1"},
+				"down": {"uv": [5.5, 6.5, 6, 7], "texture": "#1"}
+			}
+		},
+		{
+			"name": "queen_jean_piercing_16",
+			"from": [1.925, 4, 7],
+			"to": [2.925, 9, 8],
+			"rotation": {"angle": 45, "axis": "z", "origin": [7.925, 8, 5.75]},
+			"faces": {
+				"north": {"uv": [2, 4, 1.5, 6.5], "texture": "#1"},
+				"south": {"uv": [1.5, 4, 2, 6.5], "texture": "#1"},
+				"west": {"uv": [1.5, 4, 2, 6.5], "texture": "#1"},
+				"up": {"uv": [1.5, 4, 2, 4.5], "texture": "#1"},
+				"down": {"uv": [1.5, 6, 2, 6.5], "texture": "#1"}
+			}
+		},
+		{
+			"name": "queen_jean_piercing_15",
+			"from": [8.925, 3, 7],
+			"to": [9.925, 10, 8],
+			"rotation": {"angle": 45, "axis": "z", "origin": [7.925, 8, 5.75]},
+			"faces": {
+				"north": {"uv": [5.5, 3.5, 5, 7], "texture": "#1"},
+				"east": {"uv": [5, 3.5, 5.5, 7], "texture": "#1"},
+				"south": {"uv": [5, 3.5, 5.5, 7], "texture": "#1"},
+				"west": {"uv": [5, 3.5, 5.5, 7], "texture": "#1"},
+				"up": {"uv": [5, 3.5, 5.5, 4], "texture": "#1"},
+				"down": {"uv": [5, 6.5, 5.5, 7], "texture": "#1"}
+			}
+		},
+		{
+			"name": "queen_jean_piercing_14",
+			"from": [6.925, 13, 8],
+			"to": [10.925, 14, 9],
+			"rotation": {"angle": 45, "axis": "z", "origin": [7.925, 8, 5.75]},
+			"faces": {
+				"east": {"uv": [12, 3, 12.5, 3.5], "texture": "#1"},
+				"south": {"uv": [10.5, 3, 12.5, 3.5], "texture": "#1"},
+				"west": {"uv": [10.5, 3, 11, 3.5], "texture": "#1"},
+				"down": {"uv": [10.5, 3, 12.5, 3.5], "texture": "#1"}
+			}
+		},
+		{
+			"name": "queen_jean_piercing_13",
+			"from": [7.925, 4, 7],
+			"to": [8.925, 11, 8],
+			"rotation": {"angle": 45, "axis": "z", "origin": [7.925, 8, 5.75]},
+			"faces": {
+				"north": {"uv": [5, 3, 4.5, 6.5], "texture": "#1"},
+				"east": {"uv": [4.5, 3, 5, 6.5], "texture": "#1"},
+				"south": {"uv": [4.5, 3, 5, 6.5], "texture": "#1"},
+				"west": {"uv": [4.5, 3, 5, 6.5], "texture": "#1"},
+				"up": {"uv": [4.5, 3, 5, 3.5], "texture": "#1"},
+				"down": {"uv": [4.5, 6, 5, 6.5], "texture": "#1"}
+			}
+		},
+		{
+			"name": "queen_jean_piercing_12",
+			"from": [5.925, 14, 8],
+			"to": [10.925, 15, 9],
+			"rotation": {"angle": 45, "axis": "z", "origin": [7.925, 8, 5.75]},
+			"faces": {
+				"north": {"uv": [12.5, 2.5, 10, 3], "texture": "#1"},
+				"east": {"uv": [12, 2.5, 12.5, 3], "texture": "#1"},
+				"south": {"uv": [10, 2.5, 12.5, 3], "texture": "#1"},
+				"west": {"uv": [10, 2.5, 10.5, 3], "texture": "#1"},
+				"down": {"uv": [10, 2.5, 12.5, 3], "texture": "#1"}
+			}
+		},
+		{
+			"name": "queen_jean_piercing_11",
+			"from": [6.925, 5, 7],
+			"to": [7.925, 12, 8],
+			"rotation": {"angle": 45, "axis": "z", "origin": [7.925, 8, 5.75]},
+			"faces": {
+				"north": {"uv": [4.5, 2.5, 4, 6], "texture": "#1"},
+				"east": {"uv": [4, 2.5, 4.5, 6], "texture": "#1"},
+				"south": {"uv": [4, 2.5, 4.5, 6], "texture": "#1"},
+				"west": {"uv": [4, 2.5, 4.5, 6], "texture": "#1"},
+				"down": {"uv": [4, 5.5, 4.5, 6], "texture": "#1"}
+			}
+		},
+		{
+			"name": "queen_jean_piercing_10",
+			"from": [4.925, 15, 8],
+			"to": [10.925, 16, 9],
+			"rotation": {"angle": 45, "axis": "z", "origin": [7.925, 8, 5.75]},
+			"faces": {
+				"north": {"uv": [12.5, 2, 9.5, 2.5], "texture": "#1"},
+				"east": {"uv": [12, 2, 12.5, 2.5], "texture": "#1"},
+				"south": {"uv": [9.5, 2, 12.5, 2.5], "texture": "#1"},
+				"west": {"uv": [9.5, 2, 10, 2.5], "texture": "#1"},
+				"down": {"uv": [9.5, 2, 12.5, 2.5], "texture": "#1"}
+			}
+		},
+		{
+			"name": "queen_jean_piercing_9",
+			"from": [4.925, 7, 7],
+			"to": [6.925, 13, 8],
+			"rotation": {"angle": 45, "axis": "z", "origin": [7.925, 8, 5.75]},
+			"faces": {
+				"north": {"uv": [4, 2, 3, 5], "texture": "#1"},
+				"south": {"uv": [3, 2, 4, 5], "texture": "#1"},
+				"west": {"uv": [3, 2, 3.5, 5], "texture": "#1"},
+				"up": {"uv": [3, 2, 4, 2.5], "texture": "#1"},
+				"down": {"uv": [3, 4.5, 4, 5], "texture": "#1"}
+			}
+		},
+		{
+			"name": "queen_jean_piercing_8",
+			"from": [1.925, 11, 7],
+			"to": [2.925, 13, 8],
+			"rotation": {"angle": 45, "axis": "z", "origin": [7.925, 8, 5.75]},
+			"faces": {
+				"north": {"uv": [2, 2, 1.5, 3], "texture": "#1"},
+				"south": {"uv": [1.5, 2, 2, 3], "texture": "#1"},
+				"west": {"uv": [1.5, 2, 2, 3], "texture": "#1"},
+				"down": {"uv": [1.5, 2.5, 2, 3], "texture": "#1"}
+			}
+		},
+		{
+			"name": "queen_jean_piercing_7",
+			"from": [3.925, 16, 8],
+			"to": [10.925, 17, 9],
+			"rotation": {"angle": 45, "axis": "z", "origin": [7.925, 8, 5.75]},
+			"faces": {
+				"north": {"uv": [12.5, 1.5, 9, 2], "texture": "#1"},
+				"east": {"uv": [12, 1.5, 12.5, 2], "texture": "#1"},
+				"south": {"uv": [9, 1.5, 12.5, 2], "texture": "#1"},
+				"west": {"uv": [9, 1.5, 9.5, 2], "texture": "#1"},
+				"up": {"uv": [9, 1.5, 12.5, 2], "texture": "#1"},
+				"down": {"uv": [9, 1.5, 12.5, 2], "texture": "#1"}
+			}
+		},
+		{
+			"name": "queen_jean_piercing_6",
+			"from": [6.925, 12, 7],
+			"to": [11.925, 14, 8],
+			"rotation": {"angle": 45, "axis": "z", "origin": [7.925, 8, 5.75]},
+			"faces": {
+				"north": {"uv": [6.5, 1.5, 4, 2.5], "texture": "#1"},
+				"east": {"uv": [6, 1.5, 6.5, 2.5], "texture": "#1"},
+				"south": {"uv": [4, 1.5, 6.5, 2.5], "texture": "#1"},
+				"west": {"uv": [4, 1.5, 4.5, 2.5], "texture": "#1"},
+				"up": {"uv": [4, 1.5, 6.5, 2], "texture": "#1"},
+				"down": {"uv": [4, 2, 6.5, 2.5], "texture": "#1"}
+			}
+		},
+		{
+			"name": "queen_jean_piercing_5",
+			"from": [2.925, 8, 7],
+			"to": [4.925, 14, 8],
+			"rotation": {"angle": 45, "axis": "z", "origin": [7.925, 8, 5.75]},
+			"faces": {
+				"north": {"uv": [3, 1.5, 2, 4.5], "texture": "#1"},
+				"east": {"uv": [2.5, 1.5, 3, 4.5], "texture": "#1"},
+				"south": {"uv": [2, 1.5, 3, 4.5], "texture": "#1"},
+				"west": {"uv": [2, 1.5, 2.5, 4.5], "texture": "#1"},
+				"up": {"uv": [2, 1.5, 3, 2], "texture": "#1"},
+				"down": {"uv": [2, 4, 3, 4.5], "texture": "#1"}
+			}
+		},
+		{
+			"name": "queen_jean_piercing_2",
+			"from": [0.925, 13, 7],
+			"to": [2.925, 15, 8],
+			"rotation": {"angle": 45, "axis": "z", "origin": [7.925, 8, 5.75]},
+			"faces": {
+				"north": {"uv": [2, 1, 1, 2], "texture": "#1"},
+				"east": {"uv": [1.5, 1, 2, 2], "texture": "#1"},
+				"south": {"uv": [1, 1, 2, 2], "texture": "#1"},
+				"west": {"uv": [1, 1, 1.5, 2], "texture": "#1"},
+				"up": {"uv": [1, 1, 2, 1.5], "texture": "#1"},
+				"down": {"uv": [1, 1.5, 2, 2], "texture": "#1"}
+			}
+		},
+		{
+			"name": "queen_jean_piercing_1",
+			"from": [15.925, 14, 8],
+			"to": [16.925, 15, 9],
+			"rotation": {"angle": 45, "axis": "z", "origin": [7.925, 8, 5.75]},
+			"faces": {
+				"north": {"uv": [10, 0, 9.5, 0.5], "texture": "#1"},
+				"east": {"uv": [9.5, 0, 10, 0.5], "texture": "#1"},
+				"south": {"uv": [9.5, 0, 10, 0.5], "texture": "#1"},
+				"up": {"uv": [9.5, 0, 10, 0.5], "texture": "#1"},
+				"down": {"uv": [9.5, 0, 10, 0.5], "texture": "#1"}
+			}
+		},
+		{
+			"name": "queen_jean_piercing_0",
+			"from": [11.925, 13, 8],
+			"to": [15.925, 15, 9],
+			"rotation": {"angle": 45, "axis": "z", "origin": [7.925, 8, 5.75]},
+			"faces": {
+				"north": {"uv": [9.5, 0, 7.5, 1], "texture": "#1"},
+				"east": {"uv": [9, 0, 9.5, 1], "texture": "#1"},
+				"south": {"uv": [7.5, 0, 9.5, 1], "texture": "#1"},
+				"west": {"uv": [7.5, 0, 8, 1], "texture": "#1"},
+				"up": {"uv": [7.5, 0, 9.5, 0.5], "texture": "#1"},
+				"down": {"uv": [7.5, 0.5, 9.5, 1], "texture": "#1"}
+			}
+		},
+		{
+			"name": "queen_jean_piercing_4",
+			"from": [12.925, 12, 8],
+			"to": [13.925, 13, 9],
+			"rotation": {"angle": 45, "axis": "z", "origin": [7.925, 8, 5.75]},
+			"faces": {
+				"north": {"uv": [8.5, 1, 8, 1.5], "texture": "#1"},
+				"south": {"uv": [8, 1, 8.5, 1.5], "texture": "#1"},
+				"down": {"uv": [8, 1, 8.5, 1.5], "texture": "#1"}
+			}
+		},
+		{
+			"name": "queen_jean_piercing_3",
+			"from": [10.925, 11, 8],
+			"to": [12.925, 13, 9],
+			"rotation": {"angle": 45, "axis": "z", "origin": [7.925, 8, 5.75]},
+			"faces": {
+				"north": {"uv": [8, 1, 7, 2], "texture": "#1"},
+				"east": {"uv": [7.5, 1, 8, 2], "texture": "#1"},
+				"south": {"uv": [7, 1, 8, 2], "texture": "#1"},
+				"west": {"uv": [7, 1, 7.5, 2], "texture": "#1"},
+				"up": {"uv": [7, 1, 8, 1.5], "texture": "#1"},
+				"down": {"uv": [7, 1.5, 8, 2], "texture": "#1"}
+			}
+		},
+		{
+			"name": "burst_crossbow_base_22",
+			"from": [13.35343, 7.43972, 2.5],
+			"to": [16.35343, 8.43972, 3.5],
+			"rotation": {"angle": 0, "axis": "z", "origin": [7.925, 8, 5.75]},
+			"faces": {
+				"north": {"uv": [2, 15.5, 3.5, 16], "rotation": 180, "texture": "#1"},
+				"east": {"uv": [3, 15.5, 3.5, 16], "rotation": 270, "texture": "#1"},
+				"west": {"uv": [2, 15.5, 2.5, 16], "rotation": 90, "texture": "#1"},
+				"up": {"uv": [3.5, 15.5, 2, 16], "rotation": 180, "texture": "#1"},
+				"down": {"uv": [2, 15.5, 3.5, 16], "texture": "#1"}
+			}
+		},
+		{
+			"name": "burst_crossbow_base_21",
+			"from": [12.35343, 7.43972, 3.5],
+			"to": [16.35343, 8.43972, 4.5],
+			"rotation": {"angle": 0, "axis": "z", "origin": [7.925, 8, 5.75]},
+			"faces": {
+				"north": {"uv": [1.5, 15, 3.5, 15.5], "rotation": 180, "texture": "#1"},
+				"west": {"uv": [1.5, 15, 2, 15.5], "rotation": 90, "texture": "#1"},
+				"up": {"uv": [3.5, 15, 1.5, 15.5], "rotation": 180, "texture": "#1"},
+				"down": {"uv": [1.5, 15, 3.5, 15.5], "texture": "#1"}
+			}
+		},
+		{
+			"name": "burst_crossbow_base_20",
+			"from": [16.35343, 7.43972, 3.5],
+			"to": [17.35343, 8.43972, 5.5],
+			"rotation": {"angle": 0, "axis": "z", "origin": [7.925, 8, 5.75]},
+			"faces": {
+				"north": {"uv": [3.5, 15, 4, 15.5], "rotation": 180, "texture": "#1"},
+				"east": {"uv": [3.5, 14.5, 4, 15.5], "rotation": 270, "texture": "#1"},
+				"south": {"uv": [3.5, 14.5, 4, 15], "texture": "#1"},
+				"up": {"uv": [4, 14.5, 3.5, 15.5], "rotation": 180, "texture": "#1"},
+				"down": {"uv": [3.5, 14.5, 4, 15.5], "texture": "#1"}
+			}
+		},
+		{
+			"name": "burst_crossbow_base_19",
+			"from": [10.35343, 7.43972, 4.5],
+			"to": [11.35343, 8.43972, 5.5],
+			"rotation": {"angle": 0, "axis": "z", "origin": [7.925, 8, 5.75]},
+			"faces": {
+				"north": {"uv": [0.5, 14.5, 1, 15], "rotation": 180, "texture": "#1"},
+				"south": {"uv": [0.5, 14.5, 1, 15], "texture": "#1"},
+				"up": {"uv": [1, 14.5, 0.5, 15], "rotation": 180, "texture": "#1"},
+				"down": {"uv": [0.5, 14.5, 1, 15], "texture": "#1"}
+			}
+		},
+		{
+			"name": "burst_crossbow_base_16",
+			"from": [11.35343, 7.43972, 4.5],
+			"to": [16.35343, 8.43972, 7.5],
+			"rotation": {"angle": 0, "axis": "z", "origin": [7.925, 8, 5.75]},
+			"faces": {
+				"north": {"uv": [1, 14.5, 3.5, 15], "rotation": 180, "texture": "#1"},
+				"east": {"uv": [3, 13.5, 3.5, 15], "rotation": 270, "texture": "#1"},
+				"south": {"uv": [1, 13.5, 3.5, 14], "texture": "#1"},
+				"west": {"uv": [1, 13.5, 1.5, 15], "rotation": 90, "texture": "#1"},
+				"up": {"uv": [3.5, 13.5, 1, 15], "rotation": 180, "texture": "#1"},
+				"down": {"uv": [1, 13.5, 3.5, 15], "texture": "#1"}
+			}
+		},
+		{
+			"name": "burst_crossbow_base_15",
+			"from": [9.35343, 7.43972, 4.5],
+			"to": [10.35343, 8.43972, 7.5],
+			"rotation": {"angle": 0, "axis": "z", "origin": [7.925, 8, 5.75]},
+			"faces": {
+				"north": {"uv": [0, 14.5, 0.5, 15], "rotation": 180, "texture": "#1"},
+				"east": {"uv": [0, 13.5, 0.5, 15], "rotation": 270, "texture": "#1"},
+				"south": {"uv": [0, 13.5, 0.5, 14], "texture": "#1"},
+				"west": {"uv": [0, 13.5, 0.5, 15], "rotation": 90, "texture": "#1"},
+				"up": {"uv": [0.5, 13.5, 0, 15], "rotation": 180, "texture": "#1"},
+				"down": {"uv": [0, 13.5, 0.5, 15], "texture": "#1"}
+			}
+		}
+	],
+	"gui_light": "front",
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [-90, 0, -105],
+			"translation": [2, 0.85, -3],
+			"scale": [0.9, 0.9, 0.9]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [-90, 0, 75],
+			"translation": [2, 0.85, -3],
+			"scale": [0.9, 0.9, 0.9]
+		},
+		"firstperson_righthand": {
+			"rotation": [-90, 0, -100],
+			"translation": [1.13, 3.2, 1.13],
+			"scale": [0.68, 0.68, 0.68]
+		},
+		"firstperson_lefthand": {
+			"rotation": [-90, 0, 80],
+			"translation": [1.13, 3.2, 1.13],
+			"scale": [0.68, 0.68, 0.68]
+		},
+		"ground": {
+			"rotation": [0, 0, -45],
+			"translation": [0, 2, 0],
+			"scale": [0.5, 0.5, 0.5]
+		},
+		"gui": {
+			"rotation": [-29, 28, -27],
+			"translation": [-0.5, -0.15, 0],
+			"scale": [0.94, 0.94, 0.94]
+		},
+		"head": {
+			"rotation": [0, 0, -45]
+		},
+		"fixed": {
+			"rotation": [0, 180, -45],
+			"translation": [0, 0, -0.25]
+		}
+	}
+}

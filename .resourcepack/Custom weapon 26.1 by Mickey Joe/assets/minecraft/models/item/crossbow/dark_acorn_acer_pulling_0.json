@@ -1,0 +1,9 @@
+{
+	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+	"parent": "item/crossbow/acorn_acer_pulling_0",
+	"textures": {
+		"particle": "item/crossbow/dark_acorn_acer_barrel",
+		"base": "item/crossbow/dark_acorn_acer"
+		}
+	}
+}

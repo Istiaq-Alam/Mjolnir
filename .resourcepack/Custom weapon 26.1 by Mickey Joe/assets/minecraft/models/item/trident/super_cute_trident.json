@@ -1,0 +1,7 @@
+{
+	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+	"parent": "item/trident/trident",
+		"textures": {
+		"layer0": "item/trident/super_cute_trident"
+	}
+}

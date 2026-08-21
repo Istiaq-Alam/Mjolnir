@@ -1,0 +1,7 @@
+{
+	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+	"parent": "item/netherite_pickaxe/norroen_hammer",
+	"textures": {
+		"particle": "item/diamond_pickaxe/norroen_hammer"
+	}
+}

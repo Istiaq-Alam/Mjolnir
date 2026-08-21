@@ -1,0 +1,9 @@
+{
+	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+	"parent": "item/shield/dragonslayer_shield",
+	"textures": {
+		"0": "item/shield/dragonmaster_shield",
+		"particle": "item/shield/dragonmaster_shield"
+		}
+	}
+}

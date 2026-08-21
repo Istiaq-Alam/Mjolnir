@@ -1,0 +1,30 @@
+{
+	"format_version": "1.21.11",
+	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+	"parent": "item/mace/sextuple_d_hammer",
+	"textures": {
+		"particle": "item/mace/sextuple_d_hammer_flame",
+		"parts": "item/mace/sextuple_d_hammer_parts"
+	},
+	"elements": [
+		{
+			"from": [19.85326, 19.8997, 8],
+			"to": [27.85326, 29.8997, 8],
+			"light_emission": 15,
+			"rotation": {"angle": -22.5, "axis": "z", "origin": [20.10326, 20.3497, 8]},
+			"faces": {
+				"north": {"uv": [12, 2, 4, 12], "texture": "#particle"},
+				"south": {"uv": [4, 2, 12, 12], "texture": "#particle"}
+			}
+		},
+		{
+			"from": [20.1, 19, 6.075],
+			"to": [20.1, 23, 10.075],
+			"light_emission": 15,
+			"rotation": {"angle": 0, "axis": "y", "origin": [17.6, 21, 8.075]},
+			"faces": {
+				"east": {"uv": [6, 6, 8, 8], "texture": "#parts"}
+			}
+		}
+	]
+}

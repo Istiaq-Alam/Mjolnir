@@ -1,0 +1,27 @@
+{
+	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+    "parent": "item/netherite_hoe/netherite_hoe",
+    "textures": {
+        "layer0": "item/stone_hoe/diorite_hoe"
+    },
+    "overrides": [
+        {
+            "predicate": {
+                "damage": 0.25
+            },
+            "model": "item/stone_hoe/diorite_hoe_damaged_0"
+        },
+        {
+            "predicate": {
+                "damage": 0.5
+            },
+            "model": "item/stone_hoe/diorite_hoe_damaged_1"
+        },
+        {
+            "predicate": {
+                "damage": 0.75
+            },
+            "model": "item/stone_hoe/diorite_hoe_damaged_2"
+        }
+    ]
+}

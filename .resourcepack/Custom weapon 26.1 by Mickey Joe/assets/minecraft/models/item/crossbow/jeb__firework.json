@@ -1,0 +1,8 @@
+{
+	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+	"parent": "item/crossbow/crossbow_firework",
+	"textures": {
+		"crossbow_pulling_2": "item/crossbow/jeb__pulling_2",
+		"particle": "item/crossbow/jeb__base"
+	}
+}

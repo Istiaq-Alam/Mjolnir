@@ -1,0 +1,8 @@
+{
+	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+	"parent": "item/compass/kemetian_compass",
+	"textures": {
+		"particle": "item/compass/mineshaft",
+		"base": "item/compass/mineshaft_base"
+	}
+}

@@ -1,0 +1,7 @@
+{
+	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+	"parent": "item/shield/vanguard_shield",
+	"textures": {
+		"particle": "item/shield/nameless_shield"
+	}
+}

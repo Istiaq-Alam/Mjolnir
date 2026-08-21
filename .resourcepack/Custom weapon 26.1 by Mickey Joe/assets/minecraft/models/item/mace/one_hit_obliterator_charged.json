@@ -1,0 +1,7 @@
+{
+	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+	"parent": "item/mace/one_hit_obliterator",
+	"textures": {
+		"layer0": "item/mace/one_hit_obliterator_charged"
+	}
+}

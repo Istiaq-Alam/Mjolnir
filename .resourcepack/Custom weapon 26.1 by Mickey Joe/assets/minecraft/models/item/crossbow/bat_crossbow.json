@@ -1,0 +1,9 @@
+{
+	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+	"parent": "item/crossbow/shrieking_crossbow",
+	"textures": {
+		"0": "item/crossbow/bat_crossbow_base",
+		"1": "item/crossbow/bat_crossbow_standby",
+		"particle": "item/crossbow/bat_crossbow_base"
+	}
+}

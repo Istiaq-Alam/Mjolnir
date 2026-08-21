@@ -1,0 +1,19 @@
+{
+	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+    "parent": "item/handheld",
+    "textures": {
+        "layer0": "item/vex_iron_sword"
+    },
+    "display": {
+		"thirdperson_righthand": {
+			"rotation": [0, -90, 55],
+			"translation": [0, 10.75, 0],
+			"scale": [1.7, 1.7, 1.7]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [0, 90, -55],
+			"translation": [0, 10.75, 0],
+			"scale": [1.7, 1.7, 1.7]
+		}
+	}
+}

@@ -1,0 +1,7 @@
+{
+	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+	"parent": "item/crossbow/green_power_ring_crossbow_pulling_2",
+	"textures": {
+		"particle": "item/crossbow/red_power_ring_crossbow"
+	}
+}

@@ -1,0 +1,25 @@
+{
+	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+	"parent": "item/compass/bar/compass_37",
+	"textures": {
+		"particle": "item/compass/bar/lodestone_icons"
+	},
+	"elements": [
+		{
+			"from": [4.1, -0.4, 0],
+			"to": [5.9, 1.4, 0],
+			"rotation": {"angle": 0, "axis": "y", "origin": [4.5, 0, -2]},
+			"faces": {
+				"north": {"uv": [0, 7, 5, 12], "texture": "#particle"},
+				"south": {"uv": [0, 7, 5, 12], "texture": "#particle"}
+			}
+		}
+	],
+	"display": {
+		"gui": {
+			"rotation": [0, 180, 0],
+			"translation": [80, 36.6, 1],
+			"scale": [2.815, 2.815, 2.815]
+		}
+	}
+}

@@ -1,0 +1,121 @@
+{
+	"oversized_in_gui": true,
+	"model": {
+		"type": "condition",
+		"property": "has_component",
+		"component": "custom_name",
+		"on_true": {
+			"type": "select",
+			"property": "component",
+			"component": "custom_name",
+	  		"cases": [
+					{
+				"when": "Axe",
+				"model": {
+					"type": "model",
+					"model": "item/copper_axe"
+			 			}
+					},
+					{
+				"when": "Double Axe",
+				"model": {
+					"type": "model",
+					"model": "item/copper_axe/double_axe"
+			 			}
+					},
+					{
+				"when": "Super Cute Axe",
+				"model": {
+					"type": "model",
+					"model": "item/copper_axe/super_cute_axe"
+			 			}
+					},
+					{
+				"when": "Morning Star",
+				"model": {
+					"type": "model",
+					"model": "item/copper_axe/morning_star"
+			 			}
+					},
+					{
+				"when": "Highland Axe",
+				"model": {
+					"type": "model",
+					"model": "item/copper_axe/highland_axe"
+			 			}
+					},
+					{
+				"when": "Anchor",
+				"model": {
+					"type": "model",
+					"model": "item/copper_axe/anchor"
+			 			}
+					},
+					{
+				"when": "Axeblade",
+				"model": {
+					"type": "model",
+					"model": "item/copper_axe/axeblade"
+			 			}
+					},
+					{
+				"when": "Chainsaw",
+				"model": {
+					"type": "model",
+					"model": "item/copper_axe/chainsaw"
+			 			}
+					},
+					{
+				"when": "Kemetian Axe",
+				"model": {
+					"type": "model",
+					"model": "item/copper_axe/kemetian_axe"
+			 			}
+					},
+					{
+				"when": "Hellenic Axe",
+				"model": {
+					"type": "model",
+					"model": "item/copper_axe/hellenic_axe"
+			 			}
+					},
+					{
+				"when": "Sinitic Axe",
+				"model": {
+					"type": "model",
+					"model": "item/copper_axe/sinitic_axe"
+			 			}
+					},
+					{
+				"when": "Fantasy Axe",
+				"model": {
+					"type": "model",
+					"model": "item/copper_axe/fantasy_axe"
+			 			}
+					},
+					{
+				"when": "Norroen Axe",
+				"model": {
+					"type": "model",
+					"model": "item/copper_axe/norroen_axe"
+			 			}
+					},
+					{
+				"when": "Halloween Axe",
+				"model": {
+					"type": "model",
+					"model": "item/copper_axe/halloween_axe"
+			 			}
+					}
+		  		],
+			"fallback": {
+						"type": "model",
+						"model": "item/copper_axe"
+					}
+		},
+		"on_false": {
+						"type": "model",
+						"model": "item/copper_axe"
+					}
+	}
+}

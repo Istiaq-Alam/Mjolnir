@@ -1,0 +1,7 @@
+{
+	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+	"parent": "item/netherite_pickaxe/green_power_ring_pickaxe",
+	"textures": {
+		"layer0": "item/netherite_pickaxe/orange_power_ring_pickaxe"
+	}
+}

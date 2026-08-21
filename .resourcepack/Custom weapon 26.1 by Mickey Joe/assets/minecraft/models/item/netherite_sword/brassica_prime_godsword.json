@@ -1,0 +1,50 @@
+{
+	"format_version": "1.21.6",
+	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+	"parent": "builtin/generated",
+	"textures": {
+		"layer0": "item/netherite_sword/brassica_prime_godsword"
+	},
+	"gui_light": "front",
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [0, -90, 50],
+			"translation": [0, 4.75, 2],
+			"scale": [3.4, 3.4, 0.85]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [0, 90, -50],
+			"translation": [0, 4.75, 2],
+			"scale": [3.4, 3.4, 0.85]
+		},
+		"firstperson_righthand": {
+			"rotation": [-1, -115, 23],
+			"translation": [9.88, -0.55, -4.87],
+			"scale": [2.72, 2.72, 0.68]
+		},
+		"firstperson_lefthand": {
+			"rotation": [-1, 65, -23],
+			"translation": [9.88, -0.55, -4.87],
+			"scale": [2.72, 2.72, 0.68]
+		},
+		"ground": {
+			"translation": [1.5, 3.25, 0],
+			"scale": [2, 2, 0.5]
+		},
+		"gui": {
+			"rotation": [0, -25.5, -4],
+			"translation": [-0.25, -0.5, 0],
+			"scale": [1.8, 1.8, 0.45]
+		},
+		"fixed": {
+			"rotation": [0, -180, 0],
+			"translation": [1.5, -1.25, -0.5],
+			"scale": [4, 4, 1]
+		},
+		"on_shelf": {
+			"rotation": [130, -90, 0],
+			"translation": [0, 3.75, 9.25],
+			"scale": [4, 4, 1]
+		}
+	}
+}

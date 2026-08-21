@@ -1,0 +1,7 @@
+{
+	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+	"parent": "item/netherite_axe/morning_star",
+	"textures": {
+		"particle": "item/copper_axe/morning_star"
+	}
+}

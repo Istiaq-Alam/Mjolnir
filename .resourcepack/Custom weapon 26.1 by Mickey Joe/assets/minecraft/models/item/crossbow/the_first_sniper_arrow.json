@@ -1,0 +1,7 @@
+{
+	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+	"parent": "item/crossbow/sniper_arrow",
+	"textures": {
+		"particle": "item/crossbow/the_first_sniper"
+	}
+}

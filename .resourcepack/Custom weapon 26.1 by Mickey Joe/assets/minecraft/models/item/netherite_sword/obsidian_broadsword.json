@@ -1,0 +1,43 @@
+{
+	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+	"parent": "builtin/generated",
+	"textures": {
+		"layer0": "item/netherite_sword/obsidian_broadsword"
+	},
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [0, -90, 55],
+			"translation": [0, 6.5, 1],
+			"scale": [1.7, 1.7, 0.85]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [0, 90, -55],
+			"translation": [0, 6.5, 1],
+			"scale": [1.7, 1.7, 0.85]
+		},
+		"firstperson_righthand": {
+			"rotation": [0, -90, 25],
+			"translation": [1.13, 3.2, 1.13],
+			"scale": [1.36, 1.36, 0.68]
+		},
+		"firstperson_lefthand": {
+			"rotation": [0, 90, -25],
+			"translation": [1.13, 3.2, 1.13],
+			"scale": [1.36, 1.36, 0.68]
+		},
+		"ground": {
+			"rotation": [0, -25.5, 0],
+			"translation": [0, 6, 0],
+			"scale": [1.25, 1.25, 0.62]
+		},
+		"gui": {
+			"rotation": [0, -25, -3],
+			"translation": [-0.65, -0.5, 0],
+			"scale": [1.22, 1.22, 0.61]
+		},
+		"fixed": {
+			"rotation": [0, 180, 0],
+			"scale": [1.9, 1.9, 1]
+		}
+	}
+}

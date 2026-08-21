@@ -1,0 +1,43 @@
+{
+	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+	"parent": "builtin/generated",
+	"textures": {
+		"layer0": "item/netherite_sword/deathcalibur_sharpness"
+	},
+	"gui_light": "front",
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [0, -90, 55],
+			"translation": [0, 6.75, 0.5],
+			"scale": [1.7, 1.7, 0.85]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [0, 90, -55],
+			"translation": [0, 6.75, 0.5],
+			"scale": [1.7, 1.7, 0.85]
+		},
+		"firstperson_righthand": {
+			"rotation": [2, -105, 63],
+			"translation": [5.38, 4.95, -0.87],
+			"scale": [1.36, 1.36, 0.68]
+		},
+		"firstperson_lefthand": {
+			"rotation": [2, 75, -63],
+			"translation": [5.38, 4.95, -0.87],
+			"scale": [1.36, 1.36, 0.68]
+		},
+		"ground": {
+			"translation": [1.25, 5.75, 0],
+			"scale": [1, 1, 0.5]
+		},
+		"gui": {
+			"rotation": [0, -25.5, -3],
+			"scale": [1.06, 1.06, 0.53]
+		},
+		"fixed": {
+			"rotation": [0, 180, 0],
+			"translation": [0, 0, -0.5],
+			"scale": [1.99, 1.99, 1]
+		}
+	}
+}

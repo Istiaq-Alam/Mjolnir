@@ -1,0 +1,8 @@
+{
+	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+	"parent": "item/crossbow/crossbow_of_dominance",
+	"textures": {
+		"particle": "item/crossbow/xara_crossbow",
+		"orb": "item/crossbow/xara_orb"
+	}
+}

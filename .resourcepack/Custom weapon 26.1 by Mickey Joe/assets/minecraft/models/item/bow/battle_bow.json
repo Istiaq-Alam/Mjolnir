@@ -1,0 +1,8 @@
+{
+	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+    "parent": "item/bow/petra_bow",
+	"textures": {
+        "particle": "item/bow/battle_bow",
+        "layer0": "item/bow/battle_bow"
+	}
+}

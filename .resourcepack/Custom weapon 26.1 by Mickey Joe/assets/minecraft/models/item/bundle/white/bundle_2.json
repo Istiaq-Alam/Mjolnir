@@ -1,0 +1,7 @@
+{
+	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "item/bundle/white/bundle_2"
+    }
+}

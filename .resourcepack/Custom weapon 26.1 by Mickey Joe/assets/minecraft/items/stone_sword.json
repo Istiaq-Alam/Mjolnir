@@ -1,0 +1,459 @@
+{
+	"oversized_in_gui": true,
+	"model": {
+			"type": "select",
+			"property": "component",
+			"component": "custom_name",
+			"cases": [
+				{
+				"when": [
+					"Dinnerbone",
+					"Grumm"
+				],
+				"model": {
+					"type": "model",
+					"model": "item/stone_sword/dinnerbone"
+				}
+			},
+				{
+				"when": "Sword",
+				"model": {
+					"type": "model",
+					"model": "item/stone_sword"
+			 			}
+				},
+				{
+				"when": "Chef's Knife",
+				"model": {
+					"type": "model",
+					"model": "item/stone_sword/chef_knife"
+			 			}
+				},
+				{
+					"when": "Deepslate Sword",
+					"model": {
+						"type": "range_dispatch",
+						"property": "damage",
+						"scale": 4,
+						"entries": [
+							{
+								"threshold": 0,
+								"model": {
+									"type": "model",
+									"model": "item/stone_sword/deepslate_sword"
+								}
+							},
+							{
+								"threshold": 1,
+								"model": {
+									"type": "model",
+									"model": "item/stone_sword/deepslate_sword_damaged_0"
+								}
+							},
+							{
+								"threshold": 2,
+								"model": {
+									"type": "model",
+									"model": "item/stone_sword/deepslate_sword_damaged_1"
+								}
+							},
+							{
+								"threshold": 3,
+								"model": {
+									"type": "model",
+									"model": "item/stone_sword/deepslate_sword_damaged_2"
+								}
+							}
+						]
+					}
+				},
+				{
+					"when": "Andesite Sword",
+					"model": {
+						"type": "range_dispatch",
+						"property": "damage",
+						"scale": 4,
+						"entries": [
+							{
+								"threshold": 0,
+								"model": {
+									"type": "model",
+									"model": "item/stone_sword/andesite_sword"
+								}
+							},
+							{
+								"threshold": 1,
+								"model": {
+									"type": "model",
+									"model": "item/stone_sword/andesite_sword_damaged_0"
+								}
+							},
+							{
+								"threshold": 2,
+								"model": {
+									"type": "model",
+									"model": "item/stone_sword/andesite_sword_damaged_1"
+								}
+							},
+							{
+								"threshold": 3,
+								"model": {
+									"type": "model",
+									"model": "item/stone_sword/andesite_sword_damaged_2"
+								}
+							}
+						]
+					}
+				},
+				{
+					"when": "Granite Sword",
+					"model": {
+						"type": "range_dispatch",
+						"property": "damage",
+						"scale": 4,
+						"entries": [
+							{
+								"threshold": 0,
+								"model": {
+									"type": "model",
+									"model": "item/stone_sword/granite_sword"
+								}
+							},
+							{
+								"threshold": 1,
+								"model": {
+									"type": "model",
+									"model": "item/stone_sword/granite_sword_damaged_0"
+								}
+							},
+							{
+								"threshold": 2,
+								"model": {
+									"type": "model",
+									"model": "item/stone_sword/granite_sword_damaged_1"
+								}
+							},
+							{
+								"threshold": 3,
+								"model": {
+									"type": "model",
+									"model": "item/stone_sword/granite_sword_damaged_2"
+								}
+							}
+						]
+					}
+				},
+				{
+					"when": "Diorite Sword",
+					"model": {
+						"type": "range_dispatch",
+						"property": "damage",
+						"scale": 4,
+						"entries": [
+							{
+								"threshold": 0,
+								"model": {
+									"type": "model",
+									"model": "item/stone_sword/diorite_sword"
+								}
+							},
+							{
+								"threshold": 1,
+								"model": {
+									"type": "model",
+									"model": "item/stone_sword/diorite_sword_damaged_0"
+								}
+							},
+							{
+								"threshold": 2,
+								"model": {
+									"type": "model",
+									"model": "item/stone_sword/diorite_sword_damaged_1"
+								}
+							},
+							{
+								"threshold": 3,
+								"model": {
+									"type": "model",
+									"model": "item/stone_sword/diorite_sword_damaged_2"
+								}
+							}
+						]
+					}
+				},
+				{
+					"when": "Blackstone Sword",
+					"model": {
+						"type": "range_dispatch",
+						"property": "damage",
+						"scale": 4,
+						"entries": [
+							{
+								"threshold": 0,
+								"model": {
+									"type": "model",
+									"model": "item/stone_sword/blackstone_sword"
+								}
+							},
+							{
+								"threshold": 1,
+								"model": {
+									"type": "model",
+									"model": "item/stone_sword/blackstone_sword_damaged_0"
+								}
+							},
+							{
+								"threshold": 2,
+								"model": {
+									"type": "model",
+									"model": "item/stone_sword/blackstone_sword_damaged_1"
+								}
+							},
+							{
+								"threshold": 3,
+								"model": {
+									"type": "model",
+									"model": "item/stone_sword/blackstone_sword_damaged_2"
+								}
+							}
+						]
+					}
+				},
+				{
+					"when": "Buck-Chuckets",
+					"model": {
+						"type": "model",
+						"model": "item/stone_sword/buck_chuckets"
+					}
+				},
+				{
+					"when": "Meat Cleaver",
+					"model": {
+						"type": "model",
+						"model": "item/stone_sword/meat_cleaver"
+					}
+				},
+				{
+					"when": "Wrench",
+					"model": {
+						"type": "model",
+						"model": "item/stone_sword/wrench"
+					}
+				},
+				{
+					"when": "Cane",
+					"model": {
+						"type": "model",
+						"model": "item/stone_sword/cane"
+					}
+				},
+				{
+					"when": "Golf Club",
+					"model": {
+						"type": "model",
+						"model": "item/stone_sword/golf_club"
+					}
+				},
+				{
+					"when": "Spatula",
+					"model": {
+						"type": "model",
+						"model": "item/stone_sword/spatula"
+					}
+				},
+				{
+					"when": "Super Cute Sword",
+					"model": {
+						"type": "model",
+						"model": "item/stone_sword/super_cute_sword"
+					}
+				},
+				{
+					"when": "Claws",
+					"model": {
+						"type": "model",
+						"model": "item/stone_sword/claws"
+					}
+				},
+				{
+					"when": "Hidden Blade",
+					"model": {
+						"type": "model",
+						"model": "item/stone_sword/hidden_blade"
+					}
+				},
+				{
+					"when": "Shovel",
+					"model": {
+						"type": "model",
+						"model": "item/stone_sword/shovel"
+					}
+				},
+				{
+					"when": "Karambit",
+					"model": {
+						"type": "model",
+						"model": "item/stone_sword/karambit"
+					}
+				},
+				{
+					"when": "Potato Peeler",
+					"model": {
+						"type": "model",
+						"model": "item/stone_sword/potato_peeler"
+					}
+				},
+				{
+					"when": "Sickle",
+					"model": {
+						"type": "model",
+						"model": "item/stone_sword/sickle"
+					}
+				},
+				{
+					"when": "Tempest Knife",
+					"model": {
+						"type": "model",
+						"model": "item/stone_sword/tempest_knife"
+					}
+				},
+				{
+					"when": "Coral Blade",
+					"model": {
+						"type": "model",
+						"model": "item/stone_sword/coral_blade"
+					}
+				},
+				{
+					"when": "Dagger",
+					"model": {
+						"type": "model",
+						"model": "item/stone_sword/dagger"
+					}
+				},
+				{
+					"when": "Rapier",
+					"model": {
+						"type": "model",
+						"model": "item/stone_sword/rapier"
+					}
+				},
+				{
+					"when": "Soul Knife",
+					"model": {
+						"type": "model",
+						"model": "item/stone_sword/soul_knife"
+					}
+				},
+				{
+					"when": "Broadsword",
+					"model": {
+						"type": "model",
+						"model": "item/stone_sword/broadsword"
+					}
+				},
+				{
+					"when": "Cutlass",
+					"model": {
+						"type": "model",
+						"model": "item/stone_sword/cutlass"
+					}
+				},
+				{
+					"when": "Claymore",
+					"model": {
+						"type": "model",
+						"model": "item/stone_sword/claymore"
+					}
+				},
+				{
+					"when": "Glaive",
+					"model": {
+						"type": "model",
+						"model": "item/stone_sword/glaive"
+					}
+				},
+				{
+					"when": "Backstabber",
+					"model": {
+						"type": "model",
+						"model": "item/stone_sword/backstabber"
+					}
+				},
+				{
+					"when": "Dancer's Sword",
+					"model": {
+						"type": "model",
+						"model": "item/stone_sword/dancers_sword"
+					}
+				},
+				{
+					"when": "Katana",
+					"model": {
+						"type": "model",
+						"model": "item/stone_sword/katana"
+					}
+				},
+				{
+					"when": "Sawblade",
+					"model": {
+						"type": "model",
+						"model": "item/stone_sword/sawblade"
+					}
+				},
+				{
+					"when": "Battlestaff",
+					"model": {
+						"type": "model",
+						"model": "item/stone_sword/battlestaff"
+					}
+				},
+				{
+					"when": "Kemetian Sword",
+					"model": {
+						"type": "model",
+						"model": "item/stone_sword/kemetian_sword"
+					}
+				},
+				{
+					"when": "Hellenic Sword",
+					"model": {
+						"type": "model",
+						"model": "item/stone_sword/hellenic_sword"
+					}
+				},
+				{
+					"when": "Sinitic Sword",
+					"model": {
+						"type": "model",
+						"model": "item/stone_sword/sinitic_sword"
+					}
+				},
+				{
+					"when": "Fantasy Sword",
+					"model": {
+						"type": "model",
+						"model": "item/stone_sword/fantasy_sword"
+					}
+				},
+				{
+					"when": "Norroen Sword",
+					"model": {
+						"type": "model",
+						"model": "item/stone_sword/norroen_sword"
+					}
+				},
+				{
+					"when": "Halloween Sword",
+					"model": {
+						"type": "model",
+						"model": "item/stone_sword/halloween_sword"
+					}
+				}
+			],
+			"fallback": {
+							"type": "model",
+							"model": "item/stone_sword"
+						}
+		}
+}

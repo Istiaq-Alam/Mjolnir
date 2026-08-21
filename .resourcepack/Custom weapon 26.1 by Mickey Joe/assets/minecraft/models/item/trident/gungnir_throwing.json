@@ -1,0 +1,16 @@
+{
+	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+	"parent": "item/trident/gungnir",
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [0, -90, -135],
+			"translation": [-0.25, -3.25, 1.5],
+			"scale": [3.4, 3.4, 0.85]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [0, 90, 135],
+			"translation": [-0.25, -3.25, 1.5],
+			"scale": [3.4, 3.4, 0.85]
+		}
+	}
+}

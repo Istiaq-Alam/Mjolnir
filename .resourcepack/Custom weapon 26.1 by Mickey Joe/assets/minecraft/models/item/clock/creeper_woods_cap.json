@@ -1,0 +1,8 @@
+{
+	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+	"parent": "item/clock/kemetian_compass",
+	"textures": {
+		"particle": "item/compass/creeper_woods",
+		"base": "item/compass/creeper_woods_base"
+	}
+}

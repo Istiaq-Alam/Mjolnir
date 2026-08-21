@@ -1,0 +1,446 @@
+{
+	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+	"texture_size": [64, 64],
+	"textures": {
+		"1": "item/totem_of_undying/statue_of_undying",
+		"particle": "item/totem_of_undying/statue_of_undying"
+	},
+	"elements": [
+		{
+			"from": [0, -9, 0],
+			"to": [16, -6, 16],
+			"rotation": {"angle": 0, "axis": "x", "origin": [8, 18, 8]},
+			"faces": {
+				"north": {"uv": [4, 15.25, 8, 16], "texture": "#1"},
+				"east": {"uv": [0, 15.25, 4, 16], "texture": "#1"},
+				"south": {"uv": [12, 15.25, 16, 16], "texture": "#1"},
+				"west": {"uv": [8, 15.25, 12, 16], "texture": "#1"},
+				"up": {"uv": [12, 15.25, 8, 11.25], "texture": "#1"},
+				"down": {"uv": [16, 11.25, 12, 15.25], "texture": "#1"}
+			}
+		},
+		{
+			"name": "head",
+			"from": [4, 18, 4],
+			"to": [12, 28, 12],
+			"rotation": {"angle": 0, "axis": "x", "origin": [8, 18, 7]},
+			"faces": {
+				"north": {"uv": [2, 2, 4, 4.5], "texture": "#1"},
+				"east": {"uv": [0, 2, 2, 4.5], "texture": "#1"},
+				"south": {"uv": [6, 2, 8, 4.5], "texture": "#1"},
+				"west": {"uv": [4, 2, 6, 4.5], "texture": "#1"},
+				"up": {"uv": [4, 2, 2, 0], "texture": "#1"},
+				"down": {"uv": [6, 0, 4, 2], "texture": "#1"}
+			}
+		},
+		{
+			"name": "nose",
+			"from": [7, 17, 2],
+			"to": [9, 21, 4],
+			"rotation": {"angle": 0, "axis": "x", "origin": [8, 18, 7]},
+			"faces": {
+				"north": {"uv": [6.75, 0.5, 7.25, 1.5], "texture": "#1"},
+				"east": {"uv": [6.25, 0.5, 6.75, 1.5], "texture": "#1"},
+				"south": {"uv": [7.75, 0.5, 8.25, 1.5], "texture": "#1"},
+				"west": {"uv": [7.25, 0.5, 7.75, 1.5], "texture": "#1"},
+				"up": {"uv": [7.25, 0.5, 6.75, 0], "texture": "#1"},
+				"down": {"uv": [7.75, 0, 7.25, 0.5], "texture": "#1"}
+			}
+		},
+		{
+			"name": "body",
+			"from": [3.5, -2, 5],
+			"to": [12.5, 18, 11],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8.5, -6, 8]},
+			"faces": {
+				"north": {"uv": [0, 6, 2.25, 11], "texture": "#1"},
+				"east": {"uv": [3.75, 6, 2.25, 11], "texture": "#1"},
+				"south": {"uv": [3.75, 6, 6, 11], "texture": "#1"},
+				"west": {"uv": [2.25, 6, 3.75, 11], "texture": "#1"},
+				"up": {"uv": [2.25, 6, 0, 4.5], "texture": "#1"},
+				"down": {"uv": [4.5, 4.5, 2.25, 6], "texture": "#1"}
+			}
+		},
+		{
+			"name": "arms",
+			"from": [3.5, 8.8, 5.95],
+			"to": [12.5, 12.8, 9.95],
+			"rotation": {"angle": 45, "axis": "x", "origin": [8, 15.75, 8]},
+			"faces": {
+				"north": {"uv": [8.5, 1, 10.75, 2], "texture": "#1"},
+				"south": {"uv": [10.75, 1, 13, 2], "texture": "#1"},
+				"up": {"uv": [10.75, 1, 8.5, 0], "texture": "#1"},
+				"down": {"uv": [13, 0, 10.75, 1], "texture": "#1"}
+			}
+		},
+		{
+			"name": "arms",
+			"from": [12.5, 8.8, 5.95],
+			"to": [16.5, 16.8, 9.95],
+			"rotation": {"angle": 45, "axis": "x", "origin": [8.5, 15.75, 8]},
+			"faces": {
+				"north": {"uv": [1, 13, 2, 15], "texture": "#1"},
+				"east": {"uv": [0, 13, 1, 15], "texture": "#1"},
+				"south": {"uv": [3, 13, 4, 15], "texture": "#1"},
+				"west": {"uv": [2, 13, 3, 15], "texture": "#1"},
+				"up": {"uv": [2, 13, 1, 12], "texture": "#1"},
+				"down": {"uv": [3, 12, 2, 13], "texture": "#1"}
+			}
+		},
+		{
+			"name": "mirrored",
+			"from": [-0.5, 8.8, 5.95],
+			"to": [3.5, 16.8, 9.95],
+			"rotation": {"angle": 45, "axis": "x", "origin": [7.5, 15.75, 8]},
+			"faces": {
+				"north": {"uv": [2, 13, 1, 15], "texture": "#1"},
+				"east": {"uv": [3, 13, 2, 15], "texture": "#1"},
+				"south": {"uv": [4, 13, 3, 15], "texture": "#1"},
+				"west": {"uv": [1, 13, 0, 15], "texture": "#1"},
+				"up": {"uv": [1, 13, 2, 12], "texture": "#1"},
+				"down": {"uv": [2, 12, 3, 13], "texture": "#1"}
+			}
+		},
+		{
+			"name": "right_leg",
+			"from": [4, -6, 6],
+			"to": [12, -2, 10],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, -6, 8]},
+			"faces": {
+				"north": {"uv": [1, 11, 3, 12], "texture": "#1"},
+				"east": {"uv": [0, 11, 1, 12], "texture": "#1"},
+				"south": {"uv": [4, 11, 6, 12], "texture": "#1"},
+				"west": {"uv": [3, 11, 4, 12], "texture": "#1"}
+			}
+		},
+		{
+			"name": "statue_of_undying_10",
+			"from": [-1.5, -3, 11],
+			"to": [2.5, 20, 12],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8.5, 4.25, 11.5]},
+			"faces": {
+				"north": {"uv": [11, 4.5, 10, 10.25], "texture": "#1"},
+				"east": {"uv": [10.75, 4.5, 11, 10.25], "texture": "#1"},
+				"south": {"uv": [10, 4.5, 11, 10.25], "texture": "#1"},
+				"west": {"uv": [10, 4.5, 10.25, 10.25], "texture": "#1"},
+				"up": {"uv": [10, 4.5, 11, 4.75], "texture": "#1"},
+				"down": {"uv": [10, 10, 11, 10.25], "texture": "#1"}
+			}
+		},
+		{
+			"name": "statue_of_undying_11",
+			"from": [13.5, -3, 11],
+			"to": [17.5, 20, 12],
+			"rotation": {"angle": 0, "axis": "y", "origin": [7.5, 4.25, 11.5]},
+			"faces": {
+				"north": {"uv": [14.75, 4.5, 13.75, 10.25], "texture": "#1"},
+				"east": {"uv": [14.5, 4.5, 14.75, 10.25], "texture": "#1"},
+				"south": {"uv": [13.75, 4.5, 14.75, 10.25], "texture": "#1"},
+				"west": {"uv": [13.75, 4.5, 14, 10.25], "texture": "#1"},
+				"up": {"uv": [13.75, 4.5, 14.75, 4.75], "texture": "#1"},
+				"down": {"uv": [13.75, 10, 14.75, 10.25], "texture": "#1"}
+			}
+		},
+		{
+			"name": "statue_of_undying_12",
+			"from": [-2.5, -1, 11],
+			"to": [-1.5, 19, 12],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8.5, 4.25, 11.5]},
+			"faces": {
+				"north": {"uv": [10, 4.75, 9.75, 9.75], "texture": "#1"},
+				"south": {"uv": [9.75, 4.75, 10, 9.75], "texture": "#1"},
+				"west": {"uv": [9.75, 4.75, 10, 9.75], "texture": "#1"},
+				"up": {"uv": [9.75, 4.75, 10, 5], "texture": "#1"},
+				"down": {"uv": [9.75, 9.5, 10, 9.75], "texture": "#1"}
+			}
+		},
+		{
+			"name": "statue_of_undying_13",
+			"from": [2.5, -2, 11],
+			"to": [3.5, 19, 12],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8.5, 4.25, 11.5]},
+			"faces": {
+				"north": {"uv": [11.25, 4.75, 11, 10], "texture": "#1"},
+				"east": {"uv": [11, 4.75, 11.25, 10], "texture": "#1"},
+				"south": {"uv": [11, 4.75, 11.25, 10], "texture": "#1"},
+				"up": {"uv": [11, 4.75, 11.25, 5], "texture": "#1"},
+				"down": {"uv": [11, 9.75, 11.25, 10], "texture": "#1"}
+			}
+		},
+		{
+			"name": "statue_of_undying_14",
+			"from": [12.5, -2, 11],
+			"to": [13.5, 19, 12],
+			"rotation": {"angle": 0, "axis": "y", "origin": [7.5, 4.25, 11.5]},
+			"faces": {
+				"north": {"uv": [13.75, 4.75, 13.5, 10], "texture": "#1"},
+				"south": {"uv": [13.5, 4.75, 13.75, 10], "texture": "#1"},
+				"west": {"uv": [13.5, 4.75, 13.75, 10], "texture": "#1"},
+				"up": {"uv": [13.5, 4.75, 13.75, 5], "texture": "#1"},
+				"down": {"uv": [13.5, 9.75, 13.75, 10], "texture": "#1"}
+			}
+		},
+		{
+			"name": "statue_of_undying_15",
+			"from": [17.5, -1, 11],
+			"to": [18.5, 19, 12],
+			"rotation": {"angle": 0, "axis": "y", "origin": [7.5, 4.25, 11.5]},
+			"faces": {
+				"north": {"uv": [15, 4.75, 14.75, 9.75], "texture": "#1"},
+				"east": {"uv": [14.75, 4.75, 15, 9.75], "texture": "#1"},
+				"south": {"uv": [14.75, 4.75, 15, 9.75], "texture": "#1"},
+				"up": {"uv": [14.75, 4.75, 15, 5], "texture": "#1"},
+				"down": {"uv": [14.75, 9.5, 15, 9.75], "texture": "#1"}
+			}
+		},
+		{
+			"name": "statue_of_undying_16",
+			"from": [-3.5, 1, 11],
+			"to": [-2.5, 18, 12],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8.5, 4.25, 11.5]},
+			"faces": {
+				"north": {"uv": [9.75, 5, 9.5, 9.25], "texture": "#1"},
+				"south": {"uv": [9.5, 5, 9.75, 9.25], "texture": "#1"},
+				"west": {"uv": [9.5, 5, 9.75, 9.25], "texture": "#1"},
+				"up": {"uv": [9.5, 5, 9.75, 5.25], "texture": "#1"},
+				"down": {"uv": [9.5, 9, 9.75, 9.25], "texture": "#1"}
+			}
+		},
+		{
+			"name": "statue_of_undying_17",
+			"from": [3.5, 2, 11],
+			"to": [4.5, 18, 12],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8.5, 4.25, 11.5]},
+			"faces": {
+				"east": {"uv": [11.25, 5, 11.5, 9], "texture": "#1"},
+				"south": {"uv": [11.25, 5, 11.5, 9], "texture": "#1"},
+				"up": {"uv": [11.25, 5, 11.5, 5.25], "texture": "#1"},
+				"down": {"uv": [11.25, 8.75, 11.5, 9], "texture": "#1"}
+			}
+		},
+		{
+			"name": "statue_of_undying_18",
+			"from": [11.5, 2, 11],
+			"to": [12.5, 18, 12],
+			"rotation": {"angle": 0, "axis": "y", "origin": [7.5, 4.25, 11.5]},
+			"faces": {
+				"south": {"uv": [13.25, 5, 13.5, 9], "texture": "#1"},
+				"west": {"uv": [13.25, 5, 13.5, 9], "texture": "#1"},
+				"up": {"uv": [13.25, 5, 13.5, 5.25], "texture": "#1"},
+				"down": {"uv": [13.25, 8.75, 13.5, 9], "texture": "#1"}
+			}
+		},
+		{
+			"name": "statue_of_undying_19",
+			"from": [18.5, 1, 11],
+			"to": [19.5, 18, 12],
+			"rotation": {"angle": 0, "axis": "y", "origin": [7.5, 4.25, 11.5]},
+			"faces": {
+				"north": {"uv": [15.25, 5, 15, 9.25], "texture": "#1"},
+				"east": {"uv": [15, 5, 15.25, 9.25], "texture": "#1"},
+				"south": {"uv": [15, 5, 15.25, 9.25], "texture": "#1"},
+				"up": {"uv": [15, 5, 15.25, 5.25], "texture": "#1"},
+				"down": {"uv": [15, 9, 15.25, 9.25], "texture": "#1"}
+			}
+		},
+		{
+			"name": "statue_of_undying_20",
+			"from": [4.5, 10, 11],
+			"to": [6.5, 17, 12],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8.5, 4.25, 11.5]},
+			"faces": {
+				"east": {"uv": [11.75, 5.25, 12, 7], "texture": "#1"},
+				"south": {"uv": [11.5, 5.25, 12, 7], "texture": "#1"},
+				"up": {"uv": [11.5, 5.25, 12, 5.5], "texture": "#1"},
+				"down": {"uv": [11.5, 6.75, 12, 7], "texture": "#1"}
+			}
+		},
+		{
+			"name": "statue_of_undying_21",
+			"from": [9.5, 10, 11],
+			"to": [11.5, 17, 12],
+			"rotation": {"angle": 0, "axis": "y", "origin": [7.5, 4.25, 11.5]},
+			"faces": {
+				"south": {"uv": [12.75, 5.25, 13.25, 7], "texture": "#1"},
+				"west": {"uv": [12.75, 5.25, 13, 7], "texture": "#1"},
+				"up": {"uv": [12.75, 5.25, 13.25, 5.5], "texture": "#1"},
+				"down": {"uv": [12.75, 6.75, 13.25, 7], "texture": "#1"}
+			}
+		},
+		{
+			"name": "statue_of_undying_22",
+			"from": [-4.5, 4, 11],
+			"to": [-3.5, 16, 12],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8.5, 4.25, 11.5]},
+			"faces": {
+				"north": {"uv": [9.5, 5.5, 9.25, 8.5], "texture": "#1"},
+				"south": {"uv": [9.25, 5.5, 9.5, 8.5], "texture": "#1"},
+				"west": {"uv": [9.25, 5.5, 9.5, 8.5], "texture": "#1"},
+				"up": {"uv": [9.25, 5.5, 9.5, 5.75], "texture": "#1"},
+				"down": {"uv": [9.25, 8.25, 9.5, 8.5], "texture": "#1"}
+			}
+		},
+		{
+			"name": "statue_of_undying_23",
+			"from": [6.5, 12, 11],
+			"to": [9.5, 16, 12],
+			"rotation": {"angle": 0, "axis": "y", "origin": [7.5, 4.25, 11.5]},
+			"faces": {
+				"south": {"uv": [12, 5.5, 12.75, 6.5], "texture": "#1"},
+				"up": {"uv": [12, 5.5, 12.75, 5.75], "texture": "#1"},
+				"down": {"uv": [12, 6.25, 12.75, 6.5], "texture": "#1"}
+			}
+		},
+		{
+			"name": "statue_of_undying_24",
+			"from": [19.5, 4, 11],
+			"to": [20.5, 16, 12],
+			"rotation": {"angle": 0, "axis": "y", "origin": [7.5, 4.25, 11.5]},
+			"faces": {
+				"north": {"uv": [15.5, 5.5, 15.25, 8.5], "texture": "#1"},
+				"east": {"uv": [15.25, 5.5, 15.5, 8.5], "texture": "#1"},
+				"south": {"uv": [15.25, 5.5, 15.5, 8.5], "texture": "#1"},
+				"up": {"uv": [15.25, 5.5, 15.5, 5.75], "texture": "#1"},
+				"down": {"uv": [15.25, 8.25, 15.5, 8.5], "texture": "#1"}
+			}
+		},
+		{
+			"name": "statue_of_undying_26",
+			"from": [-5.5, 8, 11],
+			"to": [-4.5, 14, 12],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8.5, 4.25, 11.5]},
+			"faces": {
+				"north": {"uv": [9.25, 6, 9, 7.5], "texture": "#1"},
+				"south": {"uv": [9, 6, 9.25, 7.5], "texture": "#1"},
+				"west": {"uv": [9, 6, 9.25, 7.5], "texture": "#1"},
+				"up": {"uv": [9, 6, 9.25, 6.25], "texture": "#1"},
+				"down": {"uv": [9, 7.25, 9.25, 7.5], "texture": "#1"}
+			}
+		},
+		{
+			"name": "statue_of_undying_27",
+			"from": [20.5, 8, 11],
+			"to": [21.5, 14, 12],
+			"rotation": {"angle": 0, "axis": "y", "origin": [7.5, 4.25, 11.5]},
+			"faces": {
+				"north": {"uv": [15.75, 6, 15.5, 7.5], "texture": "#1"},
+				"east": {"uv": [15.5, 6, 15.75, 7.5], "texture": "#1"},
+				"south": {"uv": [15.5, 6, 15.75, 7.5], "texture": "#1"},
+				"up": {"uv": [15.5, 6, 15.75, 6.25], "texture": "#1"},
+				"down": {"uv": [15.5, 7.25, 15.75, 7.5], "texture": "#1"}
+			}
+		},
+		{
+			"name": "statue_of_undying_28",
+			"from": [4.5, 6, 11],
+			"to": [5.5, 10, 12],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8.5, 4.25, 11.5]},
+			"faces": {
+				"east": {"uv": [11.5, 7, 11.75, 8], "texture": "#1"},
+				"south": {"uv": [11.5, 7, 11.75, 8], "texture": "#1"},
+				"down": {"uv": [11.5, 7.75, 11.75, 8], "texture": "#1"}
+			}
+		},
+		{
+			"name": "statue_of_undying_29",
+			"from": [10.5, 6, 11],
+			"to": [11.5, 10, 12],
+			"rotation": {"angle": 0, "axis": "y", "origin": [7.5, 4.25, 11.5]},
+			"faces": {
+				"south": {"uv": [13, 7, 13.25, 8], "texture": "#1"},
+				"west": {"uv": [13, 7, 13.25, 8], "texture": "#1"},
+				"down": {"uv": [13, 7.75, 13.25, 8], "texture": "#1"}
+			}
+		},
+		{
+			"name": "statue_of_undying_30",
+			"from": [-0.5, -5, 11],
+			"to": [2.5, -3, 12],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8.5, 4.25, 11.5]},
+			"faces": {
+				"north": {"uv": [11, 10.25, 10.25, 10.75], "texture": "#1"},
+				"east": {"uv": [10.75, 10.25, 11, 10.75], "texture": "#1"},
+				"south": {"uv": [10.25, 10.25, 11, 10.75], "texture": "#1"},
+				"west": {"uv": [10.25, 10.25, 10.5, 10.75], "texture": "#1"},
+				"down": {"uv": [10.25, 10.5, 11, 10.75], "texture": "#1"}
+			}
+		},
+		{
+			"name": "statue_of_undying_31",
+			"from": [13.5, -5, 11],
+			"to": [16.5, -3, 12],
+			"rotation": {"angle": 0, "axis": "y", "origin": [7.5, 4.25, 11.5]},
+			"faces": {
+				"north": {"uv": [14.5, 10.25, 13.75, 10.75], "texture": "#1"},
+				"east": {"uv": [14.25, 10.25, 14.5, 10.75], "texture": "#1"},
+				"south": {"uv": [13.75, 10.25, 14.5, 10.75], "texture": "#1"},
+				"west": {"uv": [13.75, 10.25, 14, 10.75], "texture": "#1"},
+				"down": {"uv": [13.75, 10.5, 14.5, 10.75], "texture": "#1"}
+			}
+		},
+		{
+			"name": "statue_of_undying_32",
+			"from": [0.5, -6, 11],
+			"to": [2.5, -5, 12],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8.5, 4.25, 11.5]},
+			"faces": {
+				"north": {"uv": [11, 10.75, 10.5, 11], "texture": "#1"},
+				"east": {"uv": [10.75, 10.75, 11, 11], "texture": "#1"},
+				"south": {"uv": [10.5, 10.75, 11, 11], "texture": "#1"},
+				"west": {"uv": [10.5, 10.75, 10.75, 11], "texture": "#1"}
+			}
+		},
+		{
+			"name": "statue_of_undying_33",
+			"from": [13.5, -6, 11],
+			"to": [15.5, -5, 12],
+			"rotation": {"angle": 0, "axis": "y", "origin": [7.5, 4.25, 11.5]},
+			"faces": {
+				"north": {"uv": [14.25, 10.75, 13.75, 11], "texture": "#1"},
+				"east": {"uv": [14, 10.75, 14.25, 11], "texture": "#1"},
+				"south": {"uv": [13.75, 10.75, 14.25, 11], "texture": "#1"},
+				"west": {"uv": [13.75, 10.75, 14, 11], "texture": "#1"}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [75, 45, 0],
+			"translation": [0, 2.5, 0],
+			"scale": [0.375, 0.375, 0.375]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [75, 45, 0],
+			"translation": [0, 2.5, 0],
+			"scale": [0.375, 0.375, 0.375]
+		},
+		"firstperson_righthand": {
+			"rotation": [0, 120, 0],
+			"translation": [2.75, 0, 0],
+			"scale": [0.4, 0.4, 0.4]
+		},
+		"firstperson_lefthand": {
+			"rotation": [0, 120, 0],
+			"translation": [2.75, 0, 0],
+			"scale": [0.4, 0.4, 0.4]
+		},
+		"ground": {
+			"translation": [0, 4, 0],
+			"scale": [0.25, 0.25, 0.25]
+		},
+		"gui": {
+			"rotation": [30, 225, 0],
+			"translation": [0, 0.25, 0],
+			"scale": [0.4, 0.4, 0.4]
+		},
+		"head": {
+			"translation": [0, 19, 0],
+			"scale": [0.75, 0.75, 0.75]
+		},
+		"fixed": {
+			"rotation": [-90, 0, 0],
+			"translation": [0, 0, -32],
+			"scale": [2, 2, 2]
+		}
+	}
+}

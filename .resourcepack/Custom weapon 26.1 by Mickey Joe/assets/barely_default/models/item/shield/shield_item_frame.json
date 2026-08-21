@@ -1,0 +1,11 @@
+{
+	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+	"parent": "minecraft:item/shield/shield",
+	"display": {
+		"fixed": {
+			"rotation": [0, -180, 0],
+			"translation": [-16.08, 16, -12.1],
+			"scale": [2.016, 2.016, 2.016]
+		}
+	}
+}

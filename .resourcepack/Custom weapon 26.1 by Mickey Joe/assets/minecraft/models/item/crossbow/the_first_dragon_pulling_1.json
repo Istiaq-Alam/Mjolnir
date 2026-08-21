@@ -1,0 +1,9 @@
+{
+	"cthe_firstit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+	"parent": "item/crossbow/nerf_dragon_pulling_1",
+	"textures": {
+		"1": "item/crossbow/the_first_dragon",
+		"2": "item/crossbow/the_first_dragon_wings",
+		"particle": "item/crossbow/the_first_dragon_wings"
+	}
+}

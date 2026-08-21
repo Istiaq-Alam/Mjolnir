@@ -1,0 +1,7 @@
+{
+	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+	"parent": "item/netherite_shovel/dragonslayer_shovel",
+	"textures": {
+		"layer0": "item/netherite_shovel/dragonmaster_shovel"
+	}
+}

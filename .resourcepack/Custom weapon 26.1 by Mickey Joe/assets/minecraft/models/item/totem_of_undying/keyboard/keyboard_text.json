@@ -1,0 +1,26 @@
+{
+	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+	"parent": "item/totem_of_undying/keyboard/keyboard",
+	"textures": {
+		"1": "item/totem_of_undying/keyboard/keyboard_text_offset",
+		"particle": "item/totem_of_undying/keyboard/keyboard_text"
+	},
+	"elements": [
+		{
+			"from": [0.025, 11.5, 7.4],
+			"to": [8.525, 16, 8.6],
+			"rotation": {"angle": 0, "axis": "y", "origin": [0.025, 8.5, -0.5]},
+			"faces": {
+				"south": {"uv": [0, 0, 8.5, 4.5], "texture": "#1"}
+			}
+		},
+		{
+			"from": [0, 11.5, 7.4],
+			"to": [8.5, 16, 8.6],
+			"rotation": {"angle": 0, "axis": "y", "origin": [0, 8.5, -0.5]},
+			"faces": {
+				"south": {"uv": [0, 0, 8.5, 4.5], "texture": "#particle"}
+			}
+		}
+	]
+}

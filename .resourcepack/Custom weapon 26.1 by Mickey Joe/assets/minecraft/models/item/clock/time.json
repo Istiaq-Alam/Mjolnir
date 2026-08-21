@@ -1,0 +1,17 @@
+{
+	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+	"parent": "item/clock/amethyst_geode",
+	"textures": {
+		"particle": "item/clock/time"
+	},
+	"elements": [
+		{
+			"from": [3.5, 3.5, 8.501],
+			"to": [12.5, 12.5, 8.501],
+			"rotation": {"angle": 0, "axis": "z", "origin": [8, 8, 8.501]},
+			"faces": {
+				"south": {"uv": [3, 12, 12, 3], "rotation": 180, "texture": "#particle"}
+			}
+		}
+	]
+}

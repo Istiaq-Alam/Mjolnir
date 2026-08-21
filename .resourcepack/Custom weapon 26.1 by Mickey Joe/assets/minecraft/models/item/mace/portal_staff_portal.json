@@ -1,0 +1,24 @@
+{
+	"format_version": "1.21.6",
+	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+	"parent": "item/mace/portal_staff",
+	"textures": {
+		"particle": "block/nether_portal"
+	},
+	"elements": [
+		{
+			"from": [14.71777, 18.84619, 5.75],
+			"to": [17.71777, 21.84619, 8.75],
+			"light_emission": 15,
+			"rotation": {"angle": -45, "axis": "x", "origin": [15.76777, 21.09619, 8]},
+			"faces": {
+				"north": {"uv": [6, 8, 9, 11], "texture": "#particle"},
+				"east": {"uv": [3, 8, 6, 11], "texture": "#particle"},
+				"south": {"uv": [12, 8, 15, 11], "texture": "#particle"},
+				"west": {"uv": [9, 8, 12, 11], "texture": "#particle"},
+				"up": {"uv": [9, 8, 6, 5], "texture": "#particle"},
+				"down": {"uv": [12, 5, 9, 8], "texture": "#particle"}
+			}
+		}
+	]
+}

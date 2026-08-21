@@ -1,0 +1,43 @@
+{
+	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+	"parent": "builtin/generated",
+	"textures": {
+		"layer0": "item/netherite_sword/anduril"
+	},
+	"gui_light": "front",
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [0, -90, 51],
+			"translation": [0, 5, 1.5],
+			"scale": [1.7, 1.7, 0.85]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [0, 90, -51],
+			"translation": [0, 5, 1.5],
+			"scale": [1.7, 1.7, 0.85]
+		},
+		"firstperson_righthand": {
+			"rotation": [-81, -70, -36],
+			"translation": [1.38, 5.2, 0.88],
+			"scale": [1.36, 1.36, 0.68]
+		},
+		"firstperson_lefthand": {
+			"rotation": [-81, 110, 36],
+			"translation": [1.38, 5.2, 0.88],
+			"scale": [1.36, 1.36, 0.68]
+		},
+		"ground": {
+			"translation": [1, 5, 0],
+			"scale": [1, 1, 0.5]
+		},
+		"gui": {
+			"rotation": [0, -25.5, -3],
+			"scale": [1.22, 1.22, 0.61]
+		},
+		"fixed": {
+			"rotation": [0, 180, 0],
+			"translation": [0, -0.25, -0.5],
+			"scale": [1.99, 1.99, 1]
+		}
+	}
+}

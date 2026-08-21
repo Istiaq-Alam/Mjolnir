@@ -1,0 +1,7 @@
+{
+	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+	"parent": "item/shield/green_power_ring_shield",
+	"textures": {
+		"layer0": "item/shield/violet_power_ring_shield"
+	}
+}

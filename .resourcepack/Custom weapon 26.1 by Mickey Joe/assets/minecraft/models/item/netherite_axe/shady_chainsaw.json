@@ -1,0 +1,8 @@
+{
+	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+	"parent": "item/netherite_axe/chainsaw",
+	"textures": {
+		"particle": "item/netherite_axe/shady_chainsaw",
+		"blade": "item/netherite_axe/shady_chainsaw_blade"
+	}
+}

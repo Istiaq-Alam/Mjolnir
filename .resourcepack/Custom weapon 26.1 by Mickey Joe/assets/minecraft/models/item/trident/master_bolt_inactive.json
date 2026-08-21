@@ -1,0 +1,7 @@
+{
+	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+	"parent": "item/trident/thunderbolt",
+	"textures": {
+		"layer0": "item/trident/master_bolt_inactive"
+	}
+}

@@ -1,0 +1,683 @@
+{
+	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+	"textures": {
+		"particle": "item/mace/highland_mace"
+	},
+	"elements": [
+		{
+			"name": "highland_mace_0",
+			"from": [21.85, 20, 7.5],
+			"to": [23.85, 22, 8.5],
+			"rotation": {"angle": 45, "axis": "z", "origin": [7.85, 6.25, 8]},
+			"faces": {
+				"north": {"uv": [16, 0, 15, 1], "texture": "#particle"},
+				"east": {"uv": [15.5, 0, 16, 1], "texture": "#particle"},
+				"south": {"uv": [15, 0, 16, 1], "texture": "#particle"},
+				"west": {"uv": [15, 0, 15.5, 1], "texture": "#particle"},
+				"up": {"uv": [15, 0, 16, 0.5], "texture": "#particle"},
+				"down": {"uv": [15, 0.5, 16, 1], "texture": "#particle"}
+			}
+		},
+		{
+			"name": "highland_mace_1",
+			"from": [7.5, 9.3, 10.925],
+			"to": [8.5, 14.3, 15.925],
+			"rotation": {"angle": -45, "axis": "x", "origin": [8, 13.3, 1.175]},
+			"faces": {
+				"east": {"uv": [6, 0.5, 8.5, 3], "rotation": 270, "texture": "#particle"},
+				"south": {"uv": [6, 0.5, 8.5, 1], "rotation": 270, "texture": "#particle"},
+				"west": {"uv": [8.5, 0.5, 6, 3], "rotation": 90, "texture": "#particle"},
+				"down": {"uv": [6, 0.5, 6.5, 3], "texture": "#particle"}
+			}
+		},
+		{
+			"name": "highland_mace_2",
+			"from": [7.5, 14.3, 12.925],
+			"to": [8.5, 16.3, 15.925],
+			"rotation": {"angle": -45, "axis": "x", "origin": [8, 13.3, 1.175]},
+			"faces": {
+				"east": {"uv": [8.5, 0.5, 9.5, 2], "rotation": 270, "texture": "#particle"},
+				"south": {"uv": [8.5, 0.5, 9.5, 1], "rotation": 270, "texture": "#particle"},
+				"west": {"uv": [9.5, 0.5, 8.5, 2], "rotation": 90, "texture": "#particle"},
+				"up": {"uv": [9, 0.5, 9.5, 2], "rotation": 180, "texture": "#particle"}
+			}
+		},
+		{
+			"name": "highland_mace_3",
+			"from": [13.85, 12, 7.5],
+			"to": [21.85, 21, 8.5],
+			"rotation": {"angle": 45, "axis": "z", "origin": [7.85, 6.25, 8]},
+			"faces": {
+				"north": {"uv": [15, 0.5, 11, 5], "texture": "#particle"},
+				"south": {"uv": [11, 0.5, 15, 5], "texture": "#particle"},
+				"west": {"uv": [11, 0.5, 11.5, 5], "texture": "#particle"},
+				"up": {"uv": [11, 0.5, 15, 1], "texture": "#particle"},
+				"down": {"uv": [11, 4.5, 15, 5], "texture": "#particle"}
+			}
+		},
+		{
+			"name": "highland_mace_4",
+			"from": [7.5, 16.3, 13.925],
+			"to": [8.5, 17.3, 14.925],
+			"rotation": {"angle": -45, "axis": "x", "origin": [8, 13.3, 1.175]},
+			"faces": {
+				"east": {"uv": [9.5, 1, 10, 1.5], "rotation": 270, "texture": "#particle"},
+				"south": {"uv": [9.5, 1, 10, 1.5], "rotation": 270, "texture": "#particle"},
+				"west": {"uv": [10, 1, 9.5, 1.5], "rotation": 90, "texture": "#particle"}
+			}
+		},
+		{
+			"name": "highland_mace_5",
+			"from": [21.85, 12, 7.5],
+			"to": [22.85, 20, 8.5],
+			"rotation": {"angle": 45, "axis": "z", "origin": [7.85, 6.25, 8]},
+			"faces": {
+				"north": {"uv": [15.5, 1, 15, 5], "texture": "#particle"},
+				"east": {"uv": [15, 1, 15.5, 5], "texture": "#particle"},
+				"south": {"uv": [15, 1, 15.5, 5], "texture": "#particle"},
+				"down": {"uv": [15, 4.5, 15.5, 5], "texture": "#particle"}
+			}
+		},
+		{
+			"name": "highland_mace_6",
+			"from": [7.5, 8.3, 5.925],
+			"to": [8.5, 9.3, 12.925],
+			"rotation": {"angle": -45, "axis": "x", "origin": [8, 13.3, 1.175]},
+			"faces": {
+				"east": {"uv": [5.5, 2, 6, 5.5], "rotation": 270, "texture": "#particle"},
+				"south": {"uv": [5.5, 2, 6, 2.5], "rotation": 270, "texture": "#particle"},
+				"west": {"uv": [6, 2, 5.5, 5.5], "rotation": 90, "texture": "#particle"},
+				"down": {"uv": [5.5, 2, 6, 5.5], "texture": "#particle"}
+			}
+		},
+		{
+			"name": "highland_mace_7",
+			"from": [7.5, 14.3, 11.925],
+			"to": [8.5, 15.3, 12.925],
+			"rotation": {"angle": -45, "axis": "x", "origin": [8, 13.3, 1.175]},
+			"faces": {
+				"east": {"uv": [8.5, 2, 9, 2.5], "rotation": 270, "texture": "#particle"},
+				"west": {"uv": [9, 2, 8.5, 2.5], "rotation": 90, "texture": "#particle"}
+			}
+		},
+		{
+			"name": "highland_mace_8",
+			"from": [12.85, 6, 7.5],
+			"to": [13.85, 18, 8.5],
+			"rotation": {"angle": 45, "axis": "z", "origin": [7.85, 6.25, 8]},
+			"faces": {
+				"north": {"uv": [11, 2, 10.5, 8], "texture": "#particle"},
+				"east": {"uv": [10.5, 2, 11, 8], "texture": "#particle"},
+				"south": {"uv": [10.5, 2, 11, 8], "texture": "#particle"},
+				"west": {"uv": [10.5, 2, 11, 8], "texture": "#particle"},
+				"up": {"uv": [10.5, 2, 11, 2.5], "texture": "#particle"},
+				"down": {"uv": [10.5, 7.5, 11, 8], "texture": "#particle"}
+			}
+		},
+		{
+			"name": "highland_mace_9",
+			"from": [7.5, 7.3, 4.925],
+			"to": [8.5, 8.3, 10.925],
+			"rotation": {"angle": -45, "axis": "x", "origin": [8, 13.3, 1.175]},
+			"faces": {
+				"east": {"uv": [5, 3, 5.5, 6], "rotation": 270, "texture": "#particle"},
+				"south": {"uv": [5, 3, 5.5, 3.5], "rotation": 270, "texture": "#particle"},
+				"west": {"uv": [5.5, 3, 5, 6], "rotation": 90, "texture": "#particle"},
+				"down": {"uv": [5, 3, 5.5, 6], "texture": "#particle"}
+			}
+		},
+		{
+			"name": "highland_mace_10",
+			"from": [7.5, 9.3, 8.925],
+			"to": [8.5, 12.3, 10.925],
+			"rotation": {"angle": -45, "axis": "x", "origin": [8, 13.3, 1.175]},
+			"faces": {
+				"east": {"uv": [6, 3, 7.5, 4], "rotation": 270, "texture": "#particle"},
+				"west": {"uv": [7.5, 3, 6, 4], "rotation": 90, "texture": "#particle"}
+			}
+		},
+		{
+			"name": "highland_mace_11",
+			"from": [7.5, 12.3, 9.925],
+			"to": [8.5, 13.3, 10.925],
+			"rotation": {"angle": -45, "axis": "x", "origin": [8, 13.3, 1.175]},
+			"faces": {
+				"east": {"uv": [7.5, 3, 8, 3.5], "rotation": 270, "texture": "#particle"},
+				"west": {"uv": [8, 3, 7.5, 3.5], "rotation": 90, "texture": "#particle"}
+			}
+		},
+		{
+			"name": "highland_mace_12",
+			"from": [11.85, 6, 7.5],
+			"to": [12.85, 16, 8.5],
+			"rotation": {"angle": 45, "axis": "z", "origin": [7.85, 6.25, 8]},
+			"faces": {
+				"north": {"uv": [10.5, 3, 10, 8], "texture": "#particle"},
+				"south": {"uv": [10, 3, 10.5, 8], "texture": "#particle"},
+				"west": {"uv": [10, 3, 10.5, 8], "texture": "#particle"},
+				"up": {"uv": [10, 3, 10.5, 3.5], "texture": "#particle"},
+				"down": {"uv": [10, 7.5, 10.5, 8], "texture": "#particle"}
+			}
+		},
+		{
+			"name": "highland_mace_13",
+			"from": [7.5, 6.3, 3.925],
+			"to": [8.5, 7.3, 8.925],
+			"rotation": {"angle": -45, "axis": "x", "origin": [8, 13.3, 1.175]},
+			"faces": {
+				"east": {"uv": [4.5, 4, 5, 6.5], "rotation": 270, "texture": "#particle"},
+				"south": {"uv": [4.5, 4, 5, 4.5], "rotation": 270, "texture": "#particle"},
+				"west": {"uv": [5, 4, 4.5, 6.5], "rotation": 90, "texture": "#particle"},
+				"down": {"uv": [4.5, 4, 5, 6.5], "texture": "#particle"}
+			}
+		},
+		{
+			"name": "highland_mace_14",
+			"from": [7.5, 9.3, 7.925],
+			"to": [8.5, 11.3, 8.925],
+			"rotation": {"angle": -45, "axis": "x", "origin": [8, 13.3, 1.175]},
+			"faces": {
+				"east": {"uv": [6, 4, 7, 4.5], "rotation": 270, "texture": "#particle"},
+				"west": {"uv": [7, 4, 6, 4.5], "rotation": 90, "texture": "#particle"}
+			}
+		},
+		{
+			"name": "highland_mace_15",
+			"from": [10.85, 6, 7.5],
+			"to": [11.85, 14, 8.5],
+			"rotation": {"angle": 45, "axis": "z", "origin": [7.85, 6.25, 8]},
+			"faces": {
+				"north": {"uv": [10, 4, 9.5, 8], "texture": "#particle"},
+				"south": {"uv": [9.5, 4, 10, 8], "texture": "#particle"},
+				"west": {"uv": [9.5, 4, 10, 8], "texture": "#particle"},
+				"up": {"uv": [9.5, 4, 10, 4.5], "texture": "#particle"},
+				"down": {"uv": [9.5, 7.5, 10, 8], "texture": "#particle"}
+			}
+		},
+		{
+			"name": "highland_mace_16",
+			"from": [7.5, 9.3, 6.925],
+			"to": [8.5, 10.3, 7.925],
+			"rotation": {"angle": -45, "axis": "x", "origin": [8, 13.3, 1.175]},
+			"faces": {
+				"east": {"uv": [6, 4.5, 6.5, 5], "rotation": 270, "texture": "#particle"},
+				"west": {"uv": [6.5, 4.5, 6, 5], "rotation": 90, "texture": "#particle"}
+			}
+		},
+		{
+			"name": "highland_mace_17",
+			"from": [7.5, 3.3, 2.925],
+			"to": [8.5, 6.3, 6.925],
+			"rotation": {"angle": -45, "axis": "x", "origin": [8, 13.3, 1.175]},
+			"faces": {
+				"north": {"uv": [3, 6.5, 4.5, 7], "rotation": 270, "texture": "#particle"},
+				"east": {"uv": [3, 5, 4.5, 7], "rotation": 270, "texture": "#particle"},
+				"south": {"uv": [3, 5, 4.5, 5.5], "rotation": 270, "texture": "#particle"},
+				"west": {"uv": [4.5, 5, 3, 7], "rotation": 90, "texture": "#particle"},
+				"down": {"uv": [3, 5, 3.5, 7], "texture": "#particle"}
+			}
+		},
+		{
+			"name": "highland_mace_18",
+			"from": [7.85, 6, 7.5],
+			"to": [10.85, 12, 8.5],
+			"rotation": {"angle": 45, "axis": "z", "origin": [7.85, 6.25, 8]},
+			"faces": {
+				"north": {"uv": [9.5, 5, 8, 8], "texture": "#particle"},
+				"south": {"uv": [8, 5, 9.5, 8], "texture": "#particle"},
+				"west": {"uv": [8, 5, 8.5, 8], "texture": "#particle"},
+				"up": {"uv": [8, 5, 9.5, 5.5], "texture": "#particle"},
+				"down": {"uv": [8, 7.5, 9.5, 8], "texture": "#particle"}
+			}
+		},
+		{
+			"name": "highland_mace_19",
+			"from": [13.85, 10, 7.5],
+			"to": [17.85, 12, 8.5],
+			"rotation": {"angle": 45, "axis": "z", "origin": [7.85, 6.25, 8]},
+			"faces": {
+				"north": {"uv": [13, 5, 11, 6], "texture": "#particle"},
+				"east": {"uv": [12.5, 5, 13, 6], "texture": "#particle"},
+				"south": {"uv": [11, 5, 13, 6], "texture": "#particle"},
+				"down": {"uv": [11, 5.5, 13, 6], "texture": "#particle"}
+			}
+		},
+		{
+			"name": "highland_mace_20",
+			"from": [17.85, 11, 7.5],
+			"to": [19.85, 12, 8.5],
+			"rotation": {"angle": 45, "axis": "z", "origin": [7.85, 6.25, 8]},
+			"faces": {
+				"north": {"uv": [14, 5, 13, 5.5], "texture": "#particle"},
+				"east": {"uv": [13.5, 5, 14, 5.5], "texture": "#particle"},
+				"south": {"uv": [13, 5, 14, 5.5], "texture": "#particle"},
+				"down": {"uv": [13, 5, 14, 5.5], "texture": "#particle"}
+			}
+		},
+		{
+			"name": "highland_mace_21",
+			"from": [13.85, 9, 7.5],
+			"to": [15.85, 10, 8.5],
+			"rotation": {"angle": 45, "axis": "z", "origin": [7.85, 6.25, 8]},
+			"faces": {
+				"north": {"uv": [12, 6, 11, 6.5], "texture": "#particle"},
+				"east": {"uv": [11.5, 6, 12, 6.5], "texture": "#particle"},
+				"south": {"uv": [11, 6, 12, 6.5], "texture": "#particle"},
+				"down": {"uv": [11, 6, 12, 6.5], "texture": "#particle"}
+			}
+		},
+		{
+			"name": "highland_mace_22",
+			"from": [7.5, 4.3, 1.925],
+			"to": [8.5, 5.3, 2.925],
+			"rotation": {"angle": -45, "axis": "x", "origin": [8, 13.3, 1.175]},
+			"faces": {
+				"east": {"uv": [3.5, 7, 4, 7.5], "rotation": 270, "texture": "#particle"},
+				"west": {"uv": [4, 7, 3.5, 7.5], "rotation": 90, "texture": "#particle"},
+				"down": {"uv": [3.5, 7, 4, 7.5], "texture": "#particle"}
+			}
+		},
+		{
+			"name": "highland_mace_23",
+			"from": [6.85, 4, 7.5],
+			"to": [7.85, 8, 8.5],
+			"rotation": {"angle": 45, "axis": "z", "origin": [7.85, 6.25, 8]},
+			"faces": {
+				"north": {"uv": [8, 7, 7.5, 9], "texture": "#particle"},
+				"east": {"uv": [7.5, 7, 8, 9], "texture": "#particle"},
+				"south": {"uv": [7.5, 7, 8, 9], "texture": "#particle"},
+				"west": {"uv": [7.5, 7, 8, 9], "texture": "#particle"},
+				"up": {"uv": [7.5, 7, 8, 7.5], "texture": "#particle"},
+				"down": {"uv": [7.5, 8.5, 8, 9], "texture": "#particle"}
+			}
+		},
+		{
+			"name": "highland_mace_24",
+			"from": [5.85, 3, 7.5],
+			"to": [6.85, 6, 8.5],
+			"rotation": {"angle": 45, "axis": "z", "origin": [7.85, 6.25, 8]},
+			"faces": {
+				"north": {"uv": [7.5, 8, 7, 9.5], "texture": "#particle"},
+				"east": {"uv": [7, 8, 7.5, 9.5], "texture": "#particle"},
+				"south": {"uv": [7, 8, 7.5, 9.5], "texture": "#particle"},
+				"west": {"uv": [7, 8, 7.5, 9.5], "texture": "#particle"},
+				"up": {"uv": [7, 8, 7.5, 8.5], "texture": "#particle"},
+				"down": {"uv": [7, 9, 7.5, 9.5], "texture": "#particle"}
+			}
+		},
+		{
+			"name": "highland_mace_25",
+			"from": [7.85, 5, 7.5],
+			"to": [9.85, 6, 8.5],
+			"rotation": {"angle": 45, "axis": "z", "origin": [7.85, 6.25, 8]},
+			"faces": {
+				"north": {"uv": [9, 8, 8, 8.5], "texture": "#particle"},
+				"east": {"uv": [8.5, 8, 9, 8.5], "texture": "#particle"},
+				"south": {"uv": [8, 8, 9, 8.5], "texture": "#particle"},
+				"down": {"uv": [8, 8, 9, 8.5], "texture": "#particle"}
+			}
+		},
+		{
+			"name": "highland_mace_26",
+			"from": [4.85, 2, 7.5],
+			"to": [5.85, 5, 8.5],
+			"rotation": {"angle": 45, "axis": "z", "origin": [7.85, 6.25, 8]},
+			"faces": {
+				"north": {"uv": [7, 8.5, 6.5, 10], "texture": "#particle"},
+				"east": {"uv": [6.5, 8.5, 7, 10], "texture": "#particle"},
+				"south": {"uv": [6.5, 8.5, 7, 10], "texture": "#particle"},
+				"west": {"uv": [6.5, 8.5, 7, 10], "texture": "#particle"},
+				"up": {"uv": [6.5, 8.5, 7, 9], "texture": "#particle"},
+				"down": {"uv": [6.5, 9.5, 7, 10], "texture": "#particle"}
+			}
+		},
+		{
+			"name": "highland_mace_27",
+			"from": [3.85, 0, 7.5],
+			"to": [4.85, 4, 8.5],
+			"rotation": {"angle": 45, "axis": "z", "origin": [7.85, 6.25, 8]},
+			"faces": {
+				"north": {"uv": [6.5, 9, 6, 11], "texture": "#particle"},
+				"east": {"uv": [6, 9, 6.5, 11], "texture": "#particle"},
+				"south": {"uv": [6, 9, 6.5, 11], "texture": "#particle"},
+				"west": {"uv": [6, 9, 6.5, 11], "texture": "#particle"},
+				"up": {"uv": [6, 9, 6.5, 9.5], "texture": "#particle"},
+				"down": {"uv": [6, 10.5, 6.5, 11], "texture": "#particle"}
+			}
+		},
+		{
+			"name": "highland_mace_28",
+			"from": [1.85, 0, 7.5],
+			"to": [3.85, 3, 8.5],
+			"rotation": {"angle": 45, "axis": "z", "origin": [7.85, 6.25, 8]},
+			"faces": {
+				"north": {"uv": [6, 9.5, 5, 11], "texture": "#particle"},
+				"south": {"uv": [5, 9.5, 6, 11], "texture": "#particle"},
+				"west": {"uv": [5, 9.5, 5.5, 11], "texture": "#particle"},
+				"up": {"uv": [5, 9.5, 6, 10], "texture": "#particle"},
+				"down": {"uv": [5, 10.5, 6, 11], "texture": "#particle"}
+			}
+		},
+		{
+			"name": "highland_mace_29",
+			"from": [0.85, -2, 7.5],
+			"to": [1.85, 1, 8.5],
+			"rotation": {"angle": 45, "axis": "z", "origin": [7.85, 6.25, 8]},
+			"faces": {
+				"north": {"uv": [5, 10.5, 4.5, 12], "texture": "#particle"},
+				"east": {"uv": [4.5, 10.5, 5, 12], "texture": "#particle"},
+				"south": {"uv": [4.5, 10.5, 5, 12], "texture": "#particle"},
+				"west": {"uv": [4.5, 10.5, 5, 12], "texture": "#particle"},
+				"up": {"uv": [4.5, 10.5, 5, 11], "texture": "#particle"},
+				"down": {"uv": [4.5, 11.5, 5, 12], "texture": "#particle"}
+			}
+		},
+		{
+			"name": "highland_mace_30",
+			"from": [-0.15, -3, 7.5],
+			"to": [0.85, 0, 8.5],
+			"rotation": {"angle": 45, "axis": "z", "origin": [7.85, 6.25, 8]},
+			"faces": {
+				"north": {"uv": [4.5, 11, 4, 12.5], "texture": "#particle"},
+				"east": {"uv": [4, 11, 4.5, 12.5], "texture": "#particle"},
+				"south": {"uv": [4, 11, 4.5, 12.5], "texture": "#particle"},
+				"west": {"uv": [4, 11, 4.5, 12.5], "texture": "#particle"},
+				"up": {"uv": [4, 11, 4.5, 11.5], "texture": "#particle"},
+				"down": {"uv": [4, 12, 4.5, 12.5], "texture": "#particle"}
+			}
+		},
+		{
+			"name": "highland_mace_31",
+			"from": [1.85, -1, 7.5],
+			"to": [2.85, 0, 8.5],
+			"rotation": {"angle": 45, "axis": "z", "origin": [7.85, 6.25, 8]},
+			"faces": {
+				"north": {"uv": [5.5, 11, 5, 11.5], "texture": "#particle"},
+				"east": {"uv": [5, 11, 5.5, 11.5], "texture": "#particle"},
+				"south": {"uv": [5, 11, 5.5, 11.5], "texture": "#particle"},
+				"down": {"uv": [5, 11, 5.5, 11.5], "texture": "#particle"}
+			}
+		},
+		{
+			"name": "highland_mace_32",
+			"from": [-1.15, -4, 7.5],
+			"to": [-0.15, -1, 8.5],
+			"rotation": {"angle": 45, "axis": "z", "origin": [7.85, 6.25, 8]},
+			"faces": {
+				"north": {"uv": [4, 11.5, 3.5, 13], "texture": "#particle"},
+				"east": {"uv": [3.5, 11.5, 4, 13], "texture": "#particle"},
+				"south": {"uv": [3.5, 11.5, 4, 13], "texture": "#particle"},
+				"west": {"uv": [3.5, 11.5, 4, 13], "texture": "#particle"},
+				"up": {"uv": [3.5, 11.5, 4, 12], "texture": "#particle"},
+				"down": {"uv": [3.5, 12.5, 4, 13], "texture": "#particle"}
+			}
+		},
+		{
+			"name": "highland_mace_33",
+			"from": [-2.15, -5, 7.5],
+			"to": [-1.15, -2, 8.5],
+			"rotation": {"angle": 45, "axis": "z", "origin": [7.85, 6.25, 8]},
+			"faces": {
+				"north": {"uv": [3.5, 12, 3, 13.5], "texture": "#particle"},
+				"east": {"uv": [3, 12, 3.5, 13.5], "texture": "#particle"},
+				"south": {"uv": [3, 12, 3.5, 13.5], "texture": "#particle"},
+				"west": {"uv": [3, 12, 3.5, 13.5], "texture": "#particle"},
+				"up": {"uv": [3, 12, 3.5, 12.5], "texture": "#particle"},
+				"down": {"uv": [3, 13, 3.5, 13.5], "texture": "#particle"}
+			}
+		},
+		{
+			"name": "highland_mace_34",
+			"from": [-3.15, -7, 7.5],
+			"to": [-2.15, -3, 8.5],
+			"rotation": {"angle": 45, "axis": "z", "origin": [7.85, 6.25, 8]},
+			"faces": {
+				"north": {"uv": [3, 12.5, 2.5, 14.5], "texture": "#particle"},
+				"east": {"uv": [2.5, 12.5, 3, 14.5], "texture": "#particle"},
+				"south": {"uv": [2.5, 12.5, 3, 14.5], "texture": "#particle"},
+				"west": {"uv": [2.5, 12.5, 3, 14.5], "texture": "#particle"},
+				"up": {"uv": [2.5, 12.5, 3, 13], "texture": "#particle"},
+				"down": {"uv": [2.5, 14, 3, 14.5], "texture": "#particle"}
+			}
+		},
+		{
+			"name": "highland_mace_35",
+			"from": [-5.15, -7, 7.5],
+			"to": [-3.15, -4, 8.5],
+			"rotation": {"angle": 45, "axis": "z", "origin": [7.85, 6.25, 8]},
+			"faces": {
+				"north": {"uv": [2.5, 13, 1.5, 14.5], "texture": "#particle"},
+				"south": {"uv": [1.5, 13, 2.5, 14.5], "texture": "#particle"},
+				"west": {"uv": [1.5, 13, 2, 14.5], "texture": "#particle"},
+				"up": {"uv": [1.5, 13, 2.5, 13.5], "texture": "#particle"},
+				"down": {"uv": [1.5, 14, 2.5, 14.5], "texture": "#particle"}
+			}
+		},
+		{
+			"name": "highland_mace_36",
+			"from": [-6.15, -10, 7.5],
+			"to": [-5.15, -6, 8.5],
+			"rotation": {"angle": 45, "axis": "z", "origin": [7.85, 6.25, 8]},
+			"faces": {
+				"north": {"uv": [1.5, 14, 1, 16], "texture": "#particle"},
+				"east": {"uv": [1, 14, 1.5, 16], "texture": "#particle"},
+				"south": {"uv": [1, 14, 1.5, 16], "texture": "#particle"},
+				"west": {"uv": [1, 14, 1.5, 16], "texture": "#particle"},
+				"up": {"uv": [1, 14, 1.5, 14.5], "texture": "#particle"},
+				"down": {"uv": [1, 15.5, 1.5, 16], "texture": "#particle"}
+			}
+		},
+		{
+			"name": "highland_mace_37",
+			"from": [-8.15, -10, 7.5],
+			"to": [-6.15, -7, 8.5],
+			"rotation": {"angle": 45, "axis": "z", "origin": [7.85, 6.25, 8]},
+			"faces": {
+				"north": {"uv": [1, 14.5, 0, 16], "texture": "#particle"},
+				"south": {"uv": [0, 14.5, 1, 16], "texture": "#particle"},
+				"west": {"uv": [0, 14.5, 0.5, 16], "texture": "#particle"},
+				"up": {"uv": [0, 14.5, 1, 15], "texture": "#particle"},
+				"down": {"uv": [0, 15.5, 1, 16], "texture": "#particle"}
+			}
+		},
+		{
+			"name": "highland_mace_38",
+			"from": [-5.15, -8, 7.5],
+			"to": [-4.15, -7, 8.5],
+			"rotation": {"angle": 45, "axis": "z", "origin": [7.85, 6.25, 8]},
+			"faces": {
+				"north": {"uv": [2, 14.5, 1.5, 15], "texture": "#particle"},
+				"east": {"uv": [1.5, 14.5, 2, 15], "texture": "#particle"},
+				"south": {"uv": [1.5, 14.5, 2, 15], "texture": "#particle"},
+				"down": {"uv": [1.5, 14.5, 2, 15], "texture": "#particle"}
+			}
+		},
+		{
+			"name": "highland_mace_1",
+			"from": [7.5, 9.3, 0.075],
+			"to": [8.5, 14.3, 5.075],
+			"rotation": {"angle": 45, "axis": "x", "origin": [8, 13.3, 14.825]},
+			"faces": {
+				"north": {"uv": [6, 1, 8.5, 0.5], "rotation": 270, "texture": "#particle"},
+				"east": {"uv": [6, 3, 8.5, 0.5], "rotation": 270, "texture": "#particle"},
+				"west": {"uv": [8.5, 3, 6, 0.5], "rotation": 90, "texture": "#particle"},
+				"down": {"uv": [6, 3, 6.5, 0.5], "texture": "#particle"}
+			}
+		},
+		{
+			"name": "highland_mace_2",
+			"from": [7.5, 14.3, 0.075],
+			"to": [8.5, 16.3, 3.075],
+			"rotation": {"angle": 45, "axis": "x", "origin": [8, 13.3, 14.825]},
+			"faces": {
+				"north": {"uv": [8.5, 1, 9.5, 0.5], "rotation": 270, "texture": "#particle"},
+				"east": {"uv": [8.5, 2, 9.5, 0.5], "rotation": 270, "texture": "#particle"},
+				"west": {"uv": [9.5, 2, 8.5, 0.5], "rotation": 90, "texture": "#particle"},
+				"up": {"uv": [9, 2, 9.5, 0.5], "rotation": 180, "texture": "#particle"}
+			}
+		},
+		{
+			"name": "highland_mace_4",
+			"from": [7.5, 16.3, 1.075],
+			"to": [8.5, 17.3, 2.075],
+			"rotation": {"angle": 45, "axis": "x", "origin": [8, 13.3, 14.825]},
+			"faces": {
+				"north": {"uv": [9.5, 1.5, 10, 1], "rotation": 270, "texture": "#particle"},
+				"east": {"uv": [9.5, 1.5, 10, 1], "rotation": 270, "texture": "#particle"},
+				"west": {"uv": [10, 1.5, 9.5, 1], "rotation": 90, "texture": "#particle"}
+			}
+		},
+		{
+			"name": "highland_mace_6",
+			"from": [7.5, 8.3, 3.075],
+			"to": [8.5, 9.3, 10.075],
+			"rotation": {"angle": 45, "axis": "x", "origin": [8, 13.3, 14.825]},
+			"faces": {
+				"north": {"uv": [5.5, 2.5, 6, 2], "rotation": 270, "texture": "#particle"},
+				"east": {"uv": [5.5, 5.5, 6, 2], "rotation": 270, "texture": "#particle"},
+				"west": {"uv": [6, 5.5, 5.5, 2], "rotation": 90, "texture": "#particle"},
+				"down": {"uv": [5.5, 5.5, 6, 2], "texture": "#particle"}
+			}
+		},
+		{
+			"name": "highland_mace_7",
+			"from": [7.5, 14.3, 3.075],
+			"to": [8.5, 15.3, 4.075],
+			"rotation": {"angle": 45, "axis": "x", "origin": [8, 13.3, 14.825]},
+			"faces": {
+				"east": {"uv": [8.5, 2.5, 9, 2], "rotation": 270, "texture": "#particle"},
+				"west": {"uv": [9, 2.5, 8.5, 2], "rotation": 90, "texture": "#particle"}
+			}
+		},
+		{
+			"name": "highland_mace_9",
+			"from": [7.5, 7.3, 5.075],
+			"to": [8.5, 8.3, 11.075],
+			"rotation": {"angle": 45, "axis": "x", "origin": [8, 13.3, 14.825]},
+			"faces": {
+				"north": {"uv": [5, 3.5, 5.5, 3], "rotation": 270, "texture": "#particle"},
+				"east": {"uv": [5, 6, 5.5, 3], "rotation": 270, "texture": "#particle"},
+				"west": {"uv": [5.5, 6, 5, 3], "rotation": 90, "texture": "#particle"},
+				"down": {"uv": [5, 6, 5.5, 3], "texture": "#particle"}
+			}
+		},
+		{
+			"name": "highland_mace_10",
+			"from": [7.5, 9.3, 5.075],
+			"to": [8.5, 12.3, 7.075],
+			"rotation": {"angle": 45, "axis": "x", "origin": [8, 13.3, 14.825]},
+			"faces": {
+				"east": {"uv": [6, 4, 7.5, 3], "rotation": 270, "texture": "#particle"},
+				"west": {"uv": [7.5, 4, 6, 3], "rotation": 90, "texture": "#particle"}
+			}
+		},
+		{
+			"name": "highland_mace_11",
+			"from": [7.5, 12.3, 5.075],
+			"to": [8.5, 13.3, 6.075],
+			"rotation": {"angle": 45, "axis": "x", "origin": [8, 13.3, 14.825]},
+			"faces": {
+				"east": {"uv": [7.5, 3.5, 8, 3], "rotation": 270, "texture": "#particle"},
+				"west": {"uv": [8, 3.5, 7.5, 3], "rotation": 90, "texture": "#particle"}
+			}
+		},
+		{
+			"name": "highland_mace_13",
+			"from": [7.5, 6.3, 7.075],
+			"to": [8.5, 7.3, 12.075],
+			"rotation": {"angle": 45, "axis": "x", "origin": [8, 13.3, 14.825]},
+			"faces": {
+				"north": {"uv": [4.5, 4.5, 5, 4], "rotation": 270, "texture": "#particle"},
+				"east": {"uv": [4.5, 6.5, 5, 4], "rotation": 270, "texture": "#particle"},
+				"west": {"uv": [5, 6.5, 4.5, 4], "rotation": 90, "texture": "#particle"},
+				"down": {"uv": [4.5, 6.5, 5, 4], "texture": "#particle"}
+			}
+		},
+		{
+			"name": "highland_mace_14",
+			"from": [7.5, 9.3, 7.075],
+			"to": [8.5, 11.3, 8.075],
+			"rotation": {"angle": 45, "axis": "x", "origin": [8, 13.3, 14.825]},
+			"faces": {
+				"east": {"uv": [6, 4.5, 7, 4], "rotation": 270, "texture": "#particle"},
+				"west": {"uv": [7, 4.5, 6, 4], "rotation": 90, "texture": "#particle"}
+			}
+		},
+		{
+			"name": "highland_mace_16",
+			"from": [7.5, 9.3, 8.075],
+			"to": [8.5, 10.3, 9.075],
+			"rotation": {"angle": 45, "axis": "x", "origin": [8, 13.3, 14.825]},
+			"faces": {
+				"east": {"uv": [6, 5, 6.5, 4.5], "rotation": 270, "texture": "#particle"},
+				"west": {"uv": [6.5, 5, 6, 4.5], "rotation": 90, "texture": "#particle"}
+			}
+		},
+		{
+			"name": "highland_mace_17",
+			"from": [7.5, 3.3, 9.075],
+			"to": [8.5, 6.3, 13.075],
+			"rotation": {"angle": 45, "axis": "x", "origin": [8, 13.3, 14.825]},
+			"faces": {
+				"north": {"uv": [3, 5.5, 4.5, 5], "rotation": 270, "texture": "#particle"},
+				"east": {"uv": [3, 7, 4.5, 5], "rotation": 270, "texture": "#particle"},
+				"south": {"uv": [3, 7, 4.5, 6.5], "rotation": 270, "texture": "#particle"},
+				"west": {"uv": [4.5, 7, 3, 5], "rotation": 90, "texture": "#particle"},
+				"down": {"uv": [3, 7, 3.5, 5], "texture": "#particle"}
+			}
+		},
+		{
+			"name": "highland_mace_22",
+			"from": [7.5, 4.3, 13.075],
+			"to": [8.5, 5.3, 14.075],
+			"rotation": {"angle": 45, "axis": "x", "origin": [8, 13.3, 14.825]},
+			"faces": {
+				"east": {"uv": [3.5, 7.5, 4, 7], "rotation": 270, "texture": "#particle"},
+				"west": {"uv": [4, 7.5, 3.5, 7], "rotation": 90, "texture": "#particle"},
+				"down": {"uv": [3.5, 7.5, 4, 7], "texture": "#particle"}
+			}
+		}
+	],
+	"gui_light": "front",
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [0, -90, 0],
+			"translation": [0, 2.25, 1.75],
+			"scale": [0.85, 0.85, 0.85]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [0, -90, 0],
+			"translation": [0, 2.25, 1.75],
+			"scale": [0.85, 0.85, 0.85]
+		},
+		"firstperson_righthand": {
+			"rotation": [179, -59, -162],
+			"translation": [5.25, 2.7, -0.62],
+			"scale": [0.6, 0.6, 0.6]
+		},
+		"firstperson_lefthand": {
+			"rotation": [179, -59, -162],
+			"translation": [5.25, 2.7, -0.62],
+			"scale": [0.6, 0.6, 0.6]
+		},
+		"ground": {
+			"rotation": [0, -25.5, -45],
+			"translation": [1, 7.5, 0],
+			"scale": [0.5, 0.5, 0.5]
+		},
+		"gui": {
+			"rotation": [-15, -16, -48],
+			"translation": [0.75, 0.75, 0],
+			"scale": [0.51, 0.51, 0.51]
+		},
+		"head": {
+			"rotation": [45, 90, -45],
+			"translation": [0, 13, 0]
+		},
+		"fixed": {
+			"rotation": [3, 164, -45],
+			"translation": [-2, 3.25, -3.75],
+			"scale": [0.99, 0.99, 0.99]
+		}
+	}
+}

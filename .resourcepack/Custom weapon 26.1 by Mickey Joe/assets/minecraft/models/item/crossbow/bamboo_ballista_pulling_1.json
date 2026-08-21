@@ -1,0 +1,8 @@
+{
+	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+	"parent": "item/crossbow/oak_ballista_pulling_1",
+	"textures": {
+		"0": "item/crossbow/bamboo_ballista",
+		"particle": "item/crossbow/bamboo_ballista"
+	}
+}

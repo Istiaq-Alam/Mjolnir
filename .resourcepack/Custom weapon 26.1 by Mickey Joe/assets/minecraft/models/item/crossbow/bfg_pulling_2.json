@@ -1,0 +1,16 @@
+{
+	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+	"parent": "item/crossbow/bfg",
+	"display": {
+		"firstperson_righthand": {
+			"rotation": [28, 28, 16],
+			"translation": [2.13, 6.7, 3.63],
+			"scale": [0.68, 0.68, 0.68]
+		},
+		"firstperson_lefthand": {
+			"rotation": [28, 28, 16],
+			"translation": [2.13, 6.7, 3.63],
+			"scale": [0.68, 0.68, 0.68]
+		}
+	}
+}

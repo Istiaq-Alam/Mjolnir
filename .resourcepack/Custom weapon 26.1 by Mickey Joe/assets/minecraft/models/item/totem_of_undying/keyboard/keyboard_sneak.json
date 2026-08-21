@@ -1,0 +1,7 @@
+{
+	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+    "parent": "item/totem_of_undying/keyboard/keyboard",
+    "textures": {
+        "layer0": "item/totem_of_undying/keyboard/keyboard_sneak"
+    }
+}

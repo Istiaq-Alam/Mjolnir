@@ -1,0 +1,13 @@
+{
+    "credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+    "parent": "item/generated",
+    "gui_light": "front",
+    "textures": {
+        "layer0": "item/potion/thick_splash"
+    },
+	"display": {
+		"gui": {
+			"translation": [-0.5, 0, 0]
+		}
+	}
+}

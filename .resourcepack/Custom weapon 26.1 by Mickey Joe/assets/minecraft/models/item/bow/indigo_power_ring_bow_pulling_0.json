@@ -1,0 +1,7 @@
+{
+	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+	"parent": "item/bow/green_power_ring_bow_pulling_0",
+	"textures": {
+		"particle": "item/bow/indigo_power_ring_bow_pulling_0"
+	}
+}

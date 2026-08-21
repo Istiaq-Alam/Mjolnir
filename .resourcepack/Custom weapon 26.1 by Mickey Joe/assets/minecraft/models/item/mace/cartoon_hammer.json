@@ -1,0 +1,8 @@
+{
+	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+	"parent": "item/mace/toy_hammer",
+	"textures": {
+		"particle": "item/mace/cartoon_hammer",
+		"1": "item/mace/cartoon_hammer_handle"
+	}
+}

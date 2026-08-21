@@ -1,0 +1,142 @@
+{
+	"oversized_in_gui": true,
+	"model": {
+		"type": "condition",
+		"property": "has_component",
+		"component": "custom_name",
+		"on_true": {
+			"type": "select",
+			"model": "item/golden_shovel",
+			"property": "component",
+			"component": "custom_name",
+	  		"cases": [
+					{
+				"when": "Ladle",
+				"model": {
+					"type": "model",
+					"model": "item/golden_shovel/ladle"
+			 			}
+					},
+					{
+				"when": "Super Cute Shovel",
+				"model": {
+					"type": "model",
+					"model": "item/golden_shovel/super_cute_shovel"
+			 			}
+					},
+					{
+				"when": "Kemetian Shovel",
+				"model": {
+					"type": "model",
+					"model": "item/golden_shovel/kemetian_shovel"
+			 			}
+					},
+					{
+				"when": "Hellenic Shovel",
+				"model": {
+					"type": "model",
+					"model": "item/golden_shovel/hellenic_shovel"
+			 			}
+					},
+					{
+				"when": "Sinitic Shovel",
+				"model": {
+					"type": "model",
+					"model": "item/golden_shovel/sinitic_shovel"
+			 			}
+					},
+					{
+				"when": "Fantasy Shovel",
+				"model": {
+					"type": "model",
+					"model": "item/golden_shovel/fantasy_shovel"
+			 			}
+					},
+					{
+				"when": "Norroen Shovel",
+				"model": {
+					"type": "model",
+					"model": "item/golden_shovel/norroen_shovel"
+			 			}
+					},
+					{
+				"when": "Halloween Shovel",
+				"model": {
+					"type": "model",
+					"model": "item/golden_shovel/halloween_shovel"
+			 			}
+					}
+		  		],
+			"fallback": {
+				"type": "range_dispatch",
+				"property": "damage",
+				"scale": 4,
+				"entries": [
+					{
+						"threshold": 0,
+						"model": {
+							"type": "model",
+							"model": "item/golden_shovel"
+						}
+					},
+					{
+						"threshold": 1,
+						"model": {
+							"type": "model",
+							"model": "item/golden_shovel"
+						}
+					},
+					{
+						"threshold": 2,
+						"model": {
+							"type": "model",
+							"model": "item/golden_shovel"
+						}
+					},
+					{
+						"threshold": 3,
+						"model": {
+							"type": "model",
+							"model": "item/golden_shovel"
+						}
+					}
+				]
+			}
+		},
+		"on_false": {
+			"type": "range_dispatch",
+			"property": "damage",
+			"scale": 4,
+			"entries": [
+				{
+					"threshold": 0,
+					"model": {
+						"type": "model",
+						"model": "item/golden_shovel"
+					}
+				},
+				{
+					"threshold": 1,
+					"model": {
+						"type": "model",
+						"model": "item/golden_shovel"
+					}
+				},
+				{
+					"threshold": 2,
+					"model": {
+						"type": "model",
+						"model": "item/golden_shovel"
+					}
+				},
+				{
+					"threshold": 3,
+					"model": {
+						"type": "model",
+						"model": "item/golden_shovel"
+					}
+				}
+			]
+		}
+	}
+}

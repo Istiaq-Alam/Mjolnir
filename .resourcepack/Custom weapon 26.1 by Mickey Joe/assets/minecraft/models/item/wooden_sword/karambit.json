@@ -1,0 +1,7 @@
+{
+	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+	"parent": "item/netherite_sword/karambit",
+	"textures": {
+		"layer0": "item/wooden_sword/karambit"
+	}
+}

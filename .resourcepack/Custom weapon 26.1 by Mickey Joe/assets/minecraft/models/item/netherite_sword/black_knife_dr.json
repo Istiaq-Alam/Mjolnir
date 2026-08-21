@@ -1,0 +1,53 @@
+{
+	"format_version": "1.21.6",
+	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+	"parent": "builtin/generated",
+	"textures": {
+		"layer0": "item/netherite_sword/black_knife_dr"
+	},
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [0, -90, 18],
+			"translation": [0, 8, 3.25],
+			"scale": [3.4, 3.4, 0.85]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [0, 90, -18],
+			"translation": [0, 8, 3.25],
+			"scale": [3.4, 3.4, 0.85]
+		},
+		"firstperson_righthand": {
+			"rotation": [2, -110, 38],
+			"translation": [6.13, 5.2, -1.12],
+			"scale": [2.72, 2.72, 0.68]
+		},
+		"firstperson_lefthand": {
+			"rotation": [2, 70, -38],
+			"translation": [6.13, 5.2, -1.12],
+			"scale": [2.72, 2.72, 0.68]
+		},
+		"ground": {
+			"rotation": [0, 0, -30],
+			"translation": [1.75, 0.5, 0],
+			"scale": [2, 2, 0.5]
+		},
+		"gui": {
+			"rotation": [0, -25.5, -29],
+			"translation": [0.25, -0.3, 0],
+			"scale": [2.24, 2.24, 0.56]
+		},
+		"head": {
+			"scale": [4, 4, 1]
+		},
+		"fixed": {
+			"rotation": [0, -180, -30],
+			"translation": [0, -0.25, -0.5],
+			"scale": [3.6, 3.6, 1]
+		},
+		"on_shelf": {
+			"rotation": [1, -90, -160],
+			"translation": [-0.5, 0, 6.25],
+			"scale": [4, 4, 1]
+		}
+	}
+}

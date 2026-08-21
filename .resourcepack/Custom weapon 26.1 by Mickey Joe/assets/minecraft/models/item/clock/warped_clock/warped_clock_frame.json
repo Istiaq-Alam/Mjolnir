@@ -1,0 +1,7 @@
+{
+	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+	"parent": "item/clock/oak_clock/oak_clock_frame",
+	"textures": {
+		"layer0": "item/clock/warped_clock/warped_clock_frame"
+	}
+}

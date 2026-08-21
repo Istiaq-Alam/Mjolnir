@@ -1,0 +1,96 @@
+{
+	"format_version": "1.21.6",
+	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+	"parent": "item/compass/compass/base",
+	"textures": {
+		"base": "item/compass/witch_hut_base",
+		"particle": "item/compass/witch_hut"
+	},
+	"elements": [
+		{
+			"from": [3, 3, 6.5],
+			"to": [13, 13, 9.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [7, 7, 8.5]},
+			"faces": {
+				"north": {"uv": [6, 16, 16, 6], "rotation": 90, "texture": "#base"},
+				"east": {"uv": [6, 3, 16, 6], "rotation": 90, "texture": "#particle"},
+				"south": {"uv": [16, 6, 6, 16], "texture": "#particle"},
+				"west": {"uv": [6, 6, 16, 3], "rotation": 90, "texture": "#particle"},
+				"up": {"uv": [6, 0, 16, 3], "texture": "#particle"},
+				"down": {"uv": [6, 16, 3, 6], "rotation": 90, "texture": "#particle"}
+			}
+		},
+		{
+			"from": [5, 13, 5],
+			"to": [11, 14, 11],
+			"rotation": {"angle": 0, "axis": "x", "origin": [8, 13, 9.5]},
+			"faces": {
+				"north": {"uv": [6, 5, 12, 6], "texture": "#base"},
+				"east": {"uv": [7, 6, 6, 0], "rotation": 90, "texture": "#base"},
+				"south": {"uv": [12, 0, 6, 1], "texture": "#base"},
+				"west": {"uv": [11, 0, 12, 6], "rotation": 90, "texture": "#base"},
+				"up": {"uv": [12, 6, 6, 0], "texture": "#base"},
+				"down": {"uv": [12, 0, 6, 6], "texture": "#base"}
+			}
+		},
+		{
+			"from": [6.5, 13, 6.5],
+			"to": [9.5, 16, 9.5],
+			"rotation": {"angle": -2.5, "axis": "x", "origin": [8, 13, 9.5]},
+			"faces": {
+				"north": {"uv": [12, 3, 15, 6], "texture": "#base"},
+				"east": {"uv": [12, 3, 15, 6], "texture": "#base"},
+				"south": {"uv": [0, 6, 3, 9], "texture": "#base"},
+				"west": {"uv": [15, 3, 12, 6], "texture": "#base"},
+				"up": {"uv": [6, 9, 3, 6], "texture": "#base"}
+			}
+		},
+		{
+			"from": [7, 15.99009, 8.05621],
+			"to": [9, 17.99009, 10.05621],
+			"rotation": {"angle": -22.5, "axis": "x", "origin": [8, 13, 9.5]},
+			"faces": {
+				"north": {"uv": [12, 0, 14, 2], "texture": "#base"},
+				"east": {"uv": [12, 0, 14, 2], "texture": "#base"},
+				"south": {"uv": [12, 0, 14, 2], "texture": "#base"},
+				"west": {"uv": [12, 0, 14, 2], "texture": "#base"},
+				"up": {"uv": [9, 3, 7, 1], "texture": "#base"}
+			}
+		},
+		{
+			"from": [7.5, 17.9662, 8.99092],
+			"to": [8.5, 19.9662, 9.99092],
+			"rotation": {"angle": -27.5, "axis": "x", "origin": [8, 13, 9.5]},
+			"faces": {
+				"north": {"uv": [15, 4, 16, 6], "texture": "#base"},
+				"east": {"uv": [15, 4, 16, 6], "texture": "#base"},
+				"south": {"uv": [15, 4, 16, 6], "texture": "#base"},
+				"west": {"uv": [15, 4, 16, 6], "texture": "#base"},
+				"up": {"uv": [16, 5, 15, 4], "texture": "#base"}
+			}
+		},
+		{
+			"from": [11, 11, 9.5],
+			"to": [5, 5, 8.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [14, 14, 6.5]},
+			"faces": {
+				"east": {"uv": [6, 13, 5, 7], "rotation": 180, "texture": "#particle"},
+				"south": {"uv": [0, 0, 6, 6], "rotation": 180, "texture": "#base"},
+				"west": {"uv": [6, 13, 5, 7], "rotation": 180, "texture": "#particle"},
+				"up": {"uv": [8, 14, 14, 15], "texture": "#particle"},
+				"down": {"uv": [5, 9, 4, 15], "rotation": 90, "texture": "#particle"}
+			}
+		},
+		{
+			"from": [7, 7, 8.5],
+			"to": [9, 9, 9.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [6, 7, 8]},
+			"faces": {
+				"east": {"uv": [10, 10, 11, 12], "texture": "#particle"},
+				"west": {"uv": [11, 10, 12, 12], "texture": "#particle"},
+				"up": {"uv": [12, 11, 10, 10], "texture": "#particle"},
+				"down": {"uv": [12, 11, 10, 12], "texture": "#particle"}
+			}
+		}
+	]
+}

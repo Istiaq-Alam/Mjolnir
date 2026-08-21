@@ -1,0 +1,17 @@
+{
+	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+	"parent": "item/compass/ocean_monument",
+	"textures": {
+		"particle": "block/water_still"
+	},
+	"elements": [
+		{
+			"from": [5, 5, 9],
+			"to": [11, 11, 9],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 8, 7]},
+			"faces": {
+				"south": {"uv": [5, 5, 11, 11], "rotation": 180, "texture": "#particle", "tintindex": 0}
+			}
+		}
+	]
+}

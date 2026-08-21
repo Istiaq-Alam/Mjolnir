@@ -1,0 +1,9 @@
+{
+	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+	"parent": "item/crossbow/acorn_acer_firework",
+	"textures": {
+		"particle": "item/crossbow/weeping_wrangler_barrel",
+		"base": "item/crossbow/weeping_wrangler"
+		}
+	}
+}

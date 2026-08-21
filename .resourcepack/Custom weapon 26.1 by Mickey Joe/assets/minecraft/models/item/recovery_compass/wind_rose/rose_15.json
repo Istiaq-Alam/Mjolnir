@@ -1,0 +1,7 @@
+{
+	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+	"parent": "item/compass/wind_rose/rose_15",
+	"textures": {
+		"layer0": "item/recovery_compass/wind_rose"
+	}
+}

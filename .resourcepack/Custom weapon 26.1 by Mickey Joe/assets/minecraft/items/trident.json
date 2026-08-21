@@ -1,0 +1,814 @@
+{
+	"oversized_in_gui": true,
+	"model": {
+		"type": "select",
+		"property": "component",
+		"component": "custom_name",
+		"cases": [
+			{
+				"when": "Asgore's Trident",
+				"model": {
+					"type": "condition",
+					"property": "using_item",
+					"on_true": {
+						"type": "select",
+						"property": "display_context",
+						"cases": [
+							{
+								"when": [
+									"thirdperson_lefthand",
+									"thirdperson_righthand"
+								],
+								"model": {
+									"type": "model",
+									"model": "item/trident/asgore_trident_throwing"
+								}
+							}
+						],
+						"fallback": {
+							"type": "model",
+							"model": "item/trident/asgore_trident"
+						}
+					},
+					"on_false": {
+						"type": "model",
+						"model": "item/trident/asgore_trident"
+					}
+				}
+			},
+			{
+				"when": [
+					"Dinnerbone",
+					"Grumm",
+					"tnedirT"
+				],
+				"model": {
+					"type": "condition",
+					"property": "using_item",
+					"on_true": {
+						"type": "model",
+						"model": "item/trident/dinnerbone_throwing"
+					},
+					"on_false": {
+						"type": "model",
+						"model": "item/trident/dinnerbone"
+					}
+				}
+			},
+			{
+				"when": "jeb_",
+				"model": {
+					"type": "condition",
+					"property": "using_item",
+					"on_true": {
+						"type": "model",
+						"model": "item/trident/jeb__throwing"
+					},
+					"on_false": {
+						"type": "model",
+						"model": "item/trident/jeb_"
+					}
+				}
+			},
+			{
+				"when": [
+					"Steel Ball",
+					"鉄球",
+					"Tekkyū"
+				],
+				"model": {
+					"type": "condition",
+					"property": "using_item",
+					"on_true": {
+						"type": "composite",
+						"models": [
+							{
+								"type": "select",
+								"property": "display_context",
+								"cases": [
+									{
+										"when": [
+											"gui",
+											"ground",
+											"fixed"
+										],
+										"model": {
+											"type": "model",
+											"model": "item/trident/steel_ball_stationary"
+										}
+									}
+								],
+								"fallback": {
+									"type": "empty"
+								}
+							},
+							{
+								"type": "select",
+								"property": "display_context",
+								"cases": [
+									{
+										"when": [
+											"firstperson_lefthand",
+											"firstperson_righthand",
+											"thirdperson_lefthand",
+											"thirdperson_righthand"
+										],
+										"model": {
+											"type": "composite",
+											"models": [
+												{
+													"type": "model",
+													"model": "item/trident/steel_ball_throwing"
+												},
+												{
+													"type": "model",
+													"model": "item/trident/steel_ball_golden_rectangle_throwing"
+												},
+												{
+													"type": "model",
+													"model": "item/trident/steel_ball_spin_throwing"
+												},
+												{
+													"type": "condition",
+													"property": "component",
+													"predicate": "enchantments",
+													"value": [
+														{
+															"enchantments": [
+																"riptide",
+																"loyalty"
+															],
+															"levels": 3
+														}
+													],
+													"on_true": {
+														"type": "model",
+														"model": "item/trident/steel_ball_riptide"
+													},
+													"on_false": {
+														"type": "empty"
+													}
+												}
+											]
+										}
+									}
+								],
+								"fallback": {
+									"type": "model",
+									"model": "item/trident/steel_ball_stationary"
+								}
+							}
+						]
+					},
+					"on_false": {
+						"type": "composite",
+						"models": [
+							{
+								"type": "select",
+								"property": "display_context",
+								"cases": [
+									{
+										"when": [
+											"firstperson_lefthand",
+											"firstperson_righthand",
+											"thirdperson_lefthand",
+											"thirdperson_righthand"
+										],
+										"model": {
+											"type": "composite",
+											"models": [
+												{
+													"type": "model",
+													"model": "item/trident/steel_ball"
+												},
+												{
+													"type": "model",
+													"model": "item/trident/steel_ball_golden_rectangle"
+												},
+												{
+													"type": "model",
+													"model": "item/trident/steel_ball_spin"
+												}
+											]
+										}
+									}
+								],
+								"fallback": {
+									"type": "composite",
+									"models": [
+										{
+											"type": "select",
+											"property": "display_context",
+											"cases": [
+												{
+													"when": "fixed",
+													"model": {
+														"type": "condition",
+														"property": "component",
+														"predicate": "enchantments",
+														"value": [
+															{
+																"enchantments": "impaling",
+																"levels": 5
+															}
+														],
+														"on_true": {
+															"type": "composite",
+															"models": [
+																{
+																	"type": "model",
+																	"model": "item/trident/steel_ball_spin"
+																},
+																{
+																	"type": "model",
+																	"model": "item/trident/steel_ball"
+																},
+																{
+																	"type": "model",
+																	"model": "item/trident/steel_ball_breaker"
+																}
+															]
+														},
+														"on_false": {
+															"type": "model",
+															"model": "item/trident/steel_ball_stationary"
+														}
+													}
+												}
+											],
+											"fallback": {
+												"type": "model",
+												"model": "item/trident/steel_ball_stationary"
+											}
+										}
+									]
+								}
+							}
+						]
+					}
+				}
+			},
+			{
+				"when": [
+					"Golden Shuriken of Ice",
+					"Shuriken of Ice"
+				],
+				"model": {
+					"type": "condition",
+					"property": "using_item",
+					"on_true": {
+						"type": "model",
+						"model": "item/trident/golden_shuriken_of_ice_throwing"
+					},
+					"on_false": {
+						"type": "model",
+						"model": "item/trident/golden_shuriken_of_ice"
+					}
+				}
+			},
+			{
+				"when": [
+					"Mjolnir",
+					"Mjölnir",
+					"Mjølnir"
+				],
+				"model": {
+					"type": "condition",
+					"property": "using_item",
+					"on_true": {
+						"type": "model",
+						"model": "item/trident/mjolnir_throwing"
+					},
+					"on_false": {
+						"type": "model",
+						"model": "item/trident/mjolnir"
+					}
+				}
+			},
+			{
+				"when": "Thunderbolt",
+				"model": {
+					"type": "condition",
+					"property": "using_item",
+					"on_true": {
+						"type": "condition",
+						"property": "component",
+						"predicate": "enchantments",
+						"value": [
+							{
+								"enchantments": [
+									"riptide",
+									"channeling",
+									"loyalty"
+								]
+							}
+						],
+						"on_true": {
+							"type": "model",
+							"model": "item/trident/thunderbolt"
+						},
+						"on_false": {
+							"type": "model",
+							"model": "item/trident/thunderbolt_inactive"
+						}
+					},
+					"on_false": {
+						"type": "condition",
+						"property": "component",
+						"predicate": "enchantments",
+						"value": [
+							{
+								"enchantments": [
+									"riptide",
+									"channeling",
+									"loyalty"
+								]
+							}
+						],
+						"on_true": {
+							"type": "model",
+							"model": "item/trident/thunderbolt"
+						},
+						"on_false": {
+							"type": "model",
+							"model": "item/trident/thunderbolt_inactive"
+						}
+					}
+				}
+			},
+			{
+				"when": "Master Bolt",
+				"model": {
+					"type": "condition",
+					"property": "using_item",
+					"on_true": {
+						"type": "condition",
+						"property": "component",
+						"predicate": "enchantments",
+						"value": [
+							{
+								"enchantments": [
+									"riptide",
+									"channeling",
+									"loyalty"
+								]
+							}
+						],
+						"on_true": {
+							"type": "model",
+							"model": "item/trident/master_bolt"
+						},
+						"on_false": {
+							"type": "model",
+							"model": "item/trident/master_bolt_inactive"
+						}
+					},
+					"on_false": {
+						"type": "condition",
+						"property": "component",
+						"predicate": "enchantments",
+						"value": [
+							{
+								"enchantments": [
+									"riptide",
+									"channeling",
+									"loyalty"
+								]
+							}
+						],
+						"on_true": {
+							"type": "model",
+							"model": "item/trident/master_bolt"
+						},
+						"on_false": {
+							"type": "model",
+							"model": "item/trident/master_bolt_inactive"
+						}
+					}
+				}
+			},
+			{
+				"when": "Gungnir",
+				"model": {
+					"type": "condition",
+					"property": "using_item",
+					"on_true": {
+						"type": "model",
+						"model": "item/trident/gungnir_throwing"
+					},
+					"on_false": {
+						"type": "model",
+						"model": "item/trident/gungnir"
+					}
+				}
+			},
+			{
+				"when": "Ninja Trident",
+				"model": {
+					"type": "condition",
+					"property": "using_item",
+					"on_true": {
+						"type": "model",
+						"model": "item/trident/ninja_trident_throwing"
+					},
+					"on_false": {
+						"type": "model",
+						"model": "item/trident/ninja_trident"
+					}
+				}
+			},
+			{
+				"when": "Liftfork",
+				"model": {
+					"type": "condition",
+					"property": "using_item",
+					"on_true": {
+						"type": "model",
+						"model": "item/trident/liftfork_throwing"
+					},
+					"on_false": {
+						"type": "model",
+						"model": "item/trident/liftfork"
+					}
+				}
+			},
+			{
+				"when": "Golden Apple Trident",
+				"model": {
+					"type": "condition",
+					"property": "using_item",
+					"on_true": {
+						"type": "model",
+						"model": "item/trident/golden_apple_trident_throwing"
+					},
+					"on_false": {
+						"type": "model",
+						"model": "item/trident/golden_apple_trident"
+					}
+				}
+			},
+			{
+				"when": "Crucuble Trident",
+				"model": {
+					"type": "condition",
+					"property": "using_item",
+					"on_true": {
+						"type": "model",
+						"model": "item/trident/crucuble_trident_throwing"
+					},
+					"on_false": {
+						"type": "model",
+						"model": "item/trident/crucuble_trident"
+					}
+				}
+			},
+			{
+				"when": "Ellegaard's Trident",
+				"model": {
+					"type": "condition",
+					"property": "using_item",
+					"on_true": {
+						"type": "model",
+						"model": "item/trident/ellegaard_trident_throwing"
+					},
+					"on_false": {
+						"type": "model",
+						"model": "item/trident/ellegaard_trident"
+					}
+				}
+			},
+			{
+				"when": "Titan's Shroud Trident",
+				"model": {
+					"type": "condition",
+					"property": "using_item",
+					"on_true": {
+						"type": "model",
+						"model": "item/trident/titan_shroud_trident_throwing"
+					},
+					"on_false": {
+						"type": "model",
+						"model": "item/trident/titan_shroud_trident"
+					}
+				}
+			},
+			{
+				"when": "Cloaked Skull Trident",
+				"model": {
+					"type": "condition",
+					"property": "using_item",
+					"on_true": {
+						"type": "model",
+						"model": "item/trident/cloaked_skull_trident_throwing"
+					},
+					"on_false": {
+						"type": "model",
+						"model": "item/trident/cloaked_skull_trident",
+						"base": "item/trident/cloaked_skull_trident"
+					}
+				}
+			},
+			{
+				"when": "Spore Javelin",
+				"model": {
+					"type": "condition",
+					"property": "using_item",
+					"on_true": {
+						"type": "model",
+						"model": "item/trident/spore_javelin_throwing"
+					},
+					"on_false": {
+						"type": "model",
+						"model": "item/trident/spore_javelin",
+						"base": "item/trident/spore_javelin"
+					}
+				}
+			},
+			{
+				"when": "Light Trident",
+				"model": {
+					"type": "condition",
+					"property": "using_item",
+					"on_true": {
+						"type": "model",
+						"model": "item/trident/light_trident_throwing"
+					},
+					"on_false": {
+						"type": "model",
+						"model": "item/trident/light_trident"
+					}
+				}
+			},
+			{
+				"when": "Kemetian Trident",
+				"model": {
+					"type": "condition",
+					"property": "using_item",
+					"on_true": {
+						"type": "model",
+						"model": "item/trident/kemetian_trident_throwing"
+					},
+					"on_false": {
+						"type": "model",
+						"model": "item/trident/kemetian_trident"
+					}
+				}
+			},
+			{
+				"when": "Fantasy Trident",
+				"model": {
+					"type": "condition",
+					"property": "using_item",
+					"on_true": {
+						"type": "model",
+						"model": "item/trident/fantasy_trident_throwing"
+					},
+					"on_false": {
+						"type": "model",
+						"model": "item/trident/fantasy_trident"
+					}
+				}
+			},
+			{
+				"when": "Sinitic Trident",
+				"model": {
+					"type": "condition",
+					"property": "using_item",
+					"on_true": {
+						"type": "model",
+						"model": "item/trident/sinitic_trident_throwing"
+					},
+					"on_false": {
+						"type": "model",
+						"model": "item/trident/sinitic_trident"
+					}
+				}
+			},
+			{
+				"when": "Hellenic Trident",
+				"model": {
+					"type": "condition",
+					"property": "using_item",
+					"on_true": {
+						"type": "model",
+						"model": "item/trident/hellenic_trident_throwing"
+					},
+					"on_false": {
+						"type": "model",
+						"model": "item/trident/hellenic_trident"
+					}
+				}
+			},
+			{
+				"when": "Candy Trident",
+				"model": {
+					"type": "condition",
+					"property": "using_item",
+					"on_true": {
+						"type": "model",
+						"model": "item/trident/candy_trident_throwing"
+					},
+					"on_false": {
+						"type": "model",
+						"model": "item/trident/candy_trident"
+					}
+				}
+			},
+			{
+				"when": "Norroen Trident",
+				"model": {
+					"type": "condition",
+					"property": "using_item",
+					"on_true": {
+						"type": "model",
+						"model": "item/trident/norroen_trident_throwing"
+					},
+					"on_false": {
+						"type": "model",
+						"model": "item/trident/norroen_trident"
+					}
+				}
+			},
+			{
+				"when": "Halloween Trident",
+				"model": {
+					"type": "condition",
+					"property": "using_item",
+					"on_true": {
+						"type": "model",
+						"model": "item/trident/halloween_trident_throwing"
+					},
+					"on_false": {
+						"type": "model",
+						"model": "item/trident/halloween_trident"
+					}
+				}
+			},
+			{
+				"when": "Pattern Trident",
+				"model": {
+					"type": "condition",
+					"property": "using_item",
+					"on_true": {
+						"type": "model",
+						"model": "item/trident/pattern_trident_throwing"
+					},
+					"on_false": {
+						"type": "model",
+						"model": "item/trident/pattern_trident"
+					}
+				}
+			},
+			{
+				"when": "Festive Trident",
+				"model": {
+					"type": "condition",
+					"property": "using_item",
+					"on_true": {
+						"type": "model",
+						"model": "item/trident/festive_trident_throwing"
+					},
+					"on_false": {
+						"type": "model",
+						"model": "item/trident/festive_trident"
+					}
+				}
+			},
+			{
+				"when": "Jake The Trident",
+				"model": {
+					"type": "condition",
+					"property": "using_item",
+					"on_true": {
+						"type": "model",
+						"model": "item/trident/jake_the_trident_throwing"
+					},
+					"on_false": {
+						"type": "model",
+						"model": "item/trident/jake_the_trident"
+					}
+				}
+			},
+			{
+				"when": "Super Cute Trident",
+				"model": {
+					"type": "condition",
+					"property": "using_item",
+					"on_true": {
+						"type": "model",
+						"model": "item/trident/super_cute_trident_throwing"
+					},
+					"on_false": {
+						"type": "model",
+						"model": "item/trident/super_cute_trident"
+					}
+				}
+			},
+			{
+				"when": "Trident Before Christmas",
+				"model": {
+					"type": "condition",
+					"property": "using_item",
+					"on_true": {
+						"type": "model",
+						"model": "item/trident/trident_before_christmas_throwing"
+					},
+					"on_false": {
+						"type": "model",
+						"model": "item/trident/trident_before_christmas"
+					}
+				}
+			},
+			{
+				"when": "Royal Trident",
+				"model": {
+					"type": "condition",
+					"property": "using_item",
+					"on_true": {
+						"type": "model",
+						"model": "item/trident/royal_trident_throwing"
+					},
+					"on_false": {
+						"type": "model",
+						"model": "item/trident/royal_trident"
+					}
+				}
+			},
+			{
+				"when": "Ancient Trident",
+				"model": {
+					"type": "condition",
+					"property": "using_item",
+					"on_true": {
+						"type": "model",
+						"model": "item/trident/ancient_trident_throwing"
+					},
+					"on_false": {
+						"type": "model",
+						"model": "item/trident/ancient_trident"
+					}
+				}
+			}
+		],
+		"fallback": {
+		"type": "select",
+		"cases": [
+			{
+				"model": {
+					"type": "model",
+					"model": "item/trident"
+				},
+				"when": [
+					"gui",
+					"ground",
+					"fixed",
+					"on_shelf"
+				]
+			}
+		],
+		"fallback": {
+			"type": "condition",
+			"on_false": {
+				"type": "special",
+				"base": "item/trident_in_hand",
+				"model": {
+					"type": "trident"
+				}
+			},
+			"on_true": {
+				"type": "special",
+				"base": "item/trident_throwing",
+				"model": {
+					"type": "trident"
+				}
+			},
+			"property": "using_item",
+			"transformation": {
+				"left_rotation": [
+					0,
+					0,
+					0,
+					1
+				],
+				"right_rotation": [
+					0,
+					0,
+					0,
+					1
+				],
+				"scale": [
+					1,
+					-1,
+					-1
+				],
+				"translation": [
+					0,
+					0,
+					0
+				]
+			}
+		},
+		"property": "display_context"
+	}
+	}
+}

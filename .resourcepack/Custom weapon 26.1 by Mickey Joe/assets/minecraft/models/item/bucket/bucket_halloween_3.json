@@ -1,0 +1,7 @@
+{
+	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+	"parent": "item/bucket/bucket_3",
+	"textures": {
+		"layer0": "item/bucket/halloween/bucket_3"
+	}
+}

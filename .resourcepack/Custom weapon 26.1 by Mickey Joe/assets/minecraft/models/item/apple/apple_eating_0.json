@@ -1,0 +1,7 @@
+{
+	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+	"parent": "item/apple/apple",
+	"textures": {
+		"layer0": "item/apple/apple_eating_0"
+	}
+}

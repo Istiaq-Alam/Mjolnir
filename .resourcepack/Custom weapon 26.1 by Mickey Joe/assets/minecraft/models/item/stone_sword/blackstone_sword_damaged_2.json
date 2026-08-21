@@ -1,0 +1,7 @@
+{
+	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+    "parent": "item/handheld_sword",
+    "textures": {
+        "layer0": "item/stone_sword/blackstone_sword_damaged_2"
+    }
+}

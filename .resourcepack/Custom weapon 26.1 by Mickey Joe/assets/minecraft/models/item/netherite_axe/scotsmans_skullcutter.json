@@ -1,0 +1,49 @@
+{
+	"format_version": "1.21.6",
+	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+	"parent": "builtin/generated",
+	"textures": {
+		"layer0": "item/netherite_axe/scotsmans_skullcutter"
+	},
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [0, -90, 52],
+			"translation": [0, 8.75, 1],
+			"scale": [1.7, 1.7, 0.85]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [0, 90, -52],
+			"translation": [0, 8.75, 1],
+			"scale": [1.7, 1.7, 0.85]
+		},
+		"firstperson_righthand": {
+			"rotation": [40, -120, 90],
+			"translation": [2.25, 7.95, 1.88],
+			"scale": [1.36, 1.36, 0.68]
+		},
+		"firstperson_lefthand": {
+			"rotation": [40, 60, -90],
+			"translation": [2.25, 7.95, 1.88],
+			"scale": [1.36, 1.36, 0.68]
+		},
+		"ground": {
+			"translation": [1, 5, 0],
+			"scale": [1, 1, 0.5]
+		},
+		"gui": {
+			"rotation": [0, -25.5, -3],
+			"translation": [0, -0.05, 0],
+			"scale": [1.06, 1.06, 0.53]
+		},
+		"fixed": {
+			"rotation": [0, -180, 0],
+			"translation": [-1, 1, -0.5],
+			"scale": [1.8, 1.8, 1]
+		},
+		"on_shelf": {
+			"rotation": [119.5, -90, 0],
+			"translation": [0, 6.5, 15.75],
+			"scale": [4, 4, 2]
+		}
+	}
+}

@@ -1,0 +1,7 @@
+{
+	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+    "parent": "item/wheat_seeds/wheat_seeds_packet",
+    "textures": {
+        "layer0": "item/melon_seeds/melon_seeds_packet"
+    }
+}

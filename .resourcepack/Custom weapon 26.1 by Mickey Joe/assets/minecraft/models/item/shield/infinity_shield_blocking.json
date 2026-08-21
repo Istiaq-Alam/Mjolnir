@@ -1,0 +1,7 @@
+{
+	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+	"parent": "item/shield/redstone_riot_shield_blocking",
+	"textures": {
+		"particle": "item/shield/infinity_shield"
+	}
+}

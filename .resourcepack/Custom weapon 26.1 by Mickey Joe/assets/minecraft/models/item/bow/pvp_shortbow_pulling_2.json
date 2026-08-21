@@ -1,0 +1,461 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"2": "item/bow/pvp_shortbow_arc",
+		"particle": "item/bow/pvp_shortbow_pulling_2",
+		"arrow": "item/arrow"
+	},
+	"elements": [
+		{
+			"name": "perfectly_balanced_lazor_beam_weee",
+			"from": [-16, -4, 7],
+			"to": [16, 28, 7],
+			"light_emission": 15,
+			"faces": {
+				"north": {"uv": [16, 0, 0, 16], "texture": "#2"},
+				"south": {"uv": [0, 0, 16, 16], "texture": "#2"}
+			}
+		},
+		{
+			"name": "Box1",
+			"from": [25, -11, 8.5],
+			"to": [29, -10, 9.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [22, -6, 8]},
+			"faces": {
+				"north": {"uv": [6, 13, 2, 12], "rotation": 180, "texture": "#arrow"},
+				"east": {"uv": [2, 12, 3, 13], "texture": "#arrow"},
+				"south": {"uv": [2, 13, 6, 12], "rotation": 180, "texture": "#arrow"},
+				"west": {"uv": [6, 13, 5, 12], "rotation": 180, "texture": "#arrow"},
+				"up": {"uv": [6, 12, 2, 13], "texture": "#arrow"},
+				"down": {"uv": [6, 13, 2, 12], "texture": "#arrow"}
+			}
+		},
+		{
+			"name": "Box2",
+			"from": [26, -12, 8.5],
+			"to": [29, -11, 9.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [22, -6, 8]},
+			"faces": {
+				"north": {"uv": [5, 14, 2, 13], "rotation": 180, "texture": "#arrow"},
+				"east": {"uv": [2, 13, 3, 14], "texture": "#arrow"},
+				"south": {"uv": [2, 14, 5, 13], "rotation": 180, "texture": "#arrow"},
+				"west": {"uv": [5, 14, 4, 13], "rotation": 180, "texture": "#arrow"},
+				"down": {"uv": [5, 14, 2, 13], "texture": "#arrow"}
+			}
+		},
+		{
+			"name": "Box3",
+			"from": [25, -10, 8.5],
+			"to": [28, -9, 9.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [22, -6, 8]},
+			"faces": {
+				"north": {"uv": [6, 12, 3, 11], "rotation": 180, "texture": "#arrow"},
+				"east": {"uv": [3, 11, 4, 12], "texture": "#arrow"},
+				"south": {"uv": [3, 12, 6, 11], "rotation": 180, "texture": "#arrow"},
+				"west": {"uv": [6, 12, 5, 11], "rotation": 180, "texture": "#arrow"},
+				"up": {"uv": [6, 11, 3, 12], "texture": "#arrow"}
+			}
+		},
+		{
+			"name": "Box4",
+			"from": [27, -13, 8.5],
+			"to": [28, -12, 9.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [22, -6, 8]},
+			"faces": {
+				"east": {"uv": [3, 14, 4, 15], "texture": "#arrow"},
+				"south": {"uv": [3, 14, 4, 15], "texture": "#arrow"},
+				"west": {"uv": [4, 15, 3, 14], "rotation": 180, "texture": "#arrow"},
+				"down": {"uv": [4, 15, 3, 14], "texture": "#arrow"}
+			}
+		},
+		{
+			"name": "Box5",
+			"from": [24, -9, 8.5],
+			"to": [26, -8, 9.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [22, -6, 8]},
+			"faces": {
+				"north": {"uv": [7, 11, 5, 10], "rotation": 180, "texture": "#arrow"},
+				"east": {"uv": [5, 10, 6, 11], "texture": "#arrow"},
+				"south": {"uv": [5, 11, 7, 10], "rotation": 180, "texture": "#arrow"},
+				"west": {"uv": [7, 11, 6, 10], "rotation": 180, "texture": "#arrow"},
+				"up": {"uv": [7, 10, 5, 11], "texture": "#arrow"},
+				"down": {"uv": [7, 11, 5, 10], "texture": "#arrow"}
+			}
+		},
+		{
+			"name": "Box6",
+			"from": [23, -8, 8.5],
+			"to": [25, -7, 9.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [22, -6, 8]},
+			"faces": {
+				"north": {"uv": [8, 10, 6, 9], "rotation": 180, "texture": "#arrow"},
+				"east": {"uv": [6, 9, 7, 10], "texture": "#arrow"},
+				"south": {"uv": [6, 10, 8, 9], "rotation": 180, "texture": "#arrow"},
+				"west": {"uv": [8, 10, 7, 9], "rotation": 180, "texture": "#arrow"},
+				"up": {"uv": [8, 9, 6, 10], "texture": "#arrow"},
+				"down": {"uv": [8, 10, 6, 9], "texture": "#arrow"}
+			}
+		},
+		{
+			"name": "Box7",
+			"from": [22, -7, 8.5],
+			"to": [24, -6, 9.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [22, -6, 8]},
+			"faces": {
+				"north": {"uv": [9, 9, 7, 8], "rotation": 180, "texture": "#arrow"},
+				"east": {"uv": [7, 8, 8, 9], "texture": "#arrow"},
+				"south": {"uv": [7, 9, 9, 8], "rotation": 180, "texture": "#arrow"},
+				"west": {"uv": [9, 9, 8, 8], "rotation": 180, "texture": "#arrow"},
+				"up": {"uv": [9, 8, 7, 9], "texture": "#arrow"},
+				"down": {"uv": [9, 9, 7, 8], "texture": "#arrow"}
+			}
+		},
+		{
+			"name": "Box8",
+			"from": [21, -6, 8.5],
+			"to": [23, -5, 9.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [22, -6, 8]},
+			"faces": {
+				"north": {"uv": [10, 8, 8, 7], "rotation": 180, "texture": "#arrow"},
+				"east": {"uv": [8, 7, 9, 8], "texture": "#arrow"},
+				"south": {"uv": [8, 8, 10, 7], "rotation": 180, "texture": "#arrow"},
+				"west": {"uv": [10, 8, 9, 7], "rotation": 180, "texture": "#arrow"},
+				"up": {"uv": [10, 7, 8, 8], "texture": "#arrow"},
+				"down": {"uv": [10, 8, 8, 7], "texture": "#arrow"}
+			}
+		},
+		{
+			"name": "Box9",
+			"from": [20, -5, 8.5],
+			"to": [22, -4, 9.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [22, -6, 8]},
+			"faces": {
+				"north": {"uv": [11, 7, 9, 6], "rotation": 180, "texture": "#arrow"},
+				"east": {"uv": [9, 6, 10, 7], "texture": "#arrow"},
+				"south": {"uv": [9, 7, 11, 6], "rotation": 180, "texture": "#arrow"},
+				"west": {"uv": [11, 7, 10, 6], "rotation": 180, "texture": "#arrow"},
+				"up": {"uv": [11, 6, 9, 7], "texture": "#arrow"},
+				"down": {"uv": [11, 7, 9, 6], "texture": "#arrow"}
+			}
+		},
+		{
+			"name": "Box10",
+			"from": [16, -2, 8.5],
+			"to": [21, -1, 9.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [22, -6, 8]},
+			"faces": {
+				"north": {"uv": [15, 4, 10, 3], "rotation": 180, "texture": "#arrow"},
+				"east": {"uv": [10, 3, 11, 4], "texture": "#arrow"},
+				"south": {"uv": [10, 4, 15, 3], "rotation": 180, "texture": "#arrow"},
+				"west": {"uv": [15, 4, 14, 3], "rotation": 180, "texture": "#arrow"},
+				"up": {"uv": [15, 3, 10, 4], "texture": "#arrow"},
+				"down": {"uv": [15, 4, 10, 3], "texture": "#arrow"}
+			}
+		},
+		{
+			"name": "Box11",
+			"from": [17, -4, 8.5],
+			"to": [21, -2, 9.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [22, -6, 8]},
+			"faces": {
+				"north": {"uv": [14, 6, 10, 4], "rotation": 180, "texture": "#arrow"},
+				"east": {"uv": [10, 4, 11, 6], "texture": "#arrow"},
+				"south": {"uv": [10, 6, 14, 4], "rotation": 180, "texture": "#arrow"},
+				"west": {"uv": [14, 6, 13, 4], "rotation": 180, "texture": "#arrow"},
+				"down": {"uv": [14, 6, 10, 5], "texture": "#arrow"}
+			}
+		},
+		{
+			"name": "Box12",
+			"from": [16, -1, 8.5],
+			"to": [19, 0, 9.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [22, -6, 8]},
+			"faces": {
+				"north": {"uv": [15, 3, 12, 2], "rotation": 180, "texture": "#arrow"},
+				"east": {"uv": [12, 2, 13, 3], "texture": "#arrow"},
+				"south": {"uv": [12, 3, 15, 2], "rotation": 180, "texture": "#arrow"},
+				"west": {"uv": [15, 3, 14, 2], "rotation": 180, "texture": "#arrow"},
+				"up": {"uv": [15, 2, 12, 3], "texture": "#arrow"}
+			}
+		},
+		{
+			"name": "Box13",
+			"from": [18, -5, 8.5],
+			"to": [19, -4, 9.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [22, -6, 8]},
+			"faces": {
+				"east": {"uv": [12, 6, 13, 7], "texture": "#arrow"},
+				"south": {"uv": [12, 6, 13, 7], "texture": "#arrow"},
+				"west": {"uv": [13, 7, 12, 6], "rotation": 180, "texture": "#arrow"},
+				"down": {"uv": [13, 7, 12, 6], "texture": "#arrow"}
+			}
+		},
+		{
+			"name": "pvp_shortbow_pulling_2_0",
+			"from": [21, -4, 7.5],
+			"to": [24, 0, 8.5],
+			"faces": {
+				"north": {"uv": [8, 0, 5, 4], "texture": "#particle"},
+				"east": {"uv": [7, 0, 8, 4], "texture": "#particle"},
+				"south": {"uv": [5, 0, 8, 4], "texture": "#particle"},
+				"west": {"uv": [5, 0, 6, 4], "texture": "#particle"},
+				"up": {"uv": [5, 0, 8, 1], "texture": "#particle"},
+				"down": {"uv": [5, 3, 8, 4], "texture": "#particle"}
+			}
+		},
+		{
+			"name": "pvp_shortbow_pulling_2_1",
+			"from": [25, -4, 7.5],
+			"to": [28, -1, 8.5],
+			"faces": {
+				"north": {"uv": [12, 1, 9, 4], "texture": "#particle"},
+				"east": {"uv": [11, 1, 12, 4], "texture": "#particle"},
+				"south": {"uv": [9, 1, 12, 4], "texture": "#particle"},
+				"west": {"uv": [9, 1, 10, 4], "texture": "#particle"},
+				"up": {"uv": [9, 1, 12, 2], "texture": "#particle"},
+				"down": {"uv": [9, 3, 12, 4], "texture": "#particle"}
+			}
+		},
+		{
+			"name": "pvp_shortbow_pulling_2_2",
+			"from": [20, -5, 7.5],
+			"to": [21, -2, 8.5],
+			"faces": {
+				"north": {"uv": [5, 2, 4, 5], "texture": "#particle"},
+				"east": {"uv": [4, 2, 5, 5], "texture": "#particle"},
+				"west": {"uv": [4, 2, 5, 5], "texture": "#particle"},
+				"up": {"uv": [4, 2, 5, 3], "texture": "#particle"},
+				"down": {"uv": [4, 4, 5, 5], "texture": "#particle"}
+			}
+		},
+		{
+			"name": "pvp_shortbow_pulling_2_3",
+			"from": [24, -5, 7.5],
+			"to": [25, -2, 8.5],
+			"faces": {
+				"north": {"uv": [9, 2, 8, 5], "texture": "#particle"},
+				"south": {"uv": [8, 2, 9, 5], "texture": "#particle"},
+				"up": {"uv": [8, 2, 9, 3], "texture": "#particle"},
+				"down": {"uv": [8, 4, 9, 5], "texture": "#particle"}
+			}
+		},
+		{
+			"name": "pvp_shortbow_pulling_2_4",
+			"from": [28, -13, 7.5],
+			"to": [29, -2, 8.5],
+			"faces": {
+				"north": {"uv": [13, 2, 12, 13], "texture": "#particle"},
+				"east": {"uv": [12, 2, 13, 13], "texture": "#particle"},
+				"south": {"uv": [12, 2, 13, 13], "texture": "#particle"},
+				"west": {"uv": [12, 2, 13, 13], "texture": "#particle"},
+				"up": {"uv": [12, 2, 13, 3], "texture": "#particle"},
+				"down": {"uv": [12, 12, 13, 13], "texture": "#particle"}
+			}
+		},
+		{
+			"name": "pvp_shortbow_pulling_2_5",
+			"from": [19, -16, 7.5],
+			"to": [20, -3, 8.5],
+			"faces": {
+				"north": {"uv": [4, 3, 3, 16], "texture": "#particle"},
+				"east": {"uv": [3, 3, 4, 16], "texture": "#particle"},
+				"south": {"uv": [3, 3, 4, 16], "texture": "#particle"},
+				"west": {"uv": [3, 3, 4, 16], "texture": "#particle"},
+				"up": {"uv": [3, 3, 4, 4], "texture": "#particle"},
+				"down": {"uv": [3, 15, 4, 16], "texture": "#particle"}
+			}
+		},
+		{
+			"name": "pvp_shortbow_pulling_2_6",
+			"from": [29, -6, 7.5],
+			"to": [32, -3, 8.5],
+			"faces": {
+				"north": {"uv": [16, 3, 13, 6], "texture": "#particle"},
+				"east": {"uv": [15, 3, 16, 6], "texture": "#particle"},
+				"south": {"uv": [13, 3, 16, 6], "texture": "#particle"},
+				"up": {"uv": [13, 3, 16, 4], "texture": "#particle"},
+				"down": {"uv": [13, 5, 16, 6], "texture": "#particle"}
+			}
+		},
+		{
+			"name": "pvp_shortbow_pulling_2_7",
+			"from": [18, -13, 7.5],
+			"to": [19, -4, 8.5],
+			"faces": {
+				"north": {"uv": [3, 4, 2, 13], "texture": "#particle"},
+				"south": {"uv": [2, 4, 3, 13], "texture": "#particle"},
+				"west": {"uv": [2, 4, 3, 13], "texture": "#particle"},
+				"up": {"uv": [2, 4, 3, 5], "texture": "#particle"},
+				"down": {"uv": [2, 12, 3, 13], "texture": "#particle"}
+			}
+		},
+		{
+			"name": "pvp_shortbow_pulling_2_8",
+			"from": [23, -5, 7.5],
+			"to": [24, -4, 8.5],
+			"faces": {
+				"north": {"uv": [8, 4, 7, 5], "texture": "#particle"},
+				"south": {"uv": [7, 4, 8, 5], "texture": "#particle"},
+				"west": {"uv": [7, 4, 8, 5], "texture": "#particle"},
+				"down": {"uv": [7, 4, 8, 5], "texture": "#particle"}
+			}
+		},
+		{
+			"name": "pvp_shortbow_pulling_2_9",
+			"from": [25, -5, 7.5],
+			"to": [26, -4, 8.5],
+			"faces": {
+				"north": {"uv": [10, 4, 9, 5], "texture": "#particle"},
+				"east": {"uv": [9, 4, 10, 5], "texture": "#particle"},
+				"south": {"uv": [9, 4, 10, 5], "texture": "#particle"},
+				"down": {"uv": [9, 4, 10, 5], "texture": "#particle"}
+			}
+		},
+		{
+			"name": "pvp_shortbow_pulling_2_10",
+			"from": [17, -7, 7.5],
+			"to": [18, -5, 8.5],
+			"faces": {
+				"south": {"uv": [1, 5, 2, 7], "texture": "#particle"},
+				"west": {"uv": [1, 5, 2, 7], "texture": "#particle"},
+				"up": {"uv": [1, 5, 2, 6], "texture": "#particle"},
+				"down": {"uv": [1, 6, 2, 7], "texture": "#particle"}
+			}
+		},
+		{
+			"name": "pvp_shortbow_pulling_2_11",
+			"from": [14, -4, 6.5],
+			"to": [16, -2, 7.5],
+			"faces": {
+				"north": {"uv": [8, 6, 6, 8], "texture": "#particle"},
+				"east": {"uv": [7, 6, 8, 8], "texture": "#particle"},
+				"south": {"uv": [6, 6, 8, 8], "texture": "#particle"},
+				"west": {"uv": [6, 6, 7, 8], "texture": "#particle"},
+				"up": {"uv": [6, 6, 8, 7], "texture": "#particle"},
+				"down": {"uv": [6, 7, 8, 8], "texture": "#particle"}
+			}
+		},
+		{
+			"name": "pvp_shortbow_pulling_2_12",
+			"from": [20, -10, 7.5],
+			"to": [21, -7, 8.5],
+			"faces": {
+				"north": {"uv": [5, 7, 4, 10], "texture": "#particle"},
+				"east": {"uv": [4, 7, 5, 10], "texture": "#particle"},
+				"south": {"uv": [4, 7, 5, 10], "texture": "#particle"},
+				"up": {"uv": [4, 7, 5, 8], "texture": "#particle"},
+				"down": {"uv": [4, 9, 5, 10], "texture": "#particle"}
+			}
+		},
+		{
+			"name": "pvp_shortbow_pulling_2_13",
+			"from": [16, -6, 6.5],
+			"to": [17, -3, 7.5],
+			"faces": {
+				"north": {"uv": [9, 7, 8, 10], "texture": "#particle"},
+				"east": {"uv": [8, 7, 9, 10], "texture": "#particle"},
+				"south": {"uv": [8, 7, 9, 10], "texture": "#particle"},
+				"west": {"uv": [8, 7, 9, 10], "texture": "#particle"},
+				"up": {"uv": [8, 7, 9, 8], "texture": "#particle"},
+				"down": {"uv": [8, 9, 9, 10], "texture": "#particle"}
+			}
+		},
+		{
+			"name": "pvp_shortbow_pulling_2_14",
+			"from": [15, -5, 6.5],
+			"to": [16, -4, 7.5],
+			"faces": {
+				"north": {"uv": [8, 8, 7, 9], "texture": "#particle"},
+				"south": {"uv": [7, 8, 8, 9], "texture": "#particle"},
+				"west": {"uv": [7, 8, 8, 9], "texture": "#particle"},
+				"down": {"uv": [7, 8, 8, 9], "texture": "#particle"}
+			}
+		},
+		{
+			"name": "pvp_shortbow_pulling_2_15",
+			"from": [17, -7, 6.5],
+			"to": [18, -4, 7.5],
+			"faces": {
+				"north": {"uv": [10, 8, 9, 11], "texture": "#particle"},
+				"east": {"uv": [9, 8, 10, 11], "texture": "#particle"},
+				"south": {"uv": [9, 8, 10, 11], "texture": "#particle"},
+				"west": {"uv": [9, 8, 10, 11], "texture": "#particle"},
+				"up": {"uv": [9, 8, 10, 9], "texture": "#particle"},
+				"down": {"uv": [9, 10, 10, 11], "texture": "#particle"}
+			}
+		},
+		{
+			"name": "pvp_shortbow_pulling_2_16",
+			"from": [17, -12, 7.5],
+			"to": [18, -9, 8.5],
+			"faces": {
+				"north": {"uv": [2, 9, 1, 12], "texture": "#particle"},
+				"south": {"uv": [1, 9, 2, 12], "texture": "#particle"},
+				"west": {"uv": [1, 9, 2, 12], "texture": "#particle"},
+				"up": {"uv": [1, 9, 2, 10], "texture": "#particle"},
+				"down": {"uv": [1, 11, 2, 12], "texture": "#particle"}
+			}
+		},
+		{
+			"name": "pvp_shortbow_pulling_2_17",
+			"from": [18, -7, 6.5],
+			"to": [19, -5, 7.5],
+			"faces": {
+				"north": {"uv": [11, 9, 10, 11], "texture": "#particle"},
+				"east": {"uv": [10, 9, 11, 11], "texture": "#particle"},
+				"up": {"uv": [10, 9, 11, 10], "texture": "#particle"},
+				"down": {"uv": [10, 10, 11, 11], "texture": "#particle"}
+			}
+		},
+		{
+			"name": "pvp_shortbow_pulling_2_18",
+			"from": [20, -16, 7.5],
+			"to": [22, -12, 8.5],
+			"faces": {
+				"north": {"uv": [6, 12, 4, 16], "texture": "#particle"},
+				"east": {"uv": [5, 12, 6, 16], "texture": "#particle"},
+				"south": {"uv": [4, 12, 6, 16], "texture": "#particle"},
+				"up": {"uv": [4, 12, 6, 13], "texture": "#particle"},
+				"down": {"uv": [4, 15, 6, 16], "texture": "#particle"}
+			}
+		},
+		{
+			"name": "pvp_shortbow_pulling_2_19",
+			"from": [22, -13, 7.5],
+			"to": [28, -12, 8.5],
+			"faces": {
+				"north": {"uv": [12, 12, 6, 13], "texture": "#particle"},
+				"south": {"uv": [6, 12, 12, 13], "texture": "#particle"},
+				"up": {"uv": [6, 12, 12, 13], "texture": "#particle"},
+				"down": {"uv": [6, 12, 12, 13], "texture": "#particle"}
+			}
+		}
+	],
+	"gui_light": "front",
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [-80, 260, -40],
+			"translation": [-1.75, -1, -14.75],
+			"scale": [0.9, 0.9, 0.9]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [-80, -280, 40],
+			"translation": [-2, -1, -14.75],
+			"scale": [0.9, 0.9, 0.9]
+		},
+		"firstperson_righthand": {
+			"rotation": [6, -68, 11],
+			"translation": [-3.62, 7.45, -12.37],
+			"scale": [0.5, 0.5, 0.5]
+		},
+		"firstperson_lefthand": {
+			"rotation": [6, 112, -11],
+			"translation": [-2.37, 8.2, -12.37],
+			"scale": [0.5, 0.5, 0.5]
+		},
+		"gui": {
+			"rotation": [32, 70, 2],
+			"translation": [-0.75, 4.83, 0]
+		}
+	}
+}

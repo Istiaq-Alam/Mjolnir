@@ -1,0 +1,19 @@
+{
+	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+	"parent": "item/crossbow/bazaar_bargain_pulling_0",
+	"textures": {
+		"particle": "item/crossbow/festive_lights"
+	},
+	"elements": [
+		{
+			"from": [4.5, 2, -7],
+			"to": [11.5, 2, 18],
+			"light_emission": 15,
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, -2, 0]},
+			"faces": {
+				"up": {"uv": [12.5, 16, 0, 12.5], "rotation": 90, "texture": "#particle"},
+				"down": {"uv": [0, 16, 12.5, 12.5], "rotation": 90, "texture": "#particle"}
+			}
+		}
+	]
+}

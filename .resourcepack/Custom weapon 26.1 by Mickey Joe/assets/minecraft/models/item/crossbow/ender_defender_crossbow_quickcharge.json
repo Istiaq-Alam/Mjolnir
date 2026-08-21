@@ -1,0 +1,7 @@
+{
+	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+	"parent": "item/crossbow/dragonsbane_crossbow_quickcharge",
+	"textures": {
+		"particle": "item/crossbow/ender_defender_crossbow_quickcharge"
+	}
+}

@@ -17,6 +17,7 @@ import org.bukkit.event.player.PlayerItemDamageEvent;
 import org.bukkit.inventory.EquipmentSlot;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.plugin.java.JavaPlugin;
+import org.bukkit.scheduler.BukkitTask;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -26,16 +27,46 @@ public final class MjolnirListener implements Listener {
 
     private final JavaPlugin plugin;
     private final MjolnirItem mjolnirItem;
+
+    /*
+     * Mode switch cooldown per player.
+     */
     private final Map<UUID, Long> cooldownUntil = new HashMap<>();
 
-    public MjolnirListener(JavaPlugin plugin, MjolnirItem mjolnirItem) {
+    /*
+     * One active Mjolnir storm cleanup task per world.
+     *
+     * UUID = World UUID
+     */
+    private final Map<UUID, BukkitTask> stormTasks = new HashMap<>();
+
+    /*
+     * Stores the weather state that existed before Mjolnir
+     * started its own thunderstorm.
+     *
+     * This allows us to restore the world's previous weather
+     * instead of always forcing clear weather.
+     */
+    private final Map<UUID, WeatherState> previousWeather =
+            new HashMap<>();
+
+    public MjolnirListener(
+            JavaPlugin plugin,
+            MjolnirItem mjolnirItem
+    ) {
         this.plugin = plugin;
         this.mjolnirItem = mjolnirItem;
     }
 
-    @EventHandler(priority = EventPriority.HIGHEST, ignoreCancelled = false)
+    @EventHandler(
+            priority = EventPriority.HIGHEST,
+            ignoreCancelled = false
+    )
     public void onInteract(PlayerInteractEvent event) {
 
+        /*
+         * Prevent duplicate processing from the off-hand.
+         */
         if (event.getHand() != EquipmentSlot.HAND) {
             return;
         }
@@ -49,21 +80,26 @@ public final class MjolnirListener implements Listener {
 
         Player player = event.getPlayer();
 
+        /*
+         * Mjolnir mode switching only happens while sneaking.
+         */
         if (!player.isSneaking()) {
             return;
         }
 
-        ItemStack held = player.getInventory().getItemInMainHand();
+        ItemStack held =
+                player.getInventory().getItemInMainHand();
 
+        /*
+         * Only the real PDC-marked Mjolnir can activate.
+         */
         if (!mjolnirItem.isMjolnir(held)) {
             return;
         }
 
         /*
-         * Fully suppress vanilla trident behavior.
-         *
-         * Sneak + Right Click is used exclusively for switching
-         * between Travel Mode and Fighting Mode.
+         * Sneak + Right Click is reserved exclusively
+         * for switching Mjolnir modes.
          */
         event.setCancelled(true);
         event.setUseItemInHand(Event.Result.DENY);
@@ -71,10 +107,11 @@ public final class MjolnirListener implements Listener {
 
         long now = System.currentTimeMillis();
 
-        long remaining = cooldownUntil.getOrDefault(
-                player.getUniqueId(),
-                0L
-        ) - now;
+        long remaining =
+                cooldownUntil.getOrDefault(
+                        player.getUniqueId(),
+                        0L
+                ) - now;
 
         /*
          * Check mode-switch cooldown.
@@ -99,7 +136,7 @@ public final class MjolnirListener implements Listener {
         }
 
         /*
-         * Get the current mode and determine the next mode.
+         * Determine the next mode.
          */
         MjolnirItem.Mode current =
                 mjolnirItem.getMode(held);
@@ -110,13 +147,12 @@ public final class MjolnirListener implements Listener {
                         : MjolnirItem.Mode.TRAVEL;
 
         /*
-         * Apply the new Mjolnir mode.
-         *
-         * MjolnirItem.applyMode() preserves the item's current
-         * custom name, allowing the Too Many Renames resource-pack
-         * skin for "Mjolnir" to remain active.
+         * Apply the new mode.
          */
-        mjolnirItem.applyMode(held, next);
+        mjolnirItem.applyMode(
+                held,
+                next
+        );
 
         player.getInventory().setItemInMainHand(held);
 
@@ -137,7 +173,7 @@ public final class MjolnirListener implements Listener {
         );
 
         /*
-         * Activate effects for the selected mode.
+         * Activate the selected mode.
          */
         if (next == MjolnirItem.Mode.FIGHTING) {
             activateFightingMode(player);
@@ -152,15 +188,10 @@ public final class MjolnirListener implements Listener {
     )
     public void onItemDamage(PlayerItemDamageEvent event) {
 
+        /*
+         * Extra protection against durability damage.
+         */
         if (mjolnirItem.isMjolnir(event.getItem())) {
-
-            /*
-             * Defense-in-depth:
-             *
-             * Mjolnir is already marked as unbreakable,
-             * but this also prevents durability damage from
-             * being applied through item damage events.
-             */
             event.setCancelled(true);
         }
     }
@@ -178,7 +209,8 @@ public final class MjolnirListener implements Listener {
         );
 
         /*
-         * Start the configurable thunderstorm.
+         * Start or reset the Mjolnir thunderstorm
+         * for this world.
          */
         startThunderstorm(player.getWorld());
 
@@ -186,22 +218,22 @@ public final class MjolnirListener implements Listener {
          * Stop here if cosmetic effects are disabled.
          */
         if (!plugin.getConfig()
-                .getBoolean("effects.enabled", true)) {
+                .getBoolean(
+                        "effects.enabled",
+                        true
+                )) {
             return;
         }
 
-        Location playerLocation = player.getLocation();
+        Location playerLocation =
+                player.getLocation();
 
         /*
-         * COSMETIC LIGHTNING STRIKE
+         * Cosmetic lightning only.
          *
-         * strikeLightningEffect() creates only the visual
-         * lightning effect.
-         *
-         * It does NOT damage the player.
-         * It does NOT damage other entities.
-         * It does NOT create fire.
-         * It does NOT destroy blocks.
+         * No entity damage.
+         * No fire.
+         * No block destruction.
          */
         player.getWorld().strikeLightningEffect(
                 playerLocation
@@ -211,14 +243,15 @@ public final class MjolnirListener implements Listener {
          * PARTICLE EFFECTS
          */
         if (plugin.getConfig()
-                .getBoolean("effects.particles", true)) {
+                .getBoolean(
+                        "effects.particles",
+                        true
+                )) {
 
-            Location center = playerLocation.clone()
-                    .add(0, 1.0, 0);
+            Location center =
+                    playerLocation.clone()
+                            .add(0, 1.0, 0);
 
-            /*
-             * Main electric burst around the player.
-             */
             player.getWorld().spawnParticle(
                     Particle.ELECTRIC_SPARK,
                     center,
@@ -229,9 +262,6 @@ public final class MjolnirListener implements Listener {
                     0.12
             );
 
-            /*
-             * Bright energy particles.
-             */
             player.getWorld().spawnParticle(
                     Particle.END_ROD,
                     center,
@@ -242,12 +272,10 @@ public final class MjolnirListener implements Listener {
                     0.05
             );
 
-            /*
-             * Electric effect around the player's feet/body.
-             */
             player.getWorld().spawnParticle(
                     Particle.ELECTRIC_SPARK,
-                    playerLocation.clone().add(0, 0.3, 0),
+                    playerLocation.clone()
+                            .add(0, 0.3, 0),
                     50,
                     1.2,
                     0.3,
@@ -255,12 +283,10 @@ public final class MjolnirListener implements Listener {
                     0.08
             );
 
-            /*
-             * Lightning energy above the player.
-             */
             player.getWorld().spawnParticle(
                     Particle.END_ROD,
-                    playerLocation.clone().add(0, 2.5, 0),
+                    playerLocation.clone()
+                            .add(0, 2.5, 0),
                     25,
                     0.4,
                     1.0,
@@ -273,11 +299,11 @@ public final class MjolnirListener implements Listener {
          * SOUND EFFECTS
          */
         if (plugin.getConfig()
-                .getBoolean("effects.sounds", true)) {
+                .getBoolean(
+                        "effects.sounds",
+                        true
+                )) {
 
-            /*
-             * Trident thunder activation sound.
-             */
             player.getWorld().playSound(
                     playerLocation,
                     Sound.ITEM_TRIDENT_THUNDER,
@@ -285,9 +311,6 @@ public final class MjolnirListener implements Listener {
                     0.8f
             );
 
-            /*
-             * Main lightning thunder sound.
-             */
             player.getWorld().playSound(
                     playerLocation,
                     Sound.ENTITY_LIGHTNING_BOLT_THUNDER,
@@ -313,24 +336,29 @@ public final class MjolnirListener implements Listener {
          * Stop here if cosmetic effects are disabled.
          */
         if (!plugin.getConfig()
-                .getBoolean("effects.enabled", true)) {
+                .getBoolean(
+                        "effects.enabled",
+                        true
+                )) {
             return;
         }
 
-        Location playerLocation = player.getLocation();
+        Location playerLocation =
+                player.getLocation();
 
         /*
          * PARTICLE EFFECTS
          */
         if (plugin.getConfig()
-                .getBoolean("effects.particles", true)) {
+                .getBoolean(
+                        "effects.particles",
+                        true
+                )) {
 
-            Location center = playerLocation.clone()
-                    .add(0, 1.0, 0);
+            Location center =
+                    playerLocation.clone()
+                            .add(0, 1.0, 0);
 
-            /*
-             * Travel / energy effect.
-             */
             player.getWorld().spawnParticle(
                     Particle.END_ROD,
                     center,
@@ -341,9 +369,6 @@ public final class MjolnirListener implements Listener {
                     0.05
             );
 
-            /*
-             * Small electric transition effect.
-             */
             player.getWorld().spawnParticle(
                     Particle.ELECTRIC_SPARK,
                     center,
@@ -359,7 +384,10 @@ public final class MjolnirListener implements Listener {
          * SOUND EFFECTS
          */
         if (plugin.getConfig()
-                .getBoolean("effects.sounds", true)) {
+                .getBoolean(
+                        "effects.sounds",
+                        true
+                )) {
 
             player.getWorld().playSound(
                     playerLocation,
@@ -370,41 +398,171 @@ public final class MjolnirListener implements Listener {
         }
     }
 
+    /**
+     * Starts a thunderstorm owned and managed by Mjolnir.
+     *
+     * Only one cleanup task can exist per world.
+     *
+     * If Mjolnir is activated again before the storm ends,
+     * the old timer is cancelled and a new timer starts.
+     */
     private void startThunderstorm(World world) {
 
         int configuredSeconds = Math.max(
-                0,
+                1,
                 plugin.getConfig().getInt(
                         "storm-duration",
                         180
                 )
         );
 
-        int configuredTicks = Math.min(
-                Integer.MAX_VALUE,
-                configuredSeconds * 20
+        /*
+         * Convert seconds to ticks.
+         *
+         * Using long prevents overflow before scheduling.
+         */
+        long configuredTicks =
+                (long) configuredSeconds * 20L;
+
+        UUID worldId = world.getUID();
+
+        BukkitTask oldTask =
+                stormTasks.remove(worldId);
+
+        /*
+         * If Mjolnir already owns an active storm in this world,
+         * cancel the previous cleanup timer.
+         */
+        if (oldTask != null) {
+
+            oldTask.cancel();
+
+        } else {
+
+            /*
+             * Save the weather state before Mjolnir changes it.
+             *
+             * This happens only for the first Mjolnir activation.
+             * Repeated activations should not overwrite the
+             * original weather state.
+             */
+            previousWeather.put(
+                    worldId,
+                    new WeatherState(
+                            world.hasStorm(),
+                            world.isThundering(),
+                            world.getWeatherDuration(),
+                            world.getThunderDuration()
+                    )
+            );
+        }
+
+        /*
+         * Minecraft weather durations use int ticks.
+         */
+        int safeTicks = (int) Math.min(
+                configuredTicks,
+                Integer.MAX_VALUE
         );
 
         /*
-         * Never shorten an existing longer storm.
-         *
-         * This prevents the plugin from reducing a storm duration
-         * that was already set by another player, command,
-         * or plugin.
+         * Start Mjolnir's thunderstorm.
          */
-        int weatherDuration = Math.max(
-                world.getWeatherDuration(),
-                configuredTicks
-        );
-
-        int thunderDuration = Math.max(
-                world.getThunderDuration(),
-                configuredTicks
-        );
-
         world.setStorm(true);
         world.setThundering(true);
-        world.setWeatherDuration(weatherDuration);
-        world.setThunderDuration(thunderDuration);
+
+        /*
+         * Set EXACTLY the configured duration.
+         *
+         * No Math.max() with an old natural weather duration.
+         */
+        world.setWeatherDuration(safeTicks);
+        world.setThunderDuration(safeTicks);
+
+        /*
+         * Schedule exactly one cleanup task for this world.
+         */
+        BukkitTask cleanupTask =
+                plugin.getServer()
+                        .getScheduler()
+                        .runTaskLater(
+                                plugin,
+                                () -> restoreWeather(world),
+                                configuredTicks
+                        );
+
+        stormTasks.put(
+                worldId,
+                cleanupTask
+        );
+    }
+
+    /**
+     * Restores the weather that existed before
+     * Mjolnir activated its thunderstorm.
+     */
+    private void restoreWeather(World world) {
+
+        UUID worldId = world.getUID();
+
+        /*
+         * Remove the active task marker.
+         */
+        stormTasks.remove(worldId);
+
+        WeatherState previous =
+                previousWeather.remove(worldId);
+
+        /*
+         * Safety check.
+         */
+        if (previous == null) {
+            return;
+        }
+
+        /*
+         * Restore the exact previous weather state.
+         */
+        world.setStorm(previous.storm);
+        world.setThundering(
+                previous.thundering
+        );
+
+        world.setWeatherDuration(
+                previous.weatherDuration
+        );
+
+        world.setThunderDuration(
+                previous.thunderDuration
+        );
+    }
+
+    /**
+     * Stores the world's weather state before
+     * Mjolnir starts its temporary thunderstorm.
+     */
+    private static final class WeatherState {
+
+        private final boolean storm;
+        private final boolean thundering;
+
+        private final int weatherDuration;
+        private final int thunderDuration;
+
+        private WeatherState(
+                boolean storm,
+                boolean thundering,
+                int weatherDuration,
+                int thunderDuration
+        ) {
+            this.storm = storm;
+            this.thundering = thundering;
+
+            this.weatherDuration =
+                    weatherDuration;
+
+            this.thunderDuration =
+                    thunderDuration;
+        }
     }
 }

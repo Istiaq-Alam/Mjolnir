@@ -1,0 +1,7 @@
+{
+	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+	"parent": "item/netherite_sword/sawblade",
+	"textures": {
+		"layer0": "item/iron_sword/sawblade"
+	}
+}

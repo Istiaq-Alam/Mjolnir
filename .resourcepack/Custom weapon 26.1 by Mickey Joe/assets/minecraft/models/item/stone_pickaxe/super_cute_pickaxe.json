@@ -1,0 +1,7 @@
+{
+	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+	"parent": "item/netherite_sword/super_cute_sword",
+	"textures": {
+		"layer0": "item/stone_pickaxe/super_cute_pickaxe"
+	}
+}

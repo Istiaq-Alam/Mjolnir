@@ -1,0 +1,8 @@
+{
+	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+	"parent": "item/compass/spider",
+	"textures": {
+		"particle": "item/compass/cave_spider",
+		"base": "item/compass/cave_spider_base"
+	}
+}

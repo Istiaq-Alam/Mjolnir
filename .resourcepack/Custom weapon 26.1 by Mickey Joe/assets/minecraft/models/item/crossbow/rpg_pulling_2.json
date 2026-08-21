@@ -1,0 +1,16 @@
+{
+	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+	"parent": "item/crossbow/rpg_pulling_0",
+	"display": {
+		"firstperson_righthand": {
+			"rotation": [87, -8, 20],
+			"translation": [6.38, 8.7, 4],
+			"scale": [0.68, 0.68, 0.68]
+		},
+		"firstperson_lefthand": {
+			"rotation": [87, -8, 20],
+			"translation": [6.38, 8.7, 4],
+			"scale": [0.68, 0.68, 0.68]
+		}
+	}
+}

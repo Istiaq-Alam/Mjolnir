@@ -1,0 +1,23 @@
+{
+	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+	"parent": "block/block",
+	"textures": {
+		"back": "item/painting/painting_back",
+		"particle": "item/painting/painting"
+	},
+	"elements": [
+		{
+			"from": [0, 0, 7.5],
+			"to": [16, 16, 8.5],
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "texture": "#particle"},
+				"east": {"uv": [0, 11, 16, 12], "rotation": 90, "texture": "#back"},
+				"south": {"uv": [0, 0, 16, 16], "texture": "#back"},
+				"west": {"uv": [0, 7, 16, 8], "rotation": 90, "texture": "#back"},
+				"up": {"uv": [0, 15, 16, 16], "texture": "#back"},
+				"down": {"uv": [0, 3, 16, 4], "texture": "#back"}
+			}
+		}
+	],
+	"gui_light": "front"
+}

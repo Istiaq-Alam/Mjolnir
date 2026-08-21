@@ -1,0 +1,9 @@
+{
+	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+	"parent": "item/crossbow/nerf_dragon_firework",
+	"textures": {
+		"1": "item/crossbow/master_dragon",
+		"4": "item/crossbow/master_dragon_wings",
+		"particle": "item/crossbow/master_dragon"
+	}
+}

@@ -1,0 +1,14 @@
+{
+	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+	"parent": "item/crossbow/golden_goliath_ballista",
+	"display": {
+		"firstperson_righthand": {
+			"rotation": [69, 0, 0],
+			"translation": [9.25, 4.75, -0.5]
+		},
+		"firstperson_lefthand": {
+			"rotation": [69, 0, 0],
+			"translation": [9.25, 4.75, -0.5]
+		}
+	}
+}

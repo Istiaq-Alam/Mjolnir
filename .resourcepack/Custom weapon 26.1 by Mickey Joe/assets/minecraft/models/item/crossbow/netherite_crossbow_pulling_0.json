@@ -1,0 +1,8 @@
+{
+	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+	"parent": "item/crossbow/crossbow_pulling_0",
+	"textures": {
+		"crossbow_pulling_0": "item/crossbow/netherite_crossbow_pulling_0",
+		"particle": "item/crossbow/netherite_crossbow_base"
+	}
+}

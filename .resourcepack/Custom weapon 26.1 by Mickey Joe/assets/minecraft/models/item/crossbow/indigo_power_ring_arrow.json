@@ -1,0 +1,7 @@
+{
+	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+	"parent": "item/crossbow/green_power_ring_arrow",
+	"textures": {
+		"particle": "item/netherite_sword/indigo_power_ring"
+	}
+}

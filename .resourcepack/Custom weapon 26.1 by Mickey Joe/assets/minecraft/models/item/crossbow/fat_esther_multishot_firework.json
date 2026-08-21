@@ -1,0 +1,7 @@
+{
+	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+	"parent": "item/crossbow/fat_man_multishot_firework",
+	"textures": {
+		"particle": "item/crossbow/fat_esther"
+	}
+}

@@ -1,0 +1,700 @@
+{
+	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+	"textures": {
+		"particle": "item/mace/orcish_mace"
+	},
+	"elements": [
+		{
+			"name": "orcish_mace_0",
+			"from": [16.35355, 23.13934, 7.5],
+			"to": [18.35355, 24.13934, 8.5],
+			"rotation": {"angle": 45, "axis": "z", "origin": [8.35355, 11.63934, 7.64645]},
+			"faces": {
+				"north": {"uv": [11, 4, 10, 4.5], "texture": "#particle"},
+				"east": {"uv": [10.5, 4, 11, 4.5], "texture": "#particle"},
+				"south": {"uv": [10, 4, 11, 4.5], "texture": "#particle"},
+				"west": {"uv": [10, 4, 10.5, 4.5], "texture": "#particle"},
+				"up": {"uv": [10, 4, 11, 4.5], "texture": "#particle"},
+				"down": {"uv": [10, 4, 11, 4.5], "texture": "#particle"}
+			}
+		},
+		{
+			"name": "orcish_mace_1",
+			"from": [14.35355, 21.13934, 7.5],
+			"to": [16.35355, 23.13934, 8.5],
+			"rotation": {"angle": 45, "axis": "z", "origin": [8.35355, 11.63934, 7.64645]},
+			"faces": {
+				"north": {"uv": [10, 4.5, 9, 5.5], "texture": "#particle"},
+				"east": {"uv": [9.5, 4.5, 10, 5.5], "texture": "#particle"},
+				"south": {"uv": [9, 4.5, 10, 5.5], "texture": "#particle"},
+				"west": {"uv": [9, 4.5, 9.5, 5.5], "texture": "#particle"},
+				"up": {"uv": [9, 4.5, 10, 5], "texture": "#particle"},
+				"down": {"uv": [9, 5, 10, 5.5], "texture": "#particle"}
+			}
+		},
+		{
+			"name": "orcish_mace_2",
+			"from": [16.35355, 22.13934, 7.5],
+			"to": [17.35355, 23.13934, 8.5],
+			"rotation": {"angle": 45, "axis": "z", "origin": [8.35355, 11.63934, 7.64645]},
+			"faces": {
+				"north": {"uv": [10.5, 4.5, 10, 5], "texture": "#particle"},
+				"east": {"uv": [10, 4.5, 10.5, 5], "texture": "#particle"},
+				"south": {"uv": [10, 4.5, 10.5, 5], "texture": "#particle"},
+				"down": {"uv": [10, 4.5, 10.5, 5], "texture": "#particle"}
+			}
+		},
+		{
+			"name": "orcish_mace_3",
+			"from": [12.35355, 14.13934, 7.5],
+			"to": [14.35355, 22.13934, 8.5],
+			"rotation": {"angle": 45, "axis": "z", "origin": [8.35355, 11.63934, 7.64645]},
+			"faces": {
+				"north": {"uv": [9, 5, 8, 9], "texture": "#particle"},
+				"east": {"uv": [8.5, 5, 9, 9], "texture": "#particle"},
+				"south": {"uv": [8, 5, 9, 9], "texture": "#particle"},
+				"west": {"uv": [8, 5, 8.5, 9], "texture": "#particle"},
+				"up": {"uv": [8, 5, 9, 5.5], "texture": "#particle"},
+				"down": {"uv": [8, 8.5, 9, 9], "texture": "#particle"}
+			}
+		},
+		{
+			"name": "orcish_mace_4",
+			"from": [19.35355, 20.13934, 7.5],
+			"to": [20.35355, 22.13934, 8.5],
+			"rotation": {"angle": 45, "axis": "z", "origin": [8.35355, 11.63934, 7.64645]},
+			"faces": {
+				"north": {"uv": [12, 5, 11.5, 6], "texture": "#particle"},
+				"east": {"uv": [11.5, 5, 12, 6], "texture": "#particle"},
+				"south": {"uv": [11.5, 5, 12, 6], "texture": "#particle"},
+				"west": {"uv": [11.5, 5, 12, 6], "texture": "#particle"},
+				"up": {"uv": [11.5, 5, 12, 5.5], "texture": "#particle"},
+				"down": {"uv": [11.5, 5.5, 12, 6], "texture": "#particle"}
+			}
+		},
+		{
+			"name": "orcish_mace_5",
+			"from": [14.35355, 20.13934, 7.5],
+			"to": [15.35355, 21.13934, 8.5],
+			"rotation": {"angle": 45, "axis": "z", "origin": [8.35355, 11.63934, 7.64645]},
+			"faces": {
+				"north": {"uv": [9.5, 5.5, 9, 6], "texture": "#particle"},
+				"east": {"uv": [9, 5.5, 9.5, 6], "texture": "#particle"},
+				"south": {"uv": [9, 5.5, 9.5, 6], "texture": "#particle"},
+				"down": {"uv": [9, 5.5, 9.5, 6], "texture": "#particle"}
+			}
+		},
+		{
+			"name": "orcish_mace_6",
+			"from": [18.35355, 18.13934, 7.5],
+			"to": [19.35355, 21.13934, 8.5],
+			"rotation": {"angle": 45, "axis": "z", "origin": [8.35355, 11.63934, 7.64645]},
+			"faces": {
+				"north": {"uv": [11.5, 5.5, 11, 7], "texture": "#particle"},
+				"east": {"uv": [11, 5.5, 11.5, 7], "texture": "#particle"},
+				"south": {"uv": [11, 5.5, 11.5, 7], "texture": "#particle"},
+				"west": {"uv": [11, 5.5, 11.5, 7], "texture": "#particle"},
+				"up": {"uv": [11, 5.5, 11.5, 6], "texture": "#particle"},
+				"down": {"uv": [11, 6.5, 11.5, 7], "texture": "#particle"}
+			}
+		},
+		{
+			"name": "orcish_mace_7",
+			"from": [17.35355, 16.13934, 7.5],
+			"to": [18.35355, 20.13934, 8.5],
+			"rotation": {"angle": 45, "axis": "z", "origin": [8.35355, 11.63934, 7.64645]},
+			"faces": {
+				"north": {"uv": [11, 6, 10.5, 8], "texture": "#particle"},
+				"east": {"uv": [10.5, 6, 11, 8], "texture": "#particle"},
+				"south": {"uv": [10.5, 6, 11, 8], "texture": "#particle"},
+				"west": {"uv": [10.5, 6, 11, 8], "texture": "#particle"},
+				"up": {"uv": [10.5, 6, 11, 6.5], "texture": "#particle"},
+				"down": {"uv": [10.5, 7.5, 11, 8], "texture": "#particle"}
+			}
+		},
+		{
+			"name": "orcish_mace_8",
+			"from": [10.35355, 13.13934, 7.5],
+			"to": [11.35355, 19.13934, 8.5],
+			"rotation": {"angle": 45, "axis": "z", "origin": [8.35355, 11.63934, 7.64645]},
+			"faces": {
+				"north": {"uv": [7.5, 6.5, 7, 9.5], "texture": "#particle"},
+				"east": {"uv": [7, 6.5, 7.5, 9.5], "texture": "#particle"},
+				"south": {"uv": [7, 6.5, 7.5, 9.5], "texture": "#particle"},
+				"west": {"uv": [7, 6.5, 7.5, 9.5], "texture": "#particle"},
+				"up": {"uv": [7, 6.5, 7.5, 7], "texture": "#particle"},
+				"down": {"uv": [7, 9, 7.5, 9.5], "texture": "#particle"}
+			}
+		},
+		{
+			"name": "orcish_mace_9",
+			"from": [16.35355, 16.13934, 7.5],
+			"to": [17.35355, 19.13934, 8.5],
+			"rotation": {"angle": 45, "axis": "z", "origin": [8.35355, 11.63934, 7.64645]},
+			"faces": {
+				"north": {"uv": [10.5, 6.5, 10, 8], "texture": "#particle"},
+				"south": {"uv": [10, 6.5, 10.5, 8], "texture": "#particle"},
+				"west": {"uv": [10, 6.5, 10.5, 8], "texture": "#particle"},
+				"up": {"uv": [10, 6.5, 10.5, 7], "texture": "#particle"},
+				"down": {"uv": [10, 7.5, 10.5, 8], "texture": "#particle"}
+			}
+		},
+		{
+			"name": "orcish_mace_10",
+			"from": [11.35355, 13.13934, 7.5],
+			"to": [12.35355, 18.13934, 8.5],
+			"rotation": {"angle": 45, "axis": "z", "origin": [8.35355, 11.63934, 7.64645]},
+			"faces": {
+				"north": {"uv": [8, 7, 7.5, 9.5], "texture": "#particle"},
+				"south": {"uv": [7.5, 7, 8, 9.5], "texture": "#particle"},
+				"up": {"uv": [7.5, 7, 8, 7.5], "texture": "#particle"},
+				"down": {"uv": [7.5, 9, 8, 9.5], "texture": "#particle"}
+			}
+		},
+		{
+			"name": "orcish_mace_11",
+			"from": [14.35355, 16.13934, 7.5],
+			"to": [16.35355, 18.13934, 8.5],
+			"rotation": {"angle": 45, "axis": "z", "origin": [8.35355, 11.63934, 7.64645]},
+			"faces": {
+				"north": {"uv": [10, 7, 9, 8], "texture": "#particle"},
+				"south": {"uv": [9, 7, 10, 8], "texture": "#particle"},
+				"up": {"uv": [9, 7, 10, 7.5], "texture": "#particle"},
+				"down": {"uv": [9, 7.5, 10, 8], "texture": "#particle"}
+			}
+		},
+		{
+			"name": "orcish_mace_12",
+			"from": [9.35355, 12.13934, 7.5],
+			"to": [10.35355, 17.13934, 8.5],
+			"rotation": {"angle": 45, "axis": "z", "origin": [8.35355, 11.63934, 7.64645]},
+			"faces": {
+				"north": {"uv": [7, 7.5, 6.5, 10], "texture": "#particle"},
+				"east": {"uv": [6.5, 7.5, 7, 10], "texture": "#particle"},
+				"south": {"uv": [6.5, 7.5, 7, 10], "texture": "#particle"},
+				"west": {"uv": [6.5, 7.5, 7, 10], "texture": "#particle"},
+				"up": {"uv": [6.5, 7.5, 7, 8], "texture": "#particle"},
+				"down": {"uv": [6.5, 9.5, 7, 10], "texture": "#particle"}
+			}
+		},
+		{
+			"name": "orcish_mace_13",
+			"from": [14.35355, 14.13934, 7.5],
+			"to": [15.35355, 15.13934, 8.5],
+			"rotation": {"angle": 45, "axis": "z", "origin": [8.35355, 11.63934, 7.64645]},
+			"faces": {
+				"north": {"uv": [9.5, 8.5, 9, 9], "texture": "#particle"},
+				"east": {"uv": [9, 8.5, 9.5, 9], "texture": "#particle"},
+				"south": {"uv": [9, 8.5, 9.5, 9], "texture": "#particle"},
+				"up": {"uv": [9, 8.5, 9.5, 9], "texture": "#particle"},
+				"down": {"uv": [9, 8.5, 9.5, 9], "texture": "#particle"}
+			}
+		},
+		{
+			"name": "orcish_mace_14",
+			"from": [6.35355, 9.13934, 7.5],
+			"to": [7.35355, 14.13934, 8.5],
+			"rotation": {"angle": 45, "axis": "z", "origin": [8.35355, 11.63934, 7.64645]},
+			"faces": {
+				"north": {"uv": [5.5, 9, 5, 11.5], "texture": "#particle"},
+				"east": {"uv": [5, 9, 5.5, 11.5], "texture": "#particle"},
+				"south": {"uv": [5, 9, 5.5, 11.5], "texture": "#particle"},
+				"west": {"uv": [5, 9, 5.5, 11.5], "texture": "#particle"},
+				"up": {"uv": [5, 9, 5.5, 9.5], "texture": "#particle"},
+				"down": {"uv": [5, 11, 5.5, 11.5], "texture": "#particle"}
+			}
+		},
+		{
+			"name": "orcish_mace_15",
+			"from": [8.35355, 10.13934, 7.5],
+			"to": [9.35355, 14.13934, 8.5],
+			"rotation": {"angle": 45, "axis": "z", "origin": [8.35355, 11.63934, 7.64645]},
+			"faces": {
+				"north": {"uv": [6.5, 9, 6, 11], "texture": "#particle"},
+				"east": {"uv": [6, 9, 6.5, 11], "texture": "#particle"},
+				"south": {"uv": [6, 9, 6.5, 11], "texture": "#particle"},
+				"west": {"uv": [6, 9, 6.5, 11], "texture": "#particle"},
+				"up": {"uv": [6, 9, 6.5, 9.5], "texture": "#particle"},
+				"down": {"uv": [6, 10.5, 6.5, 11], "texture": "#particle"}
+			}
+		},
+		{
+			"name": "orcish_mace_16",
+			"from": [12.35355, 13.13934, 7.5],
+			"to": [13.35355, 14.13934, 8.5],
+			"rotation": {"angle": 45, "axis": "z", "origin": [8.35355, 11.63934, 7.64645]},
+			"faces": {
+				"north": {"uv": [8.5, 9, 8, 9.5], "texture": "#particle"},
+				"east": {"uv": [8, 9, 8.5, 9.5], "texture": "#particle"},
+				"south": {"uv": [8, 9, 8.5, 9.5], "texture": "#particle"},
+				"down": {"uv": [8, 9, 8.5, 9.5], "texture": "#particle"}
+			}
+		},
+		{
+			"name": "orcish_mace_17",
+			"from": [7.50648, 19.62678, 19.13388],
+			"to": [8.50648, 21.62678, 20.13388],
+			"rotation": {"angle": -45, "axis": "x", "origin": [8.35355, 11.63934, 7.64645]},
+			"faces": {
+				"north": {"uv": [14, 9, 15, 9.5], "rotation": 270, "texture": "#particle"},
+				"east": {"uv": [14, 9, 15, 9.5], "rotation": 270, "texture": "#particle"},
+				"south": {"uv": [14, 9, 15, 9.5], "rotation": 270, "texture": "#particle"},
+				"west": {"uv": [15, 9, 14, 9.5], "rotation": 90, "texture": "#particle"},
+				"up": {"uv": [14.5, 9, 15, 9.5], "rotation": 180, "texture": "#particle"},
+				"down": {"uv": [14, 9, 14.5, 9.5], "texture": "#particle"}
+			}
+		},
+		{
+			"name": "orcish_mace_18",
+			"from": [7.35355, 10.13934, 7.5],
+			"to": [8.35355, 13.13934, 8.5],
+			"rotation": {"angle": 45, "axis": "z", "origin": [8.35355, 11.63934, 7.64645]},
+			"faces": {
+				"north": {"uv": [6, 9.5, 5.5, 11], "texture": "#particle"},
+				"south": {"uv": [5.5, 9.5, 6, 11], "texture": "#particle"},
+				"up": {"uv": [5.5, 9.5, 6, 10], "texture": "#particle"},
+				"down": {"uv": [5.5, 10.5, 6, 11], "texture": "#particle"}
+			}
+		},
+		{
+			"name": "orcish_mace_19",
+			"from": [7.50648, 17.62678, 17.13388],
+			"to": [8.50648, 19.62678, 19.13388],
+			"rotation": {"angle": -45, "axis": "x", "origin": [8.35355, 11.63934, 7.64645]},
+			"faces": {
+				"north": {"uv": [13, 10, 14, 10.5], "rotation": 270, "texture": "#particle"},
+				"east": {"uv": [13, 9.5, 14, 10.5], "rotation": 270, "texture": "#particle"},
+				"south": {"uv": [13, 9.5, 14, 10], "rotation": 270, "texture": "#particle"},
+				"west": {"uv": [14, 9.5, 13, 10.5], "rotation": 90, "texture": "#particle"},
+				"up": {"uv": [13.5, 9.5, 14, 10.5], "rotation": 180, "texture": "#particle"},
+				"down": {"uv": [13, 9.5, 13.5, 10.5], "texture": "#particle"}
+			}
+		},
+		{
+			"name": "orcish_mace_20",
+			"from": [7.50648, 19.62678, 18.13388],
+			"to": [8.50648, 20.62678, 19.13388],
+			"rotation": {"angle": -45, "axis": "x", "origin": [8.35355, 11.63934, 7.64645]},
+			"faces": {
+				"north": {"uv": [14, 9.5, 14.5, 10], "rotation": 270, "texture": "#particle"},
+				"east": {"uv": [14, 9.5, 14.5, 10], "rotation": 270, "texture": "#particle"},
+				"west": {"uv": [14.5, 9.5, 14, 10], "rotation": 90, "texture": "#particle"},
+				"up": {"uv": [14, 9.5, 14.5, 10], "rotation": 180, "texture": "#particle"}
+			}
+		},
+		{
+			"name": "orcish_mace_21",
+			"from": [7.50648, 15.62678, 10.13388],
+			"to": [8.50648, 17.62678, 18.13388],
+			"rotation": {"angle": -45, "axis": "x", "origin": [8.35355, 11.63934, 7.64645]},
+			"faces": {
+				"north": {"uv": [12, 13.5, 13, 14], "rotation": 270, "texture": "#particle"},
+				"east": {"uv": [12, 10, 13, 14], "rotation": 270, "texture": "#particle"},
+				"south": {"uv": [12, 10, 13, 10.5], "rotation": 270, "texture": "#particle"},
+				"west": {"uv": [13, 10, 12, 14], "rotation": 90, "texture": "#particle"},
+				"up": {"uv": [12.5, 10, 13, 14], "rotation": 180, "texture": "#particle"},
+				"down": {"uv": [12, 10, 12.5, 14], "texture": "#particle"}
+			}
+		},
+		{
+			"name": "orcish_mace_22",
+			"from": [7.50648, 22.62678, 16.13388],
+			"to": [8.50648, 23.62678, 18.13388],
+			"rotation": {"angle": -45, "axis": "x", "origin": [8.35355, 11.63934, 7.64645]},
+			"faces": {
+				"north": {"uv": [15.5, 10.5, 16, 11], "rotation": 270, "texture": "#particle"},
+				"east": {"uv": [15.5, 10, 16, 11], "rotation": 270, "texture": "#particle"},
+				"south": {"uv": [15.5, 10, 16, 10.5], "rotation": 270, "texture": "#particle"},
+				"west": {"uv": [16, 10, 15.5, 11], "rotation": 90, "texture": "#particle"},
+				"up": {"uv": [15.5, 10, 16, 11], "rotation": 180, "texture": "#particle"},
+				"down": {"uv": [15.5, 10, 16, 11], "texture": "#particle"}
+			}
+		},
+		{
+			"name": "orcish_mace_23",
+			"from": [5.35355, 7.13934, 7.5],
+			"to": [6.35355, 11.13934, 8.5],
+			"rotation": {"angle": 45, "axis": "z", "origin": [8.35355, 11.63934, 7.64645]},
+			"faces": {
+				"north": {"uv": [5, 10.5, 4.5, 12.5], "texture": "#particle"},
+				"east": {"uv": [4.5, 10.5, 5, 12.5], "texture": "#particle"},
+				"south": {"uv": [4.5, 10.5, 5, 12.5], "texture": "#particle"},
+				"west": {"uv": [4.5, 10.5, 5, 12.5], "texture": "#particle"},
+				"up": {"uv": [4.5, 10.5, 5, 11], "texture": "#particle"},
+				"down": {"uv": [4.5, 12, 5, 12.5], "texture": "#particle"}
+			}
+		},
+		{
+			"name": "orcish_mace_24",
+			"from": [9.35355, 10.13934, 7.5],
+			"to": [10.35355, 11.13934, 8.5],
+			"rotation": {"angle": 45, "axis": "z", "origin": [8.35355, 11.63934, 7.64645]},
+			"faces": {
+				"north": {"uv": [7, 10.5, 6.5, 11], "texture": "#particle"},
+				"east": {"uv": [6.5, 10.5, 7, 11], "texture": "#particle"},
+				"south": {"uv": [6.5, 10.5, 7, 11], "texture": "#particle"},
+				"up": {"uv": [6.5, 10.5, 7, 11], "texture": "#particle"},
+				"down": {"uv": [6.5, 10.5, 7, 11], "texture": "#particle"}
+			}
+		},
+		{
+			"name": "orcish_mace_25",
+			"from": [7.50648, 17.62678, 16.13388],
+			"to": [8.50648, 18.62678, 17.13388],
+			"rotation": {"angle": -45, "axis": "x", "origin": [8.35355, 11.63934, 7.64645]},
+			"faces": {
+				"north": {"uv": [13, 10.5, 13.5, 11], "rotation": 270, "texture": "#particle"},
+				"east": {"uv": [13, 10.5, 13.5, 11], "rotation": 270, "texture": "#particle"},
+				"west": {"uv": [13.5, 10.5, 13, 11], "rotation": 90, "texture": "#particle"},
+				"up": {"uv": [13, 10.5, 13.5, 11], "rotation": 180, "texture": "#particle"}
+			}
+		},
+		{
+			"name": "orcish_mace_26",
+			"from": [7.50648, 21.62678, 14.13388],
+			"to": [8.50648, 22.62678, 17.13388],
+			"rotation": {"angle": -45, "axis": "x", "origin": [8.35355, 11.63934, 7.64645]},
+			"faces": {
+				"north": {"uv": [15, 11.5, 15.5, 12], "rotation": 270, "texture": "#particle"},
+				"east": {"uv": [15, 10.5, 15.5, 12], "rotation": 270, "texture": "#particle"},
+				"south": {"uv": [15, 10.5, 15.5, 11], "rotation": 270, "texture": "#particle"},
+				"west": {"uv": [15.5, 10.5, 15, 12], "rotation": 90, "texture": "#particle"},
+				"up": {"uv": [15, 10.5, 15.5, 12], "rotation": 180, "texture": "#particle"},
+				"down": {"uv": [15, 10.5, 15.5, 12], "texture": "#particle"}
+			}
+		},
+		{
+			"name": "orcish_mace_27",
+			"from": [3.35355, 7.13934, 7.5],
+			"to": [5.35355, 10.13934, 8.5],
+			"rotation": {"angle": 45, "axis": "z", "origin": [8.35355, 11.63934, 7.64645]},
+			"faces": {
+				"north": {"uv": [4.5, 11, 3.5, 12.5], "texture": "#particle"},
+				"south": {"uv": [3.5, 11, 4.5, 12.5], "texture": "#particle"},
+				"west": {"uv": [3.5, 11, 4, 12.5], "texture": "#particle"},
+				"up": {"uv": [3.5, 11, 4.5, 11.5], "texture": "#particle"},
+				"down": {"uv": [3.5, 12, 4.5, 12.5], "texture": "#particle"}
+			}
+		},
+		{
+			"name": "orcish_mace_28",
+			"from": [7.50648, 20.62678, 12.13388],
+			"to": [8.50648, 21.62678, 16.13388],
+			"rotation": {"angle": -45, "axis": "x", "origin": [8.35355, 11.63934, 7.64645]},
+			"faces": {
+				"north": {"uv": [14.5, 12.5, 15, 13], "rotation": 270, "texture": "#particle"},
+				"east": {"uv": [14.5, 11, 15, 13], "rotation": 270, "texture": "#particle"},
+				"south": {"uv": [14.5, 11, 15, 11.5], "rotation": 270, "texture": "#particle"},
+				"west": {"uv": [15, 11, 14.5, 13], "rotation": 90, "texture": "#particle"},
+				"up": {"uv": [14.5, 11, 15, 13], "rotation": 180, "texture": "#particle"},
+				"down": {"uv": [14.5, 11, 15, 13], "texture": "#particle"}
+			}
+		},
+		{
+			"name": "orcish_mace_29",
+			"from": [7.50648, 13.62678, 9.13388],
+			"to": [8.50648, 14.62678, 15.13388],
+			"rotation": {"angle": -45, "axis": "x", "origin": [8.35355, 11.63934, 7.64645]},
+			"faces": {
+				"north": {"uv": [11, 14, 11.5, 14.5], "rotation": 270, "texture": "#particle"},
+				"east": {"uv": [11, 11.5, 11.5, 14.5], "rotation": 270, "texture": "#particle"},
+				"south": {"uv": [11, 11.5, 11.5, 12], "rotation": 270, "texture": "#particle"},
+				"west": {"uv": [11.5, 11.5, 11, 14.5], "rotation": 90, "texture": "#particle"},
+				"up": {"uv": [11, 11.5, 11.5, 14.5], "rotation": 180, "texture": "#particle"},
+				"down": {"uv": [11, 11.5, 11.5, 14.5], "texture": "#particle"}
+			}
+		},
+		{
+			"name": "orcish_mace_30",
+			"from": [7.50648, 19.62678, 12.13388],
+			"to": [8.50648, 20.62678, 15.13388],
+			"rotation": {"angle": -45, "axis": "x", "origin": [8.35355, 11.63934, 7.64645]},
+			"faces": {
+				"north": {"uv": [14, 12.5, 14.5, 13], "rotation": 270, "texture": "#particle"},
+				"east": {"uv": [14, 11.5, 14.5, 13], "rotation": 270, "texture": "#particle"},
+				"south": {"uv": [14, 11.5, 14.5, 12], "rotation": 270, "texture": "#particle"},
+				"west": {"uv": [14.5, 11.5, 14, 13], "rotation": 90, "texture": "#particle"},
+				"down": {"uv": [14, 11.5, 14.5, 13], "texture": "#particle"}
+			}
+		},
+		{
+			"name": "orcish_mace_31",
+			"from": [2.35355, 5.13934, 7.5],
+			"to": [3.35355, 8.13934, 8.5],
+			"rotation": {"angle": 45, "axis": "z", "origin": [8.35355, 11.63934, 7.64645]},
+			"faces": {
+				"north": {"uv": [3.5, 12, 3, 13.5], "texture": "#particle"},
+				"east": {"uv": [3, 12, 3.5, 13.5], "texture": "#particle"},
+				"south": {"uv": [3, 12, 3.5, 13.5], "texture": "#particle"},
+				"west": {"uv": [3, 12, 3.5, 13.5], "texture": "#particle"},
+				"up": {"uv": [3, 12, 3.5, 12.5], "texture": "#particle"},
+				"down": {"uv": [3, 13, 3.5, 13.5], "texture": "#particle"}
+			}
+		},
+		{
+			"name": "orcish_mace_32",
+			"from": [7.50648, 14.62678, 9.13388],
+			"to": [8.50648, 15.62678, 14.13388],
+			"rotation": {"angle": -45, "axis": "x", "origin": [8.35355, 11.63934, 7.64645]},
+			"faces": {
+				"north": {"uv": [11.5, 14, 12, 14.5], "rotation": 270, "texture": "#particle"},
+				"east": {"uv": [11.5, 12, 12, 14.5], "rotation": 270, "texture": "#particle"},
+				"south": {"uv": [11.5, 12, 12, 12.5], "rotation": 270, "texture": "#particle"},
+				"west": {"uv": [12, 12, 11.5, 14.5], "rotation": 90, "texture": "#particle"}
+			}
+		},
+		{
+			"name": "orcish_mace_33",
+			"from": [7.50648, 17.62678, 12.13388],
+			"to": [8.50648, 19.62678, 14.13388],
+			"rotation": {"angle": -45, "axis": "x", "origin": [8.35355, 11.63934, 7.64645]},
+			"faces": {
+				"north": {"uv": [13, 12.5, 14, 13], "rotation": 270, "texture": "#particle"},
+				"east": {"uv": [13, 12, 14, 13], "rotation": 270, "texture": "#particle"},
+				"south": {"uv": [13, 12, 14, 12.5], "rotation": 270, "texture": "#particle"},
+				"west": {"uv": [14, 12, 13, 13], "rotation": 90, "texture": "#particle"}
+			}
+		},
+		{
+			"name": "orcish_mace_34",
+			"from": [1.35355, 4.13934, 7.5],
+			"to": [2.35355, 7.13934, 8.5],
+			"rotation": {"angle": 45, "axis": "z", "origin": [8.35355, 11.63934, 7.64645]},
+			"faces": {
+				"north": {"uv": [3, 12.5, 2.5, 14], "texture": "#particle"},
+				"east": {"uv": [2.5, 12.5, 3, 14], "texture": "#particle"},
+				"south": {"uv": [2.5, 12.5, 3, 14], "texture": "#particle"},
+				"west": {"uv": [2.5, 12.5, 3, 14], "texture": "#particle"},
+				"up": {"uv": [2.5, 12.5, 3, 13], "texture": "#particle"},
+				"down": {"uv": [2.5, 13.5, 3, 14], "texture": "#particle"}
+			}
+		},
+		{
+			"name": "orcish_mace_35",
+			"from": [3.35355, 6.13934, 7.5],
+			"to": [4.35355, 7.13934, 8.5],
+			"rotation": {"angle": 45, "axis": "z", "origin": [8.35355, 11.63934, 7.64645]},
+			"faces": {
+				"north": {"uv": [4, 12.5, 3.5, 13], "texture": "#particle"},
+				"east": {"uv": [3.5, 12.5, 4, 13], "texture": "#particle"},
+				"south": {"uv": [3.5, 12.5, 4, 13], "texture": "#particle"},
+				"down": {"uv": [3.5, 12.5, 4, 13], "texture": "#particle"}
+			}
+		},
+		{
+			"name": "orcish_mace_36",
+			"from": [7.50648, 12.62678, 8.13388],
+			"to": [8.50648, 13.62678, 13.13388],
+			"rotation": {"angle": -45, "axis": "x", "origin": [8.35355, 11.63934, 7.64645]},
+			"faces": {
+				"north": {"uv": [10.5, 14.5, 11, 15], "rotation": 270, "texture": "#particle"},
+				"east": {"uv": [10.5, 12.5, 11, 15], "rotation": 270, "texture": "#particle"},
+				"south": {"uv": [10.5, 12.5, 11, 13], "rotation": 270, "texture": "#particle"},
+				"west": {"uv": [11, 12.5, 10.5, 15], "rotation": 90, "texture": "#particle"},
+				"up": {"uv": [10.5, 12.5, 11, 15], "rotation": 180, "texture": "#particle"},
+				"down": {"uv": [10.5, 12.5, 11, 15], "texture": "#particle"}
+			}
+		},
+		{
+			"name": "orcish_mace_37",
+			"from": [0.35355, 3.13934, 7.5],
+			"to": [1.35355, 6.13934, 8.5],
+			"rotation": {"angle": 45, "axis": "z", "origin": [8.35355, 11.63934, 7.64645]},
+			"faces": {
+				"north": {"uv": [2.5, 13, 2, 14.5], "texture": "#particle"},
+				"east": {"uv": [2, 13, 2.5, 14.5], "texture": "#particle"},
+				"south": {"uv": [2, 13, 2.5, 14.5], "texture": "#particle"},
+				"west": {"uv": [2, 13, 2.5, 14.5], "texture": "#particle"},
+				"up": {"uv": [2, 13, 2.5, 13.5], "texture": "#particle"},
+				"down": {"uv": [2, 14, 2.5, 14.5], "texture": "#particle"}
+			}
+		},
+		{
+			"name": "orcish_mace_38",
+			"from": [-0.64645, 2.13934, 7.5],
+			"to": [0.35355, 5.13934, 8.5],
+			"rotation": {"angle": 45, "axis": "z", "origin": [8.35355, 11.63934, 7.64645]},
+			"faces": {
+				"north": {"uv": [2, 13.5, 1.5, 15], "texture": "#particle"},
+				"east": {"uv": [1.5, 13.5, 2, 15], "texture": "#particle"},
+				"south": {"uv": [1.5, 13.5, 2, 15], "texture": "#particle"},
+				"west": {"uv": [1.5, 13.5, 2, 15], "texture": "#particle"},
+				"up": {"uv": [1.5, 13.5, 2, 14], "texture": "#particle"},
+				"down": {"uv": [1.5, 14.5, 2, 15], "texture": "#particle"}
+			}
+		},
+		{
+			"name": "orcish_mace_39",
+			"from": [7.33148, 17.62678, 10.13388],
+			"to": [8.33148, 18.62678, 11.13388],
+			"rotation": {"angle": -45, "axis": "x", "origin": [8.35355, 11.63934, 7.64645]},
+			"faces": {
+				"north": {"uv": [13, 13.5, 13.5, 14], "rotation": 270, "texture": "#particle"},
+				"east": {"uv": [13, 13.5, 13.5, 14], "rotation": 270, "texture": "#particle"},
+				"south": {"uv": [13, 13.5, 13.5, 14], "rotation": 270, "texture": "#particle"},
+				"west": {"uv": [13.5, 13.5, 13, 14], "rotation": 90, "texture": "#particle"},
+				"up": {"uv": [13, 13.5, 13.5, 14], "rotation": 180, "texture": "#particle"}
+			}
+		},
+		{
+			"name": "orcish_mace_40",
+			"from": [-3.64645, 0.13934, 7.5],
+			"to": [-2.64645, 4.13934, 8.5],
+			"rotation": {"angle": 45, "axis": "z", "origin": [8.35355, 11.63934, 7.64645]},
+			"faces": {
+				"north": {"uv": [0.5, 14, 0, 16], "texture": "#particle"},
+				"east": {"uv": [0, 14, 0.5, 16], "texture": "#particle"},
+				"south": {"uv": [0, 14, 0.5, 16], "texture": "#particle"},
+				"west": {"uv": [0, 14, 0.5, 16], "texture": "#particle"},
+				"up": {"uv": [0, 14, 0.5, 14.5], "texture": "#particle"},
+				"down": {"uv": [0, 15.5, 0.5, 16], "texture": "#particle"}
+			}
+		},
+		{
+			"name": "orcish_mace_41",
+			"from": [-1.64645, 0.13934, 7.5],
+			"to": [-0.64645, 4.13934, 8.5],
+			"rotation": {"angle": 45, "axis": "z", "origin": [8.35355, 11.63934, 7.64645]},
+			"faces": {
+				"north": {"uv": [1.5, 14, 1, 16], "texture": "#particle"},
+				"east": {"uv": [1, 14, 1.5, 16], "texture": "#particle"},
+				"south": {"uv": [1, 14, 1.5, 16], "texture": "#particle"},
+				"west": {"uv": [1, 14, 1.5, 16], "texture": "#particle"},
+				"up": {"uv": [1, 14, 1.5, 14.5], "texture": "#particle"},
+				"down": {"uv": [1, 15.5, 1.5, 16], "texture": "#particle"}
+			}
+		},
+		{
+			"name": "orcish_mace_42",
+			"from": [7.50648, 9.62678, 6.13388],
+			"to": [8.50648, 10.62678, 10.13388],
+			"rotation": {"angle": -45, "axis": "x", "origin": [8.35355, 11.63934, 7.64645]},
+			"faces": {
+				"north": {"uv": [9, 15.5, 9.5, 16], "rotation": 270, "texture": "#particle"},
+				"east": {"uv": [9, 14, 9.5, 16], "rotation": 270, "texture": "#particle"},
+				"south": {"uv": [9, 14, 9.5, 14.5], "rotation": 270, "texture": "#particle"},
+				"west": {"uv": [9.5, 14, 9, 16], "rotation": 90, "texture": "#particle"},
+				"up": {"uv": [9, 14, 9.5, 16], "rotation": 180, "texture": "#particle"},
+				"down": {"uv": [9, 14, 9.5, 16], "texture": "#particle"}
+			}
+		},
+		{
+			"name": "orcish_mace_43",
+			"from": [7.50648, 11.62678, 6.13388],
+			"to": [8.50648, 12.62678, 10.13388],
+			"rotation": {"angle": -45, "axis": "x", "origin": [8.35355, 11.63934, 7.64645]},
+			"faces": {
+				"north": {"uv": [10, 15.5, 10.5, 16], "rotation": 270, "texture": "#particle"},
+				"east": {"uv": [10, 14, 10.5, 16], "rotation": 270, "texture": "#particle"},
+				"south": {"uv": [10, 14, 10.5, 14.5], "rotation": 270, "texture": "#particle"},
+				"west": {"uv": [10.5, 14, 10, 16], "rotation": 90, "texture": "#particle"},
+				"up": {"uv": [10, 14, 10.5, 16], "rotation": 180, "texture": "#particle"},
+				"down": {"uv": [10, 14, 10.5, 16], "texture": "#particle"}
+			}
+		},
+		{
+			"name": "orcish_mace_44",
+			"from": [7.50648, 15.62678, 9.13388],
+			"to": [8.50648, 16.62678, 10.13388],
+			"rotation": {"angle": -45, "axis": "x", "origin": [8.35355, 11.63934, 7.64645]},
+			"faces": {
+				"north": {"uv": [12, 14, 12.5, 14.5], "rotation": 270, "texture": "#particle"},
+				"east": {"uv": [12, 14, 12.5, 14.5], "rotation": 270, "texture": "#particle"},
+				"west": {"uv": [12.5, 14, 12, 14.5], "rotation": 90, "texture": "#particle"},
+				"up": {"uv": [12, 14, 12.5, 14.5], "rotation": 180, "texture": "#particle"}
+			}
+		},
+		{
+			"name": "orcish_mace_45",
+			"from": [-2.64645, 0.13934, 7.5],
+			"to": [-1.64645, 3.13934, 8.5],
+			"rotation": {"angle": 45, "axis": "z", "origin": [8.35355, 11.63934, 7.64645]},
+			"faces": {
+				"north": {"uv": [1, 14.5, 0.5, 16], "texture": "#particle"},
+				"south": {"uv": [0.5, 14.5, 1, 16], "texture": "#particle"},
+				"up": {"uv": [0.5, 14.5, 1, 15], "texture": "#particle"},
+				"down": {"uv": [0.5, 15.5, 1, 16], "texture": "#particle"}
+			}
+		},
+		{
+			"name": "orcish_mace_46",
+			"from": [7.50648, 10.62678, 6.13388],
+			"to": [8.50648, 11.62678, 9.13388],
+			"rotation": {"angle": -45, "axis": "x", "origin": [8.35355, 11.63934, 7.64645]},
+			"faces": {
+				"north": {"uv": [9.5, 15.5, 10, 16], "rotation": 270, "texture": "#particle"},
+				"east": {"uv": [9.5, 14.5, 10, 16], "rotation": 270, "texture": "#particle"},
+				"south": {"uv": [9.5, 14.5, 10, 15], "rotation": 270, "texture": "#particle"},
+				"west": {"uv": [10, 14.5, 9.5, 16], "rotation": 90, "texture": "#particle"}
+			}
+		},
+		{
+			"name": "orcish_mace_47",
+			"from": [-0.64645, 0.13934, 7.5],
+			"to": [0.35355, 1.13934, 8.5],
+			"rotation": {"angle": 45, "axis": "z", "origin": [8.35355, 11.63934, 7.64645]},
+			"faces": {
+				"north": {"uv": [2, 15.5, 1.5, 16], "texture": "#particle"},
+				"east": {"uv": [1.5, 15.5, 2, 16], "texture": "#particle"},
+				"south": {"uv": [1.5, 15.5, 2, 16], "texture": "#particle"},
+				"up": {"uv": [1.5, 15.5, 2, 16], "texture": "#particle"},
+				"down": {"uv": [1.5, 15.5, 2, 16], "texture": "#particle"}
+			}
+		},
+		{
+			"name": "orcish_mace_48",
+			"from": [7.50648, 12.62678, 6.13388],
+			"to": [8.50648, 13.62678, 7.13388],
+			"rotation": {"angle": -45, "axis": "x", "origin": [8.35355, 11.63934, 7.64645]},
+			"faces": {
+				"north": {"uv": [10.5, 15.5, 11, 16], "rotation": 270, "texture": "#particle"},
+				"east": {"uv": [10.5, 15.5, 11, 16], "rotation": 270, "texture": "#particle"},
+				"south": {"uv": [10.5, 15.5, 11, 16], "rotation": 270, "texture": "#particle"},
+				"west": {"uv": [11, 15.5, 10.5, 16], "rotation": 90, "texture": "#particle"},
+				"up": {"uv": [10.5, 15.5, 11, 16], "rotation": 180, "texture": "#particle"}
+			}
+		}
+	],
+	"gui_light": "front",
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [-90, -90, -85],
+			"translation": [0, 1.5, 1.5],
+			"scale": [0.85, 0.85, 0.85]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [-90, -90, -85],
+			"translation": [0, 1.5, 1.5],
+			"scale": [0.85, 0.85, 0.85]
+		},
+		"firstperson_righthand": {
+			"rotation": [0, -90, -16],
+			"translation": [4.88, 0.95, -0.87],
+			"scale": [0.68, 0.68, 0.68]
+		},
+		"firstperson_lefthand": {
+			"rotation": [0, -90, -16],
+			"translation": [4.88, 0.95, -0.87],
+			"scale": [0.68, 0.68, 0.68]
+		},
+		"ground": {
+			"rotation": [0, 0, -45],
+			"translation": [0, 4, 0],
+			"scale": [0.5, 0.5, 0.5]
+		},
+		"gui": {
+			"rotation": [0, -25.5, -48],
+			"translation": [-1.75, -1.75, 0],
+			"scale": [0.72, 0.72, 0.72]
+		},
+		"head": {
+			"rotation": [45, 90, 0],
+			"translation": [0, 13, 0]
+		},
+		"fixed": {
+			"rotation": [-10, 180, -45],
+			"translation": [2.25, -1.75, -1.75],
+			"scale": [0.99, 0.99, 0.99]
+		}
+	}
+}

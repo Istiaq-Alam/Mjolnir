@@ -1,0 +1,8 @@
+{
+	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+	"parent": "item/crossbow/oak_ballista",
+	"textures": {
+		"0": "item/crossbow/birch_ballista",
+		"particle": "item/crossbow/birch_ballista"
+	}
+}

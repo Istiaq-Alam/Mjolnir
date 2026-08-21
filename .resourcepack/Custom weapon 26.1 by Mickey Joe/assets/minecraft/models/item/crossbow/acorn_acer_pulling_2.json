@@ -1,0 +1,30 @@
+{
+	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+	"parent": "item/crossbow/acorn_acer",
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [-90, 0, -105],
+			"translation": [2, 0.1, -4.75],
+			"scale": [0.9, 0.9, 0.9]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [-90, 0, 75],
+			"translation": [2, 0.1, -5],
+			"scale": [0.9, 0.9, 0.9]
+		},
+		"firstperson_righthand": {
+			"rotation": [10, 0, -100],
+			"translation": [1.13, 7.45, 2],
+			"scale": [0.68, 0.68, 0.68]
+		},
+		"firstperson_lefthand": {
+			"rotation": [10, 0, 100],
+			"translation": [1.13, 7.45, 2],
+			"scale": [0.68, 0.68, 0.68]
+		},
+		"gui": {
+			"rotation": [-62, 26, 12],
+			"translation": [-5.75, 0.5, 0]
+		}
+	}
+}

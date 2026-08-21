@@ -1,0 +1,16 @@
+{
+	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+	"parent": "item/fishing_rod/fishing_rod",
+	"display": {
+		"firstperson_righthand": {
+			"rotation": [0, 80, -27],
+			"translation": [1.5, 5.6, 1.05],
+			"scale": [0.68, 0.68, 0.68]
+		},
+		"firstperson_lefthand": {
+			"rotation": [0, -90, 27],
+			"translation": [1.5, 5.6, 1.05],
+			"scale": [0.68, 0.68, 0.68]
+		}
+	}
+}

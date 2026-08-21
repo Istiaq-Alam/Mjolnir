@@ -1,0 +1,793 @@
+{
+	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+	"texture_size": [64, 64],
+	"textures": {
+		"0": "item/bow/lute",
+		"1": "item/arrow",
+		"particle": "item/bow/lute"
+	},
+	"elements": [
+		{
+			"from": [4.5, 0, 7],
+			"to": [11.5, 14, 9],
+			"faces": {
+				"north": {"uv": [0.5, 0.5, 2.25, 4], "texture": "#0"},
+				"east": {"uv": [0, 0.5, 0.5, 4], "texture": "#0"},
+				"south": {"uv": [2.75, 0.5, 4.5, 4], "texture": "#0"},
+				"west": {"uv": [2.25, 0.5, 2.75, 4], "texture": "#0"},
+				"up": {"uv": [2.25, 0.5, 0.5, 0], "texture": "#0"},
+				"down": {"uv": [4, 0, 2.25, 0.5], "texture": "#0"}
+			}
+		},
+		{
+			"from": [6.5, 14, 7],
+			"to": [9.5, 28, 9],
+			"faces": {
+				"north": {"uv": [1, 4.5, 1.75, 8], "texture": "#0"},
+				"east": {"uv": [0.5, 4.5, 1, 8], "texture": "#0"},
+				"south": {"uv": [2.25, 4.5, 3, 8], "texture": "#0"},
+				"west": {"uv": [1.75, 4.5, 2.25, 8], "texture": "#0"},
+				"up": {"uv": [1.75, 4.5, 1, 4], "texture": "#0"}
+			}
+		},
+		{
+			"from": [6.5, 26, 9],
+			"to": [9.5, 28, 12],
+			"faces": {
+				"east": {"uv": [3, 6.25, 3.75, 6.75], "texture": "#0"},
+				"south": {"uv": [5.25, 6.25, 6, 6.75], "texture": "#0"},
+				"west": {"uv": [4.5, 6.25, 5.25, 6.75], "texture": "#0"},
+				"up": {"uv": [4.5, 6.25, 3.75, 5.5], "texture": "#0"},
+				"down": {"uv": [5.25, 5.5, 4.5, 6.25], "texture": "#0"}
+			}
+		},
+		{
+			"from": [2.5, 2, 7],
+			"to": [4.5, 11, 9],
+			"faces": {
+				"north": {"uv": [5, 3.25, 5.5, 5.5], "texture": "#0"},
+				"south": {"uv": [6, 3.25, 6.5, 5.5], "texture": "#0"},
+				"west": {"uv": [5.5, 3.25, 6, 5.5], "texture": "#0"},
+				"up": {"uv": [5.5, 3.25, 5, 2.75], "texture": "#0"},
+				"down": {"uv": [6, 2.75, 5.5, 3.25], "texture": "#0"}
+			}
+		},
+		{
+			"from": [6.5, 2, 6],
+			"to": [9.5, 3, 7],
+			"faces": {
+				"north": {"uv": [1.75, 3.5, 1, 3.25], "texture": "#0"},
+				"east": {"uv": [1.25, 3.5, 1, 3.25], "texture": "#0"},
+				"west": {"uv": [1.75, 3.5, 1.5, 3.25], "texture": "#0"},
+				"up": {"uv": [1.75, 3.5, 1, 3.25], "texture": "#0"},
+				"down": {"uv": [1.75, 3.5, 1, 3.25], "texture": "#0"}
+			}
+		},
+		{
+			"from": [11.5, 2, 7],
+			"to": [13.5, 11, 9],
+			"faces": {
+				"north": {"uv": [5, 0.5, 5.5, 2.75], "texture": "#0"},
+				"east": {"uv": [4.5, 0.5, 5, 2.75], "texture": "#0"},
+				"south": {"uv": [6, 0.5, 6.5, 2.75], "texture": "#0"},
+				"up": {"uv": [5.5, 0.5, 5, 0], "texture": "#0"},
+				"down": {"uv": [6, 0, 5.5, 0.5], "texture": "#0"}
+			}
+		},
+		{
+			"name": "lute_127",
+			"from": [6.5, 3, 6],
+			"to": [7.5, 4, 7],
+			"rotation": {"angle": 0, "axis": "y", "origin": [19, 7.5, 9.5]},
+			"faces": {
+				"north": {"uv": [13.5, 15.75, 13.75, 16], "texture": "#0"},
+				"east": {"uv": [13.5, 15.75, 13.75, 16], "texture": "#0"},
+				"west": {"uv": [13.5, 15.75, 13.75, 16], "texture": "#0"},
+				"up": {"uv": [13.5, 15.75, 13.75, 16], "rotation": 180, "texture": "#0"}
+			}
+		},
+		{
+			"name": "lute_18",
+			"from": [8.5, 27, 6],
+			"to": [9.5, 28, 7],
+			"rotation": {"angle": 0, "axis": "y", "origin": [19, 7.5, 9.5]},
+			"faces": {
+				"north": {"uv": [13, 9.75, 13.25, 10], "texture": "#0"},
+				"east": {"uv": [13, 9.75, 13.25, 10], "texture": "#0"},
+				"west": {"uv": [13, 9.75, 13.25, 10], "texture": "#0"},
+				"up": {"uv": [13, 9.75, 13.25, 10], "rotation": 180, "texture": "#0"},
+				"down": {"uv": [13, 9.75, 13.25, 10], "rotation": 180, "texture": "#0"}
+			}
+		},
+		{
+			"name": "lute_19",
+			"from": [6.5, 27, 6],
+			"to": [7.5, 28, 7],
+			"rotation": {"angle": 0, "axis": "y", "origin": [19, 7.5, 9.5]},
+			"faces": {
+				"north": {"uv": [13.5, 9.75, 13.75, 10], "texture": "#0"},
+				"east": {"uv": [13.5, 9.75, 13.75, 10], "texture": "#0"},
+				"west": {"uv": [13.5, 9.75, 13.75, 10], "texture": "#0"},
+				"up": {"uv": [13.5, 9.75, 13.75, 10], "rotation": 180, "texture": "#0"},
+				"down": {"uv": [13.5, 9.75, 13.75, 10], "rotation": 180, "texture": "#0"}
+			}
+		},
+		{
+			"name": "lute_24",
+			"from": [7.5, 26, 6],
+			"to": [8.5, 27, 7],
+			"rotation": {"angle": 0, "axis": "y", "origin": [19, 7.5, 9.5]},
+			"faces": {
+				"north": {"uv": [13.25, 10, 13.5, 10.25], "texture": "#0"},
+				"east": {"uv": [13.25, 10, 13.5, 10.25], "texture": "#0"},
+				"west": {"uv": [13.25, 10, 13.5, 10.25], "texture": "#0"},
+				"up": {"uv": [13.25, 10, 13.5, 10.25], "rotation": 180, "texture": "#0"},
+				"down": {"uv": [13.25, 10, 13.5, 10.25], "rotation": 180, "texture": "#0"}
+			}
+		},
+		{
+			"name": "lute_25",
+			"from": [5.5, 26, 6],
+			"to": [6.5, 27, 7],
+			"rotation": {"angle": 0, "axis": "y", "origin": [19, 7.5, 9.5]},
+			"faces": {
+				"north": {"uv": [13.75, 10, 14, 10.25], "texture": "#0"},
+				"east": {"uv": [13.75, 10, 14, 10.25], "texture": "#0"},
+				"south": {"uv": [14, 10, 13.75, 10.25], "texture": "#0"},
+				"west": {"uv": [13.75, 10, 14, 10.25], "texture": "#0"},
+				"up": {"uv": [13.75, 10, 14, 10.25], "rotation": 180, "texture": "#0"},
+				"down": {"uv": [13.75, 10, 14, 10.25], "rotation": 180, "texture": "#0"}
+			}
+		},
+		{
+			"name": "lute_28",
+			"from": [6.5, 25, 6],
+			"to": [7.5, 26, 7],
+			"rotation": {"angle": 0, "axis": "y", "origin": [19, 7.5, 9.5]},
+			"faces": {
+				"north": {"uv": [13.5, 10.25, 13.75, 10.5], "texture": "#0"},
+				"east": {"uv": [13.5, 10.25, 13.75, 10.5], "texture": "#0"},
+				"west": {"uv": [13.5, 10.25, 13.75, 10.5], "texture": "#0"},
+				"up": {"uv": [13.5, 10.25, 13.75, 10.5], "rotation": 180, "texture": "#0"},
+				"down": {"uv": [13.5, 10.25, 13.75, 10.5], "rotation": 180, "texture": "#0"}
+			}
+		},
+		{
+			"name": "lute_29",
+			"from": [4.5, 25, 6],
+			"to": [5.5, 26, 7],
+			"rotation": {"angle": 0, "axis": "y", "origin": [19, 7.5, 9.5]},
+			"faces": {
+				"north": {"uv": [14, 10.25, 14.25, 10.5], "texture": "#0"},
+				"east": {"uv": [14, 10.25, 14.25, 10.5], "texture": "#0"},
+				"south": {"uv": [14.25, 10.25, 14, 10.5], "texture": "#0"},
+				"west": {"uv": [14, 10.25, 14.25, 10.5], "texture": "#0"},
+				"up": {"uv": [14, 10.25, 14.25, 10.5], "rotation": 180, "texture": "#0"},
+				"down": {"uv": [14, 10.25, 14.25, 10.5], "rotation": 180, "texture": "#0"}
+			}
+		},
+		{
+			"name": "lute_34",
+			"from": [5.5, 23, 6],
+			"to": [6.5, 25, 7],
+			"rotation": {"angle": 0, "axis": "y", "origin": [19, 7.5, 9.5]},
+			"faces": {
+				"north": {"uv": [13.75, 10.5, 14, 11], "texture": "#0"},
+				"east": {"uv": [13.75, 10.5, 14, 11], "texture": "#0"},
+				"south": {"uv": [14, 10.5, 13.75, 11], "texture": "#0"},
+				"west": {"uv": [13.75, 10.5, 14, 11], "texture": "#0"},
+				"up": {"uv": [13.75, 10.5, 14, 10.75], "rotation": 180, "texture": "#0"},
+				"down": {"uv": [13.75, 10.75, 14, 11], "rotation": 180, "texture": "#0"}
+			}
+		},
+		{
+			"name": "lute_35",
+			"from": [3.5, 23, 6],
+			"to": [4.5, 25, 7],
+			"rotation": {"angle": 0, "axis": "y", "origin": [19, 7.5, 9.5]},
+			"faces": {
+				"north": {"uv": [14.25, 10.5, 14.5, 11], "texture": "#0"},
+				"east": {"uv": [14.25, 10.5, 14.5, 11], "texture": "#0"},
+				"south": {"uv": [14.5, 10.5, 14.25, 11], "texture": "#0"},
+				"west": {"uv": [14.25, 10.5, 14.5, 11], "texture": "#0"},
+				"up": {"uv": [14.25, 10.5, 14.5, 10.75], "rotation": 180, "texture": "#0"},
+				"down": {"uv": [14.25, 10.75, 14.5, 11], "rotation": 180, "texture": "#0"}
+			}
+		},
+		{
+			"name": "lute_42",
+			"from": [4.5, 22, 6],
+			"to": [5.5, 23, 7],
+			"rotation": {"angle": 0, "axis": "y", "origin": [19, 7.5, 9.5]},
+			"faces": {
+				"north": {"uv": [14, 11, 14.25, 11.25], "texture": "#0"},
+				"east": {"uv": [14, 11, 14.25, 11.25], "texture": "#0"},
+				"south": {"uv": [14.25, 11, 14, 11.25], "texture": "#0"},
+				"west": {"uv": [14, 11, 14.25, 11.25], "texture": "#0"},
+				"up": {"uv": [14, 11, 14.25, 11.25], "rotation": 180, "texture": "#0"},
+				"down": {"uv": [14, 11, 14.25, 11.25], "rotation": 180, "texture": "#0"}
+			}
+		},
+		{
+			"name": "lute_43",
+			"from": [2.5, 22, 6],
+			"to": [3.5, 23, 7],
+			"rotation": {"angle": 0, "axis": "y", "origin": [19, 7.5, 9.5]},
+			"faces": {
+				"north": {"uv": [14.5, 11, 14.75, 11.25], "texture": "#0"},
+				"east": {"uv": [14.5, 11, 14.75, 11.25], "texture": "#0"},
+				"south": {"uv": [14.75, 11, 14.5, 11.25], "texture": "#0"},
+				"west": {"uv": [14.5, 11, 14.75, 11.25], "texture": "#0"},
+				"up": {"uv": [14.5, 11, 14.75, 11.25], "rotation": 180, "texture": "#0"},
+				"down": {"uv": [14.5, 11, 14.75, 11.25], "rotation": 180, "texture": "#0"}
+			}
+		},
+		{
+			"name": "lute_46",
+			"from": [3.5, 20, 6],
+			"to": [4.5, 22, 7],
+			"rotation": {"angle": 0, "axis": "y", "origin": [19, 7.5, 9.5]},
+			"faces": {
+				"north": {"uv": [14.25, 11.25, 14.5, 11.75], "texture": "#0"},
+				"east": {"uv": [14.25, 11.25, 14.5, 11.75], "texture": "#0"},
+				"south": {"uv": [14.5, 11.25, 14.25, 11.75], "texture": "#0"},
+				"west": {"uv": [14.25, 11.25, 14.5, 11.75], "texture": "#0"},
+				"up": {"uv": [14.25, 11.25, 14.5, 11.5], "rotation": 180, "texture": "#0"},
+				"down": {"uv": [14.25, 11.5, 14.5, 11.75], "rotation": 180, "texture": "#0"}
+			}
+		},
+		{
+			"name": "lute_47",
+			"from": [1.5, 20, 6],
+			"to": [2.5, 22, 7],
+			"rotation": {"angle": 0, "axis": "y", "origin": [19, 7.5, 9.5]},
+			"faces": {
+				"north": {"uv": [14.75, 11.25, 15, 11.75], "texture": "#0"},
+				"east": {"uv": [14.75, 11.25, 15, 11.75], "texture": "#0"},
+				"south": {"uv": [15, 11.25, 14.75, 11.75], "texture": "#0"},
+				"west": {"uv": [14.75, 11.25, 15, 11.75], "texture": "#0"},
+				"up": {"uv": [14.75, 11.25, 15, 11.5], "rotation": 180, "texture": "#0"},
+				"down": {"uv": [14.75, 11.5, 15, 11.75], "rotation": 180, "texture": "#0"}
+			}
+		},
+		{
+			"name": "lute_54",
+			"from": [2.5, 19, 6],
+			"to": [3.5, 20, 7],
+			"rotation": {"angle": 0, "axis": "y", "origin": [19, 7.5, 9.5]},
+			"faces": {
+				"north": {"uv": [14.5, 11.75, 14.75, 12], "texture": "#0"},
+				"east": {"uv": [14.5, 11.75, 14.75, 12], "texture": "#0"},
+				"south": {"uv": [14.75, 11.75, 14.5, 12], "texture": "#0"},
+				"west": {"uv": [14.5, 11.75, 14.75, 12], "texture": "#0"},
+				"up": {"uv": [14.5, 11.75, 14.75, 12], "rotation": 180, "texture": "#0"},
+				"down": {"uv": [14.5, 11.75, 14.75, 12], "rotation": 180, "texture": "#0"}
+			}
+		},
+		{
+			"name": "lute_55",
+			"from": [0.5, 19, 6],
+			"to": [1.5, 20, 7],
+			"rotation": {"angle": 0, "axis": "y", "origin": [19, 7.5, 9.5]},
+			"faces": {
+				"north": {"uv": [15, 11.75, 15.25, 12], "texture": "#0"},
+				"east": {"uv": [15, 11.75, 15.25, 12], "texture": "#0"},
+				"south": {"uv": [15.25, 11.75, 15, 12], "texture": "#0"},
+				"west": {"uv": [15, 11.75, 15.25, 12], "texture": "#0"},
+				"up": {"uv": [15, 11.75, 15.25, 12], "rotation": 180, "texture": "#0"},
+				"down": {"uv": [15, 11.75, 15.25, 12], "rotation": 180, "texture": "#0"}
+			}
+		},
+		{
+			"name": "lute_60",
+			"from": [1.5, 18, 6],
+			"to": [2.5, 19, 7],
+			"rotation": {"angle": 0, "axis": "y", "origin": [19, 7.5, 9.5]},
+			"faces": {
+				"north": {"uv": [14.75, 12, 15, 12.25], "texture": "#0"},
+				"east": {"uv": [14.75, 12, 15, 12.25], "texture": "#0"},
+				"south": {"uv": [15, 12, 14.75, 12.25], "texture": "#0"},
+				"west": {"uv": [14.75, 12, 15, 12.25], "texture": "#0"},
+				"up": {"uv": [14.75, 12, 15, 12.25], "rotation": 180, "texture": "#0"},
+				"down": {"uv": [14.75, 12, 15, 12.25], "rotation": 180, "texture": "#0"}
+			}
+		},
+		{
+			"name": "lute_61",
+			"from": [-0.5, 18, 6],
+			"to": [0.5, 19, 7],
+			"rotation": {"angle": 0, "axis": "y", "origin": [19, 7.5, 9.5]},
+			"faces": {
+				"north": {"uv": [15.25, 12, 15.5, 12.25], "texture": "#0"},
+				"east": {"uv": [15.25, 12, 15.5, 12.25], "texture": "#0"},
+				"south": {"uv": [15.5, 12, 15.25, 12.25], "texture": "#0"},
+				"west": {"uv": [15.25, 12, 15.5, 12.25], "texture": "#0"},
+				"up": {"uv": [15.25, 12, 15.5, 12.25], "rotation": 180, "texture": "#0"},
+				"down": {"uv": [15.25, 12, 15.5, 12.25], "rotation": 180, "texture": "#0"}
+			}
+		},
+		{
+			"name": "lute_64",
+			"from": [0.5, 16, 6],
+			"to": [1.5, 18, 7],
+			"rotation": {"angle": 0, "axis": "y", "origin": [19, 7.5, 9.5]},
+			"faces": {
+				"north": {"uv": [15, 12.25, 15.25, 12.75], "texture": "#0"},
+				"east": {"uv": [15, 12.25, 15.25, 12.75], "texture": "#0"},
+				"south": {"uv": [15.25, 12.25, 15, 12.75], "texture": "#0"},
+				"west": {"uv": [15, 12.25, 15.25, 12.75], "texture": "#0"},
+				"up": {"uv": [15, 12.25, 15.25, 12.5], "rotation": 180, "texture": "#0"},
+				"down": {"uv": [15, 12.5, 15.25, 12.75], "rotation": 180, "texture": "#0"}
+			}
+		},
+		{
+			"name": "lute_65",
+			"from": [-1.5, 16, 6],
+			"to": [-0.5, 18, 7],
+			"rotation": {"angle": 0, "axis": "y", "origin": [19, 7.5, 9.5]},
+			"faces": {
+				"north": {"uv": [15.5, 12.25, 15.75, 12.75], "texture": "#0"},
+				"east": {"uv": [15.5, 12.25, 15.75, 12.75], "texture": "#0"},
+				"south": {"uv": [15.75, 12.25, 15.5, 12.75], "texture": "#0"},
+				"west": {"uv": [15.5, 12.25, 15.75, 12.75], "texture": "#0"},
+				"up": {"uv": [15.5, 12.25, 15.75, 12.5], "rotation": 180, "texture": "#0"},
+				"down": {"uv": [15.5, 12.5, 15.75, 12.75], "rotation": 180, "texture": "#0"}
+			}
+		},
+		{
+			"name": "lute_72",
+			"from": [-0.5, 15, 6],
+			"to": [0.5, 16, 7],
+			"rotation": {"angle": 0, "axis": "y", "origin": [19, 7.5, 9.5]},
+			"faces": {
+				"north": {"uv": [15.25, 12.75, 15.5, 13], "texture": "#0"},
+				"east": {"uv": [15.25, 12.75, 15.5, 13], "texture": "#0"},
+				"south": {"uv": [15.5, 12.75, 15.25, 13], "texture": "#0"},
+				"west": {"uv": [15.25, 12.75, 15.5, 13], "texture": "#0"},
+				"up": {"uv": [15.25, 12.75, 15.5, 13], "rotation": 180, "texture": "#0"},
+				"down": {"uv": [15.25, 12.75, 15.5, 13], "rotation": 180, "texture": "#0"}
+			}
+		},
+		{
+			"name": "lute_73",
+			"from": [-2.5, 15, 6],
+			"to": [-1.5, 16, 7],
+			"rotation": {"angle": 0, "axis": "y", "origin": [19, 7.5, 9.5]},
+			"faces": {
+				"north": {"uv": [15.75, 12.75, 16, 13], "texture": "#0"},
+				"east": {"uv": [15.75, 12.75, 16, 13], "texture": "#0"},
+				"south": {"uv": [16, 12.75, 15.75, 13], "texture": "#0"},
+				"west": {"uv": [15.75, 12.75, 16, 13], "texture": "#0"},
+				"up": {"uv": [15.75, 12.75, 16, 13], "rotation": 180, "texture": "#0"},
+				"down": {"uv": [15.75, 12.75, 16, 13], "rotation": 180, "texture": "#0"}
+			}
+		},
+		{
+			"name": "lute_76",
+			"from": [0.5, 13, 6],
+			"to": [1.5, 15, 7],
+			"rotation": {"angle": 0, "axis": "y", "origin": [19, 7.5, 9.5]},
+			"faces": {
+				"north": {"uv": [15, 13, 15.25, 13.5], "texture": "#0"},
+				"east": {"uv": [15, 13, 15.25, 13.5], "texture": "#0"},
+				"south": {"uv": [15.25, 13, 15, 13.5], "texture": "#0"},
+				"west": {"uv": [15, 13, 15.25, 13.5], "texture": "#0"},
+				"up": {"uv": [15, 13, 15.25, 13.25], "rotation": 180, "texture": "#0"},
+				"down": {"uv": [15, 13.25, 15.25, 13.5], "rotation": 180, "texture": "#0"}
+			}
+		},
+		{
+			"name": "lute_77",
+			"from": [-1.5, 13, 6],
+			"to": [-0.5, 15, 7],
+			"rotation": {"angle": 0, "axis": "y", "origin": [19, 7.5, 9.5]},
+			"faces": {
+				"north": {"uv": [15.5, 13, 15.75, 13.5], "texture": "#0"},
+				"east": {"uv": [15.5, 13, 15.75, 13.5], "texture": "#0"},
+				"south": {"uv": [15.75, 13, 15.5, 13.5], "texture": "#0"},
+				"west": {"uv": [15.5, 13, 15.75, 13.5], "texture": "#0"},
+				"up": {"uv": [15.5, 13, 15.75, 13.25], "rotation": 180, "texture": "#0"},
+				"down": {"uv": [15.5, 13.25, 15.75, 13.5], "rotation": 180, "texture": "#0"}
+			}
+		},
+		{
+			"name": "lute_84",
+			"from": [1.5, 12, 6],
+			"to": [2.5, 13, 7],
+			"rotation": {"angle": 0, "axis": "y", "origin": [19, 7.5, 9.5]},
+			"faces": {
+				"north": {"uv": [14.75, 13.5, 15, 13.75], "texture": "#0"},
+				"east": {"uv": [14.75, 13.5, 15, 13.75], "texture": "#0"},
+				"south": {"uv": [15, 13.5, 14.75, 13.75], "texture": "#0"},
+				"west": {"uv": [14.75, 13.5, 15, 13.75], "texture": "#0"},
+				"up": {"uv": [14.75, 13.5, 15, 13.75], "rotation": 180, "texture": "#0"},
+				"down": {"uv": [14.75, 13.5, 15, 13.75], "rotation": 180, "texture": "#0"}
+			}
+		},
+		{
+			"name": "lute_85",
+			"from": [-0.5, 12, 6],
+			"to": [0.5, 13, 7],
+			"rotation": {"angle": 0, "axis": "y", "origin": [19, 7.5, 9.5]},
+			"faces": {
+				"north": {"uv": [15.25, 13.5, 15.5, 13.75], "texture": "#0"},
+				"east": {"uv": [15.25, 13.5, 15.5, 13.75], "texture": "#0"},
+				"south": {"uv": [15.5, 13.5, 15.25, 13.75], "texture": "#0"},
+				"west": {"uv": [15.25, 13.5, 15.5, 13.75], "texture": "#0"},
+				"up": {"uv": [15.25, 13.5, 15.5, 13.75], "rotation": 180, "texture": "#0"},
+				"down": {"uv": [15.25, 13.5, 15.5, 13.75], "rotation": 180, "texture": "#0"}
+			}
+		},
+		{
+			"name": "lute_90",
+			"from": [2.5, 11, 6],
+			"to": [3.5, 12, 7],
+			"rotation": {"angle": 0, "axis": "y", "origin": [19, 7.5, 9.5]},
+			"faces": {
+				"north": {"uv": [14.5, 13.75, 14.75, 14], "texture": "#0"},
+				"east": {"uv": [14.5, 13.75, 14.75, 14], "texture": "#0"},
+				"south": {"uv": [14.75, 13.75, 14.5, 14], "texture": "#0"},
+				"west": {"uv": [14.5, 13.75, 14.75, 14], "texture": "#0"},
+				"up": {"uv": [14.5, 13.75, 14.75, 14], "rotation": 180, "texture": "#0"},
+				"down": {"uv": [14.5, 13.75, 14.75, 14], "rotation": 180, "texture": "#0"}
+			}
+		},
+		{
+			"name": "lute_91",
+			"from": [0.5, 11, 6],
+			"to": [1.5, 12, 7],
+			"rotation": {"angle": 0, "axis": "y", "origin": [19, 7.5, 9.5]},
+			"faces": {
+				"north": {"uv": [15, 13.75, 15.25, 14], "texture": "#0"},
+				"east": {"uv": [15, 13.75, 15.25, 14], "texture": "#0"},
+				"south": {"uv": [15.25, 13.75, 15, 14], "texture": "#0"},
+				"west": {"uv": [15, 13.75, 15.25, 14], "texture": "#0"},
+				"up": {"uv": [15, 13.75, 15.25, 14], "rotation": 180, "texture": "#0"},
+				"down": {"uv": [15, 13.75, 15.25, 14], "rotation": 180, "texture": "#0"}
+			}
+		},
+		{
+			"name": "lute_94",
+			"from": [3.5, 9, 6],
+			"to": [4.5, 11, 7],
+			"rotation": {"angle": 0, "axis": "y", "origin": [19, 7.5, 9.5]},
+			"faces": {
+				"north": {"uv": [14.25, 14, 14.5, 14.5], "texture": "#0"},
+				"east": {"uv": [14.25, 14, 14.5, 14.5], "texture": "#0"},
+				"west": {"uv": [14.25, 14, 14.5, 14.5], "texture": "#0"},
+				"up": {"uv": [14.25, 14, 14.5, 14.25], "rotation": 180, "texture": "#0"},
+				"down": {"uv": [14.25, 14.25, 14.5, 14.5], "rotation": 180, "texture": "#0"}
+			}
+		},
+		{
+			"name": "lute_95",
+			"from": [1.5, 9, 6],
+			"to": [2.5, 11, 7],
+			"rotation": {"angle": 0, "axis": "y", "origin": [19, 7.5, 9.5]},
+			"faces": {
+				"north": {"uv": [14.75, 14, 15, 14.5], "texture": "#0"},
+				"east": {"uv": [14.75, 14, 15, 14.5], "texture": "#0"},
+				"south": {"uv": [15, 14, 14.75, 14.5], "texture": "#0"},
+				"west": {"uv": [14.75, 14, 15, 14.5], "texture": "#0"},
+				"up": {"uv": [14.75, 14, 15, 14.25], "rotation": 180, "texture": "#0"},
+				"down": {"uv": [14.75, 14.25, 15, 14.5], "rotation": 180, "texture": "#0"}
+			}
+		},
+		{
+			"name": "lute_102",
+			"from": [4.5, 8, 6],
+			"to": [5.5, 9, 7],
+			"rotation": {"angle": 0, "axis": "y", "origin": [19, 7.5, 9.5]},
+			"faces": {
+				"north": {"uv": [14, 14.5, 14.25, 14.75], "texture": "#0"},
+				"east": {"uv": [14, 14.5, 14.25, 14.75], "texture": "#0"},
+				"west": {"uv": [14, 14.5, 14.25, 14.75], "texture": "#0"},
+				"up": {"uv": [14, 14.5, 14.25, 14.75], "rotation": 180, "texture": "#0"},
+				"down": {"uv": [14, 14.5, 14.25, 14.75], "rotation": 180, "texture": "#0"}
+			}
+		},
+		{
+			"name": "lute_103",
+			"from": [2.5, 8, 6],
+			"to": [3.5, 9, 7],
+			"rotation": {"angle": 0, "axis": "y", "origin": [19, 7.5, 9.5]},
+			"faces": {
+				"north": {"uv": [14.5, 14.5, 14.75, 14.75], "texture": "#0"},
+				"east": {"uv": [14.5, 14.5, 14.75, 14.75], "texture": "#0"},
+				"west": {"uv": [14.5, 14.5, 14.75, 14.75], "texture": "#0"},
+				"up": {"uv": [14.5, 14.5, 14.75, 14.75], "rotation": 180, "texture": "#0"},
+				"down": {"uv": [14.5, 14.5, 14.75, 14.75], "rotation": 180, "texture": "#0"}
+			}
+		},
+		{
+			"name": "lute_108",
+			"from": [5.5, 6, 6],
+			"to": [6.5, 8, 7],
+			"rotation": {"angle": 0, "axis": "y", "origin": [19, 7.5, 9.5]},
+			"faces": {
+				"north": {"uv": [13.75, 14.75, 14, 15.25], "texture": "#0"},
+				"east": {"uv": [13.75, 14.75, 14, 15.25], "texture": "#0"},
+				"west": {"uv": [13.75, 14.75, 14, 15.25], "texture": "#0"},
+				"up": {"uv": [13.75, 14.75, 14, 15], "rotation": 180, "texture": "#0"},
+				"down": {"uv": [13.75, 15, 14, 15.25], "rotation": 180, "texture": "#0"}
+			}
+		},
+		{
+			"name": "lute_109",
+			"from": [3.5, 6, 6],
+			"to": [4.5, 8, 7],
+			"rotation": {"angle": 0, "axis": "y", "origin": [19, 7.5, 9.5]},
+			"faces": {
+				"north": {"uv": [14.25, 14.75, 14.5, 15.25], "texture": "#0"},
+				"east": {"uv": [14.25, 14.75, 14.5, 15.25], "texture": "#0"},
+				"west": {"uv": [14.25, 14.75, 14.5, 15.25], "texture": "#0"},
+				"up": {"uv": [14.25, 14.75, 14.5, 15], "rotation": 180, "texture": "#0"},
+				"down": {"uv": [14.25, 15, 14.5, 15.25], "rotation": 180, "texture": "#0"}
+			}
+		},
+		{
+			"name": "lute_116",
+			"from": [6.5, 5, 6],
+			"to": [7.5, 6, 7],
+			"rotation": {"angle": 0, "axis": "y", "origin": [19, 7.5, 9.5]},
+			"faces": {
+				"north": {"uv": [13.5, 15.25, 13.75, 15.5], "texture": "#0"},
+				"east": {"uv": [13.5, 15.25, 13.75, 15.5], "texture": "#0"},
+				"west": {"uv": [13.5, 15.25, 13.75, 15.5], "texture": "#0"},
+				"up": {"uv": [13.5, 15.25, 13.75, 15.5], "rotation": 180, "texture": "#0"},
+				"down": {"uv": [13.5, 15.25, 13.75, 15.5], "rotation": 180, "texture": "#0"}
+			}
+		},
+		{
+			"name": "lute_117",
+			"from": [4.5, 5, 6],
+			"to": [5.5, 6, 7],
+			"rotation": {"angle": 0, "axis": "y", "origin": [19, 7.5, 9.5]},
+			"faces": {
+				"north": {"uv": [14, 15.25, 14.25, 15.5], "texture": "#0"},
+				"east": {"uv": [14, 15.25, 14.25, 15.5], "texture": "#0"},
+				"west": {"uv": [14, 15.25, 14.25, 15.5], "texture": "#0"},
+				"up": {"uv": [14, 15.25, 14.25, 15.5], "rotation": 180, "texture": "#0"},
+				"down": {"uv": [14, 15.25, 14.25, 15.5], "rotation": 180, "texture": "#0"}
+			}
+		},
+		{
+			"name": "lute_120",
+			"from": [7.5, 4, 6],
+			"to": [8.5, 5, 7],
+			"rotation": {"angle": 0, "axis": "y", "origin": [19, 7.5, 9.5]},
+			"faces": {
+				"north": {"uv": [13.25, 15.5, 13.5, 15.75], "texture": "#0"},
+				"east": {"uv": [13.25, 15.5, 13.5, 15.75], "texture": "#0"},
+				"west": {"uv": [13.25, 15.5, 13.5, 15.75], "texture": "#0"},
+				"up": {"uv": [13.25, 15.5, 13.5, 15.75], "rotation": 180, "texture": "#0"},
+				"down": {"uv": [13.25, 15.5, 13.5, 15.75], "rotation": 180, "texture": "#0"}
+			}
+		},
+		{
+			"name": "lute_121",
+			"from": [5.5, 4, 6],
+			"to": [6.5, 5, 7],
+			"rotation": {"angle": 0, "axis": "y", "origin": [19, 7.5, 9.5]},
+			"faces": {
+				"north": {"uv": [13.75, 15.5, 14, 15.75], "texture": "#0"},
+				"east": {"uv": [13.75, 15.5, 14, 15.75], "texture": "#0"},
+				"west": {"uv": [13.75, 15.5, 14, 15.75], "texture": "#0"},
+				"up": {"uv": [13.75, 15.5, 14, 15.75], "rotation": 180, "texture": "#0"},
+				"down": {"uv": [13.75, 15.5, 14, 15.75], "rotation": 180, "texture": "#0"}
+			}
+		},
+		{
+			"name": "lute_126",
+			"from": [8.5, 3, 6],
+			"to": [9.5, 4, 7],
+			"rotation": {"angle": 0, "axis": "y", "origin": [19, 7.5, 9.5]},
+			"faces": {
+				"north": {"uv": [13, 15.75, 13.25, 16], "texture": "#0"},
+				"east": {"uv": [13, 15.75, 13.25, 16], "texture": "#0"},
+				"west": {"uv": [13, 15.75, 13.25, 16], "texture": "#0"},
+				"up": {"uv": [13, 15.75, 13.25, 16], "rotation": 180, "texture": "#0"}
+			}
+		},
+		{
+			"name": "arrow_0",
+			"from": [7.05, 19.025, 6],
+			"to": [10.05, 21.025, 7],
+			"rotation": {"angle": -45, "axis": "z", "origin": [8, 7.25, 0.5]},
+			"faces": {
+				"north": {"uv": [15, 2, 12, 4], "texture": "#1"},
+				"east": {"uv": [14, 2, 15, 4], "texture": "#1"},
+				"south": {"uv": [12, 2, 15, 4], "texture": "#1"},
+				"west": {"uv": [12, 2, 13, 4], "texture": "#1"},
+				"up": {"uv": [12, 2, 15, 3], "texture": "#1"},
+				"down": {"uv": [12, 3, 15, 4], "texture": "#1"}
+			}
+		},
+		{
+			"name": "arrow_1",
+			"from": [5.05, 17.025, 6],
+			"to": [7.05, 20.025, 7],
+			"rotation": {"angle": -45, "axis": "z", "origin": [8, 7.25, 0.5]},
+			"faces": {
+				"north": {"uv": [12, 3, 10, 6], "texture": "#1"},
+				"south": {"uv": [10, 3, 12, 6], "texture": "#1"},
+				"west": {"uv": [10, 3, 11, 6], "texture": "#1"},
+				"up": {"uv": [10, 3, 12, 4], "texture": "#1"},
+				"down": {"uv": [10, 5, 12, 6], "texture": "#1"}
+			}
+		},
+		{
+			"name": "arrow_2",
+			"from": [7.05, 17.025, 6],
+			"to": [9.05, 19.025, 7],
+			"rotation": {"angle": -45, "axis": "z", "origin": [8, 7.25, 0.5]},
+			"faces": {
+				"north": {"uv": [14, 4, 12, 6], "texture": "#1"},
+				"east": {"uv": [13, 4, 14, 6], "texture": "#1"},
+				"south": {"uv": [12, 4, 14, 6], "texture": "#1"},
+				"down": {"uv": [12, 5, 14, 6], "texture": "#1"}
+			}
+		},
+		{
+			"name": "arrow_3",
+			"from": [4.05, 16.025, 6],
+			"to": [6.05, 17.025, 7],
+			"rotation": {"angle": -45, "axis": "z", "origin": [8, 7.25, 0.5]},
+			"faces": {
+				"north": {"uv": [11, 6, 9, 7], "texture": "#1"},
+				"east": {"uv": [10, 6, 11, 7], "texture": "#1"},
+				"south": {"uv": [9, 6, 11, 7], "texture": "#1"},
+				"west": {"uv": [9, 6, 10, 7], "texture": "#1"},
+				"up": {"uv": [9, 6, 11, 7], "texture": "#1"},
+				"down": {"uv": [9, 6, 11, 7], "texture": "#1"}
+			}
+		},
+		{
+			"name": "arrow_4",
+			"from": [7.05, 16.025, 6],
+			"to": [8.05, 17.025, 7],
+			"rotation": {"angle": -45, "axis": "z", "origin": [8, 7.25, 0.5]},
+			"faces": {
+				"north": {"uv": [13, 6, 12, 7], "texture": "#1"},
+				"east": {"uv": [12, 6, 13, 7], "texture": "#1"},
+				"south": {"uv": [12, 6, 13, 7], "texture": "#1"},
+				"west": {"uv": [12, 6, 13, 7], "texture": "#1"},
+				"down": {"uv": [12, 6, 13, 7], "texture": "#1"}
+			}
+		},
+		{
+			"name": "arrow_5",
+			"from": [3.05, 15.025, 6],
+			"to": [5.05, 16.025, 7],
+			"rotation": {"angle": -45, "axis": "z", "origin": [8, 7.25, 0.5]},
+			"faces": {
+				"north": {"uv": [10, 7, 8, 8], "texture": "#1"},
+				"east": {"uv": [9, 7, 10, 8], "texture": "#1"},
+				"south": {"uv": [8, 7, 10, 8], "texture": "#1"},
+				"west": {"uv": [8, 7, 9, 8], "texture": "#1"},
+				"up": {"uv": [8, 7, 10, 8], "texture": "#1"},
+				"down": {"uv": [8, 7, 10, 8], "texture": "#1"}
+			}
+		},
+		{
+			"name": "arrow_6",
+			"from": [2.05, 14.025, 6],
+			"to": [4.05, 15.025, 7],
+			"rotation": {"angle": -45, "axis": "z", "origin": [8, 7.25, 0.5]},
+			"faces": {
+				"north": {"uv": [9, 8, 7, 9], "texture": "#1"},
+				"east": {"uv": [8, 8, 9, 9], "texture": "#1"},
+				"south": {"uv": [7, 8, 9, 9], "texture": "#1"},
+				"west": {"uv": [7, 8, 8, 9], "texture": "#1"},
+				"up": {"uv": [7, 8, 9, 9], "texture": "#1"},
+				"down": {"uv": [7, 8, 9, 9], "texture": "#1"}
+			}
+		},
+		{
+			"name": "arrow_7",
+			"from": [1.05, 13.025, 6],
+			"to": [3.05, 14.025, 7],
+			"rotation": {"angle": -45, "axis": "z", "origin": [8, 7.25, 0.5]},
+			"faces": {
+				"north": {"uv": [8, 9, 6, 10], "texture": "#1"},
+				"east": {"uv": [7, 9, 8, 10], "texture": "#1"},
+				"south": {"uv": [6, 9, 8, 10], "texture": "#1"},
+				"west": {"uv": [6, 9, 7, 10], "texture": "#1"},
+				"up": {"uv": [6, 9, 8, 10], "texture": "#1"},
+				"down": {"uv": [6, 9, 8, 10], "texture": "#1"}
+			}
+		},
+		{
+			"name": "arrow_8",
+			"from": [0.05, 12.025, 6],
+			"to": [2.05, 13.025, 7],
+			"rotation": {"angle": -45, "axis": "z", "origin": [8, 7.25, 0.5]},
+			"faces": {
+				"north": {"uv": [7, 10, 5, 11], "texture": "#1"},
+				"east": {"uv": [6, 10, 7, 11], "texture": "#1"},
+				"south": {"uv": [5, 10, 7, 11], "texture": "#1"},
+				"west": {"uv": [5, 10, 6, 11], "texture": "#1"},
+				"up": {"uv": [5, 10, 7, 11], "texture": "#1"},
+				"down": {"uv": [5, 10, 7, 11], "texture": "#1"}
+			}
+		},
+		{
+			"name": "arrow_9",
+			"from": [-1.95, 10.025, 6],
+			"to": [1.05, 12.025, 7],
+			"rotation": {"angle": -45, "axis": "z", "origin": [8, 7.25, 0.5]},
+			"faces": {
+				"north": {"uv": [6, 11, 3, 13], "texture": "#1"},
+				"east": {"uv": [5, 11, 6, 13], "texture": "#1"},
+				"south": {"uv": [3, 11, 6, 13], "texture": "#1"},
+				"west": {"uv": [3, 11, 4, 13], "texture": "#1"},
+				"up": {"uv": [3, 11, 6, 12], "texture": "#1"},
+				"down": {"uv": [3, 12, 6, 13], "texture": "#1"}
+			}
+		},
+		{
+			"name": "arrow_10",
+			"from": [-2.95, 9.025, 6],
+			"to": [-1.95, 11.025, 7],
+			"rotation": {"angle": -45, "axis": "z", "origin": [8, 7.25, 0.5]},
+			"faces": {
+				"north": {"uv": [3, 12, 2, 14], "texture": "#1"},
+				"south": {"uv": [2, 12, 3, 14], "texture": "#1"},
+				"west": {"uv": [2, 12, 3, 14], "texture": "#1"},
+				"up": {"uv": [2, 12, 3, 13], "texture": "#1"},
+				"down": {"uv": [2, 13, 3, 14], "texture": "#1"}
+			}
+		},
+		{
+			"name": "arrow_11",
+			"from": [-1.95, 9.025, 6],
+			"to": [0.05, 10.025, 7],
+			"rotation": {"angle": -45, "axis": "z", "origin": [8, 7.25, 0.5]},
+			"faces": {
+				"north": {"uv": [5, 13, 3, 14], "texture": "#1"},
+				"east": {"uv": [4, 13, 5, 14], "texture": "#1"},
+				"south": {"uv": [3, 13, 5, 14], "texture": "#1"},
+				"down": {"uv": [3, 13, 5, 14], "texture": "#1"}
+			}
+		},
+		{
+			"name": "arrow_12",
+			"from": [-1.95, 8.025, 6],
+			"to": [-0.95, 9.025, 7],
+			"rotation": {"angle": -45, "axis": "z", "origin": [8, 7.25, 0.5]},
+			"faces": {
+				"north": {"uv": [4, 14, 3, 15], "texture": "#1"},
+				"east": {"uv": [3, 14, 4, 15], "texture": "#1"},
+				"south": {"uv": [3, 14, 4, 15], "texture": "#1"},
+				"west": {"uv": [3, 14, 4, 15], "texture": "#1"},
+				"down": {"uv": [3, 14, 4, 15], "texture": "#1"}
+			}
+		}
+	],
+	"gui_light": "front",
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [0, 85, 0],
+			"translation": [-1.25, -10, 0.5]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [90, 0, 90],
+			"translation": [4.5, -1.5, 0.5]
+		},
+		"firstperson_righthand": {
+			"rotation": [0, 90, 17],
+			"translation": [5.5, 0, -2.25],
+			"scale": [0.8, 0.8, 0.8]
+		},
+		"firstperson_lefthand": {
+			"rotation": [-69, 166, -98],
+			"translation": [4.75, -0.75, -2.25],
+			"scale": [0.8, 0.8, 0.8]
+		},
+		"gui": {
+			"rotation": [-40, 156, 45],
+			"translation": [-2.5, -3, 0],
+			"scale": [0.72, 0.72, 0.72]
+		}
+	}
+}

@@ -1,0 +1,8 @@
+{
+	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+	"parent": "item/compass/compass/base",
+	"textures": {
+		"particle": "item/compass/jeb_",
+		"base": "item/compass/jeb__base"
+	}
+}

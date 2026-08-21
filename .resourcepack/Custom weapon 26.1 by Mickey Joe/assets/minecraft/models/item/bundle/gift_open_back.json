@@ -1,0 +1,32 @@
+{
+	"format_version": "1.21.6",
+	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+	"parent": "item/bundle/gift_open_front",
+	"elements": [
+		{
+			"from": [11, 5, 11],
+			"to": [5, 0, 5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [13, 5, 14]},
+			"faces": {
+				"north": {"uv": [6, 16, 12, 11], "texture": "#particle"},
+				"east": {"uv": [12, 16, 6, 11], "texture": "#particle"},
+				"south": {"uv": [6, 16, 12, 11], "texture": "#particle"},
+				"west": {"uv": [12, 16, 6, 11], "texture": "#particle"},
+				"up": {"uv": [6, 10, 0, 16], "rotation": 180, "texture": "#particle"}
+			}
+		},
+		{
+			"from": [11.25, 5.25, 11.25],
+			"to": [4.75, -0.25, 4.75],
+			"rotation": {"angle": 0, "axis": "x", "origin": [12.5, 6.5, 14.5]},
+			"faces": {
+				"north": {"uv": [6, 10, 12, 5], "texture": "#particle"},
+				"east": {"uv": [6, 10, 12, 5], "texture": "#particle"},
+				"south": {"uv": [6, 10, 12, 5], "texture": "#particle"},
+				"west": {"uv": [6, 10, 12, 5], "texture": "#particle"},
+				"up": {"uv": [6, 0, 12, 6], "texture": "#particle"},
+				"down": {"uv": [12, 0, 6, 6], "rotation": 90, "texture": "#particle"}
+			}
+		}
+	]
+}

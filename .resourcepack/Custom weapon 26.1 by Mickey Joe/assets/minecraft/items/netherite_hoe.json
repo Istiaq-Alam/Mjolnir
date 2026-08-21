@@ -1,0 +1,1183 @@
+{
+	"oversized_in_gui": true,
+	"model": {
+		"type": "condition",
+		"property": "has_component",
+		"component": "custom_name",
+		"on_true": {
+			"type": "select",
+			"property": "component",
+			"component": "custom_name",
+			"cases": [
+				{
+				"when": "Back Scratcher",
+				"model": {
+									"type": "composite",
+									"models": [
+										{
+											"type": "model",
+											"model": "item/netherite_hoe/back_scratcher"
+										},
+										{
+											"type": "select",
+											"property": "local_time",
+											"pattern": "MM-dd",
+											"cases": [
+												{
+													"when": [
+														"12-23",
+														"12-24",
+														"12-25",
+														"12-26",
+														"12-27"
+													],
+													"model": {
+														"type": "model",
+														"model": "item/netherite_hoe/back_scratcher_festive"
+													}
+												}
+											],
+											"fallback": {
+												"type": "empty"
+											}
+										}
+									]
+								}
+				},
+				{
+				"when": [
+					"Dinnerbone",
+					"Grumm"
+				],
+				"model": {
+					"type": "model",
+					"model": "item/netherite_hoe/dinnerbone"
+			 			}
+				},
+				{
+				"when": "jeb_",
+				"model": {
+					"type": "model",
+					"model": "item/netherite_hoe/jeb_"
+			 			}
+				},
+				{
+				"when": [
+						"Golden Scythe of Quakes",
+						"Scythe of Quakes"
+					],
+				"model": {
+					"type": "model",
+					"model": "item/netherite_hoe/golden_scythe_of_quakes"
+			 			}
+				},
+				{
+				"when": "Hoe",
+				"model": {
+					"type": "model",
+					"model": "item/netherite_hoe"
+			 			}
+					},
+				{
+					"when": "White Power Ring",
+					"model": {
+						"type": "select",
+						"property": "display_context",
+						"cases": [
+							{
+								"when": [
+									"firstperson_lefthand",
+									"firstperson_righthand"
+								],
+								"model": {
+									"type": "condition",
+									"property": "keybind_down",
+									"keybind": "key.attack",
+									"on_true": {
+										"type": "composite",
+										"models": [
+											{
+												"type": "model",
+												"model": "item/netherite_sword/white_power_ring"
+											},
+											{
+												"type": "model",
+												"model": "item/netherite_sword/white_power_ring_power"
+											},
+											{
+												"type": "model",
+												"model": "item/netherite_hoe/white_power_ring_hoe"
+											}
+										]
+									},
+									"on_false": {
+										"type": "condition",
+									"property": "keybind_down",
+									"keybind": "key.use",
+									"on_true": {
+										"type": "composite",
+										"models": [
+											{
+												"type": "model",
+												"model": "item/netherite_sword/white_power_ring"
+											},
+											{
+												"type": "model",
+												"model": "item/netherite_sword/white_power_ring_power"
+											},
+											{
+												"type": "model",
+												"model": "item/netherite_hoe/white_power_ring_hoe"
+											}
+										]
+									},
+									"on_false": {
+										"type": "model",
+										"model": "item/netherite_sword/white_power_ring"
+									}
+									}
+								}
+							}
+						],
+						"fallback": {
+							"type": "composite",
+							"models": [
+								{
+									"type": "model",
+									"model": "item/netherite_sword/white_power_ring"
+								},
+								{
+									"type": "model",
+									"model": "item/netherite_sword/white_power_ring_power"
+								},
+								{
+									"type": "model",
+									"model": "item/netherite_hoe/white_power_ring_hoe"
+								}
+							]
+						}
+					}
+				},
+				{
+					"when": "Violet Power Ring",
+					"model": {
+						"type": "select",
+						"property": "display_context",
+						"cases": [
+							{
+								"when": [
+									"firstperson_lefthand",
+									"firstperson_righthand"
+								],
+								"model": {
+									"type": "condition",
+									"property": "keybind_down",
+									"keybind": "key.attack",
+									"on_true": {
+										"type": "composite",
+										"models": [
+											{
+												"type": "model",
+												"model": "item/netherite_sword/violet_power_ring"
+											},
+											{
+												"type": "model",
+												"model": "item/netherite_sword/violet_power_ring_power"
+											},
+											{
+												"type": "model",
+												"model": "item/netherite_hoe/violet_power_ring_hoe"
+											}
+										]
+									},
+									"on_false": {
+										"type": "condition",
+									"property": "keybind_down",
+									"keybind": "key.use",
+									"on_true": {
+										"type": "composite",
+										"models": [
+											{
+												"type": "model",
+												"model": "item/netherite_sword/violet_power_ring"
+											},
+											{
+												"type": "model",
+												"model": "item/netherite_sword/violet_power_ring_power"
+											},
+											{
+												"type": "model",
+												"model": "item/netherite_hoe/violet_power_ring_hoe"
+											}
+										]
+									},
+									"on_false": {
+										"type": "model",
+										"model": "item/netherite_sword/violet_power_ring"
+									}
+									}
+								}
+							}
+						],
+						"fallback": {
+							"type": "composite",
+							"models": [
+								{
+									"type": "model",
+									"model": "item/netherite_sword/violet_power_ring"
+								},
+								{
+									"type": "model",
+									"model": "item/netherite_sword/violet_power_ring_power"
+								},
+								{
+									"type": "model",
+									"model": "item/netherite_hoe/violet_power_ring_hoe"
+								}
+							]
+						}
+					}
+				},
+				{
+					"when": "Red Power Ring",
+					"model": {
+						"type": "select",
+						"property": "display_context",
+						"cases": [
+							{
+								"when": [
+									"firstperson_lefthand",
+									"firstperson_righthand"
+								],
+								"model": {
+									"type": "condition",
+									"property": "keybind_down",
+									"keybind": "key.attack",
+									"on_true": {
+										"type": "composite",
+										"models": [
+											{
+												"type": "model",
+												"model": "item/netherite_sword/red_power_ring"
+											},
+											{
+												"type": "model",
+												"model": "item/netherite_sword/red_power_ring_power"
+											},
+											{
+												"type": "model",
+												"model": "item/netherite_hoe/red_power_ring_hoe"
+											}
+										]
+									},
+									"on_false": {
+										"type": "condition",
+									"property": "keybind_down",
+									"keybind": "key.use",
+									"on_true": {
+										"type": "composite",
+										"models": [
+											{
+												"type": "model",
+												"model": "item/netherite_sword/red_power_ring"
+											},
+											{
+												"type": "model",
+												"model": "item/netherite_sword/red_power_ring_power"
+											},
+											{
+												"type": "model",
+												"model": "item/netherite_hoe/red_power_ring_hoe"
+											}
+										]
+									},
+									"on_false": {
+										"type": "model",
+										"model": "item/netherite_sword/red_power_ring"
+									}
+									}
+								}
+							}
+						],
+						"fallback": {
+							"type": "composite",
+							"models": [
+								{
+									"type": "model",
+									"model": "item/netherite_sword/red_power_ring"
+								},
+								{
+									"type": "model",
+									"model": "item/netherite_sword/red_power_ring_power"
+								},
+								{
+									"type": "model",
+									"model": "item/netherite_hoe/red_power_ring_hoe"
+								}
+							]
+						}
+					}
+				},
+				{
+					"when": "Blue Power Ring",
+					"model": {
+						"type": "select",
+						"property": "display_context",
+						"cases": [
+							{
+								"when": [
+									"firstperson_lefthand",
+									"firstperson_righthand"
+								],
+								"model": {
+									"type": "condition",
+									"property": "keybind_down",
+									"keybind": "key.attack",
+									"on_true": {
+										"type": "composite",
+										"models": [
+											{
+												"type": "model",
+												"model": "item/netherite_sword/blue_power_ring"
+											},
+											{
+												"type": "model",
+												"model": "item/netherite_sword/blue_power_ring_power"
+											},
+											{
+												"type": "model",
+												"model": "item/netherite_hoe/blue_power_ring_hoe"
+											}
+										]
+									},
+									"on_false": {
+										"type": "condition",
+									"property": "keybind_down",
+									"keybind": "key.use",
+									"on_true": {
+										"type": "composite",
+										"models": [
+											{
+												"type": "model",
+												"model": "item/netherite_sword/blue_power_ring"
+											},
+											{
+												"type": "model",
+												"model": "item/netherite_sword/blue_power_ring_power"
+											},
+											{
+												"type": "model",
+												"model": "item/netherite_hoe/blue_power_ring_hoe"
+											}
+										]
+									},
+									"on_false": {
+										"type": "model",
+										"model": "item/netherite_sword/blue_power_ring"
+									}
+									}
+								}
+							}
+						],
+						"fallback": {
+							"type": "composite",
+							"models": [
+								{
+									"type": "model",
+									"model": "item/netherite_sword/blue_power_ring"
+								},
+								{
+									"type": "model",
+									"model": "item/netherite_sword/blue_power_ring_power"
+								},
+								{
+									"type": "model",
+									"model": "item/netherite_hoe/blue_power_ring_hoe"
+								}
+							]
+						}
+					}
+				},
+				{
+					"when": "Indigo Power Ring",
+					"model": {
+						"type": "select",
+						"property": "display_context",
+						"cases": [
+							{
+								"when": [
+									"firstperson_lefthand",
+									"firstperson_righthand"
+								],
+								"model": {
+									"type": "condition",
+									"property": "keybind_down",
+									"keybind": "key.attack",
+									"on_true": {
+										"type": "composite",
+										"models": [
+											{
+												"type": "model",
+												"model": "item/netherite_sword/indigo_power_ring"
+											},
+											{
+												"type": "model",
+												"model": "item/netherite_sword/indigo_power_ring_power"
+											},
+											{
+												"type": "model",
+												"model": "item/netherite_hoe/indigo_power_ring_hoe"
+											}
+										]
+									},
+									"on_false": {
+										"type": "condition",
+									"property": "keybind_down",
+									"keybind": "key.use",
+									"on_true": {
+										"type": "composite",
+										"models": [
+											{
+												"type": "model",
+												"model": "item/netherite_sword/indigo_power_ring"
+											},
+											{
+												"type": "model",
+												"model": "item/netherite_sword/indigo_power_ring_power"
+											},
+											{
+												"type": "model",
+												"model": "item/netherite_hoe/indigo_power_ring_hoe"
+											}
+										]
+									},
+									"on_false": {
+										"type": "model",
+										"model": "item/netherite_sword/indigo_power_ring"
+									}
+									}
+								}
+							}
+						],
+						"fallback": {
+							"type": "composite",
+							"models": [
+								{
+									"type": "model",
+									"model": "item/netherite_sword/indigo_power_ring"
+								},
+								{
+									"type": "model",
+									"model": "item/netherite_sword/indigo_power_ring_power"
+								},
+								{
+									"type": "model",
+									"model": "item/netherite_hoe/indigo_power_ring_hoe"
+								}
+							]
+						}
+					}
+				},
+				{
+					"when": "Black Power Ring",
+					"model": {
+						"type": "select",
+						"property": "display_context",
+						"cases": [
+							{
+								"when": [
+									"firstperson_lefthand",
+									"firstperson_righthand"
+								],
+								"model": {
+									"type": "condition",
+									"property": "keybind_down",
+									"keybind": "key.attack",
+									"on_true": {
+										"type": "composite",
+										"models": [
+											{
+												"type": "model",
+												"model": "item/netherite_sword/black_power_ring"
+											},
+											{
+												"type": "model",
+												"model": "item/netherite_sword/black_power_ring_power"
+											},
+											{
+												"type": "model",
+												"model": "item/netherite_hoe/black_power_ring_hoe"
+											}
+										]
+									},
+									"on_false": {
+										"type": "condition",
+									"property": "keybind_down",
+									"keybind": "key.use",
+									"on_true": {
+										"type": "composite",
+										"models": [
+											{
+												"type": "model",
+												"model": "item/netherite_sword/black_power_ring"
+											},
+											{
+												"type": "model",
+												"model": "item/netherite_sword/black_power_ring_power"
+											},
+											{
+												"type": "model",
+												"model": "item/netherite_hoe/black_power_ring_hoe"
+											}
+										]
+									},
+									"on_false": {
+										"type": "model",
+										"model": "item/netherite_sword/black_power_ring"
+									}
+									}
+								}
+							}
+						],
+						"fallback": {
+							"type": "composite",
+							"models": [
+								{
+									"type": "model",
+									"model": "item/netherite_sword/black_power_ring"
+								},
+								{
+									"type": "model",
+									"model": "item/netherite_sword/black_power_ring_power"
+								},
+								{
+									"type": "model",
+									"model": "item/netherite_hoe/black_power_ring_hoe"
+								}
+							]
+						}
+					}
+				},
+				{
+					"when": "Yellow Power Ring",
+					"model": {
+						"type": "select",
+						"property": "display_context",
+						"cases": [
+							{
+								"when": [
+									"firstperson_lefthand",
+									"firstperson_righthand"
+								],
+								"model": {
+									"type": "condition",
+									"property": "keybind_down",
+									"keybind": "key.attack",
+									"on_true": {
+										"type": "composite",
+										"models": [
+											{
+												"type": "model",
+												"model": "item/netherite_sword/yellow_power_ring"
+											},
+											{
+												"type": "model",
+												"model": "item/netherite_sword/yellow_power_ring_power"
+											},
+											{
+												"type": "model",
+												"model": "item/netherite_hoe/yellow_power_ring_hoe"
+											}
+										]
+									},
+									"on_false": {
+										"type": "condition",
+									"property": "keybind_down",
+									"keybind": "key.use",
+									"on_true": {
+										"type": "composite",
+										"models": [
+											{
+												"type": "model",
+												"model": "item/netherite_sword/yellow_power_ring"
+											},
+											{
+												"type": "model",
+												"model": "item/netherite_sword/yellow_power_ring_power"
+											},
+											{
+												"type": "model",
+												"model": "item/netherite_hoe/yellow_power_ring_hoe"
+											}
+										]
+									},
+									"on_false": {
+										"type": "model",
+										"model": "item/netherite_sword/yellow_power_ring"
+									}
+									}
+								}
+							}
+						],
+						"fallback": {
+							"type": "composite",
+							"models": [
+								{
+									"type": "model",
+									"model": "item/netherite_sword/yellow_power_ring"
+								},
+								{
+									"type": "model",
+									"model": "item/netherite_sword/yellow_power_ring_power"
+								},
+								{
+									"type": "model",
+									"model": "item/netherite_hoe/yellow_power_ring_hoe"
+								}
+							]
+						}
+					}
+				},
+				{
+					"when": "Orange Power Ring",
+					"model": {
+						"type": "select",
+						"property": "display_context",
+						"cases": [
+							{
+								"when": [
+									"firstperson_lefthand",
+									"firstperson_righthand"
+								],
+								"model": {
+									"type": "condition",
+									"property": "keybind_down",
+									"keybind": "key.attack",
+									"on_true": {
+										"type": "composite",
+										"models": [
+											{
+												"type": "model",
+												"model": "item/netherite_sword/orange_power_ring"
+											},
+											{
+												"type": "model",
+												"model": "item/netherite_sword/orange_power_ring_power"
+											},
+											{
+												"type": "model",
+												"model": "item/netherite_hoe/orange_power_ring_hoe"
+											}
+										]
+									},
+									"on_false": {
+										"type": "condition",
+									"property": "keybind_down",
+									"keybind": "key.use",
+									"on_true": {
+										"type": "composite",
+										"models": [
+											{
+												"type": "model",
+												"model": "item/netherite_sword/orange_power_ring"
+											},
+											{
+												"type": "model",
+												"model": "item/netherite_sword/orange_power_ring_power"
+											},
+											{
+												"type": "model",
+												"model": "item/netherite_hoe/orange_power_ring_hoe"
+											}
+										]
+									},
+									"on_false": {
+										"type": "model",
+										"model": "item/netherite_sword/orange_power_ring"
+									}
+									}
+								}
+							}
+						],
+						"fallback": {
+							"type": "composite",
+							"models": [
+								{
+									"type": "model",
+									"model": "item/netherite_sword/orange_power_ring"
+								},
+								{
+									"type": "model",
+									"model": "item/netherite_sword/orange_power_ring_power"
+								},
+								{
+									"type": "model",
+									"model": "item/netherite_hoe/orange_power_ring_hoe"
+								}
+							]
+						}
+					}
+				},
+				{
+					"when": "Green Power Ring",
+					"model": {
+						"type": "select",
+						"property": "display_context",
+						"cases": [
+							{
+								"when": [
+									"firstperson_lefthand",
+									"firstperson_righthand"
+								],
+								"model": {
+									"type": "condition",
+									"property": "keybind_down",
+									"keybind": "key.attack",
+									"on_true": {
+										"type": "composite",
+										"models": [
+											{
+												"type": "model",
+												"model": "item/netherite_sword/green_power_ring"
+											},
+											{
+												"type": "model",
+												"model": "item/netherite_sword/green_power_ring_power"
+											},
+											{
+												"type": "model",
+												"model": "item/netherite_hoe/green_power_ring_hoe"
+											}
+										]
+									},
+									"on_false": {
+										"type": "condition",
+									"property": "keybind_down",
+									"keybind": "key.use",
+									"on_true": {
+										"type": "composite",
+										"models": [
+											{
+												"type": "model",
+												"model": "item/netherite_sword/green_power_ring"
+											},
+											{
+												"type": "model",
+												"model": "item/netherite_sword/green_power_ring_power"
+											},
+											{
+												"type": "model",
+												"model": "item/netherite_hoe/green_power_ring_hoe"
+											}
+										]
+									},
+									"on_false": {
+										"type": "model",
+										"model": "item/netherite_sword/green_power_ring"
+									}
+									}
+								}
+							}
+						],
+						"fallback": {
+							"type": "composite",
+							"models": [
+								{
+									"type": "model",
+									"model": "item/netherite_sword/green_power_ring"
+								},
+								{
+									"type": "model",
+									"model": "item/netherite_sword/green_power_ring_power"
+								},
+								{
+									"type": "model",
+									"model": "item/netherite_hoe/green_power_ring_hoe"
+								}
+							]
+						}
+					}
+				},
+				{
+					"when": "Death's Scythe",
+					"model": {
+						"type": "model",
+						"model": "item/netherite_hoe/death_scythe"
+					}
+				},
+				{
+					"when": "Scythe",
+					"model": {
+						"type": "model",
+						"model": "item/netherite_hoe/scythe"
+					}
+				},
+				{
+					"when": "Jailor's Scythe",
+					"model": {
+						"type": "model",
+						"model": "item/netherite_hoe/jailor_scythe"
+					}
+				},
+				{
+					"when": "Frost Scythe",
+					"model": {
+						"type": "model",
+						"model": "item/netherite_hoe/frost_scythe"
+					}
+				},
+				{
+					"when": "Soul Scythe",
+					"model": {
+						"type": "condition",
+						"property": "component",
+						"predicate": "enchantments",
+						"value": [
+							{
+								"enchantments": "fire_aspect"
+							}
+						],
+						"on_true": {
+							"type": "model",
+							"model": "item/netherite_hoe/soul_scythe_fire_aspect"
+						},
+						"on_false": {
+							"type": "model",
+							"model": "item/netherite_hoe/soul_scythe"
+						}
+					}
+				},
+				{
+					"when": "Bone Scythe",
+					"model": {
+						"type": "model",
+						"model": "item/netherite_hoe/bone_scythe"
+					}
+				},
+				{
+					"when": "Command Block Hoe",
+					"model": {
+						"type": "model",
+						"model": "item/netherite_hoe/command_block_hoe"
+					}
+				},
+				{
+					"when": "Super Cute Hoe",
+					"model": {
+						"type": "model",
+						"model": "item/netherite_hoe/super_cute_hoe"
+					}
+				},
+				{
+					"when": "Jake The Hoe",
+					"model": {
+						"type": "model",
+						"model": "item/netherite_hoe/jake_the_hoe"
+					}
+				},
+				{
+					"when": "Adamantium Impervium Hoe",
+					"model": {
+						"type": "model",
+						"model": "item/netherite_hoe/adamantium_impervium_hoe"
+					}
+				},
+				{
+					"when": "Blockbreaker Hoe",
+					"model": {
+						"type": "model",
+						"model": "item/netherite_hoe/blockbreaker_hoe"
+					}
+				},
+				{
+					"when": "Dragonsbane Hoe",
+					"model": {
+						"type": "model",
+						"model": "item/netherite_hoe/dragonsbane_hoe"
+					}
+				},
+				{
+					"when": "Ender Defender Hoe",
+					"model": {
+						"type": "model",
+						"model": "item/netherite_hoe/ender_defender_hoe"
+					}
+				},
+				{
+					"when": "Ellegaard's Hoe",
+					"model": {
+						"type": "model",
+						"model": "item/netherite_hoe/ellegaard_hoe"
+					}
+				},
+				{
+					"when": "Magnus' Hoe",
+					"model": {
+						"type": "model",
+						"model": "item/netherite_hoe/magnus_hoe"
+					}
+				},
+				{
+					"when": "Golden Apple Hoe",
+					"model": {
+						"type": "model",
+						"model": "item/netherite_hoe/golden_apple_hoe"
+					}
+				},
+				{
+					"when": "Tim's Hoe",
+					"model": {
+						"type": "model",
+						"model": "item/netherite_hoe/tim_hoe"
+					}
+				},
+				{
+					"when": "Golden Goliath Hoe",
+					"model": {
+						"type": "model",
+						"model": "item/netherite_hoe/golden_goliath_hoe"
+					}
+				},
+				{
+					"when": "Star Hoe",
+					"model": {
+						"type": "model",
+						"model": "item/netherite_hoe/star_hoe"
+					}
+				},
+				{
+					"when": "Petra's Hoe",
+					"model": {
+						"type": "model",
+						"model": "item/netherite_hoe/petra_hoe"
+					}
+				},
+				{
+					"when": "Redstone Riot Hoe",
+					"model": {
+						"type": "model",
+						"model": "item/netherite_hoe/redstone_riot_hoe"
+					}
+				},
+				{
+					"when": "Hoe of Infinity",
+					"model": {
+						"type": "model",
+						"model": "item/netherite_hoe/hoe_of_infinity"
+					}
+				},
+				{
+					"when": "Gabriel's Hoe",
+					"model": {
+						"type": "model",
+						"model": "item/netherite_hoe/gabriel_hoe"
+					}
+				},
+				{
+					"when": "Romeo's Hoe",
+					"model": {
+						"type": "model",
+						"model": "item/netherite_hoe/romeo_hoe"
+					}
+				},
+				{
+					"when": "Xara's Hoe",
+					"model": {
+						"type": "model",
+						"model": "item/netherite_hoe/xara_hoe"
+					}
+				},
+				{
+					"when": "Fred's Hoe",
+					"model": {
+						"type": "model",
+						"model": "item/netherite_hoe/fred_hoe"
+					}
+				},
+				{
+					"when": "Ivor's Hoe",
+					"model": {
+						"type": "model",
+						"model": "item/netherite_hoe/ivor_hoe"
+					}
+				},
+				{
+					"when": "Dragonslayer Hoe",
+					"model": {
+						"type": "model",
+						"model": "item/netherite_hoe/dragonslayer_hoe"
+					}
+				},
+				{
+					"when": "Dragonmaster Hoe",
+					"model": {
+						"type": "model",
+						"model": "item/netherite_hoe/dragonmaster_hoe"
+					}
+				},
+				{
+					"when": "Robot Hoe",
+					"model": {
+						"type": "model",
+						"model": "item/netherite_hoe/robot_hoe"
+					}
+				},
+				{
+					"when": "Droid Hoe",
+					"model": {
+						"type": "model",
+						"model": "item/netherite_hoe/droid_hoe"
+					}
+				},
+				{
+					"when": "Space Hoe",
+					"model": {
+						"type": "model",
+						"model": "item/netherite_hoe/space_hoe"
+					}
+				},
+				{
+					"when": "Vortex Hoe",
+					"model": {
+						"type": "model",
+						"model": "item/netherite_hoe/vortex_hoe"
+					}
+				},
+				{
+					"when": "Scarlet Hoe",
+					"model": {
+						"type": "model",
+						"model": "item/netherite_hoe/scarlet_hoe"
+					}
+				},
+				{
+					"when": "Sakura Hoe",
+					"model": {
+						"type": "model",
+						"model": "item/netherite_hoe/sakura_hoe"
+					}
+				},
+				{
+					"when": "Journey Hoe",
+					"model": {
+						"type": "model",
+						"model": "item/netherite_hoe/journey_hoe"
+					}
+				},
+				{
+					"when": "Heavy Hoe",
+					"model": {
+						"type": "model",
+						"model": "item/netherite_hoe/heavy_hoe"
+					}
+				},
+				{
+					"when": "Prismarine Hoe",
+					"model": {
+						"type": "model",
+						"model": "item/netherite_hoe/prismarine_hoe"
+					}
+				},
+				{
+					"when": "Poisonous Potato Hoe",
+					"model": {
+						"type": "model",
+						"model": "item/netherite_hoe/poisonous_potato_hoe"
+					}
+				},
+				{
+					"when": "Candy Hoe",
+					"model": {
+						"type": "model",
+						"model": "item/netherite_hoe/candy_hoe"
+					}
+				},
+				{
+					"when": "Kemetian Hoe",
+					"model": {
+						"type": "model",
+						"model": "item/netherite_hoe/kemetian_hoe"
+					}
+				},
+				{
+					"when": "Hellenic Hoe",
+					"model": {
+						"type": "model",
+						"model": "item/netherite_hoe/hellenic_hoe"
+					}
+				},
+				{
+					"when": "Sinitic Hoe",
+					"model": {
+						"type": "model",
+						"model": "item/netherite_hoe/sinitic_hoe"
+					}
+				},
+				{
+					"when": "Fantasy Hoe",
+					"model": {
+						"type": "model",
+						"model": "item/netherite_hoe/fantasy_hoe"
+					}
+				},
+				{
+					"when": "Norroen Hoe",
+					"model": {
+						"type": "model",
+						"model": "item/netherite_hoe/norroen_hoe"
+					}
+				},
+				{
+					"when": "Halloween Hoe",
+					"model": {
+						"type": "model",
+						"model": "item/netherite_hoe/halloween_hoe"
+					}
+				},
+				{
+					"when": "Glass Hoe",
+					"model": {
+						"type": "model",
+						"model": "item/netherite_hoe/glass_hoe"
+					}
+				},
+				{
+					"when": "Dragonheart Hoe",
+					"model": {
+						"type": "model",
+						"model": "item/netherite_hoe/dragonheart_hoe"
+					}
+				},
+				{
+					"when": "Orcish Hoe",
+					"model": {
+						"type": "model",
+						"model": "item/netherite_hoe/orcish_hoe"
+					}
+				},
+				{
+					"when": "Ancient Hoe",
+					"model": {
+						"type": "model",
+						"model": "item/netherite_hoe/ancient_hoe"
+					}
+				},
+				{
+					"when": "Ender Dragon Hoe",
+					"model": {
+						"type": "model",
+						"model": "item/netherite_hoe/ender_dragon_hoe"
+					}
+				}
+			],
+			"fallback": {
+						"type": "model",
+						"model": "item/netherite_hoe"
+					}
+		},
+		"on_false": {
+						"type": "model",
+						"model": "item/netherite_hoe"
+					}
+	}
+}

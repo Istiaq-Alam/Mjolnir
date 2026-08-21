@@ -1,0 +1,635 @@
+{
+	"oversized_in_gui": true,
+	"model": {
+			"type": "select",
+			"property": "component",
+			"component": "custom_name",
+			"cases": [
+				{
+					"when": "Jake The Totem",
+					"model": {
+						"type": "model",
+						"model": "item/totem_of_undying/squared/jake_the_totem"
+					}
+				},
+				{
+					"when": [
+					"Dinnerbone",
+					"Grumm"
+				],
+					"model": {
+						"type": "model",
+						"model": "item/totem_of_undying/dinnerbone"
+					}
+				},
+				{
+					"when": "Mapmaker Trophy",
+					"model": {
+						"type": "model",
+						"model": "item/totem_of_undying/squared/mapmaker_trophy"
+					}
+				},
+				{
+					"when": "Mapmaker Plaque",
+					"model": {
+						"type": "model",
+						"model": "item/totem_of_undying/squared/mapmaker_plaque"
+					}
+				},
+				{
+					"when": [
+					"Totem",
+					"Totem of Undying²"
+				],
+					"model": {
+						"type": "model",
+						"model": "item/totem_of_undying"
+					}
+				},
+				{
+					"when": [
+					"Miku",
+					"Hatsune Miku",
+					"Miku of Undying"
+				],
+					"model": {
+						"type": "model",
+						"model": "item/totem_of_undying/miku_of_undying"
+					}
+				},
+				{
+					"when": [
+					"Pearto",
+					"Pear of Undying",
+					"Pear"
+				],
+					"model": {
+						"type": "model",
+						"model": "item/totem_of_undying/pear_of_undying"
+					}
+				},
+				{
+					"when": [
+					"Teto",
+					"Teto of Undying",
+					"Kasane Teto"
+				],
+					"model": {
+						"type": "model",
+						"model": "item/totem_of_undying/teto_of_undying"
+					}
+				},
+				{
+					"when": [
+					"Spamton",
+					"Spamton Plush"
+				],
+					"model": {
+						"type": "model",
+						"model": "item/totem_of_undying/spamton_plush"
+					}
+				},
+				{
+					"when": "jeb_",
+					"model": {
+						"type": "composite",
+						"models": [
+							{
+								"type": "model",
+								"model": "item/totem_of_undying/jeb_"
+							},
+							{
+								"type": "select",
+								"cases": [
+									{
+										"model": {
+											"type": "model",
+											"model": "item/totem_of_undying/jeb__birthday"
+										},
+										"when": [
+											"05-17",
+											"05-18",
+											"05-19"
+										]
+									}
+								],
+								"fallback": {
+									"type": "empty"
+								},
+								"pattern": "MM-dd",
+								"property": "local_time"
+							}
+						]
+					}
+				},
+				{
+					"when": "Uno Reverse Card",
+					"model": {
+						"type": "model",
+						"model": "item/totem_of_undying/uno_reverse_card"
+					}
+				},
+				{
+					"when": [
+					"Romeo of Undying",
+					"Romeo"
+				],
+					"model": {
+						"type": "model",
+						"model": "item/totem_of_undying/romeo_of_undying"
+					}
+				},
+				{
+					"when": "Special Flag",
+					"model": {
+						"type": "model",
+						"model": "item/totem_of_undying/special_flag"
+					}
+				},
+				{
+					"when": "1-Up Mushroom",
+					"model": {
+						"type": "model",
+						"model": "item/totem_of_undying/1up_mushroom"
+					}
+				},
+				{
+					"when": "Dead Ringer",
+					"model": {
+						"type": "model",
+						"model": "item/totem_of_undying/dead_ringer"
+					}
+				},
+				{
+					"when": "Fairy",
+					"model": {
+						"type": "model",
+						"model": "item/totem_of_undying/fairy"
+					}
+				},
+				{
+					"when": "Ankh",
+					"model": {
+						"type": "model",
+						"model": "item/totem_of_undying/ankh"
+					}
+				},
+				{
+					"when": "Lucky Charm",
+					"model": {
+						"type": "model",
+						"model": "item/totem_of_undying/lucky_charm"
+					}
+				},
+				{
+					"when": "Minecoin",
+					"model": {
+						"type": "model",
+						"model": "item/totem_of_undying/minecoin"
+					}
+				},
+				{
+					"when": "Totem of Soul Protection",
+					"model": {
+						"type": "model",
+						"model": "item/totem_of_undying/totem_of_soul_protection"
+					}
+				},
+				{
+					"when": "Poisonous Potato Plant",
+					"model": {
+						"type": "model",
+						"model": "item/totem_of_undying/poisonous_potato_plant"
+					}
+				},
+				{
+					"when": "Idol of Undying",
+					"model": {
+						"type": "model",
+						"model": "item/totem_of_undying/idol_of_undying"
+					}
+				},
+				{
+					"when": "Token of Undying",
+					"model": {
+						"type": "model",
+						"model": "item/totem_of_undying/token_of_undying"
+					}
+				},
+				{
+					"when": "Ushabti",
+					"model": {
+						"type": "model",
+						"model": "item/totem_of_undying/ushabti"
+					}
+				},
+				{
+					"when": "Shishi",
+					"model": {
+						"type": "model",
+						"model": "item/totem_of_undying/shishi"
+					}
+				},
+				{
+					"when": "Golem of Undying",
+					"model": {
+						"type": "model",
+						"model": "item/totem_of_undying/golem_of_undying"
+					}
+				},
+				{
+					"when": "Gummy of Undying",
+					"model": {
+						"type": "model",
+						"model": "item/totem_of_undying/gummy_of_undying"
+					}
+				},
+				{
+					"when": "Bust of Undying",
+					"model": {
+						"type": "model",
+						"model": "item/totem_of_undying/bust_of_undying"
+					}
+				},
+				{
+					"when": "Totem of the Berserker",
+					"model": {
+						"type": "model",
+						"model": "item/totem_of_undying/totem_of_the_berserker"
+					}
+				},
+				{
+					"when": "Doll of Undying",
+					"model": {
+						"type": "model",
+						"model": "item/totem_of_undying/doll_of_undying"
+					}
+				},
+				{
+					"when": "Bunny of Undying",
+					"model": {
+						"type": "model",
+						"model": "item/totem_of_undying/bunny_of_undying"
+					}
+				},
+				{
+					"when": "Doll of Voodoo",
+					"model": {
+						"type": "model",
+						"model": "item/totem_of_undying/doll_of_voodoo"
+					}
+				},
+				{
+					"when": "Totem of Nutcracking",
+					"model": {
+						"type": "model",
+						"model": "item/totem_of_undying/totem_of_nutcracking"
+					}
+				},
+				{
+					"when": "Troll of Undying",
+					"model": {
+						"type": "model",
+						"model": "item/totem_of_undying/troll_of_undying"
+					}
+				},
+				{
+					"when": [
+					"Lemon of Undying",
+					"Lemongrab",
+					"Earl of Lemongrab"
+				],
+					"model": {
+						"type": "model",
+						"model": "item/totem_of_undying/lemongrab"
+					}
+				},
+				{
+					"when": "Statue of Undying",
+					"model": {
+						"type": "model",
+						"model": "item/totem_of_undying/statue_of_undying"
+					}
+				},
+				{
+					"when": "Keyboard of Undying",
+					"model": {
+						"type": "composite",
+						"models": [
+							{
+								"type": "model",
+								"model": "item/totem_of_undying/keyboard/keyboard"
+							},
+							{
+								"type": "model",
+								"model": "item/totem_of_undying/keyboard/keyboard_text"
+							},
+							{
+								"type": "condition",
+								"property": "keybind_down",
+								"keybind": "key.attack",
+								"on_true": {
+									"type": "model",
+									"model": "item/totem_of_undying/keyboard/keyboard_attack_pressed"
+								},
+								"on_false": {
+									"type": "model",
+									"model": "item/totem_of_undying/keyboard/keyboard_attack"
+								}
+							},
+							{
+								"type": "condition",
+								"property": "keybind_down",
+								"keybind": "key.back",
+								"on_true": {
+									"type": "model",
+									"model": "item/totem_of_undying/keyboard/keyboard_back_pressed"
+								},
+								"on_false": {
+									"type": "model",
+									"model": "item/totem_of_undying/keyboard/keyboard_back"
+								}
+							},
+							{
+								"type": "condition",
+								"property": "keybind_down",
+								"keybind": "key.drop",
+								"on_true": {
+									"type": "model",
+									"model": "item/totem_of_undying/keyboard/keyboard_drop_pressed"
+								},
+								"on_false": {
+									"type": "model",
+									"model": "item/totem_of_undying/keyboard/keyboard_drop"
+								}
+							},
+							{
+								"type": "condition",
+								"property": "keybind_down",
+								"keybind": "key.forward",
+								"on_true": {
+									"type": "model",
+									"model": "item/totem_of_undying/keyboard/keyboard_forward_pressed"
+								},
+								"on_false": {
+									"type": "model",
+									"model": "item/totem_of_undying/keyboard/keyboard_forward"
+								}
+							},
+							{
+								"type": "condition",
+								"property": "keybind_down",
+								"keybind": "key.hotbar.1",
+								"on_true": {
+									"type": "model",
+									"model": "item/totem_of_undying/keyboard/keyboard_hotbar_1_pressed"
+								},
+								"on_false": {
+									"type": "model",
+									"model": "item/totem_of_undying/keyboard/keyboard_hotbar_1"
+								}
+							},
+							{
+								"type": "condition",
+								"property": "keybind_down",
+								"keybind": "key.hotbar.2",
+								"on_true": {
+									"type": "model",
+									"model": "item/totem_of_undying/keyboard/keyboard_hotbar_2_pressed"
+								},
+								"on_false": {
+									"type": "model",
+									"model": "item/totem_of_undying/keyboard/keyboard_hotbar_2"
+								}
+							},
+							{
+								"type": "condition",
+								"property": "keybind_down",
+								"keybind": "key.hotbar.3",
+								"on_true": {
+									"type": "model",
+									"model": "item/totem_of_undying/keyboard/keyboard_hotbar_3_pressed"
+								},
+								"on_false": {
+									"type": "model",
+									"model": "item/totem_of_undying/keyboard/keyboard_hotbar_3"
+								}
+							},
+							{
+								"type": "condition",
+								"property": "keybind_down",
+								"keybind": "key.hotbar.4",
+								"on_true": {
+									"type": "model",
+									"model": "item/totem_of_undying/keyboard/keyboard_hotbar_4_pressed"
+								},
+								"on_false": {
+									"type": "model",
+									"model": "item/totem_of_undying/keyboard/keyboard_hotbar_4"
+								}
+							},
+							{
+								"type": "condition",
+								"property": "keybind_down",
+								"keybind": "key.hotbar.5",
+								"on_true": {
+									"type": "model",
+									"model": "item/totem_of_undying/keyboard/keyboard_hotbar_5_pressed"
+								},
+								"on_false": {
+									"type": "model",
+									"model": "item/totem_of_undying/keyboard/keyboard_hotbar_5"
+								}
+							},
+							{
+								"type": "condition",
+								"property": "keybind_down",
+								"keybind": "key.hotbar.6",
+								"on_true": {
+									"type": "model",
+									"model": "item/totem_of_undying/keyboard/keyboard_hotbar_6_pressed"
+								},
+								"on_false": {
+									"type": "model",
+									"model": "item/totem_of_undying/keyboard/keyboard_hotbar_6"
+								}
+							},
+							{
+								"type": "condition",
+								"property": "keybind_down",
+								"keybind": "key.hotbar.7",
+								"on_true": {
+									"type": "model",
+									"model": "item/totem_of_undying/keyboard/keyboard_hotbar_7_pressed"
+								},
+								"on_false": {
+									"type": "model",
+									"model": "item/totem_of_undying/keyboard/keyboard_hotbar_7"
+								}
+							},
+							{
+								"type": "condition",
+								"property": "keybind_down",
+								"keybind": "key.hotbar.8",
+								"on_true": {
+									"type": "model",
+									"model": "item/totem_of_undying/keyboard/keyboard_hotbar_8_pressed"
+								},
+								"on_false": {
+									"type": "model",
+									"model": "item/totem_of_undying/keyboard/keyboard_hotbar_8"
+								}
+							},
+							{
+								"type": "condition",
+								"property": "keybind_down",
+								"keybind": "key.hotbar.9",
+								"on_true": {
+									"type": "model",
+									"model": "item/totem_of_undying/keyboard/keyboard_hotbar_9_pressed"
+								},
+								"on_false": {
+									"type": "model",
+									"model": "item/totem_of_undying/keyboard/keyboard_hotbar_9"
+								}
+							},
+							{
+								"type": "condition",
+								"property": "keybind_down",
+								"keybind": "key.inventory",
+								"on_true": {
+									"type": "model",
+									"model": "item/totem_of_undying/keyboard/keyboard_inventory_pressed"
+								},
+								"on_false": {
+									"type": "model",
+									"model": "item/totem_of_undying/keyboard/keyboard_inventory"
+								}
+							},
+							{
+								"type": "condition",
+								"property": "keybind_down",
+								"keybind": "key.jump",
+								"on_true": {
+									"type": "model",
+									"model": "item/totem_of_undying/keyboard/keyboard_jump_pressed"
+								},
+								"on_false": {
+									"type": "model",
+									"model": "item/totem_of_undying/keyboard/keyboard_jump"
+								}
+							},
+							{
+								"type": "condition",
+								"property": "keybind_down",
+								"keybind": "key.left",
+								"on_true": {
+									"type": "model",
+									"model": "item/totem_of_undying/keyboard/keyboard_left_pressed"
+								},
+								"on_false": {
+									"type": "model",
+									"model": "item/totem_of_undying/keyboard/keyboard_left"
+								}
+							},
+							{
+								"type": "condition",
+								"property": "keybind_down",
+								"keybind": "key.pickItem",
+								"on_true": {
+									"type": "model",
+									"model": "item/totem_of_undying/keyboard/keyboard_pick_item_pressed"
+								},
+								"on_false": {
+									"type": "model",
+									"model": "item/totem_of_undying/keyboard/keyboard_pick_item"
+								}
+							},
+							{
+								"type": "condition",
+								"property": "keybind_down",
+								"keybind": "key.right",
+								"on_true": {
+									"type": "model",
+									"model": "item/totem_of_undying/keyboard/keyboard_right_pressed"
+								},
+								"on_false": {
+									"type": "model",
+									"model": "item/totem_of_undying/keyboard/keyboard_right"
+								}
+							},
+							{
+								"type": "condition",
+								"property": "keybind_down",
+								"keybind": "key.sneak",
+								"on_true": {
+									"type": "model",
+									"model": "item/totem_of_undying/keyboard/keyboard_sneak_pressed"
+								},
+								"on_false": {
+									"type": "model",
+									"model": "item/totem_of_undying/keyboard/keyboard_sneak"
+								}
+							},
+							{
+								"type": "condition",
+								"property": "keybind_down",
+								"keybind": "key.sprint",
+								"on_true": {
+									"type": "model",
+									"model": "item/totem_of_undying/keyboard/keyboard_sprint_pressed"
+								},
+								"on_false": {
+									"type": "model",
+									"model": "item/totem_of_undying/keyboard/keyboard_sprint"
+								}
+							},
+							{
+								"type": "condition",
+								"property": "keybind_down",
+								"keybind": "key.swapOffhand",
+								"on_true": {
+									"type": "model",
+									"model": "item/totem_of_undying/keyboard/keyboard_swap_off_hand_pressed"
+								},
+								"on_false": {
+									"type": "model",
+									"model": "item/totem_of_undying/keyboard/keyboard_swap_off_hand"
+								}
+							},
+							{
+								"type": "condition",
+								"property": "keybind_down",
+								"keybind": "key.playerlist",
+								"on_true": {
+									"type": "model",
+									"model": "item/totem_of_undying/keyboard/keyboard_player_list_pressed"
+								},
+								"on_false": {
+									"type": "model",
+									"model": "item/totem_of_undying/keyboard/keyboard_player_list"
+								}
+							},
+							{
+								"type": "condition",
+								"property": "keybind_down",
+								"keybind": "key.use",
+								"on_true": {
+									"type": "model",
+									"model": "item/totem_of_undying/keyboard/keyboard_use_pressed"
+								},
+								"on_false": {
+									"type": "model",
+									"model": "item/totem_of_undying/keyboard/keyboard_use"
+								}
+							}
+						]
+					}
+				}
+			],
+			"fallback": {
+				"type": "model",
+				"model": "item/totem_of_undying"
+			}
+		}
+}

@@ -1,0 +1,15 @@
+{
+	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+	"parent": "item/netherite_axe/leviathan_axe_sharpness_2",
+	"textures": {
+		"layer0": "item/netherite_axe/leviathan_axe_sharpness_4"
+	},
+	"gui_light": "front",
+	"display": {
+		"gui": {
+			"rotation": [0, -25.5, -15],
+			"translation": [0.9, -1.5, 0],
+			"scale": [1.36, 1.36, 0.68]
+		}
+	}
+}

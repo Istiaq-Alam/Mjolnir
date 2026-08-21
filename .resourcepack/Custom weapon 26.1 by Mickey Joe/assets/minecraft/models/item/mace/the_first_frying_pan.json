@@ -1,0 +1,7 @@
+{
+	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+	"parent": "item/mace/frying_pan",
+	"textures": {
+		"particle": "item/mace/the_first_frying_pan"
+	}
+}

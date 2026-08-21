@@ -1,0 +1,43 @@
+{
+	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+	"parent": "builtin/generated",
+	"textures": {
+		"layer0": "item/netherite_axe/journey_axe"
+	},
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [0, -90, 55],
+			"translation": [0, 8.5, 0.5],
+			"scale": [1.7, 1.7, 0.85]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [0, 90, -55],
+			"translation": [0, 8.5, 0.5],
+			"scale": [1.7, 1.7, 0.85]
+		},
+		"firstperson_righthand": {
+			"rotation": [0, -110, 60],
+			"translation": [2.25, 8.2, 1.88],
+			"scale": [1.36, 1.36, 0.68]
+		},
+		"firstperson_lefthand": {
+			"rotation": [0, 70, -60],
+			"translation": [2.25, 8.2, 1.88],
+			"scale": [1.36, 1.36, 0.68]
+		},
+		"ground": {
+			"translation": [0, 4, 0],
+			"scale": [1, 1, 0.5]
+		},
+		"gui": {
+			"rotation": [0, -25.5, -4],
+			"translation": [0.5, 0.2, 0],
+			"scale": [1.37, 1.37, 0.75]
+		},
+		"fixed": {
+			"rotation": [0, 180, 0],
+			"translation": [-0.25, 0.25, 0],
+			"scale": [1.99, 1.99, 1]
+		}
+	}
+}

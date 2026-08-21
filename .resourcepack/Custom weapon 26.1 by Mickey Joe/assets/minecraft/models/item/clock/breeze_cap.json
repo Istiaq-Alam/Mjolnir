@@ -1,0 +1,107 @@
+{
+	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+	"parent": "item/compass/compass/base",
+	"textures": {
+		"base": "item/compass/breeze_base",
+		"particle": "item/compass/breeze"
+	},
+	"elements": [
+		{
+			"from": [0.5, 3.5, 9.5],
+			"to": [15.5, 14.5, 9.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [7, 7, 8.5]},
+			"faces": {
+				"north": {"uv": [16, 5, 1, 16], "texture": "#base"},
+				"south": {"uv": [16, 5, 1, 16], "texture": "#base"}
+			}
+		},
+		{
+			"from": [7.5, 1.5, 12.5],
+			"to": [8.5, 4.5, 13.5],
+			"rotation": {"angle": 22.5, "axis": "x", "origin": [7.5, 1.5, 12.5]},
+			"faces": {
+				"north": {"uv": [3, 9, 4, 12], "texture": "#particle"},
+				"east": {"uv": [3, 9, 4, 12], "texture": "#particle"},
+				"south": {"uv": [3, 9, 4, 12], "texture": "#particle"},
+				"west": {"uv": [3, 9, 4, 12], "texture": "#particle"},
+				"up": {"uv": [4, 10, 3, 9], "rotation": 270, "texture": "#particle"},
+				"down": {"uv": [4, 11, 3, 12], "rotation": 90, "texture": "#particle"}
+			}
+		},
+		{
+			"from": [7.5, 1.5, 2.5],
+			"to": [8.5, 4.5, 3.5],
+			"rotation": {"angle": -22.5, "axis": "x", "origin": [7.5, 1.5, 3.5]},
+			"faces": {
+				"north": {"uv": [4, 9, 3, 12], "texture": "#particle"},
+				"east": {"uv": [4, 9, 3, 12], "texture": "#particle"},
+				"south": {"uv": [4, 9, 3, 12], "texture": "#particle"},
+				"west": {"uv": [4, 9, 3, 12], "texture": "#particle"},
+				"up": {"uv": [3, 10, 4, 9], "rotation": 270, "texture": "#particle"},
+				"down": {"uv": [3, 11, 4, 12], "rotation": 90, "texture": "#particle"}
+			}
+		},
+		{
+			"from": [11.5, 11.5, 9.5],
+			"to": [4.5, 4.5, 8.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [14.5, 14.5, 6.5]},
+			"faces": {
+				"east": {"uv": [13, 8, 12, 15], "rotation": 180, "texture": "#base"},
+				"south": {"uv": [0, 0, 7, 7], "rotation": 180, "texture": "#particle"},
+				"west": {"uv": [5, 15, 4, 8], "texture": "#base"},
+				"up": {"uv": [5, 15, 12, 16], "texture": "#base"},
+				"down": {"uv": [5, 8, 12, 7], "texture": "#base"}
+			}
+		},
+		{
+			"from": [7, 7, 8.5],
+			"to": [9, 9, 9.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [6, 7, 8]},
+			"faces": {
+				"east": {"uv": [3, 7, 4, 9], "texture": "#particle"},
+				"south": {"uv": [2, 7, 4, 9], "texture": "#particle"},
+				"west": {"uv": [2, 7, 3, 9], "texture": "#particle"},
+				"up": {"uv": [2, 8, 4, 7], "texture": "#particle"},
+				"down": {"uv": [2, 8, 4, 9], "texture": "#particle"}
+			}
+		},
+		{
+			"from": [1.5, 2.5, 7.5],
+			"to": [2.5, 5.5, 8.5],
+			"rotation": {"angle": 22.5, "axis": "z", "origin": [2.5, 2.5, 8]},
+			"faces": {
+				"north": {"uv": [4, 9, 3, 12], "texture": "#particle"},
+				"east": {"uv": [4, 9, 3, 12], "texture": "#particle"},
+				"south": {"uv": [4, 9, 3, 12], "texture": "#particle"},
+				"west": {"uv": [4, 9, 3, 12], "texture": "#particle"},
+				"up": {"uv": [4, 9, 3, 10], "rotation": 270, "texture": "#particle"},
+				"down": {"uv": [4, 12, 3, 11], "rotation": 90, "texture": "#particle"}
+			}
+		},
+		{
+			"from": [13.5, 2.5, 7.5],
+			"to": [14.5, 5.5, 8.5],
+			"rotation": {"angle": -22.5, "axis": "z", "origin": [13.5, 2.5, 8]},
+			"faces": {
+				"north": {"uv": [3, 9, 4, 12], "texture": "#particle"},
+				"east": {"uv": [3, 9, 4, 12], "texture": "#particle"},
+				"south": {"uv": [3, 9, 4, 12], "texture": "#particle"},
+				"west": {"uv": [3, 9, 4, 12], "texture": "#particle"},
+				"up": {"uv": [4, 10, 3, 9], "rotation": 270, "texture": "#particle"},
+				"down": {"uv": [4, 11, 3, 12], "rotation": 90, "texture": "#particle"}
+			}
+		},
+		{
+			"from": [3.5, 3.5, 6.5],
+			"to": [12.5, 12.5, 9.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [7, 7, 8.5]},
+			"faces": {
+				"north": {"uv": [7, 16, 16, 7], "rotation": 90, "texture": "#particle"},
+				"east": {"uv": [7, 16, 4, 7], "texture": "#particle"},
+				"west": {"uv": [4, 16, 7, 7], "texture": "#particle"},
+				"up": {"uv": [7, 1, 16, 4], "texture": "#particle"},
+				"down": {"uv": [16, 7, 7, 4], "texture": "#particle"}
+			}
+		}
+	]
+}

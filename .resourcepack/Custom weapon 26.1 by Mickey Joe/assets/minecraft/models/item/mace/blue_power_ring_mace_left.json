@@ -1,0 +1,7 @@
+{
+	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+	"parent": "item/mace/green_power_ring_mace_left",
+	"textures": {
+		"particle": "item/mace/blue_power_ring_mace"
+	}
+}

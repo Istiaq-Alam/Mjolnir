@@ -1,0 +1,8 @@
+{
+	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+	"parent": "item/generated",
+	"textures": {
+		"layer0": "item/firework_star/firework_star_christmas",
+		"layer1": "item/firework_star/firework_star_overlay_christmas"
+	}
+}

@@ -1,0 +1,24 @@
+{
+	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+	"parent": "item/trident/liftfork",
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [0, 90, -135],
+			"translation": [-0.25, 1.25, 1.5]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [0, -90, 135],
+			"translation": [-0.25, 0.25, 1.5]
+		},
+		"firstperson_righthand": {
+			"rotation": [-12, 94, 48],
+			"translation": [6, -1.25, -2.25],
+			"scale": [0.68, 0.68, 0.68]
+		},
+		"firstperson_lefthand": {
+			"rotation": [-12, -86, -48],
+			"translation": [6, -1.25, -2.25],
+			"scale": [0.68, 0.68, 0.68]
+		}
+	}
+}

@@ -1,0 +1,16 @@
+{
+	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+	"parent": "item/crossbow/nikita_pulling_0",
+	"display": {
+		"firstperson_righthand": {
+			"rotation": [72.89, -10.43, 19.57],
+			"translation": [6.38, 7.95, 4.75],
+			"scale": [0.68, 0.68, 0.68]
+		},
+		"firstperson_lefthand": {
+			"rotation": [72.89, -10.43, 19.57],
+			"translation": [6.38, 7.95, 4.75],
+			"scale": [0.68, 0.68, 0.68]
+		}
+	}
+}

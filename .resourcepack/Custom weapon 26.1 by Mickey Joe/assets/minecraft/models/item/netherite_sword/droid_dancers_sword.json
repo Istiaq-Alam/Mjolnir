@@ -1,0 +1,8 @@
+{
+	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+    "parent": "item/netherite_sword/robot_dancers_sword",
+ 	"textures": {
+		"0": "item/netherite_sword/droid_dancers_sword",
+		"particle": "item/netherite_sword/droid_dancers_sword"
+	}
+}

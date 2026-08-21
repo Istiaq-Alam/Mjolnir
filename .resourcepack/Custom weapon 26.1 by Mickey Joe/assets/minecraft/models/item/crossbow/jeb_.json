@@ -1,0 +1,8 @@
+{
+	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+	"parent": "item/crossbow/crossbow",
+	"textures": {
+		"crossbow_standby": "item/crossbow/jeb__standby",
+		"particle": "item/crossbow/jeb__base"
+	}
+}

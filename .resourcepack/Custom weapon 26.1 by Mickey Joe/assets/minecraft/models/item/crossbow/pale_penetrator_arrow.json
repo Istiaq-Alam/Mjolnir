@@ -1,0 +1,9 @@
+{
+	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+	"parent": "item/crossbow/acorn_acer_arrow",
+	"textures": {
+		"particle": "item/crossbow/pale_penetrator_barrel",
+		"base": "item/crossbow/pale_penetrator"
+		}
+	}
+}

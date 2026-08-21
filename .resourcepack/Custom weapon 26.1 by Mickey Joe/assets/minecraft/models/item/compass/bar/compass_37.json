@@ -1,0 +1,46 @@
+{
+	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+	"textures": {
+		"particle": "item/compass/bar/icons"
+	},
+	"elements": [
+		{
+			"from": [7.1, -0.4, 0],
+			"to": [8.9, 1.4, 0],
+			"rotation": {"angle": 0, "axis": "y", "origin": [7.5, 0, -2]},
+			"faces": {
+				"north": {"uv": [0, 0, 7, 7], "texture": "#particle"},
+				"south": {"uv": [0, 0, 7, 7], "texture": "#particle"}
+			}
+		}
+	],
+	"gui_light": "front",
+	"display": {
+		"thirdperson_righthand": {
+			"scale": [0, 0, 0]
+		},
+		"thirdperson_lefthand": {
+			"scale": [0, 0, 0]
+		},
+		"firstperson_righthand": {
+			"scale": [0, 0, 0]
+		},
+		"firstperson_lefthand": {
+			"scale": [0, 0, 0]
+		},
+		"ground": {
+			"scale": [0, 0, 0]
+		},
+		"gui": {
+			"rotation": [0, 180, 0],
+			"translation": [0, 45.5, 0],
+			"scale": [4, 4, 4]
+		},
+		"head": {
+			"scale": [0, 0, 0]
+		},
+		"fixed": {
+			"scale": [0, 0, 0]
+		}
+	}
+}

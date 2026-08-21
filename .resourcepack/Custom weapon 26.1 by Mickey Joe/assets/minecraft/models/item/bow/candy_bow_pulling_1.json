@@ -1,0 +1,7 @@
+{
+	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+    "parent": "item/bow/bow_pulling_1",
+    "textures": {
+        "particle": "item/bow/candy_bow_pulling_1"
+    }
+}

@@ -1,0 +1,47 @@
+{
+	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+	"parent": "item/compass/compass/base",
+	"textures": {
+		"base": "item/recovery_compass/recovery_compass_base",
+		"particle": "item/recovery_compass/recovery_compass"
+	},
+	"elements": [
+		{
+			"from": [3.5, 3.5, 5.5],
+			"to": [12.5, 12.5, 9.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [7, 7, 8.5]},
+			"faces": {
+				"north": {"uv": [7, 16, 16, 7], "rotation": 90, "texture": "#base"},
+				"east": {"uv": [16, 3, 7, 7], "rotation": 90, "texture": "#particle"},
+				"south": {"uv": [16, 7, 7, 16], "texture": "#particle"},
+				"west": {"uv": [7, 7, 16, 3], "rotation": 90, "texture": "#particle"},
+				"up": {"uv": [7, 3, 16, 7], "texture": "#particle"},
+				"down": {"uv": [16, 7, 7, 3], "texture": "#particle"}
+			}
+		},
+		{
+			"from": [11.5, 11.5, 9.5],
+			"to": [4.5, 4.5, 8.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [14.5, 14.5, 6.5]},
+			"faces": {
+				"east": {"uv": [16, 8, 15, 15], "rotation": 180, "texture": "#particle"},
+				"south": {"uv": [0, 0, 7, 7], "rotation": 180, "texture": "#base"},
+				"west": {"uv": [8, 15, 7, 8], "texture": "#particle"},
+				"up": {"uv": [15, 15, 8, 16], "texture": "#particle"},
+				"down": {"uv": [8, 8, 15, 7], "texture": "#particle"}
+			}
+		},
+		{
+			"from": [7, 7, 8.5],
+			"to": [9, 9, 9.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [6, 7, 8]},
+			"faces": {
+				"east": {"uv": [12, 5, 13, 7], "texture": "#base"},
+				"south": {"uv": [11, 5, 13, 7], "texture": "#base"},
+				"west": {"uv": [11, 5, 12, 7], "texture": "#base"},
+				"up": {"uv": [11, 6, 13, 5], "texture": "#base"},
+				"down": {"uv": [11, 6, 13, 7], "texture": "#base"}
+			}
+		}
+	]
+}

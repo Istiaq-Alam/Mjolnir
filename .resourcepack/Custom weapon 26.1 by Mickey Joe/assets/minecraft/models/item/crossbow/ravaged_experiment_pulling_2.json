@@ -1,0 +1,7 @@
+{
+	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+	"parent": "item/crossbow/fermented_crossbow_pulling_2",
+	"textures": {
+		"particle": "item/crossbow/ravaged_experiment"
+	}
+}

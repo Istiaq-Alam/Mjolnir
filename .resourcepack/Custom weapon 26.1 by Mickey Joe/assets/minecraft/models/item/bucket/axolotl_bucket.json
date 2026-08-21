@@ -1,0 +1,135 @@
+{
+	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+	"textures": {
+		"back": "item/bucket/bucket_back",
+		"particle": "item/bucket/water_bucket"
+	},
+	"elements": [
+		{
+			"name": "water_bucket_0",
+			"from": [5, 1, 7.5],
+			"to": [11, 15, 8.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [16, 0, 7.5]},
+			"faces": {
+				"north": {"uv": [5, 1, 11, 15], "texture": "#particle"},
+				"east": {"uv": [6, 1, 5, 15], "texture": "#particle"},
+				"south": {"uv": [11, 1, 5, 15], "texture": "#back"},
+				"west": {"uv": [11, 1, 10, 15], "texture": "#particle"},
+				"up": {"uv": [11, 1, 5, 2], "texture": "#particle"},
+				"down": {"uv": [11, 14, 5, 15], "texture": "#particle"}
+			}
+		},
+		{
+			"name": "water_bucket_1",
+			"from": [11, 2, 7.5],
+			"to": [12, 14, 8.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [16, 0, 7.5]},
+			"faces": {
+				"north": {"uv": [4, 2, 5, 14], "texture": "#particle"},
+				"east": {"uv": [5, 2, 4, 14], "texture": "#particle"},
+				"south": {"uv": [5, 2, 4, 14], "texture": "#back"},
+				"up": {"uv": [5, 2, 4, 3], "texture": "#particle"},
+				"down": {"uv": [5, 13, 4, 14], "texture": "#particle"}
+			}
+		},
+		{
+			"name": "water_bucket_2",
+			"from": [4, 2, 7.5],
+			"to": [5, 14, 8.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [16, 0, 7.5]},
+			"faces": {
+				"north": {"uv": [11, 2, 12, 14], "texture": "#particle"},
+				"south": {"uv": [12, 2, 11, 14], "texture": "#back"},
+				"west": {"uv": [12, 2, 11, 14], "texture": "#particle"},
+				"up": {"uv": [12, 2, 11, 3], "texture": "#particle"},
+				"down": {"uv": [12, 13, 11, 14], "texture": "#particle"}
+			}
+		},
+		{
+			"name": "water_bucket_3",
+			"from": [12, 3, 7.5],
+			"to": [13, 13, 8.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [16, 0, 7.5]},
+			"faces": {
+				"north": {"uv": [3, 3, 4, 13], "texture": "#particle"},
+				"east": {"uv": [4, 3, 3, 13], "texture": "#particle"},
+				"south": {"uv": [4, 3, 3, 13], "texture": "#back"},
+				"up": {"uv": [4, 3, 3, 4], "texture": "#particle"},
+				"down": {"uv": [4, 12, 3, 13], "texture": "#particle"}
+			}
+		},
+		{
+			"name": "water_bucket_4",
+			"from": [3, 3, 7.5],
+			"to": [4, 13, 8.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [16, 0, 7.5]},
+			"faces": {
+				"north": {"uv": [12, 3, 13, 13], "texture": "#particle"},
+				"south": {"uv": [13, 3, 12, 13], "texture": "#back"},
+				"west": {"uv": [13, 3, 12, 13], "texture": "#particle"},
+				"up": {"uv": [13, 3, 12, 4], "texture": "#particle"},
+				"down": {"uv": [13, 12, 12, 13], "texture": "#particle"}
+			}
+		},
+		{
+			"name": "water_bucket_5",
+			"from": [13, 5, 7.5],
+			"to": [14, 12, 8.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [16, 0, 7.5]},
+			"faces": {
+				"north": {"uv": [2, 4, 3, 11], "texture": "#particle"},
+				"east": {"uv": [3, 4, 2, 11], "texture": "#particle"},
+				"south": {"uv": [3, 4, 2, 11], "texture": "#back"},
+				"up": {"uv": [3, 4, 2, 5], "texture": "#particle"},
+				"down": {"uv": [3, 10, 2, 11], "texture": "#particle"}
+			}
+		},
+		{
+			"name": "water_bucket_6",
+			"from": [2, 5, 7.5],
+			"to": [3, 12, 8.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [16, 0, 7.5]},
+			"faces": {
+				"north": {"uv": [13, 4, 14, 11], "texture": "#particle"},
+				"south": {"uv": [14, 4, 13, 11], "texture": "#back"},
+				"west": {"uv": [14, 4, 13, 11], "texture": "#particle"},
+				"up": {"uv": [14, 4, 13, 5], "texture": "#particle"},
+				"down": {"uv": [14, 10, 13, 11], "texture": "#particle"}
+			}
+		}
+	],
+	"gui_light": "front",
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [68, 0, 0],
+			"translation": [0, 0.75, 2],
+			"scale": [0.55, 0.55, 0.55]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [68, 0, 0],
+			"translation": [0, 0.75, 2],
+			"scale": [0.55, 0.55, 0.55]
+		},
+		"firstperson_righthand": {
+			"rotation": [90, 82, -89],
+			"translation": [2.88, 1.45, -1.12],
+			"scale": [0.68, 0.68, 0.68]
+		},
+		"firstperson_lefthand": {
+			"rotation": [90, 82, -89],
+			"translation": [2.88, 1.45, -1.12],
+			"scale": [0.68, 0.68, 0.68]
+		},
+		"ground": {
+			"translation": [0, 2, 0],
+			"scale": [0.5, 0.5, 0.5]
+		},
+		"gui": {
+			"rotation": [0, -180, 0],
+			"translation": [0, -1, 0]
+		},
+		"on_shelf": {
+			"rotation": [0, -180, 0]
+		}
+	}
+}

@@ -1,0 +1,26 @@
+{
+	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+	"parent": "item/crossbow/machina",
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [4, -2, 0],
+			"translation": [-0.5, 7, 1.25],
+			"scale": [0.85, 0.85, 0.85]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [4, -2, 0],
+			"translation": [-0.5, 7, 1.25],
+			"scale": [0.85, 0.85, 0.85]
+		},
+		"firstperson_righthand": {
+			"rotation": [14.25, 21, -2.39],
+			"translation": [12, 11.2, -1.5],
+			"scale": [0.68, 0.68, 0.68]
+		},
+		"firstperson_lefthand": {
+			"rotation": [14.25, 21, -2.39],
+			"translation": [12, 11.2, -1.5],
+			"scale": [0.68, 0.68, 0.68]
+		}
+	}
+}

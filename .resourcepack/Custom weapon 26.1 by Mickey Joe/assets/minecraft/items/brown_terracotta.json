@@ -1,0 +1,31 @@
+{
+	"oversized_in_gui": true,
+	"model": {
+		"type": "condition",
+		"property": "has_component",
+		"component": "custom_name",
+		"on_true": {
+			"type": "select",
+			"model": "block/brown_terracotta",
+			"property": "component",
+			"component": "custom_name",
+	  		"cases": [
+					{
+				"when": "Sconce",
+				"model": {
+					"type": "model",
+					"model": "item/sconce/brown_terracotta_sconce"
+			 			}
+					}
+		  		],
+			"fallback": {
+				"type": "model",
+				"model": "block/brown_terracotta"
+					}
+				},
+		"on_false": {
+			"type": "model",
+			"model": "block/brown_terracotta"
+		}
+	}
+}

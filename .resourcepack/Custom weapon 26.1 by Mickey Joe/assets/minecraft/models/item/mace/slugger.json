@@ -1,0 +1,44 @@
+{
+	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+	"parent": "builtin/generated",
+	"textures": {
+		"layer0": "item/mace/slugger"
+	},
+	"gui_light": "front",
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [0, -90, 49],
+			"translation": [0, 3.75, 1.25],
+			"scale": [1.7, 1.7, 0.85]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [0, 90, -49],
+			"translation": [0, 3.75, 1.25],
+			"scale": [1.7, 1.7, 0.85]
+		},
+		"firstperson_righthand": {
+			"rotation": [0, -100, 52],
+			"translation": [7, 4.45, -2.12],
+			"scale": [1.36, 1.36, 0.68]
+		},
+		"firstperson_lefthand": {
+			"rotation": [0, 80, -52],
+			"translation": [7, 4.45, -2.12],
+			"scale": [1.36, 1.36, 0.68]
+		},
+		"ground": {
+			"translation": [0, 3, 0],
+			"scale": [1, 1, 0.5]
+		},
+		"gui": {
+			"rotation": [0, -25.5, -3],
+			"translation": [-0.25, -0.25, 0],
+			"scale": [1.48, 1.48, 0.74]
+		},
+		"fixed": {
+			"rotation": [0, 180, 0],
+			"translation": [0.5, -0.5, -0.5],
+			"scale": [1.99, 1.99, 1]
+		}
+	}
+}

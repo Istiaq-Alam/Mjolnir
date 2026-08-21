@@ -1,0 +1,7 @@
+{
+	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+	"parent": "item/crossbow/firebolt_thrower_quickcharge_arrow",
+	"textures": {
+		"arrow": "item/spectral_arrow"
+	}
+}

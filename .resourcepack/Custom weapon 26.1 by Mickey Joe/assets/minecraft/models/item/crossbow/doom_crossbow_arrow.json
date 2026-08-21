@@ -1,0 +1,9 @@
+{
+	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+	"parent": "item/crossbow/heavy_crossbow_arrow",
+	"textures": {
+		"1": "item/crossbow/doom_crossbow_pulling_2",
+		"2": "item/arrow",
+		"particle": "item/crossbow/doom_crossbow_base"
+	}
+}

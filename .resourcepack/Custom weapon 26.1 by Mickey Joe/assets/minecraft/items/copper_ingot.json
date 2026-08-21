@@ -1,0 +1,52 @@
+{
+	"oversized_in_gui": true,
+	"model": {
+		"type": "condition",
+		"property": "has_component",
+		"component": "custom_name",
+		"on_true": {
+			"type": "select",
+			"model": "item/copper_ingot",
+			"property": "component",
+			"component": "custom_name",
+	  		"cases": [
+					{
+				"when": "Sconce",
+				"model": {
+					"type": "model",
+					"model": "item/sconce/copper_ingot_sconce"
+			 			}
+					},
+					{
+				"when": "Exposed Sconce",
+				"model": {
+					"type": "model",
+					"model": "item/sconce/exposed_copper_ingot_sconce"
+			 			}
+					},
+					{
+				"when": "Weathered Sconce",
+				"model": {
+					"type": "model",
+					"model": "item/sconce/weathered_copper_ingot_sconce"
+			 			}
+					},
+					{
+				"when": "Oxidized Sconce",
+				"model": {
+					"type": "model",
+					"model": "item/sconce/oxidized_copper_ingot_sconce"
+			 			}
+					}
+		  		],
+			"fallback": {
+				"type": "model",
+				"model": "item/copper_ingot"
+					}
+				},
+		"on_false": {
+			"type": "model",
+			"model": "item/copper_ingot"
+		}
+	}
+}

@@ -1,0 +1,43 @@
+{
+	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+	"parent": "builtin/generated",
+	"textures": {
+		"layer0": "item/netherite_axe/dragonslayer_axe"
+	},
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [20, -90, 65],
+			"translation": [-0.25, 5.75, 1.75],
+			"scale": [3.4, 3.4, 0.85]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [20, 90, -65],
+			"translation": [-0.25, 5.75, 1.75],
+			"scale": [3.4, 3.4, 0.85]
+		},
+		"firstperson_righthand": {
+			"rotation": [0, -120, 59],
+			"translation": [7.5, 10.63, -1.13],
+			"scale": [2.78, 2.78, 0.68]
+		},
+		"firstperson_lefthand": {
+			"rotation": [0, 60, -59],
+			"translation": [7.5, 10.63, -1.13],
+			"scale": [2.78, 2.78, 0.68]
+		},
+		"ground": {
+			"translation": [0, 8, 0],
+			"scale": [2, 2, 0.5]
+		},
+		"gui": {
+			"rotation": [0, -25.5, -4],
+			"translation": [0.5, 0, 0],
+			"scale": [1.34, 1.34, 0.67]
+		},
+		"fixed": {
+			"rotation": [0, 180, 0],
+			"translation": [-0.5, -0.5, -0.5],
+			"scale": [3.8, 3.8, 1]
+		}
+	}
+}

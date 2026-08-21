@@ -1,0 +1,16 @@
+{
+	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+	"parent": "item/crossbow/unmakyr",
+	"display": {
+		"firstperson_righthand": {
+			"rotation": [8, 52, 12],
+			"translation": [8.25, 7.2, 2.13],
+			"scale": [0.68, 0.68, 0.68]
+		},
+		"firstperson_lefthand": {
+			"rotation": [8, 52, 12],
+			"translation": [8.25, 7.2, 2.13],
+			"scale": [0.68, 0.68, 0.68]
+		}
+	}
+}

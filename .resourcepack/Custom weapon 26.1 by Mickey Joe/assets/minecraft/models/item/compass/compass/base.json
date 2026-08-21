@@ -1,0 +1,85 @@
+{
+	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+	"textures": {
+		"particle": "item/compass/compass/compass",
+		"base": "item/compass/compass/compass_base"
+	},
+	"elements": [
+		{
+			"from": [3.5, 3.5, 6.5],
+			"to": [12.5, 12.5, 9.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [7, 7, 8.5]},
+			"faces": {
+				"north": {"uv": [7, 16, 16, 7], "rotation": 90, "texture": "#base"},
+				"east": {"uv": [16, 4, 7, 7], "rotation": 90, "texture": "#particle"},
+				"south": {"uv": [16, 7, 7, 16], "texture": "#particle"},
+				"west": {"uv": [7, 7, 16, 4], "rotation": 90, "texture": "#particle"},
+				"up": {"uv": [7, 4, 16, 7], "texture": "#particle"},
+				"down": {"uv": [16, 7, 7, 4], "texture": "#particle"}
+			}
+		},
+		{
+			"from": [11.5, 11.5, 9.5],
+			"to": [4.5, 4.5, 8.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [14.5, 14.5, 6.5]},
+			"faces": {
+				"east": {"uv": [16, 8, 15, 15], "rotation": 180, "texture": "#particle"},
+				"south": {"uv": [0, 0, 7, 7], "rotation": 180, "texture": "#base"},
+				"west": {"uv": [8, 15, 7, 8], "texture": "#particle"},
+				"up": {"uv": [15, 15, 8, 16], "texture": "#particle"},
+				"down": {"uv": [8, 8, 15, 7], "texture": "#particle"}
+			}
+		},
+		{
+			"from": [7, 7, 8.5],
+			"to": [9, 9, 9.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [6, 7, 8]},
+			"faces": {
+				"east": {"uv": [12, 5, 13, 7], "texture": "#base"},
+				"south": {"uv": [11, 5, 13, 7], "texture": "#base"},
+				"west": {"uv": [11, 5, 12, 7], "texture": "#base"},
+				"up": {"uv": [11, 6, 13, 5], "texture": "#base"},
+				"down": {"uv": [11, 6, 13, 7], "texture": "#base"}
+			}
+		}
+	],
+	"gui_light": "front",
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [-90, 0, 0],
+			"translation": [0, 0.75, 0.5],
+			"scale": [0.55, 0.55, 0.55]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [-90, 0, 0],
+			"translation": [0, 0.75, 0.5],
+			"scale": [0.55, 0.55, 0.55]
+		},
+		"firstperson_righthand": {
+			"rotation": [-78, -10, -10],
+			"translation": [0.13, 2.2, 0.63],
+			"scale": [0.68, 0.68, 0.68]
+		},
+		"firstperson_lefthand": {
+			"rotation": [-78, -10, -10],
+			"translation": [0.13, 2.2, 0.63],
+			"scale": [0.68, 0.68, 0.68]
+		},
+		"ground": {
+			"rotation": [-90, 0, 0],
+			"scale": [0.5, 0.5, 0.5]
+		},
+		"gui": {
+			"rotation": [-25, 0, -15],
+			"translation": [0, -0.5, -2.5],
+			"scale": [1.16, 1.16, 1.16]
+		},
+		"head": {
+			"translation": [0, 0, 1]
+		},
+		"fixed": {
+			"rotation": [0, -180, 0],
+			"translation": [0, 0, -1]
+		}
+	}
+}

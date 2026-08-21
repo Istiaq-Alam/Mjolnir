@@ -1,0 +1,34 @@
+{
+	"oversized_in_gui": true,
+	"model": {
+		"type": "condition",
+		"property": "has_component",
+		"component": "custom_name",
+		"on_true": {
+			"type": "select",
+			"model": "item/name_tag",
+			"property": "component",
+			"component": "custom_name",
+				"cases": [
+			{
+			"when": [
+				"Dinnerbone",
+				"Grumm"
+				],
+			"model": {
+			"type": "model",
+			"model": "item/name_tag/upside_down_name_tag"
+					}
+				}
+			],
+			"fallback": {
+				"type": "model",
+				"model": "item/name_tag"
+					}
+				},
+		"on_false": {
+			"type": "model",
+			"model": "item/name_tag/empty_name_tag"
+		}
+	}
+}

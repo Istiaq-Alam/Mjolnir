@@ -1,0 +1,20 @@
+{
+	"model": {
+			"type": "select",
+			"property": "component",
+			"component": "custom_name",
+	  		"cases": [
+					{
+				"when": "Sconce",
+				"model": {
+					"type": "model",
+					"model": "item/sconce/netherite_ingot_sconce"
+			 			}
+					}
+		  		],
+			"fallback": {
+				"type": "model",
+				"model": "item/netherite_ingot"
+					}
+				}
+}

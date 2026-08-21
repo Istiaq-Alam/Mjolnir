@@ -1,0 +1,51 @@
+{
+	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+	"parent": "item/generated",
+	"textures": {
+		"1": "item/totem_of_undying/keyboard/keyboard_text",
+		"2": "item/totem_of_undying/keyboard/keyboard_text_offset",
+		"particle": "item/totem_of_undying/keyboard/keyboard_text",
+		"layer0": "item/totem_of_undying/keyboard/keyboard"
+	},
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [90, 90, 0],
+			"translation": [-2, 5.5, -10.5],
+			"scale": [2, 2, 0.5]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [90, 90, 0],
+			"translation": [-2, -9.25, -10.5],
+			"scale": [2, 2, 0.5]
+		},
+		"firstperson_righthand": {
+			"rotation": [-47, -24, -19],
+			"translation": [11, -10, 0.25],
+			"scale": [2, 2, 0.5]
+		},
+		"firstperson_lefthand": {
+			"rotation": [-46, -24, -19],
+			"translation": [-1.5, -10.75, -7.75],
+			"scale": [2, 2, 0.5]
+		},
+		"ground": {
+			"translation": [3.25, -2, 0.25],
+			"scale": [1, 1, 0.25]
+		},
+		"gui": {
+			"rotation": [-26, 15, 27],
+			"translation": [10.5, -6.5, 0],
+			"scale": [1.85, 1.85, 0.4625]
+		},
+		"head": {
+			"rotation": [0, 180, 0],
+			"translation": [-14.5, -22.75, -7.75],
+			"scale": [4, 4, 1]
+		},
+		"fixed": {
+			"rotation": [0, -180, 0],
+			"translation": [-15, -23, -0.5],
+			"scale": [4, 4, 1]
+		}
+	}
+}

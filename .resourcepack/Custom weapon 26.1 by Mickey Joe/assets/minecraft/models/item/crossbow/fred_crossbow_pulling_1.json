@@ -1,0 +1,8 @@
+{
+	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+	"parent": "item/crossbow/crossbow_of_dominance_pulling_1",
+	"textures": {
+		"particle": "item/crossbow/fred_crossbow",
+		"orb": "item/crossbow/fred_orb"
+	}
+}

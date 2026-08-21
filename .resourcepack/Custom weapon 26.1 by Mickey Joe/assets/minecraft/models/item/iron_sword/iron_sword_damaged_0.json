@@ -1,0 +1,7 @@
+{
+	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+    "parent": "item/handheld_sword",
+    "textures": {
+        "layer0": "item/iron_sword/iron_sword_damaged_0"
+    }
+}

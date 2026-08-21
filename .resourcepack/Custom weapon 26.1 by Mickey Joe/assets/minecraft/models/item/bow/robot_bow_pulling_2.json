@@ -1,0 +1,7 @@
+{
+	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+    "parent": "item/bow/droid_bow_pulling_2",
+	"textures": {
+		"particle": "item/bow/robot_bow_pulling"
+	}
+}

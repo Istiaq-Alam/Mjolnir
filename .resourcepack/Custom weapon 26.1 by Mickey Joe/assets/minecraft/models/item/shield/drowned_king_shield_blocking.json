@@ -1,0 +1,7 @@
+{
+	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+	"parent": "item/shield/vanguard_shield_blocking",
+	"textures": {
+		"particle": "item/shield/drowned_king_shield"
+	}
+}

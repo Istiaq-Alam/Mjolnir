@@ -1,0 +1,7 @@
+{
+	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+	"parent": "item/bow/green_power_ring",
+	"textures": {
+		"particle": "item/netherite_sword/yellow_power_ring"
+	}
+}

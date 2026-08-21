@@ -1,0 +1,18 @@
+{
+	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+	"parent": "item/shield/splendid_screen",
+	"textures": {
+		"particle": "item/shield/splendid_screen"
+	},
+	"elements": [
+		{
+			"from": [8, 5, 1.5],
+			"to": [8, 8, 5.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [6, 6, 3.5]},
+			"faces": {
+				"east": {"uv": [16, 13, 12, 16], "texture": "#particle"},
+				"west": {"uv": [12, 13, 16, 16], "texture": "#particle"}
+			}
+		}
+	]
+}

@@ -1,0 +1,50 @@
+{
+	"format_version": "1.21.6",
+	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+	"parent": "builtin/generated",
+	"textures": {
+		"layer0": "item/netherite_sword/creator_glaive"
+	},
+	"gui_light": "front",
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [0, -90, 53],
+			"translation": [-0.25, 15.5, -0.5],
+			"scale": [3.4, 3.4, 0.85]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [0, 90, -53],
+			"translation": [-0.25, 15.5, -0.5],
+			"scale": [3.4, 3.4, 0.85]
+		},
+		"firstperson_righthand": {
+			"rotation": [0, -100, 60],
+			"translation": [7.75, 12.5, -3.63],
+			"scale": [2.78, 2.78, 0.68]
+		},
+		"firstperson_lefthand": {
+			"rotation": [0, 80, -60],
+			"translation": [7.75, 12.5, -3.63],
+			"scale": [2.78, 2.78, 0.68]
+		},
+		"ground": {
+			"translation": [4.75, 9, 0],
+			"scale": [2, 2, 0.5]
+		},
+		"gui": {
+			"rotation": [0, -25.5, -2.5],
+			"translation": [3.5, 3.75, 0],
+			"scale": [1.54, 1.54, 0.77]
+		},
+		"fixed": {
+			"rotation": [0, -180, 0],
+			"translation": [-9.75, 9.5, -0.5],
+			"scale": [3.8, 3.8, 1]
+		},
+		"on_shelf": {
+			"rotation": [-6, 90, -135],
+			"translation": [0, -5.75, 10.25],
+			"scale": [4, 4, 1]
+		}
+	}
+}

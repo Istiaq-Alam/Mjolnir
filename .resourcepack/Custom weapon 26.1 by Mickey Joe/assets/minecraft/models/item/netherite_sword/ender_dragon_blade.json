@@ -1,0 +1,8 @@
+{
+	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+	"parent": "item/netherite_sword/sparkler",
+	"textures": {
+		"1": "item/netherite_sword/ender_dragon_blade_flame",
+		"particle": "item/netherite_sword/ender_dragon_blade"
+	}
+}

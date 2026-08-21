@@ -1,0 +1,9 @@
+{
+	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+	"parent": "item/crossbow/acorn_acer_spectral_arrow",
+	"textures": {
+		"particle": "item/crossbow/pod_packer_barrel",
+		"base": "item/crossbow/pod_packer"
+		}
+	}
+}

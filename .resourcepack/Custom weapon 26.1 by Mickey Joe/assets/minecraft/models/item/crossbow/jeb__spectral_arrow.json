@@ -1,0 +1,7 @@
+{
+	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+	"parent": "item/crossbow/jeb__arrow",
+	"textures": {
+		"arrow": "item/spectral_arrow"
+	}
+}

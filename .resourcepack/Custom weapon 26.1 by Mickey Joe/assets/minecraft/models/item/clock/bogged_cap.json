@@ -1,0 +1,8 @@
+{
+	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+	"parent": "item/compass/zombie",
+	"textures": {
+		"particle": "item/compass/bogged",
+		"base": "item/compass/bogged_base"
+	}
+}

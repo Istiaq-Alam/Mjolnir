@@ -1,0 +1,177 @@
+{
+	"format_version": "1.21.6",
+	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+	"parent": "block/block",
+	"textures": {
+		"particle": "item/honeycomb"
+	},
+	"elements": [
+		{
+			"name": "honeycomb_0",
+			"from": [6.5, 14, 1.5],
+			"to": [8.5, 15, 15.5],
+			"rotation": {"angle": 0, "axis": "x", "origin": [8, 14.5, 5.5]},
+			"faces": {
+				"north": {"uv": [6, 13, 8, 14], "rotation": 180, "texture": "#particle"},
+				"east": {"uv": [7, 0, 8, 14], "rotation": 270, "texture": "#particle"},
+				"south": {"uv": [6, 0, 8, 1], "texture": "#particle"},
+				"west": {"uv": [6, 0, 7, 14], "rotation": 90, "texture": "#particle"},
+				"up": {"uv": [8, 0, 6, 14], "rotation": 180, "texture": "#particle"}
+			}
+		},
+		{
+			"name": "honeycomb_1",
+			"from": [5.5, 14, 1.5],
+			"to": [6.5, 15, 14.5],
+			"rotation": {"angle": 0, "axis": "x", "origin": [8, 14.5, 5.5]},
+			"faces": {
+				"north": {"uv": [5, 13, 6, 14], "rotation": 180, "texture": "#particle"},
+				"south": {"uv": [5, 1, 6, 2], "texture": "#particle"},
+				"west": {"uv": [5, 1, 6, 14], "rotation": 90, "texture": "#particle"},
+				"up": {"uv": [6, 1, 5, 14], "rotation": 180, "texture": "#particle"}
+			}
+		},
+		{
+			"name": "honeycomb_2",
+			"from": [8.5, 14, 0.5],
+			"to": [9.5, 15, 14.5],
+			"rotation": {"angle": 0, "axis": "x", "origin": [8, 14.5, 5.5]},
+			"faces": {
+				"north": {"uv": [8, 14, 9, 15], "rotation": 180, "texture": "#particle"},
+				"east": {"uv": [8, 1, 9, 15], "rotation": 270, "texture": "#particle"},
+				"south": {"uv": [8, 1, 9, 2], "texture": "#particle"},
+				"up": {"uv": [9, 1, 8, 15], "rotation": 180, "texture": "#particle"}
+			}
+		},
+		{
+			"name": "honeycomb_3",
+			"from": [4.5, 14, 1.5],
+			"to": [5.5, 15, 13.5],
+			"rotation": {"angle": 0, "axis": "x", "origin": [8, 14.5, 5.5]},
+			"faces": {
+				"north": {"uv": [4, 13, 5, 14], "rotation": 180, "texture": "#particle"},
+				"south": {"uv": [4, 2, 5, 3], "texture": "#particle"},
+				"west": {"uv": [4, 2, 5, 14], "rotation": 90, "texture": "#particle"},
+				"up": {"uv": [5, 2, 4, 14], "rotation": 180, "texture": "#particle"}
+			}
+		},
+		{
+			"name": "honeycomb_4",
+			"from": [9.5, 14, 2.5],
+			"to": [12.5, 15, 13.5],
+			"rotation": {"angle": 0, "axis": "x", "origin": [8, 14.5, 5.5]},
+			"faces": {
+				"north": {"uv": [9, 12, 12, 13], "rotation": 180, "texture": "#particle"},
+				"east": {"uv": [11, 2, 12, 13], "rotation": 270, "texture": "#particle"},
+				"south": {"uv": [9, 2, 12, 3], "texture": "#particle"},
+				"up": {"uv": [12, 2, 9, 13], "rotation": 180, "texture": "#particle"}
+			}
+		},
+		{
+			"name": "honeycomb_5",
+			"from": [3.5, 14, 2.5],
+			"to": [4.5, 15, 12.5],
+			"rotation": {"angle": 0, "axis": "x", "origin": [8, 14.5, 5.5]},
+			"faces": {
+				"north": {"uv": [3, 12, 4, 13], "rotation": 180, "texture": "#particle"},
+				"south": {"uv": [3, 3, 4, 4], "texture": "#particle"},
+				"west": {"uv": [3, 3, 4, 13], "rotation": 90, "texture": "#particle"},
+				"up": {"uv": [4, 3, 3, 13], "rotation": 180, "texture": "#particle"}
+			}
+		},
+		{
+			"name": "honeycomb_6",
+			"from": [12.5, 14, 3.5],
+			"to": [13.5, 15, 12.5],
+			"rotation": {"angle": 0, "axis": "x", "origin": [8, 14.5, 5.5]},
+			"faces": {
+				"north": {"uv": [12, 11, 13, 12], "rotation": 180, "texture": "#particle"},
+				"east": {"uv": [12, 3, 13, 12], "rotation": 270, "texture": "#particle"},
+				"south": {"uv": [12, 3, 13, 4], "texture": "#particle"},
+				"up": {"uv": [13, 3, 12, 12], "rotation": 180, "texture": "#particle"}
+			}
+		},
+		{
+			"name": "honeycomb_7",
+			"from": [2.5, 14, 6.5],
+			"to": [3.5, 15, 11.5],
+			"rotation": {"angle": 0, "axis": "x", "origin": [8, 14.5, 5.5]},
+			"faces": {
+				"north": {"uv": [2, 8, 3, 9], "rotation": 180, "texture": "#particle"},
+				"south": {"uv": [2, 4, 3, 5], "texture": "#particle"},
+				"west": {"uv": [2, 4, 3, 9], "rotation": 90, "texture": "#particle"},
+				"up": {"uv": [3, 4, 2, 9], "rotation": 180, "texture": "#particle"}
+			}
+		},
+		{
+			"name": "honeycomb_8",
+			"from": [13.5, 14, 8.5],
+			"to": [14.5, 15, 11.5],
+			"rotation": {"angle": 0, "axis": "x", "origin": [8, 14.5, 5.5]},
+			"faces": {
+				"north": {"uv": [13, 6, 14, 7], "rotation": 180, "texture": "#particle"},
+				"east": {"uv": [13, 4, 14, 7], "rotation": 270, "texture": "#particle"},
+				"south": {"uv": [13, 4, 14, 5], "texture": "#particle"},
+				"up": {"uv": [14, 4, 13, 7], "rotation": 180, "texture": "#particle"}
+			}
+		},
+		{
+			"name": "honeycomb_9",
+			"from": [1.5, 14, 7.5],
+			"to": [2.5, 15, 10.5],
+			"rotation": {"angle": 0, "axis": "x", "origin": [8, 14.5, 5.5]},
+			"faces": {
+				"north": {"uv": [1, 7, 2, 8], "rotation": 180, "texture": "#particle"},
+				"south": {"uv": [1, 5, 2, 6], "texture": "#particle"},
+				"west": {"uv": [1, 5, 2, 8], "rotation": 90, "texture": "#particle"},
+				"up": {"uv": [2, 5, 1, 8], "rotation": 180, "texture": "#particle"}
+			}
+		},
+		{
+			"name": "honeycomb_10",
+			"from": [13.5, 14, 4.5],
+			"to": [14.5, 15, 7.5],
+			"rotation": {"angle": 0, "axis": "x", "origin": [8, 14.5, 5.5]},
+			"faces": {
+				"north": {"uv": [13, 10, 14, 11], "rotation": 180, "texture": "#particle"},
+				"east": {"uv": [13, 8, 14, 11], "rotation": 270, "texture": "#particle"},
+				"south": {"uv": [13, 8, 14, 9], "texture": "#particle"},
+				"up": {"uv": [14, 8, 13, 11], "rotation": 180, "texture": "#particle"}
+			}
+		},
+		{
+			"name": "honeycomb_11",
+			"from": [2.5, 14, 3.5],
+			"to": [3.5, 15, 5.5],
+			"rotation": {"angle": 0, "axis": "x", "origin": [8, 14.5, 5.5]},
+			"faces": {
+				"north": {"uv": [2, 11, 3, 12], "rotation": 180, "texture": "#particle"},
+				"south": {"uv": [2, 10, 3, 11], "texture": "#particle"},
+				"west": {"uv": [2, 10, 3, 12], "rotation": 90, "texture": "#particle"},
+				"up": {"uv": [3, 10, 2, 12], "rotation": 180, "texture": "#particle"}
+			}
+		},
+		{
+			"name": "honeycomb_12",
+			"from": [9.5, 14, 1.5],
+			"to": [11.5, 15, 2.5],
+			"rotation": {"angle": 0, "axis": "x", "origin": [8, 14.5, 5.5]},
+			"faces": {
+				"north": {"uv": [9, 13, 11, 14], "rotation": 180, "texture": "#particle"},
+				"east": {"uv": [10, 13, 11, 14], "rotation": 270, "texture": "#particle"},
+				"up": {"uv": [11, 13, 9, 14], "rotation": 180, "texture": "#particle"}
+			}
+		},
+		{
+			"name": "honeycomb_13",
+			"from": [7.5, 14, 0.5],
+			"to": [8.5, 15, 1.5],
+			"rotation": {"angle": 0, "axis": "x", "origin": [8, 14.5, 5.5]},
+			"faces": {
+				"north": {"uv": [7, 14, 8, 15], "rotation": 180, "texture": "#particle"},
+				"west": {"uv": [7, 14, 8, 15], "rotation": 90, "texture": "#particle"},
+				"up": {"uv": [8, 14, 7, 15], "rotation": 180, "texture": "#particle"}
+			}
+		}
+	]
+}

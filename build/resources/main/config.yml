@@ -1,7 +1,31 @@
-storm-duration: 120
+storm-duration: 60
+
 mode-switch-cooldown: 5
 
 effects:
   enabled: true
   particles: true
   sounds: true
+
+resource-pack:
+  enabled: true
+
+  # Direct HTTPS URL to the Mjolnir-only resource pack ZIP.
+  url: "https://download.mc-packs.net/pack/348d895439dc15dbf679ee2fcea652bc15d65eb2.zip"
+
+  # SHA-1 hash of the ZIP file.
+  # Leave empty temporarily if you have not generated it yet.
+  sha1: "348d895439dc15dbf679ee2fcea652bc15d65eb2"
+
+  # false = player may decline the pack.
+  # true = player must accept it.
+  required: true
+
+  # Send the pack automatically when the player joins.
+  send-on-join: true
+
+  # Delay before sending the pack after joining, in ticks.
+  # 40 ticks = 2 seconds.
+  send-delay-ticks: 40
+
+  prompt: "Mjolnir requires its custom weapon resource pack."

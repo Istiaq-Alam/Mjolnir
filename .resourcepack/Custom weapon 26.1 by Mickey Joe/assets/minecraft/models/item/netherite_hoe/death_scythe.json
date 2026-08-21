@@ -1,0 +1,44 @@
+{
+	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+	"parent": "builtin/generated",
+	"textures": {
+		"layer0": "item/netherite_hoe/death_scythe"
+	},
+	"gui_light": "front",
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [0, -90, 52],
+			"translation": [0, 3, 0.75],
+			"scale": [1.7, 1.7, 0.85]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [0, 90, -52],
+			"translation": [0, 3, 0.75],
+			"scale": [1.7, 1.7, 0.85]
+		},
+		"firstperson_righthand": {
+			"rotation": [0, -115, 50],
+			"translation": [7, 7.13, -1.63],
+			"scale": [1.36, 1.36, 0.68]
+		},
+		"firstperson_lefthand": {
+			"rotation": [0, 65, -50],
+			"translation": [7, 7.13, -1.63],
+			"scale": [1.36, 1.36, 0.68]
+		},
+		"ground": {
+			"translation": [0, 5, 0],
+			"scale": [1, 1, 0.5]
+		},
+		"gui": {
+			"rotation": [2, -23, -7],
+			"translation": [0.95, -0.5, 0],
+			"scale": [1.1, 1.1, 0.54]
+		},
+		"fixed": {
+			"rotation": [0, 180, 0],
+			"translation": [-1, 0.25, -0.75],
+			"scale": [1.99, 1.99, 1]
+		}
+	}
+}

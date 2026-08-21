@@ -1,0 +1,8 @@
+{
+	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+	"parent": "barely_default:item/shield/gold/shield",
+	"textures": {
+		"shield": "barely_default:item/shield/gold/shield_banner",
+		"particle": "block/gold_block"
+	}
+}

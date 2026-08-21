@@ -1,0 +1,8 @@
+{
+	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+    "parent": "item/netherite_sword/robot_sword_sharpness",
+ 	"textures": {
+		"0": "item/netherite_sword/droid_sword",
+		"particle": "item/netherite_sword/droid_sword"
+	}
+}

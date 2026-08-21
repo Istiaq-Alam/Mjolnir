@@ -1,0 +1,13 @@
+{
+	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+	"parent": "item/generated",
+	"textures": {
+		"layer0": "potion_overlay",
+		"layer1": "bottle"
+	},
+	"display": {
+		"gui": {
+			"translation": [-0.5, 0, 0]
+		}
+	}
+}

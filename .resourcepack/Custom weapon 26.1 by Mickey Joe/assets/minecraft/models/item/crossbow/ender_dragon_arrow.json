@@ -1,0 +1,9 @@
+{
+	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+	"parent": "item/crossbow/nerf_dragon_arrow",
+	"textures": {
+		"2": "item/crossbow/ender_dragon_wings",
+		"particle": "item/crossbow/ender_dragon",
+		"arrow": "item/crossbow/ender_dragon_arrow"
+	}
+}

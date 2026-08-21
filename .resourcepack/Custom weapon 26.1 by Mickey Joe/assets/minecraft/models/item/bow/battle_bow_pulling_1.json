@@ -1,0 +1,7 @@
+{
+	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+    "parent": "item/bow/petra_bow_pulling_1",
+	"textures": {
+		"particle": "item/bow/battle_bow_pulling"
+	}
+}

@@ -1,0 +1,7 @@
+{
+	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+    "parent": "item/bow/omega_arm_buster",
+	"textures": {
+		"particle": "item/bow/omega_arm_buster_flame"
+	}
+}

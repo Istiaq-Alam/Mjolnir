@@ -1,0 +1,803 @@
+{
+	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+	"texture_size": [32, 32],
+	"textures": {
+		"2": "item/bow/teleportation_bow_power",
+		"particle": "item/bow/teleportation_bow_power"
+	},
+	"elements": [
+		{
+			"name": "teleportation_bow_power_0",
+			"from": [5, 15, 6.5],
+			"to": [8, 17, 7.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [-8, 0, -8]},
+			"faces": {
+				"north": {"uv": [4.5, 0, 3, 1], "texture": "#2"},
+				"east": {"uv": [4, 0, 4.5, 1], "texture": "#2"},
+				"south": {"uv": [3, 0, 4.5, 1], "texture": "#2"},
+				"west": {"uv": [3, 0, 3.5, 1], "texture": "#2"},
+				"up": {"uv": [3, 0, 4.5, 0.5], "texture": "#2"},
+				"down": {"uv": [3, 0.5, 4.5, 1], "texture": "#2"}
+			}
+		},
+		{
+			"name": "teleportation_bow_power_1",
+			"from": [5, 20, 7.5],
+			"to": [7, 22, 8.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [-8, 0, -8]},
+			"faces": {
+				"north": {"uv": [7, 0, 6, 1], "texture": "#2"},
+				"east": {"uv": [6.5, 0, 7, 1], "texture": "#2"},
+				"south": {"uv": [6, 0, 7, 1], "texture": "#2"},
+				"west": {"uv": [6, 0, 6.5, 1], "texture": "#2"},
+				"up": {"uv": [6, 0, 7, 0.5], "texture": "#2"},
+				"down": {"uv": [6, 0.5, 7, 1], "texture": "#2"}
+			}
+		},
+		{
+			"name": "teleportation_bow_power_2",
+			"from": [3, 14, 6.5],
+			"to": [5, 16, 7.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [-8, 0, -8]},
+			"faces": {
+				"north": {"uv": [3, 0.5, 2, 1.5], "texture": "#2"},
+				"south": {"uv": [2, 0.5, 3, 1.5], "texture": "#2"},
+				"west": {"uv": [2, 0.5, 2.5, 1.5], "texture": "#2"},
+				"up": {"uv": [2, 0.5, 3, 1], "texture": "#2"},
+				"down": {"uv": [2, 1, 3, 1.5], "texture": "#2"}
+			}
+		},
+		{
+			"name": "teleportation_bow_power_3",
+			"from": [8, 14, 6.5],
+			"to": [10, 16, 7.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [-8, 0, -8]},
+			"faces": {
+				"north": {"uv": [5.5, 0.5, 4.5, 1.5], "texture": "#2"},
+				"east": {"uv": [5, 0.5, 5.5, 1.5], "texture": "#2"},
+				"west": {"uv": [4.5, 0.5, 5, 1.5], "texture": "#2"},
+				"up": {"uv": [4.5, 0.5, 5.5, 1], "texture": "#2"},
+				"down": {"uv": [4.5, 1, 5.5, 1.5], "texture": "#2"}
+			}
+		},
+		{
+			"name": "teleportation_bow_power_4",
+			"from": [7, 15, 7.5],
+			"to": [10, 21, 8.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [-8, 0, -8]},
+			"faces": {
+				"north": {"uv": [8.5, 0.5, 7, 3.5], "texture": "#2"},
+				"east": {"uv": [8, 0.5, 8.5, 3.5], "texture": "#2"},
+				"south": {"uv": [7, 0.5, 8.5, 3.5], "texture": "#2"},
+				"west": {"uv": [7, 0.5, 7.5, 3.5], "texture": "#2"},
+				"up": {"uv": [7, 0.5, 8.5, 1], "texture": "#2"},
+				"down": {"uv": [7, 3, 8.5, 3.5], "texture": "#2"}
+			}
+		},
+		{
+			"name": "teleportation_bow_power_5",
+			"from": [5, 14, 6.5],
+			"to": [7, 15, 7.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [-8, 0, -8]},
+			"faces": {
+				"north": {"uv": [4, 1, 3, 1.5], "texture": "#2"},
+				"east": {"uv": [3.5, 1, 4, 1.5], "texture": "#2"},
+				"south": {"uv": [3, 1, 4, 1.5], "texture": "#2"},
+				"down": {"uv": [3, 1, 4, 1.5], "texture": "#2"}
+			}
+		},
+		{
+			"name": "teleportation_bow_power_6",
+			"from": [6, 16, 7.5],
+			"to": [7, 20, 8.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [-8, 0, -8]},
+			"faces": {
+				"north": {"uv": [7, 1, 6.5, 3], "texture": "#2"},
+				"south": {"uv": [6.5, 1, 7, 3], "texture": "#2"},
+				"west": {"uv": [6.5, 1, 7, 3], "texture": "#2"},
+				"down": {"uv": [6.5, 2.5, 7, 3], "texture": "#2"}
+			}
+		},
+		{
+			"name": "teleportation_bow_power_7",
+			"from": [13, 16, 7.5],
+			"to": [17, 20, 8.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [-8, 0, -8]},
+			"faces": {
+				"north": {"uv": [12, 1, 10, 3], "texture": "#2"},
+				"east": {"uv": [11.5, 1, 12, 3], "texture": "#2"},
+				"south": {"uv": [10, 1, 12, 3], "texture": "#2"},
+				"west": {"uv": [10, 1, 10.5, 3], "texture": "#2"},
+				"up": {"uv": [10, 1, 12, 1.5], "texture": "#2"},
+				"down": {"uv": [10, 2.5, 12, 3], "texture": "#2"}
+			}
+		},
+		{
+			"name": "teleportation_bow_power_8",
+			"from": [4, 6, 6.5],
+			"to": [5, 14, 7.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [-8, 0, -8]},
+			"faces": {
+				"north": {"uv": [3, 1.5, 2.5, 5.5], "texture": "#2"},
+				"east": {"uv": [2.5, 1.5, 3, 5.5], "texture": "#2"},
+				"south": {"uv": [2.5, 1.5, 3, 5.5], "texture": "#2"},
+				"west": {"uv": [2.5, 1.5, 3, 5.5], "texture": "#2"},
+				"down": {"uv": [2.5, 5, 3, 5.5], "texture": "#2"}
+			}
+		},
+		{
+			"name": "teleportation_bow_power_9",
+			"from": [8, 11, 6.5],
+			"to": [9, 14, 7.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [-8, 0, -8]},
+			"faces": {
+				"north": {"uv": [5, 1.5, 4.5, 3], "texture": "#2"},
+				"east": {"uv": [4.5, 1.5, 5, 3], "texture": "#2"},
+				"south": {"uv": [4.5, 1.5, 5, 3], "texture": "#2"},
+				"west": {"uv": [4.5, 1.5, 5, 3], "texture": "#2"},
+				"down": {"uv": [4.5, 2.5, 5, 3], "texture": "#2"}
+			}
+		},
+		{
+			"name": "teleportation_bow_power_10",
+			"from": [10, 12, 7.5],
+			"to": [13, 19, 8.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [-8, 0, -8]},
+			"faces": {
+				"north": {"uv": [10, 1.5, 8.5, 5], "texture": "#2"},
+				"east": {"uv": [9.5, 1.5, 10, 5], "texture": "#2"},
+				"south": {"uv": [8.5, 1.5, 10, 5], "texture": "#2"},
+				"west": {"uv": [8.5, 1.5, 9, 5], "texture": "#2"},
+				"up": {"uv": [8.5, 1.5, 10, 2], "texture": "#2"},
+				"down": {"uv": [8.5, 4.5, 10, 5], "texture": "#2"}
+			}
+		},
+		{
+			"name": "teleportation_bow_power_11",
+			"from": [17, 16, 7.5],
+			"to": [20, 19, 8.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [-8, 0, -8]},
+			"faces": {
+				"north": {"uv": [13.5, 1.5, 12, 3], "texture": "#2"},
+				"east": {"uv": [13, 1.5, 13.5, 3], "texture": "#2"},
+				"south": {"uv": [12, 1.5, 13.5, 3], "texture": "#2"},
+				"up": {"uv": [12, 1.5, 13.5, 2], "texture": "#2"},
+				"down": {"uv": [12, 2.5, 13.5, 3], "texture": "#2"}
+			}
+		},
+		{
+			"name": "teleportation_bow_power_12",
+			"from": [0, 9, 6.5],
+			"to": [2, 13, 7.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [-8, 0, -8]},
+			"faces": {
+				"north": {"uv": [1.5, 2, 0.5, 4], "texture": "#2"},
+				"east": {"uv": [1, 2, 1.5, 4], "texture": "#2"},
+				"south": {"uv": [0.5, 2, 1.5, 4], "texture": "#2"},
+				"west": {"uv": [0.5, 2, 1, 4], "texture": "#2"},
+				"up": {"uv": [0.5, 2, 1.5, 2.5], "texture": "#2"},
+				"down": {"uv": [0.5, 3.5, 1.5, 4], "texture": "#2"}
+			}
+		},
+		{
+			"name": "teleportation_bow_power_13",
+			"from": [5, 11, 6.5],
+			"to": [8, 13, 7.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [-8, 0, -8]},
+			"faces": {
+				"north": {"uv": [4.5, 2, 3, 3], "texture": "#2"},
+				"south": {"uv": [3, 2, 4.5, 3], "texture": "#2"},
+				"up": {"uv": [3, 2, 4.5, 2.5], "texture": "#2"},
+				"down": {"uv": [3, 2.5, 4.5, 3], "texture": "#2"}
+			}
+		},
+		{
+			"name": "teleportation_bow_power_14",
+			"from": [9, 11, 6.5],
+			"to": [10, 13, 7.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [-8, 0, -8]},
+			"faces": {
+				"north": {"uv": [5.5, 2, 5, 3], "texture": "#2"},
+				"east": {"uv": [5, 2, 5.5, 3], "texture": "#2"},
+				"south": {"uv": [5, 2, 5.5, 3], "texture": "#2"},
+				"up": {"uv": [5, 2, 5.5, 2.5], "texture": "#2"},
+				"down": {"uv": [5, 2.5, 5.5, 3], "texture": "#2"}
+			}
+		},
+		{
+			"name": "teleportation_bow_power_15",
+			"from": [20, 16, 7.5],
+			"to": [21, 18, 8.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [-8, 0, -8]},
+			"faces": {
+				"north": {"uv": [14, 2, 13.5, 3], "texture": "#2"},
+				"east": {"uv": [13.5, 2, 14, 3], "texture": "#2"},
+				"south": {"uv": [13.5, 2, 14, 3], "texture": "#2"},
+				"up": {"uv": [13.5, 2, 14, 2.5], "texture": "#2"},
+				"down": {"uv": [13.5, 2.5, 14, 3], "texture": "#2"}
+			}
+		},
+		{
+			"name": "teleportation_bow_power_16",
+			"from": [2, 11, 6.5],
+			"to": [4, 12, 7.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [-8, 0, -8]},
+			"faces": {
+				"north": {"uv": [2.5, 2.5, 1.5, 3], "texture": "#2"},
+				"south": {"uv": [1.5, 2.5, 2.5, 3], "texture": "#2"},
+				"up": {"uv": [1.5, 2.5, 2.5, 3], "texture": "#2"},
+				"down": {"uv": [1.5, 2.5, 2.5, 3], "texture": "#2"}
+			}
+		},
+		{
+			"name": "teleportation_bow_power_17",
+			"from": [-1, 8, 6.5],
+			"to": [0, 11, 7.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [-8, 0, -8]},
+			"faces": {
+				"north": {"uv": [0.5, 3, 0, 4.5], "texture": "#2"},
+				"south": {"uv": [0, 3, 0.5, 4.5], "texture": "#2"},
+				"west": {"uv": [0, 3, 0.5, 4.5], "texture": "#2"},
+				"up": {"uv": [0, 3, 0.5, 3.5], "texture": "#2"},
+				"down": {"uv": [0, 4, 0.5, 4.5], "texture": "#2"}
+			}
+		},
+		{
+			"name": "teleportation_bow_power_18",
+			"from": [3, 6, 6.5],
+			"to": [4, 11, 7.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [-8, 0, -8]},
+			"faces": {
+				"north": {"uv": [2.5, 3, 2, 5.5], "texture": "#2"},
+				"south": {"uv": [2, 3, 2.5, 5.5], "texture": "#2"},
+				"west": {"uv": [2, 3, 2.5, 5.5], "texture": "#2"},
+				"down": {"uv": [2, 5, 2.5, 5.5], "texture": "#2"}
+			}
+		},
+		{
+			"name": "teleportation_bow_power_19",
+			"from": [5, 10, 6.5],
+			"to": [6, 11, 7.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [-8, 0, -8]},
+			"faces": {
+				"north": {"uv": [3.5, 3, 3, 3.5], "texture": "#2"},
+				"east": {"uv": [3, 3, 3.5, 3.5], "texture": "#2"},
+				"south": {"uv": [3, 3, 3.5, 3.5], "texture": "#2"},
+				"down": {"uv": [3, 3, 3.5, 3.5], "texture": "#2"}
+			}
+		},
+		{
+			"name": "teleportation_bow_power_20",
+			"from": [7, 7, 6.5],
+			"to": [8, 11, 7.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [-8, 0, -8]},
+			"faces": {
+				"north": {"uv": [4.5, 3, 4, 5], "texture": "#2"},
+				"east": {"uv": [4, 3, 4.5, 5], "texture": "#2"},
+				"south": {"uv": [4, 3, 4.5, 5], "texture": "#2"},
+				"west": {"uv": [4, 3, 4.5, 5], "texture": "#2"},
+				"down": {"uv": [4, 4.5, 4.5, 5], "texture": "#2"}
+			}
+		},
+		{
+			"name": "teleportation_bow_power_21",
+			"from": [8, 5, 6.5],
+			"to": [9, 10, 7.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [-8, 0, -8]},
+			"faces": {
+				"north": {"uv": [5, 3.5, 4.5, 6], "texture": "#2"},
+				"east": {"uv": [4.5, 3.5, 5, 6], "texture": "#2"},
+				"south": {"uv": [4.5, 3.5, 5, 6], "texture": "#2"},
+				"west": {"uv": [4.5, 3.5, 5, 6], "texture": "#2"},
+				"up": {"uv": [4.5, 3.5, 5, 4], "texture": "#2"},
+				"down": {"uv": [4.5, 5.5, 5, 6], "texture": "#2"}
+			}
+		},
+		{
+			"name": "teleportation_bow_power_22",
+			"from": [8, 14, 7.5],
+			"to": [10, 15, 8.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [-8, 0, -8]},
+			"faces": {
+				"south": {"uv": [7.5, 3.5, 8.5, 4], "texture": "#2"},
+				"west": {"uv": [7.5, 3.5, 8, 4], "texture": "#2"},
+				"down": {"uv": [7.5, 3.5, 8.5, 4], "texture": "#2"}
+			}
+		},
+		{
+			"name": "teleportation_bow_power_24",
+			"from": [0, 6, 6.5],
+			"to": [1, 9, 7.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [-8, 0, -8]},
+			"faces": {
+				"north": {"uv": [1, 4, 0.5, 5.5], "texture": "#2"},
+				"east": {"uv": [0.5, 4, 1, 5.5], "texture": "#2"},
+				"west": {"uv": [0.5, 4, 1, 5.5], "texture": "#2"},
+				"down": {"uv": [0.5, 5, 1, 5.5], "texture": "#2"}
+			}
+		},
+		{
+			"name": "teleportation_bow_power_25",
+			"from": [5, 8, 6.5],
+			"to": [7, 9, 7.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [-8, 0, -8]},
+			"faces": {
+				"north": {"uv": [4, 4, 3, 4.5], "texture": "#2"},
+				"south": {"uv": [3, 4, 4, 4.5], "texture": "#2"},
+				"up": {"uv": [3, 4, 4, 4.5], "texture": "#2"},
+				"down": {"uv": [3, 4, 4, 4.5], "texture": "#2"}
+			}
+		},
+		{
+			"name": "teleportation_bow_power_28",
+			"from": [1, 7, 6.5],
+			"to": [3, 8, 7.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [-8, 0, -8]},
+			"faces": {
+				"north": {"uv": [2, 4.5, 1, 5], "texture": "#2"},
+				"south": {"uv": [1, 4.5, 2, 5], "texture": "#2"},
+				"up": {"uv": [1, 4.5, 2, 5], "texture": "#2"},
+				"down": {"uv": [1, 4.5, 2, 5], "texture": "#2"}
+			}
+		},
+		{
+			"name": "teleportation_bow_power_29",
+			"from": [6, 7, 6.5],
+			"to": [7, 8, 7.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [-8, 0, -8]},
+			"faces": {
+				"north": {"uv": [4, 4.5, 3.5, 5], "texture": "#2"},
+				"south": {"uv": [3.5, 4.5, 4, 5], "texture": "#2"},
+				"west": {"uv": [3.5, 4.5, 4, 5], "texture": "#2"},
+				"down": {"uv": [3.5, 4.5, 4, 5], "texture": "#2"}
+			}
+		},
+		{
+			"name": "teleportation_bow_power_30",
+			"from": [9, 5, 6.5],
+			"to": [11, 8, 7.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [-8, 0, -8]},
+			"faces": {
+				"north": {"uv": [6, 4.5, 5, 6], "texture": "#2"},
+				"east": {"uv": [5.5, 4.5, 6, 6], "texture": "#2"},
+				"south": {"uv": [5, 4.5, 6, 6], "texture": "#2"},
+				"up": {"uv": [5, 4.5, 6, 5], "texture": "#2"},
+				"down": {"uv": [5, 5.5, 6, 6], "texture": "#2"}
+			}
+		},
+		{
+			"name": "teleportation_bow_power_32",
+			"from": [1, 6, 6.5],
+			"to": [2, 7, 7.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [-8, 0, -8]},
+			"faces": {
+				"north": {"uv": [1.5, 5, 1, 5.5], "texture": "#2"},
+				"east": {"uv": [1, 5, 1.5, 5.5], "texture": "#2"},
+				"down": {"uv": [1, 5, 1.5, 5.5], "texture": "#2"}
+			}
+		},
+		{
+			"name": "teleportation_bow_power_36",
+			"from": [11, 3, 6.5],
+			"to": [12, 6, 7.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [-8, 0, -8]},
+			"faces": {
+				"north": {"uv": [6.5, 5.5, 6, 7], "texture": "#2"},
+				"east": {"uv": [6, 5.5, 6.5, 7], "texture": "#2"},
+				"south": {"uv": [6, 5.5, 6.5, 7], "texture": "#2"},
+				"west": {"uv": [6, 5.5, 6.5, 7], "texture": "#2"},
+				"up": {"uv": [6, 5.5, 6.5, 6], "texture": "#2"},
+				"down": {"uv": [6, 6.5, 6.5, 7], "texture": "#2"}
+			}
+		},
+		{
+			"name": "teleportation_bow_power_38",
+			"from": [-6, 9, 7.5],
+			"to": [-4, 11, 8.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [-8, 0, -8]},
+			"faces": {
+				"north": {"uv": [1, 6, 0, 7], "texture": "#2"},
+				"east": {"uv": [0.5, 6, 1, 7], "texture": "#2"},
+				"south": {"uv": [0, 6, 1, 7], "texture": "#2"},
+				"west": {"uv": [0, 6, 0.5, 7], "texture": "#2"},
+				"up": {"uv": [0, 6, 1, 6.5], "texture": "#2"},
+				"down": {"uv": [0, 6.5, 1, 7], "texture": "#2"}
+			}
+		},
+		{
+			"name": "teleportation_bow_power_39",
+			"from": [10, 4, 6.5],
+			"to": [11, 5, 7.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [-8, 0, -8]},
+			"faces": {
+				"north": {"uv": [6, 6, 5.5, 6.5], "texture": "#2"},
+				"south": {"uv": [5.5, 6, 6, 6.5], "texture": "#2"},
+				"west": {"uv": [5.5, 6, 6, 6.5], "texture": "#2"},
+				"down": {"uv": [5.5, 6, 6, 6.5], "texture": "#2"}
+			}
+		},
+		{
+			"name": "teleportation_bow_power_40",
+			"from": [12, 3, 6.5],
+			"to": [13, 5, 7.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [-8, 0, -8]},
+			"faces": {
+				"north": {"uv": [7, 6, 6.5, 7], "texture": "#2"},
+				"east": {"uv": [6.5, 6, 7, 7], "texture": "#2"},
+				"south": {"uv": [6.5, 6, 7, 7], "texture": "#2"},
+				"up": {"uv": [6.5, 6, 7, 6.5], "texture": "#2"},
+				"down": {"uv": [6.5, 6.5, 7, 7], "texture": "#2"}
+			}
+		},
+		{
+			"name": "teleportation_bow_power_45",
+			"from": [-4, 6, 7.5],
+			"to": [0, 10, 8.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [-8, 0, -8]},
+			"faces": {
+				"north": {"uv": [3, 6.5, 1, 8.5], "texture": "#2"},
+				"east": {"uv": [2.5, 6.5, 3, 8.5], "texture": "#2"},
+				"south": {"uv": [1, 6.5, 3, 8.5], "texture": "#2"},
+				"up": {"uv": [1, 6.5, 3, 7], "texture": "#2"},
+				"down": {"uv": [1, 8, 3, 8.5], "texture": "#2"}
+			}
+		},
+		{
+			"name": "teleportation_bow_power_47",
+			"from": [-5, 6, 7.5],
+			"to": [-4, 9, 8.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [-8, 0, -8]},
+			"faces": {
+				"north": {"uv": [1, 7, 0.5, 8.5], "texture": "#2"},
+				"south": {"uv": [0.5, 7, 1, 8.5], "texture": "#2"},
+				"west": {"uv": [0.5, 7, 1, 8.5], "texture": "#2"},
+				"down": {"uv": [0.5, 8, 1, 8.5], "texture": "#2"}
+			}
+		},
+		{
+			"name": "teleportation_bow_power_48",
+			"from": [0, 3, 7.5],
+			"to": [1, 9, 8.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [-8, 0, -8]},
+			"faces": {
+				"north": {"uv": [3.5, 7, 3, 10], "texture": "#2"},
+				"east": {"uv": [3, 7, 3.5, 10], "texture": "#2"},
+				"south": {"uv": [3, 7, 3.5, 10], "texture": "#2"},
+				"up": {"uv": [3, 7, 3.5, 7.5], "texture": "#2"},
+				"down": {"uv": [3, 9.5, 3.5, 10], "texture": "#2"}
+			}
+		},
+		{
+			"name": "teleportation_bow_power_52",
+			"from": [1, 3, 7.5],
+			"to": [2, 8, 8.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [-8, 0, -8]},
+			"faces": {
+				"north": {"uv": [4, 7.5, 3.5, 10], "texture": "#2"},
+				"east": {"uv": [3.5, 7.5, 4, 10], "texture": "#2"},
+				"south": {"uv": [3.5, 7.5, 4, 10], "texture": "#2"},
+				"up": {"uv": [3.5, 7.5, 4, 8], "texture": "#2"},
+				"down": {"uv": [3.5, 9.5, 4, 10], "texture": "#2"}
+			}
+		},
+		{
+			"name": "teleportation_bow_power_59",
+			"from": [-3, -4, 7.5],
+			"to": [0, 6, 8.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [-8, 0, -8]},
+			"faces": {
+				"north": {"uv": [3, 8.5, 1.5, 13.5], "texture": "#2"},
+				"east": {"uv": [2.5, 8.5, 3, 13.5], "texture": "#2"},
+				"south": {"uv": [1.5, 8.5, 3, 13.5], "texture": "#2"},
+				"west": {"uv": [1.5, 8.5, 2, 13.5], "texture": "#2"},
+				"down": {"uv": [1.5, 13, 3, 13.5], "texture": "#2"}
+			}
+		},
+		{
+			"name": "teleportation_bow_power_60",
+			"from": [2, 3, 7.5],
+			"to": [4, 6, 8.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [-8, 0, -8]},
+			"faces": {
+				"north": {"uv": [5, 8.5, 4, 10], "texture": "#2"},
+				"east": {"uv": [4.5, 8.5, 5, 10], "texture": "#2"},
+				"south": {"uv": [4, 8.5, 5, 10], "texture": "#2"},
+				"up": {"uv": [4, 8.5, 5, 9], "texture": "#2"},
+				"down": {"uv": [4, 9.5, 5, 10], "texture": "#2"}
+			}
+		},
+		{
+			"name": "teleportation_bow_power_90",
+			"from": [-2, -5, 7.5],
+			"to": [0, -4, 8.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [-8, 0, -8]},
+			"faces": {
+				"north": {"uv": [3, 13.5, 2, 14], "texture": "#2"},
+				"east": {"uv": [2.5, 13.5, 3, 14], "texture": "#2"},
+				"south": {"uv": [2, 13.5, 3, 14], "texture": "#2"},
+				"west": {"uv": [2, 13.5, 2.5, 14], "texture": "#2"},
+				"down": {"uv": [2, 13.5, 3, 14], "texture": "#2"}
+			}
+		},
+		{
+			"name": "teleportation_bow_power_69",
+			"from": [-4, -1, 7.5],
+			"to": [-3, 3, 8.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [-8, 0, -8]},
+			"faces": {
+				"north": {"uv": [1.5, 10, 1, 12], "texture": "#2"},
+				"south": {"uv": [1, 10, 1.5, 12], "texture": "#2"},
+				"west": {"uv": [1, 10, 1.5, 12], "texture": "#2"},
+				"up": {"uv": [1, 10, 1.5, 10.5], "texture": "#2"},
+				"down": {"uv": [1, 11.5, 1.5, 12], "texture": "#2"}
+			}
+		},
+		{
+			"name": "teleportation_bow_power_23",
+			"from": [16, 15, 7.5],
+			"to": [17, 16, 8.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [-8, 0, -8]},
+			"faces": {
+				"north": {"uv": [12, 3.5, 11.5, 4], "texture": "#2"},
+				"east": {"uv": [11.5, 3.5, 12, 4], "texture": "#2"},
+				"south": {"uv": [11.5, 3.5, 12, 4], "texture": "#2"},
+				"west": {"uv": [11.5, 3.5, 12, 4], "texture": "#2"},
+				"down": {"uv": [11.5, 3.5, 12, 4], "texture": "#2"}
+			}
+		},
+		{
+			"name": "teleportation_bow_power_26",
+			"from": [15, 14, 7.5],
+			"to": [16, 15, 8.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [-8, 0, -8]},
+			"faces": {
+				"north": {"uv": [11.5, 4, 11, 4.5], "texture": "#2"},
+				"east": {"uv": [11, 4, 11.5, 4.5], "texture": "#2"},
+				"south": {"uv": [11, 4, 11.5, 4.5], "texture": "#2"},
+				"west": {"uv": [11, 4, 11.5, 4.5], "texture": "#2"},
+				"up": {"uv": [11, 4, 11.5, 4.5], "texture": "#2"},
+				"down": {"uv": [11, 4, 11.5, 4.5], "texture": "#2"}
+			}
+		},
+		{
+			"name": "teleportation_bow_power_31",
+			"from": [14, 13, 7.5],
+			"to": [15, 14, 8.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [-8, 0, -8]},
+			"faces": {
+				"north": {"uv": [11, 4.5, 10.5, 5], "texture": "#2"},
+				"east": {"uv": [10.5, 4.5, 11, 5], "texture": "#2"},
+				"south": {"uv": [10.5, 4.5, 11, 5], "texture": "#2"},
+				"west": {"uv": [10.5, 4.5, 11, 5], "texture": "#2"},
+				"up": {"uv": [10.5, 4.5, 11, 5], "texture": "#2"},
+				"down": {"uv": [10.5, 4.5, 11, 5], "texture": "#2"}
+			}
+		},
+		{
+			"name": "teleportation_bow_power_33",
+			"from": [13, 12, 7.5],
+			"to": [14, 13, 8.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [-8, 0, -8]},
+			"faces": {
+				"north": {"uv": [10.5, 5, 10, 5.5], "texture": "#2"},
+				"east": {"uv": [10, 5, 10.5, 5.5], "texture": "#2"},
+				"south": {"uv": [10, 5, 10.5, 5.5], "texture": "#2"},
+				"up": {"uv": [10, 5, 10.5, 5.5], "texture": "#2"},
+				"down": {"uv": [10, 5, 10.5, 5.5], "texture": "#2"}
+			}
+		},
+		{
+			"name": "teleportation_bow_power_37",
+			"from": [12, 11, 7.5],
+			"to": [13, 12, 8.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [-8, 0, -8]},
+			"faces": {
+				"north": {"uv": [10, 5.5, 9.5, 6], "texture": "#2"},
+				"east": {"uv": [9.5, 5.5, 10, 6], "texture": "#2"},
+				"south": {"uv": [9.5, 5.5, 10, 6], "texture": "#2"},
+				"west": {"uv": [9.5, 5.5, 10, 6], "texture": "#2"},
+				"down": {"uv": [9.5, 5.5, 10, 6], "texture": "#2"}
+			}
+		},
+		{
+			"name": "teleportation_bow_power_41",
+			"from": [11, 10, 7.5],
+			"to": [12, 11, 8.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [-8, 0, -8]},
+			"faces": {
+				"north": {"uv": [9.5, 6, 9, 6.5], "texture": "#2"},
+				"east": {"uv": [9, 6, 9.5, 6.5], "texture": "#2"},
+				"south": {"uv": [9, 6, 9.5, 6.5], "texture": "#2"},
+				"west": {"uv": [9, 6, 9.5, 6.5], "texture": "#2"},
+				"up": {"uv": [9, 6, 9.5, 6.5], "texture": "#2"},
+				"down": {"uv": [9, 6, 9.5, 6.5], "texture": "#2"}
+			}
+		},
+		{
+			"name": "teleportation_bow_power_46",
+			"from": [10, 9, 7.5],
+			"to": [11, 10, 8.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [-8, 0, -8]},
+			"faces": {
+				"north": {"uv": [9, 6.5, 8.5, 7], "texture": "#2"},
+				"east": {"uv": [8.5, 6.5, 9, 7], "texture": "#2"},
+				"south": {"uv": [8.5, 6.5, 9, 7], "texture": "#2"},
+				"west": {"uv": [8.5, 6.5, 9, 7], "texture": "#2"},
+				"up": {"uv": [8.5, 6.5, 9, 7], "texture": "#2"},
+				"down": {"uv": [8.5, 6.5, 9, 7], "texture": "#2"}
+			}
+		},
+		{
+			"name": "teleportation_bow_power_49",
+			"from": [9, 8, 7.5],
+			"to": [10, 9, 8.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [-8, 0, -8]},
+			"faces": {
+				"north": {"uv": [8.5, 7, 8, 7.5], "texture": "#2"},
+				"east": {"uv": [8, 7, 8.5, 7.5], "texture": "#2"},
+				"south": {"uv": [8, 7, 8.5, 7.5], "texture": "#2"},
+				"west": {"uv": [8, 7, 8.5, 7.5], "texture": "#2"},
+				"up": {"uv": [8, 7, 8.5, 7.5], "texture": "#2"},
+				"down": {"uv": [8, 7, 8.5, 7.5], "texture": "#2"}
+			}
+		},
+		{
+			"name": "teleportation_bow_power_53",
+			"from": [8, 7, 7.5],
+			"to": [9, 8, 8.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [-8, 0, -8]},
+			"faces": {
+				"east": {"uv": [7.5, 7.5, 8, 8], "texture": "#2"},
+				"south": {"uv": [7.5, 7.5, 8, 8], "texture": "#2"},
+				"west": {"uv": [7.5, 7.5, 8, 8], "texture": "#2"},
+				"up": {"uv": [7.5, 7.5, 8, 8], "texture": "#2"},
+				"down": {"uv": [7.5, 7.5, 8, 8], "texture": "#2"}
+			}
+		},
+		{
+			"name": "teleportation_bow_power_56",
+			"from": [7, 6, 7.5],
+			"to": [8, 7, 8.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [-8, 0, -8]},
+			"faces": {
+				"north": {"uv": [7.5, 8, 7, 8.5], "texture": "#2"},
+				"east": {"uv": [7, 8, 7.5, 8.5], "texture": "#2"},
+				"south": {"uv": [7, 8, 7.5, 8.5], "texture": "#2"},
+				"west": {"uv": [7, 8, 7.5, 8.5], "texture": "#2"},
+				"up": {"uv": [7, 8, 7.5, 8.5], "texture": "#2"},
+				"down": {"uv": [7, 8, 7.5, 8.5], "texture": "#2"}
+			}
+		},
+		{
+			"name": "teleportation_bow_power_61",
+			"from": [6, 5, 7.5],
+			"to": [7, 6, 8.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [-8, 0, -8]},
+			"faces": {
+				"north": {"uv": [7, 8.5, 6.5, 9], "texture": "#2"},
+				"east": {"uv": [6.5, 8.5, 7, 9], "texture": "#2"},
+				"south": {"uv": [6.5, 8.5, 7, 9], "texture": "#2"},
+				"west": {"uv": [6.5, 8.5, 7, 9], "texture": "#2"},
+				"up": {"uv": [6.5, 8.5, 7, 9], "texture": "#2"},
+				"down": {"uv": [6.5, 8.5, 7, 9], "texture": "#2"}
+			}
+		},
+		{
+			"name": "teleportation_bow_power_63",
+			"from": [5, 4, 7.5],
+			"to": [6, 5, 8.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [-8, 0, -8]},
+			"faces": {
+				"north": {"uv": [6.5, 9, 6, 9.5], "texture": "#2"},
+				"east": {"uv": [6, 9, 6.5, 9.5], "texture": "#2"},
+				"south": {"uv": [6, 9, 6.5, 9.5], "texture": "#2"},
+				"west": {"uv": [6, 9, 6.5, 9.5], "texture": "#2"},
+				"up": {"uv": [6, 9, 6.5, 9.5], "texture": "#2"},
+				"down": {"uv": [6, 9, 6.5, 9.5], "texture": "#2"}
+			}
+		},
+		{
+			"name": "teleportation_bow_power_67",
+			"from": [4, 3, 7.5],
+			"to": [5, 4, 8.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [-8, 0, -8]},
+			"faces": {
+				"north": {"uv": [6, 9.5, 5.5, 10], "texture": "#2"},
+				"east": {"uv": [5.5, 9.5, 6, 10], "texture": "#2"},
+				"south": {"uv": [5.5, 9.5, 6, 10], "texture": "#2"},
+				"up": {"uv": [5.5, 9.5, 6, 10], "texture": "#2"},
+				"down": {"uv": [5.5, 9.5, 6, 10], "texture": "#2"}
+			}
+		},
+		{
+			"name": "teleportation_bow_power_70",
+			"from": [3, 2, 7.5],
+			"to": [4, 3, 8.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [-8, 0, -8]},
+			"faces": {
+				"north": {"uv": [5.5, 10, 5, 10.5], "texture": "#2"},
+				"east": {"uv": [5, 10, 5.5, 10.5], "texture": "#2"},
+				"south": {"uv": [5, 10, 5.5, 10.5], "texture": "#2"},
+				"west": {"uv": [5, 10, 5.5, 10.5], "texture": "#2"},
+				"down": {"uv": [5, 10, 5.5, 10.5], "texture": "#2"}
+			}
+		},
+		{
+			"name": "teleportation_bow_power_73",
+			"from": [2, 1, 7.5],
+			"to": [3, 2, 8.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [-8, 0, -8]},
+			"faces": {
+				"north": {"uv": [5, 10.5, 4.5, 11], "texture": "#2"},
+				"east": {"uv": [4.5, 10.5, 5, 11], "texture": "#2"},
+				"south": {"uv": [4.5, 10.5, 5, 11], "texture": "#2"},
+				"west": {"uv": [4.5, 10.5, 5, 11], "texture": "#2"},
+				"up": {"uv": [4.5, 10.5, 5, 11], "texture": "#2"},
+				"down": {"uv": [4.5, 10.5, 5, 11], "texture": "#2"}
+			}
+		},
+		{
+			"name": "teleportation_bow_power_77",
+			"from": [1, 0, 7.5],
+			"to": [2, 1, 8.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [-8, 0, -8]},
+			"faces": {
+				"north": {"uv": [4.5, 11, 4, 11.5], "texture": "#2"},
+				"east": {"uv": [4, 11, 4.5, 11.5], "texture": "#2"},
+				"south": {"uv": [4, 11, 4.5, 11.5], "texture": "#2"},
+				"west": {"uv": [4, 11, 4.5, 11.5], "texture": "#2"},
+				"up": {"uv": [4, 11, 4.5, 11.5], "texture": "#2"},
+				"down": {"uv": [4, 11, 4.5, 11.5], "texture": "#2"}
+			}
+		},
+		{
+			"name": "teleportation_bow_power_80",
+			"from": [0, -1, 7.5],
+			"to": [1, 0, 8.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [-8, 0, -8]},
+			"faces": {
+				"north": {"uv": [4, 11.5, 3.5, 12], "texture": "#2"},
+				"east": {"uv": [3.5, 11.5, 4, 12], "texture": "#2"},
+				"south": {"uv": [3.5, 11.5, 4, 12], "texture": "#2"},
+				"up": {"uv": [3.5, 11.5, 4, 12], "texture": "#2"},
+				"down": {"uv": [3.5, 11.5, 4, 12], "texture": "#2"}
+			}
+		}
+	],
+	"gui_light": "front",
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [-80, 260, -40],
+			"translation": [-2.5, -2.5, 3],
+			"scale": [0.8, 0.8, 0.8]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [-80, 90, 40],
+			"translation": [-2.25, -3, 3],
+			"scale": [0.8, 0.8, 0.8]
+		},
+		"firstperson_righthand": {
+			"rotation": [0, -90, 25],
+			"translation": [3.13, 3.2, 2.63],
+			"scale": [0.68, 0.68, 0.68]
+		},
+		"firstperson_lefthand": {
+			"rotation": [-90, -90, 25],
+			"translation": [3.13, 3.2, 2.63],
+			"scale": [0.68, 0.68, 0.68]
+		},
+		"ground": {
+			"translation": [0, 6, 0],
+			"scale": [0.5, 0.5, 0.5]
+		},
+		"gui": {
+			"rotation": [10, -25, 2],
+			"translation": [0.25, -0.17, 0],
+			"scale": [0.66, 0.66, 0.66]
+		},
+		"fixed": {
+			"rotation": [0, 180, 0],
+			"translation": [0, 0, -1.25]
+		}
+	}
+}

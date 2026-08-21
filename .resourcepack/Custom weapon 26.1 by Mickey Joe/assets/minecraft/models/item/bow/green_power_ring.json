@@ -1,0 +1,16 @@
+{
+	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+    "parent": "item/netherite_sword/green_power_ring",
+	"display": {
+		"firstperson_righthand": {
+			"rotation": [163, 13, 176],
+			"translation": [1.63, 3.7, -0.87],
+			"scale": [0.68, 0.68, 0.68]
+		},
+		"firstperson_lefthand": {
+			"rotation": [163, 13, 176],
+			"translation": [1.63, 3.7, -0.87],
+			"scale": [0.68, 0.68, 0.68]
+		}
+	}
+}

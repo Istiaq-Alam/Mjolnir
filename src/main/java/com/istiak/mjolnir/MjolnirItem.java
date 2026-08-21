@@ -19,45 +19,100 @@ public final class MjolnirItem {
         FIGHTING
     }
 
+    /*
+     * These are the PDC keys used to identify Mjolnir and store
+     * its current mode.
+     */
     private final NamespacedKey itemKey;
     private final NamespacedKey modeKey;
 
-    public MjolnirItem(NamespacedKey itemKey, NamespacedKey modeKey) {
+    /*
+     * Resource-pack item models.
+     *
+     * IMPORTANT:
+     * These names must match the item-model identifiers in your
+     * Mjolnir resource pack.
+     *
+     * Namespace:
+     *     mjolnir
+     *
+     * Travel:
+     *     mjolnir:mjolnir
+     *
+     * Fighting:
+     *     mjolnir:mjolnir_fighting
+     */
+    private static final NamespacedKey TRAVEL_SKIN_MODEL =
+            new NamespacedKey(
+                    "mjolnir",
+                    "mjolnir"
+            );
+
+    private static final NamespacedKey FIGHTING_SKIN_MODEL =
+            new NamespacedKey(
+                    "mjolnir",
+                    "mjolnir_fighting"
+            );
+
+    public MjolnirItem(
+            NamespacedKey itemKey,
+            NamespacedKey modeKey
+    ) {
         this.itemKey = itemKey;
         this.modeKey = modeKey;
     }
 
     /**
      * Creates a new Mjolnir.
-     *
-     * The default name is set only when the weapon is first created.
-     * Future mode switches will preserve the item's existing custom name,
-     * allowing anvil/resource-pack rename systems to keep working.
      */
     public ItemStack create() {
+
         ItemStack item = new ItemStack(Material.TRIDENT);
 
         ItemMeta meta = item.getItemMeta();
 
-        if (meta != null) {
-            meta.customName(
-                    Component.text("Mjolnir", NamedTextColor.AQUA)
-                            .decoration(TextDecoration.BOLD, true)
-            );
-
-            item.setItemMeta(meta);
+        if (meta == null) {
+            return item;
         }
 
-        applyMode(item, Mode.TRAVEL);
+        /*
+         * Default Mjolnir name.
+         */
+        meta.customName(
+                Component.text(
+                        "Mjolnir",
+                        NamedTextColor.AQUA
+                ).decoration(
+                        TextDecoration.BOLD,
+                        true
+                )
+        );
+
+        item.setItemMeta(meta);
+
+        /*
+         * Start in Travel Mode.
+         */
+        applyMode(
+                item,
+                Mode.TRAVEL
+        );
+
         return item;
     }
 
     /**
-     * Checks whether the item is the real Mjolnir using its PDC marker.
-     * The visible name does not affect identification.
+     * Checks whether an item is the real Mjolnir.
+     *
+     * Identification is based on PDC, not the visible name.
      */
     public boolean isMjolnir(ItemStack item) {
-        if (item == null || item.getType() != Material.TRIDENT) {
+
+        if (item == null) {
+            return false;
+        }
+
+        if (item.getType() != Material.TRIDENT) {
             return false;
         }
 
@@ -67,21 +122,36 @@ public final class MjolnirItem {
             return false;
         }
 
-        Byte marker = meta.getPersistentDataContainer()
-                .get(itemKey, PersistentDataType.BYTE);
+        Byte marker =
+                meta.getPersistentDataContainer().get(
+                        itemKey,
+                        PersistentDataType.BYTE
+                );
 
-        return marker != null && marker == (byte) 1;
+        return marker != null
+                && marker == (byte) 1;
     }
 
+    /**
+     * Returns the current Mjolnir mode.
+     */
     public Mode getMode(ItemStack item) {
+
         if (!isMjolnir(item)) {
             return null;
         }
 
         ItemMeta meta = item.getItemMeta();
 
-        String value = meta.getPersistentDataContainer()
-                .get(modeKey, PersistentDataType.STRING);
+        if (meta == null) {
+            return null;
+        }
+
+        String value =
+                meta.getPersistentDataContainer().get(
+                        modeKey,
+                        PersistentDataType.STRING
+                );
 
         if ("fighting".equalsIgnoreCase(value)) {
             return Mode.FIGHTING;
@@ -91,17 +161,35 @@ public final class MjolnirItem {
     }
 
     /**
-     * Changes only Mjolnir's gameplay data.
+     * Applies the selected Mjolnir mode.
      *
-     * IMPORTANT:
-     * The custom item name is deliberately NOT changed here.
+     * This method:
      *
-     * This preserves anvil renames and allows the
-     * "Micky Joye Too Many Renames" resource pack to keep
-     * the Mjolnir skin after switching modes.
+     * - keeps the PDC identity
+     * - updates the mode
+     * - makes Mjolnir unbreakable
+     * - removes old enchantments
+     * - applies the correct enchantments
+     * - changes the resource-pack item model
+     * - updates the lore
+     * - preserves the current custom name
      */
-    public void applyMode(ItemStack item, Mode mode) {
+    public void applyMode(
+            ItemStack item,
+            Mode mode
+    ) {
 
+        if (item == null) {
+            return;
+        }
+
+        if (mode == null) {
+            mode = Mode.TRAVEL;
+        }
+
+        /*
+         * Mjolnir is always a trident.
+         */
         if (item.getType() != Material.TRIDENT) {
             item.setType(Material.TRIDENT);
         }
@@ -113,27 +201,35 @@ public final class MjolnirItem {
         }
 
         /*
-         * Preserve the exact current custom name before changing
-         * any other item metadata.
+         * Preserve the current custom name.
          *
-         * This includes the normal "Mjolnir" name or any name
-         * applied through an anvil.
+         * This is important because the resource-pack appearance
+         * may also be affected by the item's displayed name in
+         * other resource-pack systems.
          */
-        Component currentName = meta.hasCustomName()
-                ? meta.customName()
-                : null;
+        Component currentName =
+                meta.hasCustomName()
+                        ? meta.customName()
+                        : null;
 
         /*
-         * Persistent Mjolnir identification and current mode.
+         * Persistent Data Container.
          */
-        var pdc = meta.getPersistentDataContainer();
+        var pdc =
+                meta.getPersistentDataContainer();
 
+        /*
+         * Mark this item as Mjolnir.
+         */
         pdc.set(
                 itemKey,
                 PersistentDataType.BYTE,
                 (byte) 1
         );
 
+        /*
+         * Store current mode.
+         */
         pdc.set(
                 modeKey,
                 PersistentDataType.STRING,
@@ -143,23 +239,60 @@ public final class MjolnirItem {
         );
 
         /*
-         * Mjolnir is permanently unbreakable.
+         * Mjolnir can never break.
          */
         meta.setUnbreakable(true);
 
         /*
-         * Remove the enchantments from both modes before applying
-         * the exact enchantments required for the selected mode.
+         * Select the correct resource-pack model.
          */
-        meta.removeEnchant(Enchantment.RIPTIDE);
-        meta.removeEnchant(Enchantment.CHANNELING);
-        meta.removeEnchant(Enchantment.IMPALING);
-        meta.removeEnchant(Enchantment.LOYALTY);
-        meta.removeEnchant(Enchantment.UNBREAKING);
-        meta.removeEnchant(Enchantment.MENDING);
+        if (mode == Mode.FIGHTING) {
+
+            meta.setItemModel(
+                    FIGHTING_SKIN_MODEL
+            );
+
+        } else {
+
+            meta.setItemModel(
+                    TRAVEL_SKIN_MODEL
+            );
+        }
 
         /*
-         * Apply Travel Mode.
+         * Remove all Mjolnir mode enchantments first.
+         *
+         * This prevents incompatible enchantments from remaining
+         * when switching between modes.
+         */
+        meta.removeEnchant(
+                Enchantment.RIPTIDE
+        );
+
+        meta.removeEnchant(
+                Enchantment.CHANNELING
+        );
+
+        meta.removeEnchant(
+                Enchantment.IMPALING
+        );
+
+        meta.removeEnchant(
+                Enchantment.LOYALTY
+        );
+
+        meta.removeEnchant(
+                Enchantment.UNBREAKING
+        );
+
+        meta.removeEnchant(
+                Enchantment.MENDING
+        );
+
+        /*
+         * =========================
+         * TRAVEL MODE
+         * =========================
          */
         if (mode == Mode.TRAVEL) {
 
@@ -181,13 +314,18 @@ public final class MjolnirItem {
                     true
             );
 
-            meta.lore(travelLore());
+            meta.lore(
+                    travelLore()
+            );
 
         } else {
 
             /*
-             * Apply Fighting Mode.
+             * =========================
+             * FIGHTING MODE
+             * =========================
              */
+
             meta.addEnchant(
                     Enchantment.CHANNELING,
                     1,
@@ -218,28 +356,31 @@ public final class MjolnirItem {
                     true
             );
 
-            meta.lore(fightingLore());
+            meta.lore(
+                    fightingLore()
+            );
         }
 
         /*
-         * Restore the exact existing name.
-         *
-         * If the player renamed Mjolnir through an anvil, that name
-         * remains untouched.
-         *
-         * If the Too Many Renames resource pack uses "Mjolnir" to
-         * activate the custom skin, the name remains exactly as the
-         * resource pack/anvil system left it.
+         * Restore the original custom name.
          */
         if (currentName != null) {
             meta.customName(currentName);
         }
 
+        /*
+         * Finally write the metadata back to the ItemStack.
+         */
         item.setItemMeta(meta);
     }
 
+    /**
+     * Travel Mode lore.
+     */
     private List<Component> travelLore() {
+
         return List.of(
+
                 Component.empty(),
 
                 Component.text(
@@ -273,8 +414,13 @@ public final class MjolnirItem {
         );
     }
 
+    /**
+     * Fighting Mode lore.
+     */
     private List<Component> fightingLore() {
+
         return List.of(
+
                 Component.empty(),
 
                 Component.text(

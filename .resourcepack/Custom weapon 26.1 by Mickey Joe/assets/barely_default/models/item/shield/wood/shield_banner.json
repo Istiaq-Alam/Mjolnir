@@ -1,0 +1,37 @@
+{
+	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+	"parent": "barely_default:item/shield/shield_item_frame",
+	"textures": {
+		"shield": "barely_default:item/shield/wood/shield",
+		"particle": "block/oak_log"
+	},
+	"elements": [
+		{
+			"name": "plate",
+			"from": [-6.98, -11.005, 0.995],
+			"to": [6.98, 11.005, 2.005],
+			"rotation": {"angle": 0, "axis": "y", "origin": [0, 0, 1.5]},
+			"faces": {
+				"north": {"uv": [4, 0.25, 7.5, 5.75], "texture": "#shield"},
+				"east": {"uv": [3.75, 0.25, 4, 5.75], "texture": "#shield"},
+				"south": {"uv": [0.25, 0.25, 3.75, 5.75], "texture": "#shield"},
+				"west": {"uv": [0, 0.25, 0.25, 5.75], "texture": "#shield"},
+				"up": {"uv": [3.75, 0.25, 0.25, 0], "rotation": 180, "texture": "#shield"},
+				"down": {"uv": [7.25, 0, 3.75, 0.25], "rotation": 180, "texture": "#shield"}
+			}
+		},
+		{
+			"name": "handle",
+			"from": [-1.001, -3.001, -5.001],
+			"to": [1.001, 3.001, 1.001],
+			"rotation": {"angle": 0, "axis": "y", "origin": [0, 0, -2]},
+			"faces": {
+				"north": {"uv": [11, 1.5, 11.5, 3], "texture": "#shield"},
+				"east": {"uv": [9.5, 1.5, 11, 3], "texture": "#shield"},
+				"west": {"uv": [7.5, 1.5, 9, 3], "texture": "#shield"},
+				"up": {"uv": [9.5, 1.5, 9, 0], "rotation": 180, "texture": "#shield"},
+				"down": {"uv": [10, 0, 9.5, 1.5], "rotation": 180, "texture": "#shield"}
+			}
+		}
+	]
+}

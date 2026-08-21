@@ -1,0 +1,93 @@
+{
+	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+	"texture_size": [32, 32],
+	"textures": {
+		"particle": "item/bow/bass_arm_buster"
+	},
+	"elements": [
+		{
+			"from": [5, -0.5, 0],
+			"to": [11, 5.5, 6],
+			"rotation": {"angle": 0, "axis": "z", "origin": [-0.5, 0.5, -1]},
+			"faces": {
+				"north": {"uv": [0, 3, 3, 6], "texture": "#particle"},
+				"east": {"uv": [6, 3, 3, 6], "texture": "#particle"},
+				"south": {"uv": [6, 3, 9, 6], "texture": "#particle"},
+				"west": {"uv": [3, 3, 6, 6], "texture": "#particle"},
+				"up": {"uv": [3, 3, 0, 0], "texture": "#particle"},
+				"down": {"uv": [6, 0, 3, 3], "texture": "#particle"}
+			}
+		},
+		{
+			"from": [5.5, 0, 6],
+			"to": [10.5, 5, 9],
+			"rotation": {"angle": 0, "axis": "y", "origin": [0, 1, -1]},
+			"faces": {
+				"east": {"uv": [10.5, 1.5, 9, 4], "texture": "#particle"},
+				"south": {"uv": [10.5, 1.5, 13, 4], "texture": "#particle"},
+				"west": {"uv": [9, 1.5, 10.5, 4], "texture": "#particle"},
+				"up": {"uv": [9, 1.5, 6.5, 0], "texture": "#particle"},
+				"down": {"uv": [11.5, 0, 9, 1.5], "texture": "#particle"}
+			}
+		},
+		{
+			"from": [6, 0.5, -1],
+			"to": [10, 4.5, 0],
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.5, 1.5, 0]},
+			"faces": {
+				"north": {"uv": [9.5, 4.5, 11.5, 6.5], "texture": "#particle"},
+				"east": {"uv": [9, 4.5, 9.5, 6.5], "texture": "#particle"},
+				"west": {"uv": [11.5, 4.5, 12, 6.5], "texture": "#particle"},
+				"up": {"uv": [11.5, 4.5, 9.5, 4], "texture": "#particle"},
+				"down": {"uv": [13.5, 4, 11.5, 4.5], "texture": "#particle"}
+			}
+		},
+		{
+			"from": [9, 3.5, 1],
+			"to": [7, 1.5, -1],
+			"rotation": {"angle": 0, "axis": "y", "origin": [1.5, 3.5, 2]},
+			"faces": {
+				"north": {"uv": [14, 5, 15, 6], "texture": "#particle"},
+				"east": {"uv": [13, 5, 14, 6], "texture": "#particle"},
+				"west": {"uv": [15, 5, 16, 6], "texture": "#particle"},
+				"up": {"uv": [15, 5, 14, 4], "texture": "#particle"},
+				"down": {"uv": [16, 4, 15, 5], "texture": "#particle"}
+			}
+		}
+	],
+	"gui_light": "front",
+	"display": {
+		"thirdperson_righthand": {
+			"translation": [0, 3.5, 5.75]
+		},
+		"thirdperson_lefthand": {
+			"translation": [0, 3.5, 5.75]
+		},
+		"firstperson_righthand": {
+			"rotation": [-21, 35, 9],
+			"translation": [2.5, 6.25, 2.75],
+			"scale": [0.68, 0.68, 0.68]
+		},
+		"firstperson_lefthand": {
+			"rotation": [-21, 35, 9],
+			"translation": [2.5, 6.25, 2.75],
+			"scale": [0.68, 0.68, 0.68]
+		},
+		"ground": {
+			"translation": [0, 5.75, 2.5],
+			"scale": [0.75, 0.75, 0.75]
+		},
+		"gui": {
+			"rotation": [105.55, 38.13, -131.38],
+			"translation": [7.75, -0.75, 0],
+			"scale": [1.162, 1.162, 1.162]
+		},
+		"head": {
+			"translation": [0, 1.5, -6.5]
+		},
+		"fixed": {
+			"rotation": [90, -45, 90],
+			"translation": [-6, 2.75, -1.75]
+		}
+	}
+}

@@ -1,0 +1,57 @@
+{
+	"format_version": "1.21.11",
+	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+	"parent": "builtin/generated",
+	"textures": {
+		"1": "item/netherite_axe/sakura_axe",
+		"layer0": "item/netherite_axe/rhitta",
+		"particle": "item/netherite_axe/sakura_axe"
+	},
+	"gui_light": "front",
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [0, -90, 47],
+			"translation": [0, 9.75, 0.5],
+			"scale": [1.7, 1.7, 0.85]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [0, 90, -47],
+			"translation": [0, 9.75, 0.5],
+			"scale": [1.7, 1.7, 0.85]
+		},
+		"firstperson_righthand": {
+			"rotation": [-147, -70, -119],
+			"translation": [5, 8.7, 1.13],
+			"scale": [1.36, 1.36, 0.68]
+		},
+		"firstperson_lefthand": {
+			"rotation": [-147, 110, 119],
+			"translation": [5, 8.7, 1.13],
+			"scale": [1.36, 1.36, 0.68]
+		},
+		"ground": {
+			"translation": [1.25, 5.25, 0],
+			"scale": [1, 1, 0.5]
+		},
+		"gui": {
+			"rotation": [0, -25.5, -3],
+			"translation": [-0.05, 0.2, 0],
+			"scale": [1.16, 1.16, 0.58]
+		},
+		"head": {
+			"rotation": [-48, -90, 0],
+			"translation": [0, 9.25, -1.5],
+			"scale": [2, 2, 1]
+		},
+		"fixed": {
+			"rotation": [0, -180, 0],
+			"translation": [-0.75, 1.25, -0.25],
+			"scale": [2, 2, 1]
+		},
+		"on_shelf": {
+			"rotation": [125, -90, -5],
+			"translation": [0, 11.5, 12],
+			"scale": [4, 4, 2]
+		}
+	}
+}

@@ -1,0 +1,628 @@
+{
+	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+	"texture_size": [32, 32],
+	"textures": {
+		"particle": "item/mace/haemorrhaxe"
+	},
+	"elements": [
+		{
+			"name": "haemorrhaxe_0",
+			"from": [7.5, 20, 10.75],
+			"to": [8.5, 23, 13.75],
+			"rotation": {"angle": -45, "axis": "x", "origin": [8, 7, 7.5]},
+			"faces": {
+				"north": {"uv": [9, 0, 9.5, 1.5], "texture": "#particle"},
+				"east": {"uv": [10.5, 0, 9, 1.5], "texture": "#particle"},
+				"south": {"uv": [10, 0, 10.5, 1.5], "texture": "#particle"},
+				"west": {"uv": [9, 0, 10.5, 1.5], "texture": "#particle"},
+				"up": {"uv": [9, 0, 10.5, 0.5], "rotation": 90, "texture": "#particle"},
+				"down": {"uv": [9, 1, 10.5, 1.5], "rotation": 270, "texture": "#particle"}
+			}
+		},
+		{
+			"name": "haemorrhaxe_1",
+			"from": [7.5, 21, 13.75],
+			"to": [8.5, 23, 14.75],
+			"rotation": {"angle": -45, "axis": "x", "origin": [8, 7, 7.5]},
+			"faces": {
+				"east": {"uv": [11, 0, 10.5, 1], "texture": "#particle"},
+				"south": {"uv": [10.5, 0, 11, 1], "texture": "#particle"},
+				"west": {"uv": [10.5, 0, 11, 1], "texture": "#particle"},
+				"up": {"uv": [10.5, 0, 11, 0.5], "rotation": 90, "texture": "#particle"},
+				"down": {"uv": [10.5, 0.5, 11, 1], "rotation": 270, "texture": "#particle"}
+			}
+		},
+		{
+			"name": "haemorrhaxe_2",
+			"from": [7.5, 13, 7.75],
+			"to": [8.5, 22, 10.75],
+			"rotation": {"angle": -45, "axis": "x", "origin": [8, 7, 7.5]},
+			"faces": {
+				"north": {"uv": [7.5, 0.5, 8, 5], "texture": "#particle"},
+				"east": {"uv": [9, 0.5, 7.5, 5], "texture": "#particle"},
+				"west": {"uv": [7.5, 0.5, 9, 5], "texture": "#particle"},
+				"up": {"uv": [7.5, 0.5, 9, 1], "rotation": 90, "texture": "#particle"},
+				"down": {"uv": [7.5, 4.5, 9, 5], "rotation": 270, "texture": "#particle"}
+			}
+		},
+		{
+			"name": "haemorrhaxe_3",
+			"from": [7.5, 13, 6.75],
+			"to": [8.5, 21, 7.75],
+			"rotation": {"angle": -45, "axis": "x", "origin": [8, 7, 7.5]},
+			"faces": {
+				"north": {"uv": [7, 1, 7.5, 5], "texture": "#particle"},
+				"east": {"uv": [7.5, 1, 7, 5], "texture": "#particle"},
+				"west": {"uv": [7, 1, 7.5, 5], "texture": "#particle"},
+				"up": {"uv": [7, 1, 7.5, 1.5], "rotation": 90, "texture": "#particle"},
+				"down": {"uv": [7, 4.5, 7.5, 5], "rotation": 270, "texture": "#particle"}
+			}
+		},
+		{
+			"name": "haemorrhaxe_4",
+			"from": [7.5, 13, 5.75],
+			"to": [8.5, 20, 6.75],
+			"rotation": {"angle": -45, "axis": "x", "origin": [8, 7, 7.5]},
+			"faces": {
+				"north": {"uv": [6.5, 1.5, 7, 5], "texture": "#particle"},
+				"east": {"uv": [7, 1.5, 6.5, 5], "texture": "#particle"},
+				"west": {"uv": [6.5, 1.5, 7, 5], "texture": "#particle"},
+				"up": {"uv": [6.5, 1.5, 7, 2], "rotation": 90, "texture": "#particle"},
+				"down": {"uv": [6.5, 4.5, 7, 5], "rotation": 270, "texture": "#particle"}
+			}
+		},
+		{
+			"name": "haemorrhaxe_5",
+			"from": [7.5, 19, 10.75],
+			"to": [8.5, 20, 12.75],
+			"rotation": {"angle": -45, "axis": "x", "origin": [8, 7, 7.5]},
+			"faces": {
+				"east": {"uv": [10, 1.5, 9, 2], "texture": "#particle"},
+				"south": {"uv": [9.5, 1.5, 10, 2], "texture": "#particle"},
+				"west": {"uv": [9, 1.5, 10, 2], "texture": "#particle"},
+				"down": {"uv": [9, 1.5, 10, 2], "rotation": 270, "texture": "#particle"}
+			}
+		},
+		{
+			"name": "haemorrhaxe_6",
+			"from": [7.5, 12, 4.75],
+			"to": [8.5, 19, 5.75],
+			"rotation": {"angle": -45, "axis": "x", "origin": [8, 7, 7.5]},
+			"faces": {
+				"north": {"uv": [6, 12, 6.5, 15.5], "texture": "#particle"},
+				"east": {"uv": [6.5, 12, 6, 15.5], "texture": "#particle"},
+				"south": {"uv": [6, 12, 6.5, 15.5], "texture": "#particle"},
+				"west": {"uv": [6, 12, 6.5, 15.5], "texture": "#particle"},
+				"up": {"uv": [6, 12, 6.5, 12.5], "rotation": 90, "texture": "#particle"},
+				"down": {"uv": [6, 15, 6.5, 15.5], "rotation": 270, "texture": "#particle"}
+			}
+		},
+		{
+			"name": "haemorrhaxe_7",
+			"from": [7.5, 8, 10.75],
+			"to": [8.5, 19, 11.75],
+			"rotation": {"angle": -45, "axis": "x", "origin": [8, 7, 7.5]},
+			"faces": {
+				"east": {"uv": [9.5, 2, 9, 7.5], "texture": "#particle"},
+				"south": {"uv": [9, 2, 9.5, 7.5], "texture": "#particle"},
+				"west": {"uv": [9, 2, 9.5, 7.5], "texture": "#particle"},
+				"down": {"uv": [9, 7, 9.5, 7.5], "rotation": 270, "texture": "#particle"}
+			}
+		},
+		{
+			"name": "haemorrhaxe_8",
+			"from": [7.5, 11, 3.75],
+			"to": [8.5, 18, 4.75],
+			"rotation": {"angle": -45, "axis": "x", "origin": [8, 7, 7.5]},
+			"faces": {
+				"north": {"uv": [5.5, 12.5, 6, 16], "texture": "#particle"},
+				"east": {"uv": [6, 12.5, 5.5, 16], "texture": "#particle"},
+				"south": {"uv": [5.5, 12.5, 6, 16], "texture": "#particle"},
+				"west": {"uv": [5.5, 12.5, 6, 16], "texture": "#particle"},
+				"up": {"uv": [5.5, 12.5, 6, 13], "rotation": 90, "texture": "#particle"},
+				"down": {"uv": [5.5, 15.5, 6, 16], "rotation": 270, "texture": "#particle"}
+			}
+		},
+		{
+			"name": "haemorrhaxe_9",
+			"from": [7.5, 9, 11.75],
+			"to": [8.5, 17, 12.75],
+			"rotation": {"angle": -45, "axis": "x", "origin": [8, 7, 7.5]},
+			"faces": {
+				"east": {"uv": [10, 3, 9.5, 7], "texture": "#particle"},
+				"south": {"uv": [9.5, 3, 10, 7], "texture": "#particle"},
+				"west": {"uv": [9.5, 3, 10, 7], "texture": "#particle"},
+				"up": {"uv": [9.5, 3, 10, 3.5], "rotation": 90, "texture": "#particle"},
+				"down": {"uv": [9.5, 6.5, 10, 7], "rotation": 270, "texture": "#particle"}
+			}
+		},
+		{
+			"name": "haemorrhaxe_10",
+			"from": [7.5, 9, 12.75],
+			"to": [8.5, 16, 13.75],
+			"rotation": {"angle": -45, "axis": "x", "origin": [8, 7, 7.5]},
+			"faces": {
+				"east": {"uv": [10.5, 3.5, 10, 7], "texture": "#particle"},
+				"south": {"uv": [10, 3.5, 10.5, 7], "texture": "#particle"},
+				"west": {"uv": [10, 3.5, 10.5, 7], "texture": "#particle"},
+				"up": {"uv": [10, 3.5, 10.5, 4], "rotation": 90, "texture": "#particle"},
+				"down": {"uv": [10, 6.5, 10.5, 7], "rotation": 270, "texture": "#particle"}
+			}
+		},
+		{
+			"name": "haemorrhaxe_11",
+			"from": [7.5, 11, 2.75],
+			"to": [8.5, 15, 3.75],
+			"rotation": {"angle": -45, "axis": "x", "origin": [8, 7, 7.5]},
+			"faces": {
+				"north": {"uv": [5, 14, 5.5, 16], "texture": "#particle"},
+				"east": {"uv": [5.5, 14, 5, 16], "texture": "#particle"},
+				"west": {"uv": [5, 14, 5.5, 16], "texture": "#particle"},
+				"up": {"uv": [5, 14, 5.5, 14.5], "rotation": 90, "texture": "#particle"},
+				"down": {"uv": [5, 15.5, 5.5, 16], "rotation": 270, "texture": "#particle"}
+			}
+		},
+		{
+			"name": "haemorrhaxe_12",
+			"from": [7.5, 11, 13.75],
+			"to": [8.5, 15, 17.75],
+			"rotation": {"angle": -45, "axis": "x", "origin": [8, 7, 7.5]},
+			"faces": {
+				"east": {"uv": [12.5, 4, 10.5, 6], "texture": "#particle"},
+				"south": {"uv": [12, 4, 12.5, 6], "texture": "#particle"},
+				"west": {"uv": [10.5, 4, 12.5, 6], "texture": "#particle"},
+				"up": {"uv": [10.5, 4, 12.5, 4.5], "rotation": 90, "texture": "#particle"},
+				"down": {"uv": [10.5, 5.5, 12.5, 6], "rotation": 270, "texture": "#particle"}
+			}
+		},
+		{
+			"name": "haemorrhaxe_13",
+			"from": [7.5, 13, 20.75],
+			"to": [8.5, 14, 22.75],
+			"rotation": {"angle": -45, "axis": "x", "origin": [8, 7, 7.5]},
+			"faces": {
+				"north": {"uv": [14, 4.5, 14.5, 5], "texture": "#particle"},
+				"east": {"uv": [15, 4.5, 14, 5], "texture": "#particle"},
+				"west": {"uv": [14, 4.5, 15, 5], "texture": "#particle"},
+				"up": {"uv": [14, 4.5, 15, 5], "rotation": 90, "texture": "#particle"}
+			}
+		},
+		{
+			"name": "haemorrhaxe_14",
+			"from": [7.5, 12, 8.75],
+			"to": [8.5, 13, 10.75],
+			"rotation": {"angle": -45, "axis": "x", "origin": [8, 7, 7.5]},
+			"faces": {
+				"north": {"uv": [8, 5, 8.5, 5.5], "texture": "#particle"},
+				"east": {"uv": [9, 5, 8, 5.5], "texture": "#particle"},
+				"west": {"uv": [8, 5, 9, 5.5], "texture": "#particle"},
+				"down": {"uv": [8, 5, 9, 5.5], "rotation": 270, "texture": "#particle"}
+			}
+		},
+		{
+			"name": "haemorrhaxe_15",
+			"from": [7.5, 12, 17.75],
+			"to": [8.5, 13, 21.75],
+			"rotation": {"angle": -45, "axis": "x", "origin": [8, 7, 7.5]},
+			"faces": {
+				"east": {"uv": [14.5, 5, 12.5, 5.5], "texture": "#particle"},
+				"west": {"uv": [12.5, 5, 14.5, 5.5], "texture": "#particle"},
+				"up": {"uv": [12.5, 5, 14.5, 5.5], "rotation": 90, "texture": "#particle"},
+				"down": {"uv": [12.5, 5, 14.5, 5.5], "rotation": 270, "texture": "#particle"}
+			}
+		},
+		{
+			"name": "haemorrhaxe_16",
+			"from": [7.5, 7, 9.75],
+			"to": [8.5, 12, 10.75],
+			"rotation": {"angle": -45, "axis": "x", "origin": [8, 7, 7.5]},
+			"faces": {
+				"north": {"uv": [8.5, 5.5, 9, 8], "texture": "#particle"},
+				"east": {"uv": [9, 5.5, 8.5, 8], "texture": "#particle"},
+				"south": {"uv": [8.5, 5.5, 9, 8], "texture": "#particle"},
+				"west": {"uv": [8.5, 5.5, 9, 8], "texture": "#particle"},
+				"down": {"uv": [8.5, 7.5, 9, 8], "rotation": 270, "texture": "#particle"}
+			}
+		},
+		{
+			"name": "haemorrhaxe_17",
+			"from": [7.5, 10, 17.75],
+			"to": [8.5, 12, 18.75],
+			"rotation": {"angle": -45, "axis": "x", "origin": [8, 7, 7.5]},
+			"faces": {
+				"north": {"uv": [12.5, 5.5, 13, 6.5], "texture": "#particle"},
+				"east": {"uv": [13, 5.5, 12.5, 6.5], "texture": "#particle"},
+				"south": {"uv": [12.5, 5.5, 13, 6.5], "texture": "#particle"},
+				"west": {"uv": [12.5, 5.5, 13, 6.5], "texture": "#particle"},
+				"down": {"uv": [12.5, 6, 13, 6.5], "rotation": 270, "texture": "#particle"}
+			}
+		},
+		{
+			"name": "haemorrhaxe_18",
+			"from": [7.5, 6, 7.75],
+			"to": [8.5, 11, 9.75],
+			"rotation": {"angle": -45, "axis": "x", "origin": [8, 7, 7.5]},
+			"faces": {
+				"north": {"uv": [7.5, 6, 8, 8.5], "texture": "#particle"},
+				"east": {"uv": [8.5, 6, 7.5, 8.5], "texture": "#particle"},
+				"south": {"uv": [8, 6, 8.5, 8.5], "texture": "#particle"},
+				"west": {"uv": [7.5, 6, 8.5, 8.5], "texture": "#particle"},
+				"up": {"uv": [7.5, 6, 8.5, 6.5], "rotation": 90, "texture": "#particle"},
+				"down": {"uv": [7.5, 8, 8.5, 8.5], "rotation": 270, "texture": "#particle"}
+			}
+		},
+		{
+			"name": "haemorrhaxe_19",
+			"from": [7.5, 9, 13.75],
+			"to": [8.5, 11, 16.75],
+			"rotation": {"angle": -45, "axis": "x", "origin": [8, 7, 7.5]},
+			"faces": {
+				"east": {"uv": [12, 6, 10.5, 7], "texture": "#particle"},
+				"south": {"uv": [11.5, 6, 12, 7], "texture": "#particle"},
+				"west": {"uv": [10.5, 6, 12, 7], "texture": "#particle"},
+				"down": {"uv": [10.5, 6.5, 12, 7], "rotation": 270, "texture": "#particle"}
+			}
+		},
+		{
+			"name": "haemorrhaxe_20",
+			"from": [7.5, 10, 18.75],
+			"to": [8.5, 11, 19.75],
+			"rotation": {"angle": -45, "axis": "x", "origin": [8, 7, 7.5]},
+			"faces": {
+				"east": {"uv": [13.5, 6, 13, 6.5], "texture": "#particle"},
+				"west": {"uv": [13, 6, 13.5, 6.5], "texture": "#particle"},
+				"up": {"uv": [13, 6, 13.5, 6.5], "rotation": 90, "texture": "#particle"}
+			}
+		},
+		{
+			"name": "haemorrhaxe_21",
+			"from": [7.5, 9, 6.75],
+			"to": [8.5, 10, 7.75],
+			"rotation": {"angle": -45, "axis": "x", "origin": [8, 7, 7.5]},
+			"faces": {
+				"north": {"uv": [7, 6.5, 7.5, 7], "texture": "#particle"},
+				"east": {"uv": [7.5, 6.5, 7, 7], "texture": "#particle"},
+				"west": {"uv": [7, 6.5, 7.5, 7], "texture": "#particle"},
+				"up": {"uv": [7, 6.5, 7.5, 7], "rotation": 90, "texture": "#particle"},
+				"down": {"uv": [7, 6.5, 7.5, 7], "rotation": 270, "texture": "#particle"}
+			}
+		},
+		{
+			"name": "haemorrhaxe_22",
+			"from": [7.5, 7, 13.75],
+			"to": [8.5, 9, 14.75],
+			"rotation": {"angle": -45, "axis": "x", "origin": [8, 7, 7.5]},
+			"faces": {
+				"north": {"uv": [10.5, 7, 11, 8], "texture": "#particle"},
+				"east": {"uv": [11, 7, 10.5, 8], "texture": "#particle"},
+				"south": {"uv": [10.5, 7, 11, 8], "texture": "#particle"},
+				"west": {"uv": [10.5, 7, 11, 8], "texture": "#particle"},
+				"down": {"uv": [10.5, 7.5, 11, 8], "rotation": 270, "texture": "#particle"}
+			}
+		},
+		{
+			"name": "haemorrhaxe_23",
+			"from": [7.5, 8, 15.75],
+			"to": [8.5, 9, 17.75],
+			"rotation": {"angle": -45, "axis": "x", "origin": [8, 7, 7.5]},
+			"faces": {
+				"north": {"uv": [11.5, 7, 12, 7.5], "texture": "#particle"},
+				"east": {"uv": [12.5, 7, 11.5, 7.5], "texture": "#particle"},
+				"west": {"uv": [11.5, 7, 12.5, 7.5], "texture": "#particle"},
+				"up": {"uv": [11.5, 7, 12.5, 7.5], "rotation": 90, "texture": "#particle"},
+				"down": {"uv": [11.5, 7, 12.5, 7.5], "rotation": 270, "texture": "#particle"}
+			}
+		},
+		{
+			"name": "haemorrhaxe_24",
+			"from": [7.5, 4, 6.75],
+			"to": [8.5, 8, 7.75],
+			"rotation": {"angle": -45, "axis": "x", "origin": [8, 7, 7.5]},
+			"faces": {
+				"north": {"uv": [7, 7.5, 7.5, 9.5], "texture": "#particle"},
+				"east": {"uv": [7.5, 7.5, 7, 9.5], "texture": "#particle"},
+				"south": {"uv": [7, 7.5, 7.5, 9.5], "texture": "#particle"},
+				"west": {"uv": [7, 7.5, 7.5, 9.5], "texture": "#particle"},
+				"up": {"uv": [7, 7.5, 7.5, 8], "rotation": 90, "texture": "#particle"},
+				"down": {"uv": [7, 9, 7.5, 9.5], "rotation": 270, "texture": "#particle"}
+			}
+		},
+		{
+			"name": "haemorrhaxe_25",
+			"from": [7.5, 6, 14.75],
+			"to": [8.5, 8, 15.75],
+			"rotation": {"angle": -45, "axis": "x", "origin": [8, 7, 7.5]},
+			"faces": {
+				"north": {"uv": [11, 7.5, 11.5, 8.5], "texture": "#particle"},
+				"east": {"uv": [11.5, 7.5, 11, 8.5], "texture": "#particle"},
+				"south": {"uv": [11, 7.5, 11.5, 8.5], "texture": "#particle"},
+				"west": {"uv": [11, 7.5, 11.5, 8.5], "texture": "#particle"},
+				"up": {"uv": [11, 7.5, 11.5, 8], "rotation": 90, "texture": "#particle"},
+				"down": {"uv": [11, 8, 11.5, 8.5], "rotation": 270, "texture": "#particle"}
+			}
+		},
+		{
+			"name": "haemorrhaxe_26",
+			"from": [7.5, 7, 16.75],
+			"to": [8.5, 8, 17.75],
+			"rotation": {"angle": -45, "axis": "x", "origin": [8, 7, 7.5]},
+			"faces": {
+				"east": {"uv": [12.5, 7.5, 12, 8], "texture": "#particle"},
+				"west": {"uv": [12, 7.5, 12.5, 8], "texture": "#particle"}
+			}
+		},
+		{
+			"name": "haemorrhaxe_27",
+			"from": [7.5, 2, 5.75],
+			"to": [8.5, 7, 6.75],
+			"rotation": {"angle": -45, "axis": "x", "origin": [8, 7, 7.5]},
+			"faces": {
+				"north": {"uv": [6.5, 8, 7, 10.5], "texture": "#particle"},
+				"east": {"uv": [7, 8, 6.5, 10.5], "texture": "#particle"},
+				"south": {"uv": [6.5, 8, 7, 10.5], "texture": "#particle"},
+				"west": {"uv": [6.5, 8, 7, 10.5], "texture": "#particle"},
+				"up": {"uv": [6.5, 8, 7, 8.5], "rotation": 90, "texture": "#particle"},
+				"down": {"uv": [6.5, 10, 7, 10.5], "rotation": 270, "texture": "#particle"}
+			}
+		},
+		{
+			"name": "haemorrhaxe_28",
+			"from": [7.5, 1, 4.75],
+			"to": [8.5, 6, 5.75],
+			"rotation": {"angle": -45, "axis": "x", "origin": [8, 7, 7.5]},
+			"faces": {
+				"north": {"uv": [6, 8.5, 6.5, 11], "texture": "#particle"},
+				"east": {"uv": [6.5, 8.5, 6, 11], "texture": "#particle"},
+				"south": {"uv": [6, 8.5, 6.5, 11], "texture": "#particle"},
+				"west": {"uv": [6, 8.5, 6.5, 11], "texture": "#particle"},
+				"up": {"uv": [6, 8.5, 6.5, 9], "rotation": 90, "texture": "#particle"},
+				"down": {"uv": [6, 10.5, 6.5, 11], "rotation": 270, "texture": "#particle"}
+			}
+		},
+		{
+			"name": "haemorrhaxe_29",
+			"from": [7.5, 5, 7.75],
+			"to": [8.5, 6, 8.75],
+			"rotation": {"angle": -45, "axis": "x", "origin": [8, 7, 7.5]},
+			"faces": {
+				"east": {"uv": [8, 8.5, 7.5, 9], "texture": "#particle"},
+				"south": {"uv": [7.5, 8.5, 8, 9], "texture": "#particle"},
+				"west": {"uv": [7.5, 8.5, 8, 9], "texture": "#particle"},
+				"down": {"uv": [7.5, 8.5, 8, 9], "rotation": 270, "texture": "#particle"}
+			}
+		},
+		{
+			"name": "haemorrhaxe_30",
+			"from": [7.5, 0, 3.75],
+			"to": [8.5, 5, 4.75],
+			"rotation": {"angle": -45, "axis": "x", "origin": [8, 7, 7.5]},
+			"faces": {
+				"north": {"uv": [5.5, 9, 6, 11.5], "texture": "#particle"},
+				"east": {"uv": [6, 9, 5.5, 11.5], "texture": "#particle"},
+				"south": {"uv": [5.5, 9, 6, 11.5], "texture": "#particle"},
+				"west": {"uv": [5.5, 9, 6, 11.5], "texture": "#particle"},
+				"up": {"uv": [5.5, 9, 6, 9.5], "rotation": 90, "texture": "#particle"},
+				"down": {"uv": [5.5, 11, 6, 11.5], "rotation": 270, "texture": "#particle"}
+			}
+		},
+		{
+			"name": "haemorrhaxe_31",
+			"from": [7.5, -1, 2.75],
+			"to": [8.5, 3, 3.75],
+			"rotation": {"angle": -45, "axis": "x", "origin": [8, 7, 7.5]},
+			"faces": {
+				"north": {"uv": [5, 10, 5.5, 12], "texture": "#particle"},
+				"east": {"uv": [5.5, 10, 5, 12], "texture": "#particle"},
+				"south": {"uv": [5, 10, 5.5, 12], "texture": "#particle"},
+				"west": {"uv": [5, 10, 5.5, 12], "texture": "#particle"},
+				"up": {"uv": [5, 10, 5.5, 10.5], "rotation": 90, "texture": "#particle"},
+				"down": {"uv": [5, 11.5, 5.5, 12], "rotation": 270, "texture": "#particle"}
+			}
+		},
+		{
+			"name": "haemorrhaxe_32",
+			"from": [7.5, -2, 1.75],
+			"to": [8.5, 2, 2.75],
+			"rotation": {"angle": -45, "axis": "x", "origin": [8, 7, 7.5]},
+			"faces": {
+				"north": {"uv": [4.5, 10.5, 5, 12.5], "texture": "#particle"},
+				"east": {"uv": [5, 10.5, 4.5, 12.5], "texture": "#particle"},
+				"south": {"uv": [4.5, 10.5, 5, 12.5], "texture": "#particle"},
+				"west": {"uv": [4.5, 10.5, 5, 12.5], "texture": "#particle"},
+				"up": {"uv": [4.5, 10.5, 5, 11], "rotation": 90, "texture": "#particle"},
+				"down": {"uv": [4.5, 12, 5, 12.5], "rotation": 270, "texture": "#particle"}
+			}
+		},
+		{
+			"name": "haemorrhaxe_33",
+			"from": [7.5, -2, 0.75],
+			"to": [8.5, 1, 1.75],
+			"rotation": {"angle": -45, "axis": "x", "origin": [8, 7, 7.5]},
+			"faces": {
+				"north": {"uv": [4, 11, 4.5, 12.5], "texture": "#particle"},
+				"east": {"uv": [4.5, 11, 4, 12.5], "texture": "#particle"},
+				"west": {"uv": [4, 11, 4.5, 12.5], "texture": "#particle"},
+				"up": {"uv": [4, 11, 4.5, 11.5], "rotation": 90, "texture": "#particle"},
+				"down": {"uv": [4, 12, 4.5, 12.5], "rotation": 270, "texture": "#particle"}
+			}
+		},
+		{
+			"name": "haemorrhaxe_34",
+			"from": [7.5, -5, -0.25],
+			"to": [8.5, 0, 0.75],
+			"rotation": {"angle": -45, "axis": "x", "origin": [8, 7, 7.5]},
+			"faces": {
+				"north": {"uv": [3.5, 11.5, 4, 14], "texture": "#particle"},
+				"east": {"uv": [4, 11.5, 3.5, 14], "texture": "#particle"},
+				"south": {"uv": [3.5, 11.5, 4, 14], "texture": "#particle"},
+				"west": {"uv": [3.5, 11.5, 4, 14], "texture": "#particle"},
+				"up": {"uv": [3.5, 11.5, 4, 12], "rotation": 90, "texture": "#particle"},
+				"down": {"uv": [3.5, 13.5, 4, 14], "rotation": 270, "texture": "#particle"}
+			}
+		},
+		{
+			"name": "haemorrhaxe_35",
+			"from": [7.5, -6, -1.25],
+			"to": [8.5, -1, -0.25],
+			"rotation": {"angle": -45, "axis": "x", "origin": [8, 7, 7.5]},
+			"faces": {
+				"north": {"uv": [3, 12, 3.5, 14.5], "texture": "#particle"},
+				"east": {"uv": [3.5, 12, 3, 14.5], "texture": "#particle"},
+				"south": {"uv": [3, 12, 3.5, 14.5], "texture": "#particle"},
+				"west": {"uv": [3, 12, 3.5, 14.5], "texture": "#particle"},
+				"up": {"uv": [3, 12, 3.5, 12.5], "rotation": 90, "texture": "#particle"},
+				"down": {"uv": [3, 14, 3.5, 14.5], "rotation": 270, "texture": "#particle"}
+			}
+		},
+		{
+			"name": "haemorrhaxe_36",
+			"from": [7.5, -5, -2.25],
+			"to": [8.5, -2, -1.25],
+			"rotation": {"angle": -45, "axis": "x", "origin": [8, 7, 7.5]},
+			"faces": {
+				"north": {"uv": [2.5, 12.5, 3, 14], "texture": "#particle"},
+				"east": {"uv": [3, 12.5, 2.5, 14], "texture": "#particle"},
+				"west": {"uv": [2.5, 12.5, 3, 14], "texture": "#particle"},
+				"up": {"uv": [2.5, 12.5, 3, 13], "rotation": 90, "texture": "#particle"},
+				"down": {"uv": [2.5, 13.5, 3, 14], "rotation": 270, "texture": "#particle"}
+			}
+		},
+		{
+			"name": "haemorrhaxe_37",
+			"from": [7.5, -6, -3.25],
+			"to": [8.5, -3, -2.25],
+			"rotation": {"angle": -45, "axis": "x", "origin": [8, 7, 7.5]},
+			"faces": {
+				"north": {"uv": [2, 13, 2.5, 14.5], "texture": "#particle"},
+				"east": {"uv": [2.5, 13, 2, 14.5], "texture": "#particle"},
+				"south": {"uv": [2, 13, 2.5, 14.5], "texture": "#particle"},
+				"west": {"uv": [2, 13, 2.5, 14.5], "texture": "#particle"},
+				"up": {"uv": [2, 13, 2.5, 13.5], "rotation": 90, "texture": "#particle"},
+				"down": {"uv": [2, 14, 2.5, 14.5], "rotation": 270, "texture": "#particle"}
+			}
+		},
+		{
+			"name": "haemorrhaxe_38",
+			"from": [7.5, -7, -4.25],
+			"to": [8.5, -4, -3.25],
+			"rotation": {"angle": -45, "axis": "x", "origin": [8, 7, 7.5]},
+			"faces": {
+				"north": {"uv": [1.5, 13.5, 2, 15], "texture": "#particle"},
+				"east": {"uv": [2, 13.5, 1.5, 15], "texture": "#particle"},
+				"south": {"uv": [1.5, 13.5, 2, 15], "texture": "#particle"},
+				"west": {"uv": [1.5, 13.5, 2, 15], "texture": "#particle"},
+				"up": {"uv": [1.5, 13.5, 2, 14], "rotation": 90, "texture": "#particle"},
+				"down": {"uv": [1.5, 14.5, 2, 15], "rotation": 270, "texture": "#particle"}
+			}
+		},
+		{
+			"name": "haemorrhaxe_39",
+			"from": [7.5, -8, -5.25],
+			"to": [8.5, -5, -4.25],
+			"rotation": {"angle": -45, "axis": "x", "origin": [8, 7, 7.5]},
+			"faces": {
+				"north": {"uv": [1, 14, 1.5, 15.5], "texture": "#particle"},
+				"east": {"uv": [1.5, 14, 1, 15.5], "texture": "#particle"},
+				"south": {"uv": [1, 14, 1.5, 15.5], "texture": "#particle"},
+				"west": {"uv": [1, 14, 1.5, 15.5], "texture": "#particle"},
+				"up": {"uv": [1, 14, 1.5, 14.5], "rotation": 90, "texture": "#particle"},
+				"down": {"uv": [1, 15, 1.5, 15.5], "rotation": 270, "texture": "#particle"}
+			}
+		},
+		{
+			"name": "haemorrhaxe_40",
+			"from": [7.5, -9, -6.25],
+			"to": [8.5, -6, -5.25],
+			"rotation": {"angle": -45, "axis": "x", "origin": [8, 7, 7.5]},
+			"faces": {
+				"north": {"uv": [0.5, 14.5, 1, 16], "texture": "#particle"},
+				"east": {"uv": [1, 14.5, 0.5, 16], "texture": "#particle"},
+				"south": {"uv": [0.5, 14.5, 1, 16], "texture": "#particle"},
+				"west": {"uv": [0.5, 14.5, 1, 16], "texture": "#particle"},
+				"up": {"uv": [0.5, 14.5, 1, 15], "rotation": 90, "texture": "#particle"},
+				"down": {"uv": [0.5, 15.5, 1, 16], "rotation": 270, "texture": "#particle"}
+			}
+		},
+		{
+			"name": "haemorrhaxe_41",
+			"from": [7.5, -9, -7.25],
+			"to": [8.5, -7, -6.25],
+			"rotation": {"angle": -45, "axis": "x", "origin": [8, 7, 7.5]},
+			"faces": {
+				"north": {"uv": [0, 15, 0.5, 16], "texture": "#particle"},
+				"east": {"uv": [0.5, 15, 0, 16], "texture": "#particle"},
+				"west": {"uv": [0, 15, 0.5, 16], "texture": "#particle"},
+				"up": {"uv": [0, 15, 0.5, 15.5], "rotation": 90, "texture": "#particle"},
+				"down": {"uv": [0, 15.5, 0.5, 16], "rotation": 270, "texture": "#particle"}
+			}
+		},
+		{
+			"from": [2.5, 11.2, 13.325],
+			"to": [13.5, 23.2, 17.325],
+			"rotation": {"angle": 0, "axis": "y", "origin": [6.5, 13.2, 13.325]},
+			"faces": {
+				"north": {"uv": [10.5, 10, 16, 16], "texture": "#particle"},
+				"east": {"uv": [8.5, 10, 10.5, 16], "texture": "#particle"},
+				"south": {"uv": [10.5, 10, 16, 16], "texture": "#particle"},
+				"west": {"uv": [8.5, 10, 10.5, 16], "texture": "#particle"},
+				"up": {"uv": [16, 4, 10.5, 2], "texture": "#particle"},
+				"down": {"uv": [16, 2, 10.5, 4], "texture": "#particle"}
+			}
+		},
+		{
+			"from": [1.5, 10.2, 12.325],
+			"to": [14.5, 24.2, 18.325],
+			"rotation": {"angle": 0, "axis": "y", "origin": [6.5, 13.2, 13.325]},
+			"faces": {
+				"north": {"uv": [0, 0, 6.5, 7], "texture": "#particle"},
+				"east": {"uv": [0, 0, 3, 7], "texture": "#particle"},
+				"south": {"uv": [0, 0, 6.5, 7], "texture": "#particle"},
+				"west": {"uv": [3.5, 0, 6.5, 7], "texture": "#particle"},
+				"up": {"uv": [6.5, 3, 0, 0], "texture": "#particle"},
+				"down": {"uv": [6.5, 7, 0, 4], "texture": "#particle"}
+			}
+		}
+	],
+	"gui_light": "front",
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [0, 180, 0],
+			"translation": [0, 4.75, 2.5],
+			"scale": [0.85, 0.85, 0.85]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [0, 180, 0],
+			"translation": [0, 4.75, 2.5],
+			"scale": [0.85, 0.85, 0.85]
+		},
+		"firstperson_righthand": {
+			"rotation": [15, 174, -4],
+			"translation": [6, 3, 0.5],
+			"scale": [0.55, 0.55, 0.55]
+		},
+		"firstperson_lefthand": {
+			"rotation": [15, 174, -4],
+			"translation": [6, 3, 0.5],
+			"scale": [0.55, 0.55, 0.55]
+		},
+		"ground": {
+			"rotation": [-45, -25.5, 0],
+			"translation": [0, 7.75, 0],
+			"scale": [0.5, 0.5, 0.5]
+		},
+		"gui": {
+			"rotation": [-113, -30, -124],
+			"translation": [0.6, -1, 0],
+			"scale": [0.52, 0.52, 0.52]
+		},
+		"head": {
+			"rotation": [0, 180, 0],
+			"translation": [0, 13, 0]
+		},
+		"fixed": {
+			"rotation": [-90, 45, 76],
+			"translation": [-1.25, 2.25, -5.5],
+			"scale": [0.99, 0.99, 0.99]
+		}
+	}
+}

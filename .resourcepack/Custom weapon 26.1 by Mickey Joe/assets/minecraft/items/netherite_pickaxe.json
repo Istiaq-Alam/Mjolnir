@@ -1,0 +1,975 @@
+{
+	"oversized_in_gui": true,
+	"model": {
+		"type": "condition",
+		"property": "has_component",
+		"component": "custom_name",
+		"on_true": {
+			"type": "select",
+			"model": "item/netherite_pickaxe/netherite_pickaxe",
+			"property": "component",
+			"component": "custom_name",
+			"cases": [
+				{
+				"when": [
+					"Drill Teto",
+					"Teto"
+				],
+				"model": {
+					"type": "model",
+					"model": "item/netherite_pickaxe/drill_teto"
+			 			}
+				},
+				{
+				"when": "Teto Drill",
+				"model": {
+					"type": "model",
+					"model": "item/netherite_pickaxe/teto_drill"
+			 			}
+				},
+				{
+				"when": [
+					"Dinnerbone",
+					"Grumm"
+				],
+				"model": {
+					"type": "model",
+					"model": "item/netherite_pickaxe/dinnerbone"
+			 			}
+				},
+				{
+				"when": "jeb_",
+				"model": {
+					"type": "model",
+					"model": "item/netherite_pickaxe/jeb_"
+			 			}
+				},
+				{
+				"when": "Pickaxe",
+				"model": {
+					"type": "model",
+					"model": "item/netherite_pickaxe"
+			 			}
+					},
+				{
+					"when": "White Power Ring",
+					"model": {
+						"type": "select",
+						"property": "display_context",
+						"cases": [
+							{
+								"when": [
+									"firstperson_lefthand",
+									"firstperson_righthand"
+								],
+								"model": {
+									"type": "condition",
+									"property": "keybind_down",
+									"keybind": "key.attack",
+									"on_true": {
+										"type": "composite",
+										"models": [
+											{
+												"type": "model",
+												"model": "item/netherite_sword/white_power_ring"
+											},
+											{
+												"type": "model",
+												"model": "item/netherite_sword/white_power_ring_power"
+											},
+											{
+												"type": "model",
+												"model": "item/netherite_pickaxe/white_power_ring_pickaxe"
+											}
+										]
+									},
+									"on_false": {
+										"type": "model",
+										"model": "item/netherite_sword/white_power_ring"
+									}
+								}
+							}
+						],
+						"fallback": {
+							"type": "composite",
+							"models": [
+								{
+									"type": "model",
+									"model": "item/netherite_sword/white_power_ring"
+								},
+								{
+									"type": "model",
+									"model": "item/netherite_sword/white_power_ring_power"
+								},
+								{
+									"type": "model",
+									"model": "item/netherite_pickaxe/white_power_ring_pickaxe"
+								}
+							]
+						}
+					}
+				},
+				{
+					"when": "Violet Power Ring",
+					"model": {
+						"type": "select",
+						"property": "display_context",
+						"cases": [
+							{
+								"when": [
+									"firstperson_lefthand",
+									"firstperson_righthand"
+								],
+								"model": {
+									"type": "condition",
+									"property": "keybind_down",
+									"keybind": "key.attack",
+									"on_true": {
+										"type": "composite",
+										"models": [
+											{
+												"type": "model",
+												"model": "item/netherite_sword/violet_power_ring"
+											},
+											{
+												"type": "model",
+												"model": "item/netherite_sword/violet_power_ring_power"
+											},
+											{
+												"type": "model",
+												"model": "item/netherite_pickaxe/violet_power_ring_pickaxe"
+											}
+										]
+									},
+									"on_false": {
+										"type": "model",
+										"model": "item/netherite_sword/violet_power_ring"
+									}
+								}
+							}
+						],
+						"fallback": {
+							"type": "composite",
+							"models": [
+								{
+									"type": "model",
+									"model": "item/netherite_sword/violet_power_ring"
+								},
+								{
+									"type": "model",
+									"model": "item/netherite_sword/violet_power_ring_power"
+								},
+								{
+									"type": "model",
+									"model": "item/netherite_pickaxe/violet_power_ring_pickaxe"
+								}
+							]
+						}
+					}
+				},
+				{
+					"when": "Red Power Ring",
+					"model": {
+						"type": "select",
+						"property": "display_context",
+						"cases": [
+							{
+								"when": [
+									"firstperson_lefthand",
+									"firstperson_righthand"
+								],
+								"model": {
+									"type": "condition",
+									"property": "keybind_down",
+									"keybind": "key.attack",
+									"on_true": {
+										"type": "composite",
+										"models": [
+											{
+												"type": "model",
+												"model": "item/netherite_sword/red_power_ring"
+											},
+											{
+												"type": "model",
+												"model": "item/netherite_sword/red_power_ring_power"
+											},
+											{
+												"type": "model",
+												"model": "item/netherite_pickaxe/red_power_ring_pickaxe"
+											}
+										]
+									},
+									"on_false": {
+										"type": "model",
+										"model": "item/netherite_sword/red_power_ring"
+									}
+								}
+							}
+						],
+						"fallback": {
+							"type": "composite",
+							"models": [
+								{
+									"type": "model",
+									"model": "item/netherite_sword/red_power_ring"
+								},
+								{
+									"type": "model",
+									"model": "item/netherite_sword/red_power_ring_power"
+								},
+								{
+									"type": "model",
+									"model": "item/netherite_pickaxe/red_power_ring_pickaxe"
+								}
+							]
+						}
+					}
+				},
+				{
+					"when": "Blue Power Ring",
+					"model": {
+						"type": "select",
+						"property": "display_context",
+						"cases": [
+							{
+								"when": [
+									"firstperson_lefthand",
+									"firstperson_righthand"
+								],
+								"model": {
+									"type": "condition",
+									"property": "keybind_down",
+									"keybind": "key.attack",
+									"on_true": {
+										"type": "composite",
+										"models": [
+											{
+												"type": "model",
+												"model": "item/netherite_sword/blue_power_ring"
+											},
+											{
+												"type": "model",
+												"model": "item/netherite_sword/blue_power_ring_power"
+											},
+											{
+												"type": "model",
+												"model": "item/netherite_pickaxe/blue_power_ring_pickaxe"
+											}
+										]
+									},
+									"on_false": {
+										"type": "model",
+										"model": "item/netherite_sword/blue_power_ring"
+									}
+								}
+							}
+						],
+						"fallback": {
+							"type": "composite",
+							"models": [
+								{
+									"type": "model",
+									"model": "item/netherite_sword/blue_power_ring"
+								},
+								{
+									"type": "model",
+									"model": "item/netherite_sword/blue_power_ring_power"
+								},
+								{
+									"type": "model",
+									"model": "item/netherite_pickaxe/blue_power_ring_pickaxe"
+								}
+							]
+						}
+					}
+				},
+				{
+					"when": "Indigo Power Ring",
+					"model": {
+						"type": "select",
+						"property": "display_context",
+						"cases": [
+							{
+								"when": [
+									"firstperson_lefthand",
+									"firstperson_righthand"
+								],
+								"model": {
+									"type": "condition",
+									"property": "keybind_down",
+									"keybind": "key.attack",
+									"on_true": {
+										"type": "composite",
+										"models": [
+											{
+												"type": "model",
+												"model": "item/netherite_sword/indigo_power_ring"
+											},
+											{
+												"type": "model",
+												"model": "item/netherite_sword/indigo_power_ring_power"
+											},
+											{
+												"type": "model",
+												"model": "item/netherite_pickaxe/indigo_power_ring_pickaxe"
+											}
+										]
+									},
+									"on_false": {
+										"type": "model",
+										"model": "item/netherite_sword/indigo_power_ring"
+									}
+								}
+							}
+						],
+						"fallback": {
+							"type": "composite",
+							"models": [
+								{
+									"type": "model",
+									"model": "item/netherite_sword/indigo_power_ring"
+								},
+								{
+									"type": "model",
+									"model": "item/netherite_sword/indigo_power_ring_power"
+								},
+								{
+									"type": "model",
+									"model": "item/netherite_pickaxe/indigo_power_ring_pickaxe"
+								}
+							]
+						}
+					}
+				},
+				{
+					"when": "Black Power Ring",
+					"model": {
+						"type": "select",
+						"property": "display_context",
+						"cases": [
+							{
+								"when": [
+									"firstperson_lefthand",
+									"firstperson_righthand"
+								],
+								"model": {
+									"type": "condition",
+									"property": "keybind_down",
+									"keybind": "key.attack",
+									"on_true": {
+										"type": "composite",
+										"models": [
+											{
+												"type": "model",
+												"model": "item/netherite_sword/black_power_ring"
+											},
+											{
+												"type": "model",
+												"model": "item/netherite_sword/black_power_ring_power"
+											},
+											{
+												"type": "model",
+												"model": "item/netherite_pickaxe/black_power_ring_pickaxe"
+											}
+										]
+									},
+									"on_false": {
+										"type": "model",
+										"model": "item/netherite_sword/black_power_ring"
+									}
+								}
+							}
+						],
+						"fallback": {
+							"type": "composite",
+							"models": [
+								{
+									"type": "model",
+									"model": "item/netherite_sword/black_power_ring"
+								},
+								{
+									"type": "model",
+									"model": "item/netherite_sword/black_power_ring_power"
+								},
+								{
+									"type": "model",
+									"model": "item/netherite_pickaxe/black_power_ring_pickaxe"
+								}
+							]
+						}
+					}
+				},
+				{
+					"when": "Yellow Power Ring",
+					"model": {
+						"type": "select",
+						"property": "display_context",
+						"cases": [
+							{
+								"when": [
+									"firstperson_lefthand",
+									"firstperson_righthand"
+								],
+								"model": {
+									"type": "condition",
+									"property": "keybind_down",
+									"keybind": "key.attack",
+									"on_true": {
+										"type": "composite",
+										"models": [
+											{
+												"type": "model",
+												"model": "item/netherite_sword/yellow_power_ring"
+											},
+											{
+												"type": "model",
+												"model": "item/netherite_sword/yellow_power_ring_power"
+											},
+											{
+												"type": "model",
+												"model": "item/netherite_pickaxe/yellow_power_ring_pickaxe"
+											}
+										]
+									},
+									"on_false": {
+										"type": "model",
+										"model": "item/netherite_sword/yellow_power_ring"
+									}
+								}
+							}
+						],
+						"fallback": {
+							"type": "composite",
+							"models": [
+								{
+									"type": "model",
+									"model": "item/netherite_sword/yellow_power_ring"
+								},
+								{
+									"type": "model",
+									"model": "item/netherite_sword/yellow_power_ring_power"
+								},
+								{
+									"type": "model",
+									"model": "item/netherite_pickaxe/yellow_power_ring_pickaxe"
+								}
+							]
+						}
+					}
+				},
+				{
+					"when": "Orange Power Ring",
+					"model": {
+						"type": "select",
+						"property": "display_context",
+						"cases": [
+							{
+								"when": [
+									"firstperson_lefthand",
+									"firstperson_righthand"
+								],
+								"model": {
+									"type": "condition",
+									"property": "keybind_down",
+									"keybind": "key.attack",
+									"on_true": {
+										"type": "composite",
+										"models": [
+											{
+												"type": "model",
+												"model": "item/netherite_sword/orange_power_ring"
+											},
+											{
+												"type": "model",
+												"model": "item/netherite_sword/orange_power_ring_power"
+											},
+											{
+												"type": "model",
+												"model": "item/netherite_pickaxe/orange_power_ring_pickaxe"
+											}
+										]
+									},
+									"on_false": {
+										"type": "model",
+										"model": "item/netherite_sword/orange_power_ring"
+									}
+								}
+							}
+						],
+						"fallback": {
+							"type": "composite",
+							"models": [
+								{
+									"type": "model",
+									"model": "item/netherite_sword/orange_power_ring"
+								},
+								{
+									"type": "model",
+									"model": "item/netherite_sword/orange_power_ring_power"
+								},
+								{
+									"type": "model",
+									"model": "item/netherite_pickaxe/orange_power_ring_pickaxe"
+								}
+							]
+						}
+					}
+				},
+				{
+					"when": "Green Power Ring",
+					"model": {
+						"type": "select",
+						"property": "display_context",
+						"cases": [
+							{
+								"when": [
+									"firstperson_lefthand",
+									"firstperson_righthand"
+								],
+								"model": {
+									"type": "condition",
+									"property": "keybind_down",
+									"keybind": "key.attack",
+									"on_true": {
+										"type": "composite",
+										"models": [
+											{
+												"type": "model",
+												"model": "item/netherite_sword/green_power_ring"
+											},
+											{
+												"type": "model",
+												"model": "item/netherite_sword/green_power_ring_power"
+											},
+											{
+												"type": "model",
+												"model": "item/netherite_pickaxe/green_power_ring_pickaxe"
+											}
+										]
+									},
+									"on_false": {
+										"type": "model",
+										"model": "item/netherite_sword/green_power_ring"
+									}
+								}
+							}
+						],
+						"fallback": {
+							"type": "composite",
+							"models": [
+								{
+									"type": "model",
+									"model": "item/netherite_sword/green_power_ring"
+								},
+								{
+									"type": "model",
+									"model": "item/netherite_sword/green_power_ring_power"
+								},
+								{
+									"type": "model",
+									"model": "item/netherite_pickaxe/green_power_ring_pickaxe"
+								}
+							]
+						}
+					}
+				},
+				{
+					"when": "Fork",
+					"model": {
+						"type": "model",
+						"model": "item/netherite_pickaxe/fork"
+					}
+				},
+				{
+					"when": "Technodrill",
+					"model": {
+						"type": "model",
+						"model": "item/netherite_pickaxe/technodrill"
+					}
+				},
+				{
+					"when": [
+						"Toothpick",
+						"Technopick"
+					],
+					"model": {
+						"type": "model",
+						"model": "item/netherite_pickaxe/toothpick"
+					}
+				},
+				{
+					"when": "Mountain Pickaxe",
+					"model": {
+						"type": "model",
+						"model": "item/netherite_pickaxe/mountain_pickaxe"
+					}
+				},
+				{
+					"when": "Duck Before Christmas",
+					"model": {
+						"type": "model",
+						"model": "item/netherite_pickaxe/duck_before_christmas"
+					}
+				},
+				{
+					"when": "Jake The Pickaxe",
+					"model": {
+						"type": "model",
+						"model": "item/netherite_pickaxe/jake_the_pickaxe"
+					}
+				},
+				{
+					"when": "Super Cute Pickaxe",
+					"model": {
+						"type": "model",
+						"model": "item/netherite_pickaxe/super_cute_pickaxe"
+					}
+				},
+				{
+					"when": "Drill",
+					"model": {
+						"type": "model",
+						"model": "item/netherite_pickaxe/drill"
+					}
+				},
+				{
+					"when": "Hammer",
+					"model": {
+						"type": "model",
+						"model": "item/netherite_pickaxe/hammer"
+					}
+				},
+				{
+					"when": "Command Block Pickaxe",
+					"model": {
+						"type": "model",
+						"model": "item/netherite_pickaxe/command_block_pickaxe"
+					}
+				},
+				{
+					"when": "Adamantium Impervium Pickaxe",
+					"model": {
+						"type": "model",
+						"model": "item/netherite_pickaxe/adamantium_impervium_pickaxe"
+					}
+				},
+				{
+					"when": "Blockbreaker Pickaxe",
+					"model": {
+						"type": "model",
+						"model": "item/netherite_pickaxe/blockbreaker_pickaxe"
+					}
+				},
+				{
+					"when": "Dragonsbane Pickaxe",
+					"model": {
+						"type": "model",
+						"model": "item/netherite_pickaxe/dragonsbane_pickaxe"
+					}
+				},
+				{
+					"when": "Ender Defender Pickaxe",
+					"model": {
+						"type": "model",
+						"model": "item/netherite_pickaxe/ender_defender_pickaxe"
+					}
+				},
+				{
+					"when": "Ellegaard's Pickaxe",
+					"model": {
+						"type": "model",
+						"model": "item/netherite_pickaxe/ellegaard_pickaxe"
+					}
+				},
+				{
+					"when": "Ellegaard's Drill",
+					"model": {
+						"type": "model",
+						"model": "item/netherite_pickaxe/ellegaard_drill"
+					}
+				},
+				{
+					"when": "Magnus' Pickaxe",
+					"model": {
+						"type": "model",
+						"model": "item/netherite_pickaxe/magnus_pickaxe"
+					}
+				},
+				{
+					"when": "Magnus' Drill",
+					"model": {
+						"type": "model",
+						"model": "item/netherite_pickaxe/magnus_drill"
+					}
+				},
+				{
+					"when": "Golden Apple Pickaxe",
+					"model": {
+						"type": "model",
+						"model": "item/netherite_pickaxe/golden_apple_pickaxe"
+					}
+				},
+				{
+					"when": "Tim's Pickaxe",
+					"model": {
+						"type": "model",
+						"model": "item/netherite_pickaxe/tim_pickaxe"
+					}
+				},
+				{
+					"when": "Golden Goliath Pickaxe",
+					"model": {
+						"type": "model",
+						"model": "item/netherite_pickaxe/golden_goliath_pickaxe"
+					}
+				},
+				{
+					"when": "Star Pickaxe",
+					"model": {
+						"type": "model",
+						"model": "item/netherite_pickaxe/star_pickaxe"
+					}
+				},
+				{
+					"when": "Petra's Pickaxe",
+					"model": {
+						"type": "model",
+						"model": "item/netherite_pickaxe/petra_pickaxe"
+					}
+				},
+				{
+					"when": "Redstone Riot Pickaxe",
+					"model": {
+						"type": "model",
+						"model": "item/netherite_pickaxe/redstone_riot_pickaxe"
+					}
+				},
+				{
+					"when": "Pickaxe of Infinity",
+					"model": {
+						"type": "model",
+						"model": "item/netherite_pickaxe/pickaxe_of_infinity"
+					}
+				},
+				{
+					"when": "Gabriel's Pickaxe",
+					"model": {
+						"type": "model",
+						"model": "item/netherite_pickaxe/gabriel_pickaxe"
+					}
+				},
+				{
+					"when": "Romeo's Pickaxe",
+					"model": {
+						"type": "model",
+						"model": "item/netherite_pickaxe/romeo_pickaxe"
+					}
+				},
+				{
+					"when": "Xara's Pickaxe",
+					"model": {
+						"type": "model",
+						"model": "item/netherite_pickaxe/xara_pickaxe"
+					}
+				},
+				{
+					"when": "Fred's Pickaxe",
+					"model": {
+						"type": "model",
+						"model": "item/netherite_pickaxe/fred_pickaxe"
+					}
+				},
+				{
+					"when": "Ivor's Pickaxe",
+					"model": {
+						"type": "model",
+						"model": "item/netherite_pickaxe/ivor_pickaxe"
+					}
+				},
+				{
+					"when": "Dragonslayer Pickaxe",
+					"model": {
+						"type": "model",
+						"model": "item/netherite_pickaxe/dragonslayer_pickaxe"
+					}
+				},
+				{
+					"when": "Dragonmaster Pickaxe",
+					"model": {
+						"type": "model",
+						"model": "item/netherite_pickaxe/dragonmaster_pickaxe"
+					}
+				},
+				{
+					"when": "Robot Pickaxe",
+					"model": {
+						"type": "model",
+						"model": "item/netherite_pickaxe/robot_pickaxe"
+					}
+				},
+				{
+					"when": "Droid Pickaxe",
+					"model": {
+						"type": "model",
+						"model": "item/netherite_pickaxe/droid_pickaxe"
+					}
+				},
+				{
+					"when": "Space Pickaxe",
+					"model": {
+						"type": "model",
+						"model": "item/netherite_pickaxe/space_pickaxe"
+					}
+				},
+				{
+					"when": "Vortex Pickaxe",
+					"model": {
+						"type": "model",
+						"model": "item/netherite_pickaxe/vortex_pickaxe"
+					}
+				},
+				{
+					"when": "Scarlet Pickaxe",
+					"model": {
+						"type": "model",
+						"model": "item/netherite_pickaxe/scarlet_pickaxe"
+					}
+				},
+				{
+					"when": "Sakura Pickaxe",
+					"model": {
+						"type": "model",
+						"model": "item/netherite_pickaxe/sakura_pickaxe"
+					}
+				},
+				{
+					"when": "Journey Pickaxe",
+					"model": {
+						"type": "model",
+						"model": "item/netherite_pickaxe/journey_pickaxe"
+					}
+				},
+				{
+					"when": "Heavy Pickaxe",
+					"model": {
+						"type": "model",
+						"model": "item/netherite_pickaxe/heavy_pickaxe"
+					}
+				},
+				{
+					"when": "Prismarine Pickaxe",
+					"model": {
+						"type": "model",
+						"model": "item/netherite_pickaxe/prismarine_pickaxe"
+					}
+				},
+				{
+					"when": "Poisonous Potato Pickaxe",
+					"model": {
+						"type": "model",
+						"model": "item/netherite_pickaxe/poisonous_potato_pickaxe"
+					}
+				},
+				{
+					"when": "Candy Pickaxe",
+					"model": {
+						"type": "model",
+						"model": "item/netherite_pickaxe/candy_pickaxe"
+					}
+				},
+				{
+					"when": "Kemetian Pickaxe",
+					"model": {
+						"type": "model",
+						"model": "item/netherite_pickaxe/kemetian_pickaxe"
+					}
+				},
+				{
+					"when": "Hellenic Pickaxe",
+					"model": {
+						"type": "model",
+						"model": "item/netherite_pickaxe/hellenic_pickaxe"
+					}
+				},
+				{
+					"when": "Sinitic Pickaxe",
+					"model": {
+						"type": "model",
+						"model": "item/netherite_pickaxe/sinitic_pickaxe"
+					}
+				},
+				{
+					"when": "Fantasy Pickaxe",
+					"model": {
+						"type": "model",
+						"model": "item/netherite_pickaxe/fantasy_pickaxe"
+					}
+				},
+				{
+					"when": "Norroen Hammer",
+					"model": {
+						"type": "model",
+						"model": "item/netherite_pickaxe/norroen_hammer"
+					}
+				},
+				{
+					"when": "Halloween Pickaxe",
+					"model": {
+						"type": "model",
+						"model": "item/netherite_pickaxe/halloween_pickaxe"
+					}
+				},
+				{
+					"when": "Glass Pickaxe",
+					"model": {
+						"type": "model",
+						"model": "item/netherite_pickaxe/glass_pickaxe"
+					}
+				},
+				{
+					"when": "Dragonheart Pickaxe",
+					"model": {
+						"type": "model",
+						"model": "item/netherite_pickaxe/dragonheart_pickaxe"
+					}
+				},
+				{
+					"when": "Orcish Pickaxe",
+					"model": {
+						"type": "model",
+						"model": "item/netherite_pickaxe/orcish_pickaxe"
+					}
+				},
+				{
+					"when": "Ancient Pickaxe",
+					"model": {
+						"type": "model",
+						"model": "item/netherite_pickaxe/ancient_pickaxe"
+					}
+				},
+				{
+					"when": "Ender Dragon Pickaxe",
+					"model": {
+						"type": "model",
+						"model": "item/netherite_pickaxe/ender_dragon_pickaxe"
+					}
+				},
+				{
+					"when": "Super Pickaxe",
+					"model": {
+						"type": "model",
+						"model": "item/netherite_pickaxe/super_pickaxe"
+					}
+				}
+			],
+			"fallback": {
+						"type": "model",
+						"model": "item/netherite_pickaxe"
+					}
+		},
+		"on_false": {
+						"type": "model",
+						"model": "item/netherite_pickaxe"
+					}
+	}
+}

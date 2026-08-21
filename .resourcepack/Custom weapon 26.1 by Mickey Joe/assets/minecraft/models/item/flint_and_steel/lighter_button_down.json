@@ -1,0 +1,16 @@
+{
+	"format_version": "1.21.6",
+	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+	"parent": "item/flint_and_steel/lighter",
+	"elements": [
+		{
+			"from": [8, 5, 5],
+			"to": [8, 5.5, 6],
+			"rotation": {"angle": 0, "axis": "y", "origin": [6.5, 4, 4]},
+			"faces": {
+				"east": {"uv": [5, 7, 6, 8], "texture": "#particle"},
+				"west": {"uv": [5, 7, 6, 8], "texture": "#particle"}
+			}
+		}
+	]
+}

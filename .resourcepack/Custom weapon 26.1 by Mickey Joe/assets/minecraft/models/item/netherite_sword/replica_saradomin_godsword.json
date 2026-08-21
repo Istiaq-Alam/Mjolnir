@@ -1,0 +1,50 @@
+{
+	"format_version": "1.21.6",
+	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+	"parent": "builtin/generated",
+	"textures": {
+		"layer0": "item/netherite_sword/replica_saradomin_godsword"
+	},
+	"gui_light": "front",
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [0, -90, 54],
+			"translation": [0, 1.75, 2.25],
+			"scale": [2, 2, 1]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [0, 90, -54],
+			"translation": [0, 1.75, 2.25],
+			"scale": [2, 2, 1]
+		},
+		"firstperson_righthand": {
+			"rotation": [-1, -115, 23],
+			"translation": [6.38, -0.55, -2.12],
+			"scale": [1.36, 1.36, 0.68]
+		},
+		"firstperson_lefthand": {
+			"rotation": [-1, 65, -23],
+			"translation": [6.38, -0.55, -2.12],
+			"scale": [1.36, 1.36, 0.68]
+		},
+		"ground": {
+			"translation": [-0.75, 4, 0],
+			"scale": [1, 1, 0.5]
+		},
+		"gui": {
+			"rotation": [0, -25.5, -3],
+			"translation": [-1, -0.75, 0],
+			"scale": [1.18, 1.18, 0.59]
+		},
+		"fixed": {
+			"rotation": [0, -180, 0],
+			"translation": [1.75, -2, -0.5],
+			"scale": [1.99, 1.99, 1]
+		},
+		"on_shelf": {
+			"rotation": [135, -90, 0],
+			"translation": [0, 0, 8.25],
+			"scale": [4, 4, 2]
+		}
+	}
+}

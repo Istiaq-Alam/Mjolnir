@@ -1,0 +1,7 @@
+{
+	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+	"parent": "item/crossbow/bamboo_ballista_arrow",
+	"textures": {
+		"1": "item/spectral_arrow"
+	}
+}

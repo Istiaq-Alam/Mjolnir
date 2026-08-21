@@ -1,0 +1,7 @@
+{
+	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+    "parent": "item/brush_brushing_1",
+    "textures": {
+        "layer0": "item/brush/oxidized_brush"
+	}
+}

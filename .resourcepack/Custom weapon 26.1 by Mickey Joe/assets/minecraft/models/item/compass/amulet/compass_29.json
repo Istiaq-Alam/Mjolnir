@@ -1,0 +1,7 @@
+{
+  "credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+  "parent": "item/compass/amulet/compass",
+  "textures": {
+    "layer0": "item/compass/amulet/compass_29"
+  }
+}

@@ -1,0 +1,8 @@
+{
+	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+	"parent": "item/bucket/axolotl_bucket",
+	"textures": {
+		"particle": "item/bucket/halloween/water_bucket",
+		"back": "item/bucket/halloween/bucket_back"
+	}
+}

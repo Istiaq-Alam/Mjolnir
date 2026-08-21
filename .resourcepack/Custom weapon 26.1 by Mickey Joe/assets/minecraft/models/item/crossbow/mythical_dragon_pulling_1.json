@@ -1,0 +1,9 @@
+{
+	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+	"parent": "item/crossbow/nerf_dragon_pulling_1",
+	"textures": {
+		"1": "item/crossbow/mythical_dragon",
+		"2": "item/crossbow/mythical_dragon_wings",
+		"particle": "item/crossbow/mythical_dragon_wings"
+	}
+}

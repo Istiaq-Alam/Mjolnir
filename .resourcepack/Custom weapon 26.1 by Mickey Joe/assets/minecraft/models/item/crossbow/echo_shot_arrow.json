@@ -1,0 +1,9 @@
+{
+	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+	"parent": "item/crossbow/firebolt_thrower_arrow",
+	"textures": {
+		"1": "item/crossbow/echo_shot_base",
+		"2": "item/crossbow/echo_shot_pulling_2",
+		"particle": "item/crossbow/echo_shot_base"
+	}
+}

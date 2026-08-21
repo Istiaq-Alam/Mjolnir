@@ -1,0 +1,10 @@
+{
+	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+    "parent": "item/bow/arm_buster_pulling_2",
+	"textures": {
+		"2": "item/bow/arm_buster_flame_siphon",
+		"3": "item/bow/arm_buster_flame_arrow",
+		"4": "item/bow/arm_buster_flame_pulse",
+		"particle": "item/bow/arm_buster_flame"
+	}
+}

@@ -1,0 +1,14 @@
+{
+	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+	"parent": "item/shield/splendid_screen",
+	"display": {
+		"firstperson_righthand": {
+			"rotation": [-1.65, -22.6, -1.85],
+			"translation": [1.25, 0, -1.75]
+		},
+		"firstperson_lefthand": {
+			"rotation": [-1.65, -22.6, -1.85],
+			"translation": [1.25, 0, -1.75]
+		}
+	}
+}

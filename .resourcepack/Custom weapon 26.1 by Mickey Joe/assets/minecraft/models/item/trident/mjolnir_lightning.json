@@ -1,0 +1,21 @@
+{
+	"format_version": "1.21.6",
+	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+	"parent": "item/trident/mjolnir_throwing",
+	"texture_size": [32, 32],
+	"textures": {
+		"particle": "item/trident/mjolnir_lightning"
+	},
+	"elements": [
+		{
+			"from": [-8, -8, 5.75],
+			"to": [24, 24, 10.25],
+			"light_emission": 15,
+			"rotation": {"angle": 0, "axis": "y", "origin": [7, 0, 6]},
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "texture": "#particle"},
+				"south": {"uv": [16, 0, 0, 16], "texture": "#particle"}
+			}
+		}
+	]
+}

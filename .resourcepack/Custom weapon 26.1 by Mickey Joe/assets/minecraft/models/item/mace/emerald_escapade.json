@@ -1,0 +1,7 @@
+{
+	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+	"parent": "item/mace/amethyst_adventure",
+	"textures": {
+		"particle": "item/mace/emerald_escapade"
+	}
+}

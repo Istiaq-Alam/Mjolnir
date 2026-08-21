@@ -1,0 +1,8 @@
+{
+    "credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+    "parent": "item/potion/potion_generated",
+	"textures": {
+		"layer0": "item/potion/potion_overlay_positive",
+		"layer1": "item/potion/night_vision_splash"
+	}
+}

@@ -1,0 +1,7 @@
+{
+	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+	"parent": "item/crossbow/green_power_ring_crossbow_spectral_arrow",
+	"textures": {
+		"particle": "item/crossbow/orange_power_ring_crossbow"
+	}
+}

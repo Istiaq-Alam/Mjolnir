@@ -1,0 +1,16 @@
+{
+	"format_version": "1.21.6",
+	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+	"parent": "item/crossbow/scattergun",
+	"elements": [
+		{
+			"from": [8, -2, 9],
+			"to": [8, 3, 15],
+			"rotation": {"angle": 0, "axis": "x", "origin": [8, 3, 9]},
+			"faces": {
+				"east": {"uv": [12.5, 7, 15.5, 9.5], "texture": "#particle"},
+				"west": {"uv": [15.5, 7, 12.5, 9.5], "texture": "#particle"}
+			}
+		}
+	]
+}

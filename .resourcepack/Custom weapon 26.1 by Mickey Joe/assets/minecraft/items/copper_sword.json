@@ -1,0 +1,282 @@
+{
+	"oversized_in_gui": true,
+	"model": {
+			"type": "select",
+			"property": "component",
+			"component": "custom_name",
+			"cases": [
+				{
+				"when": [
+					"Dinnerbone",
+					"Grumm"
+				],
+				"model": {
+					"type": "model",
+					"model": "item/copper_sword/dinnerbone"
+				}
+			},
+				{
+				"when": "Sword",
+				"model": {
+					"type": "model",
+					"model": "item/copper_sword"
+			 			}
+				},
+				{
+				"when": "Chef's Knife",
+				"model": {
+					"type": "model",
+					"model": "item/copper_sword/chef_knife"
+			 			}
+				},
+				{
+				"when": "Eyelander",
+				"model": {
+					"type": "model",
+					"model": "item/copper_sword/eyelander"
+			 			}
+				},
+				{
+				"when": "Buck-Chuckets",
+				"model": {
+					"type": "model",
+					"model": "item/copper_sword/buck_chuckets"
+			 			}
+				},
+				{
+				"when": "Meat Cleaver",
+				"model": {
+					"type": "model",
+					"model": "item/copper_sword/meat_cleaver"
+			 			}
+					},
+					{
+					"when": "Wrench",
+					"model": {
+						"type": "model",
+						"model": "item/copper_sword/wrench"
+					}
+				},
+					{
+				"when": "Cane",
+				"model": {
+					"type": "model",
+					"model": "item/copper_sword/cane"
+			 			}
+					},
+					{
+				"when": "Golf Club",
+				"model": {
+					"type": "model",
+					"model": "item/copper_sword/golf_club"
+			 			}
+					},
+					{
+				"when": "Spatula",
+				"model": {
+					"type": "model",
+					"model": "item/copper_sword/spatula"
+			 			}
+					},
+					{
+				"when": "Super Cute Sword",
+				"model": {
+					"type": "model",
+					"model": "item/copper_sword/super_cute_sword"
+			 			}
+					},
+				{
+					"when": "Claws",
+					"model": {
+						"type": "model",
+						"model": "item/copper_sword/claws"
+					}
+				},
+				{
+					"when": "Hidden Blade",
+					"model": {
+						"type": "model",
+						"model": "item/copper_sword/hidden_blade"
+					}
+				},
+				{
+					"when": "Shovel",
+					"model": {
+						"type": "model",
+						"model": "item/copper_sword/shovel"
+					}
+				},
+				{
+					"when": "Karambit",
+					"model": {
+						"type": "model",
+						"model": "item/copper_sword/karambit"
+					}
+				},
+				{
+					"when": "Potato Peeler",
+					"model": {
+						"type": "model",
+						"model": "item/copper_sword/potato_peeler"
+					}
+				},
+				{
+			"when": [
+				"Sickle",
+				"The Last Laugh"
+			],
+			"model": {
+				"type": "model",
+				"model": "item/copper_sword/sickle"
+			}
+		},
+				{
+					"when": "Tempest Knife",
+					"model": {
+						"type": "model",
+						"model": "item/copper_sword/tempest_knife"
+					}
+				},
+				{
+					"when": "Coral Blade",
+					"model": {
+						"type": "model",
+						"model": "item/copper_sword/coral_blade"
+					}
+				},
+				{
+					"when": "Dagger",
+					"model": {
+						"type": "model",
+						"model": "item/copper_sword/dagger"
+					}
+				},
+				{
+					"when": "Rapier",
+					"model": {
+						"type": "model",
+						"model": "item/copper_sword/rapier"
+					}
+				},
+				{
+					"when": "Soul Knife",
+					"model": {
+						"type": "model",
+						"model": "item/copper_sword/soul_knife"
+					}
+				},
+				{
+					"when": "Broadsword",
+					"model": {
+						"type": "model",
+						"model": "item/copper_sword/broadsword"
+					}
+				},
+				{
+					"when": "Cutlass",
+					"model": {
+						"type": "model",
+						"model": "item/copper_sword/cutlass"
+					}
+				},
+				{
+			"when": [
+				"Claymore",
+				"Hawkbrand"
+			],
+			"model": {
+				"type": "model",
+				"model": "item/copper_sword/claymore"
+			}
+		},
+				{
+					"when": "Glaive",
+					"model": {
+						"type": "model",
+						"model": "item/copper_sword/glaive"
+					}
+				},
+				{
+					"when": "Backstabber",
+					"model": {
+						"type": "model",
+						"model": "item/copper_sword/backstabber"
+					}
+				},
+				{
+					"when": "Dancer's Sword",
+					"model": {
+						"type": "model",
+						"model": "item/copper_sword/dancers_sword"
+					}
+				},
+				{
+					"when": "Katana",
+					"model": {
+						"type": "model",
+						"model": "item/copper_sword/katana"
+					}
+				},
+				{
+					"when": "Sawblade",
+					"model": {
+						"type": "model",
+						"model": "item/copper_sword/sawblade"
+					}
+				},
+				{
+					"when": "Battlestaff",
+					"model": {
+						"type": "model",
+						"model": "item/copper_sword/battlestaff"
+					}
+				},
+					{
+				"when": "Kemetian Sword",
+				"model": {
+					"type": "model",
+					"model": "item/copper_sword/kemetian_sword"
+			 			}
+					},
+					{
+				"when": "Hellenic Sword",
+				"model": {
+					"type": "model",
+					"model": "item/copper_sword/hellenic_sword"
+			 			}
+					},
+					{
+				"when": "Sinitic Sword",
+				"model": {
+					"type": "model",
+					"model": "item/copper_sword/sinitic_sword"
+			 			}
+					},
+					{
+				"when": "Fantasy Sword",
+				"model": {
+					"type": "model",
+					"model": "item/copper_sword/fantasy_sword"
+			 			}
+					},
+					{
+				"when": "Norroen Sword",
+				"model": {
+					"type": "model",
+					"model": "item/copper_sword/norroen_sword"
+			 			}
+					},
+					{
+				"when": "Halloween Sword",
+				"model": {
+					"type": "model",
+					"model": "item/copper_sword/halloween_sword"
+			 			}
+					}
+			],
+			"fallback": {
+							"type": "model",
+							"model": "item/copper_sword"
+						}
+		}
+}

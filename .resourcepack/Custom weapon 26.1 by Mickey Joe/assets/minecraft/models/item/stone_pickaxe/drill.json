@@ -1,0 +1,8 @@
+{
+	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+	"parent": "item/netherite_pickaxe/drill",
+	"textures": {
+		"bit": "item/stone_pickaxe/drill_bit",
+		"particle": "item/stone_pickaxe/drill"
+	}
+}

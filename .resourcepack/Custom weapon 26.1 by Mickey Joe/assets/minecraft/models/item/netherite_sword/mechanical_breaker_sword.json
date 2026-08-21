@@ -1,0 +1,620 @@
+{
+	"format_version": "1.21.6",
+	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+	"texture_size": [32, 32],
+	"textures": {
+		"2": "item/netherite_sword/mechanical_breaker_sword",
+		"particle": "item/netherite_sword/mechanical_breaker_sword"
+	},
+	"elements": [
+		{
+			"name": "mechanical_breaker_sword_0",
+			"from": [20, 20, 7.5],
+			"to": [25, 25, 8.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [-8, 0, -8.5]},
+			"faces": {
+				"north": {"uv": [14, 2, 11.5, 4.5], "texture": "#2"},
+				"east": {"uv": [13.5, 2, 14, 4.5], "texture": "#2"},
+				"south": {"uv": [11.5, 2, 14, 4.5], "texture": "#2"},
+				"west": {"uv": [11.5, 2, 12, 4.5], "texture": "#2"},
+				"up": {"uv": [11.5, 2, 14, 2.5], "texture": "#2"},
+				"down": {"uv": [11.5, 4, 14, 4.5], "texture": "#2"}
+			}
+		},
+		{
+			"name": "mechanical_breaker_sword_1",
+			"from": [25, 23, 7.5],
+			"to": [28, 25, 8.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [-8, 0, -8.5]},
+			"faces": {
+				"north": {"uv": [15.5, 2, 14, 3], "texture": "#2"},
+				"east": {"uv": [15, 2, 15.5, 3], "texture": "#2"},
+				"south": {"uv": [14, 2, 15.5, 3], "texture": "#2"},
+				"west": {"uv": [14, 2, 14.5, 3], "texture": "#2"},
+				"up": {"uv": [14, 2, 15.5, 2.5], "texture": "#2"},
+				"down": {"uv": [14, 2.5, 15.5, 3], "texture": "#2"}
+			}
+		},
+		{
+			"name": "mechanical_breaker_sword_2",
+			"from": [28, 24, 7.5],
+			"to": [29, 25, 8.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [-8, 0, -8.5]},
+			"faces": {
+				"north": {"uv": [16, 2, 15.5, 2.5], "texture": "#2"},
+				"east": {"uv": [15.5, 2, 16, 2.5], "texture": "#2"},
+				"south": {"uv": [15.5, 2, 16, 2.5], "texture": "#2"},
+				"west": {"uv": [15.5, 2, 16, 2.5], "texture": "#2"},
+				"up": {"uv": [15.5, 2, 16, 2.5], "texture": "#2"},
+				"down": {"uv": [15.5, 2, 16, 2.5], "texture": "#2"}
+			}
+		},
+		{
+			"name": "mechanical_breaker_sword_3",
+			"from": [19, 15, 7.5],
+			"to": [20, 24, 8.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [-8, 0, -8.5]},
+			"faces": {
+				"north": {"uv": [11.5, 2.5, 11, 7], "texture": "#2"},
+				"east": {"uv": [11, 2.5, 11.5, 7], "texture": "#2"},
+				"south": {"uv": [11, 2.5, 11.5, 7], "texture": "#2"},
+				"west": {"uv": [11, 2.5, 11.5, 7], "texture": "#2"},
+				"up": {"uv": [11, 2.5, 11.5, 3], "texture": "#2"},
+				"down": {"uv": [11, 6.5, 11.5, 7], "texture": "#2"}
+			}
+		},
+		{
+			"name": "mechanical_breaker_sword_4",
+			"from": [18, 14, 7.5],
+			"to": [19, 23, 8.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [-8, 0, -8.5]},
+			"faces": {
+				"north": {"uv": [11, 3, 10.5, 7.5], "texture": "#2"},
+				"east": {"uv": [10.5, 3, 11, 7.5], "texture": "#2"},
+				"south": {"uv": [10.5, 3, 11, 7.5], "texture": "#2"},
+				"west": {"uv": [10.5, 3, 11, 7.5], "texture": "#2"},
+				"up": {"uv": [10.5, 3, 11, 3.5], "texture": "#2"},
+				"down": {"uv": [10.5, 7, 11, 7.5], "texture": "#2"}
+			}
+		},
+		{
+			"name": "mechanical_breaker_sword_5",
+			"from": [25, 22, 7.5],
+			"to": [27, 23, 8.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [-8, 0, -8.5]},
+			"faces": {
+				"north": {"uv": [15, 3, 14, 3.5], "texture": "#2"},
+				"east": {"uv": [14.5, 3, 15, 3.5], "texture": "#2"},
+				"south": {"uv": [14, 3, 15, 3.5], "texture": "#2"},
+				"west": {"uv": [14, 3, 14.5, 3.5], "texture": "#2"},
+				"up": {"uv": [14, 3, 15, 3.5], "texture": "#2"},
+				"down": {"uv": [14, 3, 15, 3.5], "texture": "#2"}
+			}
+		},
+		{
+			"name": "mechanical_breaker_sword_6",
+			"from": [17, 13, 7.5],
+			"to": [18, 22, 8.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [-8, 0, -8.5]},
+			"faces": {
+				"north": {"uv": [10.5, 3.5, 10, 8], "texture": "#2"},
+				"east": {"uv": [10, 3.5, 10.5, 8], "texture": "#2"},
+				"south": {"uv": [10, 3.5, 10.5, 8], "texture": "#2"},
+				"west": {"uv": [10, 3.5, 10.5, 8], "texture": "#2"},
+				"up": {"uv": [10, 3.5, 10.5, 4], "texture": "#2"},
+				"down": {"uv": [10, 7.5, 10.5, 8], "texture": "#2"}
+			}
+		},
+		{
+			"name": "mechanical_breaker_sword_7",
+			"from": [25, 21, 7.5],
+			"to": [26, 22, 8.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [-8, 0, -8.5]},
+			"faces": {
+				"north": {"uv": [14.5, 3.5, 14, 4], "texture": "#2"},
+				"east": {"uv": [14, 3.5, 14.5, 4], "texture": "#2"},
+				"south": {"uv": [14, 3.5, 14.5, 4], "texture": "#2"},
+				"west": {"uv": [14, 3.5, 14.5, 4], "texture": "#2"},
+				"up": {"uv": [14, 3.5, 14.5, 4], "texture": "#2"},
+				"down": {"uv": [14, 3.5, 14.5, 4], "texture": "#2"}
+			}
+		},
+		{
+			"name": "mechanical_breaker_sword_8",
+			"from": [16, 12, 7.5],
+			"to": [17, 21, 8.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [-8, 0, -8.5]},
+			"faces": {
+				"north": {"uv": [10, 4, 9.5, 8.5], "texture": "#2"},
+				"east": {"uv": [9.5, 4, 10, 8.5], "texture": "#2"},
+				"south": {"uv": [9.5, 4, 10, 8.5], "texture": "#2"},
+				"west": {"uv": [9.5, 4, 10, 8.5], "texture": "#2"},
+				"up": {"uv": [9.5, 4, 10, 4.5], "texture": "#2"},
+				"down": {"uv": [9.5, 8, 10, 8.5], "texture": "#2"}
+			}
+		},
+		{
+			"name": "mechanical_breaker_sword_9",
+			"from": [15, 11, 7.5],
+			"to": [16, 20, 8.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [-8, 0, -8.5]},
+			"faces": {
+				"north": {"uv": [9.5, 4.5, 9, 9], "texture": "#2"},
+				"east": {"uv": [9, 4.5, 9.5, 9], "texture": "#2"},
+				"south": {"uv": [9, 4.5, 9.5, 9], "texture": "#2"},
+				"west": {"uv": [9, 4.5, 9.5, 9], "texture": "#2"},
+				"up": {"uv": [9, 4.5, 9.5, 5], "texture": "#2"},
+				"down": {"uv": [9, 8.5, 9.5, 9], "texture": "#2"}
+			}
+		},
+		{
+			"name": "mechanical_breaker_sword_10",
+			"from": [20, 18, 7.5],
+			"to": [23, 20, 8.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [-8, 0, -8.5]},
+			"faces": {
+				"north": {"uv": [13, 4.5, 11.5, 5.5], "texture": "#2"},
+				"east": {"uv": [12.5, 4.5, 13, 5.5], "texture": "#2"},
+				"south": {"uv": [11.5, 4.5, 13, 5.5], "texture": "#2"},
+				"west": {"uv": [11.5, 4.5, 12, 5.5], "texture": "#2"},
+				"up": {"uv": [11.5, 4.5, 13, 5], "texture": "#2"},
+				"down": {"uv": [11.5, 5, 13, 5.5], "texture": "#2"}
+			}
+		},
+		{
+			"name": "mechanical_breaker_sword_11",
+			"from": [23, 19, 7.5],
+			"to": [24, 20, 8.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [-8, 0, -8.5]},
+			"faces": {
+				"north": {"uv": [13.5, 4.5, 13, 5], "texture": "#2"},
+				"east": {"uv": [13, 4.5, 13.5, 5], "texture": "#2"},
+				"south": {"uv": [13, 4.5, 13.5, 5], "texture": "#2"},
+				"west": {"uv": [13, 4.5, 13.5, 5], "texture": "#2"},
+				"up": {"uv": [13, 4.5, 13.5, 5], "texture": "#2"},
+				"down": {"uv": [13, 4.5, 13.5, 5], "texture": "#2"}
+			}
+		},
+		{
+			"name": "mechanical_breaker_sword_12",
+			"from": [14, 10, 7.5],
+			"to": [15, 19, 8.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [-8, 0, -8.5]},
+			"faces": {
+				"north": {"uv": [9, 5, 8.5, 9.5], "texture": "#2"},
+				"east": {"uv": [8.5, 5, 9, 9.5], "texture": "#2"},
+				"south": {"uv": [8.5, 5, 9, 9.5], "texture": "#2"},
+				"west": {"uv": [8.5, 5, 9, 9.5], "texture": "#2"},
+				"up": {"uv": [8.5, 5, 9, 5.5], "texture": "#2"},
+				"down": {"uv": [8.5, 9, 9, 9.5], "texture": "#2"}
+			}
+		},
+		{
+			"name": "mechanical_breaker_sword_13",
+			"from": [13, 9, 7.5],
+			"to": [14, 18, 8.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [-8, 0, -8.5]},
+			"faces": {
+				"north": {"uv": [8.5, 5.5, 8, 10], "texture": "#2"},
+				"east": {"uv": [8, 5.5, 8.5, 10], "texture": "#2"},
+				"south": {"uv": [8, 5.5, 8.5, 10], "texture": "#2"},
+				"west": {"uv": [8, 5.5, 8.5, 10], "texture": "#2"},
+				"up": {"uv": [8, 5.5, 8.5, 6], "texture": "#2"},
+				"down": {"uv": [8, 9.5, 8.5, 10], "texture": "#2"}
+			}
+		},
+		{
+			"name": "mechanical_breaker_sword_14",
+			"from": [20, 17, 7.5],
+			"to": [22, 18, 8.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [-8, 0, -8.5]},
+			"faces": {
+				"north": {"uv": [12.5, 5.5, 11.5, 6], "texture": "#2"},
+				"east": {"uv": [12, 5.5, 12.5, 6], "texture": "#2"},
+				"south": {"uv": [11.5, 5.5, 12.5, 6], "texture": "#2"},
+				"west": {"uv": [11.5, 5.5, 12, 6], "texture": "#2"},
+				"up": {"uv": [11.5, 5.5, 12.5, 6], "texture": "#2"},
+				"down": {"uv": [11.5, 5.5, 12.5, 6], "texture": "#2"}
+			}
+		},
+		{
+			"name": "mechanical_breaker_sword_15",
+			"from": [12, 8, 7.5],
+			"to": [13, 17, 8.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [-8, 0, -8.5]},
+			"faces": {
+				"north": {"uv": [8, 6, 7.5, 10.5], "texture": "#2"},
+				"east": {"uv": [7.5, 6, 8, 10.5], "texture": "#2"},
+				"south": {"uv": [7.5, 6, 8, 10.5], "texture": "#2"},
+				"west": {"uv": [7.5, 6, 8, 10.5], "texture": "#2"},
+				"up": {"uv": [7.5, 6, 8, 6.5], "texture": "#2"},
+				"down": {"uv": [7.5, 10, 8, 10.5], "texture": "#2"}
+			}
+		},
+		{
+			"name": "mechanical_breaker_sword_16",
+			"from": [20, 16, 7.5],
+			"to": [21, 17, 8.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [-8, 0, -8.5]},
+			"faces": {
+				"north": {"uv": [12, 6, 11.5, 6.5], "texture": "#2"},
+				"east": {"uv": [11.5, 6, 12, 6.5], "texture": "#2"},
+				"south": {"uv": [11.5, 6, 12, 6.5], "texture": "#2"},
+				"west": {"uv": [11.5, 6, 12, 6.5], "texture": "#2"},
+				"up": {"uv": [11.5, 6, 12, 6.5], "texture": "#2"},
+				"down": {"uv": [11.5, 6, 12, 6.5], "texture": "#2"}
+			}
+		},
+		{
+			"name": "mechanical_breaker_sword_17",
+			"from": [11, 7, 7.5],
+			"to": [12, 16, 8.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [-8, 0, -8.5]},
+			"faces": {
+				"north": {"uv": [7.5, 6.5, 7, 11], "texture": "#2"},
+				"east": {"uv": [7, 6.5, 7.5, 11], "texture": "#2"},
+				"south": {"uv": [7, 6.5, 7.5, 11], "texture": "#2"},
+				"west": {"uv": [7, 6.5, 7.5, 11], "texture": "#2"},
+				"up": {"uv": [7, 6.5, 7.5, 7], "texture": "#2"},
+				"down": {"uv": [7, 10.5, 7.5, 11], "texture": "#2"}
+			}
+		},
+		{
+			"name": "mechanical_breaker_sword_18",
+			"from": [10, 6, 7.5],
+			"to": [11, 15, 8.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [-8, 0, -8.5]},
+			"faces": {
+				"north": {"uv": [7, 7, 6.5, 11.5], "texture": "#2"},
+				"east": {"uv": [6.5, 7, 7, 11.5], "texture": "#2"},
+				"south": {"uv": [6.5, 7, 7, 11.5], "texture": "#2"},
+				"west": {"uv": [6.5, 7, 7, 11.5], "texture": "#2"},
+				"up": {"uv": [6.5, 7, 7, 7.5], "texture": "#2"},
+				"down": {"uv": [6.5, 11, 7, 11.5], "texture": "#2"}
+			}
+		},
+		{
+			"name": "mechanical_breaker_sword_19",
+			"from": [9, 5, 7.5],
+			"to": [10, 14, 8.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [-8, 0, -8.5]},
+			"faces": {
+				"north": {"uv": [6.5, 7.5, 6, 12], "texture": "#2"},
+				"east": {"uv": [6, 7.5, 6.5, 12], "texture": "#2"},
+				"south": {"uv": [6, 7.5, 6.5, 12], "texture": "#2"},
+				"west": {"uv": [6, 7.5, 6.5, 12], "texture": "#2"},
+				"up": {"uv": [6, 7.5, 6.5, 8], "texture": "#2"},
+				"down": {"uv": [6, 11.5, 6.5, 12], "texture": "#2"}
+			}
+		},
+		{
+			"name": "mechanical_breaker_sword_20",
+			"from": [8, 5, 7.5],
+			"to": [9, 13, 8.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [-8, 0, -8.5]},
+			"faces": {
+				"north": {"uv": [6, 8, 5.5, 12], "texture": "#2"},
+				"east": {"uv": [5.5, 8, 6, 12], "texture": "#2"},
+				"south": {"uv": [5.5, 8, 6, 12], "texture": "#2"},
+				"west": {"uv": [5.5, 8, 6, 12], "texture": "#2"},
+				"up": {"uv": [5.5, 8, 6, 8.5], "texture": "#2"},
+				"down": {"uv": [5.5, 11.5, 6, 12], "texture": "#2"}
+			}
+		},
+		{
+			"name": "mechanical_breaker_sword_21",
+			"from": [7, 5, 7.5],
+			"to": [8, 12, 8.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [-8, 0, -8.5]},
+			"faces": {
+				"north": {"uv": [5.5, 8.5, 5, 12], "texture": "#2"},
+				"east": {"uv": [5, 8.5, 5.5, 12], "texture": "#2"},
+				"south": {"uv": [5, 8.5, 5.5, 12], "texture": "#2"},
+				"west": {"uv": [5, 8.5, 5.5, 12], "texture": "#2"},
+				"up": {"uv": [5, 8.5, 5.5, 9], "texture": "#2"},
+				"down": {"uv": [5, 11.5, 5.5, 12], "texture": "#2"}
+			}
+		},
+		{
+			"name": "mechanical_breaker_sword_22",
+			"from": [6, 5, 7.5],
+			"to": [7, 11, 8.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [-8, 0, -8.5]},
+			"faces": {
+				"north": {"uv": [5, 9, 4.5, 12], "texture": "#2"},
+				"east": {"uv": [4.5, 9, 5, 12], "texture": "#2"},
+				"south": {"uv": [4.5, 9, 5, 12], "texture": "#2"},
+				"west": {"uv": [4.5, 9, 5, 12], "texture": "#2"},
+				"up": {"uv": [4.5, 9, 5, 9.5], "texture": "#2"},
+				"down": {"uv": [4.5, 11.5, 5, 12], "texture": "#2"}
+			}
+		},
+		{
+			"name": "mechanical_breaker_sword_23",
+			"from": [5, 4, 7.5],
+			"to": [6, 10, 8.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [-8, 0, -8.5]},
+			"faces": {
+				"north": {"uv": [4.5, 9.5, 4, 12.5], "texture": "#2"},
+				"east": {"uv": [4, 9.5, 4.5, 12.5], "texture": "#2"},
+				"south": {"uv": [4, 9.5, 4.5, 12.5], "texture": "#2"},
+				"west": {"uv": [4, 9.5, 4.5, 12.5], "texture": "#2"},
+				"up": {"uv": [4, 9.5, 4.5, 10], "texture": "#2"},
+				"down": {"uv": [4, 12, 4.5, 12.5], "texture": "#2"}
+			}
+		},
+		{
+			"name": "mechanical_breaker_sword_24",
+			"from": [10, -2, 8.5],
+			"to": [13, 0, 9.5],
+			"rotation": {"angle": -45, "axis": "z", "origin": [24.5, 4.25, 8]},
+			"faces": {
+				"north": {"uv": [15.5, 11, 14, 12], "texture": "#2"},
+				"east": {"uv": [15, 11, 15.5, 12], "texture": "#2"},
+				"south": {"uv": [14, 11, 15.5, 12], "texture": "#2"},
+				"west": {"uv": [14, 11, 14.5, 12], "texture": "#2"},
+				"up": {"uv": [14, 11, 15.5, 11.5], "texture": "#2"},
+				"down": {"uv": [14, 11.5, 15.5, 12], "texture": "#2"}
+			}
+		},
+		{
+			"name": "mechanical_breaker_sword_25",
+			"from": [4, 3, 7.5],
+			"to": [5, 6, 8.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [-8, 0, -8.5]},
+			"faces": {
+				"north": {"uv": [4, 11.5, 3.5, 13], "texture": "#2"},
+				"east": {"uv": [3.5, 11.5, 4, 13], "texture": "#2"},
+				"south": {"uv": [3.5, 11.5, 4, 13], "texture": "#2"},
+				"west": {"uv": [3.5, 11.5, 4, 13], "texture": "#2"},
+				"up": {"uv": [3.5, 11.5, 4, 12], "texture": "#2"},
+				"down": {"uv": [3.5, 12.5, 4, 13], "texture": "#2"}
+			}
+		},
+		{
+			"name": "mechanical_breaker_sword_26",
+			"from": [9, -3, 8.5],
+			"to": [10, -1, 9.5],
+			"rotation": {"angle": -45, "axis": "z", "origin": [24.5, 4.25, 8]},
+			"faces": {
+				"north": {"uv": [14, 11.5, 13.5, 12.5], "texture": "#2"},
+				"east": {"uv": [13.5, 11.5, 14, 12.5], "texture": "#2"},
+				"south": {"uv": [13.5, 11.5, 14, 12.5], "texture": "#2"},
+				"west": {"uv": [13.5, 11.5, 14, 12.5], "texture": "#2"},
+				"up": {"uv": [13.5, 11.5, 14, 12], "texture": "#2"},
+				"down": {"uv": [13.5, 12, 14, 12.5], "texture": "#2"}
+			}
+		},
+		{
+			"name": "mechanical_breaker_sword_27",
+			"from": [3, 2, 7.5],
+			"to": [4, 5, 8.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [-8, 0, -8.5]},
+			"faces": {
+				"north": {"uv": [3.5, 12, 3, 13.5], "texture": "#2"},
+				"east": {"uv": [3, 12, 3.5, 13.5], "texture": "#2"},
+				"south": {"uv": [3, 12, 3.5, 13.5], "texture": "#2"},
+				"west": {"uv": [3, 12, 3.5, 13.5], "texture": "#2"},
+				"up": {"uv": [3, 12, 3.5, 12.5], "texture": "#2"},
+				"down": {"uv": [3, 13, 3.5, 13.5], "texture": "#2"}
+			}
+		},
+		{
+			"name": "mechanical_breaker_sword_28",
+			"from": [8, -6, 8.5],
+			"to": [9, -2, 9.5],
+			"rotation": {"angle": -45, "axis": "z", "origin": [24.5, 4.25, 8]},
+			"faces": {
+				"north": {"uv": [13.5, 12, 13, 14], "texture": "#2"},
+				"east": {"uv": [13, 12, 13.5, 14], "texture": "#2"},
+				"south": {"uv": [13, 12, 13.5, 14], "texture": "#2"},
+				"west": {"uv": [13, 12, 13.5, 14], "texture": "#2"},
+				"up": {"uv": [13, 12, 13.5, 12.5], "texture": "#2"},
+				"down": {"uv": [13, 13.5, 13.5, 14], "texture": "#2"}
+			}
+		},
+		{
+			"name": "mechanical_breaker_sword_30",
+			"from": [7, -6, 6.5],
+			"to": [8, -3, 7.5],
+			"rotation": {"angle": -45, "axis": "z", "origin": [24.5, 4.25, 8]},
+			"faces": {
+				"north": {"uv": [13, 12.5, 12.5, 14], "texture": "#2"},
+				"east": {"uv": [12.5, 12.5, 13, 14], "texture": "#2"},
+				"south": {"uv": [12.5, 12.5, 13, 14], "texture": "#2"},
+				"west": {"uv": [12.5, 12.5, 13, 14], "texture": "#2"},
+				"up": {"uv": [12.5, 12.5, 13, 13], "texture": "#2"},
+				"down": {"uv": [12.5, 13.5, 13, 14], "texture": "#2"}
+			}
+		},
+		{
+			"name": "mechanical_breaker_sword_24",
+			"from": [10, -2, 6.5],
+			"to": [13, 0, 7.5],
+			"rotation": {"angle": -45, "axis": "z", "origin": [24.5, 4.25, 8]},
+			"faces": {
+				"north": {"uv": [15.5, 11, 14, 12], "texture": "#2"},
+				"east": {"uv": [15, 11, 15.5, 12], "texture": "#2"},
+				"south": {"uv": [14, 11, 15.5, 12], "texture": "#2"},
+				"west": {"uv": [14, 11, 14.5, 12], "texture": "#2"},
+				"up": {"uv": [14, 11, 15.5, 11.5], "texture": "#2"},
+				"down": {"uv": [14, 11.5, 15.5, 12], "texture": "#2"}
+			}
+		},
+		{
+			"name": "mechanical_breaker_sword_26",
+			"from": [9, -3, 6.5],
+			"to": [10, -1, 7.5],
+			"rotation": {"angle": -45, "axis": "z", "origin": [24.5, 4.25, 8]},
+			"faces": {
+				"north": {"uv": [14, 11.5, 13.5, 12.5], "texture": "#2"},
+				"east": {"uv": [13.5, 11.5, 14, 12.5], "texture": "#2"},
+				"south": {"uv": [13.5, 11.5, 14, 12.5], "texture": "#2"},
+				"west": {"uv": [13.5, 11.5, 14, 12.5], "texture": "#2"},
+				"up": {"uv": [13.5, 11.5, 14, 12], "texture": "#2"},
+				"down": {"uv": [13.5, 12, 14, 12.5], "texture": "#2"}
+			}
+		},
+		{
+			"name": "mechanical_breaker_sword_28",
+			"from": [8, -6, 6.5],
+			"to": [9, -2, 7.5],
+			"rotation": {"angle": -45, "axis": "z", "origin": [24.5, 4.25, 8]},
+			"faces": {
+				"north": {"uv": [13.5, 12, 13, 14], "texture": "#2"},
+				"east": {"uv": [13, 12, 13.5, 14], "texture": "#2"},
+				"south": {"uv": [13, 12, 13.5, 14], "texture": "#2"},
+				"west": {"uv": [13, 12, 13.5, 14], "texture": "#2"},
+				"up": {"uv": [13, 12, 13.5, 12.5], "texture": "#2"},
+				"down": {"uv": [13, 13.5, 13.5, 14], "texture": "#2"}
+			}
+		},
+		{
+			"name": "mechanical_breaker_sword_29",
+			"from": [2, 1, 7.5],
+			"to": [3, 4, 8.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [-8, 0, -8.5]},
+			"faces": {
+				"north": {"uv": [3, 12.5, 2.5, 14], "texture": "#2"},
+				"east": {"uv": [2.5, 12.5, 3, 14], "texture": "#2"},
+				"south": {"uv": [2.5, 12.5, 3, 14], "texture": "#2"},
+				"west": {"uv": [2.5, 12.5, 3, 14], "texture": "#2"},
+				"up": {"uv": [2.5, 12.5, 3, 13], "texture": "#2"},
+				"down": {"uv": [2.5, 13.5, 3, 14], "texture": "#2"}
+			}
+		},
+		{
+			"name": "mechanical_breaker_sword_30",
+			"from": [7, -6, 8.5],
+			"to": [8, -3, 9.5],
+			"rotation": {"angle": -45, "axis": "z", "origin": [24.5, 4.25, 8]},
+			"faces": {
+				"north": {"uv": [13, 12.5, 12.5, 14], "texture": "#2"},
+				"east": {"uv": [12.5, 12.5, 13, 14], "texture": "#2"},
+				"south": {"uv": [12.5, 12.5, 13, 14], "texture": "#2"},
+				"west": {"uv": [12.5, 12.5, 13, 14], "texture": "#2"},
+				"up": {"uv": [12.5, 12.5, 13, 13], "texture": "#2"},
+				"down": {"uv": [12.5, 13.5, 13, 14], "texture": "#2"}
+			}
+		},
+		{
+			"name": "mechanical_breaker_sword_31",
+			"from": [1, 0, 7.5],
+			"to": [2, 3, 8.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [-8, 0, -8.5]},
+			"faces": {
+				"north": {"uv": [2.5, 13, 2, 14.5], "texture": "#2"},
+				"east": {"uv": [2, 13, 2.5, 14.5], "texture": "#2"},
+				"south": {"uv": [2, 13, 2.5, 14.5], "texture": "#2"},
+				"west": {"uv": [2, 13, 2.5, 14.5], "texture": "#2"},
+				"up": {"uv": [2, 13, 2.5, 13.5], "texture": "#2"},
+				"down": {"uv": [2, 14, 2.5, 14.5], "texture": "#2"}
+			}
+		},
+		{
+			"name": "mechanical_breaker_sword_32",
+			"from": [0, -2, 7.5],
+			"to": [1, 2, 8.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [-8, 0, -8.5]},
+			"faces": {
+				"north": {"uv": [2, 13.5, 1.5, 15.5], "texture": "#2"},
+				"east": {"uv": [1.5, 13.5, 2, 15.5], "texture": "#2"},
+				"south": {"uv": [1.5, 13.5, 2, 15.5], "texture": "#2"},
+				"west": {"uv": [1.5, 13.5, 2, 15.5], "texture": "#2"},
+				"up": {"uv": [1.5, 13.5, 2, 14], "texture": "#2"},
+				"down": {"uv": [1.5, 15, 2, 15.5], "texture": "#2"}
+			}
+		},
+		{
+			"name": "mechanical_breaker_sword_33",
+			"from": [-2, -3, 7.5],
+			"to": [0, 1, 8.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [-8, 0, -8.5]},
+			"faces": {
+				"north": {"uv": [1.5, 14, 0.5, 16], "texture": "#2"},
+				"east": {"uv": [1, 14, 1.5, 16], "texture": "#2"},
+				"south": {"uv": [0.5, 14, 1.5, 16], "texture": "#2"},
+				"west": {"uv": [0.5, 14, 1, 16], "texture": "#2"},
+				"up": {"uv": [0.5, 14, 1.5, 14.5], "texture": "#2"},
+				"down": {"uv": [0.5, 15.5, 1.5, 16], "texture": "#2"}
+			}
+		},
+		{
+			"name": "mechanical_breaker_sword_34",
+			"from": [-3, -2, 7.5],
+			"to": [-2, 0, 8.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [-8, 0, -8.5]},
+			"faces": {
+				"north": {"uv": [0.5, 14.5, 0, 15.5], "texture": "#2"},
+				"east": {"uv": [0, 14.5, 0.5, 15.5], "texture": "#2"},
+				"south": {"uv": [0, 14.5, 0.5, 15.5], "texture": "#2"},
+				"west": {"uv": [0, 14.5, 0.5, 15.5], "texture": "#2"},
+				"up": {"uv": [0, 14.5, 0.5, 15], "texture": "#2"},
+				"down": {"uv": [0, 15, 0.5, 15.5], "texture": "#2"}
+			}
+		},
+		{
+			"from": [-3.6, 4.9, 6.4],
+			"to": [7.6, 8.1, 9.6],
+			"rotation": {"angle": -45, "axis": "z", "origin": [4.5, 1.5, 1.5]},
+			"faces": {
+				"north": {"uv": [8.5, 14.5, 14, 16], "texture": "#2"},
+				"east": {"uv": [14, 14.5, 15.5, 16], "texture": "#2"},
+				"south": {"uv": [8.5, 14.5, 14, 16], "texture": "#2"},
+				"west": {"uv": [7, 14.5, 8.5, 16], "texture": "#2"}
+			}
+		},
+		{
+			"from": [7.6, 8.1, 9.6],
+			"to": [-3.6, 4.9, 6.4],
+			"rotation": {"angle": -45, "axis": "z", "origin": [4.5, 1.5, 1.5]},
+			"faces": {
+				"north": {"uv": [8.5, 16, 14, 14.5], "texture": "#2"},
+				"east": {"uv": [7, 16, 8.5, 14.5], "texture": "#2"},
+				"south": {"uv": [8.5, 16, 14, 14.5], "texture": "#2"},
+				"west": {"uv": [14, 16, 15.5, 14.5], "texture": "#2"}
+			}
+		}
+	],
+	"gui_light": "front",
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [0, -90, 55],
+			"translation": [0, 3.5, 1],
+			"scale": [0.85, 0.85, 0.85]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [0, 90, -55],
+			"translation": [0, 3.5, 1],
+			"scale": [0.85, 0.85, 0.85]
+		},
+		"firstperson_righthand": {
+			"rotation": [-1, -94, 53],
+			"translation": [4.25, 3.2, 1.13],
+			"scale": [0.68, 0.68, 0.68]
+		},
+		"firstperson_lefthand": {
+			"rotation": [-1, 94, -53],
+			"translation": [4.25, 3.2, 1.13],
+			"scale": [0.68, 0.68, 0.68]
+		},
+		"ground": {
+			"translation": [0, 4, 0],
+			"scale": [0.5, 0.5, 0.5]
+		},
+		"gui": {
+			"rotation": [0, -25.5, 1],
+			"translation": [-2.4, -1.65, 0],
+			"scale": [0.59, 0.59, 0.59]
+		},
+		"fixed": {
+			"rotation": [0, -180, 0],
+			"translation": [3, -3.25, -0.5]
+		},
+		"on_shelf": {
+			"rotation": [-4, -90, -135],
+			"translation": [0, 0, 10],
+			"scale": [1.99, 1.99, 1.99]
+		}
+	}
+}

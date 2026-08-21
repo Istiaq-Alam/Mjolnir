@@ -1,0 +1,20 @@
+{
+	"model": {
+			"type": "select",
+			"property": "component",
+			"component": "custom_name",
+	  		"cases": [
+					{
+				"when": "Sconce",
+				"model": {
+					"type": "model",
+					"model": "item/sconce/resin_clump_sconce"
+			 			}
+					}
+		  		],
+			"fallback": {
+				"type": "model",
+				"model": "item/resin_clump"
+					}
+				}
+}

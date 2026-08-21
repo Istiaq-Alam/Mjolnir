@@ -1,0 +1,9 @@
+{
+	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+	"parent": "item/crossbow/acorn_acer",
+	"textures": {
+		"particle": "item/crossbow/twisted_thrower_barrel",
+		"base": "item/crossbow/twisted_thrower"
+		}
+	}
+}

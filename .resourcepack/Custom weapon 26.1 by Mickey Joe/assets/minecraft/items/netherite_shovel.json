@@ -1,0 +1,1093 @@
+{
+	"oversized_in_gui": true,
+	"model": {
+		"type": "condition",
+		"property": "has_component",
+		"component": "custom_name",
+		"on_true": {
+			"type": "select",
+			"model": "item/netherite_shovel/netherite_shovel",
+			"property": "component",
+			"component": "custom_name",
+			"cases": [
+				{
+				"when": [
+					"Dinnerbone",
+					"Grumm"
+				],
+				"model": {
+					"type": "model",
+					"model": "item/netherite_shovel/dinnerbone"
+			 			}
+				},
+				{
+				"when": "jeb_",
+				"model": {
+					"type": "model",
+					"model": "item/netherite_shovel/jeb_"
+			 			}
+				},
+				{
+				"when": "Shovel",
+				"model": {
+					"type": "model",
+					"model": "item/netherite_shovel"
+			 			}
+					},
+				{
+					"when": "White Power Ring",
+					"model": {
+						"type": "select",
+						"property": "display_context",
+						"cases": [
+							{
+								"when": [
+									"firstperson_lefthand",
+									"firstperson_righthand"
+								],
+								"model": {
+									"type": "condition",
+									"property": "keybind_down",
+									"keybind": "key.attack",
+									"on_true": {
+										"type": "composite",
+										"models": [
+											{
+												"type": "model",
+												"model": "item/netherite_sword/white_power_ring"
+											},
+											{
+												"type": "model",
+												"model": "item/netherite_sword/white_power_ring_power"
+											},
+											{
+												"type": "model",
+												"model": "item/netherite_shovel/white_power_ring_shovel"
+											}
+										]
+									},
+									"on_false": {
+										"type": "condition",
+									"property": "keybind_down",
+									"keybind": "key.use",
+									"on_true": {
+										"type": "composite",
+										"models": [
+											{
+												"type": "model",
+												"model": "item/netherite_sword/white_power_ring"
+											},
+											{
+												"type": "model",
+												"model": "item/netherite_sword/white_power_ring_power"
+											},
+											{
+												"type": "model",
+												"model": "item/netherite_shovel/white_power_ring_shovel"
+											}
+										]
+									},
+									"on_false": {
+										"type": "model",
+										"model": "item/netherite_sword/white_power_ring"
+									}
+									}
+								}
+							}
+						],
+						"fallback": {
+							"type": "composite",
+							"models": [
+								{
+									"type": "model",
+									"model": "item/netherite_sword/white_power_ring"
+								},
+								{
+									"type": "model",
+									"model": "item/netherite_sword/white_power_ring_power"
+								},
+								{
+									"type": "model",
+									"model": "item/netherite_shovel/white_power_ring_shovel"
+								}
+							]
+						}
+					}
+				},
+				{
+					"when": "Violet Power Ring",
+					"model": {
+						"type": "select",
+						"property": "display_context",
+						"cases": [
+							{
+								"when": [
+									"firstperson_lefthand",
+									"firstperson_righthand"
+								],
+								"model": {
+									"type": "condition",
+									"property": "keybind_down",
+									"keybind": "key.attack",
+									"on_true": {
+										"type": "composite",
+										"models": [
+											{
+												"type": "model",
+												"model": "item/netherite_sword/violet_power_ring"
+											},
+											{
+												"type": "model",
+												"model": "item/netherite_sword/violet_power_ring_power"
+											},
+											{
+												"type": "model",
+												"model": "item/netherite_shovel/violet_power_ring_shovel"
+											}
+										]
+									},
+									"on_false": {
+										"type": "condition",
+									"property": "keybind_down",
+									"keybind": "key.use",
+									"on_true": {
+										"type": "composite",
+										"models": [
+											{
+												"type": "model",
+												"model": "item/netherite_sword/violet_power_ring"
+											},
+											{
+												"type": "model",
+												"model": "item/netherite_sword/violet_power_ring_power"
+											},
+											{
+												"type": "model",
+												"model": "item/netherite_shovel/violet_power_ring_shovel"
+											}
+										]
+									},
+									"on_false": {
+										"type": "model",
+										"model": "item/netherite_sword/violet_power_ring"
+									}
+									}
+								}
+							}
+						],
+						"fallback": {
+							"type": "composite",
+							"models": [
+								{
+									"type": "model",
+									"model": "item/netherite_sword/violet_power_ring"
+								},
+								{
+									"type": "model",
+									"model": "item/netherite_sword/violet_power_ring_power"
+								},
+								{
+									"type": "model",
+									"model": "item/netherite_shovel/violet_power_ring_shovel"
+								}
+							]
+						}
+					}
+				},
+				{
+					"when": "Red Power Ring",
+					"model": {
+						"type": "select",
+						"property": "display_context",
+						"cases": [
+							{
+								"when": [
+									"firstperson_lefthand",
+									"firstperson_righthand"
+								],
+								"model": {
+									"type": "condition",
+									"property": "keybind_down",
+									"keybind": "key.attack",
+									"on_true": {
+										"type": "composite",
+										"models": [
+											{
+												"type": "model",
+												"model": "item/netherite_sword/red_power_ring"
+											},
+											{
+												"type": "model",
+												"model": "item/netherite_sword/red_power_ring_power"
+											},
+											{
+												"type": "model",
+												"model": "item/netherite_shovel/red_power_ring_shovel"
+											}
+										]
+									},
+									"on_false": {
+										"type": "condition",
+									"property": "keybind_down",
+									"keybind": "key.use",
+									"on_true": {
+										"type": "composite",
+										"models": [
+											{
+												"type": "model",
+												"model": "item/netherite_sword/red_power_ring"
+											},
+											{
+												"type": "model",
+												"model": "item/netherite_sword/red_power_ring_power"
+											},
+											{
+												"type": "model",
+												"model": "item/netherite_shovel/red_power_ring_shovel"
+											}
+										]
+									},
+									"on_false": {
+										"type": "model",
+										"model": "item/netherite_sword/red_power_ring"
+									}
+									}
+								}
+							}
+						],
+						"fallback": {
+							"type": "composite",
+							"models": [
+								{
+									"type": "model",
+									"model": "item/netherite_sword/red_power_ring"
+								},
+								{
+									"type": "model",
+									"model": "item/netherite_sword/red_power_ring_power"
+								},
+								{
+									"type": "model",
+									"model": "item/netherite_shovel/red_power_ring_shovel"
+								}
+							]
+						}
+					}
+				},
+				{
+					"when": "Blue Power Ring",
+					"model": {
+						"type": "select",
+						"property": "display_context",
+						"cases": [
+							{
+								"when": [
+									"firstperson_lefthand",
+									"firstperson_righthand"
+								],
+								"model": {
+									"type": "condition",
+									"property": "keybind_down",
+									"keybind": "key.attack",
+									"on_true": {
+										"type": "composite",
+										"models": [
+											{
+												"type": "model",
+												"model": "item/netherite_sword/blue_power_ring"
+											},
+											{
+												"type": "model",
+												"model": "item/netherite_sword/blue_power_ring_power"
+											},
+											{
+												"type": "model",
+												"model": "item/netherite_shovel/blue_power_ring_shovel"
+											}
+										]
+									},
+									"on_false": {
+										"type": "condition",
+									"property": "keybind_down",
+									"keybind": "key.use",
+									"on_true": {
+										"type": "composite",
+										"models": [
+											{
+												"type": "model",
+												"model": "item/netherite_sword/blue_power_ring"
+											},
+											{
+												"type": "model",
+												"model": "item/netherite_sword/blue_power_ring_power"
+											},
+											{
+												"type": "model",
+												"model": "item/netherite_shovel/blue_power_ring_shovel"
+											}
+										]
+									},
+									"on_false": {
+										"type": "model",
+										"model": "item/netherite_sword/blue_power_ring"
+									}
+									}
+								}
+							}
+						],
+						"fallback": {
+							"type": "composite",
+							"models": [
+								{
+									"type": "model",
+									"model": "item/netherite_sword/blue_power_ring"
+								},
+								{
+									"type": "model",
+									"model": "item/netherite_sword/blue_power_ring_power"
+								},
+								{
+									"type": "model",
+									"model": "item/netherite_shovel/blue_power_ring_shovel"
+								}
+							]
+						}
+					}
+				},
+				{
+					"when": "Indigo Power Ring",
+					"model": {
+						"type": "select",
+						"property": "display_context",
+						"cases": [
+							{
+								"when": [
+									"firstperson_lefthand",
+									"firstperson_righthand"
+								],
+								"model": {
+									"type": "condition",
+									"property": "keybind_down",
+									"keybind": "key.attack",
+									"on_true": {
+										"type": "composite",
+										"models": [
+											{
+												"type": "model",
+												"model": "item/netherite_sword/indigo_power_ring"
+											},
+											{
+												"type": "model",
+												"model": "item/netherite_sword/indigo_power_ring_power"
+											},
+											{
+												"type": "model",
+												"model": "item/netherite_shovel/indigo_power_ring_shovel"
+											}
+										]
+									},
+									"on_false": {
+										"type": "condition",
+									"property": "keybind_down",
+									"keybind": "key.use",
+									"on_true": {
+										"type": "composite",
+										"models": [
+											{
+												"type": "model",
+												"model": "item/netherite_sword/indigo_power_ring"
+											},
+											{
+												"type": "model",
+												"model": "item/netherite_sword/indigo_power_ring_power"
+											},
+											{
+												"type": "model",
+												"model": "item/netherite_shovel/indigo_power_ring_shovel"
+											}
+										]
+									},
+									"on_false": {
+										"type": "model",
+										"model": "item/netherite_sword/indigo_power_ring"
+									}
+									}
+								}
+							}
+						],
+						"fallback": {
+							"type": "composite",
+							"models": [
+								{
+									"type": "model",
+									"model": "item/netherite_sword/indigo_power_ring"
+								},
+								{
+									"type": "model",
+									"model": "item/netherite_sword/indigo_power_ring_power"
+								},
+								{
+									"type": "model",
+									"model": "item/netherite_shovel/indigo_power_ring_shovel"
+								}
+							]
+						}
+					}
+				},
+				{
+					"when": "Black Power Ring",
+					"model": {
+						"type": "select",
+						"property": "display_context",
+						"cases": [
+							{
+								"when": [
+									"firstperson_lefthand",
+									"firstperson_righthand"
+								],
+								"model": {
+									"type": "condition",
+									"property": "keybind_down",
+									"keybind": "key.attack",
+									"on_true": {
+										"type": "composite",
+										"models": [
+											{
+												"type": "model",
+												"model": "item/netherite_sword/black_power_ring"
+											},
+											{
+												"type": "model",
+												"model": "item/netherite_sword/black_power_ring_power"
+											},
+											{
+												"type": "model",
+												"model": "item/netherite_shovel/black_power_ring_shovel"
+											}
+										]
+									},
+									"on_false": {
+										"type": "condition",
+									"property": "keybind_down",
+									"keybind": "key.use",
+									"on_true": {
+										"type": "composite",
+										"models": [
+											{
+												"type": "model",
+												"model": "item/netherite_sword/black_power_ring"
+											},
+											{
+												"type": "model",
+												"model": "item/netherite_sword/black_power_ring_power"
+											},
+											{
+												"type": "model",
+												"model": "item/netherite_shovel/black_power_ring_shovel"
+											}
+										]
+									},
+									"on_false": {
+										"type": "model",
+										"model": "item/netherite_sword/black_power_ring"
+									}
+									}
+								}
+							}
+						],
+						"fallback": {
+							"type": "composite",
+							"models": [
+								{
+									"type": "model",
+									"model": "item/netherite_sword/black_power_ring"
+								},
+								{
+									"type": "model",
+									"model": "item/netherite_sword/black_power_ring_power"
+								},
+								{
+									"type": "model",
+									"model": "item/netherite_shovel/black_power_ring_shovel"
+								}
+							]
+						}
+					}
+				},
+				{
+					"when": "Yellow Power Ring",
+					"model": {
+						"type": "select",
+						"property": "display_context",
+						"cases": [
+							{
+								"when": [
+									"firstperson_lefthand",
+									"firstperson_righthand"
+								],
+								"model": {
+									"type": "condition",
+									"property": "keybind_down",
+									"keybind": "key.attack",
+									"on_true": {
+										"type": "composite",
+										"models": [
+											{
+												"type": "model",
+												"model": "item/netherite_sword/yellow_power_ring"
+											},
+											{
+												"type": "model",
+												"model": "item/netherite_sword/yellow_power_ring_power"
+											},
+											{
+												"type": "model",
+												"model": "item/netherite_shovel/yellow_power_ring_shovel"
+											}
+										]
+									},
+									"on_false": {
+										"type": "condition",
+									"property": "keybind_down",
+									"keybind": "key.use",
+									"on_true": {
+										"type": "composite",
+										"models": [
+											{
+												"type": "model",
+												"model": "item/netherite_sword/yellow_power_ring"
+											},
+											{
+												"type": "model",
+												"model": "item/netherite_sword/yellow_power_ring_power"
+											},
+											{
+												"type": "model",
+												"model": "item/netherite_shovel/yellow_power_ring_shovel"
+											}
+										]
+									},
+									"on_false": {
+										"type": "model",
+										"model": "item/netherite_sword/yellow_power_ring"
+									}
+									}
+								}
+							}
+						],
+						"fallback": {
+							"type": "composite",
+							"models": [
+								{
+									"type": "model",
+									"model": "item/netherite_sword/yellow_power_ring"
+								},
+								{
+									"type": "model",
+									"model": "item/netherite_sword/yellow_power_ring_power"
+								},
+								{
+									"type": "model",
+									"model": "item/netherite_shovel/yellow_power_ring_shovel"
+								}
+							]
+						}
+					}
+				},
+				{
+					"when": "Orange Power Ring",
+					"model": {
+						"type": "select",
+						"property": "display_context",
+						"cases": [
+							{
+								"when": [
+									"firstperson_lefthand",
+									"firstperson_righthand"
+								],
+								"model": {
+									"type": "condition",
+									"property": "keybind_down",
+									"keybind": "key.attack",
+									"on_true": {
+										"type": "composite",
+										"models": [
+											{
+												"type": "model",
+												"model": "item/netherite_sword/orange_power_ring"
+											},
+											{
+												"type": "model",
+												"model": "item/netherite_sword/orange_power_ring_power"
+											},
+											{
+												"type": "model",
+												"model": "item/netherite_shovel/orange_power_ring_shovel"
+											}
+										]
+									},
+									"on_false": {
+										"type": "condition",
+									"property": "keybind_down",
+									"keybind": "key.use",
+									"on_true": {
+										"type": "composite",
+										"models": [
+											{
+												"type": "model",
+												"model": "item/netherite_sword/orange_power_ring"
+											},
+											{
+												"type": "model",
+												"model": "item/netherite_sword/orange_power_ring_power"
+											},
+											{
+												"type": "model",
+												"model": "item/netherite_shovel/orange_power_ring_shovel"
+											}
+										]
+									},
+									"on_false": {
+										"type": "model",
+										"model": "item/netherite_sword/orange_power_ring"
+									}
+									}
+								}
+							}
+						],
+						"fallback": {
+							"type": "composite",
+							"models": [
+								{
+									"type": "model",
+									"model": "item/netherite_sword/orange_power_ring"
+								},
+								{
+									"type": "model",
+									"model": "item/netherite_sword/orange_power_ring_power"
+								},
+								{
+									"type": "model",
+									"model": "item/netherite_shovel/orange_power_ring_shovel"
+								}
+							]
+						}
+					}
+				},
+				{
+					"when": "Green Power Ring",
+					"model": {
+						"type": "select",
+						"property": "display_context",
+						"cases": [
+							{
+								"when": [
+									"firstperson_lefthand",
+									"firstperson_righthand"
+								],
+								"model": {
+									"type": "condition",
+									"property": "keybind_down",
+									"keybind": "key.attack",
+									"on_true": {
+										"type": "composite",
+										"models": [
+											{
+												"type": "model",
+												"model": "item/netherite_sword/green_power_ring"
+											},
+											{
+												"type": "model",
+												"model": "item/netherite_sword/green_power_ring_power"
+											},
+											{
+												"type": "model",
+												"model": "item/netherite_shovel/green_power_ring_shovel"
+											}
+										]
+									},
+									"on_false": {
+										"type": "condition",
+									"property": "keybind_down",
+									"keybind": "key.use",
+									"on_true": {
+										"type": "composite",
+										"models": [
+											{
+												"type": "model",
+												"model": "item/netherite_sword/green_power_ring"
+											},
+											{
+												"type": "model",
+												"model": "item/netherite_sword/green_power_ring_power"
+											},
+											{
+												"type": "model",
+												"model": "item/netherite_shovel/green_power_ring_shovel"
+											}
+										]
+									},
+									"on_false": {
+										"type": "model",
+										"model": "item/netherite_sword/green_power_ring"
+									}
+									}
+								}
+							}
+						],
+						"fallback": {
+							"type": "composite",
+							"models": [
+								{
+									"type": "model",
+									"model": "item/netherite_sword/green_power_ring"
+								},
+								{
+									"type": "model",
+									"model": "item/netherite_sword/green_power_ring_power"
+								},
+								{
+									"type": "model",
+									"model": "item/netherite_shovel/green_power_ring_shovel"
+								}
+							]
+						}
+					}
+				},
+				{
+					"when": [
+						"Ladle",
+						"Spoon"
+					],
+					"model": {
+						"type": "model",
+						"model": "item/netherite_shovel/ladle"
+					}
+				},
+				{
+					"when": "Super Cute Shovel",
+					"model": {
+						"type": "model",
+						"model": "item/netherite_shovel/super_cute_shovel"
+					}
+				},
+				{
+					"when": "Jake The Shovel",
+					"model": {
+						"type": "model",
+						"model": "item/netherite_shovel/jake_the_shovel"
+					}
+				},
+				{
+					"when": "Command Block Shovel",
+					"model": {
+						"type": "model",
+						"model": "item/netherite_shovel/command_block_shovel"
+					}
+				},
+				{
+					"when": "Adamantium Impervium Shovel",
+					"model": {
+						"type": "model",
+						"model": "item/netherite_shovel/adamantium_impervium_shovel"
+					}
+				},
+				{
+					"when": "Blockbreaker Shovel",
+					"model": {
+						"type": "model",
+						"model": "item/netherite_shovel/blockbreaker_shovel"
+					}
+				},
+				{
+					"when": "Dragonsbane Shovel",
+					"model": {
+						"type": "model",
+						"model": "item/netherite_shovel/dragonsbane_shovel"
+					}
+				},
+				{
+					"when": "Ender Defender Shovel",
+					"model": {
+						"type": "model",
+						"model": "item/netherite_shovel/ender_defender_shovel"
+					}
+				},
+				{
+					"when": "Ellegaard's Shovel",
+					"model": {
+						"type": "model",
+						"model": "item/netherite_shovel/ellegaard_shovel"
+					}
+				},
+				{
+					"when": "Magnus' Shovel",
+					"model": {
+						"type": "model",
+						"model": "item/netherite_shovel/magnus_shovel"
+					}
+				},
+				{
+					"when": "Golden Apple Shovel",
+					"model": {
+						"type": "model",
+						"model": "item/netherite_shovel/golden_apple_shovel"
+					}
+				},
+				{
+					"when": "Tim's Shovel",
+					"model": {
+						"type": "model",
+						"model": "item/netherite_shovel/tim_shovel"
+					}
+				},
+				{
+					"when": "Golden Goliath Shovel",
+					"model": {
+						"type": "model",
+						"model": "item/netherite_shovel/golden_goliath_shovel"
+					}
+				},
+				{
+					"when": "Star Shovel",
+					"model": {
+						"type": "model",
+						"model": "item/netherite_shovel/star_shovel"
+					}
+				},
+				{
+					"when": "Petra's Shovel",
+					"model": {
+						"type": "model",
+						"model": "item/netherite_shovel/petra_shovel"
+					}
+				},
+				{
+					"when": "Redstone Riot Shovel",
+					"model": {
+						"type": "model",
+						"model": "item/netherite_shovel/redstone_riot_shovel"
+					}
+				},
+				{
+					"when": "Shovel of Infinity",
+					"model": {
+						"type": "model",
+						"model": "item/netherite_shovel/shovel_of_infinity"
+					}
+				},
+				{
+					"when": "Gabriel's Shovel",
+					"model": {
+						"type": "model",
+						"model": "item/netherite_shovel/gabriel_shovel"
+					}
+				},
+				{
+					"when": "Romeo's Shovel",
+					"model": {
+						"type": "model",
+						"model": "item/netherite_shovel/romeo_shovel"
+					}
+				},
+				{
+					"when": "Xara's Shovel",
+					"model": {
+						"type": "model",
+						"model": "item/netherite_shovel/xara_shovel"
+					}
+				},
+				{
+					"when": "Fred's Shovel",
+					"model": {
+						"type": "model",
+						"model": "item/netherite_shovel/fred_shovel"
+					}
+				},
+				{
+					"when": "Ivor's Shovel",
+					"model": {
+						"type": "model",
+						"model": "item/netherite_shovel/ivor_shovel"
+					}
+				},
+				{
+					"when": "Dragonslayer Shovel",
+					"model": {
+						"type": "model",
+						"model": "item/netherite_shovel/dragonslayer_shovel"
+					}
+				},
+				{
+					"when": "Dragonmaster Shovel",
+					"model": {
+						"type": "model",
+						"model": "item/netherite_shovel/dragonmaster_shovel"
+					}
+				},
+				{
+					"when": "Robot Shovel",
+					"model": {
+						"type": "model",
+						"model": "item/netherite_shovel/robot_shovel"
+					}
+				},
+				{
+					"when": "Droid Shovel",
+					"model": {
+						"type": "model",
+						"model": "item/netherite_shovel/droid_shovel"
+					}
+				},
+				{
+					"when": "Space Shovel",
+					"model": {
+						"type": "model",
+						"model": "item/netherite_shovel/space_shovel"
+					}
+				},
+				{
+					"when": "Vortex Shovel",
+					"model": {
+						"type": "model",
+						"model": "item/netherite_shovel/vortex_shovel"
+					}
+				},
+				{
+					"when": "Scarlet Shovel",
+					"model": {
+						"type": "model",
+						"model": "item/netherite_shovel/scarlet_shovel"
+					}
+				},
+				{
+					"when": "Sakura Shovel",
+					"model": {
+						"type": "model",
+						"model": "item/netherite_shovel/sakura_shovel"
+					}
+				},
+				{
+					"when": "Journey Shovel",
+					"model": {
+						"type": "model",
+						"model": "item/netherite_shovel/journey_shovel"
+					}
+				},
+				{
+					"when": "Heavy Shovel",
+					"model": {
+						"type": "model",
+						"model": "item/netherite_shovel/heavy_shovel"
+					}
+				},
+				{
+					"when": "Prismarine Shovel",
+					"model": {
+						"type": "model",
+						"model": "item/netherite_shovel/prismarine_shovel"
+					}
+				},
+				{
+					"when": "Poisonous Potato Shovel",
+					"model": {
+						"type": "model",
+						"model": "item/netherite_shovel/poisonous_potato_shovel"
+					}
+				},
+				{
+					"when": "Candy Shovel",
+					"model": {
+						"type": "model",
+						"model": "item/netherite_shovel/candy_shovel"
+					}
+				},
+				{
+					"when": "Kemetian Shovel",
+					"model": {
+						"type": "model",
+						"model": "item/netherite_shovel/kemetian_shovel"
+					}
+				},
+				{
+					"when": "Hellenic Shovel",
+					"model": {
+						"type": "model",
+						"model": "item/netherite_shovel/hellenic_shovel"
+					}
+				},
+				{
+					"when": "Sinitic Shovel",
+					"model": {
+						"type": "model",
+						"model": "item/netherite_shovel/sinitic_shovel"
+					}
+				},
+				{
+					"when": "Fantasy Shovel",
+					"model": {
+						"type": "model",
+						"model": "item/netherite_shovel/fantasy_shovel"
+					}
+				},
+				{
+					"when": "Norroen Shovel",
+					"model": {
+						"type": "model",
+						"model": "item/netherite_shovel/norroen_shovel"
+					}
+				},
+				{
+					"when": "Halloween Shovel",
+					"model": {
+						"type": "model",
+						"model": "item/netherite_shovel/halloween_shovel"
+					}
+				},
+				{
+					"when": "Glass Shovel",
+					"model": {
+						"type": "model",
+						"model": "item/netherite_shovel/glass_shovel"
+					}
+				},
+				{
+					"when": "Dragonheart Shovel",
+					"model": {
+						"type": "model",
+						"model": "item/netherite_shovel/dragonheart_shovel"
+					}
+				},
+				{
+					"when": "Orcish Shovel",
+					"model": {
+						"type": "model",
+						"model": "item/netherite_shovel/orcish_shovel"
+					}
+				},
+				{
+					"when": "Ancient Shovel",
+					"model": {
+						"type": "model",
+						"model": "item/netherite_shovel/ancient_shovel"
+					}
+				},
+				{
+					"when": "Ender Dragon Shovel",
+					"model": {
+						"type": "model",
+						"model": "item/netherite_shovel/ender_dragon_shovel"
+					}
+				}
+			],
+			"fallback": {
+						"type": "model",
+						"model": "item/netherite_shovel"
+					}
+		},
+		"on_false": {
+						"type": "model",
+						"model": "item/netherite_shovel"
+					}
+	}
+}

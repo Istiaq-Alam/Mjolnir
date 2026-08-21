@@ -1,0 +1,8 @@
+{
+	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+	"parent": "item/compass/zombie",
+	"textures": {
+		"particle": "item/compass/wither_skeleton",
+		"base": "item/compass/wither_skeleton_base"
+	}
+}

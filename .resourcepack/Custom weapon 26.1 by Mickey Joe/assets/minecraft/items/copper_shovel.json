@@ -1,0 +1,89 @@
+{
+	"oversized_in_gui": true,
+	"model": {
+		"type": "condition",
+		"property": "has_component",
+		"component": "custom_name",
+		"on_true": {
+			"type": "select",
+			"property": "component",
+			"component": "custom_name",
+	  		"cases": [
+					{
+				"when": "Shovel",
+				"model": {
+					"type": "model",
+					"model": "item/copper_shovel"
+			 			}
+					},
+					{
+				"when": [
+						"Ladle",
+						"Spoon"
+					],
+				"model": {
+					"type": "model",
+					"model": "item/copper_shovel/ladle"
+			 			}
+					},
+					{
+				"when": "Super Cute Shovel",
+				"model": {
+					"type": "model",
+					"model": "item/copper_shovel/super_cute_shovel"
+			 			}
+					},
+					{
+				"when": "Kemetian Shovel",
+				"model": {
+					"type": "model",
+					"model": "item/copper_shovel/kemetian_shovel"
+			 			}
+					},
+					{
+				"when": "Hellenic Shovel",
+				"model": {
+					"type": "model",
+					"model": "item/copper_shovel/hellenic_shovel"
+			 			}
+					},
+					{
+				"when": "Sinitic Shovel",
+				"model": {
+					"type": "model",
+					"model": "item/copper_shovel/sinitic_shovel"
+			 			}
+					},
+					{
+				"when": "Fantasy Shovel",
+				"model": {
+					"type": "model",
+					"model": "item/copper_shovel/fantasy_shovel"
+			 			}
+					},
+					{
+				"when": "Norroen Shovel",
+				"model": {
+					"type": "model",
+					"model": "item/copper_shovel/norroen_shovel"
+			 			}
+					},
+					{
+				"when": "Halloween Shovel",
+				"model": {
+					"type": "model",
+					"model": "item/copper_shovel/halloween_shovel"
+			 			}
+					}
+		  		],
+			"fallback": {
+						"type": "model",
+						"model": "item/copper_shovel"
+					}
+		},
+		"on_false": {
+						"type": "model",
+						"model": "item/copper_shovel"
+					}
+	}
+}

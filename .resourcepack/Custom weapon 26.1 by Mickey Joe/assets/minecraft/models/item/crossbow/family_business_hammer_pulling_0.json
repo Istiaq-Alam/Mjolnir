@@ -1,0 +1,20 @@
+{
+	"format_version": "1.21.6",
+	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+	"parent": "item/crossbow/family_business_pulling",
+	"elements": [
+		{
+			"from": [6.5, -1, -7],
+			"to": [9.5, 2, 0],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, -0.5, -11]},
+			"faces": {
+				"north": {"uv": [11.5, 7.5, 13, 9], "texture": "#particle"},
+				"east": {"uv": [16, 10.5, 12.5, 12], "texture": "#particle"},
+				"south": {"uv": [11.5, 9, 13, 10.5], "texture": "#particle"},
+				"west": {"uv": [12.5, 10.5, 16, 12], "texture": "#particle"},
+				"up": {"uv": [14.5, 10.5, 13, 7], "texture": "#particle"},
+				"down": {"uv": [16, 7, 14.5, 10.5], "texture": "#particle"}
+			}
+		}
+	]
+}

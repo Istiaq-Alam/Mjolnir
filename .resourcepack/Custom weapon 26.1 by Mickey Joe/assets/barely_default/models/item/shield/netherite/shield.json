@@ -1,0 +1,8 @@
+{
+	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+	"parent": "barely_default:item/shield/diamond/shield",
+	"textures": {
+		"shield": "barely_default:item/shield/netherite/shield",
+		"particle": "block/netherite_block"
+	}
+}

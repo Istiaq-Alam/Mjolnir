@@ -1,0 +1,7 @@
+{
+	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+	"parent": "item/sconce/oak_planks_sconce",
+	"textures": {
+		"particle": "block/sconce/crimson_planks_sconce"
+	}
+}

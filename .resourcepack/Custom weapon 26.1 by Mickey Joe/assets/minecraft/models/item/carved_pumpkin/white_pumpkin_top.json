@@ -1,0 +1,9 @@
+{
+	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+	"parent": "block/carved_pumpkin_top",
+	"textures": {
+		"particle": "block/carved_pumpkin/white_pumpkin_side",
+		"top": "block/carved_pumpkin/white_pumpkin_top",
+		"inside": "block/carved_pumpkin/white_pumpkin_inside"
+	}
+}

@@ -1,0 +1,8 @@
+{
+	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+	"parent": "item/shield/space_shield_blocking",
+	"textures": {
+		"particle": "item/shield/vortex_shield",
+		"energy": "item/shield/vortex_shield_energy"
+	}
+}

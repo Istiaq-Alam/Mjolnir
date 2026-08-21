@@ -1,0 +1,7 @@
+{
+	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+	"parent": "item/bow/slingshot",
+	"textures": {
+		"particle": "item/bow/bone_slingshot"
+	}
+}

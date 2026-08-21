@@ -1,0 +1,45 @@
+{
+	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+	"parent": "builtin/generated",
+	"textures": {
+		"layer0": "item/mace/big_joe"
+	},
+	"gui_light": "front",
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [0, -90, 60],
+			"translation": [0, 8, -1],
+			"scale": [1.7, 1.7, 0.85]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [0, 90, -60],
+			"translation": [0, 8, -1],
+			"scale": [1.7, 1.7, 0.85]
+		},
+		"firstperson_righthand": {
+			"rotation": [0, -125, 65],
+			"translation": [7.5, 3.95, -1.87],
+			"scale": [1.36, 1.36, 0.68]
+		},
+		"firstperson_lefthand": {
+			"rotation": [0, 55, -65],
+			"translation": [7.5, 3.95, -1.87],
+			"scale": [1.36, 1.36, 0.68]
+		},
+		"ground": {
+			"rotation": [0, -25.5, 0],
+			"translation": [0, 7, 0],
+			"scale": [1.25, 1.25, 0.62]
+		},
+		"gui": {
+			"rotation": [0, -25.5, -4],
+			"translation": [0, -0.25, 0],
+			"scale": [1.06, 1.06, 0.53]
+		},
+		"fixed": {
+			"rotation": [0, 180, 0],
+			"translation": [0, 0, -0.5],
+			"scale": [1.99, 1.99, 1]
+		}
+	}
+}

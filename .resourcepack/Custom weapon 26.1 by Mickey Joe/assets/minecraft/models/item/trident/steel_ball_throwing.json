@@ -1,0 +1,26 @@
+{
+	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+	"parent": "item/trident/steel_ball",
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [-30, 22.5, 0],
+			"translation": [0, 0, -5],
+			"scale": [0.55, 0.55, 0.55]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [-30, 22.5, 0],
+			"translation": [0, 0, -5],
+			"scale": [0.55, 0.55, 0.55]
+		},
+		"firstperson_righthand": {
+			"rotation": [90, 22.5, 0],
+			"translation": [13.38, 11.7, -10.12],
+			"scale": [0.68, 0.68, 0.68]
+		},
+		"firstperson_lefthand": {
+			"rotation": [90, 22.5, 0],
+			"translation": [13.38, 11.7, -10.12],
+			"scale": [0.68, 0.68, 0.68]
+		}
+	}
+}

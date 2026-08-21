@@ -1,0 +1,4173 @@
+{
+	"oversized_in_gui": true,
+	"model": {
+		"type": "condition",
+		"on_false": {
+			"type": "select",
+			"property": "component",
+			"component": "custom_name",
+			"cases": [
+				{
+					"when": [
+						"Dinnerbone",
+						"Grumm",
+						"woB"
+					],
+					"model": {
+						"type": "condition",
+						"property": "component",
+						"predicate": "custom_data",
+						"value": {
+							"equipment": "netherite"
+						},
+						"on_true": {
+							"type": "model",
+							"model": "item/bow/netherite_dinnerbone"
+						},
+						"on_false": {
+							"type": "model",
+							"model": "item/bow/dinnerbone"
+						}
+					}
+				},
+				{
+					"when": "jeb_",
+					"model": {
+						"type": "model",
+						"model": "item/bow/jeb_"
+					}
+				},
+				{
+					"when": "White Power Ring",
+					"model": {
+						"type": "select",
+						"property": "display_context",
+						"cases": [
+							{
+								"when": [
+									"gui",
+									"ground",
+									"fixed"
+								],
+								"model": {
+									"type": "composite",
+									"models": [
+										{
+											"type": "model",
+											"model": "item/netherite_sword/white_power_ring"
+										},
+										{
+											"type": "model",
+											"model": "item/bow/white_power_ring_power"
+										},
+										{
+											"type": "model",
+											"model": "item/bow/white_power_ring_bow"
+										}
+									]
+								}
+							}
+						],
+						"fallback": {
+							"type": "model",
+							"model": "item/netherite_sword/white_power_ring"
+						}
+					}
+				},
+				{
+					"when": "Violet Power Ring",
+					"model": {
+						"type": "select",
+						"property": "display_context",
+						"cases": [
+							{
+								"when": [
+									"gui",
+									"ground",
+									"fixed"
+								],
+								"model": {
+									"type": "composite",
+									"models": [
+										{
+											"type": "model",
+											"model": "item/netherite_sword/violet_power_ring"
+										},
+										{
+											"type": "model",
+											"model": "item/bow/violet_power_ring_power"
+										},
+										{
+											"type": "model",
+											"model": "item/bow/violet_power_ring_bow"
+										}
+									]
+								}
+							}
+						],
+						"fallback": {
+							"type": "model",
+							"model": "item/netherite_sword/violet_power_ring"
+						}
+					}
+				},
+				{
+					"when": "Red Power Ring",
+					"model": {
+						"type": "select",
+						"property": "display_context",
+						"cases": [
+							{
+								"when": [
+									"gui",
+									"ground",
+									"fixed"
+								],
+								"model": {
+									"type": "composite",
+									"models": [
+										{
+											"type": "model",
+											"model": "item/netherite_sword/red_power_ring"
+										},
+										{
+											"type": "model",
+											"model": "item/bow/red_power_ring_power"
+										},
+										{
+											"type": "model",
+											"model": "item/bow/red_power_ring_bow"
+										}
+									]
+								}
+							}
+						],
+						"fallback": {
+							"type": "model",
+							"model": "item/netherite_sword/red_power_ring"
+						}
+					}
+				},
+				{
+					"when": "Blue Power Ring",
+					"model": {
+						"type": "select",
+						"property": "display_context",
+						"cases": [
+							{
+								"when": [
+									"gui",
+									"ground",
+									"fixed"
+								],
+								"model": {
+									"type": "composite",
+									"models": [
+										{
+											"type": "model",
+											"model": "item/netherite_sword/blue_power_ring"
+										},
+										{
+											"type": "model",
+											"model": "item/bow/blue_power_ring_power"
+										},
+										{
+											"type": "model",
+											"model": "item/bow/blue_power_ring_bow"
+										}
+									]
+								}
+							}
+						],
+						"fallback": {
+							"type": "model",
+							"model": "item/netherite_sword/blue_power_ring"
+						}
+					}
+				},
+				{
+					"when": "Indigo Power Ring",
+					"model": {
+						"type": "select",
+						"property": "display_context",
+						"cases": [
+							{
+								"when": [
+									"gui",
+									"ground",
+									"fixed"
+								],
+								"model": {
+									"type": "composite",
+									"models": [
+										{
+											"type": "model",
+											"model": "item/netherite_sword/indigo_power_ring"
+										},
+										{
+											"type": "model",
+											"model": "item/bow/indigo_power_ring_power"
+										},
+										{
+											"type": "model",
+											"model": "item/bow/indigo_power_ring_bow"
+										}
+									]
+								}
+							}
+						],
+						"fallback": {
+							"type": "model",
+							"model": "item/netherite_sword/indigo_power_ring"
+						}
+					}
+				},
+				{
+					"when": "Black Power Ring",
+					"model": {
+						"type": "select",
+						"property": "display_context",
+						"cases": [
+							{
+								"when": [
+									"gui",
+									"ground",
+									"fixed"
+								],
+								"model": {
+									"type": "composite",
+									"models": [
+										{
+											"type": "model",
+											"model": "item/netherite_sword/black_power_ring"
+										},
+										{
+											"type": "model",
+											"model": "item/bow/black_power_ring_power"
+										},
+										{
+											"type": "model",
+											"model": "item/bow/black_power_ring_bow"
+										}
+									]
+								}
+							}
+						],
+						"fallback": {
+							"type": "model",
+							"model": "item/netherite_sword/black_power_ring"
+						}
+					}
+				},
+				{
+					"when": "Yellow Power Ring",
+					"model": {
+						"type": "select",
+						"property": "display_context",
+						"cases": [
+							{
+								"when": [
+									"gui",
+									"ground",
+									"fixed"
+								],
+								"model": {
+									"type": "composite",
+									"models": [
+										{
+											"type": "model",
+											"model": "item/netherite_sword/yellow_power_ring"
+										},
+										{
+											"type": "model",
+											"model": "item/bow/yellow_power_ring_power"
+										},
+										{
+											"type": "model",
+											"model": "item/bow/yellow_power_ring_bow"
+										}
+									]
+								}
+							}
+						],
+						"fallback": {
+							"type": "model",
+							"model": "item/netherite_sword/yellow_power_ring"
+						}
+					}
+				},
+				{
+					"when": "Orange Power Ring",
+					"model": {
+						"type": "select",
+						"property": "display_context",
+						"cases": [
+							{
+								"when": [
+									"gui",
+									"ground",
+									"fixed"
+								],
+								"model": {
+									"type": "composite",
+									"models": [
+										{
+											"type": "model",
+											"model": "item/netherite_sword/orange_power_ring"
+										},
+										{
+											"type": "model",
+											"model": "item/bow/orange_power_ring_power"
+										},
+										{
+											"type": "model",
+											"model": "item/bow/orange_power_ring_bow"
+										}
+									]
+								}
+							}
+						],
+						"fallback": {
+							"type": "model",
+							"model": "item/netherite_sword/orange_power_ring"
+						}
+					}
+				},
+				{
+					"when": "Green Power Ring",
+					"model": {
+						"type": "select",
+						"property": "display_context",
+						"cases": [
+							{
+								"when": [
+									"gui",
+									"ground",
+									"fixed"
+								],
+								"model": {
+									"type": "composite",
+									"models": [
+										{
+											"type": "model",
+											"model": "item/netherite_sword/green_power_ring"
+										},
+										{
+											"type": "model",
+											"model": "item/bow/green_power_ring_power"
+										},
+										{
+											"type": "model",
+											"model": "item/bow/green_power_ring_bow"
+										}
+									]
+								}
+							}
+						],
+						"fallback": {
+							"type": "model",
+							"model": "item/netherite_sword/green_power_ring"
+						}
+					}
+				},
+				{
+					"when": "Gaster Blaster",
+					"model": {
+						"type": "model",
+						"model": "item/bow/gaster_blaster"
+					}
+				},
+				{
+					"when": "Candy Bow",
+					"model": {
+						"type": "model",
+						"model": "item/bow/candy_bow"
+					}
+				},
+				{
+					"when": "Super Cute Bow",
+					"model": {
+						"type": "model",
+						"model": "item/bow/super_cute_bow"
+					}
+				},
+				{
+					"when": "Petra's Bow",
+					"model": {
+						"type": "condition",
+						"model": "item/bow/petra_bow",
+						"property": "component",
+						"predicate": "enchantments",
+						"value": [
+							{
+								"enchantments": [
+									"power"
+								],
+								"levels": 5
+							}
+						],
+						"on_true": {
+							"type": "model",
+							"model": "item/bow/petra_bow_power"
+						},
+						"on_false": {
+							"type": "model",
+							"model": "item/bow/petra_bow"
+						}
+					}
+				},
+				{
+					"when": "Creator's Bow",
+					"model": {
+						"type": "model",
+						"model": "item/bow/creator_bow"
+					}
+				},
+				{
+					"when": "Lute",
+					"model": {
+						"type": "model",
+						"model": "item/bow/lute"
+					}
+				},
+				{
+					"when": "Shieldbreaker Bow",
+					"model": {
+						"type": "model",
+						"model": "item/bow/shieldbreaker_bow"
+					}
+				},
+				{
+					"when": "Sacred Bow",
+					"model": {
+						"type": "model",
+						"model": "item/bow/sacred_bow"
+					}
+				},
+				{
+					"when": "Desecrated Bow",
+					"model": {
+						"type": "model",
+						"model": "item/bow/desecrated_bow"
+					}
+				},
+				{
+					"when": "Light Bow",
+					"model": {
+						"type": "model",
+						"model": "item/bow/light_bow"
+					}
+				},
+				{
+					"when": "Droid Bow",
+					"model": {
+						"type": "condition",
+						"model": "item/bow/droid_bow",
+						"property": "component",
+						"predicate": "enchantments",
+						"value": [
+							{
+								"enchantments": [
+									"power"
+								],
+								"levels": 5
+							}
+						],
+						"on_true": {
+							"type": "model",
+							"model": "item/bow/droid_bow_power"
+						},
+						"on_false": {
+							"type": "model",
+							"model": "item/bow/droid_bow"
+						}
+					}
+				},
+				{
+					"when": "Robot Bow",
+					"model": {
+						"type": "condition",
+						"model": "item/bow/robot_bow",
+						"property": "component",
+						"predicate": "enchantments",
+						"value": [
+							{
+								"enchantments": [
+									"power"
+								],
+								"levels": 5
+							}
+						],
+						"on_true": {
+							"type": "model",
+							"model": "item/bow/robot_bow_power"
+						},
+						"on_false": {
+							"type": "model",
+							"model": "item/bow/robot_bow"
+						}
+					}
+				},
+				{
+					"when": "Battle Bow",
+					"model": {
+						"type": "condition",
+						"model": "item/bow/battle_bow",
+						"property": "component",
+						"predicate": "enchantments",
+						"value": [
+							{
+								"enchantments": [
+									"power"
+								],
+								"levels": 5
+							}
+						],
+						"on_true": {
+							"type": "model",
+							"model": "item/bow/battle_bow_power"
+						},
+						"on_false": {
+							"type": "model",
+							"model": "item/bow/battle_bow"
+						}
+					}
+				},
+				{
+					"when": "Command Block Bow",
+					"model": {
+						"type": "condition",
+						"model": "item/bow/petra_bow",
+						"property": "component",
+						"predicate": "enchantments",
+						"value": [
+							{
+								"enchantments": [
+									"power"
+								],
+								"levels": 5
+							}
+						],
+						"on_true": {
+							"type": "model",
+							"model": "item/bow/command_block_bow_power"
+						},
+						"on_false": {
+							"type": "model",
+							"model": "item/bow/command_block_bow"
+						}
+					}
+				},
+				{
+					"when": "Eye of the Storm",
+					"model": {
+						"type": "model",
+						"model": "item/bow/eye_of_the_storm"
+					}
+				},
+				{
+					"when": "Bone Slingshot",
+					"model": {
+						"type": "model",
+						"model": "item/bow/bone_slingshot"
+					}
+				},
+				{
+					"when": "Slingshot",
+					"model": {
+						"type": "model",
+						"model": "item/bow/slingshot"
+					}
+				},
+				{
+					"when": "Shooting Star",
+					"model": {
+						"type": "condition",
+						"model": "item/bow/shooting_star",
+						"property": "component",
+						"predicate": "enchantments",
+						"value": [
+							{
+								"enchantments": [
+									"power"
+								],
+								"levels": 5
+							}
+						],
+						"on_true": {
+							"type": "model",
+							"model": "item/bow/shooting_star_power"
+						},
+						"on_false": {
+							"type": "model",
+							"model": "item/bow/shooting_star"
+						}
+					}
+				},
+				{
+					"when": "Teleportation Bow",
+					"model": {
+						"type": "condition",
+						"model": "item/bow/teleportation_bow",
+						"property": "component",
+						"predicate": "enchantments",
+						"value": [
+							{
+								"enchantments": [
+									"power"
+								],
+								"levels": 5
+							}
+						],
+						"on_true": {
+							"type": "model",
+							"model": "item/bow/teleportation_bow_power"
+						},
+						"on_false": {
+							"type": "model",
+							"model": "item/bow/teleportation_bow"
+						}
+					}
+				},
+				{
+					"when": "Empty Bow",
+					"model": {
+						"type": "condition",
+						"model": "item/bow/empty_bow",
+						"property": "component",
+						"predicate": "enchantments",
+						"value": [
+							{
+								"enchantments": [
+									"power"
+								],
+								"levels": 5
+							}
+						],
+						"on_true": {
+							"type": "model",
+							"model": "item/bow/empty_bow_power"
+						},
+						"on_false": {
+							"type": "model",
+							"model": "item/bow/empty_bow"
+						}
+					}
+				},
+				{
+					"when": "Leeching Thief",
+					"model": {
+						"type": "model",
+						"model": "item/bow/leeching_thief"
+					}
+				},
+				{
+					"when": "Ender Dragon Bow",
+					"model": {
+						"type": "model",
+						"model": "item/bow/ender_dragon_bow"
+					}
+				},
+				{
+					"when": "Shortbow",
+					"model": {
+						"type": "model",
+						"model": "item/bow/shortbow"
+					}
+				},
+				{
+					"when": "Longbow",
+					"model": {
+						"type": "model",
+						"model": "item/bow/longbow"
+					}
+				},
+				{
+					"when": "Ancient Bow",
+					"model": {
+						"type": "model",
+						"model": "item/bow/ancient_bow"
+					}
+				},
+				{
+					"when": "Bonebow",
+					"model": {
+						"type": "model",
+						"model": "item/bow/bonebow"
+					}
+				},
+				{
+					"when": "Power Bow",
+					"model": {
+						"type": "model",
+						"model": "item/bow/power_bow"
+					}
+				},
+				{
+					"when": "Hunting Bow",
+					"model": {
+						"type": "model",
+						"model": "item/bow/hunting_bow"
+					}
+				},
+				{
+					"when": "Hunter's Promise",
+					"model": {
+						"type": "model",
+						"model": "item/bow/hunters_promise"
+					}
+				},
+				{
+					"when": "Master's Bow",
+					"model": {
+						"type": "model",
+						"model": "item/bow/masters_bow"
+					}
+				},
+				{
+					"when": "Love Spell Bow",
+					"model": {
+						"type": "model",
+						"model": "item/bow/love_spell_bow"
+					}
+				},
+				{
+					"when": "Bubble Bow",
+					"model": {
+						"type": "model",
+						"model": "item/bow/bubble_bow"
+					}
+				},
+				{
+					"when": "Elite Power Bow",
+					"model": {
+						"type": "model",
+						"model": "item/bow/elite_power_bow"
+					}
+				},
+				{
+					"when": "Gloopy Bow",
+					"model": {
+						"type": "model",
+						"model": "item/bow/gloopy_bow"
+					}
+				},
+				{
+					"when": "Echo of the Valley",
+					"model": {
+						"type": "model",
+						"model": "item/bow/echo_of_the_valley"
+					}
+				},
+				{
+					"when": "Sugar Rush",
+					"model": {
+						"type": "model",
+						"model": "item/bow/sugar_rush"
+					}
+				},
+				{
+					"when": "Burst Gale Bow",
+					"model": {
+						"type": "model",
+						"model": "item/bow/burst_gale_bow"
+					}
+				},
+				{
+					"when": "Bubble Burster",
+					"model": {
+						"type": "model",
+						"model": "item/bow/bubble_burster"
+					}
+				},
+				{
+					"when": "Haunted Bow",
+					"model": {
+						"type": "model",
+						"model": "item/bow/haunted_bow"
+					}
+				},
+				{
+					"when": "Red Snake",
+					"model": {
+						"type": "model",
+						"model": "item/bow/red_snake"
+					}
+				},
+				{
+					"when": "Bow of Lost Souls",
+					"model": {
+						"type": "model",
+						"model": "item/bow/bow_of_lost_souls"
+					}
+				},
+				{
+					"when": "Purple Storm",
+					"model": {
+						"type": "model",
+						"model": "item/bow/purple_storm"
+					}
+				},
+				{
+					"when": "PVP Shortbow",
+					"model": {
+						"type": "model",
+						"model": "item/bow/pvp_shortbow"
+					}
+				},
+				{
+					"when": "Mechanical Shortbow",
+					"model": {
+						"type": "model",
+						"model": "item/bow/mechanical_shortbow"
+					}
+				},
+				{
+					"when": "Guardian Bow",
+					"model": {
+						"type": "model",
+						"model": "item/bow/guardian_bow"
+					}
+				},
+				{
+					"when": "The Green Menace",
+					"model": {
+						"type": "model",
+						"model": "item/bow/the_green_menace"
+					}
+				},
+				{
+					"when": "The Pink Scoundrel",
+					"model": {
+						"type": "model",
+						"model": "item/bow/the_pink_scoundrel"
+					}
+				},
+				{
+					"when": "Sabrewing",
+					"model": {
+						"type": "model",
+						"model": "item/bow/sabrewing"
+					}
+				},
+				{
+					"when": "Shivering Bow",
+					"model": {
+						"type": "model",
+						"model": "item/bow/shivering_bow"
+					}
+				},
+				{
+					"when": "Snow Bow",
+					"model": {
+						"type": "model",
+						"model": "item/bow/snow_bow"
+					}
+				},
+				{
+					"when": "Soul Bow",
+					"model": {
+						"type": "model",
+						"model": "item/bow/soul_bow"
+					}
+				},
+				{
+					"when": "Call of the Void",
+					"model": {
+						"type": "model",
+						"model": "item/bow/call_of_the_void"
+					}
+				},
+				{
+					"when": "Void Bow",
+					"model": {
+						"type": "model",
+						"model": "item/bow/void_bow"
+					}
+				},
+				{
+					"when": "Trickbow",
+					"model": {
+						"type": "model",
+						"model": "item/bow/trickbow"
+					}
+				},
+				{
+					"when": "Web Bow",
+					"model": {
+						"type": "model",
+						"model": "item/bow/web_bow"
+					}
+				},
+				{
+					"when": "Twin Bow",
+					"model": {
+						"type": "model",
+						"model": "item/bow/twin_bow"
+					}
+				},
+				{
+					"when": "Phantom Bow",
+					"model": {
+						"type": "model",
+						"model": "item/bow/phantom_bow"
+					}
+				},
+				{
+					"when": "Red Phantom Bow",
+					"model": {
+						"type": "model",
+						"model": "item/bow/red_phantom_bow"
+					}
+				},
+				{
+					"when": "Nocturnal Bow",
+					"model": {
+						"type": "model",
+						"model": "item/bow/nocturnal_bow"
+					}
+				},
+				{
+					"when": "Winter's Touch",
+					"model": {
+						"type": "model",
+						"model": "item/bow/winters_touch"
+					}
+				},
+				{
+					"when": "Wind Bow",
+					"model": {
+						"type": "model",
+						"model": "item/bow/wind_bow"
+					}
+				},
+				{
+					"when": "Twisting Vine Bow",
+					"model": {
+						"type": "model",
+						"model": "item/bow/twisting_vine_bow"
+					}
+				},
+				{
+					"when": "Weeping Vine Bow",
+					"model": {
+						"type": "model",
+						"model": "item/bow/weeping_vine_bow"
+					}
+				},
+				{
+					"when": "Prismarine Bow",
+					"model": {
+						"type": "model",
+						"model": "item/bow/prismarine_bow"
+					}
+				},
+				{
+					"when": "Arm Cannon",
+					"model": {
+						"type": "model",
+						"model": "item/bow/arm_cannon"
+					}
+				},
+				{
+					"when": "Trooper Arm Cannon",
+					"model": {
+						"type": "model",
+						"model": "item/bow/trooper_arm_cannon"
+					}
+				},
+				{
+					"when": "Space Arm Cannon",
+					"model": {
+						"type": "model",
+						"model": "item/bow/space_arm_cannon"
+					}
+				},
+				{
+					"when": "Steampunk Arm Cannon",
+					"model": {
+						"type": "model",
+						"model": "item/bow/steampunk_arm_cannon"
+					}
+				},
+				{
+					"when": "Proto Arm Buster",
+					"model": {
+						"type": "model",
+						"model": "item/bow/proto_arm_buster"
+					}
+				},
+				{
+					"when": "Arm Buster",
+					"model": {
+						"type": "condition",
+						"model": "item/bow/arm_buster",
+						"property": "component",
+						"predicate": "enchantments",
+						"value": [
+							{
+								"enchantments": "flame"
+							}
+						],
+						"on_true": {
+							"type": "model",
+							"model": "item/bow/arm_buster_flame"
+						},
+						"on_false": {
+							"type": "model",
+							"model": "item/bow/arm_buster"
+						}
+					}
+				},
+				{
+					"when": "Trigger Arm Buster",
+					"model": {
+						"type": "condition",
+						"model": "item/bow/trigger_arm_buster",
+						"property": "component",
+						"predicate": "enchantments",
+						"value": [
+							{
+								"enchantments": "flame"
+							}
+						],
+						"on_true": {
+							"type": "model",
+							"model": "item/bow/trigger_arm_buster_flame"
+						},
+						"on_false": {
+							"type": "model",
+							"model": "item/bow/trigger_arm_buster"
+						}
+					}
+				},
+				{
+					"when": "Arm Buster.exe",
+					"model": {
+						"type": "condition",
+						"model": "item/bow/arm_buster_exe",
+						"property": "component",
+						"predicate": "enchantments",
+						"value": [
+							{
+								"enchantments": "flame"
+							}
+						],
+						"on_true": {
+							"type": "model",
+							"model": "item/bow/arm_buster_exe_flame"
+						},
+						"on_false": {
+							"type": "model",
+							"model": "item/bow/arm_buster_exe"
+						}
+					}
+				},
+				{
+					"when": "Omega Arm Buster",
+					"model": {
+						"type": "condition",
+						"model": "item/bow/omega_arm_buster",
+						"property": "component",
+						"predicate": "enchantments",
+						"value": [
+							{
+								"enchantments": "flame"
+							}
+						],
+						"on_true": {
+							"type": "model",
+							"model": "item/bow/omega_arm_buster_flame"
+						},
+						"on_false": {
+							"type": "model",
+							"model": "item/bow/omega_arm_buster"
+						}
+					}
+				},
+				{
+					"when": "X Arm Buster",
+					"model": {
+						"type": "condition",
+						"model": "item/bow/x_arm_buster",
+						"property": "component",
+						"predicate": "enchantments",
+						"value": [
+							{
+								"enchantments": "power",
+								"levels": 5
+							}
+						],
+						"on_true": {
+							"type": "model",
+							"model": "item/bow/x_arm_buster_power"
+						},
+						"on_false": {
+							"type": "condition",
+							"model": "item/bow/x_arm_buster",
+							"property": "component",
+							"predicate": "enchantments",
+							"value": [
+								{
+									"enchantments": "flame"
+								}
+							],
+							"on_true": {
+								"type": "model",
+								"model": "item/bow/x_arm_buster_flame"
+							},
+							"on_false": {
+								"type": "model",
+								"model": "item/bow/x_arm_buster"
+							}
+						}
+					}
+				},
+				{
+					"when": "Bass Arm Buster",
+					"model": {
+						"type": "model",
+						"model": "item/bow/bass_arm_buster"
+					}
+				},
+				{
+					"when": "Bow Mk III",
+					"model": {
+						"type": "model",
+						"model": "item/bow/bow_mk_iii"
+					}
+				}
+			],
+			"fallback": {
+				"type": "condition",
+				"property": "component",
+				"predicate": "custom_data",
+				"value": {
+					"equipment": "netherite"
+				},
+				"on_true": {
+					"type": "model",
+					"model": "item/bow/netherite_bow"
+				},
+				"on_false": {
+					"type": "model",
+					"model": "item/bow"
+				}
+			}
+		},
+		"on_true": {
+			"type": "range_dispatch",
+			"entries": [
+				{
+					"model": {
+						"type": "select",
+						"property": "component",
+						"component": "custom_name",
+						"cases": [
+							{
+								"when": [
+									"Dinnerbone",
+									"Grumm",
+									"woB"
+								],
+								"model": {
+									"type": "condition",
+									"property": "component",
+									"predicate": "custom_data",
+									"value": {
+										"equipment": "netherite"
+									},
+									"on_true": {
+										"type": "model",
+										"model": "item/bow/netherite_dinnerbone_pulling_1"
+									},
+									"on_false": {
+										"type": "model",
+										"model": "item/bow/dinnerbone_pulling_1"
+									}
+								}
+							},
+							{
+								"when": "jeb_",
+								"model": {
+									"type": "model",
+									"model": "item/bow/jeb__pulling_1"
+								}
+							},
+							{
+								"when": "White Power Ring",
+								"model": {
+									"type": "composite",
+									"models": [
+										{
+											"type": "model",
+											"model": "item/bow/white_power_ring"
+										},
+										{
+											"type": "model",
+											"model": "item/bow/white_power_ring_power"
+										},
+										{
+											"type": "model",
+											"model": "item/bow/white_power_ring_bow_pulling_1"
+										}
+									]
+								}
+							},
+							{
+								"when": "Violet Power Ring",
+								"model": {
+									"type": "composite",
+									"models": [
+										{
+											"type": "model",
+											"model": "item/bow/violet_power_ring"
+										},
+										{
+											"type": "model",
+											"model": "item/bow/violet_power_ring_power"
+										},
+										{
+											"type": "model",
+											"model": "item/bow/violet_power_ring_bow_pulling_1"
+										}
+									]
+								}
+							},
+							{
+								"when": "Red Power Ring",
+								"model": {
+									"type": "composite",
+									"models": [
+										{
+											"type": "model",
+											"model": "item/bow/red_power_ring"
+										},
+										{
+											"type": "model",
+											"model": "item/bow/red_power_ring_power"
+										},
+										{
+											"type": "model",
+											"model": "item/bow/red_power_ring_bow_pulling_1"
+										}
+									]
+								}
+							},
+							{
+								"when": "Blue Power Ring",
+								"model": {
+									"type": "composite",
+									"models": [
+										{
+											"type": "model",
+											"model": "item/bow/blue_power_ring"
+										},
+										{
+											"type": "model",
+											"model": "item/bow/blue_power_ring_power"
+										},
+										{
+											"type": "model",
+											"model": "item/bow/blue_power_ring_bow_pulling_1"
+										}
+									]
+								}
+							},
+							{
+								"when": "Indigo Power Ring",
+								"model": {
+									"type": "composite",
+									"models": [
+										{
+											"type": "model",
+											"model": "item/bow/indigo_power_ring"
+										},
+										{
+											"type": "model",
+											"model": "item/bow/indigo_power_ring_power"
+										},
+										{
+											"type": "model",
+											"model": "item/bow/indigo_power_ring_bow_pulling_1"
+										}
+									]
+								}
+							},
+							{
+								"when": "Black Power Ring",
+								"model": {
+									"type": "composite",
+									"models": [
+										{
+											"type": "model",
+											"model": "item/bow/black_power_ring"
+										},
+										{
+											"type": "model",
+											"model": "item/bow/black_power_ring_power"
+										},
+										{
+											"type": "model",
+											"model": "item/bow/black_power_ring_bow_pulling_1"
+										}
+									]
+								}
+							},
+							{
+								"when": "Yellow Power Ring",
+								"model": {
+									"type": "composite",
+									"models": [
+										{
+											"type": "model",
+											"model": "item/bow/yellow_power_ring"
+										},
+										{
+											"type": "model",
+											"model": "item/bow/yellow_power_ring_power"
+										},
+										{
+											"type": "model",
+											"model": "item/bow/yellow_power_ring_bow_pulling_1"
+										}
+									]
+								}
+							},
+							{
+								"when": "Orange Power Ring",
+								"model": {
+									"type": "composite",
+									"models": [
+										{
+											"type": "model",
+											"model": "item/bow/orange_power_ring"
+										},
+										{
+											"type": "model",
+											"model": "item/bow/orange_power_ring_power"
+										},
+										{
+											"type": "model",
+											"model": "item/bow/orange_power_ring_bow_pulling_1"
+										}
+									]
+								}
+							},
+							{
+								"when": "Green Power Ring",
+								"model": {
+									"type": "composite",
+									"models": [
+										{
+											"type": "model",
+											"model": "item/bow/green_power_ring"
+										},
+										{
+											"type": "model",
+											"model": "item/bow/green_power_ring_power"
+										},
+										{
+											"type": "model",
+											"model": "item/bow/green_power_ring_bow_pulling_1"
+										}
+									]
+								}
+							},
+							{
+								"when": "Gaster Blaster",
+								"model": {
+									"type": "model",
+									"model": "item/bow/gaster_blaster_pulling_1"
+								}
+							},
+							{
+								"when": "Candy Bow",
+								"model": {
+									"type": "model",
+									"model": "item/bow/candy_bow_pulling_1"
+								}
+							},
+							{
+								"when": "Super Cute Bow",
+								"model": {
+									"type": "model",
+									"model": "item/bow/super_cute_bow_pulling_1"
+								}
+							},
+							{
+								"when": "Petra's Bow",
+								"model": {
+									"type": "condition",
+									"model": "item/bow/petra_bow_pulling_1",
+									"property": "component",
+									"predicate": "enchantments",
+									"value": [
+										{
+											"enchantments": [
+												"power"
+											],
+											"levels": 5
+										}
+									],
+									"on_true": {
+										"type": "model",
+										"model": "item/bow/petra_bow_power_pulling_1"
+									},
+									"on_false": {
+										"type": "model",
+										"model": "item/bow/petra_bow_pulling_1"
+									}
+								}
+							},
+							{
+								"when": "Creator's Bow",
+								"model": {
+									"type": "model",
+									"model": "item/bow/creator_bow_pulling_1"
+								}
+							},
+							{
+								"when": "Lute",
+								"model": {
+									"type": "model",
+									"model": "item/bow/lute_pulling_1"
+								}
+							},
+							{
+								"when": "Shieldbreaker Bow",
+								"model": {
+									"type": "model",
+									"model": "item/bow/shieldbreaker_bow_pulling_1"
+								}
+							},
+							{
+								"when": "Sacred Bow",
+								"model": {
+									"type": "model",
+									"model": "item/bow/sacred_bow_pulling_1"
+								}
+							},
+							{
+								"when": "Desecrated Bow",
+								"model": {
+									"type": "model",
+									"model": "item/bow/desecrated_bow_pulling_1"
+								}
+							},
+							{
+								"when": "Light Bow",
+								"model": {
+									"type": "model",
+									"model": "item/bow/light_bow_pulling_1"
+								}
+							},
+							{
+								"when": "Droid Bow",
+								"model": {
+									"type": "condition",
+									"model": "item/bow/droid_bow_pulling_1",
+									"property": "component",
+									"predicate": "enchantments",
+									"value": [
+										{
+											"enchantments": [
+												"power"
+											],
+											"levels": 5
+										}
+									],
+									"on_true": {
+										"type": "model",
+										"model": "item/bow/droid_bow_power_pulling_1"
+									},
+									"on_false": {
+										"type": "model",
+										"model": "item/bow/droid_bow_pulling_1"
+									}
+								}
+							},
+							{
+								"when": "Robot Bow",
+								"model": {
+									"type": "condition",
+									"model": "item/bow/robot_bow_pulling_1",
+									"property": "component",
+									"predicate": "enchantments",
+									"value": [
+										{
+											"enchantments": [
+												"power"
+											],
+											"levels": 5
+										}
+									],
+									"on_true": {
+										"type": "model",
+										"model": "item/bow/robot_bow_power_pulling_1"
+									},
+									"on_false": {
+										"type": "model",
+										"model": "item/bow/robot_bow_pulling_1"
+									}
+								}
+							},
+							{
+								"when": "Battle Bow",
+								"model": {
+									"type": "condition",
+									"model": "item/bow/battle_bow_pulling_1",
+									"property": "component",
+									"predicate": "enchantments",
+									"value": [
+										{
+											"enchantments": [
+												"power"
+											],
+											"levels": 5
+										}
+									],
+									"on_true": {
+										"type": "model",
+										"model": "item/bow/battle_bow_power_pulling_1"
+									},
+									"on_false": {
+										"type": "model",
+										"model": "item/bow/battle_bow_pulling_1"
+									}
+								}
+							},
+							{
+								"when": "Command Block Bow",
+								"model": {
+									"type": "condition",
+									"model": "item/bow/petra_bow_pulling_1",
+									"property": "component",
+									"predicate": "enchantments",
+									"value": [
+										{
+											"enchantments": [
+												"power"
+											],
+											"levels": 5
+										}
+									],
+									"on_true": {
+										"type": "model",
+										"model": "item/bow/command_block_bow_power_pulling_1"
+									},
+									"on_false": {
+										"type": "model",
+										"model": "item/bow/command_block_bow_pulling_1"
+									}
+								}
+							},
+							{
+								"when": "Eye of the Storm",
+								"model": {
+									"type": "model",
+									"model": "item/bow/eye_of_the_storm_pulling_1"
+								}
+							},
+							{
+								"when": "Bone Slingshot",
+								"model": {
+									"type": "model",
+									"model": "item/bow/bone_slingshot_pulling_1"
+								}
+							},
+							{
+								"when": "Slingshot",
+								"model": {
+									"type": "model",
+									"model": "item/bow/slingshot_pulling_1"
+								}
+							},
+							{
+								"when": "Shooting Star",
+								"model": {
+									"type": "condition",
+									"model": "item/bow/shooting_star_pulling_1",
+									"property": "component",
+									"predicate": "enchantments",
+									"value": [
+										{
+											"enchantments": [
+												"power"
+											],
+											"levels": 5
+										}
+									],
+									"on_true": {
+										"type": "model",
+										"model": "item/bow/shooting_star_power_pulling_1"
+									},
+									"on_false": {
+										"type": "model",
+										"model": "item/bow/shooting_star_pulling_1"
+									}
+								}
+							},
+							{
+								"when": "Teleportation Bow",
+								"model": {
+									"type": "condition",
+									"model": "item/bow/teleportation_bow_pulling_1",
+									"property": "component",
+									"predicate": "enchantments",
+									"value": [
+										{
+											"enchantments": [
+												"power"
+											],
+											"levels": 5
+										}
+									],
+									"on_true": {
+										"type": "model",
+										"model": "item/bow/teleportation_bow_power_pulling_1"
+									},
+									"on_false": {
+										"type": "model",
+										"model": "item/bow/teleportation_bow_pulling_1"
+									}
+								}
+							},
+							{
+								"when": "Empty Bow",
+								"model": {
+									"type": "condition",
+									"model": "item/bow/empty_bow_pulling_1",
+									"property": "component",
+									"predicate": "enchantments",
+									"value": [
+										{
+											"enchantments": [
+												"power"
+											],
+											"levels": 5
+										}
+									],
+									"on_true": {
+										"type": "model",
+										"model": "item/bow/empty_bow_power_pulling_1"
+									},
+									"on_false": {
+										"type": "model",
+										"model": "item/bow/empty_bow_pulling_1"
+									}
+								}
+							},
+							{
+								"when": "Leeching Thief",
+								"model": {
+									"type": "model",
+									"model": "item/bow/leeching_thief_pulling_1"
+								}
+							},
+							{
+								"when": "Ender Dragon Bow",
+								"model": {
+									"type": "model",
+									"model": "item/bow/ender_dragon_bow_pulling_1"
+								}
+							},
+							{
+								"when": "Shortbow",
+								"model": {
+									"type": "model",
+									"model": "item/bow/shortbow_pulling_1"
+								}
+							},
+							{
+								"when": "Longbow",
+								"model": {
+									"type": "model",
+									"model": "item/bow/longbow_pulling_1"
+								}
+							},
+							{
+								"when": "Ancient Bow",
+								"model": {
+									"type": "model",
+									"model": "item/bow/ancient_bow_pulling_1"
+								}
+							},
+							{
+								"when": "Bonebow",
+								"model": {
+									"type": "model",
+									"model": "item/bow/bonebow_pulling_1"
+								}
+							},
+							{
+								"when": "Power Bow",
+								"model": {
+									"type": "model",
+									"model": "item/bow/power_bow_pulling_1"
+								}
+							},
+							{
+								"when": "Hunting Bow",
+								"model": {
+									"type": "model",
+									"model": "item/bow/hunting_bow_pulling_1"
+								}
+							},
+							{
+								"when": "Hunter's Promise",
+								"model": {
+									"type": "model",
+									"model": "item/bow/hunters_promise_pulling_1"
+								}
+							},
+							{
+								"when": "Master's Bow",
+								"model": {
+									"type": "model",
+									"model": "item/bow/masters_bow_pulling_1"
+								}
+							},
+							{
+								"when": "Love Spell Bow",
+								"model": {
+									"type": "model",
+									"model": "item/bow/love_spell_bow_pulling_1"
+								}
+							},
+							{
+								"when": "Bubble Bow",
+								"model": {
+									"type": "model",
+									"model": "item/bow/bubble_bow_pulling_1"
+								}
+							},
+							{
+								"when": "Elite Power Bow",
+								"model": {
+									"type": "model",
+									"model": "item/bow/elite_power_bow_pulling_1"
+								}
+							},
+							{
+								"when": "Gloopy Bow",
+								"model": {
+									"type": "model",
+									"model": "item/bow/gloopy_bow_pulling_1"
+								}
+							},
+							{
+								"when": "Echo of the Valley",
+								"model": {
+									"type": "model",
+									"model": "item/bow/echo_of_the_valley_pulling_1"
+								}
+							},
+							{
+								"when": "Sugar Rush",
+								"model": {
+									"type": "model",
+									"model": "item/bow/sugar_rush_pulling_1"
+								}
+							},
+							{
+								"when": "Burst Gale Bow",
+								"model": {
+									"type": "model",
+									"model": "item/bow/burst_gale_bow_pulling_1"
+								}
+							},
+							{
+								"when": "Bubble Burster",
+								"model": {
+									"type": "model",
+									"model": "item/bow/bubble_burster_pulling_1"
+								}
+							},
+							{
+								"when": "Haunted Bow",
+								"model": {
+									"type": "model",
+									"model": "item/bow/haunted_bow_pulling_1"
+								}
+							},
+							{
+								"when": "Red Snake",
+								"model": {
+									"type": "model",
+									"model": "item/bow/red_snake_pulling_1"
+								}
+							},
+							{
+								"when": "Bow of Lost Souls",
+								"model": {
+									"type": "model",
+									"model": "item/bow/bow_of_lost_souls_pulling_1"
+								}
+							},
+							{
+								"when": "Purple Storm",
+								"model": {
+									"type": "model",
+									"model": "item/bow/purple_storm_pulling_1"
+								}
+							},
+							{
+								"when": "PVP Shortbow",
+								"model": {
+									"type": "model",
+									"model": "item/bow/pvp_shortbow_pulling_1"
+								}
+							},
+							{
+								"when": "Mechanical Shortbow",
+								"model": {
+									"type": "model",
+									"model": "item/bow/mechanical_shortbow_pulling_1"
+								}
+							},
+							{
+								"when": "Guardian Bow",
+								"model": {
+									"type": "model",
+									"model": "item/bow/guardian_bow_pulling_1"
+								}
+							},
+							{
+								"when": "The Green Menace",
+								"model": {
+									"type": "model",
+									"model": "item/bow/the_green_menace_pulling_1"
+								}
+							},
+							{
+								"when": "The Pink Scoundrel",
+								"model": {
+									"type": "model",
+									"model": "item/bow/the_pink_scoundrel_pulling_1"
+								}
+							},
+							{
+								"when": "Sabrewing",
+								"model": {
+									"type": "model",
+									"model": "item/bow/sabrewing_pulling_1"
+								}
+							},
+							{
+								"when": "Shivering Bow",
+								"model": {
+									"type": "model",
+									"model": "item/bow/shivering_bow_pulling_1"
+								}
+							},
+							{
+								"when": "Snow Bow",
+								"model": {
+									"type": "model",
+									"model": "item/bow/snow_bow_pulling_1"
+								}
+							},
+							{
+								"when": "Soul Bow",
+								"model": {
+									"type": "model",
+									"model": "item/bow/soul_bow_pulling_1"
+								}
+							},
+							{
+								"when": "Call of the Void",
+								"model": {
+									"type": "model",
+									"model": "item/bow/call_of_the_void_pulling_1"
+								}
+							},
+							{
+								"when": "Void Bow",
+								"model": {
+									"type": "model",
+									"model": "item/bow/void_bow_pulling_1"
+								}
+							},
+							{
+								"when": "Trickbow",
+								"model": {
+									"type": "model",
+									"model": "item/bow/trickbow_pulling_1"
+								}
+							},
+							{
+								"when": "Web Bow",
+								"model": {
+									"type": "model",
+									"model": "item/bow/web_bow_pulling_1"
+								}
+							},
+							{
+								"when": "Twin Bow",
+								"model": {
+									"type": "model",
+									"model": "item/bow/twin_bow_pulling_1"
+								}
+							},
+							{
+								"when": "Phantom Bow",
+								"model": {
+									"type": "model",
+									"model": "item/bow/phantom_bow_pulling_1"
+								}
+							},
+							{
+								"when": "Red Phantom Bow",
+								"model": {
+									"type": "model",
+									"model": "item/bow/red_phantom_bow_pulling_1"
+								}
+							},
+							{
+								"when": "Nocturnal Bow",
+								"model": {
+									"type": "model",
+									"model": "item/bow/nocturnal_bow_pulling_1"
+								}
+							},
+							{
+								"when": "Winter's Touch",
+								"model": {
+									"type": "model",
+									"model": "item/bow/winters_touch_pulling_1"
+								}
+							},
+							{
+								"when": "Wind Bow",
+								"model": {
+									"type": "model",
+									"model": "item/bow/wind_bow_pulling_1"
+								}
+							},
+							{
+								"when": "Twisting Vine Bow",
+								"model": {
+									"type": "model",
+									"model": "item/bow/twisting_vine_bow_pulling_1"
+								}
+							},
+							{
+								"when": "Weeping Vine Bow",
+								"model": {
+									"type": "model",
+									"model": "item/bow/weeping_vine_bow_pulling_1"
+								}
+							},
+							{
+								"when": "Prismarine Bow",
+								"model": {
+									"type": "model",
+									"model": "item/bow/prismarine_bow_pulling_1"
+								}
+							},
+							{
+								"when": "Arm Cannon",
+								"model": {
+									"type": "model",
+									"model": "item/bow/arm_cannon_pulling_1"
+								}
+							},
+							{
+								"when": "Trooper Arm Cannon",
+								"model": {
+									"type": "model",
+									"model": "item/bow/trooper_arm_cannon_pulling_1"
+								}
+							},
+							{
+								"when": "Space Arm Cannon",
+								"model": {
+									"type": "model",
+									"model": "item/bow/space_arm_cannon_pulling_1"
+								}
+							},
+							{
+								"when": "Steampunk Arm Cannon",
+								"model": {
+									"type": "model",
+									"model": "item/bow/steampunk_arm_cannon_pulling_1"
+								}
+							},
+							{
+								"when": "Proto Arm Buster",
+								"model": {
+									"type": "model",
+									"model": "item/bow/proto_arm_buster_pulling_1"
+								}
+							},
+							{
+								"when": "Arm Buster",
+								"model": {
+									"type": "condition",
+									"model": "item/bow/arm_buster_pulling_1",
+									"property": "component",
+									"predicate": "enchantments",
+									"value": [
+										{
+											"enchantments": "flame"
+										}
+									],
+									"on_true": {
+										"type": "model",
+										"model": "item/bow/arm_buster_flame_pulling_1"
+									},
+									"on_false": {
+										"type": "model",
+										"model": "item/bow/arm_buster_pulling_1"
+									}
+								}
+							},
+							{
+								"when": "Trigger Arm Buster",
+								"model": {
+									"type": "condition",
+									"model": "item/bow/trigger_arm_buster_pulling_1",
+									"property": "component",
+									"predicate": "enchantments",
+									"value": [
+										{
+											"enchantments": "flame"
+										}
+									],
+									"on_true": {
+										"type": "model",
+										"model": "item/bow/trigger_arm_buster_flame_pulling_1"
+									},
+									"on_false": {
+										"type": "model",
+										"model": "item/bow/trigger_arm_buster_pulling_1"
+									}
+								}
+							},
+							{
+								"when": "Arm Buster.exe",
+								"model": {
+									"type": "condition",
+									"model": "item/bow/arm_buster_exe_pulling_1",
+									"property": "component",
+									"predicate": "enchantments",
+									"value": [
+										{
+											"enchantments": "flame"
+										}
+									],
+									"on_true": {
+										"type": "model",
+										"model": "item/bow/arm_buster_exe_flame_pulling_1"
+									},
+									"on_false": {
+										"type": "model",
+										"model": "item/bow/arm_buster_exe_pulling_1"
+									}
+								}
+							},
+							{
+								"when": "Omega Arm Buster",
+								"model": {
+									"type": "condition",
+									"model": "item/bow/omega_arm_buster_pulling_1",
+									"property": "component",
+									"predicate": "enchantments",
+									"value": [
+										{
+											"enchantments": "flame"
+										}
+									],
+									"on_true": {
+										"type": "model",
+										"model": "item/bow/omega_arm_buster_flame_pulling_1"
+									},
+									"on_false": {
+										"type": "model",
+										"model": "item/bow/omega_arm_buster_pulling_1"
+									}
+								}
+							},
+							{
+								"when": "X Arm Buster",
+								"model": {
+									"type": "condition",
+									"model": "item/bow/x_arm_buster_pulling_1",
+									"property": "component",
+									"predicate": "enchantments",
+									"value": [
+										{
+											"enchantments": "power",
+											"levels": 5
+										}
+									],
+									"on_true": {
+										"type": "model",
+										"model": "item/bow/x_arm_buster_power_pulling_1"
+									},
+									"on_false": {
+										"type": "condition",
+										"model": "item/bow/x_arm_buster_pulling_1",
+										"property": "component",
+										"predicate": "enchantments",
+										"value": [
+											{
+												"enchantments": "flame"
+											}
+										],
+										"on_true": {
+											"type": "model",
+											"model": "item/bow/x_arm_buster_flame_pulling_1"
+										},
+										"on_false": {
+											"type": "model",
+											"model": "item/bow/x_arm_buster_pulling_1"
+										}
+									}
+								}
+							},
+							{
+								"when": "Bass Arm Buster",
+								"model": {
+									"type": "model",
+									"model": "item/bow/bass_arm_buster_pulling_1"
+								}
+							},
+							{
+								"when": "Bow Mk III",
+								"model": {
+									"type": "model",
+									"model": "item/bow/bow_mk_iii_pulling_1"
+								}
+							}
+						],
+						"fallback": {
+							"type": "condition",
+							"property": "component",
+							"predicate": "custom_data",
+							"value": {
+								"equipment": "netherite"
+							},
+							"on_true": {
+								"type": "model",
+								"model": "item/bow/netherite_bow_pulling_1"
+							},
+							"on_false": {
+								"type": "model",
+								"model": "item/bow_pulling_1"
+							}
+						}
+					},
+					"threshold": 0.65
+				},
+				{
+					"model": {
+						"type": "select",
+						"property": "component",
+						"component": "custom_name",
+						"cases": [
+							{
+								"when": [
+									"Dinnerbone",
+									"Grumm",
+									"woB"
+								],
+								"model": {
+									"type": "condition",
+									"property": "component",
+									"predicate": "custom_data",
+									"value": {
+										"equipment": "netherite"
+									},
+									"on_true": {
+										"type": "model",
+										"model": "item/bow/netherite_dinnerbone_pulling_2"
+									},
+									"on_false": {
+										"type": "model",
+										"model": "item/bow/dinnerbone_pulling_2"
+									}
+								}
+							},
+							{
+								"when": "jeb_",
+								"model": {
+									"type": "model",
+									"model": "item/bow/jeb__pulling_2"
+								}
+							},
+							{
+								"when": "White Power Ring",
+								"model": {
+									"type": "composite",
+									"models": [
+										{
+											"type": "model",
+											"model": "item/bow/white_power_ring"
+										},
+										{
+											"type": "model",
+											"model": "item/bow/white_power_ring_power"
+										},
+										{
+											"type": "model",
+											"model": "item/bow/white_power_ring_bow_pulling_2"
+										}
+									]
+								}
+							},
+							{
+								"when": "Violet Power Ring",
+								"model": {
+									"type": "composite",
+									"models": [
+										{
+											"type": "model",
+											"model": "item/bow/violet_power_ring"
+										},
+										{
+											"type": "model",
+											"model": "item/bow/violet_power_ring_power"
+										},
+										{
+											"type": "model",
+											"model": "item/bow/violet_power_ring_bow_pulling_2"
+										}
+									]
+								}
+							},
+							{
+								"when": "Red Power Ring",
+								"model": {
+									"type": "composite",
+									"models": [
+										{
+											"type": "model",
+											"model": "item/bow/red_power_ring"
+										},
+										{
+											"type": "model",
+											"model": "item/bow/red_power_ring_power"
+										},
+										{
+											"type": "model",
+											"model": "item/bow/red_power_ring_bow_pulling_2"
+										}
+									]
+								}
+							},
+							{
+								"when": "Blue Power Ring",
+								"model": {
+									"type": "composite",
+									"models": [
+										{
+											"type": "model",
+											"model": "item/bow/blue_power_ring"
+										},
+										{
+											"type": "model",
+											"model": "item/bow/blue_power_ring_power"
+										},
+										{
+											"type": "model",
+											"model": "item/bow/blue_power_ring_bow_pulling_2"
+										}
+									]
+								}
+							},
+							{
+								"when": "Indigo Power Ring",
+								"model": {
+									"type": "composite",
+									"models": [
+										{
+											"type": "model",
+											"model": "item/bow/indigo_power_ring"
+										},
+										{
+											"type": "model",
+											"model": "item/bow/indigo_power_ring_power"
+										},
+										{
+											"type": "model",
+											"model": "item/bow/indigo_power_ring_bow_pulling_2"
+										}
+									]
+								}
+							},
+							{
+								"when": "Black Power Ring",
+								"model": {
+									"type": "composite",
+									"models": [
+										{
+											"type": "model",
+											"model": "item/bow/black_power_ring"
+										},
+										{
+											"type": "model",
+											"model": "item/bow/black_power_ring_power"
+										},
+										{
+											"type": "model",
+											"model": "item/bow/black_power_ring_bow_pulling_2"
+										}
+									]
+								}
+							},
+							{
+								"when": "Yellow Power Ring",
+								"model": {
+									"type": "composite",
+									"models": [
+										{
+											"type": "model",
+											"model": "item/bow/yellow_power_ring"
+										},
+										{
+											"type": "model",
+											"model": "item/bow/yellow_power_ring_power"
+										},
+										{
+											"type": "model",
+											"model": "item/bow/yellow_power_ring_bow_pulling_2"
+										}
+									]
+								}
+							},
+							{
+								"when": "Orange Power Ring",
+								"model": {
+									"type": "composite",
+									"models": [
+										{
+											"type": "model",
+											"model": "item/bow/orange_power_ring"
+										},
+										{
+											"type": "model",
+											"model": "item/bow/orange_power_ring_power"
+										},
+										{
+											"type": "model",
+											"model": "item/bow/orange_power_ring_bow_pulling_2"
+										}
+									]
+								}
+							},
+							{
+								"when": "Green Power Ring",
+								"model": {
+									"type": "composite",
+									"models": [
+										{
+											"type": "model",
+											"model": "item/bow/green_power_ring"
+										},
+										{
+											"type": "model",
+											"model": "item/bow/green_power_ring_power"
+										},
+										{
+											"type": "model",
+											"model": "item/bow/green_power_ring_bow_pulling_2"
+										}
+									]
+								}
+							},
+							{
+								"when": "Gaster Blaster",
+								"model": {
+									"type": "model",
+									"model": "item/bow/gaster_blaster_pulling_2"
+								}
+							},
+							{
+								"when": "Candy Bow",
+								"model": {
+									"type": "model",
+									"model": "item/bow/candy_bow_pulling_2"
+								}
+							},
+							{
+								"when": "Super Cute Bow",
+								"model": {
+									"type": "model",
+									"model": "item/bow/super_cute_bow_pulling_2"
+								}
+							},
+							{
+								"when": "Petra's Bow",
+								"model": {
+									"type": "condition",
+									"model": "item/bow/petra_bow_pulling_2",
+									"property": "component",
+									"predicate": "enchantments",
+									"value": [
+										{
+											"enchantments": [
+												"power"
+											],
+											"levels": 5
+										}
+									],
+									"on_true": {
+										"type": "model",
+										"model": "item/bow/petra_bow_power_pulling_2"
+									},
+									"on_false": {
+										"type": "model",
+										"model": "item/bow/petra_bow_pulling_2"
+									}
+								}
+							},
+							{
+								"when": "Creator's Bow",
+								"model": {
+									"type": "model",
+									"model": "item/bow/creator_bow_pulling_2"
+								}
+							},
+							{
+								"when": "Lute",
+								"model": {
+									"type": "model",
+									"model": "item/bow/lute_pulling_2"
+								}
+							},
+							{
+								"when": "Shieldbreaker Bow",
+								"model": {
+									"type": "model",
+									"model": "item/bow/shieldbreaker_bow_pulling_2"
+								}
+							},
+							{
+								"when": "Sacred Bow",
+								"model": {
+									"type": "model",
+									"model": "item/bow/sacred_bow_pulling_2"
+								}
+							},
+							{
+								"when": "Desecrated Bow",
+								"model": {
+									"type": "model",
+									"model": "item/bow/desecrated_bow_pulling_2"
+								}
+							},
+							{
+								"when": "Light Bow",
+								"model": {
+									"type": "model",
+									"model": "item/bow/light_bow_pulling_2"
+								}
+							},
+							{
+								"when": "Droid Bow",
+								"model": {
+									"type": "condition",
+									"model": "item/bow/droid_bow_pulling_2",
+									"property": "component",
+									"predicate": "enchantments",
+									"value": [
+										{
+											"enchantments": [
+												"power"
+											],
+											"levels": 5
+										}
+									],
+									"on_true": {
+										"type": "model",
+										"model": "item/bow/droid_bow_power_pulling_2"
+									},
+									"on_false": {
+										"type": "model",
+										"model": "item/bow/droid_bow_pulling_2"
+									}
+								}
+							},
+							{
+								"when": "Robot Bow",
+								"model": {
+									"type": "condition",
+									"model": "item/bow/robot_bow_pulling_2",
+									"property": "component",
+									"predicate": "enchantments",
+									"value": [
+										{
+											"enchantments": [
+												"power"
+											],
+											"levels": 5
+										}
+									],
+									"on_true": {
+										"type": "model",
+										"model": "item/bow/robot_bow_power_pulling_2"
+									},
+									"on_false": {
+										"type": "model",
+										"model": "item/bow/robot_bow_pulling_2"
+									}
+								}
+							},
+							{
+								"when": "Battle Bow",
+								"model": {
+									"type": "condition",
+									"model": "item/bow/battle_bow_pulling_2",
+									"property": "component",
+									"predicate": "enchantments",
+									"value": [
+										{
+											"enchantments": [
+												"power"
+											],
+											"levels": 5
+										}
+									],
+									"on_true": {
+										"type": "model",
+										"model": "item/bow/battle_bow_power_pulling_2"
+									},
+									"on_false": {
+										"type": "model",
+										"model": "item/bow/battle_bow_pulling_2"
+									}
+								}
+							},
+							{
+								"when": "Command Block Bow",
+								"model": {
+									"type": "condition",
+									"model": "item/bow/petra_bow_pulling_2",
+									"property": "component",
+									"predicate": "enchantments",
+									"value": [
+										{
+											"enchantments": [
+												"power"
+											],
+											"levels": 5
+										}
+									],
+									"on_true": {
+										"type": "model",
+										"model": "item/bow/command_block_bow_power_pulling_2"
+									},
+									"on_false": {
+										"type": "model",
+										"model": "item/bow/command_block_bow_pulling_2"
+									}
+								}
+							},
+							{
+								"when": "Eye of the Storm",
+								"model": {
+									"type": "model",
+									"model": "item/bow/eye_of_the_storm_pulling_2"
+								}
+							},
+							{
+								"when": "Bone Slingshot",
+								"model": {
+									"type": "model",
+									"model": "item/bow/bone_slingshot_pulling_2"
+								}
+							},
+							{
+								"when": "Slingshot",
+								"model": {
+									"type": "model",
+									"model": "item/bow/slingshot_pulling_2"
+								}
+							},
+							{
+								"when": "Shooting Star",
+								"model": {
+									"type": "condition",
+									"model": "item/bow/shooting_star_pulling_2",
+									"property": "component",
+									"predicate": "enchantments",
+									"value": [
+										{
+											"enchantments": [
+												"power"
+											],
+											"levels": 5
+										}
+									],
+									"on_true": {
+										"type": "model",
+										"model": "item/bow/shooting_star_power_pulling_2"
+									},
+									"on_false": {
+										"type": "model",
+										"model": "item/bow/shooting_star_pulling_2"
+									}
+								}
+							},
+							{
+								"when": "Teleportation Bow",
+								"model": {
+									"type": "condition",
+									"model": "item/bow/teleportation_bow_pulling_2",
+									"property": "component",
+									"predicate": "enchantments",
+									"value": [
+										{
+											"enchantments": [
+												"power"
+											],
+											"levels": 5
+										}
+									],
+									"on_true": {
+										"type": "model",
+										"model": "item/bow/teleportation_bow_power_pulling_2"
+									},
+									"on_false": {
+										"type": "model",
+										"model": "item/bow/teleportation_bow_pulling_2"
+									}
+								}
+							},
+							{
+								"when": "Empty Bow",
+								"model": {
+									"type": "condition",
+									"model": "item/bow/empty_bow_pulling_2",
+									"property": "component",
+									"predicate": "enchantments",
+									"value": [
+										{
+											"enchantments": [
+												"power"
+											],
+											"levels": 5
+										}
+									],
+									"on_true": {
+										"type": "model",
+										"model": "item/bow/empty_bow_power_pulling_2"
+									},
+									"on_false": {
+										"type": "model",
+										"model": "item/bow/empty_bow_pulling_2"
+									}
+								}
+							},
+							{
+								"when": "Leeching Thief",
+								"model": {
+									"type": "model",
+									"model": "item/bow/leeching_thief_pulling_2"
+								}
+							},
+							{
+								"when": "Ender Dragon Bow",
+								"model": {
+									"type": "model",
+									"model": "item/bow/ender_dragon_bow_pulling_2"
+								}
+							},
+							{
+								"when": "Shortbow",
+								"model": {
+									"type": "model",
+									"model": "item/bow/shortbow_pulling_2"
+								}
+							},
+							{
+								"when": "Longbow",
+								"model": {
+									"type": "model",
+									"model": "item/bow/longbow_pulling_2"
+								}
+							},
+							{
+								"when": "Ancient Bow",
+								"model": {
+									"type": "model",
+									"model": "item/bow/ancient_bow_pulling_2"
+								}
+							},
+							{
+								"when": "Bonebow",
+								"model": {
+									"type": "model",
+									"model": "item/bow/bonebow_pulling_2"
+								}
+							},
+							{
+								"when": "Power Bow",
+								"model": {
+									"type": "model",
+									"model": "item/bow/power_bow_pulling_2"
+								}
+							},
+							{
+								"when": "Hunting Bow",
+								"model": {
+									"type": "model",
+									"model": "item/bow/hunting_bow_pulling_2"
+								}
+							},
+							{
+								"when": "Hunter's Promise",
+								"model": {
+									"type": "model",
+									"model": "item/bow/hunters_promise_pulling_2"
+								}
+							},
+							{
+								"when": "Master's Bow",
+								"model": {
+									"type": "model",
+									"model": "item/bow/masters_bow_pulling_2"
+								}
+							},
+							{
+								"when": "Love Spell Bow",
+								"model": {
+									"type": "model",
+									"model": "item/bow/love_spell_bow_pulling_2"
+								}
+							},
+							{
+								"when": "Bubble Bow",
+								"model": {
+									"type": "model",
+									"model": "item/bow/bubble_bow_pulling_2"
+								}
+							},
+							{
+								"when": "Elite Power Bow",
+								"model": {
+									"type": "model",
+									"model": "item/bow/elite_power_bow_pulling_2"
+								}
+							},
+							{
+								"when": "Gloopy Bow",
+								"model": {
+									"type": "model",
+									"model": "item/bow/gloopy_bow_pulling_2"
+								}
+							},
+							{
+								"when": "Echo of the Valley",
+								"model": {
+									"type": "model",
+									"model": "item/bow/echo_of_the_valley_pulling_2"
+								}
+							},
+							{
+								"when": "Sugar Rush",
+								"model": {
+									"type": "model",
+									"model": "item/bow/sugar_rush_pulling_2"
+								}
+							},
+							{
+								"when": "Burst Gale Bow",
+								"model": {
+									"type": "model",
+									"model": "item/bow/burst_gale_bow_pulling_2"
+								}
+							},
+							{
+								"when": "Bubble Burster",
+								"model": {
+									"type": "model",
+									"model": "item/bow/bubble_burster_pulling_2"
+								}
+							},
+							{
+								"when": "Haunted Bow",
+								"model": {
+									"type": "model",
+									"model": "item/bow/haunted_bow_pulling_2"
+								}
+							},
+							{
+								"when": "Red Snake",
+								"model": {
+									"type": "model",
+									"model": "item/bow/red_snake_pulling_2"
+								}
+							},
+							{
+								"when": "Bow of Lost Souls",
+								"model": {
+									"type": "model",
+									"model": "item/bow/bow_of_lost_souls_pulling_2"
+								}
+							},
+							{
+								"when": "Purple Storm",
+								"model": {
+									"type": "model",
+									"model": "item/bow/purple_storm_pulling_2"
+								}
+							},
+							{
+								"when": "PVP Shortbow",
+								"model": {
+									"type": "model",
+									"model": "item/bow/pvp_shortbow_pulling_2"
+								}
+							},
+							{
+								"when": "Mechanical Shortbow",
+								"model": {
+									"type": "model",
+									"model": "item/bow/mechanical_shortbow_pulling_2"
+								}
+							},
+							{
+								"when": "Guardian Bow",
+								"model": {
+									"type": "model",
+									"model": "item/bow/guardian_bow_pulling_2"
+								}
+							},
+							{
+								"when": "The Green Menace",
+								"model": {
+									"type": "model",
+									"model": "item/bow/the_green_menace_pulling_2"
+								}
+							},
+							{
+								"when": "The Pink Scoundrel",
+								"model": {
+									"type": "model",
+									"model": "item/bow/the_pink_scoundrel_pulling_2"
+								}
+							},
+							{
+								"when": "Sabrewing",
+								"model": {
+									"type": "model",
+									"model": "item/bow/sabrewing_pulling_2"
+								}
+							},
+							{
+								"when": "Shivering Bow",
+								"model": {
+									"type": "model",
+									"model": "item/bow/shivering_bow_pulling_2"
+								}
+							},
+							{
+								"when": "Snow Bow",
+								"model": {
+									"type": "model",
+									"model": "item/bow/snow_bow_pulling_2"
+								}
+							},
+							{
+								"when": "Soul Bow",
+								"model": {
+									"type": "model",
+									"model": "item/bow/soul_bow_pulling_2"
+								}
+							},
+							{
+								"when": "Call of the Void",
+								"model": {
+									"type": "model",
+									"model": "item/bow/call_of_the_void_pulling_2"
+								}
+							},
+							{
+								"when": "Void Bow",
+								"model": {
+									"type": "model",
+									"model": "item/bow/void_bow_pulling_2"
+								}
+							},
+							{
+								"when": "Trickbow",
+								"model": {
+									"type": "model",
+									"model": "item/bow/trickbow_pulling_2"
+								}
+							},
+							{
+								"when": "Web Bow",
+								"model": {
+									"type": "model",
+									"model": "item/bow/web_bow_pulling_2"
+								}
+							},
+							{
+								"when": "Twin Bow",
+								"model": {
+									"type": "model",
+									"model": "item/bow/twin_bow_pulling_2"
+								}
+							},
+							{
+								"when": "Phantom Bow",
+								"model": {
+									"type": "model",
+									"model": "item/bow/phantom_bow_pulling_2"
+								}
+							},
+							{
+								"when": "Red Phantom Bow",
+								"model": {
+									"type": "model",
+									"model": "item/bow/red_phantom_bow_pulling_2"
+								}
+							},
+							{
+								"when": "Nocturnal Bow",
+								"model": {
+									"type": "model",
+									"model": "item/bow/nocturnal_bow_pulling_2"
+								}
+							},
+							{
+								"when": "Winter's Touch",
+								"model": {
+									"type": "model",
+									"model": "item/bow/winters_touch_pulling_2"
+								}
+							},
+							{
+								"when": "Wind Bow",
+								"model": {
+									"type": "model",
+									"model": "item/bow/wind_bow_pulling_2"
+								}
+							},
+							{
+								"when": "Twisting Vine Bow",
+								"model": {
+									"type": "model",
+									"model": "item/bow/twisting_vine_bow_pulling_2"
+								}
+							},
+							{
+								"when": "Weeping Vine Bow",
+								"model": {
+									"type": "model",
+									"model": "item/bow/weeping_vine_bow_pulling_2"
+								}
+							},
+							{
+								"when": "Prismarine Bow",
+								"model": {
+									"type": "model",
+									"model": "item/bow/prismarine_bow_pulling_2"
+								}
+							},
+							{
+								"when": "Arm Cannon",
+								"model": {
+									"type": "model",
+									"model": "item/bow/arm_cannon_pulling_2"
+								}
+							},
+							{
+								"when": "Trooper Arm Cannon",
+								"model": {
+									"type": "model",
+									"model": "item/bow/trooper_arm_cannon_pulling_2"
+								}
+							},
+							{
+								"when": "Space Arm Cannon",
+								"model": {
+									"type": "model",
+									"model": "item/bow/space_arm_cannon_pulling_2"
+								}
+							},
+							{
+								"when": "Steampunk Arm Cannon",
+								"model": {
+									"type": "model",
+									"model": "item/bow/steampunk_arm_cannon_pulling_2"
+								}
+							},
+							{
+								"when": "Proto Arm Buster",
+								"model": {
+									"type": "model",
+									"model": "item/bow/proto_arm_buster_pulling_2"
+								}
+							},
+							{
+								"when": "Arm Buster",
+								"model": {
+									"type": "condition",
+									"model": "item/bow/arm_buster_pulling_2",
+									"property": "component",
+									"predicate": "enchantments",
+									"value": [
+										{
+											"enchantments": "flame"
+										}
+									],
+									"on_true": {
+										"type": "model",
+										"model": "item/bow/arm_buster_flame_pulling_2"
+									},
+									"on_false": {
+										"type": "model",
+										"model": "item/bow/arm_buster_pulling_2"
+									}
+								}
+							},
+							{
+								"when": "Trigger Arm Buster",
+								"model": {
+									"type": "condition",
+									"model": "item/bow/trigger_arm_buster_pulling_2",
+									"property": "component",
+									"predicate": "enchantments",
+									"value": [
+										{
+											"enchantments": "flame"
+										}
+									],
+									"on_true": {
+										"type": "model",
+										"model": "item/bow/trigger_arm_buster_flame_pulling_2"
+									},
+									"on_false": {
+										"type": "model",
+										"model": "item/bow/trigger_arm_buster_pulling_2"
+									}
+								}
+							},
+							{
+								"when": "Arm Buster.exe",
+								"model": {
+									"type": "condition",
+									"model": "item/bow/arm_buster_exe_pulling_2",
+									"property": "component",
+									"predicate": "enchantments",
+									"value": [
+										{
+											"enchantments": "flame"
+										}
+									],
+									"on_true": {
+										"type": "model",
+										"model": "item/bow/arm_buster_exe_flame_pulling_2"
+									},
+									"on_false": {
+										"type": "model",
+										"model": "item/bow/arm_buster_exe_pulling_2"
+									}
+								}
+							},
+							{
+								"when": "Omega Arm Buster",
+								"model": {
+									"type": "condition",
+									"model": "item/bow/omega_arm_buster_pulling_2",
+									"property": "component",
+									"predicate": "enchantments",
+									"value": [
+										{
+											"enchantments": "flame"
+										}
+									],
+									"on_true": {
+										"type": "model",
+										"model": "item/bow/omega_arm_buster_flame_pulling_2"
+									},
+									"on_false": {
+										"type": "model",
+										"model": "item/bow/omega_arm_buster_pulling_2"
+									}
+								}
+							},
+							{
+								"when": "X Arm Buster",
+								"model": {
+									"type": "condition",
+									"model": "item/bow/x_arm_buster_pulling_2",
+									"property": "component",
+									"predicate": "enchantments",
+									"value": [
+										{
+											"enchantments": "power",
+											"levels": 5
+										}
+									],
+									"on_true": {
+										"type": "model",
+										"model": "item/bow/x_arm_buster_power_pulling_2"
+									},
+									"on_false": {
+										"type": "condition",
+										"model": "item/bow/x_arm_buster_pulling_2",
+										"property": "component",
+										"predicate": "enchantments",
+										"value": [
+											{
+												"enchantments": "flame"
+											}
+										],
+										"on_true": {
+											"type": "model",
+											"model": "item/bow/x_arm_buster_flame_pulling_2"
+										},
+										"on_false": {
+											"type": "model",
+											"model": "item/bow/x_arm_buster_pulling_2"
+										}
+									}
+								}
+							},
+							{
+								"when": "Bass Arm Buster",
+								"model": {
+									"type": "model",
+									"model": "item/bow/bass_arm_buster_pulling_2"
+								}
+							},
+							{
+								"when": "Bow Mk III",
+								"model": {
+									"type": "model",
+									"model": "item/bow/bow_mk_iii_pulling_2"
+								}
+							}
+						],
+						"fallback": {
+							"type": "condition",
+							"property": "component",
+							"predicate": "custom_data",
+							"value": {
+								"equipment": "netherite"
+							},
+							"on_true": {
+								"type": "model",
+								"model": "item/bow/netherite_bow_pulling_2"
+							},
+							"on_false": {
+								"type": "model",
+								"model": "item/bow_pulling_2"
+							}
+						}
+					},
+					"threshold": 0.9
+				}
+			],
+			"fallback": {
+				"type": "select",
+				"property": "component",
+				"component": "custom_name",
+				"cases": [
+					{
+						"when": [
+							"Dinnerbone",
+							"Grumm",
+							"woB"
+						],
+						"model": {
+							"type": "condition",
+							"property": "component",
+							"predicate": "custom_data",
+							"value": {
+								"equipment": "netherite"
+							},
+							"on_true": {
+								"type": "model",
+								"model": "item/bow/netherite_dinnerbone_pulling_0"
+							},
+							"on_false": {
+								"type": "model",
+								"model": "item/bow/dinnerbone_pulling_0"
+							}
+						}
+					},
+					{
+						"when": "jeb_",
+						"model": {
+							"type": "model",
+							"model": "item/bow/jeb__pulling_0"
+						}
+					},
+					{
+						"when": "White Power Ring",
+						"model": {
+							"type": "composite",
+							"models": [
+								{
+									"type": "model",
+									"model": "item/bow/white_power_ring"
+								},
+								{
+									"type": "model",
+									"model": "item/bow/white_power_ring_power"
+								},
+								{
+									"type": "model",
+									"model": "item/bow/white_power_ring_bow_pulling_0"
+								}
+							]
+						}
+					},
+					{
+						"when": "Violet Power Ring",
+						"model": {
+							"type": "composite",
+							"models": [
+								{
+									"type": "model",
+									"model": "item/bow/violet_power_ring"
+								},
+								{
+									"type": "model",
+									"model": "item/bow/violet_power_ring_power"
+								},
+								{
+									"type": "model",
+									"model": "item/bow/violet_power_ring_bow_pulling_0"
+								}
+							]
+						}
+					},
+					{
+						"when": "Red Power Ring",
+						"model": {
+							"type": "composite",
+							"models": [
+								{
+									"type": "model",
+									"model": "item/bow/red_power_ring"
+								},
+								{
+									"type": "model",
+									"model": "item/bow/red_power_ring_power"
+								},
+								{
+									"type": "model",
+									"model": "item/bow/red_power_ring_bow_pulling_0"
+								}
+							]
+						}
+					},
+					{
+						"when": "Blue Power Ring",
+						"model": {
+							"type": "composite",
+							"models": [
+								{
+									"type": "model",
+									"model": "item/bow/blue_power_ring"
+								},
+								{
+									"type": "model",
+									"model": "item/bow/blue_power_ring_power"
+								},
+								{
+									"type": "model",
+									"model": "item/bow/blue_power_ring_bow_pulling_0"
+								}
+							]
+						}
+					},
+					{
+						"when": "Indigo Power Ring",
+						"model": {
+							"type": "composite",
+							"models": [
+								{
+									"type": "model",
+									"model": "item/bow/indigo_power_ring"
+								},
+								{
+									"type": "model",
+									"model": "item/bow/indigo_power_ring_power"
+								},
+								{
+									"type": "model",
+									"model": "item/bow/indigo_power_ring_bow_pulling_0"
+								}
+							]
+						}
+					},
+					{
+						"when": "Black Power Ring",
+						"model": {
+							"type": "composite",
+							"models": [
+								{
+									"type": "model",
+									"model": "item/bow/black_power_ring"
+								},
+								{
+									"type": "model",
+									"model": "item/bow/black_power_ring_power"
+								},
+								{
+									"type": "model",
+									"model": "item/bow/black_power_ring_bow_pulling_0"
+								}
+							]
+						}
+					},
+					{
+						"when": "Yellow Power Ring",
+						"model": {
+							"type": "composite",
+							"models": [
+								{
+									"type": "model",
+									"model": "item/bow/yellow_power_ring"
+								},
+								{
+									"type": "model",
+									"model": "item/bow/yellow_power_ring_power"
+								},
+								{
+									"type": "model",
+									"model": "item/bow/yellow_power_ring_bow_pulling_0"
+								}
+							]
+						}
+					},
+					{
+						"when": "Orange Power Ring",
+						"model": {
+							"type": "composite",
+							"models": [
+								{
+									"type": "model",
+									"model": "item/bow/orange_power_ring"
+								},
+								{
+									"type": "model",
+									"model": "item/bow/orange_power_ring_power"
+								},
+								{
+									"type": "model",
+									"model": "item/bow/orange_power_ring_bow_pulling_0"
+								}
+							]
+						}
+					},
+					{
+						"when": "Green Power Ring",
+						"model": {
+							"type": "composite",
+							"models": [
+								{
+									"type": "model",
+									"model": "item/bow/green_power_ring"
+								},
+								{
+									"type": "model",
+									"model": "item/bow/green_power_ring_power"
+								},
+								{
+									"type": "model",
+									"model": "item/bow/green_power_ring_bow_pulling_0"
+								}
+							]
+						}
+					},
+					{
+						"when": "Gaster Blaster",
+						"model": {
+							"type": "model",
+							"model": "item/bow/gaster_blaster_pulling_0"
+						}
+					},
+					{
+						"when": "Candy Bow",
+						"model": {
+							"type": "model",
+							"model": "item/bow/candy_bow_pulling_0"
+						}
+					},
+					{
+						"when": "Super Cute Bow",
+						"model": {
+							"type": "model",
+							"model": "item/bow/super_cute_bow_pulling_0"
+						}
+					},
+					{
+						"when": "Petra's Bow",
+						"model": {
+							"type": "condition",
+							"model": "item/bow/petra_bow_pulling_0",
+							"property": "component",
+							"predicate": "enchantments",
+							"value": [
+								{
+									"enchantments": [
+										"power"
+									],
+									"levels": 5
+								}
+							],
+							"on_true": {
+								"type": "model",
+								"model": "item/bow/petra_bow_power_pulling_0"
+							},
+							"on_false": {
+								"type": "model",
+								"model": "item/bow/petra_bow_pulling_0"
+							}
+						}
+					},
+					{
+						"when": "Creator's Bow",
+						"model": {
+							"type": "model",
+							"model": "item/bow/creator_bow_pulling_0"
+						}
+					},
+					{
+						"when": "Lute",
+						"model": {
+							"type": "model",
+							"model": "item/bow/lute_pulling_0"
+						}
+					},
+					{
+						"when": "Shieldbreaker Bow",
+						"model": {
+							"type": "model",
+							"model": "item/bow/shieldbreaker_bow_pulling_0"
+						}
+					},
+					{
+						"when": "Sacred Bow",
+						"model": {
+							"type": "model",
+							"model": "item/bow/sacred_bow_pulling_0"
+						}
+					},
+					{
+						"when": "Desecrated Bow",
+						"model": {
+							"type": "model",
+							"model": "item/bow/desecrated_bow_pulling_0"
+						}
+					},
+					{
+						"when": "Light Bow",
+						"model": {
+							"type": "model",
+							"model": "item/bow/light_bow_pulling_0"
+						}
+					},
+					{
+						"when": "Droid Bow",
+						"model": {
+							"type": "condition",
+							"model": "item/bow/droid_bow_pulling_0",
+							"property": "component",
+							"predicate": "enchantments",
+							"value": [
+								{
+									"enchantments": [
+										"power"
+									],
+									"levels": 5
+								}
+							],
+							"on_true": {
+								"type": "model",
+								"model": "item/bow/droid_bow_power_pulling_0"
+							},
+							"on_false": {
+								"type": "model",
+								"model": "item/bow/droid_bow_pulling_0"
+							}
+						}
+					},
+					{
+						"when": "Robot Bow",
+						"model": {
+							"type": "condition",
+							"model": "item/bow/robot_bow_pulling_0",
+							"property": "component",
+							"predicate": "enchantments",
+							"value": [
+								{
+									"enchantments": [
+										"power"
+									],
+									"levels": 5
+								}
+							],
+							"on_true": {
+								"type": "model",
+								"model": "item/bow/robot_bow_power_pulling_0"
+							},
+							"on_false": {
+								"type": "model",
+								"model": "item/bow/robot_bow_pulling_0"
+							}
+						}
+					},
+					{
+						"when": "Battle Bow",
+						"model": {
+							"type": "condition",
+							"model": "item/bow/battle_bow_pulling_0",
+							"property": "component",
+							"predicate": "enchantments",
+							"value": [
+								{
+									"enchantments": [
+										"power"
+									],
+									"levels": 5
+								}
+							],
+							"on_true": {
+								"type": "model",
+								"model": "item/bow/battle_bow_power_pulling_0"
+							},
+							"on_false": {
+								"type": "model",
+								"model": "item/bow/battle_bow_pulling_0"
+							}
+						}
+					},
+					{
+						"when": "Command Block Bow",
+						"model": {
+							"type": "condition",
+							"model": "item/bow/petra_bow_pulling_0",
+							"property": "component",
+							"predicate": "enchantments",
+							"value": [
+								{
+									"enchantments": [
+										"power"
+									],
+									"levels": 5
+								}
+							],
+							"on_true": {
+								"type": "model",
+								"model": "item/bow/command_block_bow_power_pulling_0"
+							},
+							"on_false": {
+								"type": "model",
+								"model": "item/bow/command_block_bow_pulling_0"
+							}
+						}
+					},
+					{
+						"when": "Eye of the Storm",
+						"model": {
+							"type": "model",
+							"model": "item/bow/eye_of_the_storm_pulling_0"
+						}
+					},
+					{
+						"when": "Bone Slingshot",
+						"model": {
+							"type": "model",
+							"model": "item/bow/bone_slingshot_pulling_0"
+						}
+					},
+					{
+						"when": "Slingshot",
+						"model": {
+							"type": "model",
+							"model": "item/bow/slingshot_pulling_0"
+						}
+					},
+					{
+						"when": "Shooting Star",
+						"model": {
+							"type": "condition",
+							"model": "item/bow/shooting_star_pulling_0",
+							"property": "component",
+							"predicate": "enchantments",
+							"value": [
+								{
+									"enchantments": [
+										"power"
+									],
+									"levels": 5
+								}
+							],
+							"on_true": {
+								"type": "model",
+								"model": "item/bow/shooting_star_power_pulling_0"
+							},
+							"on_false": {
+								"type": "model",
+								"model": "item/bow/shooting_star_pulling_0"
+							}
+						}
+					},
+					{
+						"when": "Teleportation Bow",
+						"model": {
+							"type": "condition",
+							"model": "item/bow/teleportation_bow_pulling_0",
+							"property": "component",
+							"predicate": "enchantments",
+							"value": [
+								{
+									"enchantments": [
+										"power"
+									],
+									"levels": 5
+								}
+							],
+							"on_true": {
+								"type": "model",
+								"model": "item/bow/teleportation_bow_power_pulling_0"
+							},
+							"on_false": {
+								"type": "model",
+								"model": "item/bow/teleportation_bow_pulling_0"
+							}
+						}
+					},
+					{
+						"when": "Empty Bow",
+						"model": {
+							"type": "condition",
+							"model": "item/bow/empty_bow_pulling_0",
+							"property": "component",
+							"predicate": "enchantments",
+							"value": [
+								{
+									"enchantments": [
+										"power"
+									],
+									"levels": 5
+								}
+							],
+							"on_true": {
+								"type": "model",
+								"model": "item/bow/empty_bow_power_pulling_0"
+							},
+							"on_false": {
+								"type": "model",
+								"model": "item/bow/empty_bow_pulling_0"
+							}
+						}
+					},
+					{
+						"when": "Leeching Thief",
+						"model": {
+							"type": "model",
+							"model": "item/bow/leeching_thief_pulling_0"
+						}
+					},
+					{
+						"when": "Ender Dragon Bow",
+						"model": {
+							"type": "model",
+							"model": "item/bow/ender_dragon_bow_pulling_0"
+						}
+					},
+					{
+						"when": "Shortbow",
+						"model": {
+							"type": "model",
+							"model": "item/bow/shortbow_pulling_0"
+						}
+					},
+					{
+						"when": "Longbow",
+						"model": {
+							"type": "model",
+							"model": "item/bow/longbow_pulling_0"
+						}
+					},
+					{
+						"when": "Ancient Bow",
+						"model": {
+							"type": "model",
+							"model": "item/bow/ancient_bow_pulling_0"
+						}
+					},
+					{
+						"when": "Bonebow",
+						"model": {
+							"type": "model",
+							"model": "item/bow/bonebow_pulling_0"
+						}
+					},
+					{
+						"when": "Power Bow",
+						"model": {
+							"type": "model",
+							"model": "item/bow/power_bow_pulling_0"
+						}
+					},
+					{
+						"when": "Hunting Bow",
+						"model": {
+							"type": "model",
+							"model": "item/bow/hunting_bow_pulling_0"
+						}
+					},
+					{
+						"when": "Hunter's Promise",
+						"model": {
+							"type": "model",
+							"model": "item/bow/hunters_promise_pulling_0"
+						}
+					},
+					{
+						"when": "Master's Bow",
+						"model": {
+							"type": "model",
+							"model": "item/bow/masters_bow_pulling_0"
+						}
+					},
+					{
+						"when": "Love Spell Bow",
+						"model": {
+							"type": "model",
+							"model": "item/bow/love_spell_bow_pulling_0"
+						}
+					},
+					{
+						"when": "Bubble Bow",
+						"model": {
+							"type": "model",
+							"model": "item/bow/bubble_bow_pulling_0"
+						}
+					},
+					{
+						"when": "Elite Power Bow",
+						"model": {
+							"type": "model",
+							"model": "item/bow/elite_power_bow_pulling_0"
+						}
+					},
+					{
+						"when": "Gloopy Bow",
+						"model": {
+							"type": "model",
+							"model": "item/bow/gloopy_bow_pulling_0"
+						}
+					},
+					{
+						"when": "Echo of the Valley",
+						"model": {
+							"type": "model",
+							"model": "item/bow/echo_of_the_valley_pulling_0"
+						}
+					},
+					{
+						"when": "Sugar Rush",
+						"model": {
+							"type": "model",
+							"model": "item/bow/sugar_rush_pulling_0"
+						}
+					},
+					{
+						"when": "Burst Gale Bow",
+						"model": {
+							"type": "model",
+							"model": "item/bow/burst_gale_bow_pulling_0"
+						}
+					},
+					{
+						"when": "Bubble Burster",
+						"model": {
+							"type": "model",
+							"model": "item/bow/bubble_burster_pulling_0"
+						}
+					},
+					{
+						"when": "Haunted Bow",
+						"model": {
+							"type": "model",
+							"model": "item/bow/haunted_bow_pulling_0"
+						}
+					},
+					{
+						"when": "Red Snake",
+						"model": {
+							"type": "model",
+							"model": "item/bow/red_snake_pulling_0"
+						}
+					},
+					{
+						"when": "Bow of Lost Souls",
+						"model": {
+							"type": "model",
+							"model": "item/bow/bow_of_lost_souls_pulling_0"
+						}
+					},
+					{
+						"when": "Purple Storm",
+						"model": {
+							"type": "model",
+							"model": "item/bow/purple_storm_pulling_0"
+						}
+					},
+					{
+						"when": "PVP Shortbow",
+						"model": {
+							"type": "model",
+							"model": "item/bow/pvp_shortbow_pulling_0"
+						}
+					},
+					{
+						"when": "Mechanical Shortbow",
+						"model": {
+							"type": "model",
+							"model": "item/bow/mechanical_shortbow_pulling_0"
+						}
+					},
+					{
+						"when": "Guardian Bow",
+						"model": {
+							"type": "model",
+							"model": "item/bow/guardian_bow_pulling_0"
+						}
+					},
+					{
+						"when": "The Green Menace",
+						"model": {
+							"type": "model",
+							"model": "item/bow/the_green_menace_pulling_0"
+						}
+					},
+					{
+						"when": "The Pink Scoundrel",
+						"model": {
+							"type": "model",
+							"model": "item/bow/the_pink_scoundrel_pulling_0"
+						}
+					},
+					{
+						"when": "Sabrewing",
+						"model": {
+							"type": "model",
+							"model": "item/bow/sabrewing_pulling_0"
+						}
+					},
+					{
+						"when": "Shivering Bow",
+						"model": {
+							"type": "model",
+							"model": "item/bow/shivering_bow_pulling_0"
+						}
+					},
+					{
+						"when": "Snow Bow",
+						"model": {
+							"type": "model",
+							"model": "item/bow/snow_bow_pulling_0"
+						}
+					},
+					{
+						"when": "Soul Bow",
+						"model": {
+							"type": "model",
+							"model": "item/bow/soul_bow_pulling_0"
+						}
+					},
+					{
+						"when": "Call of the Void",
+						"model": {
+							"type": "model",
+							"model": "item/bow/call_of_the_void_pulling_0"
+						}
+					},
+					{
+						"when": "Void Bow",
+						"model": {
+							"type": "model",
+							"model": "item/bow/void_bow_pulling_0"
+						}
+					},
+					{
+						"when": "Trickbow",
+						"model": {
+							"type": "model",
+							"model": "item/bow/trickbow_pulling_0"
+						}
+					},
+					{
+						"when": "Web Bow",
+						"model": {
+							"type": "model",
+							"model": "item/bow/web_bow_pulling_0"
+						}
+					},
+					{
+						"when": "Twin Bow",
+						"model": {
+							"type": "model",
+							"model": "item/bow/twin_bow_pulling_0"
+						}
+					},
+					{
+						"when": "Phantom Bow",
+						"model": {
+							"type": "model",
+							"model": "item/bow/phantom_bow_pulling_0"
+						}
+					},
+					{
+						"when": "Red Phantom Bow",
+						"model": {
+							"type": "model",
+							"model": "item/bow/red_phantom_bow_pulling_0"
+						}
+					},
+					{
+						"when": "Nocturnal Bow",
+						"model": {
+							"type": "model",
+							"model": "item/bow/nocturnal_bow_pulling_0"
+						}
+					},
+					{
+						"when": "Winter's Touch",
+						"model": {
+							"type": "model",
+							"model": "item/bow/winters_touch_pulling_0"
+						}
+					},
+					{
+						"when": "Wind Bow",
+						"model": {
+							"type": "model",
+							"model": "item/bow/wind_bow_pulling_0"
+						}
+					},
+					{
+						"when": "Twisting Vine Bow",
+						"model": {
+							"type": "model",
+							"model": "item/bow/twisting_vine_bow_pulling_0"
+						}
+					},
+					{
+						"when": "Weeping Vine Bow",
+						"model": {
+							"type": "model",
+							"model": "item/bow/weeping_vine_bow_pulling_0"
+						}
+					},
+					{
+						"when": "Prismarine Bow",
+						"model": {
+							"type": "model",
+							"model": "item/bow/prismarine_bow_pulling_0"
+						}
+					},
+					{
+						"when": "Arm Cannon",
+						"model": {
+							"type": "model",
+							"model": "item/bow/arm_cannon_pulling_0"
+						}
+					},
+					{
+						"when": "Trooper Arm Cannon",
+						"model": {
+							"type": "model",
+							"model": "item/bow/trooper_arm_cannon_pulling_0"
+						}
+					},
+					{
+						"when": "Space Arm Cannon",
+						"model": {
+							"type": "model",
+							"model": "item/bow/space_arm_cannon_pulling_0"
+						}
+					},
+					{
+						"when": "Steampunk Arm Cannon",
+						"model": {
+							"type": "model",
+							"model": "item/bow/steampunk_arm_cannon_pulling_0"
+						}
+					},
+					{
+						"when": "Proto Arm Buster",
+						"model": {
+							"type": "model",
+							"model": "item/bow/proto_arm_buster_pulling_0"
+						}
+					},
+					{
+						"when": "Arm Buster",
+						"model": {
+							"type": "condition",
+							"model": "item/bow/arm_buster_pulling_0",
+							"property": "component",
+							"predicate": "enchantments",
+							"value": [
+								{
+									"enchantments": "flame"
+								}
+							],
+							"on_true": {
+								"type": "model",
+								"model": "item/bow/arm_buster_flame_pulling_0"
+							},
+							"on_false": {
+								"type": "model",
+								"model": "item/bow/arm_buster_pulling_0"
+							}
+						}
+					},
+					{
+						"when": "Trigger Arm Buster",
+						"model": {
+							"type": "condition",
+							"model": "item/bow/trigger_arm_buster_pulling_0",
+							"property": "component",
+							"predicate": "enchantments",
+							"value": [
+								{
+									"enchantments": "flame"
+								}
+							],
+							"on_true": {
+								"type": "model",
+								"model": "item/bow/trigger_arm_buster_flame_pulling_0"
+							},
+							"on_false": {
+								"type": "model",
+								"model": "item/bow/trigger_arm_buster_pulling_0"
+							}
+						}
+					},
+					{
+						"when": "Arm Buster.exe",
+						"model": {
+							"type": "condition",
+							"model": "item/bow/arm_buster_exe_pulling_0",
+							"property": "component",
+							"predicate": "enchantments",
+							"value": [
+								{
+									"enchantments": "flame"
+								}
+							],
+							"on_true": {
+								"type": "model",
+								"model": "item/bow/arm_buster_exe_flame_pulling_0"
+							},
+							"on_false": {
+								"type": "model",
+								"model": "item/bow/arm_buster_exe_pulling_0"
+							}
+						}
+					},
+					{
+						"when": "Omega Arm Buster",
+						"model": {
+							"type": "condition",
+							"model": "item/bow/omega_arm_buster_pulling_0",
+							"property": "component",
+							"predicate": "enchantments",
+							"value": [
+								{
+									"enchantments": "flame"
+								}
+							],
+							"on_true": {
+								"type": "model",
+								"model": "item/bow/omega_arm_buster_flame_pulling_0"
+							},
+							"on_false": {
+								"type": "model",
+								"model": "item/bow/omega_arm_buster_pulling_0"
+							}
+						}
+					},
+					{
+						"when": "X Arm Buster",
+						"model": {
+							"type": "condition",
+							"model": "item/bow/x_arm_buster_pulling_0",
+							"property": "component",
+							"predicate": "enchantments",
+							"value": [
+								{
+									"enchantments": "power",
+									"levels": 5
+								}
+							],
+							"on_true": {
+								"type": "model",
+								"model": "item/bow/x_arm_buster_power_pulling_0"
+							},
+							"on_false": {
+								"type": "condition",
+								"model": "item/bow/x_arm_buster_pulling_0",
+								"property": "component",
+								"predicate": "enchantments",
+								"value": [
+									{
+										"enchantments": "flame"
+									}
+								],
+								"on_true": {
+									"type": "model",
+									"model": "item/bow/x_arm_buster_flame_pulling_0"
+								},
+								"on_false": {
+									"type": "model",
+									"model": "item/bow/x_arm_buster_pulling_0"
+								}
+							}
+						}
+					},
+					{
+						"when": "Bass Arm Buster",
+						"model": {
+							"type": "model",
+							"model": "item/bow/bass_arm_buster_pulling_0"
+						}
+					},
+					{
+						"when": "Bow Mk III",
+						"model": {
+							"type": "model",
+							"model": "item/bow/bow_mk_iii_pulling_0"
+						}
+					}
+				],
+				"fallback": {
+					"type": "condition",
+					"property": "component",
+					"predicate": "custom_data",
+					"value": {
+						"equipment": "netherite"
+					},
+					"on_true": {
+						"type": "model",
+						"model": "item/bow/netherite_bow_pulling_0"
+					},
+					"on_false": {
+						"type": "model",
+						"model": "item/bow_pulling_0"
+					}
+				}
+			},
+			"property": "use_duration",
+			"scale": 0.05
+		},
+		"property": "using_item"
+	}
+}

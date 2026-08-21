@@ -1,0 +1,61 @@
+{
+	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+	"parent": "block/block",
+	"textures": {
+		"back": "item/painting/back",
+		"particle": "item/painting/donkey_kong"
+	},
+	"elements": [
+		{
+			"from": [-16, -10, 7.5],
+			"to": [32, 26, 8.5],
+			"faces": {
+				"north": {"uv": [0, 0, 16, 12], "texture": "#particle"},
+				"east": {"uv": [15.75, 0, 16, 12], "texture": "#back"},
+				"south": {"uv": [0, 0, 16, 12], "texture": "#back"},
+				"west": {"uv": [0, 12, 0.25, 0], "rotation": 180, "texture": "#back"},
+				"up": {"uv": [0, 0, 16, 0.25], "texture": "#back"},
+				"down": {"uv": [0, 7.75, 16, 8], "texture": "#back"}
+			}
+		}
+	],
+	"gui_light": "front",
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [0, -90, -90],
+			"translation": [-2, -1.75, 2],
+			"scale": [0.375, 0.375, 0.375]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [0, -90, -90],
+			"translation": [-2, -1.75, 2],
+			"scale": [0.375, 0.375, 0.375]
+		},
+		"firstperson_righthand": {
+			"rotation": [0, 122, 0],
+			"translation": [2.5, 0, 0],
+			"scale": [0.4, 0.4, 0.4]
+		},
+		"firstperson_lefthand": {
+			"rotation": [0, 122, 0],
+			"translation": [2.5, 0, 0],
+			"scale": [0.4, 0.4, 0.4]
+		},
+		"ground": {
+			"translation": [0, 4, 0],
+			"scale": [0.25, 0.25, 0.25]
+		},
+		"gui": {
+			"rotation": [30, 225, 0],
+			"scale": [0.36914, 0.36914, 0.36914]
+		},
+		"head": {
+			"translation": [0, 0, -6.5],
+			"scale": [0.5, 0.5, 0.5]
+		},
+		"fixed": {
+			"translation": [0, 0, -0.25],
+			"scale": [0.5, 0.5, 0.5]
+		}
+	}
+}

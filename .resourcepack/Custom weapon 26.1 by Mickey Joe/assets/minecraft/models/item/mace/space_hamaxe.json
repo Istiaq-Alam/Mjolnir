@@ -1,0 +1,7 @@
+{
+	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+	"parent": "item/mace/vortex_hamaxe",
+	"textures": {
+		"particle": "item/mace/space_hamaxe"
+	}
+}

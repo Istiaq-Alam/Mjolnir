@@ -1,0 +1,7 @@
+{
+	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+	"parent": "item/clock/oak_clock/oak_clock_base",
+	"textures": {
+		"particle": "item/clock/pale_oak_clock/pale_oak_clock_base"
+	}
+}

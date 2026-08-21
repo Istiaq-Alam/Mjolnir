@@ -1,0 +1,8 @@
+{
+	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+	"parent": "item/apple/apple_barrel",
+	"textures": {
+		"particle": "item/carrot/carrot_barrel",
+		"bit_that_sticks_out": "item/carrot/carrot_barrel_tops"
+	}
+}

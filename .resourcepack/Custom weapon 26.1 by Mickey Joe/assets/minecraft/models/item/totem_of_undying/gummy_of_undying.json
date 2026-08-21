@@ -1,0 +1,110 @@
+{
+	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+	"texture_size": [32, 32],
+	"textures": {
+		"particle": "item/totem_of_undying/gummy_of_undying"
+	},
+	"elements": [
+		{
+			"from": [5.5, 0, 6.5],
+			"to": [10.5, 4, 9.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [5.5, 0, 7.5]},
+			"faces": {
+				"north": {"uv": [7.5, 1.5, 10, 3.5], "texture": "#particle"},
+				"east": {"uv": [11.5, 1.5, 10, 3.5], "texture": "#particle"},
+				"south": {"uv": [11.5, 1.5, 14, 3.5], "texture": "#particle"},
+				"west": {"uv": [10, 1.5, 11.5, 3.5], "texture": "#particle"},
+				"down": {"uv": [12.5, 0, 10, 1.5], "texture": "#particle"}
+			}
+		},
+		{
+			"from": [5.5, 4, 5.5],
+			"to": [10.5, 15, 10.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [5.5, 4, 7.5]},
+			"faces": {
+				"north": {"uv": [0, 2.5, 2.5, 8], "texture": "#particle"},
+				"east": {"uv": [5, 2.5, 2.5, 8], "texture": "#particle"},
+				"south": {"uv": [5, 2.5, 7.5, 8], "texture": "#particle"},
+				"west": {"uv": [2.5, 2.5, 5, 8], "texture": "#particle"},
+				"up": {"uv": [2.5, 2.5, 0, 0], "texture": "#particle"},
+				"down": {"uv": [5, 0, 2.5, 2.5], "texture": "#particle"}
+			}
+		},
+		{
+			"from": [3.5, 4, 7.5],
+			"to": [12.5, 10, 9.5],
+			"rotation": {"angle": 0, "axis": "x", "origin": [5.5, 10, 7.5]},
+			"faces": {
+				"north": {"uv": [1, 9, 5.5, 12], "texture": "#particle"},
+				"east": {"uv": [0, 9, 1, 12], "texture": "#particle"},
+				"south": {"uv": [6.5, 9, 11, 12], "texture": "#particle"},
+				"west": {"uv": [5.5, 9, 6.5, 12], "texture": "#particle"},
+				"up": {"uv": [5.5, 9, 1, 8], "texture": "#particle"},
+				"down": {"uv": [10, 8, 5.5, 9], "texture": "#particle"}
+			}
+		},
+		{
+			"from": [4.5, 14, 7.5],
+			"to": [6.5, 16, 8.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [4.5, 14, 7.5]},
+			"faces": {
+				"north": {"uv": [5, 0.5, 6, 1.5], "texture": "#particle"},
+				"east": {"uv": [5, 0.5, 5.5, 1.5], "texture": "#particle"},
+				"south": {"uv": [6, 0.5, 5, 1.5], "texture": "#particle"},
+				"west": {"uv": [5.5, 0.5, 6, 1.5], "texture": "#particle"},
+				"up": {"uv": [6, 0.5, 5, 1], "texture": "#particle"},
+				"down": {"uv": [6, 1, 5, 1.5], "texture": "#particle"}
+			}
+		},
+		{
+			"from": [9.5, 14, 7.5],
+			"to": [11.5, 16, 8.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [11.5, 14, 7.5]},
+			"faces": {
+				"north": {"uv": [6, 0.5, 5, 1.5], "texture": "#particle"},
+				"east": {"uv": [6, 0.5, 5.5, 1.5], "texture": "#particle"},
+				"south": {"uv": [5, 0.5, 6, 1.5], "texture": "#particle"},
+				"west": {"uv": [5.5, 0.5, 5, 1.5], "texture": "#particle"},
+				"up": {"uv": [5, 0.5, 6, 1], "texture": "#particle"},
+				"down": {"uv": [5, 1, 6, 1.5], "texture": "#particle"}
+			}
+		}
+	],
+	"gui_light": "front",
+	"display": {
+		"thirdperson_righthand": {
+			"translation": [0, 2.5, 0],
+			"scale": [0.6, 0.6, 0.6]
+		},
+		"thirdperson_lefthand": {
+			"translation": [0, 2.5, 0],
+			"scale": [0.6, 0.6, 0.6]
+		},
+		"firstperson_righthand": {
+			"rotation": [0, 122, -12],
+			"translation": [1, 4.35, 2.75],
+			"scale": [0.4, 0.4, 0.4]
+		},
+		"firstperson_lefthand": {
+			"rotation": [0, 122, -12],
+			"translation": [1, 4.35, 2.75],
+			"scale": [0.4, 0.4, 0.4]
+		},
+		"ground": {
+			"translation": [0, 3, 0],
+			"scale": [0.5, 0.5, 0.5]
+		},
+		"gui": {
+			"rotation": [14, 155, 0],
+			"translation": [-0.75, 0.4, 0]
+		},
+		"head": {
+			"translation": [0, 12, 0],
+			"scale": [0.75, 0.75, 0.75]
+		},
+		"fixed": {
+			"translation": [0, 0, -5],
+			"scale": [1.99, 1.99, 1.99]
+		}
+	}
+}

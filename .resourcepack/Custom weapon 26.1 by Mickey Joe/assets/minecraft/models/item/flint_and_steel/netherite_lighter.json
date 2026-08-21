@@ -1,0 +1,7 @@
+{
+	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+	"parent": "item/flint_and_steel/lighter",
+	"textures": {
+		"particle": "item/flint_and_steel/netherite_lighter"
+	}
+}

@@ -1,0 +1,7 @@
+{
+	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+    "parent": "item/painting/donkey_kong",
+	"textures": {
+		"particle": "item/painting/skeleton"
+	}
+}

@@ -1,0 +1,7 @@
+{
+	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+	"parent": "item/music_disc/framed_music_disc_cat",
+	"textures": {
+		"layer0": "item/music_disc/framed_music_disc_11"
+	}
+}

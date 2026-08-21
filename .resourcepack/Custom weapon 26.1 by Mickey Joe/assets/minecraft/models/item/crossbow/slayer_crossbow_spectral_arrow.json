@@ -1,0 +1,7 @@
+{
+	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+	"parent": "item/crossbow/slayer_crossbow_arrow",
+	"textures": {
+		"0": "item/spectral_arrow"
+	}
+}

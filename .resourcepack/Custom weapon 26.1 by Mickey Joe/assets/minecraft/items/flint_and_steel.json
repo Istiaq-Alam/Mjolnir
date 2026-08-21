@@ -1,0 +1,506 @@
+{
+	"model": {
+		"type": "select",
+		"property": "component",
+		"component": "custom_name",
+		"cases": [
+			{
+				"when": [
+					"Pink Lighter",
+					"Pink Zippo"
+				],
+				"model": {
+					"type": "composite",
+					"models": [
+						{
+								"type": "model",
+								"model": "item/flint_and_steel/pink_lighter"
+						},
+						{
+							"type": "condition",
+							"property": "keybind_down",
+							"keybind": "key.use",
+							"on_true": {
+								"type": "model",
+								"model": "item/flint_and_steel/lighter_button_down"
+							},
+							"on_false": {
+								"type": "model",
+								"model": "item/flint_and_steel/lighter_button"
+							}
+						}
+					]
+				}
+			},
+			{
+				"when": [
+					"Magenta Lighter",
+					"Magenta Zippo"
+				],
+				"model": {
+					"type": "composite",
+					"models": [
+						{
+								"type": "model",
+								"model": "item/flint_and_steel/magenta_lighter"
+						},
+						{
+							"type": "condition",
+							"property": "keybind_down",
+							"keybind": "key.use",
+							"on_true": {
+								"type": "model",
+								"model": "item/flint_and_steel/lighter_button_down"
+							},
+							"on_false": {
+								"type": "model",
+								"model": "item/flint_and_steel/lighter_button"
+							}
+						}
+					]
+				}
+			},
+			{
+				"when": [
+					"Purple Lighter",
+					"Purple Zippo"
+				],
+				"model": {
+					"type": "composite",
+					"models": [
+						{
+								"type": "model",
+								"model": "item/flint_and_steel/purple_lighter"
+						},
+						{
+							"type": "condition",
+							"property": "keybind_down",
+							"keybind": "key.use",
+							"on_true": {
+								"type": "model",
+								"model": "item/flint_and_steel/lighter_button_down"
+							},
+							"on_false": {
+								"type": "model",
+								"model": "item/flint_and_steel/lighter_button"
+							}
+						}
+					]
+				}
+			},
+			{
+				"when": [
+					"Blue Lighter",
+					"Blue Zippo"
+				],
+				"model": {
+					"type": "composite",
+					"models": [
+						{
+								"type": "model",
+								"model": "item/flint_and_steel/blue_lighter"
+						},
+						{
+							"type": "condition",
+							"property": "keybind_down",
+							"keybind": "key.use",
+							"on_true": {
+								"type": "model",
+								"model": "item/flint_and_steel/lighter_button_down"
+							},
+							"on_false": {
+								"type": "model",
+								"model": "item/flint_and_steel/lighter_button"
+							}
+						}
+					]
+				}
+			},
+			{
+				"when": [
+					"Light Blue Lighter",
+					"Light Blue Zippo"
+				],
+				"model": {
+					"type": "composite",
+					"models": [
+						{
+								"type": "model",
+								"model": "item/flint_and_steel/light_blue_lighter"
+						},
+						{
+							"type": "condition",
+							"property": "keybind_down",
+							"keybind": "key.use",
+							"on_true": {
+								"type": "model",
+								"model": "item/flint_and_steel/lighter_button_down"
+							},
+							"on_false": {
+								"type": "model",
+								"model": "item/flint_and_steel/lighter_button"
+							}
+						}
+					]
+				}
+			},
+			{
+				"when": [
+					"Cyan Lighter",
+					"Cyan Zippo"
+				],
+				"model": {
+					"type": "composite",
+					"models": [
+						{
+								"type": "model",
+								"model": "item/flint_and_steel/cyan_lighter"
+						},
+						{
+							"type": "condition",
+							"property": "keybind_down",
+							"keybind": "key.use",
+							"on_true": {
+								"type": "model",
+								"model": "item/flint_and_steel/lighter_button_down"
+							},
+							"on_false": {
+								"type": "model",
+								"model": "item/flint_and_steel/lighter_button"
+							}
+						}
+					]
+				}
+			},
+			{
+				"when": [
+					"Green Lighter",
+					"Green Zippo"
+				],
+				"model": {
+					"type": "composite",
+					"models": [
+						{
+								"type": "model",
+								"model": "item/flint_and_steel/green_lighter"
+						},
+						{
+							"type": "condition",
+							"property": "keybind_down",
+							"keybind": "key.use",
+							"on_true": {
+								"type": "model",
+								"model": "item/flint_and_steel/lighter_button_down"
+							},
+							"on_false": {
+								"type": "model",
+								"model": "item/flint_and_steel/lighter_button"
+							}
+						}
+					]
+				}
+			},
+			{
+				"when": [
+					"Lime Lighter",
+					"Lime Zippo"
+				],
+				"model": {
+					"type": "composite",
+					"models": [
+						{
+								"type": "model",
+								"model": "item/flint_and_steel/lime_lighter"
+						},
+						{
+							"type": "condition",
+							"property": "keybind_down",
+							"keybind": "key.use",
+							"on_true": {
+								"type": "model",
+								"model": "item/flint_and_steel/lighter_button_down"
+							},
+							"on_false": {
+								"type": "model",
+								"model": "item/flint_and_steel/lighter_button"
+							}
+						}
+					]
+				}
+			},
+			{
+				"when": [
+					"Yellow Lighter",
+					"Yellow Zippo"
+				],
+				"model": {
+					"type": "composite",
+					"models": [
+						{
+								"type": "model",
+								"model": "item/flint_and_steel/yellow_lighter"
+						},
+						{
+							"type": "condition",
+							"property": "keybind_down",
+							"keybind": "key.use",
+							"on_true": {
+								"type": "model",
+								"model": "item/flint_and_steel/lighter_button_down"
+							},
+							"on_false": {
+								"type": "model",
+								"model": "item/flint_and_steel/lighter_button"
+							}
+						}
+					]
+				}
+			},
+			{
+				"when": [
+					"Orange Lighter",
+					"Orange Zippo"
+				],
+				"model": {
+					"type": "composite",
+					"models": [
+						{
+								"type": "model",
+								"model": "item/flint_and_steel/orange_lighter"
+						},
+						{
+							"type": "condition",
+							"property": "keybind_down",
+							"keybind": "key.use",
+							"on_true": {
+								"type": "model",
+								"model": "item/flint_and_steel/lighter_button_down"
+							},
+							"on_false": {
+								"type": "model",
+								"model": "item/flint_and_steel/lighter_button"
+							}
+						}
+					]
+				}
+			},
+			{
+				"when": [
+					"Red Lighter",
+					"Red Zippo"
+				],
+				"model": {
+					"type": "composite",
+					"models": [
+						{
+								"type": "model",
+								"model": "item/flint_and_steel/red_lighter"
+						},
+						{
+							"type": "condition",
+							"property": "keybind_down",
+							"keybind": "key.use",
+							"on_true": {
+								"type": "model",
+								"model": "item/flint_and_steel/lighter_button_down"
+							},
+							"on_false": {
+								"type": "model",
+								"model": "item/flint_and_steel/lighter_button"
+							}
+						}
+					]
+				}
+			},
+			{
+				"when": [
+					"Brown Lighter",
+					"Brown Zippo"
+				],
+				"model": {
+					"type": "composite",
+					"models": [
+						{
+								"type": "model",
+								"model": "item/flint_and_steel/brown_lighter"
+						},
+						{
+							"type": "condition",
+							"property": "keybind_down",
+							"keybind": "key.use",
+							"on_true": {
+								"type": "model",
+								"model": "item/flint_and_steel/lighter_button_down"
+							},
+							"on_false": {
+								"type": "model",
+								"model": "item/flint_and_steel/lighter_button"
+							}
+						}
+					]
+				}
+			},
+			{
+				"when": [
+					"Black Lighter",
+					"Black Zippo"
+				],
+				"model": {
+					"type": "composite",
+					"models": [
+						{
+								"type": "model",
+								"model": "item/flint_and_steel/black_lighter"
+						},
+						{
+							"type": "condition",
+							"property": "keybind_down",
+							"keybind": "key.use",
+							"on_true": {
+								"type": "model",
+								"model": "item/flint_and_steel/lighter_button_down"
+							},
+							"on_false": {
+								"type": "model",
+								"model": "item/flint_and_steel/lighter_button"
+							}
+						}
+					]
+				}
+			},
+			{
+				"when": [
+					"Grey Lighter",
+					"Grey Zippo",
+					"Gray Lighter",
+					"Gray Zippo"
+				],
+				"model": {
+					"type": "composite",
+					"models": [
+						{
+								"type": "model",
+								"model": "item/flint_and_steel/grey_lighter"
+						},
+						{
+							"type": "condition",
+							"property": "keybind_down",
+							"keybind": "key.use",
+							"on_true": {
+								"type": "model",
+								"model": "item/flint_and_steel/lighter_button_down"
+							},
+							"on_false": {
+								"type": "model",
+								"model": "item/flint_and_steel/lighter_button"
+							}
+						}
+					]
+				}
+			},
+			{
+				"when": [
+					"Light Grey Lighter",
+					"Light Grey Zippo",
+					"Light Gray Lighter",
+					"Light Gray Zippo"
+				],
+				"model": {
+					"type": "composite",
+					"models": [
+						{
+								"type": "model",
+								"model": "item/flint_and_steel/light_grey_lighter"
+						},
+						{
+							"type": "condition",
+							"property": "keybind_down",
+							"keybind": "key.use",
+							"on_true": {
+								"type": "model",
+								"model": "item/flint_and_steel/lighter_button_down"
+							},
+							"on_false": {
+								"type": "model",
+								"model": "item/flint_and_steel/lighter_button"
+							}
+						}
+					]
+				}
+			},
+			{
+				"when": [
+					"White Lighter",
+					"White Zippo"
+				],
+				"model": {
+					"type": "composite",
+					"models": [
+						{
+								"type": "model",
+								"model": "item/flint_and_steel/white_lighter"
+						},
+						{
+							"type": "condition",
+							"property": "keybind_down",
+							"keybind": "key.use",
+							"on_true": {
+								"type": "model",
+								"model": "item/flint_and_steel/lighter_button_down"
+							},
+							"on_false": {
+								"type": "model",
+								"model": "item/flint_and_steel/lighter_button"
+							}
+						}
+					]
+				}
+			},
+			{
+				"when": [
+					"Lighter",
+					"Zippo"
+				],
+				"model": {
+					"type": "composite",
+					"models": [
+						{
+							"type": "condition",
+							"property": "component",
+							"predicate": "custom_data",
+							"value": {
+								"equipment": "netherite"
+							},
+							"on_true": {
+								"type": "model",
+								"model": "item/flint_and_steel/netherite_lighter"
+							},
+							"on_false": {
+								"type": "model",
+								"model": "item/flint_and_steel/lighter"
+							}
+						},
+						{
+							"type": "condition",
+							"property": "keybind_down",
+							"keybind": "key.use",
+							"on_true": {
+								"type": "model",
+								"model": "item/flint_and_steel/lighter_button_down"
+							},
+							"on_false": {
+								"type": "model",
+								"model": "item/flint_and_steel/lighter_button"
+							}
+						}
+					]
+				}
+			}
+		],
+		"fallback": {
+								"type": "model",
+								"model": "item/flint_and_steel"
+							}
+	},
+	"oversized_in_gui": true
+}

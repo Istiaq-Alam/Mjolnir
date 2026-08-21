@@ -1,0 +1,7 @@
+{
+	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+	"parent": "item/sconce/stone_sconce",
+	"textures": {
+		"particle": "block/sconce/yellow_concrete_sconce"
+	}
+}
