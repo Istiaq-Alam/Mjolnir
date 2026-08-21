@@ -1,7 +1,0 @@
-{
-	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
-	"parent": "item/crossbow/great_hogs_glory_arrow",
-	"textures": {
-		"arrow": "item/spectral_arrow"
-	}
-}

@@ -1,7 +1,0 @@
-{
-	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
-	"parent": "item/eye_of_ender/eye_of_ender",
-	"textures": {
-		"layer0": "item/eye_of_ender/eye_of_ender_end"
-	}
-}

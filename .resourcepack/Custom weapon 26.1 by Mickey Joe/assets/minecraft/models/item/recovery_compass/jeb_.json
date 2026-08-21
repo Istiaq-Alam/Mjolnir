@@ -1,8 +1,0 @@
-{
-	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
-	"parent": "item/recovery_compass/recovery_compass/base",
-	"textures": {
-		"base": "item/recovery_compass/jeb__base",
-		"particle": "item/recovery_compass/jeb_"
-	}
-}

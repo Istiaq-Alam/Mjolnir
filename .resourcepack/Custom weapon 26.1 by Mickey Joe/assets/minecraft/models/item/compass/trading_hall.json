@@ -1,8 +1,0 @@
-{
-	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
-	"parent": "item/compass/compass/base",
-	"textures": {
-		"particle": "item/compass/trading_hall",
-		"base": "item/compass/trading_hall_base"
-	}
-}

@@ -1,7 +1,0 @@
-{
-	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
-	"parent": "item/crossbow/caver_crossbow",
-	"textures": {
-		"particle": "item/crossbow/oxidized_caver_crossbow"
-	}
-}

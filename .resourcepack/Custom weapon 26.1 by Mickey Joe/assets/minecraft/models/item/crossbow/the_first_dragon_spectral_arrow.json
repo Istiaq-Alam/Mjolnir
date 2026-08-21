@@ -1,7 +1,0 @@
-{
-	"cthe_firstit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
-	"parent": "item/crossbow/the_first_dragon_arrow",
-	"textures": {
-		"arrow": "item/spectral_arrow"
-	}
-}

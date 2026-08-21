@@ -1,7 +1,0 @@
-{
-	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
-	"parent": "item/netherite_spear/dinnerbone",
-	"textures": {
-        "layer0": "item/stone_spear/stone_spear"
-    }
-}

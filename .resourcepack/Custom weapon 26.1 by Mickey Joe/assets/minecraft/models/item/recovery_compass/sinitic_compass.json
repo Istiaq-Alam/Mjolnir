@@ -1,8 +1,0 @@
-{
-	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
-	"parent": "item/compass/sinitic_compass",
-	"textures": {
-		"base": "item/recovery_compass/sinitic_compass_base",
-		"particle": "item/recovery_compass/sinitic_compass"
-	}
-}

@@ -1,7 +1,0 @@
-{
-	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
-	"parent": "item/carrot/plated_carrot",
-	"textures": {
-		"particle": "item/golden_carrot/plated_golden_carrot"
-	}
-}

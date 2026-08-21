@@ -1,8 +1,0 @@
-{
-	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
-	"parent": "item/compass/kemetian_compass",
-	"textures": {
-		"particle": "item/recovery_compass/kemetian_compass",
-		"base": "item/recovery_compass/kemetian_compass_base"
-	}
-}

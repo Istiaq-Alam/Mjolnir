@@ -1,7 +1,0 @@
-{
-	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
-    "parent": "item/experience_bottle/experience_bottle",
-    "textures": {
-        "layer0": "item/experience_bottle/experience_bottle_halloween"
-    }
-}

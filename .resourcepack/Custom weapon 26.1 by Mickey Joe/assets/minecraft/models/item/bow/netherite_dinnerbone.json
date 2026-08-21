@@ -1,8 +1,0 @@
-{
-	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
-    "parent": "item/bow/dinnerbone",
-    "textures": {
-        "layer0": "item/bow/netherite_bow",
-		"particle": "item/bow/netherite_bow"
-    }
-}

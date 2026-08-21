@@ -1,8 +1,0 @@
-{
-	"format_version": "1.21.6",
-	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
-	"parent": "item/crossbow/black_box_pulling",
-	"textures": {
-		"particle": "item/crossbow/the_first_black_box"
-	}
-}

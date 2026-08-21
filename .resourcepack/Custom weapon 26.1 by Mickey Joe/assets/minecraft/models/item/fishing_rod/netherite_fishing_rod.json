@@ -1,7 +1,0 @@
-{
-	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
-	"parent": "item/fishing_rod/fishing_rod",
-	"textures": {
-		"particle": "item/fishing_rod/netherite_fishing_rod"
-	}
-}

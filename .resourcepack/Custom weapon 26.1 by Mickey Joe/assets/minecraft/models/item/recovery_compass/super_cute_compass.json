@@ -1,8 +1,0 @@
-{
-	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
-	"parent": "item/compass/super_cute_compass",
-	"textures": {
-		"particle": "item/recovery_compass/super_cute_compass",
-		"base": "item/recovery_compass/super_cute_compass_base"
-	}
-}

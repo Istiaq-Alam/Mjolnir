@@ -1,7 +1,0 @@
-{
-	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
-	"parent": "item/sconce/iron_ingot_sconce",
-	"textures": {
-		"particle": "block/sconce/oxidized_copper_ingot_sconce"
-	}
-}

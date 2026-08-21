@@ -1,7 +1,0 @@
-{
-	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
-    "parent": "barely_default:item/shield/wood/shield",
-	"textures": {
-		"particle": "barely_default:item/shield/wood/shield_damaged"
-	}
-}

@@ -1,8 +1,0 @@
-{
-	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
-	"parent": "item/compass/kemetian_compass",
-	"textures": {
-		"particle": "item/compass/trail_ruins",
-		"base": "item/compass/trail_ruins_base"
-	}
-}

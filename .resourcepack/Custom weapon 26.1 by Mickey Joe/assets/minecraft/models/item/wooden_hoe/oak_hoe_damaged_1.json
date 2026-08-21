@@ -1,7 +1,0 @@
-{
-	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
-    "parent": "item/netherite_hoe/netherite_hoe",
-    "textures": {
-        "layer0": "item/wooden_hoe/oak_hoe_damaged_1"
-    }
-}

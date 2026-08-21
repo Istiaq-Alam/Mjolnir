@@ -1,7 +1,0 @@
-{
-	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
-    "parent": "item/shield/trial_shield",
-    "textures": {
-		"particle": "barely_default:item/shield/gold/trial_shield"
-	}
-}

@@ -1,7 +1,0 @@
-{
-	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
-    "parent": "item/bucket/axolotl_lucy",
-    "textures": {
-        "particle": "item/bucket/axolotl_wild"
-    }
-}

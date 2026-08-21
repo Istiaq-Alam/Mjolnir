@@ -1,7 +1,0 @@
-{
-	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
-	"parent": "item/golden_apple/golden_apple_barrel",
-	"textures": {
-		"bit_that_sticks_out": "item/golden_apple/notch_apple_barrel_stems"
-	}
-}

@@ -1,7 +1,0 @@
-{
-	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
-	"parent": "item/shears/shears",
-	"textures": {
-		"layer0": "item/shears/netherite_shears_using"
-	}
-}

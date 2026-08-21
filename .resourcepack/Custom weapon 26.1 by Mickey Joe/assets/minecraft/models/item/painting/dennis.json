@@ -1,7 +1,0 @@
-{
-	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
-    "parent": "item/painting/burning_skull",
-	"textures": {
-		"particle": "item/painting/dennis"
-	}
-}

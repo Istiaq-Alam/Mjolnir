@@ -1,7 +1,0 @@
-{
-	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
-	"parent": "item/netherite_spear/infinity_lance",
-	"textures": {
-		"layer0": "item/diamond_spear/command_block_lance"
-	}
-}

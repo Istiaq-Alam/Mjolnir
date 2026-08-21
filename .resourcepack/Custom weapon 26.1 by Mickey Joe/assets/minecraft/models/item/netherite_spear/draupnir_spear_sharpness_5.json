@@ -1,8 +1,0 @@
-{
-	"format_version": "1.21.6",
-	"credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
-	"parent": "item/netherite_spear/draupnir_spear",
-	"textures": {
-		"layer0": "item/netherite_spear/draupnir_spear_sharpness_5"
-	}
-}
