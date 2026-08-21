@@ -174,7 +174,7 @@ resource-pack:
   enabled: true
   url: "YOUR_RESOURCE_PACK_URL"
   sha1: "YOUR_RESOURCE_PACK_SHA1"
-  required: false
+  required: true
   send-on-join: true
   send-delay-ticks: 40
 ```
