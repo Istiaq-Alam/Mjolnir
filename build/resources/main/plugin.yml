@@ -1,5 +1,5 @@
 name: Mjolnir
-version: 1.0.1
+version: 1.0.4
 main: com.istiak.mjolnir.MjolnirPlugin
 api-version: '26.1'
 author: Istiak

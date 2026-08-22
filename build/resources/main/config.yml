@@ -13,7 +13,7 @@ travel:
 
   # Only used if cancel-fall-damage is false.
   # 2.0 = 1 heart.
-  max-fall-damage: 2.0
+  max-fall-damage: 1.0
 
   landing-thunder:
     # Thor-style thunder impact when landing from Travel Mode.
@@ -51,6 +51,7 @@ fighting:
     cooldown: 2
     knockback: 0.8
     player-damage: false
+  
 
 resource-pack:
   enabled: true
