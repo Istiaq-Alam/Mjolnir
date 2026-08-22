@@ -44,7 +44,8 @@ public final class MjolnirListener implements Listener {
     /*
      * Mode switch cooldown per player.
      */
-    private final Map<UUID, Long> cooldownUntil = new HashMap<>();
+    private final Map<UUID, Long> cooldownUntil =
+            new HashMap<>();
 
     /*
      * Fighting Mode Lightning Strike cooldown.
@@ -59,11 +60,16 @@ public final class MjolnirListener implements Listener {
             new HashMap<>();
 
     /*
-     * One active Mjolnir storm cleanup task per world.
-     *
-     * UUID = World UUID
+     * Fighting Mode Mjolnir Smash cooldown.
      */
-    private final Map<UUID, BukkitTask> stormTasks = new HashMap<>();
+    private final Map<UUID, Long> mjolnirSmashCooldown =
+            new HashMap<>();
+
+    /*
+     * One active Mjolnir storm cleanup task per world.
+     */
+    private final Map<UUID, BukkitTask> stormTasks =
+            new HashMap<>();
 
     /*
      * Stores the weather state that existed before Mjolnir
@@ -74,22 +80,6 @@ public final class MjolnirListener implements Listener {
 
     /*
      * Players currently performing a Mjolnir Travel flight.
-     *
-     * IMPORTANT:
-     *
-     * This state is independent of the player's CURRENT mode.
-     *
-     * Example:
-     *
-     * Travel Mode
-     *      ↓
-     * Riptide
-     *      ↓
-     * switch to Fighting Mode in the sky
-     *      ↓
-     * fall
-     *      ↓
-     * landing protection still works
      */
     private final Set<UUID> travellingPlayers =
             new HashSet<>();
@@ -97,20 +87,13 @@ public final class MjolnirListener implements Listener {
     /*
      * Players who have actually left the ground after
      * starting a Mjolnir Travel flight.
-     *
-     * This is used by PlayerMoveEvent to reliably detect
-     * the actual landing.
      */
     private final Set<UUID> airborneTravelPlayers =
             new HashSet<>();
 
     /*
-     * When a special Fighting Mode attack is triggered,
-     * the following normal melee EntityDamageByEntityEvent
-     * must be cancelled.
-     *
-     * UUID = Player UUID
-     * UUID = Target UUID
+     * When Lightning Strike or God Blast is triggered,
+     * suppress the following normal melee attack.
      */
     private final Map<UUID, UUID> suppressedNormalAttacks =
             new HashMap<>();
@@ -123,15 +106,18 @@ public final class MjolnirListener implements Listener {
         this.mjolnirItem = mjolnirItem;
     }
 
+    /*
+     * =========================================================
+     * MODE SWITCHING
+     * =========================================================
+     */
+
     @EventHandler(
             priority = EventPriority.HIGHEST,
             ignoreCancelled = false
     )
     public void onInteract(PlayerInteractEvent event) {
 
-        /*
-         * Prevent duplicate processing from the off-hand.
-         */
         if (event.getHand() != EquipmentSlot.HAND) {
             return;
         }
@@ -145,9 +131,6 @@ public final class MjolnirListener implements Listener {
 
         Player player = event.getPlayer();
 
-        /*
-         * Mjolnir mode switching only happens while sneaking.
-         */
         if (!player.isSneaking()) {
             return;
         }
@@ -155,17 +138,10 @@ public final class MjolnirListener implements Listener {
         ItemStack held =
                 player.getInventory().getItemInMainHand();
 
-        /*
-         * Only the real PDC-marked Mjolnir can activate.
-         */
         if (!mjolnirItem.isMjolnir(held)) {
             return;
         }
 
-        /*
-         * Sneak + Right Click is reserved exclusively
-         * for switching Mjolnir modes.
-         */
         event.setCancelled(true);
         event.setUseItemInHand(Event.Result.DENY);
         event.setUseInteractedBlock(Event.Result.DENY);
@@ -178,9 +154,6 @@ public final class MjolnirListener implements Listener {
                         0L
                 ) - now;
 
-        /*
-         * Check mode-switch cooldown.
-         */
         if (remaining > 0) {
 
             long seconds = Math.max(
@@ -200,9 +173,6 @@ public final class MjolnirListener implements Listener {
             return;
         }
 
-        /*
-         * Determine the next mode.
-         */
         MjolnirItem.Mode current =
                 mjolnirItem.getMode(held);
 
@@ -211,9 +181,6 @@ public final class MjolnirListener implements Listener {
                         ? MjolnirItem.Mode.FIGHTING
                         : MjolnirItem.Mode.TRAVEL;
 
-        /*
-         * Apply the new mode.
-         */
         mjolnirItem.applyMode(
                 held,
                 next
@@ -221,9 +188,6 @@ public final class MjolnirListener implements Listener {
 
         player.getInventory().setItemInMainHand(held);
 
-        /*
-         * Apply cooldown.
-         */
         int cooldownSeconds = Math.max(
                 0,
                 plugin.getConfig().getInt(
@@ -238,16 +202,11 @@ public final class MjolnirListener implements Listener {
         );
 
         /*
-         * IMPORTANT:
+         * Do not remove Travel state here.
          *
-         * We intentionally DO NOT remove the player
-         * from travellingPlayers when switching modes.
+         * Travel -> sky -> Fighting -> landing
          *
-         * Therefore:
-         *
-         * Travel → sky → Fighting → landing
-         *
-         * still counts as a Mjolnir Travel landing.
+         * must still count as a Travel landing.
          */
         if (next == MjolnirItem.Mode.FIGHTING) {
             activateFightingMode(player);
@@ -261,18 +220,13 @@ public final class MjolnirListener implements Listener {
      * FIGHTING MODE SPECIAL ATTACK DETECTION
      * =========================================================
      *
-     * PlayerAnimationEvent detects the player's left-click
-     * arm swing.
-     *
-     * We use ray tracing to determine exactly what the player
-     * is aiming at.
-     *
      * Priority:
      *
-     *     Jumping / airborne → God Blast
-     *     Sprinting          → Lightning Strike
-     *     Otherwise          → Normal Mjolnir attack
+     * Airborne -> God Blast
+     * Sprinting -> Lightning Strike
+     * Normal melee -> Mjolnir Smash
      */
+
     @EventHandler(
             priority = EventPriority.HIGHEST,
             ignoreCancelled = true
@@ -281,12 +235,8 @@ public final class MjolnirListener implements Listener {
             PlayerAnimationEvent event
     ) {
 
-        Player player =
-                event.getPlayer();
+        Player player = event.getPlayer();
 
-        /*
-         * Only main-hand Mjolnir.
-         */
         ItemStack held =
                 player.getInventory()
                         .getItemInMainHand();
@@ -295,21 +245,8 @@ public final class MjolnirListener implements Listener {
             return;
         }
 
-        /*
-         * Only Fighting Mode.
-         */
         if (mjolnirItem.getMode(held)
                 != MjolnirItem.Mode.FIGHTING) {
-            return;
-        }
-
-        /*
-         * Do not interfere with sneaking mode switching.
-         *
-         * Sneak + Right Click is already handled separately.
-         */
-        if (player.isSneaking()
-                && player.isBlocking()) {
             return;
         }
 
@@ -317,9 +254,8 @@ public final class MjolnirListener implements Listener {
          * =====================================================
          * GOD BLAST
          * =====================================================
-         *
-         * Jumping takes priority over sprinting.
          */
+
         if (!player.isOnGround()) {
 
             if (!plugin.getConfig()
@@ -347,10 +283,6 @@ public final class MjolnirListener implements Listener {
                 return;
             }
 
-            /*
-             * Only hostile mobs or players when PvP
-             * is enabled.
-             */
             if (!isValidFightingTarget(
                     target,
                     player,
@@ -368,18 +300,11 @@ public final class MjolnirListener implements Listener {
                 return;
             }
 
-            /*
-             * Activate God Blast.
-             */
             performGodBlast(
                     player,
                     target
             );
 
-            /*
-             * Prevent the normal melee hit from also
-             * damaging the target.
-             */
             suppressNormalAttack(
                     player,
                     target
@@ -392,9 +317,8 @@ public final class MjolnirListener implements Listener {
          * =====================================================
          * LIGHTNING STRIKE
          * =====================================================
-         *
-         * Sprint + left click.
          */
+
         if (player.isSprinting()) {
 
             if (!plugin.getConfig()
@@ -422,10 +346,6 @@ public final class MjolnirListener implements Listener {
                 return;
             }
 
-            /*
-             * Only hostile mobs or players when PvP
-             * is enabled.
-             */
             if (!isValidFightingTarget(
                     target,
                     player,
@@ -443,18 +363,11 @@ public final class MjolnirListener implements Listener {
                 return;
             }
 
-            /*
-             * Activate Lightning Strike.
-             */
             performLightningStrike(
                     player,
                     target
             );
 
-            /*
-             * Prevent normal melee damage from also
-             * being applied.
-             */
             suppressNormalAttack(
                     player,
                     target
@@ -462,19 +375,12 @@ public final class MjolnirListener implements Listener {
         }
     }
 
-    /**
-     * Handles the normal melee damage event.
-     *
-     * Normally we leave vanilla Mjolnir damage untouched.
-     *
-     * If a special attack was triggered immediately before
-     * the melee event, cancel that normal hit so the player
-     * doesn't get both:
-     *
-     *     Lightning/God Blast damage
-     *             +
-     *     normal melee damage
+    /*
+     * =========================================================
+     * NORMAL MELEE + MJOLNIR SMASH
+     * =========================================================
      */
+
     @EventHandler(
             priority = EventPriority.HIGHEST,
             ignoreCancelled = false
@@ -487,44 +393,109 @@ public final class MjolnirListener implements Listener {
             return;
         }
 
-        UUID playerId =
-                player.getUniqueId();
+        UUID playerId = player.getUniqueId();
 
-        UUID targetId =
-                suppressedNormalAttacks.get(
-                        playerId
-                );
+        /*
+         * =====================================================
+         * SUPPRESS NORMAL DAMAGE
+         *
+         * Lightning Strike and God Blast already apply
+         * their own custom damage.
+         * =====================================================
+         */
 
-        if (targetId == null) {
-            return;
-        }
+        UUID suppressedTarget =
+                suppressedNormalAttacks.get(playerId);
 
-        if (!event.getEntity()
+        if (suppressedTarget != null
+                && event.getEntity()
                 .getUniqueId()
-                .equals(targetId)) {
+                .equals(suppressedTarget)) {
+
+            event.setCancelled(true);
+
+            suppressedNormalAttacks.remove(playerId);
+
             return;
         }
 
         /*
-         * Cancel the normal melee damage because the
-         * special attack has already handled the attack.
+         * =====================================================
+         * MJOLNIR SMASH
+         * =====================================================
          */
-        event.setCancelled(true);
+
+        if (!(event.getEntity()
+                instanceof LivingEntity target)) {
+            return;
+        }
+
+        ItemStack held =
+                player.getInventory()
+                        .getItemInMainHand();
+
+        if (!mjolnirItem.isMjolnir(held)) {
+            return;
+        }
+
+        if (mjolnirItem.getMode(held)
+                != MjolnirItem.Mode.FIGHTING) {
+            return;
+        }
 
         /*
-         * Remove immediately.
+         * God Blast owns airborne attacks.
          */
-        suppressedNormalAttacks.remove(
-                playerId
+        if (!player.isOnGround()) {
+            return;
+        }
+
+        /*
+         * Lightning Strike owns sprinting attacks.
+         */
+        if (player.isSprinting()) {
+            return;
+        }
+
+        if (!plugin.getConfig()
+                .getBoolean(
+                        "fighting.mjolnir-smash.enabled",
+                        true
+                )) {
+            return;
+        }
+
+        if (!isCooldownReady(
+                mjolnirSmashCooldown,
+                player,
+                "fighting.mjolnir-smash.cooldown",
+                2
+        )) {
+            return;
+        }
+
+        /*
+         * IMPORTANT:
+         *
+         * Do not cancel this event.
+         *
+         * The directly hit entity keeps receiving
+         * the normal melee damage.
+         *
+         * Mjolnir Smash adds the thunder shockwave.
+         */
+        performMjolnirSmash(
+                player,
+                target
         );
     }
 
-    /**
-     * Finds the entity directly under the player's crosshair.
-     *
-     * This uses Bukkit's ray tracing instead of simply finding
-     * the closest mob.
+    /*
+     * =========================================================
+     * TARGETING
+     * =========================================================
      */
+
     private LivingEntity findFightingTarget(
             Player player,
             double range
@@ -551,19 +522,11 @@ public final class MjolnirListener implements Listener {
                                         return false;
                                     }
 
-                                    /*
-                                     * Never select the attacker
-                                     * themselves.
-                                     */
-                                    if (entity
+                                    return !entity
                                             .getUniqueId()
                                             .equals(
                                                     player.getUniqueId()
-                                            )) {
-                                        return false;
-                                    }
-
-                                    return true;
+                                            );
                                 }
                         );
 
@@ -581,38 +544,17 @@ public final class MjolnirListener implements Listener {
         return living;
     }
 
-    /**
-     * Checks whether an entity is a valid target for
-     * a Fighting Mode special attack.
-     *
-     * Default:
-     *
-     *     Hostile mobs = YES
-     *     Players      = NO
-     *
-     * If player-damage is enabled:
-     *
-     *     Other players = YES
-     *     Attacker      = NEVER
-     */
     private boolean isValidFightingTarget(
             LivingEntity target,
             Player attacker,
             String playerDamagePath
     ) {
 
-        /*
-         * Never damage the attacker themselves.
-         */
         if (target.getUniqueId()
                 .equals(attacker.getUniqueId())) {
             return false;
         }
 
-        /*
-         * Players are only valid when PvP damage
-         * has explicitly been enabled.
-         */
         if (target instanceof Player) {
 
             return plugin.getConfig()
@@ -622,15 +564,15 @@ public final class MjolnirListener implements Listener {
                     );
         }
 
-        /*
-         * Only hostile mobs.
-         */
         return target instanceof Monster;
     }
 
-    /**
-     * Checks and consumes an ability cooldown.
+    /*
+     * =========================================================
+     * COOLDOWNS
+     * =========================================================
      */
+
     private boolean isCooldownReady(
             Map<UUID, Long> cooldownMap,
             Player player,
@@ -691,10 +633,6 @@ public final class MjolnirListener implements Listener {
         return true;
     }
 
-    /**
-     * Prevents the vanilla melee attack from also
-     * happening after a special attack.
-     */
     private void suppressNormalAttack(
             Player player,
             LivingEntity target
@@ -708,12 +646,6 @@ public final class MjolnirListener implements Listener {
                 target.getUniqueId()
         );
 
-        /*
-         * Safety cleanup.
-         *
-         * The actual EntityDamageByEntityEvent normally
-         * happens immediately after the arm swing.
-         */
         plugin.getServer()
                 .getScheduler()
                 .runTaskLater(
@@ -725,11 +657,12 @@ public final class MjolnirListener implements Listener {
                 );
     }
 
-    /**
+    /*
      * =========================================================
      * LIGHTNING STRIKE
      * =========================================================
      */
+
     private void performLightningStrike(
             Player player,
             LivingEntity target
@@ -743,18 +676,10 @@ public final class MjolnirListener implements Listener {
         World world =
                 target.getWorld();
 
-        /*
-         * Cosmetic lightning.
-         *
-         * No automatic vanilla lightning damage.
-         */
         world.strikeLightningEffect(
                 targetLocation
         );
 
-        /*
-         * PARTICLES
-         */
         if (plugin.getConfig()
                 .getBoolean(
                         "effects.particles",
@@ -781,19 +706,12 @@ public final class MjolnirListener implements Listener {
                     0.08
             );
 
-            /*
-             * Small electric trail between the player
-             * and the target.
-             */
             spawnLightningTrail(
                     player.getEyeLocation(),
                     targetLocation
             );
         }
 
-        /*
-         * SOUND
-         */
         if (plugin.getConfig()
                 .getBoolean(
                         "effects.sounds",
@@ -815,20 +733,14 @@ public final class MjolnirListener implements Listener {
             );
         }
 
-        /*
-         * DAMAGE
-         */
         double damage =
-                plugin.getConfig()
-                        .getDouble(
-                                "fighting.lightning-strike.damage",
-                                12.0
-                        );
-
-        damage =
                 Math.max(
                         0.0,
-                        damage
+                        plugin.getConfig()
+                                .getDouble(
+                                        "fighting.lightning-strike.damage",
+                                        12.0
+                                )
                 );
 
         if (damage > 0.0) {
@@ -839,9 +751,6 @@ public final class MjolnirListener implements Listener {
             );
         }
 
-        /*
-         * CHAT ANNOUNCEMENT
-         */
         broadcastAbilityMessage(
                 player,
                 "⚡ "
@@ -850,82 +759,64 @@ public final class MjolnirListener implements Listener {
         );
     }
 
-    /**
+    /*
      * =========================================================
      * GOD BLAST
      * =========================================================
      */
+
     private void performGodBlast(
             Player player,
             LivingEntity target
     ) {
 
         Location center =
-                target.getLocation()
-                        .clone();
+                target.getLocation().clone();
 
         World world =
                 target.getWorld();
 
         double radius =
-                plugin.getConfig()
-                        .getDouble(
-                                "fighting.god-blast.radius",
-                                5.0
-                        );
-
-        radius =
                 Math.max(
                         1.0,
-                        radius
+                        plugin.getConfig()
+                                .getDouble(
+                                        "fighting.god-blast.radius",
+                                        5.0
+                                )
                 );
 
         double damage =
-                plugin.getConfig()
-                        .getDouble(
-                                "fighting.god-blast.damage",
-                                18.0
-                        );
-
-        damage =
                 Math.max(
                         0.0,
-                        damage
+                        plugin.getConfig()
+                                .getDouble(
+                                        "fighting.god-blast.damage",
+                                        18.0
+                                )
                 );
 
         double knockback =
-                plugin.getConfig()
-                        .getDouble(
-                                "fighting.god-blast.knockback",
-                                1.2
-                        );
+                Math.max(
+                        0.0,
+                        plugin.getConfig()
+                                .getDouble(
+                                        "fighting.god-blast.knockback",
+                                        1.2
+                                )
+                );
 
-        /*
-         * =====================================================
-         * MAIN THUNDER IMPACT
-         * =====================================================
-         */
+        world.strikeLightningEffect(center);
 
-        world.strikeLightningEffect(
-                center
-        );
-
-        /*
-         * PARTICLES
-         */
         if (plugin.getConfig()
                 .getBoolean(
                         "effects.particles",
                         true
                 )) {
 
-            /*
-             * Large central electrical explosion.
-             */
             world.spawnParticle(
                     Particle.ELECTRIC_SPARK,
-                    center.clone()
-                            .add(0, 1.0, 0),
+                    center.clone().add(0, 1.0, 0),
                     180,
                     2.0,
                     1.0,
@@ -933,13 +824,9 @@ public final class MjolnirListener implements Listener {
                     0.18
             );
 
-            /*
-             * Wind blast.
-             */
             world.spawnParticle(
                     Particle.CLOUD,
-                    center.clone()
-                            .add(0, 0.2, 0),
+                    center.clone().add(0, 0.2, 0),
                     100,
                     2.5,
                     0.15,
@@ -947,13 +834,9 @@ public final class MjolnirListener implements Listener {
                     0.15
             );
 
-            /*
-             * Vertical energy.
-             */
             world.spawnParticle(
                     Particle.END_ROD,
-                    center.clone()
-                            .add(0, 1.0, 0),
+                    center.clone().add(0, 1.0, 0),
                     60,
                     1.4,
                     1.5,
@@ -961,9 +844,6 @@ public final class MjolnirListener implements Listener {
                     0.08
             );
 
-            /*
-             * Expanding rings.
-             */
             spawnGodBlastRing(
                     player,
                     center,
@@ -979,9 +859,6 @@ public final class MjolnirListener implements Listener {
             );
         }
 
-        /*
-         * SOUND
-         */
         if (plugin.getConfig()
                 .getBoolean(
                         "effects.sounds",
@@ -1003,11 +880,250 @@ public final class MjolnirListener implements Listener {
             );
         }
 
+        for (Entity entity :
+                world.getNearbyEntities(
+                        center,
+                        radius,
+                        radius,
+                        radius
+                )) {
+
+            if (!(entity instanceof LivingEntity living)) {
+                continue;
+            }
+
+            if (living.getUniqueId()
+                    .equals(player.getUniqueId())) {
+                continue;
+            }
+
+            if (living instanceof Player) {
+
+                if (!plugin.getConfig()
+                        .getBoolean(
+                                "fighting.god-blast.player-damage",
+                                false
+                        )) {
+                    continue;
+                }
+
+            } else if (!(living instanceof Monster)) {
+                continue;
+            }
+
+            if (living.getLocation()
+                    .distanceSquared(center)
+                    > radius * radius) {
+                continue;
+            }
+
+            if (damage > 0.0) {
+
+                living.damage(
+                        damage,
+                        player
+                );
+            }
+
+            if (knockback > 0.0) {
+
+                Vector direction =
+                        living.getLocation()
+                                .toVector()
+                                .subtract(
+                                        center.toVector()
+                                );
+
+                if (direction.lengthSquared()
+                        < 0.0001) {
+
+                    direction =
+                            new Vector(0, 0.4, 0);
+
+                } else {
+
+                    direction.normalize()
+                            .multiply(knockback);
+
+                    direction.setY(
+                            Math.max(
+                                    0.35,
+                                    direction.getY()
+                            )
+                    );
+                }
+
+                living.setVelocity(direction);
+            }
+
+            world.strikeLightningEffect(
+                    living.getLocation()
+            );
+        }
+
+        broadcastAbilityMessage(
+                player,
+                "🌩️ "
+                        + player.getName()
+                        + " unleashed a God Blast!"
+        );
+    }
+
+    /*
+     * =========================================================
+     * MJOLNIR SMASH
+     * =========================================================
+     */
+
+    private void performMjolnirSmash(
+            Player player,
+            LivingEntity target
+    ) {
+
+        World world =
+                target.getWorld();
+
+        Location center =
+                target.getLocation()
+                        .clone()
+                        .add(0, 0.2, 0);
+
+        double radius =
+                Math.max(
+                        1.0,
+                        plugin.getConfig()
+                                .getDouble(
+                                        "fighting.mjolnir-smash.radius",
+                                        4.0
+                                )
+                );
+
+        double damage =
+                Math.max(
+                        0.0,
+                        plugin.getConfig()
+                                .getDouble(
+                                        "fighting.mjolnir-smash.damage",
+                                        8.0
+                                )
+                );
+
+        double knockback =
+                Math.max(
+                        0.0,
+                        plugin.getConfig()
+                                .getDouble(
+                                        "fighting.mjolnir-smash.knockback",
+                                        0.8
+                                )
+                );
+
         /*
-         * =====================================================
-         * DAMAGE NEARBY HOSTILE MOBS
-         * =====================================================
+         * Cosmetic thunder impact.
          */
+        world.strikeLightningEffect(
+                center
+        );
+
+        /*
+         * PARTICLES
+         */
+        if (plugin.getConfig()
+                .getBoolean(
+                        "effects.particles",
+                        true
+                )) {
+
+            world.spawnParticle(
+                    Particle.ELECTRIC_SPARK,
+                    center.clone().add(0, 0.8, 0),
+                    100,
+                    1.2,
+                    0.7,
+                    1.2,
+                    0.15
+            );
+
+            world.spawnParticle(
+                    Particle.CLOUD,
+                    center,
+                    60,
+                    1.5,
+                    0.15,
+                    1.5,
+                    0.12
+            );
+
+            world.spawnParticle(
+                    Particle.END_ROD,
+                    center.clone().add(0, 0.8, 0),
+                    35,
+                    0.8,
+                    1.0,
+                    0.8,
+                    0.06
+            );
+
+            spawnMjolnirSmashRing(
+                    center,
+                    radius * 0.45,
+                    0L
+            );
+
+            spawnMjolnirSmashRing(
+                    center,
+                    radius * 0.70,
+                    2L
+            );
+
+            spawnMjolnirSmashRing(
+                    center,
+                    radius,
+                    4L
+            );
+        }
+
+        /*
+         * SOUNDS
+         */
+        if (plugin.getConfig()
+                .getBoolean(
+                        "effects.sounds",
+                        true
+                )) {
+
+            world.playSound(
+                    center,
+                    Sound.ITEM_TRIDENT_THUNDER,
+                    1.4f,
+                    0.85f
+            );
+
+            world.playSound(
+                    center,
+                    Sound.ENTITY_LIGHTNING_BOLT_IMPACT,
+                    1.3f,
+                    0.75f
+            );
+
+            world.playSound(
+                    center,
+                    Sound.ENTITY_GENERIC_EXPLODE,
+                    0.8f,
+                    1.3f
+            );
+        }
+
+        /*
+         * AREA DAMAGE
+         */
+        boolean playerDamage =
+                plugin.getConfig()
+                        .getBoolean(
+                                "fighting.mjolnir-smash.player-damage",
+                                false
+                        );
+
         for (Entity entity :
                 world.getNearbyEntities(
                         center,
@@ -1021,26 +1137,27 @@ public final class MjolnirListener implements Listener {
             }
 
             /*
-             * Never damage the attacking player.
+             * Never damage the attacker.
+             */
+            if (living.getUniqueId()
+                    .equals(player.getUniqueId())) {
+                continue;
+            }
+
+            /*
+             * Players are protected unless PvP damage
+             * is enabled.
              */
             if (living instanceof Player) {
 
-                /*
-                 * Other players are only damaged if
-                 * explicitly enabled.
-                 */
-                if (!plugin.getConfig()
-                        .getBoolean(
-                                "fighting.god-blast.player-damage",
-                                false
-                        )) {
+                if (!playerDamage) {
                     continue;
                 }
 
             } else {
 
                 /*
-                 * Non-player entities must be hostile mobs.
+                 * Only hostile mobs.
                  */
                 if (!(living instanceof Monster)) {
                     continue;
@@ -1048,7 +1165,7 @@ public final class MjolnirListener implements Listener {
             }
 
             /*
-             * Exact spherical radius check.
+             * Exact spherical range.
              */
             if (living.getLocation()
                     .distanceSquared(center)
@@ -1057,10 +1174,13 @@ public final class MjolnirListener implements Listener {
             }
 
             /*
-             * Do not accidentally damage the attacker.
+             * Directly hit target already receives
+             * normal melee damage.
+             *
+             * Do not double-damage it.
              */
             if (living.getUniqueId()
-                    .equals(player.getUniqueId())) {
+                    .equals(target.getUniqueId())) {
                 continue;
             }
 
@@ -1087,33 +1207,24 @@ public final class MjolnirListener implements Listener {
                                         center.toVector()
                                 );
 
-                /*
-                 * Avoid a zero-length vector.
-                 */
                 if (direction.lengthSquared()
                         < 0.0001) {
 
                     direction =
                             new Vector(
                                     0,
-                                    0.4,
+                                    0.35,
                                     0
                             );
 
                 } else {
 
-                    direction.normalize();
+                    direction.normalize()
+                            .multiply(knockback);
 
-                    direction.multiply(
-                            knockback
-                    );
-
-                    /*
-                     * Give the blast a small vertical lift.
-                     */
                     direction.setY(
                             Math.max(
-                                    0.35,
+                                    0.25,
                                     direction.getY()
                             )
                     );
@@ -1125,46 +1236,27 @@ public final class MjolnirListener implements Listener {
             }
 
             /*
-             * Individual mob lightning effect.
+             * Individual lightning effect.
              */
             world.strikeLightningEffect(
                     living.getLocation()
             );
         }
 
-        /*
-         * CHAT ANNOUNCEMENT
-         */
-        broadcastAbilityMessage(
-                player,
-                "🌩️ "
-                        + player.getName()
-                        + " unleashed a God Blast!"
+        player.sendActionBar(
+                Component.text(
+                        "⚡ Mjolnir Smash!",
+                        NamedTextColor.YELLOW
+                )
         );
     }
 
-    /**
-     * Sends the Fighting Mode ability announcement
-     * to everyone in the server.
+    /*
+     * =========================================================
+     * PARTICLE HELPERS
+     * =========================================================
      */
-    private void broadcastAbilityMessage(
-            Player player,
-            String message
-    ) {
 
-        plugin.getServer()
-                .broadcast(
-                        Component.text(
-                                message,
-                                NamedTextColor.AQUA
-                        )
-                );
-    }
-
-    /**
-     * Small particle trail from the player toward
-     * the Lightning Strike target.
-     */
     private void spawnLightningTrail(
             Location start,
             Location end
@@ -1231,9 +1323,6 @@ public final class MjolnirListener implements Listener {
         }
     }
 
-    /**
-     * Creates a horizontal God Blast particle ring.
-     */
     private void spawnGodBlastRing(
             Player player,
             Location center,
@@ -1319,6 +1408,91 @@ public final class MjolnirListener implements Listener {
                 );
     }
 
+    private void spawnMjolnirSmashRing(
+            Location center,
+            double radius,
+            long delay
+    ) {
+
+        plugin.getServer()
+                .getScheduler()
+                .runTaskLater(
+                        plugin,
+                        () -> {
+
+                            World world =
+                                    center.getWorld();
+
+                            if (world == null) {
+                                return;
+                            }
+
+                            int points = 36;
+
+                            for (int i = 0;
+                                 i < points;
+                                 i++) {
+
+                                double angle =
+                                        (Math.PI * 2.0 * i)
+                                                / points;
+
+                                double x =
+                                        Math.cos(angle)
+                                                * radius;
+
+                                double z =
+                                        Math.sin(angle)
+                                                * radius;
+
+                                Location location =
+                                        center.clone()
+                                                .add(
+                                                        x,
+                                                        0.12,
+                                                        z
+                                                );
+
+                                world.spawnParticle(
+                                        Particle.CLOUD,
+                                        location,
+                                        1,
+                                        0,
+                                        0,
+                                        0,
+                                        0
+                                );
+
+                                if (i % 2 == 0) {
+
+                                    world.spawnParticle(
+                                            Particle.ELECTRIC_SPARK,
+                                            location.clone()
+                                                    .add(
+                                                            0,
+                                                            0.12,
+                                                            0
+                                                    ),
+                                            1,
+                                            0,
+                                            0,
+                                            0,
+                                            0
+                                    );
+                                }
+                            }
+
+                        },
+                        delay
+                );
+    }
+
+    /*
+     * =========================================================
+     * ITEM DURABILITY
+     * =========================================================
+     */
+
     @EventHandler(
             priority = EventPriority.HIGHEST,
             ignoreCancelled = true
@@ -1327,17 +1501,17 @@ public final class MjolnirListener implements Listener {
             PlayerItemDamageEvent event
     ) {
 
-        /*
-         * Extra protection against durability damage.
-         */
         if (mjolnirItem.isMjolnir(event.getItem())) {
             event.setCancelled(true);
         }
     }
 
-    /**
-     * Detects when Mjolnir Travel/Riptide starts.
+    /*
+     * =========================================================
+     * TRAVEL FLIGHT DETECTION
+     * =========================================================
      */
+
     @EventHandler(
             priority = EventPriority.MONITOR,
             ignoreCancelled = true
@@ -1352,16 +1526,10 @@ public final class MjolnirListener implements Listener {
         ItemStack item =
                 event.getItem();
 
-        /*
-         * Must be the real Mjolnir.
-         */
         if (!mjolnirItem.isMjolnir(item)) {
             return;
         }
 
-        /*
-         * Riptide flight must begin in Travel Mode.
-         */
         if (mjolnirItem.getMode(item)
                 != MjolnirItem.Mode.TRAVEL) {
             return;
@@ -1370,15 +1538,8 @@ public final class MjolnirListener implements Listener {
         UUID playerId =
                 player.getUniqueId();
 
-        /*
-         * Remember this player as a Mjolnir traveller.
-         */
         travellingPlayers.add(playerId);
 
-        /*
-         * Start as soon as the player actually leaves
-         * the ground.
-         */
         if (!player.isOnGround()) {
 
             airborneTravelPlayers.add(
@@ -1408,15 +1569,12 @@ public final class MjolnirListener implements Listener {
                 );
     }
 
-    /**
-     * RELIABLE LANDING DETECTOR.
-     *
-     * Detects:
-     *
-     *     AIR → GROUND
-     *
-     * Works in Survival and Creative.
+    /*
+     * =========================================================
+     * RELIABLE LANDING DETECTION
+     * =========================================================
      */
+
     @EventHandler(
             priority = EventPriority.MONITOR,
             ignoreCancelled = true
@@ -1425,9 +1583,10 @@ public final class MjolnirListener implements Listener {
             PlayerMoveEvent event
     ) {
 
-        /*
-         * Ignore movement where nothing changed.
-         */
+        if (event.getTo() == null) {
+            return;
+        }
+
         if (event.getFrom().getX()
                 == event.getTo().getX()
                 && event.getFrom().getY()
@@ -1443,16 +1602,10 @@ public final class MjolnirListener implements Listener {
         UUID playerId =
                 player.getUniqueId();
 
-        /*
-         * Only Mjolnir Travel players.
-         */
         if (!travellingPlayers.contains(playerId)) {
             return;
         }
 
-        /*
-         * Player is airborne.
-         */
         if (!player.isOnGround()) {
 
             airborneTravelPlayers.add(
@@ -1462,26 +1615,19 @@ public final class MjolnirListener implements Listener {
             return;
         }
 
-        /*
-         * Player is on ground.
-         *
-         * Was airborne before?
-         */
         if (!airborneTravelPlayers.contains(playerId)) {
             return;
         }
 
-        /*
-         * Actual landing.
-         */
         handleTravelLanding(player);
     }
 
-    /**
-     * Fall damage protection.
-     *
-     * PlayerMoveEvent handles the landing animation.
+    /*
+     * =========================================================
+     * FALL DAMAGE PROTECTION
+     * =========================================================
      */
+
     @EventHandler(
             priority = EventPriority.HIGHEST,
             ignoreCancelled = false
@@ -1494,9 +1640,6 @@ public final class MjolnirListener implements Listener {
             return;
         }
 
-        /*
-         * Only FALL damage.
-         */
         if (event.getCause()
                 != EntityDamageEvent.DamageCause.FALL) {
             return;
@@ -1505,9 +1648,6 @@ public final class MjolnirListener implements Listener {
         UUID playerId =
                 player.getUniqueId();
 
-        /*
-         * Only Mjolnir Travel flights.
-         */
         if (!travellingPlayers.contains(playerId)) {
             return;
         }
@@ -1519,52 +1659,50 @@ public final class MjolnirListener implements Listener {
 
             event.setCancelled(true);
 
-        } else {
+            return;
+        }
 
-            boolean cancelFallDamage =
-                    plugin.getConfig()
-                            .getBoolean(
-                                    "travel.cancel-fall-damage",
-                                    true
-                            );
+        boolean cancelFallDamage =
+                plugin.getConfig()
+                        .getBoolean(
+                                "travel.cancel-fall-damage",
+                                true
+                        );
 
-            if (cancelFallDamage) {
+        if (cancelFallDamage) {
 
-                event.setCancelled(true);
+            event.setCancelled(true);
 
-            } else {
+            return;
+        }
 
-                /*
-                 * Optional maximum damage.
-                 *
-                 * 2.0 = one heart.
-                 */
-                double maximumDamage =
+        /*
+         * 2.0 = one heart.
+         */
+        double maximumDamage =
+                Math.max(
+                        0.0,
                         plugin.getConfig()
                                 .getDouble(
                                         "travel.max-fall-damage",
                                         2.0
-                                );
-
-                maximumDamage =
-                        Math.max(
-                                0.0,
-                                maximumDamage
-                        );
-
-                event.setDamage(
-                        Math.min(
-                                event.getDamage(),
-                                maximumDamage
-                        )
+                                )
                 );
-            }
-        }
+
+        event.setDamage(
+                Math.min(
+                        event.getDamage(),
+                        maximumDamage
+                )
+        );
     }
 
-    /**
-     * Handles actual Travel landing.
+    /*
+     * =========================================================
+     * TRAVEL LANDING
+     * =========================================================
      */
+
     private void handleTravelLanding(
             Player player
     ) {
@@ -1572,22 +1710,9 @@ public final class MjolnirListener implements Listener {
         UUID playerId =
                 player.getUniqueId();
 
-        /*
-         * Remove states FIRST.
-         *
-         * Prevents duplicate landing detection.
-         */
-        travellingPlayers.remove(
-                playerId
-        );
+        travellingPlayers.remove(playerId);
+        airborneTravelPlayers.remove(playerId);
 
-        airborneTravelPlayers.remove(
-                playerId
-        );
-
-        /*
-         * Mjolnir must still be in the main hand.
-         */
         ItemStack held =
                 player.getInventory()
                         .getItemInMainHand();
@@ -1596,30 +1721,18 @@ public final class MjolnirListener implements Listener {
             return;
         }
 
-        /*
-         * Landing animation.
-         */
-        spawnTravelLandingEffect(
-                player
-        );
+        spawnTravelLandingEffect(player);
 
-        /*
-         * Travel Mode thunder attack.
-         */
-        spawnTravelThunderAttack(
-                player
-        );
+        spawnTravelThunderAttack(player);
     }
 
-    /**
-     * Checks Feather Falling.
-     */
     private boolean hasFeatherFalling(
             Player player
     ) {
 
         ItemStack boots =
-                player.getInventory().getBoots();
+                player.getInventory()
+                        .getBoots();
 
         if (boots == null
                 || boots.getType().isAir()) {
@@ -1631,9 +1744,12 @@ public final class MjolnirListener implements Listener {
         );
     }
 
-    /**
-     * Travel Mode landing animation.
+    /*
+     * =========================================================
+     * TRAVEL LANDING EFFECT
+     * =========================================================
      */
+
     private void spawnTravelLandingEffect(
             Player player
     ) {
@@ -1652,9 +1768,6 @@ public final class MjolnirListener implements Listener {
         World world =
                 player.getWorld();
 
-        /*
-         * PARTICLES
-         */
         if (plugin.getConfig()
                 .getBoolean(
                         "effects.particles",
@@ -1665,9 +1778,6 @@ public final class MjolnirListener implements Listener {
                     location.clone()
                             .add(0, 0.15, 0);
 
-            /*
-             * Wind blast.
-             */
             world.spawnParticle(
                     Particle.CLOUD,
                     impact,
@@ -1678,9 +1788,6 @@ public final class MjolnirListener implements Listener {
                     0.12
             );
 
-            /*
-             * Electric energy.
-             */
             world.spawnParticle(
                     Particle.ELECTRIC_SPARK,
                     location.clone()
@@ -1692,9 +1799,6 @@ public final class MjolnirListener implements Listener {
                     0.12
             );
 
-            /*
-             * Vertical energy.
-             */
             world.spawnParticle(
                     Particle.END_ROD,
                     location.clone()
@@ -1706,9 +1810,6 @@ public final class MjolnirListener implements Listener {
                     0.08
             );
 
-            /*
-             * Expanding landing rings.
-             */
             spawnLandingRing(
                     player,
                     1.0,
@@ -1734,9 +1835,6 @@ public final class MjolnirListener implements Listener {
             );
         }
 
-        /*
-         * SOUND
-         */
         if (plugin.getConfig()
                 .getBoolean(
                         "effects.sounds",
@@ -1759,16 +1857,12 @@ public final class MjolnirListener implements Listener {
         }
     }
 
-    /**
-     * Travel Mode thunder attack.
-     *
-     * Radius:
-     *     9 blocks by default.
-     *
-     * Hostile mobs only by default.
-     *
-     * Players are never damaged.
+    /*
+     * =========================================================
+     * TRAVEL LANDING THUNDER ATTACK
+     * =========================================================
      */
+
     private void spawnTravelThunderAttack(
             Player player
     ) {
@@ -1788,34 +1882,25 @@ public final class MjolnirListener implements Listener {
                 player.getWorld();
 
         double radius =
-                plugin.getConfig()
-                        .getDouble(
-                                "travel.landing-thunder.radius",
-                                9.0
-                        );
-
-        radius =
                 Math.max(
                         1.0,
-                        radius
+                        plugin.getConfig()
+                                .getDouble(
+                                        "travel.landing-thunder.radius",
+                                        9.0
+                                )
                 );
 
         double damage =
-                plugin.getConfig()
-                        .getDouble(
-                                "travel.landing-thunder.damage",
-                                1000.0
-                        );
-
-        damage =
                 Math.max(
                         0.0,
-                        damage
+                        plugin.getConfig()
+                                .getDouble(
+                                        "travel.landing-thunder.damage",
+                                        1000.0
+                                )
                 );
 
-        /*
-         * LARGE THUNDER IMPACT
-         */
         if (plugin.getConfig()
                 .getBoolean(
                         "effects.particles",
@@ -1824,8 +1909,7 @@ public final class MjolnirListener implements Listener {
 
             world.spawnParticle(
                     Particle.ELECTRIC_SPARK,
-                    center.clone()
-                            .add(0, 0.7, 0),
+                    center.clone().add(0, 0.7, 0),
                     150,
                     2.0,
                     0.8,
@@ -1835,8 +1919,7 @@ public final class MjolnirListener implements Listener {
 
             world.spawnParticle(
                     Particle.CLOUD,
-                    center.clone()
-                            .add(0, 0.15, 0),
+                    center.clone().add(0, 0.15, 0),
                     100,
                     2.5,
                     0.15,
@@ -1846,8 +1929,7 @@ public final class MjolnirListener implements Listener {
 
             world.spawnParticle(
                     Particle.END_ROD,
-                    center.clone()
-                            .add(0, 1.0, 0),
+                    center.clone().add(0, 1.0, 0),
                     70,
                     1.5,
                     1.5,
@@ -1856,9 +1938,6 @@ public final class MjolnirListener implements Listener {
             );
         }
 
-        /*
-         * THUNDER SOUND
-         */
         if (plugin.getConfig()
                 .getBoolean(
                         "effects.sounds",
@@ -1880,9 +1959,6 @@ public final class MjolnirListener implements Listener {
             );
         }
 
-        /*
-         * FIND NEARBY ENTITIES
-         */
         for (Entity entity :
                 world.getNearbyEntities(
                         center,
@@ -1896,38 +1972,26 @@ public final class MjolnirListener implements Listener {
             }
 
             /*
-             * NEVER damage players.
+             * Never damage players.
              */
             if (living instanceof Player) {
                 continue;
             }
 
-            /*
-             * Only hostile mobs.
-             */
             if (!(living instanceof Monster)) {
                 continue;
             }
 
-            /*
-             * Exact spherical radius.
-             */
             if (living.getLocation()
                     .distanceSquared(center)
                     > radius * radius) {
                 continue;
             }
 
-            /*
-             * Cosmetic lightning.
-             */
             world.strikeLightningEffect(
                     living.getLocation()
             );
 
-            /*
-             * MOB PARTICLES
-             */
             if (plugin.getConfig()
                     .getBoolean(
                             "effects.particles",
@@ -1960,9 +2024,6 @@ public final class MjolnirListener implements Listener {
                 );
             }
 
-            /*
-             * ACTUAL MOB DAMAGE
-             */
             if (damage > 0.0) {
 
                 living.damage(
@@ -1973,16 +2034,16 @@ public final class MjolnirListener implements Listener {
         }
     }
 
-    /**
-     * Fighting Mode activation.
+    /*
+     * =========================================================
+     * MODE ACTIVATION
+     * =========================================================
      */
+
     private void activateFightingMode(
             Player player
     ) {
 
-        /*
-         * Show Fighting Mode actionbar.
-         */
         player.sendActionBar(
                 Component.text(
                         "⚡ Mjolnir: FIGHTING MODE",
@@ -1990,16 +2051,10 @@ public final class MjolnirListener implements Listener {
                 )
         );
 
-        /*
-         * Start/reset Mjolnir thunderstorm.
-         */
         startThunderstorm(
                 player.getWorld()
         );
 
-        /*
-         * Stop here if cosmetic effects are disabled.
-         */
         if (!plugin.getConfig()
                 .getBoolean(
                         "effects.enabled",
@@ -2011,16 +2066,10 @@ public final class MjolnirListener implements Listener {
         Location playerLocation =
                 player.getLocation();
 
-        /*
-         * Cosmetic lightning only.
-         */
         player.getWorld().strikeLightningEffect(
                 playerLocation
         );
 
-        /*
-         * PARTICLES
-         */
         if (plugin.getConfig()
                 .getBoolean(
                         "effects.particles",
@@ -2074,9 +2123,6 @@ public final class MjolnirListener implements Listener {
             );
         }
 
-        /*
-         * SOUNDS
-         */
         if (plugin.getConfig()
                 .getBoolean(
                         "effects.sounds",
@@ -2099,16 +2145,10 @@ public final class MjolnirListener implements Listener {
         }
     }
 
-    /**
-     * Travel Mode activation.
-     */
     private void activateTravelMode(
             Player player
     ) {
 
-        /*
-         * Show Travel Mode actionbar.
-         */
         player.sendActionBar(
                 Component.text(
                         "🌊 Mjolnir: TRAVEL MODE",
@@ -2116,9 +2156,6 @@ public final class MjolnirListener implements Listener {
                 )
         );
 
-        /*
-         * Stop here if cosmetic effects are disabled.
-         */
         if (!plugin.getConfig()
                 .getBoolean(
                         "effects.enabled",
@@ -2130,9 +2167,6 @@ public final class MjolnirListener implements Listener {
         Location playerLocation =
                 player.getLocation();
 
-        /*
-         * PARTICLES
-         */
         if (plugin.getConfig()
                 .getBoolean(
                         "effects.particles",
@@ -2164,9 +2198,6 @@ public final class MjolnirListener implements Listener {
             );
         }
 
-        /*
-         * SOUNDS
-         */
         if (plugin.getConfig()
                 .getBoolean(
                         "effects.sounds",
@@ -2182,9 +2213,12 @@ public final class MjolnirListener implements Listener {
         }
     }
 
-    /**
-     * Creates one horizontal expanding Travel landing ring.
+    /*
+     * =========================================================
+     * TRAVEL LANDING PARTICLE RING
+     * =========================================================
      */
+
     private void spawnLandingRing(
             Player player,
             double radius,
@@ -2270,9 +2304,12 @@ public final class MjolnirListener implements Listener {
                 );
     }
 
-    /**
-     * Starts a Mjolnir-owned thunderstorm.
+    /*
+     * =========================================================
+     * WEATHER SYSTEM
+     * =========================================================
      */
+
     private void startThunderstorm(
             World world
     ) {
@@ -2295,19 +2332,12 @@ public final class MjolnirListener implements Listener {
         BukkitTask oldTask =
                 stormTasks.remove(worldId);
 
-        /*
-         * If Mjolnir already owns an active storm,
-         * cancel the previous cleanup timer.
-         */
         if (oldTask != null) {
 
             oldTask.cancel();
 
         } else {
 
-            /*
-             * Save original weather.
-             */
             previousWeather.put(
                     worldId,
                     new WeatherState(
@@ -2319,18 +2349,12 @@ public final class MjolnirListener implements Listener {
             );
         }
 
-        /*
-         * Minecraft weather durations use int ticks.
-         */
         int safeTicks =
                 (int) Math.min(
                         configuredTicks,
                         Integer.MAX_VALUE
                 );
 
-        /*
-         * Start Mjolnir thunderstorm.
-         */
         world.setStorm(true);
         world.setThundering(true);
 
@@ -2342,9 +2366,6 @@ public final class MjolnirListener implements Listener {
                 safeTicks
         );
 
-        /*
-         * Schedule cleanup.
-         */
         BukkitTask cleanupTask =
                 plugin.getServer()
                         .getScheduler()
@@ -2360,9 +2381,6 @@ public final class MjolnirListener implements Listener {
         );
     }
 
-    /**
-     * Restores previous weather.
-     */
     private void restoreWeather(
             World world
     ) {
@@ -2370,14 +2388,10 @@ public final class MjolnirListener implements Listener {
         UUID worldId =
                 world.getUID();
 
-        stormTasks.remove(
-                worldId
-        );
+        stormTasks.remove(worldId);
 
         WeatherState previous =
-                previousWeather.remove(
-                        worldId
-                );
+                previousWeather.remove(worldId);
 
         if (previous == null) {
             return;
@@ -2400,10 +2414,32 @@ public final class MjolnirListener implements Listener {
         );
     }
 
-    /**
-     * Stores the world's weather state before
-     * Mjolnir starts its temporary thunderstorm.
+    /*
+     * =========================================================
+     * CHAT ANNOUNCEMENT
+     * =========================================================
      */
+
+    private void broadcastAbilityMessage(
+            Player player,
+            String message
+    ) {
+
+        plugin.getServer()
+                .broadcast(
+                        Component.text(
+                                message,
+                                NamedTextColor.AQUA
+                        )
+                );
+    }
+
+    /*
+     * =========================================================
+     * WEATHER STATE
+     * =========================================================
+     */
+
     private static final class WeatherState {
 
         private final boolean storm;
@@ -2419,11 +2455,8 @@ public final class MjolnirListener implements Listener {
                 int thunderDuration
         ) {
 
-            this.storm =
-                    storm;
-
-            this.thundering =
-                    thundering;
+            this.storm = storm;
+            this.thundering = thundering;
 
             this.weatherDuration =
                     weatherDuration;

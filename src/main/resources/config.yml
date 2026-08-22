@@ -56,11 +56,11 @@ resource-pack:
   enabled: true
 
   # Direct HTTPS URL to the Mjolnir-only resource pack ZIP.
-  url: "https://download.mc-packs.net/pack/348d895439dc15dbf679ee2fcea652bc15d65eb2.zip"
+  url: "https://download.mc-packs.net/pack/0b8945adf2fd13979845e4f30484705f555f51e5.zip"
 
   # SHA-1 hash of the ZIP file.
   # Leave empty temporarily if you have not generated it yet.
-  sha1: "348d895439dc15dbf679ee2fcea652bc15d65eb2"
+  sha1: "0b8945adf2fd13979845e4f30484705f555f51e5"
 
   # false = player may decline the pack.
   # true = player must accept it.

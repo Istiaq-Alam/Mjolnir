@@ -3,7 +3,7 @@ plugins {
 }
 
 group = "com.istiak"
-version = "1.0.3"
+version = "1.0.4"
 
 repositories {
     maven {

@@ -3,6 +3,7 @@ package com.istiak.mjolnir;
 import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.format.NamedTextColor;
 import org.bukkit.Location;
+import org.bukkit.NamespacedKey;
 import org.bukkit.Particle;
 import org.bukkit.Sound;
 import org.bukkit.World;
@@ -10,6 +11,8 @@ import org.bukkit.enchantments.Enchantment;
 import org.bukkit.entity.Entity;
 import org.bukkit.entity.LivingEntity;
 import org.bukkit.entity.Monster;
+import org.bukkit.entity.ItemDisplay;
+import org.bukkit.entity.Trident;
 import org.bukkit.entity.Player;
 import org.bukkit.event.Event;
 import org.bukkit.event.EventHandler;
@@ -18,6 +21,8 @@ import org.bukkit.event.Listener;
 import org.bukkit.event.block.Action;
 import org.bukkit.event.entity.EntityDamageByEntityEvent;
 import org.bukkit.event.entity.EntityDamageEvent;
+import org.bukkit.event.entity.ProjectileLaunchEvent;
+import org.bukkit.event.entity.ProjectileHitEvent;
 import org.bukkit.event.player.PlayerAnimationEvent;
 import org.bukkit.event.player.PlayerInteractEvent;
 import org.bukkit.event.player.PlayerItemDamageEvent;
@@ -25,10 +30,14 @@ import org.bukkit.event.player.PlayerMoveEvent;
 import org.bukkit.event.player.PlayerRiptideEvent;
 import org.bukkit.inventory.EquipmentSlot;
 import org.bukkit.inventory.ItemStack;
+import org.bukkit.inventory.meta.ItemMeta;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.scheduler.BukkitTask;
 import org.bukkit.util.RayTraceResult;
+import org.bukkit.util.Transformation;
 import org.bukkit.util.Vector;
+import org.joml.Quaternionf;
+import org.joml.Vector3f;
 
 import java.util.HashMap;
 import java.util.HashSet;
@@ -104,6 +113,8 @@ public final class MjolnirListener implements Listener {
     ) {
         this.plugin = plugin;
         this.mjolnirItem = mjolnirItem;
+
+        startThrownMjolnirVisualTask();
     }
 
     /*
@@ -1485,6 +1496,187 @@ public final class MjolnirListener implements Listener {
                         },
                         delay
                 );
+    }
+
+    /*
+     * =========================================================
+     * THROWN MJOLNIR VISUAL
+     * =========================================================
+     */
+
+    private static final NamespacedKey THROWING_MODEL =
+            new NamespacedKey("mjolnir", "mjolnir_flying");
+
+    private static final NamespacedKey FIGHTING_THROWING_MODEL =
+            new NamespacedKey("mjolnir", "mjolnir_flying_fighting");
+
+    private final Map<UUID, ItemDisplay> thrownMjolnirDisplays =
+            new HashMap<>();
+
+    private BukkitTask thrownMjolnirVisualTask;
+
+    @EventHandler(priority = EventPriority.HIGHEST, ignoreCancelled = true)
+    public void onMjolnirProjectileLaunch(ProjectileLaunchEvent event) {
+        if (!(event.getEntity() instanceof Trident trident)) return;
+
+        ItemStack thrownItem = trident.getItemStack();
+        if (!mjolnirItem.isMjolnir(thrownItem)) return;
+
+        UUID projectileId = trident.getUniqueId();
+        removeThrownMjolnirVisual(projectileId);
+
+        ItemStack visualItem = thrownItem.clone();
+        ItemMeta meta = visualItem.getItemMeta();
+        if (meta != null) {
+            MjolnirItem.Mode mode = mjolnirItem.getMode(thrownItem);
+            meta.setItemModel(mode == MjolnirItem.Mode.FIGHTING
+                    ? FIGHTING_THROWING_MODEL
+                    : THROWING_MODEL);
+            visualItem.setItemMeta(meta);
+        }
+
+        /*
+         * Hide the real Trident before the client receives/updates its
+         * normal entity rendering.  ProjectileLaunchEvent is an
+         * EntitySpawnEvent, so this is the reliable server-side way to
+         * keep the functional Trident while showing only our ItemDisplay.
+         */
+        trident.setVisibleByDefault(false);
+        trident.setInvisible(true);
+
+        ItemDisplay display = trident.getWorld().spawn(
+                trident.getLocation(), ItemDisplay.class);
+        display.setVisibleByDefault(true);
+        display.setItemStack(visualItem);
+        display.setItemDisplayTransform(ItemDisplay.ItemDisplayTransform.NONE);
+        display.setInvulnerable(true);
+        display.setSilent(true);
+        display.setGravity(false);
+        display.setInterpolationDelay(0);
+        display.setInterpolationDuration(0);
+        display.setTeleportDuration(0);
+        display.setViewRange(64.0f);
+
+        thrownMjolnirDisplays.put(projectileId, display);
+
+        updateThrownMjolnirVisual(trident, display);
+    }
+
+    @EventHandler(priority = EventPriority.MONITOR, ignoreCancelled = false)
+    public void onMjolnirProjectileHit(ProjectileHitEvent event) {
+        if (!(event.getEntity() instanceof Trident trident)) return;
+        if (!thrownMjolnirDisplays.containsKey(trident.getUniqueId())) return;
+        if (trident.isDead() || !trident.isValid()) {
+            removeThrownMjolnirVisual(trident.getUniqueId());
+        }
+    }
+
+    private void startThrownMjolnirVisualTask() {
+        if (thrownMjolnirVisualTask != null) thrownMjolnirVisualTask.cancel();
+
+        thrownMjolnirVisualTask = plugin.getServer().getScheduler().runTaskTimer(
+                plugin,
+                () -> {
+                    Set<UUID> ids = new HashSet<>(thrownMjolnirDisplays.keySet());
+                    for (UUID projectileId : ids) {
+                        ItemDisplay display = thrownMjolnirDisplays.get(projectileId);
+                        if (display == null || display.isDead() || !display.isValid()) {
+                            thrownMjolnirDisplays.remove(projectileId);
+                            continue;
+                        }
+
+                        Entity entity = plugin.getServer().getEntity(projectileId);
+                        if (!(entity instanceof Trident trident)
+                                || trident.isDead() || !trident.isValid()) {
+                            removeThrownMjolnirVisual(projectileId);
+                            continue;
+                        }
+
+                        trident.setInvisible(true);
+                        updateThrownMjolnirVisual(trident, display);
+                    }
+                }, 1L, 1L);
+    }
+
+    private void updateThrownMjolnirVisual(Trident trident, ItemDisplay display) {
+        Location location = trident.getLocation();
+        Vector velocity = trident.getVelocity();
+
+        display.teleport(location);
+
+        if (velocity.lengthSquared() <= 0.0001) {
+            return;
+        }
+
+        Vector direction = velocity.clone().normalize();
+
+        /*
+         * IMPORTANT: the actual Mjolnir model is built vertically on its
+         * local Y axis. The handle extends toward local -Y and the hammer
+         * head is toward local +Y.
+         *
+         * Therefore the HAMMER HEAD must be aligned with the projectile
+         * velocity, not local +X. Align local +Y with the real throw
+         * direction so the hammer head leads and the handle trails behind.
+         */
+        // The Mjolnir model is NOT aligned on local +Y. Its handle runs
+        // diagonally through the model from approximately (2,2) toward
+        // (13,13), while the hammer head sits at the +X/+Y end.
+        // Therefore the hammer's true forward/impact axis is the local
+        // diagonal (+X,+Y,0), not +Y.
+        //
+        // Align that handle-to-head axis with the projectile velocity.
+        // This makes the HAMMER HEAD lead the flight and the handle trail
+        // behind it. On Loyalty return the velocity reverses, so the hammer
+        // naturally turns around and the hammer head still leads the return.
+        float invSqrt2 = 0.70710677f;
+        Quaternionf rotation = new Quaternionf().rotationTo(
+                invSqrt2,
+                invSqrt2,
+                0.0f,
+                (float) direction.getX(),
+                (float) direction.getY(),
+                (float) direction.getZ()
+        );
+
+        /*
+         * The real projectile's collision point is at the display origin.
+         * The Mjolnir hammer head sits forward on the local diagonal
+         * (+X,+Y,0) shaft axis, so we need to nudge the display back
+         * along that SAME axis so the head's impact face lines up with
+         * the projectile's actual collision point.
+         *
+         * BUG THAT WAS HERE: Transformation's translation is applied in
+         * the entity's world/parent space, AFTER leftRotation - it does
+         * NOT get rotated by `rotation` automatically. The old code fed
+         * in a fixed vector (-0.70*invSqrt2, -0.70*invSqrt2, 0), which
+         * only happened to look right when the hammer was flying toward
+         * local +X/+Y and was wrong (misaligned head/handle) for every
+         * other throw angle, including the return trip.
+         *
+         * Fix: rotate the local "backward along the shaft" offset by the
+         * same `rotation` quaternion before using it as the translation,
+         * so it always points backward along the CURRENT shaft direction
+         * no matter which way the hammer is flying.
+         */
+        Vector3f offset = new Vector3f(
+                -0.70f * invSqrt2,
+                -0.70f * invSqrt2,
+                0.0f
+        );
+        rotation.transform(offset);
+
+        display.setTransformation(new Transformation(
+                offset,
+                rotation,
+                new Vector3f(1.0f, 1.0f, 1.0f),
+                new Quaternionf()
+        ));
+    }
+
+    private void removeThrownMjolnirVisual(UUID projectileId) {
+        ItemDisplay display = thrownMjolnirDisplays.remove(projectileId);
+        if (display != null && !display.isDead()) display.remove();
     }
 
     /*
