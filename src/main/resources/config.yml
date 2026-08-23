@@ -1,4 +1,4 @@
-storm-duration: 60
+storm-duration: 120
 
 mode-switch-cooldown: 5
 
@@ -13,7 +13,7 @@ travel:
 
   # Only used if cancel-fall-damage is false.
   # 2.0 = 1 heart.
-  max-fall-damage: 1.0
+  max-fall-damage: 0.0
 
   landing-thunder:
     # Thor-style thunder impact when landing from Travel Mode.

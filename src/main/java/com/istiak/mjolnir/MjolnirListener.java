@@ -1837,10 +1837,24 @@ public final class MjolnirListener implements Listener {
             return;
         }
 
-        UUID playerId =
-                player.getUniqueId();
+        /*
+         * Gate purely on "is the Mjolnir in the player's main
+         * hand right now" - NOT on the travellingPlayers flight
+         * tracking set. That set only reflects the plugin's own
+         * notion of "currently mid-flight" and is cleared by
+         * handleTravelLanding() before this event is processed,
+         * so it can never protect the actual landing hit - and
+         * it never covered Fighting Mode at all.
+         *
+         * This applies in every mode. Holding anything else in
+         * the main hand (even if a Mjolnir sits in the offhand
+         * or elsewhere in the inventory) gets normal fall damage.
+         */
+        ItemStack held =
+                player.getInventory()
+                        .getItemInMainHand();
 
-        if (!travellingPlayers.contains(playerId)) {
+        if (!mjolnirItem.isMjolnir(held)) {
             return;
         }
 
