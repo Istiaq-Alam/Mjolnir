@@ -1,0 +1,4306 @@
+{
+  "format_version": "26.1.2",
+  "credit": "Created by Mickey Joe Alpha - http://YouTube.com/@MushirMickeyJoe",
+  "parent": "mjolnir:item/mjolnir",
+  "texture_size": [
+    64,
+    64
+  ],
+  "textures": {
+    "particle": "mjolnir:item/mjolnir_throwing"
+  },
+  "elements": [
+    {
+      "name": "mjolnir_1",
+      "from": [
+        14.26777,
+        13.26777,
+        7.75
+      ],
+      "to": [
+        14.76777,
+        14.26777,
+        8.25
+      ],
+      "rotation": {
+        "angle": 45,
+        "axis": "z",
+        "origin": [
+          8,
+          7.5,
+          8
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            2.75,
+            5.25,
+            2.5,
+            5.75
+          ],
+          "texture": "#particle"
+        },
+        "east": {
+          "uv": [
+            2.5,
+            5.25,
+            2.75,
+            5.75
+          ],
+          "texture": "#particle"
+        },
+        "south": {
+          "uv": [
+            2.5,
+            5.25,
+            2.75,
+            5.75
+          ],
+          "texture": "#particle"
+        },
+        "west": {
+          "uv": [
+            2.5,
+            5.25,
+            2.75,
+            5.75
+          ],
+          "texture": "#particle"
+        },
+        "down": {
+          "uv": [
+            2.5,
+            5.5,
+            2.75,
+            5.75
+          ],
+          "texture": "#particle"
+        }
+      }
+    },
+    {
+      "name": "mjolnir_2",
+      "from": [
+        13.76777,
+        12.76777,
+        7.75
+      ],
+      "to": [
+        14.26777,
+        14.26777,
+        8.25
+      ],
+      "rotation": {
+        "angle": 45,
+        "axis": "z",
+        "origin": [
+          8,
+          7.5,
+          8
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            2.5,
+            5.25,
+            2.25,
+            6
+          ],
+          "texture": "#particle"
+        },
+        "east": {
+          "uv": [
+            2.25,
+            5.25,
+            2.5,
+            6
+          ],
+          "texture": "#particle"
+        },
+        "south": {
+          "uv": [
+            2.25,
+            5.25,
+            2.5,
+            6
+          ],
+          "texture": "#particle"
+        },
+        "west": {
+          "uv": [
+            2.25,
+            5.25,
+            2.5,
+            6
+          ],
+          "texture": "#particle"
+        },
+        "up": {
+          "uv": [
+            2.25,
+            5.25,
+            2.5,
+            5.5
+          ],
+          "texture": "#particle"
+        },
+        "down": {
+          "uv": [
+            2.25,
+            5.75,
+            2.5,
+            6
+          ],
+          "texture": "#particle"
+        }
+      }
+    },
+    {
+      "name": "mjolnir_4",
+      "from": [
+        13.26777,
+        12.26777,
+        7.75
+      ],
+      "to": [
+        13.76777,
+        13.76777,
+        8.25
+      ],
+      "rotation": {
+        "angle": 45,
+        "axis": "z",
+        "origin": [
+          8,
+          7.5,
+          8
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            2.25,
+            5.5,
+            2,
+            6.25
+          ],
+          "texture": "#particle"
+        },
+        "east": {
+          "uv": [
+            2,
+            5.5,
+            2.25,
+            6.25
+          ],
+          "texture": "#particle"
+        },
+        "south": {
+          "uv": [
+            2,
+            5.5,
+            2.25,
+            6.25
+          ],
+          "texture": "#particle"
+        },
+        "west": {
+          "uv": [
+            2,
+            5.5,
+            2.25,
+            6.25
+          ],
+          "texture": "#particle"
+        },
+        "up": {
+          "uv": [
+            2,
+            5.5,
+            2.25,
+            5.75
+          ],
+          "texture": "#particle"
+        },
+        "down": {
+          "uv": [
+            2,
+            6,
+            2.25,
+            6.25
+          ],
+          "texture": "#particle"
+        }
+      }
+    },
+    {
+      "name": "mjolnir_5",
+      "from": [
+        12.76777,
+        11.76777,
+        7.75
+      ],
+      "to": [
+        13.26777,
+        13.26777,
+        8.25
+      ],
+      "rotation": {
+        "angle": 45,
+        "axis": "z",
+        "origin": [
+          8,
+          7.5,
+          8
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            2,
+            5.75,
+            1.75,
+            6.5
+          ],
+          "texture": "#particle"
+        },
+        "east": {
+          "uv": [
+            1.75,
+            5.75,
+            2,
+            6.5
+          ],
+          "texture": "#particle"
+        },
+        "south": {
+          "uv": [
+            1.75,
+            5.75,
+            2,
+            6.5
+          ],
+          "texture": "#particle"
+        },
+        "west": {
+          "uv": [
+            1.75,
+            5.75,
+            2,
+            6.5
+          ],
+          "texture": "#particle"
+        },
+        "up": {
+          "uv": [
+            1.75,
+            5.75,
+            2,
+            6
+          ],
+          "texture": "#particle"
+        },
+        "down": {
+          "uv": [
+            1.75,
+            6.25,
+            2,
+            6.5
+          ],
+          "texture": "#particle"
+        }
+      }
+    },
+    {
+      "name": "mjolnir_6",
+      "from": [
+        12.26777,
+        11.26777,
+        7.75
+      ],
+      "to": [
+        12.76777,
+        12.76777,
+        8.25
+      ],
+      "rotation": {
+        "angle": 45,
+        "axis": "z",
+        "origin": [
+          8,
+          7.5,
+          8
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            1.75,
+            6,
+            1.5,
+            6.75
+          ],
+          "texture": "#particle"
+        },
+        "east": {
+          "uv": [
+            1.5,
+            6,
+            1.75,
+            6.75
+          ],
+          "texture": "#particle"
+        },
+        "south": {
+          "uv": [
+            1.5,
+            6,
+            1.75,
+            6.75
+          ],
+          "texture": "#particle"
+        },
+        "west": {
+          "uv": [
+            1.5,
+            6,
+            1.75,
+            6.75
+          ],
+          "texture": "#particle"
+        },
+        "up": {
+          "uv": [
+            1.5,
+            6,
+            1.75,
+            6.25
+          ],
+          "texture": "#particle"
+        },
+        "down": {
+          "uv": [
+            1.5,
+            6.5,
+            1.75,
+            6.75
+          ],
+          "texture": "#particle"
+        }
+      }
+    },
+    {
+      "name": "mjolnir_7",
+      "from": [
+        11.76777,
+        10.76777,
+        7.75
+      ],
+      "to": [
+        12.26777,
+        12.26777,
+        8.25
+      ],
+      "rotation": {
+        "angle": 45,
+        "axis": "z",
+        "origin": [
+          8,
+          7.5,
+          8
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            1.5,
+            6.25,
+            1.25,
+            7
+          ],
+          "texture": "#particle"
+        },
+        "east": {
+          "uv": [
+            1.25,
+            6.25,
+            1.5,
+            7
+          ],
+          "texture": "#particle"
+        },
+        "south": {
+          "uv": [
+            1.25,
+            6.25,
+            1.5,
+            7
+          ],
+          "texture": "#particle"
+        },
+        "west": {
+          "uv": [
+            1.25,
+            6.25,
+            1.5,
+            7
+          ],
+          "texture": "#particle"
+        },
+        "up": {
+          "uv": [
+            1.25,
+            6.25,
+            1.5,
+            6.5
+          ],
+          "texture": "#particle"
+        },
+        "down": {
+          "uv": [
+            1.25,
+            6.75,
+            1.5,
+            7
+          ],
+          "texture": "#particle"
+        }
+      }
+    },
+    {
+      "name": "mjolnir_9",
+      "from": [
+        11.26777,
+        10.26777,
+        7.75
+      ],
+      "to": [
+        11.76777,
+        11.76777,
+        8.25
+      ],
+      "rotation": {
+        "angle": 45,
+        "axis": "z",
+        "origin": [
+          8,
+          7.5,
+          8
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            1.25,
+            6.5,
+            1,
+            7.25
+          ],
+          "texture": "#particle"
+        },
+        "east": {
+          "uv": [
+            1,
+            6.5,
+            1.25,
+            7.25
+          ],
+          "texture": "#particle"
+        },
+        "south": {
+          "uv": [
+            1,
+            6.5,
+            1.25,
+            7.25
+          ],
+          "texture": "#particle"
+        },
+        "west": {
+          "uv": [
+            1,
+            6.5,
+            1.25,
+            7.25
+          ],
+          "texture": "#particle"
+        },
+        "up": {
+          "uv": [
+            1,
+            6.5,
+            1.25,
+            6.75
+          ],
+          "texture": "#particle"
+        },
+        "down": {
+          "uv": [
+            1,
+            7,
+            1.25,
+            7.25
+          ],
+          "texture": "#particle"
+        }
+      }
+    },
+    {
+      "name": "mjolnir_10",
+      "from": [
+        10.76777,
+        9.76777,
+        7.75
+      ],
+      "to": [
+        11.26777,
+        11.26777,
+        8.25
+      ],
+      "rotation": {
+        "angle": 45,
+        "axis": "z",
+        "origin": [
+          8,
+          7.5,
+          8
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            1,
+            6.75,
+            0.75,
+            7.5
+          ],
+          "texture": "#particle"
+        },
+        "east": {
+          "uv": [
+            0.75,
+            6.75,
+            1,
+            7.5
+          ],
+          "texture": "#particle"
+        },
+        "south": {
+          "uv": [
+            0.75,
+            6.75,
+            1,
+            7.5
+          ],
+          "texture": "#particle"
+        },
+        "west": {
+          "uv": [
+            0.75,
+            6.75,
+            1,
+            7.5
+          ],
+          "texture": "#particle"
+        },
+        "up": {
+          "uv": [
+            0.75,
+            6.75,
+            1,
+            7
+          ],
+          "texture": "#particle"
+        },
+        "down": {
+          "uv": [
+            0.75,
+            7.25,
+            1,
+            7.5
+          ],
+          "texture": "#particle"
+        }
+      }
+    },
+    {
+      "name": "mjolnir_11",
+      "from": [
+        10.26777,
+        9.26777,
+        7.75
+      ],
+      "to": [
+        10.76777,
+        10.76777,
+        8.25
+      ],
+      "rotation": {
+        "angle": 45,
+        "axis": "z",
+        "origin": [
+          8,
+          7.5,
+          8
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            0.75,
+            7,
+            0.5,
+            7.75
+          ],
+          "texture": "#particle"
+        },
+        "east": {
+          "uv": [
+            0.5,
+            7,
+            0.75,
+            7.75
+          ],
+          "texture": "#particle"
+        },
+        "south": {
+          "uv": [
+            0.5,
+            7,
+            0.75,
+            7.75
+          ],
+          "texture": "#particle"
+        },
+        "west": {
+          "uv": [
+            0.5,
+            7,
+            0.75,
+            7.75
+          ],
+          "texture": "#particle"
+        },
+        "up": {
+          "uv": [
+            0.5,
+            7,
+            0.75,
+            7.25
+          ],
+          "texture": "#particle"
+        },
+        "down": {
+          "uv": [
+            0.5,
+            7.5,
+            0.75,
+            7.75
+          ],
+          "texture": "#particle"
+        }
+      }
+    },
+    {
+      "name": "mjolnir_13",
+      "from": [
+        9.76777,
+        8.76777,
+        7.75
+      ],
+      "to": [
+        10.26777,
+        10.26777,
+        8.25
+      ],
+      "rotation": {
+        "angle": 45,
+        "axis": "z",
+        "origin": [
+          8,
+          7.5,
+          8
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            0.5,
+            7.25,
+            0.25,
+            8
+          ],
+          "texture": "#particle"
+        },
+        "east": {
+          "uv": [
+            0.25,
+            7.25,
+            0.5,
+            8
+          ],
+          "texture": "#particle"
+        },
+        "south": {
+          "uv": [
+            0.25,
+            7.25,
+            0.5,
+            8
+          ],
+          "texture": "#particle"
+        },
+        "west": {
+          "uv": [
+            0.25,
+            7.25,
+            0.5,
+            8
+          ],
+          "texture": "#particle"
+        },
+        "up": {
+          "uv": [
+            0.25,
+            7.25,
+            0.5,
+            7.5
+          ],
+          "texture": "#particle"
+        },
+        "down": {
+          "uv": [
+            0.25,
+            7.75,
+            0.5,
+            8
+          ],
+          "texture": "#particle"
+        }
+      }
+    },
+    {
+      "name": "mjolnir_14",
+      "from": [
+        9.26777,
+        8.76777,
+        7.75
+      ],
+      "to": [
+        9.76777,
+        9.76777,
+        8.25
+      ],
+      "rotation": {
+        "angle": 45,
+        "axis": "z",
+        "origin": [
+          8,
+          7.5,
+          8
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            0.25,
+            7.5,
+            0,
+            8
+          ],
+          "texture": "#particle"
+        },
+        "south": {
+          "uv": [
+            0,
+            7.5,
+            0.25,
+            8
+          ],
+          "texture": "#particle"
+        },
+        "west": {
+          "uv": [
+            0,
+            7.5,
+            0.25,
+            8
+          ],
+          "texture": "#particle"
+        },
+        "up": {
+          "uv": [
+            0,
+            7.5,
+            0.25,
+            7.75
+          ],
+          "texture": "#particle"
+        },
+        "down": {
+          "uv": [
+            0,
+            7.75,
+            0.25,
+            8
+          ],
+          "texture": "#particle"
+        }
+      }
+    },
+    {
+      "name": "mjolnir_14",
+      "from": [
+        8,
+        7.5,
+        7.25
+      ],
+      "to": [
+        8,
+        10,
+        8.75
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "z",
+        "origin": [
+          8,
+          7.5,
+          8
+        ]
+      },
+      "faces": {
+        "east": {
+          "uv": [
+            8,
+            1.5,
+            6.75,
+            2.25
+          ],
+          "rotation": 270,
+          "texture": "#particle"
+        },
+        "west": {
+          "uv": [
+            8,
+            2.25,
+            6.75,
+            1.5
+          ],
+          "rotation": 270,
+          "texture": "#particle"
+        }
+      }
+    },
+    {
+      "from": [
+        4.75,
+        16.61396,
+        6
+      ],
+      "to": [
+        11.25,
+        20.61396,
+        10
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "z",
+        "origin": [
+          8,
+          7.5,
+          8
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            2,
+            3.25,
+            4
+          ],
+          "texture": "#particle"
+        },
+        "east": {
+          "uv": [
+            3.25,
+            2,
+            5.25,
+            4
+          ],
+          "texture": "#particle"
+        },
+        "south": {
+          "uv": [
+            3.25,
+            2,
+            0,
+            4
+          ],
+          "texture": "#particle"
+        },
+        "west": {
+          "uv": [
+            3.25,
+            2,
+            5.25,
+            4
+          ],
+          "texture": "#particle"
+        },
+        "up": {
+          "uv": [
+            3.25,
+            2,
+            0,
+            0
+          ],
+          "texture": "#particle"
+        },
+        "down": {
+          "uv": [
+            6.5,
+            0,
+            3.25,
+            2
+          ],
+          "texture": "#particle"
+        }
+      }
+    },
+    {
+      "from": [
+        6.75,
+        20.86396,
+        6.75
+      ],
+      "to": [
+        9.25,
+        20.86396,
+        9.25
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "z",
+        "origin": [
+          8,
+          7.5,
+          8
+        ]
+      },
+      "faces": {
+        "up": {
+          "uv": [
+            8,
+            1.25,
+            6.75,
+            0
+          ],
+          "texture": "#particle"
+        },
+        "down": {
+          "uv": [
+            8,
+            0,
+            6.75,
+            1.25
+          ],
+          "texture": "#particle"
+        }
+      }
+    },
+    {
+      "from": [
+        -4.86396,
+        6.75,
+        6.75
+      ],
+      "to": [
+        -4.86396,
+        9.25,
+        9.25
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "z",
+        "origin": [
+          8.5,
+          8,
+          8
+        ]
+      },
+      "faces": {
+        "east": {
+          "uv": [
+            16,
+            0,
+            14.75,
+            1.25
+          ],
+          "rotation": 270,
+          "texture": "#particle"
+        },
+        "west": {
+          "uv": [
+            16,
+            1.25,
+            14.75,
+            0
+          ],
+          "rotation": 270,
+          "texture": "#particle"
+        }
+      }
+    },
+    {
+      "name": "mjolnir_1",
+      "from": [
+        1.73223,
+        14.26777,
+        7.75
+      ],
+      "to": [
+        2.73223,
+        14.76777,
+        8.25
+      ],
+      "rotation": {
+        "angle": 45,
+        "axis": "z",
+        "origin": [
+          8.5,
+          8,
+          8
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            10.75,
+            5.25,
+            10.5,
+            5.75
+          ],
+          "rotation": 90,
+          "texture": "#particle"
+        },
+        "east": {
+          "uv": [
+            10.5,
+            5.5,
+            10.75,
+            5.75
+          ],
+          "rotation": 270,
+          "texture": "#particle"
+        },
+        "south": {
+          "uv": [
+            10.5,
+            5.25,
+            10.75,
+            5.75
+          ],
+          "rotation": 270,
+          "texture": "#particle"
+        },
+        "up": {
+          "uv": [
+            10.5,
+            5.25,
+            10.75,
+            5.75
+          ],
+          "rotation": 270,
+          "texture": "#particle"
+        },
+        "down": {
+          "uv": [
+            10.5,
+            5.25,
+            10.75,
+            5.75
+          ],
+          "rotation": 270,
+          "texture": "#particle"
+        }
+      }
+    },
+    {
+      "name": "mjolnir_2",
+      "from": [
+        1.73223,
+        13.76777,
+        7.75
+      ],
+      "to": [
+        3.23223,
+        14.26777,
+        8.25
+      ],
+      "rotation": {
+        "angle": 45,
+        "axis": "z",
+        "origin": [
+          8.5,
+          8,
+          8
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            10.5,
+            5.25,
+            10.25,
+            6
+          ],
+          "rotation": 90,
+          "texture": "#particle"
+        },
+        "east": {
+          "uv": [
+            10.25,
+            5.75,
+            10.5,
+            6
+          ],
+          "rotation": 270,
+          "texture": "#particle"
+        },
+        "south": {
+          "uv": [
+            10.25,
+            5.25,
+            10.5,
+            6
+          ],
+          "rotation": 270,
+          "texture": "#particle"
+        },
+        "west": {
+          "uv": [
+            10.25,
+            5.25,
+            10.5,
+            5.5
+          ],
+          "rotation": 270,
+          "texture": "#particle"
+        },
+        "up": {
+          "uv": [
+            10.25,
+            5.25,
+            10.5,
+            6
+          ],
+          "rotation": 270,
+          "texture": "#particle"
+        },
+        "down": {
+          "uv": [
+            10.25,
+            5.25,
+            10.5,
+            6
+          ],
+          "rotation": 270,
+          "texture": "#particle"
+        }
+      }
+    },
+    {
+      "name": "mjolnir_4",
+      "from": [
+        2.23223,
+        13.26777,
+        7.75
+      ],
+      "to": [
+        3.73223,
+        13.76777,
+        8.25
+      ],
+      "rotation": {
+        "angle": 45,
+        "axis": "z",
+        "origin": [
+          8.5,
+          8,
+          8
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            10.25,
+            5.5,
+            10,
+            6.25
+          ],
+          "rotation": 90,
+          "texture": "#particle"
+        },
+        "east": {
+          "uv": [
+            10,
+            6,
+            10.25,
+            6.25
+          ],
+          "rotation": 270,
+          "texture": "#particle"
+        },
+        "south": {
+          "uv": [
+            10,
+            5.5,
+            10.25,
+            6.25
+          ],
+          "rotation": 270,
+          "texture": "#particle"
+        },
+        "west": {
+          "uv": [
+            10,
+            5.5,
+            10.25,
+            5.75
+          ],
+          "rotation": 270,
+          "texture": "#particle"
+        },
+        "up": {
+          "uv": [
+            10,
+            5.5,
+            10.25,
+            6.25
+          ],
+          "rotation": 270,
+          "texture": "#particle"
+        },
+        "down": {
+          "uv": [
+            10,
+            5.5,
+            10.25,
+            6.25
+          ],
+          "rotation": 270,
+          "texture": "#particle"
+        }
+      }
+    },
+    {
+      "name": "mjolnir_5",
+      "from": [
+        2.73223,
+        12.76777,
+        7.75
+      ],
+      "to": [
+        4.23223,
+        13.26777,
+        8.25
+      ],
+      "rotation": {
+        "angle": 45,
+        "axis": "z",
+        "origin": [
+          8.5,
+          8,
+          8
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            10,
+            5.75,
+            9.75,
+            6.5
+          ],
+          "rotation": 90,
+          "texture": "#particle"
+        },
+        "east": {
+          "uv": [
+            9.75,
+            6.25,
+            10,
+            6.5
+          ],
+          "rotation": 270,
+          "texture": "#particle"
+        },
+        "south": {
+          "uv": [
+            9.75,
+            5.75,
+            10,
+            6.5
+          ],
+          "rotation": 270,
+          "texture": "#particle"
+        },
+        "west": {
+          "uv": [
+            9.75,
+            5.75,
+            10,
+            6
+          ],
+          "rotation": 270,
+          "texture": "#particle"
+        },
+        "up": {
+          "uv": [
+            9.75,
+            5.75,
+            10,
+            6.5
+          ],
+          "rotation": 270,
+          "texture": "#particle"
+        },
+        "down": {
+          "uv": [
+            9.75,
+            5.75,
+            10,
+            6.5
+          ],
+          "rotation": 270,
+          "texture": "#particle"
+        }
+      }
+    },
+    {
+      "name": "mjolnir_6",
+      "from": [
+        3.23223,
+        12.26777,
+        7.75
+      ],
+      "to": [
+        4.73223,
+        12.76777,
+        8.25
+      ],
+      "rotation": {
+        "angle": 45,
+        "axis": "z",
+        "origin": [
+          8.5,
+          8,
+          8
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            9.75,
+            6,
+            9.5,
+            6.75
+          ],
+          "rotation": 90,
+          "texture": "#particle"
+        },
+        "east": {
+          "uv": [
+            9.5,
+            6.5,
+            9.75,
+            6.75
+          ],
+          "rotation": 270,
+          "texture": "#particle"
+        },
+        "south": {
+          "uv": [
+            9.5,
+            6,
+            9.75,
+            6.75
+          ],
+          "rotation": 270,
+          "texture": "#particle"
+        },
+        "west": {
+          "uv": [
+            9.5,
+            6,
+            9.75,
+            6.25
+          ],
+          "rotation": 270,
+          "texture": "#particle"
+        },
+        "up": {
+          "uv": [
+            9.5,
+            6,
+            9.75,
+            6.75
+          ],
+          "rotation": 270,
+          "texture": "#particle"
+        },
+        "down": {
+          "uv": [
+            9.5,
+            6,
+            9.75,
+            6.75
+          ],
+          "rotation": 270,
+          "texture": "#particle"
+        }
+      }
+    },
+    {
+      "name": "mjolnir_7",
+      "from": [
+        3.73223,
+        11.76777,
+        7.75
+      ],
+      "to": [
+        5.23223,
+        12.26777,
+        8.25
+      ],
+      "rotation": {
+        "angle": 45,
+        "axis": "z",
+        "origin": [
+          8.5,
+          8,
+          8
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            9.5,
+            6.25,
+            9.25,
+            7
+          ],
+          "rotation": 90,
+          "texture": "#particle"
+        },
+        "east": {
+          "uv": [
+            9.25,
+            6.75,
+            9.5,
+            7
+          ],
+          "rotation": 270,
+          "texture": "#particle"
+        },
+        "south": {
+          "uv": [
+            9.25,
+            6.25,
+            9.5,
+            7
+          ],
+          "rotation": 270,
+          "texture": "#particle"
+        },
+        "west": {
+          "uv": [
+            9.25,
+            6.25,
+            9.5,
+            6.5
+          ],
+          "rotation": 270,
+          "texture": "#particle"
+        },
+        "up": {
+          "uv": [
+            9.25,
+            6.25,
+            9.5,
+            7
+          ],
+          "rotation": 270,
+          "texture": "#particle"
+        },
+        "down": {
+          "uv": [
+            9.25,
+            6.25,
+            9.5,
+            7
+          ],
+          "rotation": 270,
+          "texture": "#particle"
+        }
+      }
+    },
+    {
+      "name": "mjolnir_9",
+      "from": [
+        4.23223,
+        11.26777,
+        7.75
+      ],
+      "to": [
+        5.73223,
+        11.76777,
+        8.25
+      ],
+      "rotation": {
+        "angle": 45,
+        "axis": "z",
+        "origin": [
+          8.5,
+          8,
+          8
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            9.25,
+            6.5,
+            9,
+            7.25
+          ],
+          "rotation": 90,
+          "texture": "#particle"
+        },
+        "east": {
+          "uv": [
+            9,
+            7,
+            9.25,
+            7.25
+          ],
+          "rotation": 270,
+          "texture": "#particle"
+        },
+        "south": {
+          "uv": [
+            9,
+            6.5,
+            9.25,
+            7.25
+          ],
+          "rotation": 270,
+          "texture": "#particle"
+        },
+        "west": {
+          "uv": [
+            9,
+            6.5,
+            9.25,
+            6.75
+          ],
+          "rotation": 270,
+          "texture": "#particle"
+        },
+        "up": {
+          "uv": [
+            9,
+            6.5,
+            9.25,
+            7.25
+          ],
+          "rotation": 270,
+          "texture": "#particle"
+        },
+        "down": {
+          "uv": [
+            9,
+            6.5,
+            9.25,
+            7.25
+          ],
+          "rotation": 270,
+          "texture": "#particle"
+        }
+      }
+    },
+    {
+      "name": "mjolnir_10",
+      "from": [
+        4.73223,
+        10.76777,
+        7.75
+      ],
+      "to": [
+        6.23223,
+        11.26777,
+        8.25
+      ],
+      "rotation": {
+        "angle": 45,
+        "axis": "z",
+        "origin": [
+          8.5,
+          8,
+          8
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            9,
+            6.75,
+            8.75,
+            7.5
+          ],
+          "rotation": 90,
+          "texture": "#particle"
+        },
+        "east": {
+          "uv": [
+            8.75,
+            7.25,
+            9,
+            7.5
+          ],
+          "rotation": 270,
+          "texture": "#particle"
+        },
+        "south": {
+          "uv": [
+            8.75,
+            6.75,
+            9,
+            7.5
+          ],
+          "rotation": 270,
+          "texture": "#particle"
+        },
+        "west": {
+          "uv": [
+            8.75,
+            6.75,
+            9,
+            7
+          ],
+          "rotation": 270,
+          "texture": "#particle"
+        },
+        "up": {
+          "uv": [
+            8.75,
+            6.75,
+            9,
+            7.5
+          ],
+          "rotation": 270,
+          "texture": "#particle"
+        },
+        "down": {
+          "uv": [
+            8.75,
+            6.75,
+            9,
+            7.5
+          ],
+          "rotation": 270,
+          "texture": "#particle"
+        }
+      }
+    },
+    {
+      "name": "mjolnir_11",
+      "from": [
+        5.23223,
+        10.26777,
+        7.75
+      ],
+      "to": [
+        6.73223,
+        10.76777,
+        8.25
+      ],
+      "rotation": {
+        "angle": 45,
+        "axis": "z",
+        "origin": [
+          8.5,
+          8,
+          8
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            8.75,
+            7,
+            8.5,
+            7.75
+          ],
+          "rotation": 90,
+          "texture": "#particle"
+        },
+        "east": {
+          "uv": [
+            8.5,
+            7.5,
+            8.75,
+            7.75
+          ],
+          "rotation": 270,
+          "texture": "#particle"
+        },
+        "south": {
+          "uv": [
+            8.5,
+            7,
+            8.75,
+            7.75
+          ],
+          "rotation": 270,
+          "texture": "#particle"
+        },
+        "west": {
+          "uv": [
+            8.5,
+            7,
+            8.75,
+            7.25
+          ],
+          "rotation": 270,
+          "texture": "#particle"
+        },
+        "up": {
+          "uv": [
+            8.5,
+            7,
+            8.75,
+            7.75
+          ],
+          "rotation": 270,
+          "texture": "#particle"
+        },
+        "down": {
+          "uv": [
+            8.5,
+            7,
+            8.75,
+            7.75
+          ],
+          "rotation": 270,
+          "texture": "#particle"
+        }
+      }
+    },
+    {
+      "name": "mjolnir_13",
+      "from": [
+        5.73223,
+        9.76777,
+        7.75
+      ],
+      "to": [
+        7.23223,
+        10.26777,
+        8.25
+      ],
+      "rotation": {
+        "angle": 45,
+        "axis": "z",
+        "origin": [
+          8.5,
+          8,
+          8
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            8.5,
+            7.25,
+            8.25,
+            8
+          ],
+          "rotation": 90,
+          "texture": "#particle"
+        },
+        "east": {
+          "uv": [
+            8.25,
+            7.75,
+            8.5,
+            8
+          ],
+          "rotation": 270,
+          "texture": "#particle"
+        },
+        "south": {
+          "uv": [
+            8.25,
+            7.25,
+            8.5,
+            8
+          ],
+          "rotation": 270,
+          "texture": "#particle"
+        },
+        "west": {
+          "uv": [
+            8.25,
+            7.25,
+            8.5,
+            7.5
+          ],
+          "rotation": 270,
+          "texture": "#particle"
+        },
+        "up": {
+          "uv": [
+            8.25,
+            7.25,
+            8.5,
+            8
+          ],
+          "rotation": 270,
+          "texture": "#particle"
+        },
+        "down": {
+          "uv": [
+            8.25,
+            7.25,
+            8.5,
+            8
+          ],
+          "rotation": 270,
+          "texture": "#particle"
+        }
+      }
+    },
+    {
+      "name": "mjolnir_14",
+      "from": [
+        6.23223,
+        9.26777,
+        7.75
+      ],
+      "to": [
+        7.23223,
+        9.76777,
+        8.25
+      ],
+      "rotation": {
+        "angle": 45,
+        "axis": "z",
+        "origin": [
+          8.5,
+          8,
+          8
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            8.25,
+            7.5,
+            8,
+            8
+          ],
+          "rotation": 90,
+          "texture": "#particle"
+        },
+        "east": {
+          "uv": [
+            8,
+            7.75,
+            8.25,
+            8
+          ],
+          "rotation": 270,
+          "texture": "#particle"
+        },
+        "south": {
+          "uv": [
+            8,
+            7.5,
+            8.25,
+            8
+          ],
+          "rotation": 270,
+          "texture": "#particle"
+        },
+        "west": {
+          "uv": [
+            8,
+            7.5,
+            8.25,
+            7.75
+          ],
+          "rotation": 270,
+          "texture": "#particle"
+        },
+        "down": {
+          "uv": [
+            8,
+            7.5,
+            8.25,
+            8
+          ],
+          "rotation": 270,
+          "texture": "#particle"
+        }
+      }
+    },
+    {
+      "name": "mjolnir_14",
+      "from": [
+        6,
+        8,
+        7.25
+      ],
+      "to": [
+        8.5,
+        8,
+        8.75
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "z",
+        "origin": [
+          8.5,
+          8,
+          8
+        ]
+      },
+      "faces": {
+        "up": {
+          "uv": [
+            16,
+            1.5,
+            14.75,
+            2.25
+          ],
+          "rotation": 180,
+          "texture": "#particle"
+        },
+        "down": {
+          "uv": [
+            16,
+            2.25,
+            14.75,
+            1.5
+          ],
+          "rotation": 180,
+          "texture": "#particle"
+        }
+      }
+    },
+    {
+      "from": [
+        -4.61396,
+        4.75,
+        6
+      ],
+      "to": [
+        -0.61396,
+        11.25,
+        10
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "z",
+        "origin": [
+          8.5,
+          8,
+          8
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            8,
+            2,
+            11.25,
+            4
+          ],
+          "rotation": 90,
+          "texture": "#particle"
+        },
+        "east": {
+          "uv": [
+            14.5,
+            0,
+            11.25,
+            2
+          ],
+          "rotation": 270,
+          "texture": "#particle"
+        },
+        "south": {
+          "uv": [
+            11.25,
+            2,
+            8,
+            4
+          ],
+          "rotation": 270,
+          "texture": "#particle"
+        },
+        "west": {
+          "uv": [
+            11.25,
+            2,
+            8,
+            0
+          ],
+          "rotation": 270,
+          "texture": "#particle"
+        },
+        "up": {
+          "uv": [
+            11.25,
+            2,
+            13.25,
+            4
+          ],
+          "rotation": 270,
+          "texture": "#particle"
+        },
+        "down": {
+          "uv": [
+            11.25,
+            2,
+            13.25,
+            4
+          ],
+          "rotation": 270,
+          "texture": "#particle"
+        }
+      }
+    },
+    {
+      "from": [
+        6.75,
+        -4.86396,
+        6.75
+      ],
+      "to": [
+        9.25,
+        -4.86396,
+        9.25
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "z",
+        "origin": [
+          8,
+          8.5,
+          8
+        ]
+      },
+      "faces": {
+        "up": {
+          "uv": [
+            8,
+            8,
+            6.75,
+            9.25
+          ],
+          "rotation": 180,
+          "texture": "#particle"
+        },
+        "down": {
+          "uv": [
+            8,
+            9.25,
+            6.75,
+            8
+          ],
+          "rotation": 180,
+          "texture": "#particle"
+        }
+      }
+    },
+    {
+      "name": "mjolnir_1",
+      "from": [
+        1.23223,
+        1.73223,
+        7.75
+      ],
+      "to": [
+        1.73223,
+        2.73223,
+        8.25
+      ],
+      "rotation": {
+        "angle": 45,
+        "axis": "z",
+        "origin": [
+          8,
+          8.5,
+          8
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            2.75,
+            13.25,
+            2.5,
+            13.75
+          ],
+          "rotation": 180,
+          "texture": "#particle"
+        },
+        "east": {
+          "uv": [
+            2.5,
+            13.25,
+            2.75,
+            13.75
+          ],
+          "rotation": 180,
+          "texture": "#particle"
+        },
+        "south": {
+          "uv": [
+            2.5,
+            13.25,
+            2.75,
+            13.75
+          ],
+          "rotation": 180,
+          "texture": "#particle"
+        },
+        "west": {
+          "uv": [
+            2.5,
+            13.25,
+            2.75,
+            13.75
+          ],
+          "rotation": 180,
+          "texture": "#particle"
+        },
+        "up": {
+          "uv": [
+            2.5,
+            13.5,
+            2.75,
+            13.75
+          ],
+          "rotation": 180,
+          "texture": "#particle"
+        }
+      }
+    },
+    {
+      "name": "mjolnir_2",
+      "from": [
+        1.73223,
+        1.73223,
+        7.75
+      ],
+      "to": [
+        2.23223,
+        3.23223,
+        8.25
+      ],
+      "rotation": {
+        "angle": 45,
+        "axis": "z",
+        "origin": [
+          8,
+          8.5,
+          8
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            2.5,
+            13.25,
+            2.25,
+            14
+          ],
+          "rotation": 180,
+          "texture": "#particle"
+        },
+        "east": {
+          "uv": [
+            2.25,
+            13.25,
+            2.5,
+            14
+          ],
+          "rotation": 180,
+          "texture": "#particle"
+        },
+        "south": {
+          "uv": [
+            2.25,
+            13.25,
+            2.5,
+            14
+          ],
+          "rotation": 180,
+          "texture": "#particle"
+        },
+        "west": {
+          "uv": [
+            2.25,
+            13.25,
+            2.5,
+            14
+          ],
+          "rotation": 180,
+          "texture": "#particle"
+        },
+        "up": {
+          "uv": [
+            2.25,
+            13.75,
+            2.5,
+            14
+          ],
+          "rotation": 180,
+          "texture": "#particle"
+        },
+        "down": {
+          "uv": [
+            2.25,
+            13.25,
+            2.5,
+            13.5
+          ],
+          "rotation": 180,
+          "texture": "#particle"
+        }
+      }
+    },
+    {
+      "name": "mjolnir_4",
+      "from": [
+        2.23223,
+        2.23223,
+        7.75
+      ],
+      "to": [
+        2.73223,
+        3.73223,
+        8.25
+      ],
+      "rotation": {
+        "angle": 45,
+        "axis": "z",
+        "origin": [
+          8,
+          8.5,
+          8
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            2.25,
+            13.5,
+            2,
+            14.25
+          ],
+          "rotation": 180,
+          "texture": "#particle"
+        },
+        "east": {
+          "uv": [
+            2,
+            13.5,
+            2.25,
+            14.25
+          ],
+          "rotation": 180,
+          "texture": "#particle"
+        },
+        "south": {
+          "uv": [
+            2,
+            13.5,
+            2.25,
+            14.25
+          ],
+          "rotation": 180,
+          "texture": "#particle"
+        },
+        "west": {
+          "uv": [
+            2,
+            13.5,
+            2.25,
+            14.25
+          ],
+          "rotation": 180,
+          "texture": "#particle"
+        },
+        "up": {
+          "uv": [
+            2,
+            14,
+            2.25,
+            14.25
+          ],
+          "rotation": 180,
+          "texture": "#particle"
+        },
+        "down": {
+          "uv": [
+            2,
+            13.5,
+            2.25,
+            13.75
+          ],
+          "rotation": 180,
+          "texture": "#particle"
+        }
+      }
+    },
+    {
+      "name": "mjolnir_5",
+      "from": [
+        2.73223,
+        2.73223,
+        7.75
+      ],
+      "to": [
+        3.23223,
+        4.23223,
+        8.25
+      ],
+      "rotation": {
+        "angle": 45,
+        "axis": "z",
+        "origin": [
+          8,
+          8.5,
+          8
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            2,
+            13.75,
+            1.75,
+            14.5
+          ],
+          "rotation": 180,
+          "texture": "#particle"
+        },
+        "east": {
+          "uv": [
+            1.75,
+            13.75,
+            2,
+            14.5
+          ],
+          "rotation": 180,
+          "texture": "#particle"
+        },
+        "south": {
+          "uv": [
+            1.75,
+            13.75,
+            2,
+            14.5
+          ],
+          "rotation": 180,
+          "texture": "#particle"
+        },
+        "west": {
+          "uv": [
+            1.75,
+            13.75,
+            2,
+            14.5
+          ],
+          "rotation": 180,
+          "texture": "#particle"
+        },
+        "up": {
+          "uv": [
+            1.75,
+            14.25,
+            2,
+            14.5
+          ],
+          "rotation": 180,
+          "texture": "#particle"
+        },
+        "down": {
+          "uv": [
+            1.75,
+            13.75,
+            2,
+            14
+          ],
+          "rotation": 180,
+          "texture": "#particle"
+        }
+      }
+    },
+    {
+      "name": "mjolnir_6",
+      "from": [
+        3.23223,
+        3.23223,
+        7.75
+      ],
+      "to": [
+        3.73223,
+        4.73223,
+        8.25
+      ],
+      "rotation": {
+        "angle": 45,
+        "axis": "z",
+        "origin": [
+          8,
+          8.5,
+          8
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            1.75,
+            14,
+            1.5,
+            14.75
+          ],
+          "rotation": 180,
+          "texture": "#particle"
+        },
+        "east": {
+          "uv": [
+            1.5,
+            14,
+            1.75,
+            14.75
+          ],
+          "rotation": 180,
+          "texture": "#particle"
+        },
+        "south": {
+          "uv": [
+            1.5,
+            14,
+            1.75,
+            14.75
+          ],
+          "rotation": 180,
+          "texture": "#particle"
+        },
+        "west": {
+          "uv": [
+            1.5,
+            14,
+            1.75,
+            14.75
+          ],
+          "rotation": 180,
+          "texture": "#particle"
+        },
+        "up": {
+          "uv": [
+            1.5,
+            14.5,
+            1.75,
+            14.75
+          ],
+          "rotation": 180,
+          "texture": "#particle"
+        },
+        "down": {
+          "uv": [
+            1.5,
+            14,
+            1.75,
+            14.25
+          ],
+          "rotation": 180,
+          "texture": "#particle"
+        }
+      }
+    },
+    {
+      "name": "mjolnir_7",
+      "from": [
+        3.73223,
+        3.73223,
+        7.75
+      ],
+      "to": [
+        4.23223,
+        5.23223,
+        8.25
+      ],
+      "rotation": {
+        "angle": 45,
+        "axis": "z",
+        "origin": [
+          8,
+          8.5,
+          8
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            1.5,
+            14.25,
+            1.25,
+            15
+          ],
+          "rotation": 180,
+          "texture": "#particle"
+        },
+        "east": {
+          "uv": [
+            1.25,
+            14.25,
+            1.5,
+            15
+          ],
+          "rotation": 180,
+          "texture": "#particle"
+        },
+        "south": {
+          "uv": [
+            1.25,
+            14.25,
+            1.5,
+            15
+          ],
+          "rotation": 180,
+          "texture": "#particle"
+        },
+        "west": {
+          "uv": [
+            1.25,
+            14.25,
+            1.5,
+            15
+          ],
+          "rotation": 180,
+          "texture": "#particle"
+        },
+        "up": {
+          "uv": [
+            1.25,
+            14.75,
+            1.5,
+            15
+          ],
+          "rotation": 180,
+          "texture": "#particle"
+        },
+        "down": {
+          "uv": [
+            1.25,
+            14.25,
+            1.5,
+            14.5
+          ],
+          "rotation": 180,
+          "texture": "#particle"
+        }
+      }
+    },
+    {
+      "name": "mjolnir_9",
+      "from": [
+        4.23223,
+        4.23223,
+        7.75
+      ],
+      "to": [
+        4.73223,
+        5.73223,
+        8.25
+      ],
+      "rotation": {
+        "angle": 45,
+        "axis": "z",
+        "origin": [
+          8,
+          8.5,
+          8
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            1.25,
+            14.5,
+            1,
+            15.25
+          ],
+          "rotation": 180,
+          "texture": "#particle"
+        },
+        "east": {
+          "uv": [
+            1,
+            14.5,
+            1.25,
+            15.25
+          ],
+          "rotation": 180,
+          "texture": "#particle"
+        },
+        "south": {
+          "uv": [
+            1,
+            14.5,
+            1.25,
+            15.25
+          ],
+          "rotation": 180,
+          "texture": "#particle"
+        },
+        "west": {
+          "uv": [
+            1,
+            14.5,
+            1.25,
+            15.25
+          ],
+          "rotation": 180,
+          "texture": "#particle"
+        },
+        "up": {
+          "uv": [
+            1,
+            15,
+            1.25,
+            15.25
+          ],
+          "rotation": 180,
+          "texture": "#particle"
+        },
+        "down": {
+          "uv": [
+            1,
+            14.5,
+            1.25,
+            14.75
+          ],
+          "rotation": 180,
+          "texture": "#particle"
+        }
+      }
+    },
+    {
+      "name": "mjolnir_10",
+      "from": [
+        4.73223,
+        4.73223,
+        7.75
+      ],
+      "to": [
+        5.23223,
+        6.23223,
+        8.25
+      ],
+      "rotation": {
+        "angle": 45,
+        "axis": "z",
+        "origin": [
+          8,
+          8.5,
+          8
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            1,
+            14.75,
+            0.75,
+            15.5
+          ],
+          "rotation": 180,
+          "texture": "#particle"
+        },
+        "east": {
+          "uv": [
+            0.75,
+            14.75,
+            1,
+            15.5
+          ],
+          "rotation": 180,
+          "texture": "#particle"
+        },
+        "south": {
+          "uv": [
+            0.75,
+            14.75,
+            1,
+            15.5
+          ],
+          "rotation": 180,
+          "texture": "#particle"
+        },
+        "west": {
+          "uv": [
+            0.75,
+            14.75,
+            1,
+            15.5
+          ],
+          "rotation": 180,
+          "texture": "#particle"
+        },
+        "up": {
+          "uv": [
+            0.75,
+            15.25,
+            1,
+            15.5
+          ],
+          "rotation": 180,
+          "texture": "#particle"
+        },
+        "down": {
+          "uv": [
+            0.75,
+            14.75,
+            1,
+            15
+          ],
+          "rotation": 180,
+          "texture": "#particle"
+        }
+      }
+    },
+    {
+      "name": "mjolnir_11",
+      "from": [
+        5.23223,
+        5.23223,
+        7.75
+      ],
+      "to": [
+        5.73223,
+        6.73223,
+        8.25
+      ],
+      "rotation": {
+        "angle": 45,
+        "axis": "z",
+        "origin": [
+          8,
+          8.5,
+          8
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            0.75,
+            15,
+            0.5,
+            15.75
+          ],
+          "rotation": 180,
+          "texture": "#particle"
+        },
+        "east": {
+          "uv": [
+            0.5,
+            15,
+            0.75,
+            15.75
+          ],
+          "rotation": 180,
+          "texture": "#particle"
+        },
+        "south": {
+          "uv": [
+            0.5,
+            15,
+            0.75,
+            15.75
+          ],
+          "rotation": 180,
+          "texture": "#particle"
+        },
+        "west": {
+          "uv": [
+            0.5,
+            15,
+            0.75,
+            15.75
+          ],
+          "rotation": 180,
+          "texture": "#particle"
+        },
+        "up": {
+          "uv": [
+            0.5,
+            15.5,
+            0.75,
+            15.75
+          ],
+          "rotation": 180,
+          "texture": "#particle"
+        },
+        "down": {
+          "uv": [
+            0.5,
+            15,
+            0.75,
+            15.25
+          ],
+          "rotation": 180,
+          "texture": "#particle"
+        }
+      }
+    },
+    {
+      "name": "mjolnir_13",
+      "from": [
+        5.73223,
+        5.73223,
+        7.75
+      ],
+      "to": [
+        6.23223,
+        7.23223,
+        8.25
+      ],
+      "rotation": {
+        "angle": 45,
+        "axis": "z",
+        "origin": [
+          8,
+          8.5,
+          8
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            0.5,
+            15.25,
+            0.25,
+            16
+          ],
+          "rotation": 180,
+          "texture": "#particle"
+        },
+        "east": {
+          "uv": [
+            0.25,
+            15.25,
+            0.5,
+            16
+          ],
+          "rotation": 180,
+          "texture": "#particle"
+        },
+        "south": {
+          "uv": [
+            0.25,
+            15.25,
+            0.5,
+            16
+          ],
+          "rotation": 180,
+          "texture": "#particle"
+        },
+        "west": {
+          "uv": [
+            0.25,
+            15.25,
+            0.5,
+            16
+          ],
+          "rotation": 180,
+          "texture": "#particle"
+        },
+        "up": {
+          "uv": [
+            0.25,
+            15.75,
+            0.5,
+            16
+          ],
+          "rotation": 180,
+          "texture": "#particle"
+        },
+        "down": {
+          "uv": [
+            0.25,
+            15.25,
+            0.5,
+            15.5
+          ],
+          "rotation": 180,
+          "texture": "#particle"
+        }
+      }
+    },
+    {
+      "name": "mjolnir_14",
+      "from": [
+        6.23223,
+        6.23223,
+        7.75
+      ],
+      "to": [
+        6.73223,
+        7.23223,
+        8.25
+      ],
+      "rotation": {
+        "angle": 45,
+        "axis": "z",
+        "origin": [
+          8,
+          8.5,
+          8
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            0.25,
+            15.5,
+            0,
+            16
+          ],
+          "rotation": 180,
+          "texture": "#particle"
+        },
+        "east": {
+          "uv": [
+            0,
+            15.5,
+            0.25,
+            16
+          ],
+          "rotation": 180,
+          "texture": "#particle"
+        },
+        "south": {
+          "uv": [
+            0,
+            15.5,
+            0.25,
+            16
+          ],
+          "rotation": 180,
+          "texture": "#particle"
+        },
+        "up": {
+          "uv": [
+            0,
+            15.75,
+            0.25,
+            16
+          ],
+          "rotation": 180,
+          "texture": "#particle"
+        },
+        "down": {
+          "uv": [
+            0,
+            15.5,
+            0.25,
+            15.75
+          ],
+          "rotation": 180,
+          "texture": "#particle"
+        }
+      }
+    },
+    {
+      "name": "mjolnir_14",
+      "from": [
+        8,
+        6,
+        7.25
+      ],
+      "to": [
+        8,
+        8.5,
+        8.75
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "z",
+        "origin": [
+          8,
+          8.5,
+          8
+        ]
+      },
+      "faces": {
+        "east": {
+          "uv": [
+            8,
+            10.25,
+            6.75,
+            9.5
+          ],
+          "rotation": 90,
+          "texture": "#particle"
+        },
+        "west": {
+          "uv": [
+            8,
+            9.5,
+            6.75,
+            10.25
+          ],
+          "rotation": 90,
+          "texture": "#particle"
+        }
+      }
+    },
+    {
+      "from": [
+        4.75,
+        -4.61396,
+        6
+      ],
+      "to": [
+        11.25,
+        -0.61396,
+        10
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "z",
+        "origin": [
+          8,
+          8.5,
+          8
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            10,
+            3.25,
+            12
+          ],
+          "rotation": 180,
+          "texture": "#particle"
+        },
+        "east": {
+          "uv": [
+            3.25,
+            10,
+            5.25,
+            12
+          ],
+          "rotation": 180,
+          "texture": "#particle"
+        },
+        "south": {
+          "uv": [
+            3.25,
+            10,
+            0,
+            12
+          ],
+          "rotation": 180,
+          "texture": "#particle"
+        },
+        "west": {
+          "uv": [
+            3.25,
+            10,
+            5.25,
+            12
+          ],
+          "rotation": 180,
+          "texture": "#particle"
+        },
+        "up": {
+          "uv": [
+            6.5,
+            8,
+            3.25,
+            10
+          ],
+          "rotation": 180,
+          "texture": "#particle"
+        },
+        "down": {
+          "uv": [
+            3.25,
+            10,
+            0,
+            8
+          ],
+          "rotation": 180,
+          "texture": "#particle"
+        }
+      }
+    },
+    {
+      "from": [
+        20.86396,
+        6.75,
+        6.75
+      ],
+      "to": [
+        20.86396,
+        9.25,
+        9.25
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "z",
+        "origin": [
+          7.5,
+          8,
+          8
+        ]
+      },
+      "faces": {
+        "east": {
+          "uv": [
+            16,
+            9.25,
+            14.75,
+            8
+          ],
+          "rotation": 90,
+          "texture": "#particle"
+        },
+        "west": {
+          "uv": [
+            16,
+            8,
+            14.75,
+            9.25
+          ],
+          "rotation": 90,
+          "texture": "#particle"
+        }
+      }
+    },
+    {
+      "name": "mjolnir_1",
+      "from": [
+        13.26777,
+        1.23223,
+        7.75
+      ],
+      "to": [
+        14.26777,
+        1.73223,
+        8.25
+      ],
+      "rotation": {
+        "angle": 45,
+        "axis": "z",
+        "origin": [
+          7.5,
+          8,
+          8
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            10.75,
+            13.25,
+            10.5,
+            13.75
+          ],
+          "rotation": 270,
+          "texture": "#particle"
+        },
+        "south": {
+          "uv": [
+            10.5,
+            13.25,
+            10.75,
+            13.75
+          ],
+          "rotation": 90,
+          "texture": "#particle"
+        },
+        "west": {
+          "uv": [
+            10.5,
+            13.5,
+            10.75,
+            13.75
+          ],
+          "rotation": 90,
+          "texture": "#particle"
+        },
+        "up": {
+          "uv": [
+            10.5,
+            13.25,
+            10.75,
+            13.75
+          ],
+          "rotation": 90,
+          "texture": "#particle"
+        },
+        "down": {
+          "uv": [
+            10.5,
+            13.25,
+            10.75,
+            13.75
+          ],
+          "rotation": 90,
+          "texture": "#particle"
+        }
+      }
+    },
+    {
+      "name": "mjolnir_2",
+      "from": [
+        12.76777,
+        1.73223,
+        7.75
+      ],
+      "to": [
+        14.26777,
+        2.23223,
+        8.25
+      ],
+      "rotation": {
+        "angle": 45,
+        "axis": "z",
+        "origin": [
+          7.5,
+          8,
+          8
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            10.5,
+            13.25,
+            10.25,
+            14
+          ],
+          "rotation": 270,
+          "texture": "#particle"
+        },
+        "east": {
+          "uv": [
+            10.25,
+            13.25,
+            10.5,
+            13.5
+          ],
+          "rotation": 90,
+          "texture": "#particle"
+        },
+        "south": {
+          "uv": [
+            10.25,
+            13.25,
+            10.5,
+            14
+          ],
+          "rotation": 90,
+          "texture": "#particle"
+        },
+        "west": {
+          "uv": [
+            10.25,
+            13.75,
+            10.5,
+            14
+          ],
+          "rotation": 90,
+          "texture": "#particle"
+        },
+        "up": {
+          "uv": [
+            10.25,
+            13.25,
+            10.5,
+            14
+          ],
+          "rotation": 90,
+          "texture": "#particle"
+        },
+        "down": {
+          "uv": [
+            10.25,
+            13.25,
+            10.5,
+            14
+          ],
+          "rotation": 90,
+          "texture": "#particle"
+        }
+      }
+    },
+    {
+      "name": "mjolnir_4",
+      "from": [
+        12.26777,
+        2.23223,
+        7.75
+      ],
+      "to": [
+        13.76777,
+        2.73223,
+        8.25
+      ],
+      "rotation": {
+        "angle": 45,
+        "axis": "z",
+        "origin": [
+          7.5,
+          8,
+          8
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            10.25,
+            13.5,
+            10,
+            14.25
+          ],
+          "rotation": 270,
+          "texture": "#particle"
+        },
+        "east": {
+          "uv": [
+            10,
+            13.5,
+            10.25,
+            13.75
+          ],
+          "rotation": 90,
+          "texture": "#particle"
+        },
+        "south": {
+          "uv": [
+            10,
+            13.5,
+            10.25,
+            14.25
+          ],
+          "rotation": 90,
+          "texture": "#particle"
+        },
+        "west": {
+          "uv": [
+            10,
+            14,
+            10.25,
+            14.25
+          ],
+          "rotation": 90,
+          "texture": "#particle"
+        },
+        "up": {
+          "uv": [
+            10,
+            13.5,
+            10.25,
+            14.25
+          ],
+          "rotation": 90,
+          "texture": "#particle"
+        },
+        "down": {
+          "uv": [
+            10,
+            13.5,
+            10.25,
+            14.25
+          ],
+          "rotation": 90,
+          "texture": "#particle"
+        }
+      }
+    },
+    {
+      "name": "mjolnir_5",
+      "from": [
+        11.76777,
+        2.73223,
+        7.75
+      ],
+      "to": [
+        13.26777,
+        3.23223,
+        8.25
+      ],
+      "rotation": {
+        "angle": 45,
+        "axis": "z",
+        "origin": [
+          7.5,
+          8,
+          8
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            10,
+            13.75,
+            9.75,
+            14.5
+          ],
+          "rotation": 270,
+          "texture": "#particle"
+        },
+        "east": {
+          "uv": [
+            9.75,
+            13.75,
+            10,
+            14
+          ],
+          "rotation": 90,
+          "texture": "#particle"
+        },
+        "south": {
+          "uv": [
+            9.75,
+            13.75,
+            10,
+            14.5
+          ],
+          "rotation": 90,
+          "texture": "#particle"
+        },
+        "west": {
+          "uv": [
+            9.75,
+            14.25,
+            10,
+            14.5
+          ],
+          "rotation": 90,
+          "texture": "#particle"
+        },
+        "up": {
+          "uv": [
+            9.75,
+            13.75,
+            10,
+            14.5
+          ],
+          "rotation": 90,
+          "texture": "#particle"
+        },
+        "down": {
+          "uv": [
+            9.75,
+            13.75,
+            10,
+            14.5
+          ],
+          "rotation": 90,
+          "texture": "#particle"
+        }
+      }
+    },
+    {
+      "name": "mjolnir_6",
+      "from": [
+        11.26777,
+        3.23223,
+        7.75
+      ],
+      "to": [
+        12.76777,
+        3.73223,
+        8.25
+      ],
+      "rotation": {
+        "angle": 45,
+        "axis": "z",
+        "origin": [
+          7.5,
+          8,
+          8
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            9.75,
+            14,
+            9.5,
+            14.75
+          ],
+          "rotation": 270,
+          "texture": "#particle"
+        },
+        "east": {
+          "uv": [
+            9.5,
+            14,
+            9.75,
+            14.25
+          ],
+          "rotation": 90,
+          "texture": "#particle"
+        },
+        "south": {
+          "uv": [
+            9.5,
+            14,
+            9.75,
+            14.75
+          ],
+          "rotation": 90,
+          "texture": "#particle"
+        },
+        "west": {
+          "uv": [
+            9.5,
+            14.5,
+            9.75,
+            14.75
+          ],
+          "rotation": 90,
+          "texture": "#particle"
+        },
+        "up": {
+          "uv": [
+            9.5,
+            14,
+            9.75,
+            14.75
+          ],
+          "rotation": 90,
+          "texture": "#particle"
+        },
+        "down": {
+          "uv": [
+            9.5,
+            14,
+            9.75,
+            14.75
+          ],
+          "rotation": 90,
+          "texture": "#particle"
+        }
+      }
+    },
+    {
+      "name": "mjolnir_7",
+      "from": [
+        10.76777,
+        3.73223,
+        7.75
+      ],
+      "to": [
+        12.26777,
+        4.23223,
+        8.25
+      ],
+      "rotation": {
+        "angle": 45,
+        "axis": "z",
+        "origin": [
+          7.5,
+          8,
+          8
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            9.5,
+            14.25,
+            9.25,
+            15
+          ],
+          "rotation": 270,
+          "texture": "#particle"
+        },
+        "east": {
+          "uv": [
+            9.25,
+            14.25,
+            9.5,
+            14.5
+          ],
+          "rotation": 90,
+          "texture": "#particle"
+        },
+        "south": {
+          "uv": [
+            9.25,
+            14.25,
+            9.5,
+            15
+          ],
+          "rotation": 90,
+          "texture": "#particle"
+        },
+        "west": {
+          "uv": [
+            9.25,
+            14.75,
+            9.5,
+            15
+          ],
+          "rotation": 90,
+          "texture": "#particle"
+        },
+        "up": {
+          "uv": [
+            9.25,
+            14.25,
+            9.5,
+            15
+          ],
+          "rotation": 90,
+          "texture": "#particle"
+        },
+        "down": {
+          "uv": [
+            9.25,
+            14.25,
+            9.5,
+            15
+          ],
+          "rotation": 90,
+          "texture": "#particle"
+        }
+      }
+    },
+    {
+      "name": "mjolnir_9",
+      "from": [
+        10.26777,
+        4.23223,
+        7.75
+      ],
+      "to": [
+        11.76777,
+        4.73223,
+        8.25
+      ],
+      "rotation": {
+        "angle": 45,
+        "axis": "z",
+        "origin": [
+          7.5,
+          8,
+          8
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            9.25,
+            14.5,
+            9,
+            15.25
+          ],
+          "rotation": 270,
+          "texture": "#particle"
+        },
+        "east": {
+          "uv": [
+            9,
+            14.5,
+            9.25,
+            14.75
+          ],
+          "rotation": 90,
+          "texture": "#particle"
+        },
+        "south": {
+          "uv": [
+            9,
+            14.5,
+            9.25,
+            15.25
+          ],
+          "rotation": 90,
+          "texture": "#particle"
+        },
+        "west": {
+          "uv": [
+            9,
+            15,
+            9.25,
+            15.25
+          ],
+          "rotation": 90,
+          "texture": "#particle"
+        },
+        "up": {
+          "uv": [
+            9,
+            14.5,
+            9.25,
+            15.25
+          ],
+          "rotation": 90,
+          "texture": "#particle"
+        },
+        "down": {
+          "uv": [
+            9,
+            14.5,
+            9.25,
+            15.25
+          ],
+          "rotation": 90,
+          "texture": "#particle"
+        }
+      }
+    },
+    {
+      "name": "mjolnir_10",
+      "from": [
+        9.76777,
+        4.73223,
+        7.75
+      ],
+      "to": [
+        11.26777,
+        5.23223,
+        8.25
+      ],
+      "rotation": {
+        "angle": 45,
+        "axis": "z",
+        "origin": [
+          7.5,
+          8,
+          8
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            9,
+            14.75,
+            8.75,
+            15.5
+          ],
+          "rotation": 270,
+          "texture": "#particle"
+        },
+        "east": {
+          "uv": [
+            8.75,
+            14.75,
+            9,
+            15
+          ],
+          "rotation": 90,
+          "texture": "#particle"
+        },
+        "south": {
+          "uv": [
+            8.75,
+            14.75,
+            9,
+            15.5
+          ],
+          "rotation": 90,
+          "texture": "#particle"
+        },
+        "west": {
+          "uv": [
+            8.75,
+            15.25,
+            9,
+            15.5
+          ],
+          "rotation": 90,
+          "texture": "#particle"
+        },
+        "up": {
+          "uv": [
+            8.75,
+            14.75,
+            9,
+            15.5
+          ],
+          "rotation": 90,
+          "texture": "#particle"
+        },
+        "down": {
+          "uv": [
+            8.75,
+            14.75,
+            9,
+            15.5
+          ],
+          "rotation": 90,
+          "texture": "#particle"
+        }
+      }
+    },
+    {
+      "name": "mjolnir_11",
+      "from": [
+        9.26777,
+        5.23223,
+        7.75
+      ],
+      "to": [
+        10.76777,
+        5.73223,
+        8.25
+      ],
+      "rotation": {
+        "angle": 45,
+        "axis": "z",
+        "origin": [
+          7.5,
+          8,
+          8
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            8.75,
+            15,
+            8.5,
+            15.75
+          ],
+          "rotation": 270,
+          "texture": "#particle"
+        },
+        "east": {
+          "uv": [
+            8.5,
+            15,
+            8.75,
+            15.25
+          ],
+          "rotation": 90,
+          "texture": "#particle"
+        },
+        "south": {
+          "uv": [
+            8.5,
+            15,
+            8.75,
+            15.75
+          ],
+          "rotation": 90,
+          "texture": "#particle"
+        },
+        "west": {
+          "uv": [
+            8.5,
+            15.5,
+            8.75,
+            15.75
+          ],
+          "rotation": 90,
+          "texture": "#particle"
+        },
+        "up": {
+          "uv": [
+            8.5,
+            15,
+            8.75,
+            15.75
+          ],
+          "rotation": 90,
+          "texture": "#particle"
+        },
+        "down": {
+          "uv": [
+            8.5,
+            15,
+            8.75,
+            15.75
+          ],
+          "rotation": 90,
+          "texture": "#particle"
+        }
+      }
+    },
+    {
+      "name": "mjolnir_13",
+      "from": [
+        8.76777,
+        5.73223,
+        7.75
+      ],
+      "to": [
+        10.26777,
+        6.23223,
+        8.25
+      ],
+      "rotation": {
+        "angle": 45,
+        "axis": "z",
+        "origin": [
+          7.5,
+          8,
+          8
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            8.5,
+            15.25,
+            8.25,
+            16
+          ],
+          "rotation": 270,
+          "texture": "#particle"
+        },
+        "east": {
+          "uv": [
+            8.25,
+            15.25,
+            8.5,
+            15.5
+          ],
+          "rotation": 90,
+          "texture": "#particle"
+        },
+        "south": {
+          "uv": [
+            8.25,
+            15.25,
+            8.5,
+            16
+          ],
+          "rotation": 90,
+          "texture": "#particle"
+        },
+        "west": {
+          "uv": [
+            8.25,
+            15.75,
+            8.5,
+            16
+          ],
+          "rotation": 90,
+          "texture": "#particle"
+        },
+        "up": {
+          "uv": [
+            8.25,
+            15.25,
+            8.5,
+            16
+          ],
+          "rotation": 90,
+          "texture": "#particle"
+        },
+        "down": {
+          "uv": [
+            8.25,
+            15.25,
+            8.5,
+            16
+          ],
+          "rotation": 90,
+          "texture": "#particle"
+        }
+      }
+    },
+    {
+      "name": "mjolnir_14",
+      "from": [
+        8.76777,
+        6.23223,
+        7.75
+      ],
+      "to": [
+        9.76777,
+        6.73223,
+        8.25
+      ],
+      "rotation": {
+        "angle": 45,
+        "axis": "z",
+        "origin": [
+          7.5,
+          8,
+          8
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            8.25,
+            15.5,
+            8,
+            16
+          ],
+          "rotation": 270,
+          "texture": "#particle"
+        },
+        "east": {
+          "uv": [
+            8,
+            15.5,
+            8.25,
+            15.75
+          ],
+          "rotation": 90,
+          "texture": "#particle"
+        },
+        "south": {
+          "uv": [
+            8,
+            15.5,
+            8.25,
+            16
+          ],
+          "rotation": 90,
+          "texture": "#particle"
+        },
+        "west": {
+          "uv": [
+            8,
+            15.75,
+            8.25,
+            16
+          ],
+          "rotation": 90,
+          "texture": "#particle"
+        },
+        "up": {
+          "uv": [
+            8,
+            15.5,
+            8.25,
+            16
+          ],
+          "rotation": 90,
+          "texture": "#particle"
+        }
+      }
+    },
+    {
+      "name": "mjolnir_14",
+      "from": [
+        7.5,
+        8,
+        7.25
+      ],
+      "to": [
+        10,
+        8,
+        8.75
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "z",
+        "origin": [
+          7.5,
+          8,
+          8
+        ]
+      },
+      "faces": {
+        "up": {
+          "uv": [
+            16,
+            10.25,
+            14.75,
+            9.5
+          ],
+          "texture": "#particle"
+        },
+        "down": {
+          "uv": [
+            16,
+            9.5,
+            14.75,
+            10.25
+          ],
+          "texture": "#particle"
+        }
+      }
+    },
+    {
+      "from": [
+        16.61396,
+        4.75,
+        6
+      ],
+      "to": [
+        20.61396,
+        11.25,
+        10
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "z",
+        "origin": [
+          7.5,
+          8,
+          8
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            8,
+            10,
+            11.25,
+            12
+          ],
+          "rotation": 270,
+          "texture": "#particle"
+        },
+        "east": {
+          "uv": [
+            11.25,
+            10,
+            8,
+            8
+          ],
+          "rotation": 90,
+          "texture": "#particle"
+        },
+        "south": {
+          "uv": [
+            11.25,
+            10,
+            8,
+            12
+          ],
+          "rotation": 90,
+          "texture": "#particle"
+        },
+        "west": {
+          "uv": [
+            14.5,
+            8,
+            11.25,
+            10
+          ],
+          "rotation": 90,
+          "texture": "#particle"
+        },
+        "up": {
+          "uv": [
+            11.25,
+            10,
+            13.25,
+            12
+          ],
+          "rotation": 90,
+          "texture": "#particle"
+        },
+        "down": {
+          "uv": [
+            11.25,
+            10,
+            13.25,
+            12
+          ],
+          "rotation": 90,
+          "texture": "#particle"
+        }
+      }
+    }
+  ],
+  "display": {
+    "thirdperson_righthand": {
+      "rotation": [
+        0,
+        110,
+        -22.5
+      ],
+      "translation": [
+        2,
+        -0.75,
+        0
+      ],
+      "scale": [
+        1.7,
+        1.7,
+        1.7
+      ]
+    },
+    "thirdperson_lefthand": {
+      "rotation": [
+        0,
+        -70,
+        22.5
+      ],
+      "translation": [
+        2,
+        -0.75,
+        0
+      ],
+      "scale": [
+        1.7,
+        1.7,
+        1.7
+      ]
+    },
+    "firstperson_righthand": {
+      "rotation": [
+        -180,
+        90,
+        -160
+      ],
+      "translation": [
+        16,
+        2,
+        -17.5
+      ],
+      "scale": [
+        1.36,
+        1.36,
+        1.36
+      ]
+    },
+    "firstperson_lefthand": {
+      "rotation": [
+        -180,
+        -90,
+        160
+      ],
+      "translation": [
+        16,
+        2,
+        -17.5
+      ],
+      "scale": [
+        1.36,
+        1.36,
+        1.36
+      ]
+    }
+  }
+}

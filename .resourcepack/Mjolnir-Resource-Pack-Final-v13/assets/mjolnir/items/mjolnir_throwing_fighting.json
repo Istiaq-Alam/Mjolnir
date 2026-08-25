@@ -1,0 +1,16 @@
+{
+  "oversized_in_gui": true,
+  "model": {
+    "type": "composite",
+    "models": [
+      {
+        "type": "model",
+        "model": "mjolnir:item/mjolnir_throwing"
+      },
+      {
+        "type": "model",
+        "model": "mjolnir:item/mjolnir_lightning_throwing_overlay"
+      }
+    ]
+  }
+}
