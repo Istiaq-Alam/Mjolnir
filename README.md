@@ -1,5 +1,5 @@
 # ⚡ Mjolnir
-
+     
 <p align="center">
   <strong>A Thor-inspired custom weapon plugin for Paper Minecraft servers.</strong>
 </p>
@@ -8,7 +8,7 @@
   Travel through the world with Riptide or unleash the power of thunder with Fighting Mode.
 </p>
 
----
+-----
 
 ## ⚡ About
 
